@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Aven desktop defaults
+Exec=/usr/bin/python3 /var/lib/aven/source/iso/first-login.py layout
+OnlyShowIn=KDE;
+NoDisplay=true
+X-KDE-autostart-phase=2

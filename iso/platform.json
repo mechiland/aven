@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "Aven Atomic KDE",
+  "version": "0.1.0-prototype",
+  "architecture": "x86_64",
+  "fedora_version": "44.20260913.0",
+  "official_iso": {
+    "file": "Fedora-Kinoite-ostree-x86_64-44-1.7.iso",
+    "sha256": "4a944312b4e861ab625fd9786957174ef122a8a406bbb54caba7665e0d9f0e92",
+    "volume_id": "Fedora-Knt-ostree-x86_64-44"
+  },
+  "ostree": {
+    "layered_commit": "37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551",
+    "base_commit": "be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df",
+    "origin": "fedora:fedora/44/x86_64/kinoite",
+    "installer_ref": "aven/44/x86_64/prototype",
+    "requested_packages": ["glibc-langpack-zh", "gwenview", "okular", "python3-pyside6", "thunderbird"]
+  }
+}

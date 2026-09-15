@@ -18,6 +18,8 @@ def run(*args):
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--decoration',choices=['breeze','aven'],default='aven')
+    p.add_argument('--system-fonts-ready',action='store_true',help='Verify fontconfig installed by the ISO; do not invoke sudo')
+    p.add_argument('--without-shell-reload',action='store_true',help='Seed before Plasma starts; apply the panel after shell startup')
     a=p.parse_args()
     if os.getuid()==0 or not Path('/run/ostree-booted').exists():
         p.error('Run as the desktop user inside the Aven Atomic guest')
@@ -40,7 +42,13 @@ def main():
         else:
             absent.append(name)
     (backup/'manifest.json').write_text(json.dumps({'backed_up':saved,'absent':absent,'sha256':hashes,'scope':'profile-defaults','profile':'Aven Mist v1'},indent=2))
-    run('sudo',sys.executable,ROOT/'typography/install.py','--root','/')
+    if a.system_fonts_ready:
+        for source in sorted((ROOT/'typography/fontconfig').glob('*.conf')):
+            target = Path('/etc/fonts/conf.d')/source.name
+            if not target.is_file() or target.read_bytes() != source.read_bytes():
+                raise RuntimeError(f'ISO font configuration missing or changed: {target}')
+    else:
+        run('sudo',sys.executable,ROOT/'typography/install.py','--root','/')
     run('fc-cache','-f')
     run(sys.executable,ROOT/'typography/audit.py','--active')
     run(sys.executable,ROOT/'files/install.py')
@@ -66,7 +74,8 @@ def main():
             actual = Gio.AppInfo.get_default_for_type(mime, False)
             if actual is None or actual.get_id() != desktop:
                 raise RuntimeError(f'Association did not persist: {mime}')
-    run(sys.executable,ROOT/'integration/apply.py','--decoration',a.decoration)
+    options = ['--without-shell-reload'] if a.without_shell_reload else []
+    run(sys.executable,ROOT/'integration/apply.py','--decoration',a.decoration,*options)
     print('Profile integrated. Reboot the guest for a clean comparison round.')
 
 if __name__=='__main__':main()
