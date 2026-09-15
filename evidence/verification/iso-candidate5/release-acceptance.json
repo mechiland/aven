@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "accepted_at": "2026-09-15T13:29:43.910376+00:00",
+  "integrator": "/root",
+  "candidate": "candidate5",
+  "iso_sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0",
+  "iso_bytes": 7890075648,
+  "source_commit": "9500b72a79320ce062a8b7360eac5806b142c93a",
+  "current_embedded_source_files_verified": 150,
+  "iso_boot_install_accepted": true,
+  "accepted_for_prototype_release": true,
+  "records": [
+    {
+      "path": "evidence/verification/iso-candidate5/media-audit.json",
+      "sha256": "692a3ab8fd4186f6d7fab96d036f194adc86c7b70fd34787f64b43291a96cdff",
+      "bytes": 4100,
+      "required_true_fields": [
+        "static_media_checks_passed"
+      ]
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/installed-audit.json",
+      "sha256": "b40bec87a5c7968b7e5132c497f5384503582948a1ab90901f69bb893da3ccd6",
+      "bytes": 14896,
+      "required_true_fields": [
+        "installed_checks_passed"
+      ]
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/installed-source-and-first-login.json",
+      "sha256": "c12a52f0ba3b54f7363ac3ea32e1d7081a0be6121f0784adbfad63c961e64d65",
+      "bytes": 54836,
+      "required_true_fields": [
+        "source_inventory_passed",
+        "installation_manifest_matches",
+        "native_first_user_complete_marker"
+      ]
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/runtime-versions-mounts-audit.json",
+      "sha256": "c58c1888c57d4e9cf4561d9412c442b9dec0ef7bdbfd834500d60946ae667823",
+      "bytes": 14283,
+      "required_true_fields": [
+        "runtime_checks_passed"
+      ]
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/reader-font-audit.json",
+      "sha256": "cec1ed26b12b10cb992e82c5d96df60add2523bce91b3b112614977a8f902e78",
+      "bytes": 28611,
+      "required_true_fields": [
+        "passed",
+        "default_associations_passed"
+      ]
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/preview-handoff-review.json",
+      "sha256": "f91e2f69e35222fdc64817662aeeb3bb9735872d770b11962902ace67ebaba54",
+      "bytes": 4387,
+      "required_true_fields": [
+        "passed"
+      ]
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/native-smoke-review.json",
+      "sha256": "d953ad5b3883508750d6566500043591a75edb42b4146ae7a06cb9792f0611f1",
+      "bytes": 18215,
+      "required_true_fields": [
+        "smoke_review_passed"
+      ]
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/second-boot/persistence-review.json",
+      "sha256": "b6f86d871f63a3c345b1e0701d5c99d0bb4a9e8e72f689019190e07f781f2e72",
+      "bytes": 9772,
+      "required_true_fields": [
+        "passed"
+      ]
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/reassembled-image-audit.json",
+      "sha256": "5aa7123afe025d107de86691438976fb9ccee55934c6cdc4972e76ab7ce2db5c",
+      "bytes": 572,
+      "required_true_fields": [
+        "passed"
+      ]
+    },
+    {
+      "path": "evidence/critic/iso-candidate5.json",
+      "sha256": "fc2f6798210af15cf6f9f5fa16e234c914070647b8a70b67ea1af2d8a23fffc7",
+      "bytes": 71257
+    }
+  ],
+  "visual_overall": 8.266666666666667,
+  "chinese_typography": 8.5,
+  "three_second_differentiation": true,
+  "visual_scope": "Fresh installed candidate5 at 1x",
+  "full_fractional_and_motion_rerun": null,
+  "physical_hardware": null,
+  "secure_boot": null,
+  "live_rollback": null,
+  "nonblocking_polish": [
+    "Initial Everyday list density changes after visiting grid.",
+    "Native photo-view resizing leaves a taller filmstrip."
+  ],
+  "publication_note": "Acceptance records validation of the exact ISO; GitHub publication is recorded separately."
+}

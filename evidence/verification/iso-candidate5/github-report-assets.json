@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-09-15T13:30:05.605964+00:00",
+  "release_id": 388990452,
+  "release_draft": true,
+  "assets": [
+    {
+      "path": "output/Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.json",
+      "name": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.json",
+      "asset_id": 565758044,
+      "bytes": 28876,
+      "sha256": "eba983cfc6acb92945ade1697397fdbea3b58c93dd265e4a3b662c53fdef3962",
+      "server_state": "uploaded",
+      "browser_download_url": "https://github.com/mechiland/aven/releases/download/untagged-0a8f0666df8ab05711a6/Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.json",
+      "verified": true
+    },
+    {
+      "path": "docs/ISO-VERIFICATION.md",
+      "name": "ISO-VERIFICATION.md",
+      "asset_id": 565758040,
+      "bytes": 21175,
+      "sha256": "a5000010ccca8922ca3086162709faa480520383e06dc5c6a68375b4597c6d07",
+      "server_state": "uploaded",
+      "browser_download_url": "https://github.com/mechiland/aven/releases/download/untagged-0a8f0666df8ab05711a6/ISO-VERIFICATION.md",
+      "verified": true
+    },
+    {
+      "path": "docs/critic-iso-candidate5.md",
+      "name": "critic-iso-candidate5.md",
+      "asset_id": 565758042,
+      "bytes": 10918,
+      "sha256": "a3be1593e0402d4b715b90252b1200904c811e956ae71585f1ca6afe32c3ef05",
+      "server_state": "uploaded",
+      "browser_download_url": "https://github.com/mechiland/aven/releases/download/untagged-0a8f0666df8ab05711a6/critic-iso-candidate5.md",
+      "verified": true
+    }
+  ],
+  "passed": true
+}

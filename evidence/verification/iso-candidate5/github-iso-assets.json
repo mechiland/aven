@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-09-15T13:28:59.550384+00:00",
+  "repository": "mechiland/aven",
+  "release_id": 388990452,
+  "tag": "v0.1.0-prototype",
+  "release_draft": true,
+  "candidate": "iso-candidate5",
+  "source_commit": "9500b72a79320ce062a8b7360eac5806b142c93a",
+  "manifest": "output/release-assets/ISO-PARTS.json",
+  "manifest_sha256": "cfde0f39c9a387ba3fbff764337c5c5f9556ab2991e35205e8a6402a946a796f",
+  "iso": {
+    "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso",
+    "bytes": 7890075648,
+    "sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0"
+  },
+  "verification": "all four GitHub uploaded asset digests and byte sizes match local split manifest",
+  "passed": true,
+  "parts": [
+    {
+      "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-000",
+      "asset_id": 565612258,
+      "state": "uploaded",
+      "expected_bytes": 1992294400,
+      "server_bytes": 1992294400,
+      "expected_sha256": "8976b165ba52c9f5af5ec0738cb1775745a3f65810c220445589d98cda8499e9",
+      "server_digest": "sha256:8976b165ba52c9f5af5ec0738cb1775745a3f65810c220445589d98cda8499e9",
+      "size_matches": true,
+      "sha256_matches": true
+    },
+    {
+      "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-001",
+      "asset_id": 565553864,
+      "state": "uploaded",
+      "expected_bytes": 1992294400,
+      "server_bytes": 1992294400,
+      "expected_sha256": "223f14d7dbc9b5548889764f1eb356f682ea5d93b6616730e99f1499cf446fd1",
+      "server_digest": "sha256:223f14d7dbc9b5548889764f1eb356f682ea5d93b6616730e99f1499cf446fd1",
+      "size_matches": true,
+      "sha256_matches": true
+    },
+    {
+      "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-002",
+      "asset_id": 565660016,
+      "state": "uploaded",
+      "expected_bytes": 1992294400,
+      "server_bytes": 1992294400,
+      "expected_sha256": "a17cf2e87d843a286532d5725ee55530330fa133d21784c2f5f2dc7272b33dac",
+      "server_digest": "sha256:a17cf2e87d843a286532d5725ee55530330fa133d21784c2f5f2dc7272b33dac",
+      "size_matches": true,
+      "sha256_matches": true
+    },
+    {
+      "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-003",
+      "asset_id": 565704263,
+      "state": "uploaded",
+      "expected_bytes": 1913192448,
+      "server_bytes": 1913192448,
+      "expected_sha256": "2bdee07bb5713abf4c6b1a2a7dd37f29f744388fafd9633d9454c24aa33021bd",
+      "server_digest": "sha256:2bdee07bb5713abf4c6b1a2a7dd37f29f744388fafd9633d9454c24aa33021bd",
+      "size_matches": true,
+      "sha256_matches": true
+    }
+  ]
+}
