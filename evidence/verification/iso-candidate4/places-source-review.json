@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-15T10:57:46.532309+00:00",
+  "reviewed_by": "/root/verification",
+  "source_commit": "ca020b9bf2b8704c9214f9b88af1a689982a0aea",
+  "iso_sha256": "f3f1a37faf9aee5665c953843ffdcb23ae21ed5f96d00c698234f791e36c9eb4",
+  "source_sha256": {
+    "iso/first-login.py": "f97df911937ee2ede9b0ddb975371ba087fbd7e8c431647a437c239a30583b61",
+    "files/finalize_places.py": "a88ccd99e54178c78776c37e2d0cdde559168ee698f3b45a366201454d6a3472",
+    "files/system_places.py": "6331a48ac881c92186c430e99dc844559f6627e152eb7cc996d1b3e324f98cf8",
+    "files/places.py": "1afa16455179a3560cfd73d8c872affae92be4a6e2e255f5724698ddb5ea0efb",
+    "verification/restore_profile.py": "11fb81e0dd7ad805e9ff767b5006b5c0e05162baae078832f98ce3c81c09268c"
+  },
+  "contract_review_passed": true,
+  "findings": [
+    {
+      "contract": "Native ownership",
+      "result": "The finalizer waits for an existing parseable native XBEL bookmark list; it does not create a replacement native list, launch applications or alter device labels/mounts."
+    },
+    {
+      "contract": "Startup readiness",
+      "result": "Mounted Atomic root/system block entries and typed Solid drive properties must be available. Two consecutive complete classified inventories must match within a bounded timeout."
+    },
+    {
+      "contract": "Narrow visibility",
+      "result": "Existing explicit IsHidden values remain untouched. Unknown/removable/hotplug and data-bearing shared root/home volumes are excluded from the hide policy."
+    },
+    {
+      "contract": "Durable restore ownership",
+      "result": "The existing writer emits actual-change immutable records after a successful write; the schema remains compatible with the independent restore helper. No ownership is inferred from hidden state."
+    },
+    {
+      "contract": "Completion and retry",
+      "result": "The layout phase invokes finalizer with check=True before publishing completion. Host temporary-home tests confirm failure leaves the marker absent, next login retries, completed layout is not reapplied, and native setup system users receive no state."
+    }
+  ],
+  "runtime_acceptance_pending": [
+    "Actual native first-user login must complete both phase markers without manual repair.",
+    "Fresh Dolphin must show expected hidden immutable-only entries while retaining the shared user-data volume.",
+    "Native bookmark/model updates are asynchronous; source stability checks do not prove the final on-screen state.",
+    "Second disk-only boot must retain marker hashes and effective sidebar/defaults."
+  ],
+  "new_visual_scores": null
+}

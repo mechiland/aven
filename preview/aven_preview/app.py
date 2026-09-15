@@ -9,9 +9,9 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-from PySide6.QtCore import QLocale, QMargins, QMimeDatabase, QRectF, QSize, Qt, QUrl
+from PySide6.QtCore import QLocale, QMargins, QMimeDatabase, QProcess, QRectF, QSize, Qt, QUrl
 from PySide6.QtGui import (
-    QColorSpace, QDesktopServices, QFont, QIcon, QImageReader, QKeySequence, QPainter,
+    QColorSpace, QFont, QIcon, QImageReader, QKeySequence, QPainter,
     QPalette, QShortcut, QTextBlockFormat, QTextCursor,
 )
 from PySide6.QtWidgets import (
@@ -20,6 +20,8 @@ from PySide6.QtWidgets import (
 )
 
 from .core import PreviewError, human_size, read_text, reading_metrics, selection
+
+DOCUMENT_OPENER = "/usr/bin/kde-open"
 
 
 def label(en: str, zh: str, tw: str | None = None) -> str:
@@ -100,6 +102,7 @@ class PreviewWindow(QMainWindow):
         self.renderer: QWidget | None = None
         self.player = None
         self.pdf = None
+        self.opener: QProcess | None = None
         self.setObjectName("aven-preview")
         self.setWindowIcon(QIcon.fromTheme("document-preview"))
         self.setMinimumSize(460, 360)
@@ -325,6 +328,8 @@ class PreviewWindow(QMainWindow):
         return container
 
     def navigate(self, delta):
+        if self.opener is not None:
+            return
         index = self.index + delta
         if 0 <= index < len(self.paths):
             self.index = index
@@ -338,11 +343,44 @@ class PreviewWindow(QMainWindow):
             self.close()
 
     def open_file(self):
-        if self.paths:
-            if QDesktopServices.openUrl(QUrl.fromLocalFile(str(self.paths[self.index]))):
-                self.close()
+        if not self.paths or self.opener is not None:
+            return
+        # Qt 6.11 Wayland openUrl returns before its activation-token callback
+        # launches anything. Closing the last window there cancels the handoff.
+        # KDE's document helper owns a KIO OpenUrlJob and exits after its result.
+        # Keep this event loop and helper alive until that result is available.
+        process = QProcess(self)
+        self.opener = process
+        process.setProgram(DOCUMENT_OPENER)
+        process.setArguments([QUrl.fromLocalFile(str(self.paths[self.index])).toString(QUrl.FullyEncoded)])
+        process.setProcessChannelMode(QProcess.ForwardedChannels)
+        process.finished.connect(lambda code, status: self.open_finished(process, code == 0 and status == QProcess.NormalExit))
+        process.errorOccurred.connect(lambda error: self.open_finished(process, False) if error == QProcess.FailedToStart else None)
+        self.open_button.setText(label("Opening…", "正在打开…", "正在開啟…"))
+        self.open_button.setEnabled(False)
+        self.previous.setEnabled(False)
+        self.next.setEnabled(False)
+        process.start()
+
+    def open_finished(self, process, success):
+        if self.opener is not process:
+            return
+        self.opener = None
+        process.deleteLater()
+        if success:
+            self.close()
+        else:
+            self.open_button.setText(label("Open", "打开", "開啟"))
+            self.open_button.setEnabled(True)
+            self.previous.setEnabled(self.index > 0)
+            self.next.setEnabled(self.index < len(self.paths) - 1)
+            self.meta.setText(label("Could not open this file. Try again.", "无法打开此文件，请重试。", "無法開啟此檔案，請重試。"))
 
     def closeEvent(self, event):
+        if self.opener is not None:
+            process = self.opener
+            self.opener = None
+            process.kill()
         if self.player:
             self.player.stop()
         super().closeEvent(event)

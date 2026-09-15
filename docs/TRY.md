@@ -1,5 +1,22 @@
 # Try the focused prototype
 
+## Installer ISO
+
+Download the four `.iso.part-*` files, `ISO-PARTS.json`, and `reassemble-iso.py`
+from the [GitHub prerelease](https://github.com/mechiland/aven/releases/tag/v0.1.0-prototype).
+Run `python3 reassemble-iso.py` in that directory (`py -3` on Windows). The
+helper verifies every part and the reconstructed ISO before reporting success.
+
+Boot the complete ISO from a virtual optical drive or write it to a USB drive
+of at least 16 GB. Use the native installer to select the target disk, then
+remove the installation medium and reboot. Fedora's native first-user setup
+creates your account. Aven applies its desktop defaults on your first login.
+
+The ISO includes no laboratory account or SSH key. Normal Firefox and
+Thunderbird profiles start empty. Sample albums and messages used in screenshots
+are verification fixtures, not prefilled personal content. See
+[ISO.md](ISO.md) and [ISO-VERIFICATION.md](ISO-VERIFICATION.md).
+
 ## Existing workspace
 
 The Aven laboratory guest is available on **VNC `127.0.0.1:5921`**. Stock is
@@ -52,7 +69,7 @@ redesign the language settings or account-setup flows.
 
 ## Portable disk
 
-The final handoff uses `output/aven-prototype-round04.qcow2`, a compressed,
+The earlier laboratory export is `output/aven-prototype-round04.qcow2`, a compressed,
 independent QEMU disk exported after clean shutdown. Its checksum and build
 identity are recorded in `output/BUILD.json`. Keep that disk as an immutable
 base and create a writable test overlay:

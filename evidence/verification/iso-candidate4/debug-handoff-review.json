@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-15T11:49:03.031756+00:00",
+  "candidate": "iso-candidate4",
+  "iso_sha256": "f3f1a37faf9aee5665c953843ffdcb23ae21ed5f96d00c698234f791e36c9eb4",
+  "source_commit": "ca020b9bf2b8704c9214f9b88af1a689982a0aea",
+  "embedded_source_files": 146,
+  "release_outcome": "rejected",
+  "iso_boot_install_accepted": false,
+  "reason": "Original installed preview closed on Enter/Open without launching the associated application on Wayland. Native Dolphin could open the same PDF.",
+  "failure_attribution": "Observed by integrator /root; independent observer inspected the retained no-window screenshot. The triggering interaction was not operated by verification.",
+  "debug_change": {
+    "applied_by": "/root",
+    "scope": "Only reader local preview runtime app.py was copied after the untouched installed-system audit. No new ISO was installed.",
+    "runtime_path": "/var/home/reader/.local/libexec/aven-preview/aven_preview/app.py",
+    "fixed_sha256": "99d794d2c9f148d164b979547dd839cd41906a5b219434a9f3cc21bf7366a695",
+    "original_embedded_sha256": "e644488eecedf8b8efa4b03ecbdb2ed169723b6719d441ca294c848e3e9835cf",
+    "hash_evidence": "evidence/verification/iso-candidate4/debug-runtime-hashes.json",
+    "implementation": "QProcess invokes /usr/bin/kde-open and keeps the preview alive until the native document-opening job completes.",
+    "diagnosis_attribution": "Files agent diagnosed the immediate-close race with the asynchronous Qt Wayland handoff."
+  },
+  "debug_observations": [
+    {
+      "action": "Preview Enter on PDF",
+      "operator": "/root",
+      "independent_observer": "/root/verification",
+      "image": "evidence/verification/iso-candidate4/debug-fixed-preview-enter-pdf.png",
+      "image_sha256": "24b28c011f155b94b8dd7215b2c8a778bb146f14c3097e6b16eb9ef23f66a5df",
+      "image_dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_at_original_resolution": true,
+      "note": "The Weekend walk PDF is visibly rendered in native Okular.",
+      "inventory": "evidence/verification/iso-candidate4/debug-fixed-preview-enter-pdf-windows.json",
+      "inventory_sha256": "8a9cac4637b5bcfab494adcdbd72586420e98f387ba1e50038e9dc88fadd1936",
+      "inventory_method": "temporary KWin script via public Workspace/Window API",
+      "active_application": "org.kde.okular",
+      "active_window": "{e2746586-fe1f-42b7-b446-4a5ef7a3c65d}",
+      "preview_window_remaining": false
+    },
+    {
+      "action": "Preview Open button on PDF",
+      "operator": "/root",
+      "independent_observer": "/root/verification",
+      "image": "evidence/verification/iso-candidate4/debug-fixed-preview-button-pdf.png",
+      "image_sha256": "9fb7232ce379a86220dcac338e549cd4e94de36596a109ea1b5949e1b75a450a",
+      "image_dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_at_original_resolution": true,
+      "note": "The same PDF is visibly rendered in native Okular.",
+      "inventory": "evidence/verification/iso-candidate4/debug-fixed-preview-button-pdf-windows.json",
+      "inventory_sha256": "1bbdd1449150f3dc757cb1fa4980cefe66b313e58aed99d30f50b35214cf709f",
+      "inventory_method": "temporary KWin script via public Workspace/Window API",
+      "active_application": "org.kde.okular",
+      "active_window": "{911e2e59-9f02-45da-ac8a-cefc24335049}",
+      "preview_window_remaining": false
+    },
+    {
+      "action": "Preview Enter on image",
+      "operator": "/root",
+      "independent_observer": "/root/verification",
+      "image": "evidence/verification/iso-candidate4/debug-fixed-preview-enter-image.png",
+      "image_sha256": "28136ad43643b4911d560fb48797a04730e6dc5c2433738452464861670bfa17",
+      "image_dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_at_original_resolution": true,
+      "note": "The selected waterfall JPEG is visibly rendered in native Gwenview, with its matching filename in the title.",
+      "inventory": "evidence/verification/iso-candidate4/debug-fixed-preview-enter-image-windows.json",
+      "inventory_sha256": "449b93846ee61a0c4697a251e1c0c5f35b722020eb7ddeb6eb48b64774d458c4",
+      "inventory_method": "temporary KWin script via public Workspace/Window API",
+      "active_application": "org.kde.gwenview",
+      "active_window": "{3cbe6a23-46e4-4d3f-876a-5071a583ef75}",
+      "preview_window_remaining": false
+    }
+  ],
+  "debug_results_excluded_from_release_proof": true,
+  "visual_scores": null,
+  "required_next_step": "Rebuild candidate5 and repeat public installation, native first login, actual Enter/button PDF/image handoff and remaining application/reboot checks without a runtime repair.",
+  "original_failure_frame": {
+    "image": "evidence/verification/iso-candidate4/preview-open-pdf-no-window-observed.png",
+    "sha256": "389418fb8d84677441be47676fa5d050982e6d16138965d22a76db4eace47d58",
+    "inspected_at_original_resolution": true,
+    "note": "Native Dolphin and selected PDF remain visible; no document-viewer window is visible in this frame. The failed action sequence is attributed to the integrator, not inferred solely from the pixels."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "candidate": "candidate4",
+  "iso_sha256": "f3f1a37faf9aee5665c953843ffdcb23ae21ed5f96d00c698234f791e36c9eb4",
+  "release_accepted": false,
+  "reason": "Preview QDesktopServices asynchronous Wayland handoff cancelled by closing last window before application launch; Enter and button reproduced. Native Dolphin opened same PDF. Fixed native kde-open handoff validated as debug only, requiring candidate5 rebuild.",
+  "debug_evidence": "debug-handoff-review.json",
+  "updated_at": "2026-09-15T11:50:01.106384+00:00"
+}

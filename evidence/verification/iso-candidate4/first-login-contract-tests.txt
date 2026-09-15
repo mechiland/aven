@@ -1,0 +1,9 @@
+test_completed_layout_is_not_reapplied_on_next_login (test_iso_first_login.FirstLoginCompletionTests.test_completed_layout_is_not_reapplied_on_next_login) ... ok
+test_missing_seed_never_marks_layout_complete (test_iso_first_login.FirstLoginCompletionTests.test_missing_seed_never_marks_layout_complete) ... ok
+test_native_setup_system_user_is_not_seeded_or_given_state (test_iso_first_login.FirstLoginCompletionTests.test_native_setup_system_user_is_not_seeded_or_given_state) ... ok
+test_places_timeout_leaves_marker_absent_and_next_login_retries (test_iso_first_login.FirstLoginCompletionTests.test_places_timeout_leaves_marker_absent_and_next_login_retries) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.013s
+
+OK

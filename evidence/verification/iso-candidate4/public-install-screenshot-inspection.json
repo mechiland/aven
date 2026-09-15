@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "inspected_at": "2026-09-15T11:19:51.301169+00:00",
+  "iso_sha256": "f3f1a37faf9aee5665c953843ffdcb23ae21ed5f96d00c698234f791e36c9eb4",
+  "frames": [
+    {
+      "image": "evidence/verification/iso-candidate4/uefi-installer-welcome.png",
+      "sha256": "dfa51811faae2d025a34f16ec5c846df941722724130af8ab55bf05a8d6cd0e8",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native Fedora44 language welcome page visibly rendered. UEFI mode is attributed to the integrator firmware workflow, not inferred from the welcome pixels."
+    },
+    {
+      "image": "evidence/verification/iso-candidate4/public-disk-selection.png",
+      "sha256": "4c7d4c4518485ff9771ea936d6b9e65b1411343bbd2790cf4d41e3e35ca6f2dc",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native Anaconda Installation Destination shows only one fresh48GiB Virtio vda selected, default Automatic storage and visible custom/encryption choices."
+    },
+    {
+      "image": "evidence/verification/iso-candidate4/public-install-complete.png",
+      "sha256": "d181c95eb15d97b7425409216a7366d9711fe740f269fecb708a8b4a1332c853",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native Anaconda displays Complete, successful installation text and Reboot System. This proves the installer completion state, not yet working Aven first login."
+    },
+    {
+      "image": "evidence/verification/iso-candidate4/installed-rtc-before-first-boot.png",
+      "sha256": "d1ad01614b2358ca3b07d0903b8cc95313daad2e2befefbd5a959d9d33ab5fe6",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Installer tty shows an evidence-only copy of /tmp/aven-post.log to /mnt/sysroot/var/log/aven-install.log and cat /mnt/sysroot/etc/adjtime returning LOCAL. No clock-value edit is shown. Matching the subsequent VM RTC mode and actual guest time remain separate observations."
+    }
+  ],
+  "operator_attestation": {
+    "installation_method": "Public UEFI native Anaconda UI with no private KS or kernel/initrd override.",
+    "test_disk": ".cache/iso-test/public-candidate4.qcow2",
+    "network": "Restricted; offline installation.",
+    "post_completion_instrumentation": "Only preservation of post-install log, read of adjtime, sync and clean poweroff reported before disk-only boot.",
+    "first_disk_boot": "Integrator reports --uefi --local-rtc, disk only, offline; actual runtime audit not yet available."
+  },
+  "visual_polish_scores": null,
+  "iso_boot_install_accepted": null
+}

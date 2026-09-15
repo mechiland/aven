@@ -1,0 +1,14 @@
+{
+  "guest_utc": "2026-09-15T11:30:56.066229+00:00",
+  "rtc": {
+    "exit_code": 0,
+    "stdout": "Timezone=Asia/Shanghai\nLocalRTC=yes\nNTPSynchronized=no\nTimeUSec=Tue 2026-09-15 19:30:56 CST\nRTCTimeUSec=Tue 2026-09-15 19:30:56 UTC\n",
+    "stderr": ""
+  },
+  "schema_version": 1,
+  "observer": "/root/verification",
+  "host_started_at": "2026-09-15T11:30:57.575769+00:00",
+  "host_finished_at": "2026-09-15T11:30:57.815747+00:00",
+  "method": "Read-only reader SSH query. Repeated timedatectl --property options replace an empty comma-property observation; no guest changes.",
+  "guest_minus_host_seconds": -1.629529
+}

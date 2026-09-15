@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "inspected_at": "2026-09-15T11:31:32.118097+00:00",
+  "iso_sha256": "f3f1a37faf9aee5665c953843ffdcb23ae21ed5f96d00c698234f791e36c9eb4",
+  "frames": [
+    {
+      "image": "evidence/verification/iso-candidate4/first-desktop.png",
+      "sha256": "b7965e6ae17d2e3db63270b87fa7be4fdde6f0eec6e6b293b7dcd7ce9d82ff74",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Automatic first desktop visibly has Aven green/cream wallpaper and centered panel. Integrator captured before private SSH instrumentation or manual profile changes. English desktop alone is not Chinese typography proof."
+    },
+    {
+      "image": "evidence/verification/iso-candidate4/first-dolphin-home.png",
+      "sha256": "0b3db6262d4f8027cf0f5a555608a2f8c3b361ff54379162534f9159725111d8",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native fresh Dolphin Home shows Home/Documents/Downloads/Pictures/Trash, Network and Recent Files. The blank immutable-root capacity bar and separate boot device are absent. Shared fedora_fedora data volume remains visible. Integrator captured before private SSH instrumentation or manual profile changes."
+    },
+    {
+      "image": "evidence/verification/iso-candidate4/native-first-user-complete.png",
+      "sha256": "655b3586eacfb64136615a40d343bedbdd41988f6dba9f4b8e038cfdd4972cb2",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Unchanged Fedora Plasma Setup displays Completed and Finish. reader UID1000 and first-login markers independently corroborate subsequent account use."
+    },
+    {
+      "image": "evidence/verification/iso-candidate4/files-sc-grid.png",
+      "sha256": "a17d201e5891a306967e0ca2ca7283b5785df7558df2e66b1a721f7b952fb46e",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Chinese native Dolphin grid shows mixed files and real thumbnails. Focused Places list retains the shared user-data volume while immutable-root/boot clutter remains hidden. This single interface frame is not a SC/TC paragraph or scaling-matrix pass."
+    }
+  ],
+  "visual_polish_scores": null,
+  "second_boot_pending": true,
+  "last_inspected_at": "2026-09-15T11:32:56.703873+00:00"
+}

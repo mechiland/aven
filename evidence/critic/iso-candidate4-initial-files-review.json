@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-15T11:35:07.243168+00:00",
+  "reviewer": "/root/critic",
+  "candidate": 4,
+  "scope": "First desktop, untouched first Home and untouched first Chinese Everyday details state only. No guest UI input or source changes.",
+  "frames": [
+    {
+      "image": "evidence/verification/iso-candidate4/first-desktop.png",
+      "sha256": "b7965e6ae17d2e3db63270b87fa7be4fdde6f0eec6e6b293b7dcd7ce9d82ff74",
+      "inspected_by": "/root/critic",
+      "resolution": "original",
+      "notes": "The broad jade/cream wallpaper, short light panel and native app identities match the accepted desktop silhouette. Different tray/clock state is expected. This English desktop frame does not establish Chinese typography quality."
+    },
+    {
+      "image": "evidence/verification/iso-candidate4/first-dolphin-home.png",
+      "sha256": "0b3db6262d4f8027cf0f5a555608a2f8c3b361ff54379162534f9159725111d8",
+      "inspected_by": "/root/critic",
+      "resolution": "original",
+      "notes": "Untouched fresh-user Home is compact and readable. Places contains Home, Documents, Downloads, Pictures, Trash, Network and Recent Files, with only fedora_fedora visible under Devices. The unnamed red capacity bar and 2.0 GiB internal volume are absent. Eight empty native Home folders are expected for a new user, unlike the populated historical fixture account. No clipping in the English labels/columns is visible."
+    },
+    {
+      "image": "evidence/verification/iso-candidate4/files-sc-list-initial.png",
+      "sha256": "8a95eb5a17896a342f332b91eeb3478dfd9478644356f6daa14c9b9498846f09",
+      "inspected_by": "/root/critic",
+      "resolution": "original",
+      "notes": "Untouched initial SC Everyday details view uses approximately 26 px rows and tiny thumbnails, versus approximately 36 px in accepted primary round 04. Chinese/Latin labels remain full-size, readable and unclipped; alternating rows and aligned dates/size columns remain easy to follow. The sidebar is focused and the breadcrumb begins with localized 文档. The smaller images are less useful for recognizing particular photos, and the list has less breathing room. This is a visible nonblocking reduction in refinement, not a product-bar failure by itself."
+    }
+  ],
+  "direct_reference": {
+    "image": "evidence/aven/round-04/files-list-1x.png",
+    "sha256": "fc875bb690eeed86c5e87cd84fdca60ac12a7fdc2c583244871fc158989f4c95",
+    "reopened_original_in_this_review": true
+  },
+  "stock_reference": "evidence/stock/round-00/files-list-1x.png",
+  "stock_reference_reopened_in_preparation": "evidence/critic/iso-reference-review.json",
+  "judgment": {
+    "initial_details_density_material_failure": false,
+    "within_focused_product_bar_as_compact_details_state": true,
+    "rebuild_required_for_density_alone": false,
+    "rationale": "The reduced whitespace and tiny thumbnails lower visual comfort relative to the accepted primary list, but 15 px-class labels still have adequate separation, rows remain distinguishable and file identification/navigation remain clear. The corrected sidebar and localized breadcrumb recover the significant first-user regression. No observed clipping, broken alignment or impaired interaction target warrants treating row density alone as a release-blocking visual failure.",
+    "record_as_nonblocking": "First-open density differs from the later preview-sized details state. Preserve both actual captures and do not substitute the later state as the original default.",
+    "preferred_polish": "A consistent approximately 36 px details state would be closer to the accepted primary reference, if achievable through a small native fix. This preference is not an instruction to modify or rebuild before remaining evidence is inspected."
+  },
+  "candidate4_full_scores": null,
+  "candidate4_full_pass": null,
+  "pending": [
+    "actual C4 grid/returned details states",
+    "preview",
+    "Firefox",
+    "Thunderbird",
+    "Gwenview",
+    "verification/provenance results"
+  ]
+}

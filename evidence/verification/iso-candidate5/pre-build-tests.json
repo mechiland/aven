@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-09-15T11:49:12.945834+00:00",
+  "candidate": "candidate5 pre-build",
+  "suites": [
+    {
+      "suite": "preview",
+      "tests": 15,
+      "pass": true,
+      "python": "/tmp/aven-preview-venv/bin/python",
+      "log": "evidence/verification/iso-candidate5/preview-tests.txt",
+      "sha256": "a11f1ce91a1e95507a8e6ce15757877a52eb033a7e5ed017289b920a16c4c5bb"
+    },
+    {
+      "suite": "files",
+      "tests": 26,
+      "pass": true,
+      "python": "python3",
+      "log": "evidence/verification/iso-candidate5/files-tests.txt",
+      "sha256": "473c6d30ed868640c6e7a4f94593f5cdb6107a7f5776101318861ccab070ba80"
+    },
+    {
+      "suite": "verification",
+      "tests": 88,
+      "pass": true,
+      "python": "python3",
+      "log": "evidence/verification/iso-candidate5/verification-tests.txt",
+      "sha256": "737d1eb28c4ae6d94e86a54e79accb2b938ccf2ee9cb19a5eaaa5a5a310fab58"
+    }
+  ],
+  "initial_environment_probe": "System python3 has no PySide6; GUI suite rerun using existing /tmp/aven-preview-venv/bin/python."
+}

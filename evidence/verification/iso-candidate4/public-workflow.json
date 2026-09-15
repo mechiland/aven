@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "iso_sha256": "f3f1a37faf9aee5665c953843ffdcb23ae21ed5f96d00c698234f791e36c9eb4",
+  "bios_optical_boot": true,
+  "uefi_optical_boot": true,
+  "installation_method": "Public ISO booted through UEFI optical firmware; native Anaconda GUI selections; no kernel/initrd/Kickstart override",
+  "test_disk": ".cache/iso-test/public-candidate4.qcow2",
+  "network": "QEMU user networking restrict=on; guest internet blocked",
+  "selected_storage": "Only fresh 48 GiB Virtio disk; default automatic partitioning",
+  "locale": "en_US.UTF-8",
+  "keyboard": "us",
+  "timezone": "Asia/Shanghai",
+  "clock_selection": "Native manual clock selected because restricted guest has no NTP; time values left at displayed 19:04 local, not edited",
+  "account_creation": "Native Plasma Setup completed: reader administrator, private test password chosen interactively; no injected accounts",
+  "installation": "complete",
+  "host_updated_at": "2026-09-15T11:23:24.523722+00:00",
+  "first_disk_boot": {
+    "uefi": true,
+    "iso_attached": false,
+    "rtc": "base=localtime to match installed LOCAL",
+    "network": "restrict=on"
+  }
+}

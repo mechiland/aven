@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "host_started_at": "2026-09-15T11:47:40.425099+00:00",
+  "host_finished_at": "2026-09-15T11:47:40.588867+00:00",
+  "exit_code": 0,
+  "stderr": "",
+  "method": "Read-only reader SSH hash query; verification agent did not modify the guest.",
+  "guest_files": {
+    "/var/home/reader/.local/libexec/aven-preview/aven_preview/app.py": {
+      "sha256": "99d794d2c9f148d164b979547dd839cd41906a5b219434a9f3cc21bf7366a695",
+      "bytes": 19461
+    },
+    "/var/lib/aven/source/preview/aven_preview/app.py": {
+      "sha256": "e644488eecedf8b8efa4b03ecbdb2ed169723b6719d441ca294c848e3e9835cf",
+      "bytes": 17557
+    }
+  },
+  "host_current_fix": {
+    "path": "preview/aven_preview/app.py",
+    "sha256": "99d794d2c9f148d164b979547dd839cd41906a5b219434a9f3cc21bf7366a695"
+  }
+}

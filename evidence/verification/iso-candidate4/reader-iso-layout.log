@@ -1,0 +1,55 @@
+
+{
+  "complete": true,
+  "device_inventory_ready": true,
+  "attempts": 3,
+  "system_devices": [
+    {
+      "udi": "/org/kde/fstab/overlay/",
+      "uuid": "",
+      "mount": "/",
+      "reason": "read-only Atomic root"
+    },
+    {
+      "udi": "/org/freedesktop/UDisks2/block_devices/vda1",
+      "uuid": "6d2f-016d",
+      "mount": "/boot/efi",
+      "reason": "fixed system boot volume"
+    },
+    {
+      "udi": "/org/freedesktop/UDisks2/block_devices/vda2",
+      "uuid": "0bbaf22a-beee-4410-ac42-ef0f70e7274e",
+      "mount": "/boot",
+      "reason": "fixed system boot volume"
+    }
+  ],
+  "changed": true,
+  "hidden_system_items": [
+    "Desktop",
+    "Music",
+    "Videos",
+    "Recent Locations"
+  ],
+  "hidden_system_devices": [
+    {
+      "udi": "/org/kde/fstab/overlay/",
+      "uuid": "",
+      "mount": "/",
+      "reason": "read-only Atomic root"
+    },
+    {
+      "udi": "/org/freedesktop/UDisks2/block_devices/vda1",
+      "uuid": "6d2f-016d",
+      "mount": "/boot/efi",
+      "reason": "fixed system boot volume"
+    },
+    {
+      "udi": "/org/freedesktop/UDisks2/block_devices/vda2",
+      "uuid": "0bbaf22a-beee-4410-ac42-ef0f70e7274e",
+      "mount": "/boot",
+      "reason": "fixed system boot volume"
+    }
+  ],
+  "device_discovery_error": null,
+  "ownership_record": "/var/home/reader/.local/state/aven/places/20260915T112331.767069Z-1b9bba14e0be.json"
+}

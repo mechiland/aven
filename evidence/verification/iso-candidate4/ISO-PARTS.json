@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "iso": {
+    "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso",
+    "bytes": 7890075648,
+    "sha256": "f3f1a37faf9aee5665c953843ffdcb23ae21ed5f96d00c698234f791e36c9eb4"
+  },
+  "parts": [
+    {
+      "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-000",
+      "bytes": 1992294400,
+      "sha256": "03dd800a12cdbc527830d6a5e33ff3b84a653227ed8daf8c9c6435edc6f6674f"
+    },
+    {
+      "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-001",
+      "bytes": 1992294400,
+      "sha256": "223f14d7dbc9b5548889764f1eb356f682ea5d93b6616730e99f1499cf446fd1"
+    },
+    {
+      "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-002",
+      "bytes": 1992294400,
+      "sha256": "a17cf2e87d843a286532d5725ee55530330fa133d21784c2f5f2dc7272b33dac"
+    },
+    {
+      "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-003",
+      "bytes": 1913192448,
+      "sha256": "6b41bd0110feae0d55097e8abb91768963723aae9ef7d45222f95243b7b9d799"
+    }
+  ]
+}

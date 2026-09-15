@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "host_collected_at": "2026-09-15T10:56:14.450203+00:00",
+  "observer": "/root/verification",
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "verification/tests",
+    "-p",
+    "test_iso_first_login.py",
+    "-v"
+  ],
+  "returncode": 0,
+  "tests": 4,
+  "runtime_scope": "Host temporary homes and mocked desktop commands; no guest mutation or actual first-login success inferred.",
+  "sources": {
+    "iso/first-login.py": "f97df911937ee2ede9b0ddb975371ba087fbd7e8c431647a437c239a30583b61",
+    "verification/tests/test_iso_first_login.py": "884ba71021872d0e4b959d2f8c346f36ed99c05ddc238b7bc90e4bf19c3c4a5f",
+    "files/finalize_places.py": "a88ccd99e54178c78776c37e2d0cdde559168ee698f3b45a366201454d6a3472",
+    "files/system_places.py": "6331a48ac881c92186c430e99dc844559f6627e152eb7cc996d1b3e324f98cf8"
+  }
+}

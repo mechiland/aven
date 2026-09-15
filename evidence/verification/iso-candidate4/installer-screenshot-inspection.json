@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "inspected_at": "2026-09-15T10:57:46.535260+00:00",
+  "iso_sha256": "f3f1a37faf9aee5665c953843ffdcb23ae21ed5f96d00c698234f791e36c9eb4",
+  "frames": [
+    {
+      "image": "evidence/verification/iso-candidate4/bios-installer-welcome.png",
+      "sha256": "dfa51811faae2d025a34f16ec5c846df941722724130af8ab55bf05a8d6cd0e8",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native Fedora44 language welcome visibly rendered. BIOS firmware attribution comes from the integrator boot workflow, not pixels alone."
+    }
+  ],
+  "visual_polish_scores": null
+}

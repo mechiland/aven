@@ -1,0 +1,1755 @@
+{
+  "schema_version": 1,
+  "guest_collected_at": "2026-09-15T11:29:18.124809+00:00",
+  "mode": "records",
+  "user": "reader",
+  "uid": 0,
+  "home": "/var/home/reader",
+  "method": "Read-only Python stdin stream; no GUI, cache rebuilds or guest files written.",
+  "files": {
+    "/var/lib/aven/installation.json": {
+      "sha256": "5dd70d695fd701242840839f4a6dc5a25069330b968568544794ac196fd54bb6",
+      "bytes": 27236,
+      "mtime_ns": 1789470678675725152,
+      "uid": 0,
+      "mode": "0o644",
+      "evidence_file": "evidence/verification/iso-candidate4/installation-record.json",
+      "evidence_sha256": "5dd70d695fd701242840839f4a6dc5a25069330b968568544794ac196fd54bb6"
+    },
+    "/var/log/aven-install.log": {
+      "sha256": "e923566f32a3d0563ea6545e94242fb0768d6e7fe5122ba19892bf6c90d97695",
+      "bytes": 2098,
+      "mtime_ns": 1789471064775683097,
+      "uid": 0,
+      "mode": "0o600",
+      "evidence_file": "evidence/verification/iso-candidate4/aven-install.log",
+      "evidence_sha256": "e923566f32a3d0563ea6545e94242fb0768d6e7fe5122ba19892bf6c90d97695"
+    },
+    "/var/home/reader/.local/share/user-places.xbel": {
+      "sha256": "7a8865d34782d2bf6b63789074cd308e8bd9104ce092648ee9ef18968e1ff324",
+      "bytes": 5762,
+      "mtime_ns": 1789471411772511898,
+      "uid": 1000,
+      "mode": "0o644",
+      "evidence_file": "evidence/verification/iso-candidate4/reader-user-places.xbel",
+      "evidence_sha256": "7a8865d34782d2bf6b63789074cd308e8bd9104ce092648ee9ef18968e1ff324"
+    },
+    "/var/home/reader/.local/state/aven/iso-seed-v1.json": {
+      "sha256": "d2695a976fd163010d56a3bd0928b7b4d282ab57501d31f9d06810949a2fbf84",
+      "bytes": 165,
+      "mtime_ns": 1789471407204435286,
+      "uid": 1000,
+      "mode": "0o644",
+      "evidence_file": "evidence/verification/iso-candidate4/reader-iso-seed-v1.json",
+      "evidence_sha256": "d2695a976fd163010d56a3bd0928b7b4d282ab57501d31f9d06810949a2fbf84"
+    },
+    "/var/home/reader/.local/state/aven/iso-layout-v1.json": {
+      "sha256": "6052311e92f00b308c0c72abeb5b69de3f02885c5e1b5612d5febf8fd527152a",
+      "bytes": 167,
+      "mtime_ns": 1789471411792862010,
+      "uid": 1000,
+      "mode": "0o644",
+      "evidence_file": "evidence/verification/iso-candidate4/reader-iso-layout-v1.json",
+      "evidence_sha256": "6052311e92f00b308c0c72abeb5b69de3f02885c5e1b5612d5febf8fd527152a"
+    },
+    "/var/home/reader/.local/state/aven/iso-seed.log": {
+      "sha256": "2a0e57e4b2c7bf549cfe9606a79895f7dc8bdc1bf384d4331ee0de44e7eed305",
+      "bytes": 7955,
+      "mtime_ns": 1789471407182862010,
+      "uid": 1000,
+      "mode": "0o644",
+      "evidence_file": "evidence/verification/iso-candidate4/reader-iso-seed.log",
+      "evidence_sha256": "2a0e57e4b2c7bf549cfe9606a79895f7dc8bdc1bf384d4331ee0de44e7eed305"
+    },
+    "/var/home/reader/.local/state/aven/iso-layout.log": {
+      "sha256": "76565860857c78abeeb7e955d96578daa189eae6ab9e394b7d76233459a2ff8b",
+      "bytes": 1385,
+      "mtime_ns": 1789471411780862010,
+      "uid": 1000,
+      "mode": "0o644",
+      "evidence_file": "evidence/verification/iso-candidate4/reader-iso-layout.log",
+      "evidence_sha256": "76565860857c78abeeb7e955d96578daa189eae6ab9e394b7d76233459a2ff8b"
+    },
+    "/var/home/reader/.local/state/aven/places/20260915T112331.767069Z-1b9bba14e0be.json": {
+      "sha256": "dbbfc9285d62082901af7accf906840466ef75028dff0168f911555e8396a711",
+      "bytes": 2635,
+      "mtime_ns": 1789471411767277530,
+      "uid": 1000,
+      "mode": "0o400",
+      "evidence_file": "evidence/verification/iso-candidate4/places-20260915T112331.767069Z-1b9bba14e0be.json",
+      "evidence_sha256": "dbbfc9285d62082901af7accf906840466ef75028dff0168f911555e8396a711"
+    }
+  },
+  "source_files": {
+    "browser/chrome/userChrome.css": {
+      "sha256": "71d7ab00fe28e5ff0d9adf07f21136a5dd2c4bf9eedf164df695198c2c7dd040",
+      "bytes": 1082,
+      "mtime_ns": 1789450815000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "browser/install.py": {
+      "sha256": "ec7ede8a3929c652996ec716de47173dcb87945ce4025864f6806e895bf0c70a",
+      "bytes": 6872,
+      "mtime_ns": 1789450815000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "files/aven-preview.desktop": {
+      "sha256": "e3fe9c890c2dec066b12483de5f48a25c8cea88d6891ffdd20f77d3eeb06f401",
+      "bytes": 327,
+      "mtime_ns": 1789461168000000000,
+      "uid": 0,
+      "mode": "0o775"
+    },
+    "files/dolphinrc": {
+      "sha256": "bdb0022ffdf18cf7fec3fb99ac211387a8bb22281fa4fab03443622b37dc3382",
+      "bytes": 955,
+      "mtime_ns": 1789443965000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "files/finalize-places.py": {
+      "sha256": "d3e92a336a203c8b2d0841de0bf7087bc7fb5676f8d0eb9ac5ba8e5752b39bcb",
+      "bytes": 193,
+      "mtime_ns": 1789469215000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "files/finalize_places.py": {
+      "sha256": "a88ccd99e54178c78776c37e2d0cdde559168ee698f3b45a366201454d6a3472",
+      "bytes": 4144,
+      "mtime_ns": 1789469215000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "files/first-login.md": {
+      "sha256": "b423f7a45a73a3980534493d239427237bb781861fea375d5da8b3a314872ad1",
+      "bytes": 2406,
+      "mtime_ns": 1789469319000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "files/install.py": {
+      "sha256": "c015487ffc67681f1b0735c567d02b0b3140b664418acdd36901b3142e635cc5",
+      "bytes": 7099,
+      "mtime_ns": 1789448826000000000,
+      "uid": 0,
+      "mode": "0o775"
+    },
+    "files/integration.json": {
+      "sha256": "57013575131a1a1dcfc61e84d944a4205691a0242cbb3ad07c1631660d8681e9",
+      "bytes": 3042,
+      "mtime_ns": 1789453283000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "files/layout.py": {
+      "sha256": "c54a0f08b0af1c498727c185219ea76a19375c3e58710feebe26b54bb3d368b2",
+      "bytes": 3699,
+      "mtime_ns": 1789461168000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "files/org.aven.Preview.desktop": {
+      "sha256": "45f9f539d08646672644fbb8aa4c442c948c65784558b0d4285edafe14cb96ba",
+      "bytes": 187,
+      "mtime_ns": 1789461168000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "files/places-records.md": {
+      "sha256": "52a9694f778e03722b6df898519b3c51737b8d1d159e332dd78e8e118798ae6e",
+      "bytes": 2911,
+      "mtime_ns": 1789453283000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "files/places.py": {
+      "sha256": "1afa16455179a3560cfd73d8c872affae92be4a6e2e255f5724698ddb5ea0efb",
+      "bytes": 8109,
+      "mtime_ns": 1789453183000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "files/round-03.md": {
+      "sha256": "767abdf0596b53e10da33129167c8683aa49b7742e73f6aff43bd185f90a61e9",
+      "bytes": 4567,
+      "mtime_ns": 1789451662000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "files/system_places.py": {
+      "sha256": "6331a48ac881c92186c430e99dc844559f6627e152eb7cc996d1b3e324f98cf8",
+      "bytes": 6419,
+      "mtime_ns": 1789469215000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "files/tests/smoke_layout.py": {
+      "sha256": "dd518e904d78cd3753f62eed4e11ad9759d7df3d817a0577ac08f09b1e3c5e88",
+      "bytes": 3299,
+      "mtime_ns": 1789446314000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "files/tests/test_finalize_places.py": {
+      "sha256": "6b6bb3e8d6267b3ece86f70792227860d0366628586e95de396caa8536a29b33",
+      "bytes": 8562,
+      "mtime_ns": 1789469319000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "files/tests/test_places.py": {
+      "sha256": "27a9ff9df131790e7cc67bde4db1c16587f0693d2171cba8cc5afab681be3e06",
+      "bytes": 10452,
+      "mtime_ns": 1789453234000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "files/tests/test_shortcut.py": {
+      "sha256": "97b8dc218ae00597129270436e90f3026e9b9872d19e1eeee86c10d90764d48b",
+      "bytes": 3225,
+      "mtime_ns": 1789448826000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/browser/index.html": {
+      "sha256": "dc098fee7faa69c9ea44d60e428a17d35ae18df61d53bb119526546f61c2e6cc",
+      "bytes": 2913,
+      "mtime_ns": 1789444073000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/browser/reading.css": {
+      "sha256": "627944189c4b5786d3fa1d2963602f1d8832d35572ae4264bf4006d5819c2594",
+      "bytes": 3222,
+      "mtime_ns": 1789444073000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/browser/traditional.html": {
+      "sha256": "d9a0d6e37689bb8677ad8d057f7e7df46bebaa63387a041342a249a8b052fb79",
+      "bytes": 2841,
+      "mtime_ns": 1789444073000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/browser/周末路线.txt": {
+      "sha256": "4372c686ff8ad721173bb63d024a3c685b0d12b0f14f0942d09598a336ef6fee",
+      "bytes": 428,
+      "mtime_ns": 1789444073000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/documents/weekend.html": {
+      "sha256": "85c051b8cc96ef8fe831710036d4c15faad909e2984673c57e583761f01692d3",
+      "bytes": 1901,
+      "mtime_ns": 1789443956000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/documents/周末散步计划.pdf": {
+      "sha256": "8f0cd198962d6803233ec2883fa7b1473520e0e750de4a20f5e5a14f438f4a8a",
+      "bytes": 266857,
+      "mtime_ns": 1789443957000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/mail/messages.json": {
+      "sha256": "650710fdfa35c6c56dc1684df0f96e5edb9df506eb44c9809af9ab96c977db35",
+      "bytes": 3917,
+      "mtime_ns": 1789444056000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos/00-地出-Earthrise.jpg": {
+      "sha256": "b0cd972974f71b36164dbc5c1dc8808ed5bcddbf09de3adebb40c559b99a1e4d",
+      "bytes": 86108,
+      "mtime_ns": 1789444202000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos/01-瀑布横幅-EXIF-1.jpg": {
+      "sha256": "a23b1b0eac8c5ee5ae0373d07984b8d57df152e6be363d2ab77b304285bcad81",
+      "bytes": 347327,
+      "mtime_ns": 1789444098000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos/02-瀑布竖幅-EXIF-1.jpg": {
+      "sha256": "2d8247813c4cedbfcbec5205963655cce449a0286399c5a0128fae4dc9ec50ce",
+      "bytes": 245684,
+      "mtime_ns": 1789444099000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos/03-旋转方向-EXIF-6.jpg": {
+      "sha256": "9b344e9f0c869d8637ea22e672df9451d8d3cc1d2d0b291af3b284e538e5f124",
+      "bytes": 352727,
+      "mtime_ns": 1789444099000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos/04-透明色阶-Transparency.png": {
+      "sha256": "756a03364c02e3c9f85d6f4029eb3cef2488c081dc537d46e102bebcb9e02732",
+      "bytes": 184,
+      "mtime_ns": 1789444101000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos/05-花开-Flower.webm": {
+      "sha256": "c6f8a348953395598a9a73b9bab1676436410797bce9f398f4be1531d6e76dda",
+      "bytes": 554058,
+      "mtime_ns": 1789444100000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos/ATTRIBUTION.md": {
+      "sha256": "3376c10a289ec6b6dd97ca0552f91a29c6feb16bcf7be6f419c32fdb6ce9f292",
+      "bytes": 2354,
+      "mtime_ns": 1789444422000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos/LICENSE-exif.txt": {
+      "sha256": "eda2673fc728b46a07d2f56f9165a6cd5190bf0bd008475992227f97cad463c8",
+      "bytes": 1085,
+      "mtime_ns": 1789444097000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos/LICENSE-mdn.txt": {
+      "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+      "bytes": 6555,
+      "mtime_ns": 1789444202000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos/LICENSE-pngsuite.txt": {
+      "sha256": "5cb922e144816a1a3a33183ecdda7d989374cacc70d1084fa542680dcfe5fd16",
+      "bytes": 2784,
+      "mtime_ns": 1789444102000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos/manifest.json": {
+      "sha256": "a5b4733d6f17856abf4ed13073935bb9db82b050132f8f2a7bd40826de67be45",
+      "bytes": 4187,
+      "mtime_ns": 1789444334000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos-album/01-春日小径.jpg": {
+      "sha256": "08720ef697439905eddb2f4d475c120dec182f8fbc152d6fd7b9ab7ed7f5929b",
+      "bytes": 503711,
+      "mtime_ns": 1789447650000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos-album/02-湖畔树林.jpg": {
+      "sha256": "397debf7b3449182b8cb6db38a9e65a082547fd5fd95d7eb176fc451cf9a960e",
+      "bytes": 424474,
+      "mtime_ns": 1789447650000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos-album/03-庭院倒影.jpg": {
+      "sha256": "17d6d16f26aa72ea62e7eced1eb72fdfa4b32ba9058a39afd2700e052f5e1b5f",
+      "bytes": 476139,
+      "mtime_ns": 1789447652000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos-album/04-枯山水.jpg": {
+      "sha256": "aec11aa2593fe477c2f9a5ccc51283761795de47fc2a26215973191a6170f93f",
+      "bytes": 409197,
+      "mtime_ns": 1789447649000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos-album/05-桥边樱花.jpg": {
+      "sha256": "b0d14c4bf9b468d98bca79884f1623875d0b14ded84d271b016d34c1d8a62e56",
+      "bytes": 382392,
+      "mtime_ns": 1789447652000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos-album/06-山间河流.jpg": {
+      "sha256": "e7f63711ac3703ef4f11f3764093dc94cef41adc244843e4d6e4a47a935e2dc5",
+      "bytes": 316773,
+      "mtime_ns": 1789447652000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos-album/07-岚山街角.jpg": {
+      "sha256": "c7d340abb607219099f6eb17946e9ec0a4a013752b6fccba4a9f09d1bd2dba48",
+      "bytes": 302107,
+      "mtime_ns": 1789447655000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos-album/08-京都小巷.jpg": {
+      "sha256": "25c5b12e1d63ee11a8f3d4853bf888a0db6dc67ed281be69b1f4eaaf15dfd159",
+      "bytes": 94849,
+      "mtime_ns": 1789447655000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos-album/ATTRIBUTION.md": {
+      "sha256": "94c952fba61f3ddc8dccd2fed98f5a3ffce0d6cac2113b34247464ee0e17818e",
+      "bytes": 2873,
+      "mtime_ns": 1789447755000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos-album/LICENSE-CC0.txt": {
+      "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+      "bytes": 6555,
+      "mtime_ns": 1789444202000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/photos-album/manifest.json": {
+      "sha256": "4d8a4c35f8a904f7c101f2dac42ee5de1118b08bd87a26f920178cb9b6b1bed7",
+      "bytes": 9101,
+      "mtime_ns": 1789447755000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/typography/specimen.html": {
+      "sha256": "ff6f9644427439f80bd3b9f0825ec9542ed2d41dfcddb28b9fe54a6f68c9a6b5",
+      "bytes": 9640,
+      "mtime_ns": 1789448470000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/typography/简体中文与Latin.txt": {
+      "sha256": "5b64d420a1df1de7b09e3df587d523dc8aabcbd1ca1c817e70cf9d8cabd47e68",
+      "bytes": 1154,
+      "mtime_ns": 1789443664000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "fixtures/typography/繁體中文與Latin.txt": {
+      "sha256": "1eb8d751d0c0e29d9cb15c11bd634b265b3ed566776e7c59afe11e931698b0e6",
+      "bytes": 1131,
+      "mtime_ns": 1789443695000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "integration/apply-profile.py": {
+      "sha256": "28790b711f0fe58ebb90d9b6fd2c8a32f1fd2936a9ba3ba83f0bde59323260cc",
+      "bytes": 4389,
+      "mtime_ns": 1789461264000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "integration/apply.py": {
+      "sha256": "dc5d96828f78c3c08aca5bdd63306337c2e9f097d6d61d5e158eb9157a7879bd",
+      "bytes": 7077,
+      "mtime_ns": 1789448772000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "integration/native-apps.py": {
+      "sha256": "b0aba828a9aa58b5e3765cb989aa4ddd2df3b152f29f2d2ac7140dcdd1b3bf51",
+      "bytes": 1690,
+      "mtime_ns": 1789446741000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "integration/plasma-layout.js.in": {
+      "sha256": "363e897b799122d446cc6fa5b1ba6a07cc7e3ef3cb050ff9b4971a7da29e8fab",
+      "bytes": 1490,
+      "mtime_ns": 1789450815000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "integration/prepare-packages.py": {
+      "sha256": "627ecf8f72434716ae84d3e0115e73cf75a61206a72f90f13f47bd15601f1407",
+      "bytes": 1893,
+      "mtime_ns": 1789446514000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "iso/aven-layout.desktop": {
+      "sha256": "57305c3225301eea88ae289cb013cb5271ad0c6f5261c06c04faf653cd4f602e",
+      "bytes": 184,
+      "mtime_ns": 1789461264000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "iso/aven-profile.sh": {
+      "sha256": "8b46f10d6660011d950207890c15c3b2f9f8692dc4870a2f72128d74cc9ff26e",
+      "bytes": 272,
+      "mtime_ns": 1789461264000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "iso/aven.ks": {
+      "sha256": "ed258f67ac5c109b50ad201a09ea3a07005d56f441a63e9b0ea1bbb15b5b2e02",
+      "bytes": 420,
+      "mtime_ns": 1789461484000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "iso/first-login.py": {
+      "sha256": "f97df911937ee2ede9b0ddb975371ba087fbd7e8c431647a437c239a30583b61",
+      "bytes": 3691,
+      "mtime_ns": 1789469110000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "iso/install-target.py": {
+      "sha256": "a1410e89e6a1b13ce623ae5ccd44fa19ed89fae9e8aa8f0531a8aac867e37b12",
+      "bytes": 5876,
+      "mtime_ns": 1789462571000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "iso/platform.json": {
+      "sha256": "ee39fcd000f16071ce8d35c61ce003c857d4dbc566bb568bf927aeb1c30cf369",
+      "bytes": 759,
+      "mtime_ns": 1789461484000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "mail/chrome/userChrome.css": {
+      "sha256": "51a8700fbc055724cbedf6768cd310b5ba01236a44059d3b34bae05155d53d20",
+      "bytes": 3117,
+      "mtime_ns": 1789451029000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "mail/chrome/userContent.css": {
+      "sha256": "53b809d08cc8f7a6c149739fea0e24d4b32d8d121f038daca2921d8ca79351a9",
+      "bytes": 2094,
+      "mtime_ns": 1789452953000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "mail/install.py": {
+      "sha256": "19d8f24a3f94aa5f588f7d124dcc0a9895af928b230a93476335ec6cae3847ba",
+      "bytes": 4267,
+      "mtime_ns": 1789450815000000000,
+      "uid": 0,
+      "mode": "0o775"
+    },
+    "mail/integration.json": {
+      "sha256": "aea17213c7d9faac397fee74bb5721ddc3059845b750c91eed384b5073af8c8d",
+      "bytes": 1199,
+      "mtime_ns": 1789444430000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "mail/profile.py": {
+      "sha256": "c5483d63410787855961fd5836e4441606609d8774d475e9931516b8a62d74dc",
+      "bytes": 9877,
+      "mtime_ns": 1789444203000000000,
+      "uid": 0,
+      "mode": "0o775"
+    },
+    "photos/audit.py": {
+      "sha256": "b2745dcc3696ab23051ee363a3389a365443a591efa7cf16eae08791e513e667",
+      "bytes": 3662,
+      "mtime_ns": 1789450815000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "photos/consumer-album.md": {
+      "sha256": "048c88b151870b457af2cafb8def1c9c9ecf0866ab45978aee6231af023a3d7a",
+      "bytes": 1619,
+      "mtime_ns": 1789447755000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "photos/copy-album.py": {
+      "sha256": "7ae7826d684d44cf31597f138bad32db8fc00a77ee97ed0d30d7ad518c83aa05",
+      "bytes": 2272,
+      "mtime_ns": 1789447755000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "photos/copy-fixtures.py": {
+      "sha256": "b9003e7aa804f3a5d6a223923d24886f3bb06a31c9b2e5fc8a9192ce673a17f0",
+      "bytes": 582,
+      "mtime_ns": 1789444304000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "photos/fedora-packages.txt": {
+      "sha256": "17d61e7156bf33b02a61f31a206587458d02d0ca15659b7c38f06057c0770cfd",
+      "bytes": 106,
+      "mtime_ns": 1789444304000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "photos/install.py": {
+      "sha256": "96d249da35db4f24e993705a516f07331d93d5eecc1eeb7dd1fcff7d2996b43f",
+      "bytes": 3352,
+      "mtime_ns": 1789444304000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "photos/profile.py": {
+      "sha256": "e45310b79c3c7b5afbad38265b52f022dd178646765d011c1b75aa0896269629",
+      "bytes": 2177,
+      "mtime_ns": 1789450815000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "photos/schema.json": {
+      "sha256": "1a864d0a619655077398570251c49c313ae910d4be663e6f7a7eef730ca6531b",
+      "bytes": 5382,
+      "mtime_ns": 1789450815000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "preview/aven-preview": {
+      "sha256": "f69dcb949fb2fc2c9884d72cf80be5ea9d53865161f3d5a9329dd38dc2c01fdd",
+      "bytes": 152,
+      "mtime_ns": 1789461168000000000,
+      "uid": 0,
+      "mode": "0o775"
+    },
+    "preview/aven_preview/__init__.py": {
+      "sha256": "0e28b1a87bcfa3e66bf7e2e9df4ef8a818f3e8fba1054d1ec579d24d55fb123b",
+      "bytes": 60,
+      "mtime_ns": 1789461168000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "preview/aven_preview/__main__.py": {
+      "sha256": "a67c172046323b0efcafe92cb83abc266d5dd4bc931d9312cde1b7bed50643db",
+      "bytes": 48,
+      "mtime_ns": 1789461168000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "preview/aven_preview/app.py": {
+      "sha256": "e644488eecedf8b8efa4b03ecbdb2ed169723b6719d441ca294c848e3e9835cf",
+      "bytes": 17557,
+      "mtime_ns": 1789451648000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "preview/aven_preview/core.py": {
+      "sha256": "b306dc366dac719584fc1f65d8458fc94191a0e06e8d3938d87d7d8859ce74ca",
+      "bytes": 3792,
+      "mtime_ns": 1789450857000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "preview/tests/smoke_qt.py": {
+      "sha256": "ee0666ec4a633bb63f226cee577070140617d392a500579b59ab2427398c1739",
+      "bytes": 4184,
+      "mtime_ns": 1789451648000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "preview/tests/test_core.py": {
+      "sha256": "73b0ad42f9fa9f89218757f549ffd0aa06c26a2c8cac1913370f525379c44c27",
+      "bytes": 3811,
+      "mtime_ns": 1789451029000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "typography/audit.py": {
+      "sha256": "cfc7d9504043b56a320a8df08e19a97a236732ccfcd2459aca668ee604104d33",
+      "bytes": 6063,
+      "mtime_ns": 1789443664000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "typography/aven-matrix-geometry.json": {
+      "sha256": "139e7ef8764b2043a19d05f05625820b8b14985447454944f22223866519b4ba",
+      "bytes": 41646,
+      "mtime_ns": 1789450764000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "typography/aven-matrix.json": {
+      "sha256": "e784321c5de039d26c5696f5777e70c1c30f849988085eeb595f8ef4118097a7",
+      "bytes": 33731,
+      "mtime_ns": 1789450907000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "typography/aven-round04-matrix-geometry.json": {
+      "sha256": "e3e6d3e73c108cbeeb18005edc82d386b2f8484c425e5c22db6857c120830f2e",
+      "bytes": 41615,
+      "mtime_ns": 1789456116000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "typography/aven-round04-matrix.json": {
+      "sha256": "2a9606cc520ff4515bb04c4444398ef66619fddcbc953d72af3c848cd4a0a7ed",
+      "bytes": 43096,
+      "mtime_ns": 1789456409000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "typography/aven-round04-process-locales.json": {
+      "sha256": "293269e277d131eb51444de15a3897b8edaf641774ef478dd2dc15237085c62f",
+      "bytes": 1200,
+      "mtime_ns": 1789455952000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "typography/aven-round04-restoration.json": {
+      "sha256": "3cf4361bf379488a2268b3bda6f96c7ee4172060bbbfa1e13f1ab789f90baa0f",
+      "bytes": 6725,
+      "mtime_ns": 1789456212000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "typography/fedora-packages.txt": {
+      "sha256": "6c5dd78d52a87397fe8bbbde1d439747ecc380612e4025d18e8a6c683f25cb3b",
+      "bytes": 228,
+      "mtime_ns": 1789443387000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "typography/fontconfig/60-aven-families.conf": {
+      "sha256": "049a4febfe4e49c3ba6f44052e42f8164d7c37d20c96c8e36be9a1a29b667845",
+      "bytes": 5034,
+      "mtime_ns": 1789443695000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "typography/fontconfig/99-aven-rendering.conf": {
+      "sha256": "81bc7c6ba7aa6beb635acacc24e309e511dccd567b2a0c8c758953af2ff4f66a",
+      "bytes": 1210,
+      "mtime_ns": 1789443387000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "typography/install.py": {
+      "sha256": "eea7c3cc229600c201368b2e5e459cd4b735533c83333c19b2986531fdcf23cf",
+      "bytes": 1071,
+      "mtime_ns": 1789443514000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "typography/roles.json": {
+      "sha256": "af1b644412557f79c9674b80641a18cf0e047abe0a1a01db76a8e839f9b20453",
+      "bytes": 1078,
+      "mtime_ns": 1789443514000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "typography/round04-capture-plan.json": {
+      "sha256": "9939307ac765a05b473840825b96172e072d5453d8eb4ead73236610c336d8d6",
+      "bytes": 13314,
+      "mtime_ns": 1789456409000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "typography/stock-matrix.json": {
+      "sha256": "c887c7e7225a8e8ec569a5d939f923c0cea6dca6dcabb73e49f93e6eafd527cd",
+      "bytes": 22336,
+      "mtime_ns": 1789450348000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/aven-round03-takeover.md": {
+      "sha256": "8fa0a9d815dc04cac9f6f15ea6ae54e7353ae0e0b5ed4e0723916ccf0a94eeb9",
+      "bytes": 4667,
+      "mtime_ns": 1789451418000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/aven-round04-takeover.md": {
+      "sha256": "547e57b723f484d4e79c151f76d139bce64733b89edfea21d1dd45113c82f9a3",
+      "bytes": 5775,
+      "mtime_ns": 1789455386000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/evidence_gate.py": {
+      "sha256": "e1e8896e24978eef6f5e988cc86cf9737f12c75a21d995c7cef1f547b3ddb49d",
+      "bytes": 20366,
+      "mtime_ns": 1789450222000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/file_operations.py": {
+      "sha256": "5dc68b76686bd53f5000a43aa8dad6b65c3454057019932ae823fe88ca760db2",
+      "bytes": 4087,
+      "mtime_ns": 1789444404000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/guest_probe.py": {
+      "sha256": "56cfdbb0eeb95d6adea2201a47420a4381959db29f5a95e8b7e18f6b75c65752",
+      "bytes": 12165,
+      "mtime_ns": 1789450320000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/iso-contract.md": {
+      "sha256": "822df25190d952c0f14741b2ca0ca7108db22495cf8ed35e831cc0915255687e",
+      "bytes": 9338,
+      "mtime_ns": 1789462521000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/iso_audit.py": {
+      "sha256": "7869b4ccc38f56c691927876fb1806996deb38a1e7e78bf261402fd46a9a509b",
+      "bytes": 12923,
+      "mtime_ns": 1789462568000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/iso_deployment_probe.py": {
+      "sha256": "e66f554cc55088172a89ea38b19be139e719aa5bc658515823bbdaa13a1875f4",
+      "bytes": 8744,
+      "mtime_ns": 1789462521000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/kwin_windows.js": {
+      "sha256": "1b71fbc9e92501d54b2b5230728dd495f127b79af297be49909c342f56914279",
+      "bytes": 4783,
+      "mtime_ns": 1789446245000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/record_frames.py": {
+      "sha256": "c998af9dd97bc8f95c3b2bf1ac4cc8fb16565c1c15e614f82c488a886435496e",
+      "bytes": 3854,
+      "mtime_ns": 1789445060000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/restore_profile.py": {
+      "sha256": "11fb81e0dd7ad805e9ff767b5006b5c0e05162baae078832f98ce3c81c09268c",
+      "bytes": 28285,
+      "mtime_ns": 1789455386000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/rfb_capture.py": {
+      "sha256": "f5ad1a62385656f3de1e9011921b0e2b0411acd2833a3e69ba098a1e6a4386f6",
+      "bytes": 7579,
+      "mtime_ns": 1789445060000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/tests/test_evidence_gate.py": {
+      "sha256": "ef8c4cca548bee8321a3a5cf2f5ec234aee7c017f2eab30f0d3c94e9e92c1186",
+      "bytes": 12895,
+      "mtime_ns": 1789450222000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/tests/test_guest_probe.py": {
+      "sha256": "f88e11ae3ec4be0c14e748cde49efcd4dc3e5ea5ce60645fb39a2b5976144f6b",
+      "bytes": 4617,
+      "mtime_ns": 1789450288000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/tests/test_iso_audit.py": {
+      "sha256": "6df9756c5347cfa4e72c36469133f5330bee7bd1beb3c31f2823e2b7025b5533",
+      "bytes": 2773,
+      "mtime_ns": 1789461610000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/tests/test_iso_deployment_probe.py": {
+      "sha256": "a5c8876d76f36e22b0d254c800eb50f0ce396ead87840a0aa61ad76311ef968f",
+      "bytes": 4081,
+      "mtime_ns": 1789462521000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/tests/test_iso_packaging.py": {
+      "sha256": "a732220e5b616dd93543bbf96c092fef0ac0ae297509409f2cd2f9f617cfb188",
+      "bytes": 7242,
+      "mtime_ns": 1789462163000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/tests/test_restore_places.py": {
+      "sha256": "112ce25ed07541464ebe20ccec8d7f7988202c66968f040813430caa33d716a3",
+      "bytes": 8289,
+      "mtime_ns": 1789455386000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/tests/test_rfb_capture.py": {
+      "sha256": "dfcf36565207ed41e753ccae6af28d1b6bcf649551d682f913bb1feab7f9b4cd",
+      "bytes": 3288,
+      "mtime_ns": 1789445133000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "verification/window_tool.py": {
+      "sha256": "3e566bd89740c44996cc33b1771fcf5082e008e68e9f598e8860275ee003d36d",
+      "bytes": 8509,
+      "mtime_ns": 1789446245000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/LICENSE": {
+      "sha256": "b672d2b6a6c935c5ee7cd8375bcdf1d65a0a8eac54d6f5ca1f4cb16b38e13aa1",
+      "bytes": 1256,
+      "mtime_ns": 1789443733000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/aurorae/Aven/Avenrc": {
+      "sha256": "c8bf66dd1cc5d2f287912b882feb661abaa09db49f3df86d1b8ad4149391d095",
+      "bytes": 682,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/aurorae/Aven/alldesktops.svg": {
+      "sha256": "cbdf3bb358674c95a87726d0870f493a3c64dc42815bc653e64cb9c587a402bf",
+      "bytes": 2884,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/aurorae/Aven/appmenu.svg": {
+      "sha256": "2f5af13c1ffe8aa59461dbcbe7a19c259da812f887e5e7d429235867be0cd1ae",
+      "bytes": 2700,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/aurorae/Aven/close.svg": {
+      "sha256": "2355e6e292565ad2e40a8b573ad19c25470bbcd7e07ca598bb0e886598fac0f6",
+      "bytes": 2668,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/aurorae/Aven/decoration.svg": {
+      "sha256": "a093a9acbd21e9d09a253563495f83084f04b26d26d431ad7de0f98e246bebbd",
+      "bytes": 38576,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/aurorae/Aven/help.svg": {
+      "sha256": "296ea8b8fe78530bab12eaab84a06c27568038811da79312e50c20db750b4bac",
+      "bytes": 2844,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/aurorae/Aven/keepabove.svg": {
+      "sha256": "aa08ec666a6e755eaaa2ac5455d691644adb1c090d6c9a8da089a7249796d10e",
+      "bytes": 2668,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/aurorae/Aven/keepbelow.svg": {
+      "sha256": "11b78624d279abac693a02e4a8d3592899300610a03237a088045ff23273471b",
+      "bytes": 2676,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/aurorae/Aven/maximize.svg": {
+      "sha256": "dfbf905ce5b43904c775520fee820cdf4116ea6af3b2baee697ab5b716f37c7c",
+      "bytes": 2804,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/aurorae/Aven/metadata.desktop": {
+      "sha256": "7d9699c6fc9c7a3c0823dfade2d2a3b037a95469daa627f84e60f4baed0cc504",
+      "bytes": 188,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/aurorae/Aven/minimize.svg": {
+      "sha256": "28d540885326b1e9acebedd4ebb50e0057c26ec8ec5768c269a41d33f4679eea",
+      "bytes": 2572,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/aurorae/Aven/restore.svg": {
+      "sha256": "addb65445485f6a6bcaa767df0a7508ae1d3c554c5b6319e643ed209716a8b78",
+      "bytes": 3036,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/aurorae/Aven/shade.svg": {
+      "sha256": "46af9a59ad90d17326e7edc9bd7baccbf2202a39cf4f4bc3c876b2d3e0cfeb49",
+      "bytes": 2668,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/check_geometry.py": {
+      "sha256": "33522559bbe8357ec86532afd7ac6305f99aaff696bb29bd8b9a55b5ef6882d9",
+      "bytes": 1835,
+      "mtime_ns": 1789449036000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/color-schemes/AvenMist.colors": {
+      "sha256": "7119da1784f957a1ce137ff5a7b29ae31fbbe1d298a7324333b14f1b9ea40289",
+      "bytes": 3576,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/generate_assets.py": {
+      "sha256": "85fb10bf5803e27d607eff8637c78ac3cb3b3ac3e3d5f25ae492dcb8ff9b2152",
+      "bytes": 13059,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/icons/Aven/index.theme": {
+      "sha256": "8d68459f7a6f1ab7eecfe8baaa021271e178ca5e5e96bb43066bf0e3b0c1105b",
+      "bytes": 426,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/icons/Aven/scalable/apps/aven.svg": {
+      "sha256": "f948b2e485e9595ac72ac88f8f28f2bc9af4ae6454d9ade5200ba303ecc5bd0c",
+      "bytes": 340,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/icons/Aven/scalable/mimetypes/inode-directory.svg": {
+      "sha256": "40b133d842381ef8a4b0a387e2a80b1af347148b70742ceb651438587b638d35",
+      "bytes": 604,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/icons/Aven/scalable/places/folder-documents.svg": {
+      "sha256": "77029c9fb19163d0c9c655d886ee3b4e39058c9e9e559eabc63d9be66f986e5f",
+      "bytes": 672,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/icons/Aven/scalable/places/folder-download.svg": {
+      "sha256": "c17682ecbc38f1aa3832c177c878c5fae295b5cb533f1a518e7e4fae8d1a81bf",
+      "bytes": 661,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/icons/Aven/scalable/places/folder-downloads.svg": {
+      "sha256": "c17682ecbc38f1aa3832c177c878c5fae295b5cb533f1a518e7e4fae8d1a81bf",
+      "bytes": 661,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/icons/Aven/scalable/places/folder-open.svg": {
+      "sha256": "40b133d842381ef8a4b0a387e2a80b1af347148b70742ceb651438587b638d35",
+      "bytes": 604,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/icons/Aven/scalable/places/folder-pictures.svg": {
+      "sha256": "15221c2218df5292f8b257008d207730b331c718edc003f7b80ba7ebbef19cb3",
+      "bytes": 735,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/icons/Aven/scalable/places/folder.svg": {
+      "sha256": "40b133d842381ef8a4b0a387e2a80b1af347148b70742ceb651438587b638d35",
+      "bytes": 604,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/icons/Aven/scalable/places/user-home.svg": {
+      "sha256": "53fc2f3646f40b8b5edab9d0859b7fa229c565f95b68d6b23d37fbb79274be5c",
+      "bytes": 663,
+      "mtime_ns": 1789448998000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/tokens.json": {
+      "sha256": "442aefd10b38541c611898d37fb9d7f4bb42eaa85573f04aaab8ad7e74183aec",
+      "bytes": 3003,
+      "mtime_ns": 1789457424000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/wallpapers/AvenEstuary/contents/images/3840x2160.svg": {
+      "sha256": "965a75b91fe20f67b181f08d0554cd6b5ec18d4ecfd14b4da24b398a5aa27d4e",
+      "bytes": 2541,
+      "mtime_ns": 1789443393000000000,
+      "uid": 0,
+      "mode": "0o664"
+    },
+    "visual/wallpapers/AvenEstuary/metadata.json": {
+      "sha256": "d90ca0ccd38965caccc422eed62db354ba0e775274179eadecd48dd74ddfd19b",
+      "bytes": 287,
+      "mtime_ns": 1789443393000000000,
+      "uid": 0,
+      "mode": "0o664"
+    }
+  },
+  "installed_font_rules": {
+    "60-aven-families.conf": {
+      "active_sha256": "049a4febfe4e49c3ba6f44052e42f8164d7c37d20c96c8e36be9a1a29b667845",
+      "source_sha256": "049a4febfe4e49c3ba6f44052e42f8164d7c37d20c96c8e36be9a1a29b667845",
+      "matches_source": true
+    },
+    "99-aven-rendering.conf": {
+      "active_sha256": "81bc7c6ba7aa6beb635acacc24e309e511dccd567b2a0c8c758953af2ff4f66a",
+      "source_sha256": "81bc7c6ba7aa6beb635acacc24e309e511dccd567b2a0c8c758953af2ff4f66a",
+      "matches_source": true
+    }
+  },
+  "duplicate_flatpak_exports": {
+    "org.kde.gwenview": {
+      "exists": false,
+      "is_symlink": false
+    },
+    "org.kde.okular": {
+      "exists": false,
+      "is_symlink": false
+    }
+  },
+  "native_first_user_complete_marker": true,
+  "rtc": {
+    "argv": [
+      "timedatectl",
+      "show",
+      "--property=Timezone,LocalRTC,NTPSynchronized,TimeUSec,RTCTimeUSec"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "adjtime": "0.0 0 0.0\n0\nLOCAL\n",
+  "failed_unit_journal": {
+    "argv": [
+      "journalctl",
+      "-b",
+      "-u",
+      "mcelog.service",
+      "-u",
+      "systemd-remount-fs.service",
+      "-u",
+      "rpm-ostree-countme.service",
+      "--no-pager",
+      "-n",
+      "80"
+    ],
+    "exit_code": 0,
+    "stdout": "Sep 15 19:18:16 fedora systemd-remount-fs[589]: mount: /: fsconfig() failed: overlay: No changes allowed in reconfigure.\nSep 15 19:18:16 fedora systemd-remount-fs[589]:        dmesg(1) may have more information after failed mount system call.\nSep 15 19:18:16 fedora systemd-remount-fs[577]: /usr/bin/mount for / exited with exit status 32.\nSep 15 19:18:16 fedora systemd[1]: systemd-remount-fs.service: Main process exited, code=exited, status=1/FAILURE\nSep 15 19:18:16 fedora systemd[1]: systemd-remount-fs.service: Failed with result 'exit-code'.\nSep 15 19:18:16 fedora systemd[1]: Failed to start systemd-remount-fs.service - Remount Root and Kernel File Systems.\nSep 15 19:18:20 fedora systemd[1]: Started mcelog.service - Machine Check Exception Logging Daemon.\nSep 15 19:18:20 fedora mcelog[801]: mcelog: ERROR: AMD Processor family 25: mcelog does not support this processor.  Please use the edac_mce_amd module instead.\nSep 15 19:18:20 fedora mcelog[801]: CPU is unsupported\nSep 15 19:18:20 fedora systemd[1]: mcelog.service: Main process exited, code=exited, status=1/FAILURE\nSep 15 19:18:20 fedora systemd[1]: mcelog.service: Failed with result 'exit-code'.\n",
+    "stderr": ""
+  },
+  "boot_id": "6f938398-5369-45a3-b5d6-e24813082611",
+  "host_started_at": "2026-09-15T11:29:19.483975+00:00",
+  "host_finished_at": "2026-09-15T11:29:19.964192+00:00",
+  "probe_sha256": "709ee674e11deb4d60ed158658346ac2c35bc1a3850266b4d1f1c3883ffc33f2",
+  "observer": "/root/verification",
+  "iso_sha256": "f3f1a37faf9aee5665c953843ffdcb23ae21ed5f96d00c698234f791e36c9eb4",
+  "source_checks": [
+    {
+      "path": "browser/chrome/userChrome.css",
+      "passed": true
+    },
+    {
+      "path": "browser/install.py",
+      "passed": true
+    },
+    {
+      "path": "files/aven-preview.desktop",
+      "passed": true
+    },
+    {
+      "path": "files/dolphinrc",
+      "passed": true
+    },
+    {
+      "path": "files/finalize-places.py",
+      "passed": true
+    },
+    {
+      "path": "files/finalize_places.py",
+      "passed": true
+    },
+    {
+      "path": "files/first-login.md",
+      "passed": true
+    },
+    {
+      "path": "files/install.py",
+      "passed": true
+    },
+    {
+      "path": "files/integration.json",
+      "passed": true
+    },
+    {
+      "path": "files/layout.py",
+      "passed": true
+    },
+    {
+      "path": "files/org.aven.Preview.desktop",
+      "passed": true
+    },
+    {
+      "path": "files/places-records.md",
+      "passed": true
+    },
+    {
+      "path": "files/places.py",
+      "passed": true
+    },
+    {
+      "path": "files/round-03.md",
+      "passed": true
+    },
+    {
+      "path": "files/system_places.py",
+      "passed": true
+    },
+    {
+      "path": "files/tests/smoke_layout.py",
+      "passed": true
+    },
+    {
+      "path": "files/tests/test_finalize_places.py",
+      "passed": true
+    },
+    {
+      "path": "files/tests/test_places.py",
+      "passed": true
+    },
+    {
+      "path": "files/tests/test_shortcut.py",
+      "passed": true
+    },
+    {
+      "path": "fixtures/browser/index.html",
+      "passed": true
+    },
+    {
+      "path": "fixtures/browser/reading.css",
+      "passed": true
+    },
+    {
+      "path": "fixtures/browser/traditional.html",
+      "passed": true
+    },
+    {
+      "path": "fixtures/browser/周末路线.txt",
+      "passed": true
+    },
+    {
+      "path": "fixtures/documents/weekend.html",
+      "passed": true
+    },
+    {
+      "path": "fixtures/documents/周末散步计划.pdf",
+      "passed": true
+    },
+    {
+      "path": "fixtures/mail/messages.json",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/00-地出-Earthrise.jpg",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/01-瀑布横幅-EXIF-1.jpg",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/02-瀑布竖幅-EXIF-1.jpg",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/03-旋转方向-EXIF-6.jpg",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/04-透明色阶-Transparency.png",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/05-花开-Flower.webm",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/ATTRIBUTION.md",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/LICENSE-exif.txt",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/LICENSE-mdn.txt",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/LICENSE-pngsuite.txt",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/manifest.json",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/01-春日小径.jpg",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/02-湖畔树林.jpg",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/03-庭院倒影.jpg",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/04-枯山水.jpg",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/05-桥边樱花.jpg",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/06-山间河流.jpg",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/07-岚山街角.jpg",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/08-京都小巷.jpg",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/ATTRIBUTION.md",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/LICENSE-CC0.txt",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/manifest.json",
+      "passed": true
+    },
+    {
+      "path": "fixtures/typography/specimen.html",
+      "passed": true
+    },
+    {
+      "path": "fixtures/typography/简体中文与Latin.txt",
+      "passed": true
+    },
+    {
+      "path": "fixtures/typography/繁體中文與Latin.txt",
+      "passed": true
+    },
+    {
+      "path": "integration/apply-profile.py",
+      "passed": true
+    },
+    {
+      "path": "integration/apply.py",
+      "passed": true
+    },
+    {
+      "path": "integration/native-apps.py",
+      "passed": true
+    },
+    {
+      "path": "integration/plasma-layout.js.in",
+      "passed": true
+    },
+    {
+      "path": "integration/prepare-packages.py",
+      "passed": true
+    },
+    {
+      "path": "iso/aven-layout.desktop",
+      "passed": true
+    },
+    {
+      "path": "iso/aven-profile.sh",
+      "passed": true
+    },
+    {
+      "path": "iso/aven.ks",
+      "passed": true
+    },
+    {
+      "path": "iso/first-login.py",
+      "passed": true
+    },
+    {
+      "path": "iso/install-target.py",
+      "passed": true
+    },
+    {
+      "path": "iso/platform.json",
+      "passed": true
+    },
+    {
+      "path": "mail/chrome/userChrome.css",
+      "passed": true
+    },
+    {
+      "path": "mail/chrome/userContent.css",
+      "passed": true
+    },
+    {
+      "path": "mail/install.py",
+      "passed": true
+    },
+    {
+      "path": "mail/integration.json",
+      "passed": true
+    },
+    {
+      "path": "mail/profile.py",
+      "passed": true
+    },
+    {
+      "path": "photos/audit.py",
+      "passed": true
+    },
+    {
+      "path": "photos/consumer-album.md",
+      "passed": true
+    },
+    {
+      "path": "photos/copy-album.py",
+      "passed": true
+    },
+    {
+      "path": "photos/copy-fixtures.py",
+      "passed": true
+    },
+    {
+      "path": "photos/fedora-packages.txt",
+      "passed": true
+    },
+    {
+      "path": "photos/install.py",
+      "passed": true
+    },
+    {
+      "path": "photos/profile.py",
+      "passed": true
+    },
+    {
+      "path": "photos/schema.json",
+      "passed": true
+    },
+    {
+      "path": "preview/aven-preview",
+      "passed": true
+    },
+    {
+      "path": "preview/aven_preview/__init__.py",
+      "passed": true
+    },
+    {
+      "path": "preview/aven_preview/__main__.py",
+      "passed": true
+    },
+    {
+      "path": "preview/aven_preview/app.py",
+      "passed": true
+    },
+    {
+      "path": "preview/aven_preview/core.py",
+      "passed": true
+    },
+    {
+      "path": "preview/tests/smoke_qt.py",
+      "passed": true
+    },
+    {
+      "path": "preview/tests/test_core.py",
+      "passed": true
+    },
+    {
+      "path": "typography/audit.py",
+      "passed": true
+    },
+    {
+      "path": "typography/aven-matrix-geometry.json",
+      "passed": true
+    },
+    {
+      "path": "typography/aven-matrix.json",
+      "passed": true
+    },
+    {
+      "path": "typography/aven-round04-matrix-geometry.json",
+      "passed": true
+    },
+    {
+      "path": "typography/aven-round04-matrix.json",
+      "passed": true
+    },
+    {
+      "path": "typography/aven-round04-process-locales.json",
+      "passed": true
+    },
+    {
+      "path": "typography/aven-round04-restoration.json",
+      "passed": true
+    },
+    {
+      "path": "typography/fedora-packages.txt",
+      "passed": true
+    },
+    {
+      "path": "typography/fontconfig/60-aven-families.conf",
+      "passed": true
+    },
+    {
+      "path": "typography/fontconfig/99-aven-rendering.conf",
+      "passed": true
+    },
+    {
+      "path": "typography/install.py",
+      "passed": true
+    },
+    {
+      "path": "typography/roles.json",
+      "passed": true
+    },
+    {
+      "path": "typography/round04-capture-plan.json",
+      "passed": true
+    },
+    {
+      "path": "typography/stock-matrix.json",
+      "passed": true
+    },
+    {
+      "path": "verification/aven-round03-takeover.md",
+      "passed": true
+    },
+    {
+      "path": "verification/aven-round04-takeover.md",
+      "passed": true
+    },
+    {
+      "path": "verification/evidence_gate.py",
+      "passed": true
+    },
+    {
+      "path": "verification/file_operations.py",
+      "passed": true
+    },
+    {
+      "path": "verification/guest_probe.py",
+      "passed": true
+    },
+    {
+      "path": "verification/iso-contract.md",
+      "passed": true
+    },
+    {
+      "path": "verification/iso_audit.py",
+      "passed": true
+    },
+    {
+      "path": "verification/iso_deployment_probe.py",
+      "passed": true
+    },
+    {
+      "path": "verification/kwin_windows.js",
+      "passed": true
+    },
+    {
+      "path": "verification/record_frames.py",
+      "passed": true
+    },
+    {
+      "path": "verification/restore_profile.py",
+      "passed": true
+    },
+    {
+      "path": "verification/rfb_capture.py",
+      "passed": true
+    },
+    {
+      "path": "verification/tests/test_evidence_gate.py",
+      "passed": true
+    },
+    {
+      "path": "verification/tests/test_guest_probe.py",
+      "passed": true
+    },
+    {
+      "path": "verification/tests/test_iso_audit.py",
+      "passed": true
+    },
+    {
+      "path": "verification/tests/test_iso_deployment_probe.py",
+      "passed": true
+    },
+    {
+      "path": "verification/tests/test_iso_packaging.py",
+      "passed": true
+    },
+    {
+      "path": "verification/tests/test_restore_places.py",
+      "passed": true
+    },
+    {
+      "path": "verification/tests/test_rfb_capture.py",
+      "passed": true
+    },
+    {
+      "path": "verification/window_tool.py",
+      "passed": true
+    },
+    {
+      "path": "visual/LICENSE",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/Avenrc",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/alldesktops.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/appmenu.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/close.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/decoration.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/help.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/keepabove.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/keepbelow.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/maximize.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/metadata.desktop",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/minimize.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/restore.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/shade.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/check_geometry.py",
+      "passed": true
+    },
+    {
+      "path": "visual/color-schemes/AvenMist.colors",
+      "passed": true
+    },
+    {
+      "path": "visual/generate_assets.py",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/index.theme",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/apps/aven.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/mimetypes/inode-directory.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/places/folder-documents.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/places/folder-download.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/places/folder-downloads.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/places/folder-open.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/places/folder-pictures.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/places/folder.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/places/user-home.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/tokens.json",
+      "passed": true
+    },
+    {
+      "path": "visual/wallpapers/AvenEstuary/contents/images/3840x2160.svg",
+      "passed": true
+    },
+    {
+      "path": "visual/wallpapers/AvenEstuary/metadata.json",
+      "passed": true
+    }
+  ],
+  "extra_source_files": [],
+  "source_inventory_passed": true,
+  "installation_manifest_matches": true,
+  "guest_minus_host_seconds": -1.599274
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "observer": "/root/verification",
+  "host_reviewed_at": "2026-09-15T11:30:57.817846+00:00",
+  "ownership_record": "evidence/verification/iso-candidate4/places-20260915T112331.767069Z-1b9bba14e0be.json",
+  "ownership_record_sha256": "dbbfc9285d62082901af7accf906840466ef75028dff0168f911555e8396a711",
+  "before_sha256": "1f716e6f3cf25ee57e7b623e413544234debdc473b77133d81d17146aa340f26",
+  "before_matches_record": true,
+  "current_sha256": "7a8865d34782d2bf6b63789074cd308e8bd9104ce092648ee9ef18968e1ff324",
+  "current_equals_exact_after_record": true,
+  "owned_change_checks": [
+    {
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "file:///var/home/reader/Desktop",
+        "title": "Desktop",
+        "id": "1789471410/1"
+      },
+      "match_count": 1,
+      "current_hidden": "true",
+      "passed": true
+    },
+    {
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "file:///var/home/reader/Music",
+        "title": "Music",
+        "id": "1789471410/6"
+      },
+      "match_count": 1,
+      "current_hidden": "true",
+      "passed": true
+    },
+    {
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "file:///var/home/reader/Videos",
+        "title": "Videos",
+        "id": "1789471410/8"
+      },
+      "match_count": 1,
+      "current_hidden": "true",
+      "passed": true
+    },
+    {
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "recentlyused:/locations",
+        "title": "Recent Locations",
+        "id": "1789471410/10"
+      },
+      "match_count": 1,
+      "current_hidden": "true",
+      "passed": true
+    },
+    {
+      "kind": "system-device",
+      "identifiers": {
+        "udi": "/org/kde/fstab/overlay/",
+        "uuid": ""
+      },
+      "match_count": 1,
+      "current_hidden": "true",
+      "passed": true
+    },
+    {
+      "kind": "system-device",
+      "identifiers": {
+        "udi": "/org/freedesktop/UDisks2/block_devices/vda1",
+        "uuid": "6d2f-016d"
+      },
+      "match_count": 1,
+      "current_hidden": "true",
+      "passed": true
+    },
+    {
+      "kind": "system-device",
+      "identifiers": {
+        "udi": "/org/freedesktop/UDisks2/block_devices/vda2",
+        "uuid": "0bbaf22a-beee-4410-ac42-ef0f70e7274e"
+      },
+      "match_count": 1,
+      "current_hidden": "true",
+      "passed": true
+    }
+  ],
+  "all_owned_changes_current": true,
+  "current_device_entries": [
+    {
+      "title": null,
+      "href": null,
+      "udi": "/org/kde/fstab/overlay/",
+      "uuid": null,
+      "hidden": "true"
+    },
+    {
+      "title": null,
+      "href": null,
+      "udi": "/org/freedesktop/UDisks2/block_devices/vda1",
+      "uuid": "6d2f-016d",
+      "hidden": "true"
+    },
+    {
+      "title": null,
+      "href": null,
+      "udi": "/org/freedesktop/UDisks2/block_devices/vda2",
+      "uuid": "0bbaf22a-beee-4410-ac42-ef0f70e7274e",
+      "hidden": "true"
+    }
+  ],
+  "live_restore_tested": false,
+  "method": "Host inspection of byte-exact read-only guest copies; no Places rewrite or restore invoked."
+}

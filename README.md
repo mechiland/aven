@@ -10,13 +10,33 @@ The booted **round 4 prototype passes** the independent focused review:
 The strict evidence gate passes with zero errors. All 17 required native
 operations and 75 automated tests pass; current SC/TC UI/prose pairs cover
 100%, 125%, 150% and 200%. The authoritative result is in
-[docs/STATUS.json](docs/STATUS.json). This is a focused VM prototype.
+[docs/STATUS.json](docs/STATUS.json). These scores describe the assessed desktop
+prototype; installer acceptance is recorded separately in the
+[ISO verification report](docs/ISO-VERIFICATION.md).
 
 Both independent VM disks use signed, pinned **Fedora Kinoite 44.20260913.0**,
 Plasma 6.7.5, Dolphin/Gwenview/Okular 26.08.1, Firefox 155 and Thunderbird
 153.0.2. The original ISO deployment remains available for Atomic rollback.
 
-## Inspect the existing prototype
+## Install from ISO
+
+The release artifact is a **bootable x86_64 installer ISO** with an offline Aven
+payload and Fedora's native Anaconda installer and first-user setup.
+
+Download all four `.iso.part-*` files, `ISO-PARTS.json`, and `reassemble-iso.py`
+from the [prototype release](https://github.com/mechiland/aven/releases/tag/v0.1.0-prototype).
+Keep them in one directory, then run:
+
+```sh
+python3 reassemble-iso.py
+```
+
+On Windows use `py -3 reassemble-iso.py`. The helper checks each part and the
+complete ISO. Write that ISO to a USB drive of at least 16 GB, or attach it as a
+virtual optical drive. The individual parts cannot boot. See the
+[ISO guide](docs/ISO.md) for details and verification limits.
+
+## Inspect the existing laboratory prototype
 
 The live lab disks are `.cache/vm/stock.qcow2` and `.cache/vm/aven.qcow2`.
 The [portable disk](output/aven-prototype-round04.qcow2) and

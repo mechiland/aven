@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-15T11:12:12.200172+00:00",
+  "reviewer": "/root/critic",
+  "status": "ISO candidate-4 comparison references prepared; candidate-4 desktop assessment pending.",
+  "scope": "Reopened 28 original stock/accepted-round04 reference PNGs and inspected 11 original candidate3 desktop/Files/preview PNGs. No guest input, source changes or screenshot editing.",
+  "accepted_round04_result": {
+    "manifest": "evidence/critic/round-04.json",
+    "sha256": "9923fd90689dc5665334092c0884dbc17061fc4e72668392d208bf1d0d7b9dfd",
+    "overall": 8.333333333333334,
+    "Chinese": 8.5,
+    "pass": true,
+    "historical_result_unchanged": true
+  },
+  "exact_reference_pairs": [
+    {
+      "id": "desktop",
+      "content_id": "Clean desktop with native panel",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/desktop-stable-1x.json",
+        "image": "evidence/stock/round-00/desktop-stable-1x.png",
+        "sha256": "57e5bb3d0f09211376b96709a6c056943e025b102779103650cbc6dca2311223"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/desktop-1x.json",
+        "image": "evidence/aven/round-04/desktop-1x.png",
+        "sha256": "116357c851342a6334e3b67b7f88f09b416d40fdba53d4867a66176c80d45b4e"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Stock has high-contrast blue relief and a nearly full-width dark panel. Aven has broad low-contrast jade curves and a shorter light panel, immediately quieter and visibly distinct. Native app identities remain recognizable. A still does not prove motion."
+    },
+    {
+      "id": "files_list",
+      "content_id": "Dolphin 12-file Everyday folder in details view",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/files-list-1x.json",
+        "image": "evidence/stock/round-00/files-list-1x.png",
+        "sha256": "461ab03420d0241700cf29a25dc29effd4bc711a794738da6f1c94473efee3e2"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/files-list-1x.json",
+        "image": "evidence/aven/round-04/files-list-1x.png",
+        "sha256": "fc875bb690eeed86c5e87cd84fdca60ac12a7fdc2c583244871fc158989f4c95"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "The same twelve files are visible. Aven uses larger readable Chinese/Latin labels, approximately 36-pixel compact rows, smaller thumbnails and no tree-branch clutter; stock has approximately 52-pixel thumbnail rows. Dates and KiB remain aligned. Selection differs: Aven highlights the Chinese text file, while stock has an Earthrise focus outline. The current 日常 · Everyday breadcrumb is conspicuously bold."
+    },
+    {
+      "id": "files_mixed",
+      "content_id": "Dolphin 12-file Everyday folder in grid view",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/files-mixed-clean-1x.json",
+        "image": "evidence/stock/round-00/files-mixed-clean-1x.png",
+        "sha256": "253bcad1397d6a51ef3013ea454b8ec1430f146c883f2d58d3c7c487e5b4e435"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/files-mixed-1x.json",
+        "image": "evidence/aven/round-04/files-mixed-1x.png",
+        "sha256": "4003ee8e5f38560fe2e4325ad67ca39d475c40f677e8ecd579764ab439b3b9a8"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Both show the twelve-file Everyday folder with an Earthrise focus outline. Aven uses four columns over three rows with much larger image, document and media thumbnails; stock has nine small items in the first row. Long mixed-script names mostly fit on one line in Aven. The subdued sidebar and chrome improve hierarchy. Generic audio/JSON icons retain strong native blue/purple colors."
+    },
+    {
+      "id": "preview_image",
+      "content_id": "NASA Earthrise JPEG selected in Dolphin",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/preview-image-1x.json",
+        "image": "evidence/stock/round-00/preview-image-1x.png",
+        "sha256": "36cfc6903120007442331dc745ee623b7dbc691913c8d9377b22cfb2f745f38b"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/preview-image-1x.json",
+        "image": "evidence/aven/round-04/preview-image-1x.png",
+        "sha256": "bf8618bf46ab0c98aae494404d9c6ee9a4d2534cf46c47fca3889c2661f56f22"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Stock confines Earthrise to an approximately 160-pixel-wide information-panel thumbnail amid metadata and reflows Files. Aven gives the full image an approximately 832-pixel-wide focused overlay with a quiet localized title, JPEG 图像 / 84.1 KiB footer and clearly spaced Open control. The preview task icon reveals a separate native surface. Invocation and focus results are documented separately."
+    },
+    {
+      "id": "preview_text",
+      "content_id": "Simplified Chinese and Latin text fixture selected in Dolphin",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/preview-text-1x.json",
+        "image": "evidence/stock/round-00/preview-text-1x.png",
+        "sha256": "a0960a83d58ce669bccc44ab7b094b01ff687f147fc26efdb08b4767078ee702"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/preview-text-1x.json",
+        "image": "evidence/aven/round-04/preview-text-1x.png",
+        "sha256": "72d4b878cc2d0bb61023af33e4b55c9230af824c5af35f87e9a5fc98628f3110"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Stock shows a generic text icon and metadata rather than readable content. Aven exposes real SC paragraphs, mixed Latin, MB, times, paths, punctuation, dense characters and emoji. The approximately 18-pixel body, comfortable leading and inset are coherent. No missing-glyph boxes or clipped sample glyphs appear; the final emoji row is visible. Emoji styles retain their font-native differences."
+    },
+    {
+      "id": "preview_pdf",
+      "content_id": "Original bilingual weekend-walk PDF selected in Dolphin",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/preview-pdf-1x.json",
+        "image": "evidence/stock/round-00/preview-pdf-1x.png",
+        "sha256": "23fe39a1ef82869abf3d5294ccf550e83d056ee4146f41e4c4d1f16938075717"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/preview-pdf-1x.json",
+        "image": "evidence/aven/round-04/preview-pdf-1x.png",
+        "sha256": "6c05cef765d2f6b777613c0ea0ba449f53dcb521c2308427bbdadd660451b1ed"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "The same bilingual weekend-walk PDF is a tiny whole-page thumbnail in stock. Aven fits the page to a readable width with scrolling, a pale paper backing and consistent PDF 文档 / 260.6 KiB footer. Chinese paragraphs and mixed Latin headings are readable. The embedded PDF fonts are not evidence of OS fallback improvement; the lower page requires normal scrolling."
+    },
+    {
+      "id": "preview_media",
+      "content_id": "Flower WebM selected in Dolphin",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/preview-media-1x.json",
+        "image": "evidence/stock/round-00/preview-media-1x.png",
+        "sha256": "b4da09307a0411c3788caf8ffba3f9df5262cf39beb31fa366793e7fdd31d644"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/preview-media-1x.json",
+        "image": "evidence/aven/round-04/preview-media-1x.png",
+        "sha256": "5db7a7ad0cb64bc9a0251cfb536468a9a218575a77e107dc0b1b68b7523c4d7e"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Stock has a small film-framed poster and metadata-dock player. Aven shows a large genuine playing flower frame, a pause control, seek line and 0:00 / 0:05 duration. Playback moments differ, so the exact flower pixels are not a matched still-frame comparison. The separately inspected paused poster also reports 0:00 / 0:05, resolving the prior zero-total label. Audio and full playback continuity are not established by this still."
+    },
+    {
+      "id": "browser_sc",
+      "content_id": "Local Simplified Chinese City Notes article in Firefox",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/browser-sc-1x.json",
+        "image": "evidence/stock/round-00/browser-sc-1x.png",
+        "sha256": "e1d7de2cfcabf86a805d19770fab7e1c686728aa3ea253ada673bd57a695c93b"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/browser-sc-1x.json",
+        "image": "evidence/aven/round-04/browser-sc-1x.png",
+        "sha256": "5002bf633517559474b55e83dab40bb177c2506f34677a518082d350d9c1fd21"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "The same SC City Notes HTTP article is readable in both; body typography and authored page spacing remain very similar. Aven neutral tabs/toolbar match its shared decoration, and larger native chrome text is more comfortable. The extra titlebar repeats the title and costs about 38 logical pixels. Stock has a page-brand keyboard outline while Aven does not; that state difference is not a typography gain. A single Firefox task identity is visible."
+    },
+    {
+      "id": "browser_tc",
+      "content_id": "Local Traditional Chinese City Notes article in Firefox",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/browser-tc-1x.json",
+        "image": "evidence/stock/round-00/browser-tc-1x.png",
+        "sha256": "76ee785cefef840aa9993209cebdf3ebd89e3bcb4a0e90654c93d75f92a5d1ad"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/browser-tc-1x.json",
+        "image": "evidence/aven/round-04/browser-tc-1x.png",
+        "sha256": "2690f590aa5602c4dcd3cc0ed9b6692bcec6ff37464ec4ddff1d13dab39c2e8e"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "The same TC City Notes article retains clear corner quotes, punctuation and mixed English/numbers. Body rendering already looks strong in stock and is nearly unchanged. Aven neutral chrome is more coherent with the surrounding desktop, with larger chrome labels and a single task identity. The additional server-side titlebar reduces content height. Fixture-authored reading rhythm is not credited as an OS change."
+    },
+    {
+      "id": "mail_sc",
+      "content_id": "Same fictional Simplified Chinese email opened in Thunderbird",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/mail-sc-1x.json",
+        "image": "evidence/stock/round-00/mail-sc-1x.png",
+        "sha256": "935fd7f46174ab3a64fa947a26cc9a0e4c8bc4aa9d2cf7002310abeadfdca9cf"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/mail-sc-1x.json",
+        "image": "evidence/aven/round-04/mail-sc-1x.png",
+        "sha256": "ecc1011e90c8ffcbc020a04b0953b05b0fe70cb75c88bf473fd9b5069fe3968b"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "The same fictional SC message is comfortably inset and spaced in Aven, with approximately 17-pixel body text and 30-pixel leading versus stock's tighter 24-pixel rhythm and near-edge body. Latin address text and Chinese punctuation remain clear; paragraph breaks are preserved. The narrow adjacent message list and extra top strip remain. Window/client layout differences are acknowledged."
+    },
+    {
+      "id": "mail_tc",
+      "content_id": "Same fictional Traditional Chinese email opened in Thunderbird",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/mail-tc-1x.json",
+        "image": "evidence/stock/round-00/mail-tc-1x.png",
+        "sha256": "be19c62a6e6509ad5200690c5e80a0ba69d31c1063b664393ac3076e3b523f1e"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/mail-tc-1x.json",
+        "image": "evidence/aven/round-04/mail-tc-1x.png",
+        "sha256": "0d107937a05c05d2da0b51dd375c4f6fd7e47725bd92787f6772fd49eb9fe651"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "The same fictional TC message has a calm, readable body with generous inset and leading, preserving punctuation, v2.1 and 11:00. Stock is readable but tighter and close to the content edge. Native header controls and bold labels remain somewhat dense. The message-card truncation and mostly empty upper strip still limit coherence. This is a 1x primary mail comparison."
+    },
+    {
+      "id": "mail_compose",
+      "content_id": "Same fictional saved reply with appended route-confirmation sentence",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/mail-compose-1x.json",
+        "image": "evidence/stock/round-00/mail-compose-1x.png",
+        "sha256": "74ade757d5e01b0e4ae33be8a2167260405c1d52ed9eda4604b4d57eec7aa39a"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/mail-compose-1x.json",
+        "image": "evidence/aven/round-04/mail-compose-1x.png",
+        "sha256": "36f1e37eb4e0de6012c5900c7e8fb27145d267d65368d894d946a83ddf968cce"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Both show the same fictional saved draft, including 已核对路线，周六见。 before round-04 editing. Aven now gives wrapped/body and signature lines approximately 30-pixel leading, visibly more comfortable than stock's approximately 24 pixels, with a useful inset. This resolves the round-03 writing-versus-reading rhythm defect. The 1000×840 outer frame is matched. The existing blank paragraph before the appended sentence belongs to the draft. The matched 720-pixel supplemental pair confirms the improvement under wrapping."
+    },
+    {
+      "id": "photos_grid",
+      "content_id": "Eight-photo Kyoto travel album in Gwenview browse view",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/photos-grid-1x.json",
+        "image": "evidence/stock/round-00/photos-grid-1x.png",
+        "sha256": "d4ce5c702b163332f00d22d041401f864aa2e3a9370e1bd084b75de68ecaf1f6"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/photos-grid-1x.json",
+        "image": "evidence/aven/round-04/photos-grid-1x.png",
+        "sha256": "751ff518e79539fa8e2bd50561733895798ed2eef12dff66b372fdfce06cfdbc"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "The same eight Kyoto album images appear. Aven's approximately 240-pixel thumbnails form five-plus-three rows and make the album immediately useful; stock places eight tiny thumbnails in one row. Aven selects the river image while stock selects the first image, and Aven has a small native hover affordance. The heavy breadcrumb surround and native thumbnail frames remain more mechanical than Files."
+    },
+    {
+      "id": "photos_view",
+      "content_id": "Kyoto mountain-river landscape in Gwenview fitted view",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/photos-view-1x.json",
+        "image": "evidence/stock/round-00/photos-view-1x.png",
+        "sha256": "0669a9f8c1e1152310e5e004946352bcb9ee7a7d882a3b80c5abbfcf2b3e2403"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/photos-view-1x.json",
+        "image": "evidence/aven/round-04/photos-view-1x.png",
+        "sha256": "96ccd06c2455be5ff613114bf48b228eaf087902a8d3c0f3aff66e0d6673a17e"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Both show the same Kyoto mountain-river image upright. Aven fits it at 79% with a short filmstrip; stock fits at 92% with no filmstrip. Navigation context is useful but costs photo area. The filmstrip's beveled/gradient cells and horizontal bar retain an older native KDE appearance. This is a reasonable mature-viewer tradeoff, not a premium new photo surface."
+    }
+  ],
+  "candidate3_inspections": [
+    {
+      "id": "desktop",
+      "image": "evidence/verification/iso-candidate3/first-desktop.png",
+      "sha256": "c5ee41123176c539283af510a90a0244816c562ff16b756d27dd4fa5de50a939",
+      "visually_inspected": true,
+      "inspected_by": "/root/critic",
+      "resolution": "original",
+      "notes": "Same calm jade/cream wallpaper and short light panel as accepted round 04. Native status-tray contents differ with account/session state; no material desktop regression observed."
+    },
+    {
+      "id": "files_list",
+      "image": "evidence/verification/iso-candidate3/files-sc-list.png",
+      "sha256": "2c7cac17135b36ee5ece92afbd37bbe937a441af3e865c214560cf37c85bc159",
+      "visually_inspected": true,
+      "inspected_by": "/root/critic",
+      "resolution": "original",
+      "notes": "C3 shows extra Desktop/Music/Videos/Recent Locations entries plus an unnamed red capacity bar and 2.0 GiB vda2. Breadcrumb exposes /home/reader/Documents instead of localized Documents. Details rows are approximately 26 px with very small thumbnails, versus accepted primary 36 px. Font size/chrome remain readable. Recent Files hover/focus highlight is a state difference, not established current-location behavior."
+    },
+    {
+      "id": "files_grid",
+      "image": "evidence/verification/iso-candidate3/files-sc-grid.png",
+      "sha256": "0d5441ab7b26985bf947dabaa88b561bbd0157747b882f8f378a229c26216ee5",
+      "visually_inspected": true,
+      "inspected_by": "/root/critic",
+      "resolution": "original",
+      "notes": "The same useful four-column twelve-file grid, large thumbnails and legible mixed-script names remain. Sidebar and full-filesystem breadcrumbs regress as in the list. No thumbnail-size or chrome regression observed."
+    },
+    {
+      "id": "preview_sc",
+      "image": "evidence/verification/iso-candidate3/preview-text-sc.png",
+      "sha256": "94cd77b6a5fc34612bc630b27ad95b3fc1c4057352d9d702c22c789407d4aa8e",
+      "visually_inspected": true,
+      "inspected_by": "/root/critic",
+      "resolution": "original",
+      "notes": "SC paragraph body, mixed Latin/numbers/punctuation, dense-character line and emoji remain readable with accepted inset and leading. Sidebar defect persists behind it."
+    },
+    {
+      "id": "preview_tc",
+      "image": "evidence/verification/iso-candidate3/preview-text-tc.png",
+      "sha256": "934c0ddc6fbb3d82790586c53334a2d90b09dc83dcb7a00a9cb56aeb8d6306c3",
+      "visually_inspected": true,
+      "inspected_by": "/root/critic",
+      "resolution": "original",
+      "notes": "Reopened the original TC frame individually. TC paragraphs, corner quotes, times/MB and mixed Latin remain readable without missing-glyph boxes or clipping. This is TC content under SC chrome. No exact stock/round-04 TC text-preview pair exists; this is supplemental, not a substitute for the historical TC matrix."
+    },
+    {
+      "id": "preview_pdf",
+      "image": "evidence/verification/iso-candidate3/preview-pdf.png",
+      "sha256": "bea1f2ac7bc7c9c0a904ae4269a1641b2b59ae7f7545c7b3de836d857c34c236",
+      "visually_inspected": true,
+      "inspected_by": "/root/critic",
+      "resolution": "original",
+      "notes": "Same original bilingual PDF renders at accepted readable width, pale backing, scrolling and localized footer. Embedded PDF font quality is not credited as a system fallback change."
+    },
+    {
+      "id": "preview_image",
+      "image": "evidence/verification/iso-candidate3/preview-image.png",
+      "sha256": "07dc1c2d141a5b8a2c90c4de8a1acecc2661dfbe75c135dd86a5557b69a3bf0a",
+      "visually_inspected": true,
+      "inspected_by": "/root/critic",
+      "resolution": "original",
+      "notes": "Same Earthrise image is fitted within the accepted large focused overlay with useful footer/Open control. No material preview-surface regression observed."
+    },
+    {
+      "id": "media_paused",
+      "image": "evidence/verification/iso-candidate3/preview-media-paused.png",
+      "sha256": "5b06a329b4d8d1f00de587b8f359320c4bacd090f1c09c415b441c8356878b9d",
+      "visually_inspected": true,
+      "inspected_by": "/root/critic",
+      "resolution": "original",
+      "notes": "Actual paused flower poster, play button, start position and correct 0:00 / 0:05 label are visible. Accepted duration correction retained."
+    },
+    {
+      "id": "media_playing",
+      "image": "evidence/verification/iso-candidate3/preview-media-playing.png",
+      "sha256": "846bcda0dbd15c2994074eeb83cb35231d8e045d6b1e0d82d93d18fcac2f1f23",
+      "visually_inspected": true,
+      "inspected_by": "/root/critic",
+      "resolution": "original",
+      "notes": "A different actual flower frame, pause button, advanced seek position and 0:02 / 0:05 are visible. A still does not prove continuous playback/audio."
+    },
+    {
+      "id": "preview_return",
+      "image": "evidence/verification/iso-candidate3/preview-return-files.png",
+      "sha256": "96a924e57c7413029b7994802fb1f1ecdc9a96b6b76272ac30946a6c009bfa2b",
+      "visually_inspected": true,
+      "inspected_by": "/root/critic",
+      "resolution": "original",
+      "notes": "Preview is absent and the prior video selection remains visible in Files. This still corroborates the returned state; it alone cannot prove shortcut input/focus identity."
+    },
+    {
+      "id": "copy_rename",
+      "image": "evidence/verification/iso-candidate3/files-copy-rename.png",
+      "sha256": "dec30822f121975d988787a1320eb3d59b826fd60f8257b5ce4401bb00dd731a",
+      "visually_inspected": true,
+      "inspected_by": "/root/critic",
+      "resolution": "original",
+      "notes": "Downloads shows ISO-copy.txt selected beside 下载说明.txt. This folder has approximately 36 px details rows, indicating the small Everyday rows are folder-state-specific. The screenshot alone does not prove copied bytes or rename workflow."
+    }
+  ],
+  "missing_exact_reference": {
+    "id": "preview_text_tc",
+    "stock": null,
+    "accepted_round04": null,
+    "handling": "Supplemental actual ISO TC-preview inspection only. SC text-preview is the same-widget comparison; separate existing TC browser/mail pairs support TC-content typography comparisons. Never label a different scene as an exact TC-preview pair."
+  },
+  "candidate3_material_differences": [
+    "Unfocused sidebar with extra places, unnamed red storage bar and internal vda2; localized breadcrumb root also absent.",
+    "Everyday details rows approximately 26 px rather than accepted primary 36 px; Downloads screenshot already uses 36 px, so difference is folder-state-specific."
+  ],
+  "candidate3_uncovered": [
+    "Firefox",
+    "Thunderbird",
+    "Gwenview",
+    "fractional scaling",
+    "motion continuity",
+    "audio"
+  ],
+  "candidate4_scores": null,
+  "candidate4_pass": null,
+  "candidate4_required_before_final_report": "Fresh first-user actual candidate4 native desktop and focused app captures with provenance; final report docs/critic-iso.md only after inspection."
+}
