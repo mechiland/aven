@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-15T10:42:29.759774+00:00",
+  "candidate": "iso-candidate3",
+  "repository": "mechiland/aven",
+  "release_id": 388990452,
+  "state": "interrupted",
+  "reason": "Root requested stop: candidate3 superseded by candidate4 after first-login Places defect",
+  "worker_stopped": true,
+  "terminated_processes": [
+    2359241,
+    2359442
+  ],
+  "iso_assets_complete": false,
+  "release_published": false,
+  "assets": [
+    {
+      "id": 565321387,
+      "name": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-000",
+      "state": "uploaded",
+      "size": 1992294400,
+      "digest": "sha256:e1fb1b91ab0df235eb25c2b218c5c1ab1cf3283274e39e22b277e765023865f9"
+    },
+    {
+      "id": 565339875,
+      "name": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-001",
+      "state": "uploaded",
+      "size": 1992294400,
+      "digest": "sha256:223f14d7dbc9b5548889764f1eb356f682ea5d93b6616730e99f1499cf446fd1"
+    },
+    {
+      "id": 565475889,
+      "name": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-002",
+      "state": "starter",
+      "size": 1992294400,
+      "digest": null
+    },
+    {
+      "id": 565321379,
+      "name": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-003",
+      "state": "starter",
+      "size": 1913126912,
+      "digest": null
+    },
+    {
+      "id": 565299664,
+      "name": "aven-source-and-evidence-round04.tar.gz",
+      "state": "uploaded",
+      "size": 974796866,
+      "digest": "sha256:946b513a56a3f8dca9e0c009a4cf5ffbbfdc261d6048cc8a0d46cc2717a25a62"
+    }
+  ],
+  "note": "Candidate3 uploads intentionally stopped for candidate4 rebuild. Existing completed assets and failed starters retained in draft. No all-part success verification was written."
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "tested_at": "2026-09-15T08:49:55.066016+00:00",
+  "observer": "/root/verification",
+  "host_platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.43",
+  "python": "3.14.4",
+  "method": "unittest with real temporary files, a17-byte PART_BYTES override, and isolated subprocess execution of the copied reassembler",
+  "tests_passed": 12,
+  "tests_failed": 0,
+  "scenarios": [
+    "53-byte roundtrip into17/17/17/2-byte parts with exact per-part and whole SHA-256",
+    "exact boundary produces no empty part",
+    "one byte after boundary retained",
+    "same-size corruption rejected",
+    "truncation rejected",
+    "missing part rejected",
+    "wrong whole hash rejected even with valid individual parts",
+    "part reordering rejected",
+    "existing output preserved",
+    "output created during publication preserved by no-overwrite link",
+    "manifest path traversal rejected",
+    "existing release asset directory preserved"
+  ],
+  "artifacts": [
+    {
+      "path": "scripts/split-iso.py",
+      "sha256": "cf6b46236142aed87642ce9a9f540b2e302cd6d296f0cf4f39793e2037e70edf"
+    },
+    {
+      "path": "scripts/reassemble-iso.py",
+      "sha256": "f60c239453d773fae123dcb9a4af6b36991db3fcd27bec5fd18e838c34a8c3f7"
+    },
+    {
+      "path": "verification/tests/test_iso_packaging.py",
+      "sha256": "a732220e5b616dd93543bbf96c092fef0ac0ae297509409f2cd2f9f617cfb188"
+    },
+    {
+      "path": "evidence/verification/iso-packaging-tests.txt",
+      "sha256": "20e6c2b1f23d8fd8cfff39877d0a37a0ad1810c45df29b4d12772f4c4551f468"
+    }
+  ],
+  "fix_verified": "Splitter initial read is bounded by PART_BYTES, allowing a boundary below8MiB without a negative read size. Production1900MiB boundary had not been affected.",
+  "failed_assembly_temporary_files_removed": true,
+  "actual_release_iso_split": false,
+  "limitations": [
+    "This run validates packaging behavior with small fixtures; root owns splitting and reassembling the full8GB release artifact.",
+    "Tests ran on Linux. Windows/NTFS and macOS execution were not exercised.",
+    "The reassembler publishes with a same-directory hard link. The output filesystem must support hard links.",
+    "Packaging tests do not establish firmware boot, installation success or visual quality."
+  ]
+}

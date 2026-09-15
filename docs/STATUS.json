@@ -761,5 +761,27 @@
     "The four-scale matrix covers Dolphin and Firefox; mail/photo primary comparisons are1x.",
     "Live Atomic rollback and live preference restoration were not performed; signed pinned deployment and rollback entry remain intact.",
     "Minor native rough edges remain: bold breadcrumbs, Thunderbird sender truncation/top strip, Gwenview filmstrip bevels, extra Firefox title height and preview discoverability."
-  ]
+  ],
+  "iso_release": {
+    "state": "rebuilding_first_user_places_fix",
+    "requested_artifact": "bootable_installer_iso",
+    "code_remote": "https://github.com/mechiland/aven",
+    "initial_commit": "a509729ae8e5834d28fc62d10bb408d78f3a39d1",
+    "build_source_commit": "8adb380dfb7cf572b9ef652dfe49084dc5024115",
+    "latest_candidate": "candidate3_superseded",
+    "reason_for_rebuild": "First-login pre-session seeding preceded native user-places.xbel creation; defer Places finalization until the native session initializes it.",
+    "boot_verified": true,
+    "install_verified": true,
+    "published": false,
+    "updated_at": "2026-09-15T10:45:10.478706+00:00",
+    "media_sha256": "a0849b1ff8d263813a82fd47f53eb052e3b36600b2c97a2542ee0e08afedd96f",
+    "bios_boot_verified": true,
+    "uefi_boot_verified": true,
+    "public_installer": "Native Fedora Anaconda; user creation occurs in native first-boot setup.",
+    "public_workflow": "Public UEFI installation completed; native setup created reader; first login automatically applied Aven. Installed-system audit and application verification underway.",
+    "parts_reassembled_verified": true,
+    "release_draft_id": 388990452,
+    "first_user_setup_verified": true,
+    "first_login_profile_applied": true
+  }
 }

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "inspected_at": "2026-09-15T08:38:52.366822+00:00",
+  "source_iso": ".cache/downloads/Fedora-Kinoite-ostree-x86_64-44-1.7.iso",
+  "expected_source_iso_sha256": "4a944312b4e861ab625fd9786957174ef122a8a406bbb54caba7665e0d9f0e92",
+  "inspected_extractions": [
+    {
+      "path": ".cache/iso-work/official-initrd.img",
+      "sha256": "938a6c236836150e6669c7afb906c81c3b2f9bc613ed8e4df3797be57c097851"
+    },
+    {
+      "path": ".cache/iso-work/install.img",
+      "sha256": "c5b18bbb4d416ee2770b79068e7763a955973174381b2e174d1450cee62b5a45"
+    },
+    {
+      "path": ".cache/iso-work/installation-embedded.py",
+      "sha256": "614ac3f3061d959144e0a2e80919012c7254d44b1fab04daea35b2bef52f3f86"
+    },
+    {
+      "path": ".cache/iso-work/anaconda-lib.sh",
+      "sha256": "7438eae549aa4675e5cde513379937ec44ed786522a62347feb1805661475636"
+    },
+    {
+      "path": ".cache/iso-work/anaconda-diskroot",
+      "sha256": "fcc9b8c386a34ac3510f88acd611f198073b3ede23dae182ef070390ad505b5d"
+    },
+    {
+      "path": ".cache/iso-work/fetch-kickstart-disk",
+      "sha256": "1dd7b3a2a5923507567a9fc2ed09e99431f2da06646c8cb000cfa63485cb0059"
+    }
+  ],
+  "findings": [
+    "Optical ISO remains mounted read-only at /run/install/repo.",
+    "Arbitrary file:// ostreesetup source is passed unchanged to libostree.",
+    "Anaconda pull does not request parent depth; base must also be imported.",
+    "Anaconda resolves deployment via OSTree Sysroot and binds selected /var before %post."
+  ],
+  "iso_install_tested": false
+}

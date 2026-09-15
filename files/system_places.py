@@ -11,6 +11,7 @@ import os
 from pathlib import Path
 import re
 import subprocess
+import time
 
 SYSTEM_MOUNTS = {"/", "/boot", "/boot/efi"}
 
@@ -85,17 +86,52 @@ def system_devices(devices, mount_document, atomic_booted):
     return result
 
 
-def discover_system_devices():
+def require_ready_inventory(devices, mount_document):
+    """Reject partial startup inventories before finalizing first-login defaults.
+
+    A successful Solid command can initially omit a mounted boot volume. Check
+    the mounted system entries themselves; an empty hide list alone cannot say
+    that discovery has finished. This does not broaden the hide policy.
+    """
+    mounts = {item.get("target"): item for item in flatten_mounts(mount_document)}
+    root = mounts.get("/")
+    if root is None:
+        raise RuntimeError("Waiting for the root mount inventory")
+    if root.get("fstype") in {"overlay", "composefs"} and "ro" in root.get("options", "").split(","):
+        if not any(item["mount"] == "/" for item in system_devices(devices, mount_document, True)):
+            raise RuntimeError("Waiting for Solid's read-only Atomic root entry")
+    for target in sorted(SYSTEM_MOUNTS):
+        mount = mounts.get(target, {})
+        source = mount.get("source", "").split("[", 1)[0]
+        if not source.startswith("/dev/"):
+            continue
+        candidates = [item for item in devices.values() if item.get("Block.device") == source
+                      and item.get("StorageAccess.filePath") == target
+                      and item.get("StorageAccess.accessible") is True]
+        if not candidates:
+            raise RuntimeError(f"Waiting for Solid's mounted {target} entry")
+        if not any(isinstance(item.get("Block.isSystem"), bool)
+                   and isinstance(devices.get(item.get("parent"), {}).get("StorageDrive.removable"), bool)
+                   and isinstance(devices.get(item.get("parent"), {}).get("StorageDrive.hotpluggable"), bool)
+                   for item in candidates):
+            raise RuntimeError(f"Waiting for Solid's {target} drive properties")
+
+
+def discover_system_devices(*, require_ready=False, timeout=10):
     if not Path("/run/ostree-booted").exists():
         return []
     environment = os.environ | {"LC_ALL": "C", "LANG": "C"}
+    deadline = time.monotonic() + timeout
     # Solid 6.30 main() returns hwList()'s bool directly: successful enumeration
     # exits 1. Validate the typed output as well, rather than assuming POSIX 0.
-    solid = subprocess.run(["solid-hardware6", "list", "details"], text=True, capture_output=True, env=environment, timeout=10)
+    solid = subprocess.run(["solid-hardware6", "list", "details"], text=True, capture_output=True, env=environment, timeout=timeout)
     if solid.returncode not in (0, 1) or not solid.stdout.startswith("udi = '"):
         raise RuntimeError("Solid did not return a usable device inventory")
-    mounts = json.loads(subprocess.check_output(["findmnt", "--json", "--output", "SOURCE,TARGET,FSTYPE,OPTIONS"], text=True, env=environment, timeout=10))
-    return system_devices(parse_solid(solid.stdout), mounts, True)
+    mounts = json.loads(subprocess.check_output(["findmnt", "--json", "--output", "SOURCE,TARGET,FSTYPE,OPTIONS"], text=True, env=environment, timeout=max(0.001, deadline - time.monotonic())))
+    devices = parse_solid(solid.stdout)
+    if require_ready:
+        require_ready_inventory(devices, mounts)
+    return system_devices(devices, mounts, True)
 
 
 if __name__ == "__main__":

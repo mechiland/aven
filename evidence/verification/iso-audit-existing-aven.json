@@ -1,0 +1,369 @@
+{
+  "ssh_destination": "aven@127.0.0.1",
+  "ssh_port": 2223,
+  "probe_sha256": "d72892ce79d7878866fe7cb3236dd5b96a0c531deba1b01ec98ca811916be6dd",
+  "exit_code": 0,
+  "stderr": "",
+  "iso_boot_install_accepted": null,
+  "installed_system": {
+    "schema_version": 1,
+    "captured_at": "2026-09-15T08:39:41.874399+00:00",
+    "expected_layer": "37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551",
+    "expected_base": "be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df",
+    "origin_file": "/sysroot/ostree/deploy/fedora/deploy/37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551.0.origin",
+    "origin_text": "[origin]\nbaserefspec=fedora:fedora/44/x86_64/kinoite\n\n[packages]\nrequested=glibc-langpack-zh;gwenview;okular;python3-pyside6;thunderbird;\n\n[libostree-transient]\npinned=true\n",
+    "origin_sha256": "8a2304e10a1cc5443ed6fa42924cee5e6a6e87c3ba67e1c70802943452bf2424",
+    "probes": {
+      "atomic": {
+        "argv": [
+          "rpm-ostree",
+          "status",
+          "--json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"deployments\" : [\n    {\n      \"unlocked\" : \"none\",\n      \"base-local-replacements\" : [],\n      \"requested-local-packages\" : [],\n      \"base-commit-meta\" : {\n        \"ostree.bootable\" : true,\n        \"ostree.composefs.digest.v0\" : [\n          210,\n          130,\n          150,\n          56,\n          32,\n          158,\n          174,\n          90,\n          135,\n          139,\n          252,\n          144,\n          214,\n          247,\n          250,\n          92,\n          94,\n          235,\n          208,\n          127,\n          59,\n          28,\n          50,\n          28,\n          196,\n          204,\n          131,\n          178,\n          192,\n          240,\n          85,\n          179\n        ],\n        \"rpmostree.inputhash\" : \"d1c5e33056e32f841f41b08fb1b120b2eb1531b77a23dd6c0249d80fa1246b0a\",\n        \"version\" : \"44.20260913.0\",\n        \"ostree.linux\" : \"7.2.5-200.fc44.x86_64\",\n        \"ostree.container-cmd\" : [\n          \"/usr/bin/bash\"\n        ],\n        \"rpmostree.rpmmd-repos\" : [\n          {\n            \"id\" : \"repo-0\",\n            \"timestamp\" : 7552229162816110592\n          },\n          {\n            \"id\" : \"repo-1\",\n            \"timestamp\" : 715128315530182656\n          },\n          {\n            \"id\" : \"repo-2\",\n            \"timestamp\" : -5337709583655763968\n          }\n        ]\n      },\n      \"base-removals\" : [],\n      \"gpg-enabled\" : true,\n      \"pinned\" : true,\n      \"osname\" : \"fedora\",\n      \"base-remote-replacements\" : {      },\n      \"origin\" : \"fedora:fedora/44/x86_64/kinoite\",\n      \"regenerate-initramfs\" : false,\n      \"checksum\" : \"37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551\",\n      \"requested-base-local-replacements\" : [],\n      \"id\" : \"fedora-37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551.0\",\n      \"version\" : \"44.20260913.0\",\n      \"base-version\" : \"44.20260913.0\",\n      \"base-checksum\" : \"be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df\",\n      \"requested-base-removals\" : [],\n      \"requested-local-fileoverride-packages\" : [],\n      \"serial\" : 0,\n      \"base-timestamp\" : 1789260742,\n      \"staged\" : false,\n      \"booted\" : true,\n      \"layered-commit-meta\" : {\n        \"rpmostree.clientlayer\" : true,\n        \"version\" : \"44.20260913.0\",\n        \"rpmostree.clientlayer_version\" : 6,\n        \"rpmostree.state-sha512\" : \"be4b2a1f27bf9b5c35155cf49a8d9756410daa635a6c86a50616fb321d92aadfd195ad6920964e0ea07750fb2db89e40aa6a99c8541f5f7030f92b8c5c2d43c9\",\n        \"rpmostree.rpmmd-repos\" : [\n          {\n            \"id\" : \"fedora-cisco-openh264\",\n            \"timestamp\" : 1774348624\n          },\n          {\n            \"id\" : \"updates\",\n            \"timestamp\" : 1789432644\n          },\n          {\n            \"id\" : \"fedora\",\n            \"timestamp\" : 1776864872\n          },\n          {\n            \"id\" : \"updates-archive\",\n            \"timestamp\" : 1789007268\n          }\n        ],\n        \"ostree.linux\" : \"7.2.5-200.fc44.x86_64\",\n        \"ostree.bootable\" : true\n      },\n      \"packages\" : [\n        \"glibc-langpack-zh\",\n        \"gwenview\",\n        \"okular\",\n        \"thunderbird\"\n      ],\n      \"requested-packages\" : [\n        \"glibc-langpack-zh\",\n        \"gwenview\",\n        \"okular\",\n        \"python3-pyside6\",\n        \"thunderbird\"\n      ],\n      \"timestamp\" : 1789446670,\n      \"signatures\" : [\n        [\n          true,\n          false,\n          false,\n          false,\n          false,\n          \"36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6\",\n          1789260873,\n          0,\n          \"RSA\",\n          \"SHA256\",\n          \"Fedora\",\n          \"fedora-44-primary@fedoraproject.org\",\n          \"36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6\",\n          0,\n          0\n        ]\n      ]\n    },\n    {\n      \"unlocked\" : \"none\",\n      \"pending-base-version\" : \"44.20260913.0\",\n      \"requested-local-packages\" : [],\n      \"base-commit-meta\" : {\n        \"ostree.bootable\" : true,\n        \"ostree.composefs.digest.v0\" : [\n          247,\n          148,\n          109,\n          26,\n          201,\n          236,\n          131,\n          35,\n          216,\n          178,\n          215,\n          229,\n          185,\n          66,\n          202,\n          78,\n          24,\n          153,\n          19,\n          144,\n          175,\n          197,\n          240,\n          248,\n          169,\n          224,\n          254,\n          134,\n          36,\n          15,\n          146,\n          119\n        ],\n        \"rpmostree.inputhash\" : \"90a6c2ba83c304d79812497c33a260f44f4440fa37ae303fe72a0c251e5c7dc1\",\n        \"version\" : \"44.1.7\",\n        \"ostree.linux\" : \"6.19.10-300.fc44.x86_64\",\n        \"ostree.container-cmd\" : [\n          \"/usr/bin/bash\"\n        ],\n        \"rpmostree.rpmmd-repos\" : [\n          {\n            \"id\" : \"repo-0\",\n            \"timestamp\" : 4812633214491295744\n          },\n          {\n            \"id\" : \"repo-1\",\n            \"timestamp\" : 4380569125240438784\n          }\n        ]\n      },\n      \"base-removals\" : [],\n      \"gpg-enabled\" : true,\n      \"pinned\" : false,\n      \"osname\" : \"fedora\",\n      \"base-remote-replacements\" : {      },\n      \"origin\" : \"fedora:fedora/44/x86_64/kinoite\",\n      \"regenerate-initramfs\" : false,\n      \"checksum\" : \"13e5eb8feb19a2cd200d10ecd06c5d04f77c6e5324e74f8d57940e67b6189b3d\",\n      \"requested-base-local-replacements\" : [],\n      \"id\" : \"fedora-13e5eb8feb19a2cd200d10ecd06c5d04f77c6e5324e74f8d57940e67b6189b3d.0\",\n      \"version\" : \"44.1.7\",\n      \"requested-local-fileoverride-packages\" : [],\n      \"requested-base-removals\" : [],\n      \"signatures\" : [\n        [\n          true,\n          false,\n          false,\n          false,\n          false,\n          \"36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6\",\n          1776864643,\n          0,\n          \"RSA\",\n          \"SHA256\",\n          \"Fedora\",\n          \"fedora-44-primary@fedoraproject.org\",\n          \"36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6\",\n          0,\n          0\n        ]\n      ],\n      \"requested-packages\" : [],\n      \"serial\" : 0,\n      \"timestamp\" : 1776864538,\n      \"staged\" : false,\n      \"booted\" : false,\n      \"packages\" : [],\n      \"pending-base-timestamp\" : 1789260742,\n      \"base-local-replacements\" : [],\n      \"pending-base-checksum\" : \"be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df\"\n    }\n  ],\n  \"transaction\" : null,\n  \"cached-update\" : null,\n  \"update-driver\" : null\n}",
+        "stderr": "",
+        "json": {
+          "deployments": [
+            {
+              "unlocked": "none",
+              "base-local-replacements": [],
+              "requested-local-packages": [],
+              "base-commit-meta": {
+                "ostree.bootable": true,
+                "ostree.composefs.digest.v0": [
+                  210,
+                  130,
+                  150,
+                  56,
+                  32,
+                  158,
+                  174,
+                  90,
+                  135,
+                  139,
+                  252,
+                  144,
+                  214,
+                  247,
+                  250,
+                  92,
+                  94,
+                  235,
+                  208,
+                  127,
+                  59,
+                  28,
+                  50,
+                  28,
+                  196,
+                  204,
+                  131,
+                  178,
+                  192,
+                  240,
+                  85,
+                  179
+                ],
+                "rpmostree.inputhash": "d1c5e33056e32f841f41b08fb1b120b2eb1531b77a23dd6c0249d80fa1246b0a",
+                "version": "44.20260913.0",
+                "ostree.linux": "7.2.5-200.fc44.x86_64",
+                "ostree.container-cmd": [
+                  "/usr/bin/bash"
+                ],
+                "rpmostree.rpmmd-repos": [
+                  {
+                    "id": "repo-0",
+                    "timestamp": 7552229162816110592
+                  },
+                  {
+                    "id": "repo-1",
+                    "timestamp": 715128315530182656
+                  },
+                  {
+                    "id": "repo-2",
+                    "timestamp": -5337709583655763968
+                  }
+                ]
+              },
+              "base-removals": [],
+              "gpg-enabled": true,
+              "pinned": true,
+              "osname": "fedora",
+              "base-remote-replacements": {},
+              "origin": "fedora:fedora/44/x86_64/kinoite",
+              "regenerate-initramfs": false,
+              "checksum": "37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551",
+              "requested-base-local-replacements": [],
+              "id": "fedora-37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551.0",
+              "version": "44.20260913.0",
+              "base-version": "44.20260913.0",
+              "base-checksum": "be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df",
+              "requested-base-removals": [],
+              "requested-local-fileoverride-packages": [],
+              "serial": 0,
+              "base-timestamp": 1789260742,
+              "staged": false,
+              "booted": true,
+              "layered-commit-meta": {
+                "rpmostree.clientlayer": true,
+                "version": "44.20260913.0",
+                "rpmostree.clientlayer_version": 6,
+                "rpmostree.state-sha512": "be4b2a1f27bf9b5c35155cf49a8d9756410daa635a6c86a50616fb321d92aadfd195ad6920964e0ea07750fb2db89e40aa6a99c8541f5f7030f92b8c5c2d43c9",
+                "rpmostree.rpmmd-repos": [
+                  {
+                    "id": "fedora-cisco-openh264",
+                    "timestamp": 1774348624
+                  },
+                  {
+                    "id": "updates",
+                    "timestamp": 1789432644
+                  },
+                  {
+                    "id": "fedora",
+                    "timestamp": 1776864872
+                  },
+                  {
+                    "id": "updates-archive",
+                    "timestamp": 1789007268
+                  }
+                ],
+                "ostree.linux": "7.2.5-200.fc44.x86_64",
+                "ostree.bootable": true
+              },
+              "packages": [
+                "glibc-langpack-zh",
+                "gwenview",
+                "okular",
+                "thunderbird"
+              ],
+              "requested-packages": [
+                "glibc-langpack-zh",
+                "gwenview",
+                "okular",
+                "python3-pyside6",
+                "thunderbird"
+              ],
+              "timestamp": 1789446670,
+              "signatures": [
+                [
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  "36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6",
+                  1789260873,
+                  0,
+                  "RSA",
+                  "SHA256",
+                  "Fedora",
+                  "fedora-44-primary@fedoraproject.org",
+                  "36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6",
+                  0,
+                  0
+                ]
+              ]
+            },
+            {
+              "unlocked": "none",
+              "pending-base-version": "44.20260913.0",
+              "requested-local-packages": [],
+              "base-commit-meta": {
+                "ostree.bootable": true,
+                "ostree.composefs.digest.v0": [
+                  247,
+                  148,
+                  109,
+                  26,
+                  201,
+                  236,
+                  131,
+                  35,
+                  216,
+                  178,
+                  215,
+                  229,
+                  185,
+                  66,
+                  202,
+                  78,
+                  24,
+                  153,
+                  19,
+                  144,
+                  175,
+                  197,
+                  240,
+                  248,
+                  169,
+                  224,
+                  254,
+                  134,
+                  36,
+                  15,
+                  146,
+                  119
+                ],
+                "rpmostree.inputhash": "90a6c2ba83c304d79812497c33a260f44f4440fa37ae303fe72a0c251e5c7dc1",
+                "version": "44.1.7",
+                "ostree.linux": "6.19.10-300.fc44.x86_64",
+                "ostree.container-cmd": [
+                  "/usr/bin/bash"
+                ],
+                "rpmostree.rpmmd-repos": [
+                  {
+                    "id": "repo-0",
+                    "timestamp": 4812633214491295744
+                  },
+                  {
+                    "id": "repo-1",
+                    "timestamp": 4380569125240438784
+                  }
+                ]
+              },
+              "base-removals": [],
+              "gpg-enabled": true,
+              "pinned": false,
+              "osname": "fedora",
+              "base-remote-replacements": {},
+              "origin": "fedora:fedora/44/x86_64/kinoite",
+              "regenerate-initramfs": false,
+              "checksum": "13e5eb8feb19a2cd200d10ecd06c5d04f77c6e5324e74f8d57940e67b6189b3d",
+              "requested-base-local-replacements": [],
+              "id": "fedora-13e5eb8feb19a2cd200d10ecd06c5d04f77c6e5324e74f8d57940e67b6189b3d.0",
+              "version": "44.1.7",
+              "requested-local-fileoverride-packages": [],
+              "requested-base-removals": [],
+              "signatures": [
+                [
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  "36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6",
+                  1776864643,
+                  0,
+                  "RSA",
+                  "SHA256",
+                  "Fedora",
+                  "fedora-44-primary@fedoraproject.org",
+                  "36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6",
+                  0,
+                  0
+                ]
+              ],
+              "requested-packages": [],
+              "serial": 0,
+              "timestamp": 1776864538,
+              "staged": false,
+              "booted": false,
+              "packages": [],
+              "pending-base-timestamp": 1789260742,
+              "base-local-replacements": [],
+              "pending-base-checksum": "be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df"
+            }
+          ],
+          "transaction": null,
+          "cached-update": null,
+          "update-driver": null
+        }
+      },
+      "base_signature": {
+        "argv": [
+          "ostree",
+          "--repo=/sysroot/ostree/repo",
+          "show",
+          "--gpg-verify-remote=fedora",
+          "be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df"
+        ],
+        "exit_code": 0,
+        "stdout": "commit be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df\nParent:  65f5f9d3a414c737e017e80c37a204ddde016aaa274b3a58fd47c4e68fc9d2c0\nContentChecksum:  a2b0d3c1200e7bc4566dc5a394604aff09fbb3ced90507f456c40a182013e343\nDate:  2026-09-13 00:52:22 +0000\nVersion: 44.20260913.0\n(no subject)\n\nFound 1 signature:\n\n  Signature made Sun Sep 13 08:54:33 2026 using RSA key ID DBFCF71C6D9F90A6\n  Good signature from \"Fedora <fedora-44-primary@fedoraproject.org>\"\n",
+        "stderr": ""
+      },
+      "layer_parent": {
+        "argv": [
+          "ostree",
+          "--repo=/sysroot/ostree/repo",
+          "rev-parse",
+          "37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551^"
+        ],
+        "exit_code": 0,
+        "stdout": "be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df\n",
+        "stderr": ""
+      },
+      "fedora_ref": {
+        "argv": [
+          "ostree",
+          "--repo=/sysroot/ostree/repo",
+          "rev-parse",
+          "fedora:fedora/44/x86_64/kinoite"
+        ],
+        "exit_code": 0,
+        "stdout": "be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df\n",
+        "stderr": ""
+      },
+      "selinux": {
+        "argv": [
+          "getenforce"
+        ],
+        "exit_code": 0,
+        "stdout": "Enforcing\n",
+        "stderr": ""
+      },
+      "ostreed": {
+        "argv": [
+          "systemctl",
+          "is-active",
+          "rpm-ostreed"
+        ],
+        "exit_code": 0,
+        "stdout": "active\n",
+        "stderr": ""
+      },
+      "root_mount": {
+        "argv": [
+          "findmnt",
+          "--json",
+          "--output",
+          "TARGET,OPTIONS",
+          "--target",
+          "/"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n   \"filesystems\": [\n      {\n         \"target\": \"/\",\n         \"options\": \"ro,relatime,seclabel,lowerdir+=/run/ostree/.private/cfsroot-lower,datadir+=/sysroot/ostree/repo/objects,redirect_dir=on,metacopy=on\"\n      }\n   ]\n}\n",
+        "stderr": "",
+        "json": {
+          "filesystems": [
+            {
+              "target": "/",
+              "options": "ro,relatime,seclabel,lowerdir+=/run/ostree/.private/cfsroot-lower,datadir+=/sysroot/ostree/repo/objects,redirect_dir=on,metacopy=on"
+            }
+          ]
+        }
+      },
+      "failed_units": {
+        "argv": [
+          "systemctl",
+          "--failed",
+          "--no-legend",
+          "--plain"
+        ],
+        "exit_code": 0,
+        "stdout": "mcelog.service             loaded failed failed Machine Check Exception Logging Daemon\nsystemd-remount-fs.service loaded failed failed Remount Root and Kernel File Systems\n",
+        "stderr": ""
+      }
+    },
+    "atomic_identity_passed": true,
+    "errors": [],
+    "iso_boot_install_accepted": null,
+    "limitations": [
+      "Read-only deployment checks do not prove optical firmware boot, network-free installation, first-login profile completion, visual quality, or live rollback.",
+      "Failed units are recorded for comparison with the known baseline; they are not silently discarded."
+    ]
+  },
+  "installed_atomic_checks_passed": true,
+  "schema_version": 1,
+  "audited_at": "2026-09-15T08:39:41.889996+00:00"
+}

@@ -1,0 +1,218 @@
+DEBUG:anaconda.modules.common:The configuration is loaded from: ['/run/anaconda/anaconda.conf']
+DEBUG:anaconda.core.util:ID_LIKE not found in os-release files
+DEBUG:anaconda.core.kickstart.version:Using ID for version detection: fedora
+DEBUG:anaconda.core.kickstart.version:Attempting to convert version string: f44
+INFO:anaconda.core.kickstart.version:Detected kickstart version from platform ID: f44 -> 44000
+INFO:anaconda.core.kickstart.version:Using os-release detected kickstart version
+DEBUG:anaconda.modules.common.base.base:Publish the service.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads.
+INFO:anaconda.core.dbus:Connecting to the Anaconda bus at unix:path=/tmp/dbus-5nUwWgfKCQ,guid=1998d4aea6dd5242ea8c29ba6aa90686.
+WARNING:py.warnings:/usr/lib/python3.14/site-packages/dasbus/server/handler.py:78: DeprecationWarning: Gio.DBusConnection.register_object is deprecated
+  registration_id = connection.register_object(
+
+DEBUG:dasbus.connection:Registering a service name org.fedoraproject.Anaconda.Modules.Payloads.
+DEBUG:anaconda.modules.common.base.base:Start the loop.
+WARNING:py.warnings:/usr/lib64/python3.14/site-packages/gi/events.py:803: DeprecationWarning: 'asyncio.AbstractEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+  AbstractEventLoopPolicy = getattr(asyncio, "AbstractEventLoopPolicy", object)
+
+DEBUG:anaconda.modules.common.base.base:Reading kickstart...
+DEBUG:anaconda.modules.payloads.payload.payload_base:The kernel version list is set to: []
+DEBUG:anaconda.modules.payloads.payloads:Created the payload PayloadType.RPM_OSTREE.
+DEBUG:anaconda.modules.payloads.source.rpm_ostree.rpm_ostree:Configuration is set to 'RPMOSTreeConfigurationData(gpg_verification_enabled=False, osname='fedora', ref='aven/44/x86_64/prototype', remote='fedora', url='file:///run/install/repo/aven/ostree/repo')'.
+DEBUG:anaconda.modules.payloads.payload.payload_base:New sources [Source(type='RPM_OSTREE', osname='fedora', url='file:///run/install/repo/aven/ostree/repo')] were added.
+DEBUG:anaconda.modules.payloads.payloads:Activated the payload PayloadType.RPM_OSTREE.
+DEBUG:anaconda.modules.common.base.base:Kickstarted is set to True.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Payload/1.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Source/1.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Source/2.
+DEBUG:anaconda.modules.payloads.payload.payload_base:New sources [Source(type='RPM_OSTREE', osname='fedora', url='file:///run/install/repo/aven/ostree/repo'), Source(type='FLATPAK')] were added.
+DEBUG:anaconda.modules.common.base.base:Locale is set to en_US.UTF-8.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/1.
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-SetUpSourcesTask-1 (140129263859392)
+INFO:anaconda.modules.common.task.task:Set up installation sources
+DEBUG:anaconda.modules.payloads.base.initialization:Setting up sources...
+DEBUG:anaconda.modules.payloads.base.initialization:Setting up a source: Source(type='RPM_OSTREE', osname='fedora', url='file:///run/install/repo/aven/ostree/repo')
+DEBUG:anaconda.modules.payloads.base.initialization:Setting up a source: Source(type='FLATPAK')
+DEBUG:anaconda.modules.payloads.base.initialization:Running a task: Find size of flatpaks
+INFO:anaconda.modules.common.task.task:Find size of flatpaks
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Configure flatpak for path /var/tmp/anaconda-flatpak-temp
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Cleaning up flatpak repository
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Removing flatpak repository /var/tmp/anaconda-flatpak-temp
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-SetUpSourcesTask-1 (140129263859392)
+DEBUG:anaconda.modules.payloads.payloads:Main payload size: 3107353344, side payload size: 0, total: 3107353344
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/2.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/3.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/4.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/5.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/6.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/7.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/8.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/9.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/10.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/11.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/12.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/13.
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-PrepareSystemForInstallationTask-1 (140129263859392)
+INFO:anaconda.modules.common.task.task:Prepare system for installation
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-PrepareSystemForInstallationTask-1 (140129263859392)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-InitOSTreeFsAndRepoTask-1 (140129263859392)
+INFO:anaconda.modules.common.task.task:Initialize OSTree file system and repository
+INFO:program:Running... ostree admin --sysroot=/mnt/sysimage init-fs /mnt/sysimage
+DEBUG:program:Return code of ostree: 0
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-InitOSTreeFsAndRepoTask-1 (140129263859392)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-ChangeOSTreeRemoteTask-1 (140129263859392)
+INFO:anaconda.modules.common.task.task:Change OSTree remote
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-ChangeOSTreeRemoteTask-1 (140129263859392)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-PullRemoteAndDeleteTask-1 (140129263859392)
+INFO:anaconda.modules.common.task.task:Pull OSTree Remote
+INFO:anaconda.modules.payloads.payload.rpm_ostree.installation:ostree pull: 11825 metadata, 135239 content objects imported; 7.3 GB content written
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-PullRemoteAndDeleteTask-1 (140129263859392)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-DeployOSTreeTask-1 (140129263859392)
+INFO:anaconda.modules.common.task.task:Deploy OSTree
+INFO:program:Running... ostree admin --sysroot=/mnt/sysimage os-init fedora
+INFO:program:ostree/deploy/fedora initialized as OSTree stateroot
+DEBUG:program:Return code of ostree: 0
+INFO:anaconda.modules.payloads.payload.rpm_ostree.installation:ostree admin deploy starting
+INFO:program:Running... ostree admin --sysroot=/mnt/sysimage deploy --os=fedora fedora:aven/44/x86_64/prototype
+INFO:program:Relabeling /var (no stamp file 'var/.ostree-selabeled' found)
+INFO:program:Bootloader updated; bootconfig swap: yes; bootversion: boot.1.1, deployment count change: 1
+DEBUG:program:Return code of ostree: 0
+INFO:anaconda.modules.payloads.payload.rpm_ostree.installation:ostree config set sysroot.readonly true
+INFO:program:Running... ostree config --repo=/mnt/sysimage/ostree/repo set sysroot.readonly true
+DEBUG:program:Return code of ostree: 0
+INFO:anaconda.modules.payloads.payload.rpm_ostree.installation:ostree admin deploy complete
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-DeployOSTreeTask-1 (140129263859392)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-SetSystemRootTask-1 (140129263859392)
+INFO:anaconda.modules.common.task.task:Set OSTree system root
+INFO:program:Running... findmnt -rn /mnt/sysroot
+INFO:program:/mnt/sysroot /dev/vda3[/root] btrfs rw,relatime,seclabel,compress=zstd:1,discard=async,space_cache=v2,subvolid=258,subvol=/root
+DEBUG:program:Return code of findmnt: 0
+INFO:program:Running... mount --make-rprivate /mnt/sysroot
+DEBUG:program:Return code of mount: 0
+INFO:program:Running... umount --recursive /mnt/sysroot
+DEBUG:program:Return code of umount: 0
+INFO:program:Running... mount --rbind /mnt/sysimage/ostree/deploy/fedora/deploy/37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551.0 /mnt/sysroot
+DEBUG:program:Return code of mount: 0
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-SetSystemRootTask-1 (140129263859392)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-CopyBootloaderDataTask-1 (140129263859392)
+INFO:anaconda.modules.common.task.task:Copy OSTree bootloader data
+INFO:anaconda.modules.payloads.payload.rpm_ostree.installation:Copying bootloader data: efi
+INFO:program:Running... cp -r -p /mnt/sysroot/usr/lib/ostree-boot/efi /mnt/sysimage/boot
+DEBUG:program:Return code of cp: 0
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-CopyBootloaderDataTask-1 (140129263859392)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-PrepareOSTreeMountTargetsTask-1 (140129263859392)
+INFO:anaconda.modules.common.task.task:Prepare OSTree mount targets
+INFO:program:Running... mount --bind /mnt/sysroot/usr /mnt/sysroot/usr
+DEBUG:program:Return code of mount: 0
+INFO:program:Running... mount --bind -o remount,ro /mnt/sysroot/usr /mnt/sysroot/usr
+DEBUG:program:Return code of mount: 0
+INFO:program:Running... mount --rbind /mnt/sysimage/dev /mnt/sysroot/dev
+DEBUG:program:Return code of mount: 0
+INFO:program:Running... mount --rbind /mnt/sysimage/proc /mnt/sysroot/proc
+DEBUG:program:Return code of mount: 0
+INFO:program:Running... mount --rbind /mnt/sysimage/run /mnt/sysroot/run
+DEBUG:program:Return code of mount: 0
+INFO:program:Running... mount --rbind /mnt/sysimage/sys /mnt/sysroot/sys
+DEBUG:program:Return code of mount: 0
+INFO:program:Running... mount --bind /mnt/sysimage/var /mnt/sysroot/var
+DEBUG:program:Return code of mount: 0
+INFO:program:Running... systemd-tmpfiles --create --boot --root=/mnt/sysroot --prefix=/var/home
+DEBUG:program:Return code of systemd-tmpfiles: 0
+INFO:program:Running... systemd-tmpfiles --create --boot --root=/mnt/sysroot --prefix=/var/roothome
+DEBUG:program:Return code of systemd-tmpfiles: 0
+INFO:program:Running... systemd-tmpfiles --create --boot --root=/mnt/sysroot --prefix=/var/opt
+DEBUG:program:Return code of systemd-tmpfiles: 0
+INFO:program:Running... systemd-tmpfiles --create --boot --root=/mnt/sysroot --prefix=/var/srv
+DEBUG:program:Return code of systemd-tmpfiles: 0
+INFO:program:Running... systemd-tmpfiles --create --boot --root=/mnt/sysroot --prefix=/var/usrlocal
+DEBUG:program:Return code of systemd-tmpfiles: 0
+INFO:program:Running... systemd-tmpfiles --create --boot --root=/mnt/sysroot --prefix=/var/mnt
+DEBUG:program:Return code of systemd-tmpfiles: 0
+INFO:program:Running... systemd-tmpfiles --create --boot --root=/mnt/sysroot --prefix=/var/media
+DEBUG:program:Return code of systemd-tmpfiles: 0
+INFO:program:Running... systemd-tmpfiles --create --boot --root=/mnt/sysroot --prefix=/var/spool
+DEBUG:program:Return code of systemd-tmpfiles: 0
+INFO:program:Running... systemd-tmpfiles --create --boot --root=/mnt/sysroot --prefix=/var/spool/mail
+DEBUG:program:Return code of systemd-tmpfiles: 0
+INFO:program:Running... mount --bind /mnt/sysimage/boot /mnt/sysroot/boot
+DEBUG:program:Return code of mount: 0
+INFO:program:Running... mount --bind /mnt/sysimage/home /mnt/sysroot/var/home
+DEBUG:program:Return code of mount: 0
+INFO:program:Running... mount --bind /mnt/sysimage/boot/efi /mnt/sysroot/boot/efi
+DEBUG:program:Return code of mount: 0
+INFO:program:Running... mount --bind /mnt/sysimage/ /mnt/sysroot/sysroot
+DEBUG:program:Return code of mount: 0
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-PrepareOSTreeMountTargetsTask-1 (140129263859392)
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.rpm_ostree:Internal mounts are set to: ['/mnt/sysroot/usr', '/mnt/sysroot/dev', '/mnt/sysroot/proc', '/mnt/sysroot/run', '/mnt/sysroot/sys', '/mnt/sysroot/var', '/mnt/sysroot/boot', '/mnt/sysroot/var/home', '/mnt/sysroot/boot/efi', '/mnt/sysroot/sysroot']
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-InstallFlatpaksTask-1 (140129263859392)
+INFO:anaconda.modules.common.task.task:Install Flatpak applications
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Configure flatpak for path /mnt/sysroot/var/lib/flatpak
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref runtime/org.fedoraproject.Platform.GL.default/x86_64/f44 state started
+WARNING:py.warnings:/usr/lib64/python3.14/site-packages/pyanaconda/modules/payloads/payload/rpm_ostree/flatpak_manager.py:180: Warning: g_value_get_flags: assertion 'G_VALUE_HOLDS_FLAGS (value)' failed
+  self._transaction.run()
+
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref runtime/org.fedoraproject.Platform.GL.default/x86_64/f44 state stopped
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref runtime/org.fedoraproject.KDE6Platform/x86_64/f44 state started
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref runtime/org.fedoraproject.KDE6Platform/x86_64/f44 state stopped
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.skanpage/x86_64/stable state started
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.skanpage/x86_64/stable state stopped
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.qrca/x86_64/stable state started
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.qrca/x86_64/stable state stopped
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.gwenview/x86_64/stable state started
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.gwenview/x86_64/stable state stopped
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.okular/x86_64/stable state started
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.okular/x86_64/stable state stopped
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.kcalc/x86_64/stable state started
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.kcalc/x86_64/stable state stopped
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.kolourpaint/x86_64/stable state started
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.kolourpaint/x86_64/stable state stopped
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.kmines/x86_64/stable state started
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.kmines/x86_64/stable state stopped
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.kmahjongg/x86_64/stable state started
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.kmahjongg/x86_64/stable state stopped
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.krdc/x86_64/stable state started
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.krdc/x86_64/stable state stopped
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.elisa/x86_64/stable state started
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak operation: install of ref app/org.kde.elisa/x86_64/stable state stopped
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Adding a new flatpak remote fedora: oci+https://registry.fedoraproject.org
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Removing a flatpak remote Anaconda
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.flatpak_manager:Flatpak remote Anaconda removed
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-InstallFlatpaksTask-1 (140129263859392)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-CopyDriverDisksFilesTask-1 (140129263859392)
+INFO:anaconda.modules.common.task.task:Copy driver disks files
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-CopyDriverDisksFilesTask-1 (140129263859392)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-ChangeOSTreeRemoteTask-2 (140129263859392)
+INFO:anaconda.modules.common.task.task:Change OSTree remote
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-ChangeOSTreeRemoteTask-2 (140129263859392)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-ConfigureBootloader-1 (140129263859392)
+INFO:anaconda.modules.common.task.task:Configure OSTree bootloader
+DEBUG:anaconda.modules.payloads.payload.rpm_ostree.installation:Adding --update-firmware to bootupdctl call
+INFO:program:Running in chroot '/mnt/sysroot'... bootupctl backend install --auto --write-uuid --update-firmware --device /dev/vda /
+INFO:program:Executing: "efibootmgr" "--create" "--disk" "/dev/vda" "--part" "1" "--loader" "\\EFI\\fedora\\shimx64.efi" "--label" "Fedora"
+INFO:program:Timeout: 0 seconds
+INFO:program:BootOrder: 0008,0000,0001,0002,0003,0004,0005,0006,0007
+INFO:program:Boot0000* BootManagerMenuApp	FvVol(7cb8bdc9-f8eb-4f34-aaea-3ee4af6516a1)/FvFile(eec25bdc-67f2-4d95-b1d5-f81b2039d11d)
+INFO:program:Boot0001* EFI Firmware Setup	FvVol(7cb8bdc9-f8eb-4f34-aaea-3ee4af6516a1)/FvFile(462caa21-7614-4503-836e-8ab6f4662331)
+INFO:program:Boot0002* UEFI QEMU DVD-ROM QM00005 	PciRoot(0x0)/Pci(0x1f,0x2)/Sata(2,65535,0){auto_created_boot_option}
+INFO:program:Boot0003* UEFI PXEv4 (MAC:525400123456)	PciRoot(0x0)/Pci(0x4,0x0)/MAC(525400123456,1)/IPv4(0.0.0.0,0,DHCP,0.0.0.0,0.0.0.0,0.0.0.0){auto_created_boot_option}
+INFO:program:Boot0004* UEFI PXEv6 (MAC:525400123456)	PciRoot(0x0)/Pci(0x4,0x0)/MAC(525400123456,1)/IPv6([::],0,Static,[::],[::],64){auto_created_boot_option}
+INFO:program:Boot0005* UEFI HTTPv4 (MAC:525400123456)	PciRoot(0x0)/Pci(0x4,0x0)/MAC(525400123456,1)/IPv4(0.0.0.0,0,DHCP,0.0.0.0,0.0.0.0,0.0.0.0)/Uri(){auto_created_boot_option}
+INFO:program:Boot0006* UEFI HTTPv6 (MAC:525400123456)	PciRoot(0x0)/Pci(0x4,0x0)/MAC(525400123456,1)/IPv6([::],0,Static,[::],[::],64)/Uri(){auto_created_boot_option}
+INFO:program:Boot0007* EFI Internal Shell	FvVol(7cb8bdc9-f8eb-4f34-aaea-3ee4af6516a1)/FvFile(7c04a583-9e3e-4f1c-ad65-e05268d0b4d1)
+INFO:program:Boot0008* Fedora	HD(1,GPT,e0f9ae17-9aac-42b6-b109-d74589609329,0x800,0x12c000)/\EFI\fedora\shimx64.efi
+INFO:program:Added 01_users.cfg
+INFO:program:Added 10_blscfg.cfg
+INFO:program:Added 14_menu_show_once.cfg
+INFO:program:Added 30_uefi-firmware.cfg
+INFO:program:Added 41_custom.cfg
+INFO:program:Installed: grub.cfg
+INFO:program:Installed: bootuuid.cfg
+INFO:program:Installed: "fedora/grub.cfg"
+INFO:program:Installed: "fedora/bootuuid.cfg"
+DEBUG:program:Return code of bootupctl: 0
+INFO:program:Running in chroot '/mnt/sysroot'... ostree admin instutil set-kargs --merge console=tty0 console=ttyS0,115200n8 root=UUID=152085b9-1c90-4a57-9a6a-f2bd1ce6cc03 vconsole.keymap=us rootflags=subvol=root rw
+INFO:program:Bootloader updated; bootconfig swap: yes; bootversion: boot.0.1, deployment count change: 0
+DEBUG:program:Return code of ostree: 0
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-ConfigureBootloader-1 (140129263859392)
+DEBUG:anaconda.modules.common.base.base:Generating kickstart...
+DEBUG:anaconda.modules.common.base.base:Generating kickstart...

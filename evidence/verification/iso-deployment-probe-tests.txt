@@ -1,0 +1,18 @@
+test_ambiguous_booted_deployment_is_rejected (test_iso_deployment_probe.IsoDeploymentIdentityTests.test_ambiguous_booted_deployment_is_rejected) ... ok
+test_disabled_future_signature_verification_is_rejected (test_iso_deployment_probe.IsoDeploymentIdentityTests.test_disabled_future_signature_verification_is_rejected) ... ok
+test_exact_layer_and_persistent_origin (test_iso_deployment_probe.IsoDeploymentIdentityTests.test_exact_layer_and_persistent_origin) ... ok
+test_installer_ref_is_not_future_update_origin (test_iso_deployment_probe.IsoDeploymentIdentityTests.test_installer_ref_is_not_future_update_origin) ... ok
+test_layer_without_imported_base_is_rejected (test_iso_deployment_probe.IsoDeploymentIdentityTests.test_layer_without_imported_base_is_rejected) ... ok
+test_lost_layering_request_is_rejected (test_iso_deployment_probe.IsoDeploymentIdentityTests.test_lost_layering_request_is_rejected) ... ok
+test_plain_origin_refspec_is_rejected (test_iso_deployment_probe.IsoDeploymentIdentityTests.test_plain_origin_refspec_is_rejected) ... ok
+test_disabled_but_currently_running_login_service_is_rejected (test_iso_deployment_probe.IsoDesktopStartupTests.test_disabled_but_currently_running_login_service_is_rejected) ... ok
+test_each_bundled_duplicate_is_rejected (test_iso_deployment_probe.IsoDesktopStartupTests.test_each_bundled_duplicate_is_rejected) ... ok
+test_failed_flatpak_query_is_not_empty_application_success (test_iso_deployment_probe.IsoDesktopStartupTests.test_failed_flatpak_query_is_not_empty_application_success) ... ok
+test_native_login_and_unrelated_flatpak_are_allowed (test_iso_deployment_probe.IsoDesktopStartupTests.test_native_login_and_unrelated_flatpak_are_allowed) ... ok
+test_old_display_manager_is_rejected (test_iso_deployment_probe.IsoDesktopStartupTests.test_old_display_manager_is_rejected) ... ok
+test_text_default_target_is_rejected (test_iso_deployment_probe.IsoDesktopStartupTests.test_text_default_target_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK

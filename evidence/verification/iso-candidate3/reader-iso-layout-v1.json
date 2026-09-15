@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "phase": "layout",
+  "completed_at": "2026-09-15T01:33:09.344535+00:00",
+  "source": "/var/lib/aven/source",
+  "home": "/var/home/reader"
+}

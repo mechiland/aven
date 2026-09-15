@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "iso_sha256": "a0849b1ff8d263813a82fd47f53eb052e3b36600b2c97a2542ee0e08afedd96f",
+  "bios_optical_boot": true,
+  "uefi_optical_boot": true,
+  "installation_method": "Public ISO booted through UEFI optical firmware; native Anaconda GUI selections; no kernel/initrd/Kickstart override",
+  "test_disk": ".cache/iso-test/public-installed.qcow2",
+  "network": "QEMU user networking restrict=on; guest internet blocked",
+  "selected_storage": "Only fresh48GiB Virtio disk; default automatic partitioning",
+  "locale": "en_US.UTF-8",
+  "keyboard": "us",
+  "timezone": "Asia/Shanghai",
+  "account_creation": "Native first-boot setup, pending",
+  "installation": "complete",
+  "updated_at": "2026-09-15T09:08:56.686608+00:00",
+  "first_user_setup": "complete",
+  "first_user": "reader",
+  "disk_only_boot": true
+}

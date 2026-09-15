@@ -1,0 +1,8 @@
+{
+  "candidate": 2,
+  "iso_sha256": "05e98ac160c99556af081798672aad1a6fdd0394d2902dfbc06323d9af65000b",
+  "bios_optical_boot": true,
+  "uefi_optical_boot": true,
+  "offline_uefi_install": "failed_at_public_post_mount_check",
+  "debug_recovery": "Corrected helper passed against this disposable target; not release installation proof."
+}

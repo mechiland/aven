@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "inspected_at": "2026-09-15T10:40:59.508682+00:00",
+  "iso_sha256": "a0849b1ff8d263813a82fd47f53eb052e3b36600b2c97a2542ee0e08afedd96f",
+  "frames": [
+    {
+      "image": "evidence/verification/iso-candidate3/native-first-user-complete.png",
+      "sha256": "655b3586eacfb64136615a40d343bedbdd41988f6dba9f4b8e038cfdd4972cb2",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Unchanged Fedora Plasma Setup displays Completed and Finish. Native reader account creation is attributed to root workflow and corroborated by guest UID 1000 and marker evidence."
+    },
+    {
+      "image": "evidence/verification/iso-candidate3/first-desktop.png",
+      "sha256": "c5ee41123176c539283af510a90a0244816c562ff16b756d27dd4fa5de50a939",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "First Aven desktop has the green/cream wallpaper, centered short panel, Aven launcher and four native application icons. The English desktop alone does not establish Chinese typography quality."
+    },
+    {
+      "image": "evidence/verification/iso-candidate3/files-sc-grid.png",
+      "sha256": "0d5441ab7b26985bf947dabaa88b561bbd0157747b882f8f378a229c26216ee5",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native Dolphin displays Chinese UI and mixed Chinese/Latin names with image, video and PDF thumbnails. Internal system volumes remain visible, including an unlabeled red capacity bar and 2.0 GiB vda2; this differs from the evaluated round-4 sidebar."
+    },
+    {
+      "image": "evidence/verification/iso-candidate3/preview-text-sc.png",
+      "sha256": "94cd77b6a5fc34612bc630b27ad95b3fc1c4057352d9d702c22c789407d4aa8e",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native lightweight preview shows the Simplified Chinese paragraph fixture, mixed Latin/numbers/punctuation and color emoji. Paragraph bodies are visible without missing glyph boxes or clipping in this frame. System-volume sidebar issue remains behind it."
+    },
+    {
+      "image": "evidence/verification/iso-candidate3/preview-text-tc.png",
+      "sha256": "934c0ddc6fbb3d82790586c53334a2d90b09dc83dcb7a00a9cb56aeb8d6306c3",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native lightweight preview shows the Traditional Chinese paragraph fixture, mixed Latin/numbers/punctuation and color emoji. Paragraph bodies are visible without missing glyph boxes or clipping in this frame. This is TC content under SC interface chrome, not a separate TC interface/scaling matrix."
+    },
+    {
+      "image": "evidence/verification/iso-candidate3/preview-pdf.png",
+      "sha256": "bea1f2ac7bc7c9c0a904ae4269a1641b2b59ae7f7545c7b3de836d857c34c236",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native lightweight preview displays the PDF first page with Chinese headline and body, scrollbar and Open control; PDF is visibly rendered rather than blank."
+    }
+  ],
+  "visual_polish_scores": null,
+  "limitations": [
+    "Static images corroborate visible application states, not all interactions or physical motion.",
+    "This is ISO first-user smoke evidence, not a repeat of the full paired round-4 critic/scaling matrix.",
+    "Dolphin internal system-volume entries remain visible on this installation."
+  ]
+}

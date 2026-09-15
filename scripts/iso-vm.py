@@ -58,8 +58,9 @@ def prepare(iso):
         stream.write(archive)
 
 
-def start(mode, iso, uefi=False, disk=None):
+def start(mode, iso, uefi=False, disk=None, online=False, local_rtc=False):
     LAB.mkdir(parents=True, exist_ok=True)
+    disk = (disk or LAB / 'installed.qcow2').resolve()
     if (LAB / 'vm.qmp').exists():
         try:
             qmp('query-status')
@@ -73,18 +74,19 @@ def start(mode, iso, uefi=False, disk=None):
             '-display', 'egl-headless,rendernode=/dev/dri/renderD128', '-vnc', '127.0.0.1:22',
             '-device', 'qemu-xhci', '-device', 'usb-tablet',
             '-audiodev', 'none,id=audio', '-device', 'ich9-intel-hda', '-device', 'hda-duplex,audiodev=audio',
-            # restrict=on blocks guest access to the internet; forwarded local SSH remains available.
-            '-netdev', 'user,id=net0,restrict=on,hostfwd=tcp:127.0.0.1:2224-:22', '-device', 'virtio-net-pci,netdev=net0',
+            # Offline installation is the default; later browsing can explicitly enable internet.
+            '-netdev', f'user,id=net0,restrict={"off" if online else "on"},hostfwd=tcp:127.0.0.1:2224-:22', '-device', 'virtio-net-pci,netdev=net0',
             '-device', 'virtio-rng-pci', '-qmp', f'unix:{LAB / "vm.qmp"},server=on,wait=off',
             '-chardev', f'socket,id=serial,path={LAB / "serial.sock"},server=on,wait=off,logfile={LAB / (mode + ("-uefi" if uefi else "-bios") + ".serial.log")}',
             '-serial', 'chardev:serial', '-pidfile', LAB / 'vm.pid', '-daemonize']
+    if local_rtc:
+        args += ['-rtc', 'base=localtime']
     if uefi:
-        vars_path = LAB / 'OVMF_VARS.fd'
+        vars_path = LAB / 'optical.OVMF_VARS.fd' if mode == 'optical' else disk.with_suffix('.OVMF_VARS.fd')
         if not vars_path.exists():
             shutil.copy2('/usr/share/OVMF/OVMF_VARS_4M.fd', vars_path)
         args += ['-drive', 'if=pflash,format=raw,readonly=on,file=/usr/share/OVMF/OVMF_CODE_4M.fd',
                  '-drive', f'if=pflash,format=raw,file={vars_path}']
-    disk = (disk or LAB / 'installed.qcow2').resolve()
     if mode in ['install', 'public-install']:
         if disk.exists():
             raise RuntimeError('Refusing to overwrite a test installation; archive it explicitly first')
@@ -103,7 +105,7 @@ def start(mode, iso, uefi=False, disk=None):
             raise RuntimeError('Install the disposable disk first')
         args += ['-drive', f'file={disk},format=qcow2,if=virtio', '-boot', 'order=c']
     run(*args)
-    print(f'{mode}: SSH 2224, VNC 5922; internet restricted; UEFI={uefi}')
+    print(f'{mode}: SSH 2224, VNC 5922; internet={online}; UEFI={uefi}; local RTC={local_rtc}')
 
 
 def main():
@@ -111,19 +113,23 @@ def main():
     parser.add_argument('action', choices=['prepare', 'optical', 'install', 'public-install', 'boot', 'status', 'stop', 'quit', 'key', 'click', 'text', 'screenshot', 'ssh'])
     parser.add_argument('--iso', type=Path, default=ISO)
     parser.add_argument('--uefi', action='store_true')
+    parser.add_argument('--online', action='store_true', help='Allow guest internet for post-install browsing checks')
+    parser.add_argument('--local-rtc', action='store_true', help='Match a guest configured to interpret its hardware clock as local time')
     parser.add_argument('--disk', type=Path, help='Explicit disposable test disk; new installs never overwrite it')
+    parser.add_argument('--ssh-user', default='aven', help='User created through the public first-boot workflow')
     parser.add_argument('args', nargs='*')
     args = parser.parse_args()
     if args.action == 'prepare':
         prepare(args.iso)
     elif args.action in ['optical', 'install', 'public-install', 'boot']:
-        start(args.action, args.iso, args.uefi, args.disk)
+        start(args.action, args.iso, args.uefi, args.disk, args.online, args.local_rtc)
     elif args.action == 'status':
         print(json.dumps(qmp('query-status')))
     elif args.action in ['stop', 'quit']:
         qmp('system_powerdown' if args.action == 'stop' else 'quit')
     elif args.action == 'key':
-        qmp('human-monitor-command', {'command-line': 'sendkey ' + args.args[0]})
+        qmp('human-monitor-command', {'command-line': 'sendkey ' + args.args[0] + ' 30'})
+        time.sleep(.08)
     elif args.action == 'click':
         x, y = map(int, args.args)
         if not (0 <= x < 1920 and 0 <= y < 1200):
@@ -163,7 +169,7 @@ def main():
     elif args.action == 'ssh':
         sys.exit(subprocess.call(['ssh', '-i', str(LAB / 'id_ed25519'), '-p', '2224', '-o', 'BatchMode=yes',
                                   '-o', 'StrictHostKeyChecking=accept-new', '-o', f'UserKnownHostsFile={LAB / "known_hosts"}',
-                                  '-o', 'ConnectTimeout=5', 'aven@127.0.0.1', *args.args]))
+                                  '-o', 'ConnectTimeout=5', args.ssh_user + '@127.0.0.1', *args.args]))
 
 
 if __name__ == '__main__':

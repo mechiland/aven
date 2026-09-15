@@ -1,0 +1,10 @@
+{
+  "candidate": "candidate3",
+  "iso_sha256": "a0849b1ff8d263813a82fd47f53eb052e3b36600b2c97a2542ee0e08afedd96f",
+  "installation": "passed_public_uefi_native_gui",
+  "native_first_user": "passed_reader",
+  "atomic_audit": "passed",
+  "fontconfig": "42/42 passed",
+  "release_accepted": false,
+  "reason": "Native Places XBEL created after pre-session seeding; new-user sidebar defaults skipped. Candidate4 required."
+}

@@ -13,6 +13,9 @@ signature, and the five persistent package requests. The local layered commit is
 not signed by Fedora. After installation the update origin remains
 `fedora:fedora/44/x86_64/kinoite`, with Fedora signature verification enabled.
 
+A fresh installation starts with one deployment. Later Fedora Atomic updates
+create a new deployment and retain the previous one for rollback.
+
 The installer places fontconfig under `/etc` and Aven source under
 `/var/lib/aven/source`. On each user's first Plasma login, the profile seeds their
 own fonts, Dolphin/preview, Firefox, Thunderbird, Gwenview and visual defaults.
@@ -63,6 +66,19 @@ the private SSH key and automatic partitioning never enter the published ISO.
 QEMU blocks the guest's internet access during installation. Booting the resulting
 disk omits the optical drive entirely.
 
+The release acceptance path uses the public graphical installer and native
+first-user setup, without the private automation overlay:
+
+```sh
+python3 scripts/iso-vm.py public-install --uefi --disk .cache/iso-test/public-installed.qcow2
+# Complete Anaconda, then shut the guest down cleanly.
+python3 scripts/iso-vm.py boot --uefi --disk .cache/iso-test/public-installed.qcow2
+```
+
+Use `--online` on a later disk boot for ordinary browsing checks. If the guest
+was configured to interpret the hardware clock as local time, add `--local-rtc`
+to match it. These are laboratory options, not changes to the ISO.
+
 Record firmware boots, installation logs, Atomic origin/signature audit, first
 login completion, native applications and Chinese screenshots, and a second
 boot that retains the completion markers. Packaging acceptance is separate from
@@ -71,18 +87,27 @@ verification report.
 
 ## Download and reconstruct
 
-GitHub limits individual release assets to less than 2 GiB. If the ISO is split,
-download every numbered `.iso.part-*` file and `ISO-SHA256SUMS` from the same
-release into one directory. These parts are not individually bootable.
+Download all four numbered `.iso.part-*` files, `ISO-PARTS.json`, and
+`reassemble-iso.py` from the same GitHub Release into one directory. The parts
+are not individually bootable. GitHub limits individual release assets to less
+than 2 GiB; the helper reconstructs and verifies the complete installer ISO.
 
-On Linux/macOS:
+With Python 3 on Linux/macOS (use `py -3` instead of `python3` on Windows):
+
+```sh
+python3 reassemble-iso.py
+```
+
+The helper verifies every part and the whole ISO and refuses to overwrite an
+existing output. Reassemble on the computer's normal filesystem; the helper
+uses a hard link, unavailable on FAT/exFAT.
+
+Alternatively, on Linux with `ISO-SHA256SUMS` also downloaded:
 
 ```sh
 cat Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-* > Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso
 sha256sum --check ISO-SHA256SUMS
 ```
 
-macOS can verify a hash with `shasum -a 256 <filename>`. Windows users can use the
-release's `reassemble-iso.py` with Python 3; it verifies every part and the whole
-ISO and refuses to overwrite an existing output. Write the reconstructed ISO to
+macOS can verify a hash with `shasum -a 256 <filename>`. Write the reconstructed ISO to
 a USB drive of at least 16 GB using a standard image-writing tool, then boot it.

@@ -1,0 +1,39 @@
+{
+  "manifest": "output/Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.json",
+  "manifest_sha256": "68738d8b330e60c0ada037f7a3586c61ed223000fe2f369ffbf2c60528544e45",
+  "facts": {
+    "iso": {
+      "file": "output/Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso",
+      "bytes": 7890010112,
+      "sha256": "55ae922b276a044718f38e197c109a38e77edc352003fe140af9acf58873971a"
+    },
+    "boot_catalog": "El Torito catalog  : 30043  1\nEl Torito images   :   N  Pltf  B   Emul  Ld_seg  Hdpt  Ldsiz         LBA\nEl Torito boot img :   1  BIOS  y   none  0x0000  0x00      4       30044\nEl Torito boot img :   2  UEFI  y   none  0x0000  0x00  26480     3845746\nEl Torito img path :   1  /images/eltorito.img\nEl Torito img opts :   1  boot-info-table grub2-boot-info\nEl Torito img blks :   2  6620\nSystem area options: 0x00004201\nSystem area summary: MBR protective-msdos-label grub2-mbr cyl-align-off GPT\nISO image size/512 : 15409528\nPartition offset   : 16\nMBR heads per cyl  : 0\nMBR secs per head  : 0\nMBR partition table:   N Status  Type        Start       Blocks\nMBR partition      :   1   0x00  0xee            1     15409527\nGPT                :   N  Info\nGPT disk GUID      :      b0a5eaa16bbf984cbe82d38242051d2e\nGPT entry array    :      2  248  separated\nGPT lba range      :      64  15409464  15409527\nGPT partition name :   1  490053004f003900360036003000\nGPT partname local :   1  ISO9660\nGPT partition GUID :   1  b0a5eaa16bbf984cbe83d38242051d2e\nGPT type GUID      :   1  a2a0d0ebe5b9334487c068b6b72699c7\nGPT partition flags:   1  0x1000000000000001\nGPT start and size :   1  64  15382920\nGPT partition name :   2  41007000700065006e006400650064003200\nGPT partname local :   2  Appended2\nGPT partition GUID :   2  b0a5eaa16bbf984cbe80d38242051d2e\nGPT type GUID      :   2  28732ac11ff8d211ba4b00a0c93ec93b\nGPT partition flags:   2  0x0000000000000000\nGPT start and size :   2  15382984  26480\nxorriso 1.5.6 : RockRidge filesystem manipulator, libburnia project.\n\nxorriso : NOTE : Loading ISO image tree from LBA 0\nxorriso : UPDATE :  148184 nodes read in 1 seconds\nlibisofs: NOTE : Found hidden El-Torito image for EFI.\nlibisofs: NOTE : EFI image start and size: 3845746 * 2048 , 26480 * 512\nxorriso : NOTE : Detected El-Torito boot information which currently is set to be discarded\nDrive current: -indev 'output/Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso'\nMedia current: stdio file, overwriteable\nMedia status : is written , is appendable\nBoot record  : El Torito , MBR protective-msdos-label grub2-mbr cyl-align-off GPT\nMedia summary: 1 session, 3852382 data blocks, 7524m data,  763g free\nVolume id    : 'Fedora-Knt-ostree-x86_64-44'\n",
+    "public_kickstart": {
+      "path": "/aven/aven.ks",
+      "sha256": "ed258f67ac5c109b50ad201a09ea3a07005d56f441a63e9b0ea1bbb15b5b2e02",
+      "safety_errors": []
+    },
+    "installer_ref": {
+      "ref": "aven/44/x86_64/prototype",
+      "commit": "37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551"
+    },
+    "repository_mode": "archive-z2",
+    "commit_objects": {
+      "layered": "37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551",
+      "base": "be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df"
+    },
+    "base_detached_metadata_sha256": "7c4fd9fbaa49282319b212d318c44bf975c34f13584de922ac58172220f19b42",
+    "source_files_checked": 141
+  },
+  "static_media_checks_passed": true,
+  "errors": [],
+  "iso_boot_install_accepted": null,
+  "limitations": [
+    "El Torito entries and ISO9660 structure do not prove firmware boot or a completed installation.",
+    "Kickstart scanning detects explicit unsafe defaults; arbitrary invoked post-install scripts require source review.",
+    "Commit-object hashes and detached-metadata presence do not validate all repository objects or the base signature. Run repository fsck and the installed probe.",
+    "First-login Aven profile, network-free installation, screenshots and reboot remain separate required observations."
+  ],
+  "schema_version": 1,
+  "audited_at": "2026-09-15T08:42:15.432414+00:00"
+}

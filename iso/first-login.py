@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Seed Aven once per user before Plasma, then configure its native panel."""
+"""Seed Aven before Plasma, then finish defaults that need the native session."""
 import argparse
 import datetime
 import fcntl
@@ -56,6 +56,11 @@ def main():
                 subprocess.run([dbus, 'org.kde.plasmashell', '/PlasmaShell',
                                 'org.kde.PlasmaShell.evaluateScript', script], stdout=log, stderr=subprocess.STDOUT, check=True)
                 subprocess.run([dbus, 'org.kde.KWin', '/KWin', 'reconfigure'],
+                               stdout=log, stderr=subprocess.STDOUT, check=True)
+                # KFilePlacesModel creates the user's native XBEL after Plasma
+                # starts. The pre-session seed cannot finalize it for a new
+                # account. Complete this step before recording layout success.
+                subprocess.run([sys.executable, str(ROOT / 'files/finalize-places.py')],
                                stdout=log, stderr=subprocess.STDOUT, check=True)
             marker.write_text(json.dumps({'schema_version': 1, 'phase': args.phase,
                                          'completed_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),

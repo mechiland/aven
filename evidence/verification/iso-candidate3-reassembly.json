@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-09-15T09:01:26.547897+00:00",
+  "pass": true,
+  "full_reassembly_verified": true,
+  "platform": "Linux",
+  "iso": {
+    "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso",
+    "bytes": 7890010112,
+    "sha256": "a0849b1ff8d263813a82fd47f53eb052e3b36600b2c97a2542ee0e08afedd96f"
+  },
+  "parts": [
+    {
+      "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-000",
+      "bytes": 1992294400,
+      "sha256": "e1fb1b91ab0df235eb25c2b218c5c1ab1cf3283274e39e22b277e765023865f9"
+    },
+    {
+      "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-001",
+      "bytes": 1992294400,
+      "sha256": "223f14d7dbc9b5548889764f1eb356f682ea5d93b6616730e99f1499cf446fd1"
+    },
+    {
+      "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-002",
+      "bytes": 1992294400,
+      "sha256": "a17cf2e87d843a286532d5725ee55530330fa133d21784c2f5f2dc7272b33dac"
+    },
+    {
+      "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-003",
+      "bytes": 1913126912,
+      "sha256": "92b961a934d3e1807d3d68ee2ba227e589b9b11852ca24b3623e95aa85c94b4c"
+    }
+  ],
+  "tool": "scripts/reassemble-iso.py",
+  "build_manifest_matches": true
+}

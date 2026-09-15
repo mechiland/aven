@@ -1,0 +1,35 @@
++ ostree --repo=/mnt/sysimage/ostree/repo pull-local --untrusted --depth=0 /run/install/repo/aven/ostree/repo be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df
+323 metadata, 11 content objects imported; 99.5 MB content written
++ ostree --repo=/mnt/sysimage/ostree/repo refs --force --create=fedora:fedora/44/x86_64/kinoite be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df
++ chroot /mnt/sysroot ostree show --gpg-verify-remote=fedora be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df
+commit be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df
+Parent:  65f5f9d3a414c737e017e80c37a204ddde016aaa274b3a58fd47c4e68fc9d2c0
+ContentChecksum:  a2b0d3c1200e7bc4566dc5a394604aff09fbb3ced90507f456c40a182013e343
+Date:  2026-09-13 00:52:22 +0000
+Version: 44.20260913.0
+(no subject)
+
+Found 1 signature:
+
+  Signature made Sun Sep 13 08:54:33 2026 using RSA key ID DBFCF71C6D9F90A6
+  Good signature from "Fedora <fedora-44-primary@fedoraproject.org>"
++ chroot /mnt/sysroot flatpak uninstall --system --noninteractive --assumeyes org.kde.gwenview
+Uninstalling app/org.kde.gwenview/x86_64/stable
+bwrap: pivot_root: Invalid argument
+bwrap: pivot_root: Invalid argument
+bwrap: pivot_root: Invalid argument
++ chroot /mnt/sysroot flatpak uninstall --system --noninteractive --assumeyes org.kde.okular
+Uninstalling app/org.kde.okular/x86_64/stable
+bwrap: pivot_root: Invalid argument
+bwrap: pivot_root: Invalid argument
+bwrap: pivot_root: Invalid argument
++ /usr/bin/python3 /mnt/sysroot/var/lib/aven/source/typography/install.py --root /mnt/sysroot
+Installed /mnt/sysroot/etc/fonts/conf.d/60-aven-families.conf
+Installed /mnt/sysroot/etc/fonts/conf.d/99-aven-rendering.conf
+Install typography/fedora-packages.txt through the guest image's package workflow.
+In the guest: fc-cache -f; restart applications; python3 typography/audit.py --active
++ chroot /mnt/sysroot systemctl set-default graphical.target
+Removed '/etc/systemd/system/default.target'.
+Created symlink '/etc/systemd/system/default.target' → '/usr/lib/systemd/system/graphical.target'.
++ chroot /mnt/sysroot restorecon -RF /etc/fonts/conf.d /etc/xdg /var/lib/aven
+Aven installation complete; Atomic Fedora origin and package layers preserved.

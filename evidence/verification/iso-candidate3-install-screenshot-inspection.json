@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "inspected_at": "2026-09-15T09:23:36.949902+00:00",
+  "iso_sha256": "a0849b1ff8d263813a82fd47f53eb052e3b36600b2c97a2542ee0e08afedd96f",
+  "frames": [
+    {
+      "image": "evidence/verification/iso-candidate3/bios-installer-welcome.png",
+      "sha256": "dfa51811faae2d025a34f16ec5c846df941722724130af8ab55bf05a8d6cd0e8",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native Fedora44 installer language welcome page visible. BIOS mode is attributed to the root-operated workflow, not inferred from pixels."
+    },
+    {
+      "image": "evidence/verification/iso-candidate3/uefi-installer-welcome.png",
+      "sha256": "dfa51811faae2d025a34f16ec5c846df941722724130af8ab55bf05a8d6cd0e8",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native Fedora44 installer language welcome page visible. UEFI mode is attributed to the root-operated workflow, not inferred from pixels."
+    },
+    {
+      "image": "evidence/verification/iso-candidate3/public-disk-selection.png",
+      "sha256": "b96de6d6c2925cb63262dd60145626d451cbee3574bc5879d63459e454345974",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "One fresh48GiB Virtio disk selected; native automatic/custom storage controls remain available."
+    },
+    {
+      "image": "evidence/verification/iso-candidate3/public-install-complete.png",
+      "sha256": "d181c95eb15d97b7425409216a7366d9711fe740f269fecb708a8b4a1332c853",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native Anaconda Complete state, installation-success text and Reboot System button visible."
+    }
+  ],
+  "visual_polish_scores": null,
+  "limitations": [
+    "These installer screenshots do not establish first-user completion, Atomic runtime state or Aven application typography."
+  ]
+}

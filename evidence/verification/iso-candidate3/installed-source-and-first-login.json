@@ -1,0 +1,945 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-09-15T02:33:15.975072+00:00",
+  "source_root": "/var/lib/aven/source",
+  "checks": [
+    {
+      "path": "browser/chrome/userChrome.css",
+      "expected_sha256": "71d7ab00fe28e5ff0d9adf07f21136a5dd2c4bf9eedf164df695198c2c7dd040",
+      "actual_sha256": "71d7ab00fe28e5ff0d9adf07f21136a5dd2c4bf9eedf164df695198c2c7dd040",
+      "passed": true
+    },
+    {
+      "path": "browser/install.py",
+      "expected_sha256": "ec7ede8a3929c652996ec716de47173dcb87945ce4025864f6806e895bf0c70a",
+      "actual_sha256": "ec7ede8a3929c652996ec716de47173dcb87945ce4025864f6806e895bf0c70a",
+      "passed": true
+    },
+    {
+      "path": "files/aven-preview.desktop",
+      "expected_sha256": "e3fe9c890c2dec066b12483de5f48a25c8cea88d6891ffdd20f77d3eeb06f401",
+      "actual_sha256": "e3fe9c890c2dec066b12483de5f48a25c8cea88d6891ffdd20f77d3eeb06f401",
+      "passed": true
+    },
+    {
+      "path": "files/dolphinrc",
+      "expected_sha256": "bdb0022ffdf18cf7fec3fb99ac211387a8bb22281fa4fab03443622b37dc3382",
+      "actual_sha256": "bdb0022ffdf18cf7fec3fb99ac211387a8bb22281fa4fab03443622b37dc3382",
+      "passed": true
+    },
+    {
+      "path": "files/install.py",
+      "expected_sha256": "c015487ffc67681f1b0735c567d02b0b3140b664418acdd36901b3142e635cc5",
+      "actual_sha256": "c015487ffc67681f1b0735c567d02b0b3140b664418acdd36901b3142e635cc5",
+      "passed": true
+    },
+    {
+      "path": "files/integration.json",
+      "expected_sha256": "57013575131a1a1dcfc61e84d944a4205691a0242cbb3ad07c1631660d8681e9",
+      "actual_sha256": "57013575131a1a1dcfc61e84d944a4205691a0242cbb3ad07c1631660d8681e9",
+      "passed": true
+    },
+    {
+      "path": "files/layout.py",
+      "expected_sha256": "c54a0f08b0af1c498727c185219ea76a19375c3e58710feebe26b54bb3d368b2",
+      "actual_sha256": "c54a0f08b0af1c498727c185219ea76a19375c3e58710feebe26b54bb3d368b2",
+      "passed": true
+    },
+    {
+      "path": "files/org.aven.Preview.desktop",
+      "expected_sha256": "45f9f539d08646672644fbb8aa4c442c948c65784558b0d4285edafe14cb96ba",
+      "actual_sha256": "45f9f539d08646672644fbb8aa4c442c948c65784558b0d4285edafe14cb96ba",
+      "passed": true
+    },
+    {
+      "path": "files/places-records.md",
+      "expected_sha256": "52a9694f778e03722b6df898519b3c51737b8d1d159e332dd78e8e118798ae6e",
+      "actual_sha256": "52a9694f778e03722b6df898519b3c51737b8d1d159e332dd78e8e118798ae6e",
+      "passed": true
+    },
+    {
+      "path": "files/places.py",
+      "expected_sha256": "1afa16455179a3560cfd73d8c872affae92be4a6e2e255f5724698ddb5ea0efb",
+      "actual_sha256": "1afa16455179a3560cfd73d8c872affae92be4a6e2e255f5724698ddb5ea0efb",
+      "passed": true
+    },
+    {
+      "path": "files/round-03.md",
+      "expected_sha256": "767abdf0596b53e10da33129167c8683aa49b7742e73f6aff43bd185f90a61e9",
+      "actual_sha256": "767abdf0596b53e10da33129167c8683aa49b7742e73f6aff43bd185f90a61e9",
+      "passed": true
+    },
+    {
+      "path": "files/system_places.py",
+      "expected_sha256": "f279f972c4ad2bdef914d17a27d7d39c344b48950578262e469e26a3409ecf74",
+      "actual_sha256": "f279f972c4ad2bdef914d17a27d7d39c344b48950578262e469e26a3409ecf74",
+      "passed": true
+    },
+    {
+      "path": "files/tests/smoke_layout.py",
+      "expected_sha256": "dd518e904d78cd3753f62eed4e11ad9759d7df3d817a0577ac08f09b1e3c5e88",
+      "actual_sha256": "dd518e904d78cd3753f62eed4e11ad9759d7df3d817a0577ac08f09b1e3c5e88",
+      "passed": true
+    },
+    {
+      "path": "files/tests/test_places.py",
+      "expected_sha256": "27a9ff9df131790e7cc67bde4db1c16587f0693d2171cba8cc5afab681be3e06",
+      "actual_sha256": "27a9ff9df131790e7cc67bde4db1c16587f0693d2171cba8cc5afab681be3e06",
+      "passed": true
+    },
+    {
+      "path": "files/tests/test_shortcut.py",
+      "expected_sha256": "97b8dc218ae00597129270436e90f3026e9b9872d19e1eeee86c10d90764d48b",
+      "actual_sha256": "97b8dc218ae00597129270436e90f3026e9b9872d19e1eeee86c10d90764d48b",
+      "passed": true
+    },
+    {
+      "path": "fixtures/browser/index.html",
+      "expected_sha256": "dc098fee7faa69c9ea44d60e428a17d35ae18df61d53bb119526546f61c2e6cc",
+      "actual_sha256": "dc098fee7faa69c9ea44d60e428a17d35ae18df61d53bb119526546f61c2e6cc",
+      "passed": true
+    },
+    {
+      "path": "fixtures/browser/reading.css",
+      "expected_sha256": "627944189c4b5786d3fa1d2963602f1d8832d35572ae4264bf4006d5819c2594",
+      "actual_sha256": "627944189c4b5786d3fa1d2963602f1d8832d35572ae4264bf4006d5819c2594",
+      "passed": true
+    },
+    {
+      "path": "fixtures/browser/traditional.html",
+      "expected_sha256": "d9a0d6e37689bb8677ad8d057f7e7df46bebaa63387a041342a249a8b052fb79",
+      "actual_sha256": "d9a0d6e37689bb8677ad8d057f7e7df46bebaa63387a041342a249a8b052fb79",
+      "passed": true
+    },
+    {
+      "path": "fixtures/browser/周末路线.txt",
+      "expected_sha256": "4372c686ff8ad721173bb63d024a3c685b0d12b0f14f0942d09598a336ef6fee",
+      "actual_sha256": "4372c686ff8ad721173bb63d024a3c685b0d12b0f14f0942d09598a336ef6fee",
+      "passed": true
+    },
+    {
+      "path": "fixtures/documents/weekend.html",
+      "expected_sha256": "85c051b8cc96ef8fe831710036d4c15faad909e2984673c57e583761f01692d3",
+      "actual_sha256": "85c051b8cc96ef8fe831710036d4c15faad909e2984673c57e583761f01692d3",
+      "passed": true
+    },
+    {
+      "path": "fixtures/documents/周末散步计划.pdf",
+      "expected_sha256": "8f0cd198962d6803233ec2883fa7b1473520e0e750de4a20f5e5a14f438f4a8a",
+      "actual_sha256": "8f0cd198962d6803233ec2883fa7b1473520e0e750de4a20f5e5a14f438f4a8a",
+      "passed": true
+    },
+    {
+      "path": "fixtures/mail/messages.json",
+      "expected_sha256": "650710fdfa35c6c56dc1684df0f96e5edb9df506eb44c9809af9ab96c977db35",
+      "actual_sha256": "650710fdfa35c6c56dc1684df0f96e5edb9df506eb44c9809af9ab96c977db35",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/00-地出-Earthrise.jpg",
+      "expected_sha256": "b0cd972974f71b36164dbc5c1dc8808ed5bcddbf09de3adebb40c559b99a1e4d",
+      "actual_sha256": "b0cd972974f71b36164dbc5c1dc8808ed5bcddbf09de3adebb40c559b99a1e4d",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/01-瀑布横幅-EXIF-1.jpg",
+      "expected_sha256": "a23b1b0eac8c5ee5ae0373d07984b8d57df152e6be363d2ab77b304285bcad81",
+      "actual_sha256": "a23b1b0eac8c5ee5ae0373d07984b8d57df152e6be363d2ab77b304285bcad81",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/02-瀑布竖幅-EXIF-1.jpg",
+      "expected_sha256": "2d8247813c4cedbfcbec5205963655cce449a0286399c5a0128fae4dc9ec50ce",
+      "actual_sha256": "2d8247813c4cedbfcbec5205963655cce449a0286399c5a0128fae4dc9ec50ce",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/03-旋转方向-EXIF-6.jpg",
+      "expected_sha256": "9b344e9f0c869d8637ea22e672df9451d8d3cc1d2d0b291af3b284e538e5f124",
+      "actual_sha256": "9b344e9f0c869d8637ea22e672df9451d8d3cc1d2d0b291af3b284e538e5f124",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/04-透明色阶-Transparency.png",
+      "expected_sha256": "756a03364c02e3c9f85d6f4029eb3cef2488c081dc537d46e102bebcb9e02732",
+      "actual_sha256": "756a03364c02e3c9f85d6f4029eb3cef2488c081dc537d46e102bebcb9e02732",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/05-花开-Flower.webm",
+      "expected_sha256": "c6f8a348953395598a9a73b9bab1676436410797bce9f398f4be1531d6e76dda",
+      "actual_sha256": "c6f8a348953395598a9a73b9bab1676436410797bce9f398f4be1531d6e76dda",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/ATTRIBUTION.md",
+      "expected_sha256": "3376c10a289ec6b6dd97ca0552f91a29c6feb16bcf7be6f419c32fdb6ce9f292",
+      "actual_sha256": "3376c10a289ec6b6dd97ca0552f91a29c6feb16bcf7be6f419c32fdb6ce9f292",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/LICENSE-exif.txt",
+      "expected_sha256": "eda2673fc728b46a07d2f56f9165a6cd5190bf0bd008475992227f97cad463c8",
+      "actual_sha256": "eda2673fc728b46a07d2f56f9165a6cd5190bf0bd008475992227f97cad463c8",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/LICENSE-mdn.txt",
+      "expected_sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+      "actual_sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/LICENSE-pngsuite.txt",
+      "expected_sha256": "5cb922e144816a1a3a33183ecdda7d989374cacc70d1084fa542680dcfe5fd16",
+      "actual_sha256": "5cb922e144816a1a3a33183ecdda7d989374cacc70d1084fa542680dcfe5fd16",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos/manifest.json",
+      "expected_sha256": "a5b4733d6f17856abf4ed13073935bb9db82b050132f8f2a7bd40826de67be45",
+      "actual_sha256": "a5b4733d6f17856abf4ed13073935bb9db82b050132f8f2a7bd40826de67be45",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/01-春日小径.jpg",
+      "expected_sha256": "08720ef697439905eddb2f4d475c120dec182f8fbc152d6fd7b9ab7ed7f5929b",
+      "actual_sha256": "08720ef697439905eddb2f4d475c120dec182f8fbc152d6fd7b9ab7ed7f5929b",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/02-湖畔树林.jpg",
+      "expected_sha256": "397debf7b3449182b8cb6db38a9e65a082547fd5fd95d7eb176fc451cf9a960e",
+      "actual_sha256": "397debf7b3449182b8cb6db38a9e65a082547fd5fd95d7eb176fc451cf9a960e",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/03-庭院倒影.jpg",
+      "expected_sha256": "17d6d16f26aa72ea62e7eced1eb72fdfa4b32ba9058a39afd2700e052f5e1b5f",
+      "actual_sha256": "17d6d16f26aa72ea62e7eced1eb72fdfa4b32ba9058a39afd2700e052f5e1b5f",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/04-枯山水.jpg",
+      "expected_sha256": "aec11aa2593fe477c2f9a5ccc51283761795de47fc2a26215973191a6170f93f",
+      "actual_sha256": "aec11aa2593fe477c2f9a5ccc51283761795de47fc2a26215973191a6170f93f",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/05-桥边樱花.jpg",
+      "expected_sha256": "b0d14c4bf9b468d98bca79884f1623875d0b14ded84d271b016d34c1d8a62e56",
+      "actual_sha256": "b0d14c4bf9b468d98bca79884f1623875d0b14ded84d271b016d34c1d8a62e56",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/06-山间河流.jpg",
+      "expected_sha256": "e7f63711ac3703ef4f11f3764093dc94cef41adc244843e4d6e4a47a935e2dc5",
+      "actual_sha256": "e7f63711ac3703ef4f11f3764093dc94cef41adc244843e4d6e4a47a935e2dc5",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/07-岚山街角.jpg",
+      "expected_sha256": "c7d340abb607219099f6eb17946e9ec0a4a013752b6fccba4a9f09d1bd2dba48",
+      "actual_sha256": "c7d340abb607219099f6eb17946e9ec0a4a013752b6fccba4a9f09d1bd2dba48",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/08-京都小巷.jpg",
+      "expected_sha256": "25c5b12e1d63ee11a8f3d4853bf888a0db6dc67ed281be69b1f4eaaf15dfd159",
+      "actual_sha256": "25c5b12e1d63ee11a8f3d4853bf888a0db6dc67ed281be69b1f4eaaf15dfd159",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/ATTRIBUTION.md",
+      "expected_sha256": "94c952fba61f3ddc8dccd2fed98f5a3ffce0d6cac2113b34247464ee0e17818e",
+      "actual_sha256": "94c952fba61f3ddc8dccd2fed98f5a3ffce0d6cac2113b34247464ee0e17818e",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/LICENSE-CC0.txt",
+      "expected_sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+      "actual_sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+      "passed": true
+    },
+    {
+      "path": "fixtures/photos-album/manifest.json",
+      "expected_sha256": "4d8a4c35f8a904f7c101f2dac42ee5de1118b08bd87a26f920178cb9b6b1bed7",
+      "actual_sha256": "4d8a4c35f8a904f7c101f2dac42ee5de1118b08bd87a26f920178cb9b6b1bed7",
+      "passed": true
+    },
+    {
+      "path": "fixtures/typography/specimen.html",
+      "expected_sha256": "ff6f9644427439f80bd3b9f0825ec9542ed2d41dfcddb28b9fe54a6f68c9a6b5",
+      "actual_sha256": "ff6f9644427439f80bd3b9f0825ec9542ed2d41dfcddb28b9fe54a6f68c9a6b5",
+      "passed": true
+    },
+    {
+      "path": "fixtures/typography/简体中文与Latin.txt",
+      "expected_sha256": "5b64d420a1df1de7b09e3df587d523dc8aabcbd1ca1c817e70cf9d8cabd47e68",
+      "actual_sha256": "5b64d420a1df1de7b09e3df587d523dc8aabcbd1ca1c817e70cf9d8cabd47e68",
+      "passed": true
+    },
+    {
+      "path": "fixtures/typography/繁體中文與Latin.txt",
+      "expected_sha256": "1eb8d751d0c0e29d9cb15c11bd634b265b3ed566776e7c59afe11e931698b0e6",
+      "actual_sha256": "1eb8d751d0c0e29d9cb15c11bd634b265b3ed566776e7c59afe11e931698b0e6",
+      "passed": true
+    },
+    {
+      "path": "integration/apply-profile.py",
+      "expected_sha256": "28790b711f0fe58ebb90d9b6fd2c8a32f1fd2936a9ba3ba83f0bde59323260cc",
+      "actual_sha256": "28790b711f0fe58ebb90d9b6fd2c8a32f1fd2936a9ba3ba83f0bde59323260cc",
+      "passed": true
+    },
+    {
+      "path": "integration/apply.py",
+      "expected_sha256": "dc5d96828f78c3c08aca5bdd63306337c2e9f097d6d61d5e158eb9157a7879bd",
+      "actual_sha256": "dc5d96828f78c3c08aca5bdd63306337c2e9f097d6d61d5e158eb9157a7879bd",
+      "passed": true
+    },
+    {
+      "path": "integration/native-apps.py",
+      "expected_sha256": "b0aba828a9aa58b5e3765cb989aa4ddd2df3b152f29f2d2ac7140dcdd1b3bf51",
+      "actual_sha256": "b0aba828a9aa58b5e3765cb989aa4ddd2df3b152f29f2d2ac7140dcdd1b3bf51",
+      "passed": true
+    },
+    {
+      "path": "integration/plasma-layout.js.in",
+      "expected_sha256": "363e897b799122d446cc6fa5b1ba6a07cc7e3ef3cb050ff9b4971a7da29e8fab",
+      "actual_sha256": "363e897b799122d446cc6fa5b1ba6a07cc7e3ef3cb050ff9b4971a7da29e8fab",
+      "passed": true
+    },
+    {
+      "path": "integration/prepare-packages.py",
+      "expected_sha256": "627ecf8f72434716ae84d3e0115e73cf75a61206a72f90f13f47bd15601f1407",
+      "actual_sha256": "627ecf8f72434716ae84d3e0115e73cf75a61206a72f90f13f47bd15601f1407",
+      "passed": true
+    },
+    {
+      "path": "iso/aven-layout.desktop",
+      "expected_sha256": "57305c3225301eea88ae289cb013cb5271ad0c6f5261c06c04faf653cd4f602e",
+      "actual_sha256": "57305c3225301eea88ae289cb013cb5271ad0c6f5261c06c04faf653cd4f602e",
+      "passed": true
+    },
+    {
+      "path": "iso/aven-profile.sh",
+      "expected_sha256": "8b46f10d6660011d950207890c15c3b2f9f8692dc4870a2f72128d74cc9ff26e",
+      "actual_sha256": "8b46f10d6660011d950207890c15c3b2f9f8692dc4870a2f72128d74cc9ff26e",
+      "passed": true
+    },
+    {
+      "path": "iso/aven.ks",
+      "expected_sha256": "ed258f67ac5c109b50ad201a09ea3a07005d56f441a63e9b0ea1bbb15b5b2e02",
+      "actual_sha256": "ed258f67ac5c109b50ad201a09ea3a07005d56f441a63e9b0ea1bbb15b5b2e02",
+      "passed": true
+    },
+    {
+      "path": "iso/first-login.py",
+      "expected_sha256": "8168f7599e19467d0ba555b28b2715c24dd4b76ab7accc3107e46fd412ec0ba5",
+      "actual_sha256": "8168f7599e19467d0ba555b28b2715c24dd4b76ab7accc3107e46fd412ec0ba5",
+      "passed": true
+    },
+    {
+      "path": "iso/install-target.py",
+      "expected_sha256": "a1410e89e6a1b13ce623ae5ccd44fa19ed89fae9e8aa8f0531a8aac867e37b12",
+      "actual_sha256": "a1410e89e6a1b13ce623ae5ccd44fa19ed89fae9e8aa8f0531a8aac867e37b12",
+      "passed": true
+    },
+    {
+      "path": "iso/platform.json",
+      "expected_sha256": "ee39fcd000f16071ce8d35c61ce003c857d4dbc566bb568bf927aeb1c30cf369",
+      "actual_sha256": "ee39fcd000f16071ce8d35c61ce003c857d4dbc566bb568bf927aeb1c30cf369",
+      "passed": true
+    },
+    {
+      "path": "mail/chrome/userChrome.css",
+      "expected_sha256": "51a8700fbc055724cbedf6768cd310b5ba01236a44059d3b34bae05155d53d20",
+      "actual_sha256": "51a8700fbc055724cbedf6768cd310b5ba01236a44059d3b34bae05155d53d20",
+      "passed": true
+    },
+    {
+      "path": "mail/chrome/userContent.css",
+      "expected_sha256": "53b809d08cc8f7a6c149739fea0e24d4b32d8d121f038daca2921d8ca79351a9",
+      "actual_sha256": "53b809d08cc8f7a6c149739fea0e24d4b32d8d121f038daca2921d8ca79351a9",
+      "passed": true
+    },
+    {
+      "path": "mail/install.py",
+      "expected_sha256": "19d8f24a3f94aa5f588f7d124dcc0a9895af928b230a93476335ec6cae3847ba",
+      "actual_sha256": "19d8f24a3f94aa5f588f7d124dcc0a9895af928b230a93476335ec6cae3847ba",
+      "passed": true
+    },
+    {
+      "path": "mail/integration.json",
+      "expected_sha256": "aea17213c7d9faac397fee74bb5721ddc3059845b750c91eed384b5073af8c8d",
+      "actual_sha256": "aea17213c7d9faac397fee74bb5721ddc3059845b750c91eed384b5073af8c8d",
+      "passed": true
+    },
+    {
+      "path": "mail/profile.py",
+      "expected_sha256": "c5483d63410787855961fd5836e4441606609d8774d475e9931516b8a62d74dc",
+      "actual_sha256": "c5483d63410787855961fd5836e4441606609d8774d475e9931516b8a62d74dc",
+      "passed": true
+    },
+    {
+      "path": "photos/audit.py",
+      "expected_sha256": "b2745dcc3696ab23051ee363a3389a365443a591efa7cf16eae08791e513e667",
+      "actual_sha256": "b2745dcc3696ab23051ee363a3389a365443a591efa7cf16eae08791e513e667",
+      "passed": true
+    },
+    {
+      "path": "photos/consumer-album.md",
+      "expected_sha256": "048c88b151870b457af2cafb8def1c9c9ecf0866ab45978aee6231af023a3d7a",
+      "actual_sha256": "048c88b151870b457af2cafb8def1c9c9ecf0866ab45978aee6231af023a3d7a",
+      "passed": true
+    },
+    {
+      "path": "photos/copy-album.py",
+      "expected_sha256": "7ae7826d684d44cf31597f138bad32db8fc00a77ee97ed0d30d7ad518c83aa05",
+      "actual_sha256": "7ae7826d684d44cf31597f138bad32db8fc00a77ee97ed0d30d7ad518c83aa05",
+      "passed": true
+    },
+    {
+      "path": "photos/copy-fixtures.py",
+      "expected_sha256": "b9003e7aa804f3a5d6a223923d24886f3bb06a31c9b2e5fc8a9192ce673a17f0",
+      "actual_sha256": "b9003e7aa804f3a5d6a223923d24886f3bb06a31c9b2e5fc8a9192ce673a17f0",
+      "passed": true
+    },
+    {
+      "path": "photos/fedora-packages.txt",
+      "expected_sha256": "17d61e7156bf33b02a61f31a206587458d02d0ca15659b7c38f06057c0770cfd",
+      "actual_sha256": "17d61e7156bf33b02a61f31a206587458d02d0ca15659b7c38f06057c0770cfd",
+      "passed": true
+    },
+    {
+      "path": "photos/install.py",
+      "expected_sha256": "96d249da35db4f24e993705a516f07331d93d5eecc1eeb7dd1fcff7d2996b43f",
+      "actual_sha256": "96d249da35db4f24e993705a516f07331d93d5eecc1eeb7dd1fcff7d2996b43f",
+      "passed": true
+    },
+    {
+      "path": "photos/profile.py",
+      "expected_sha256": "e45310b79c3c7b5afbad38265b52f022dd178646765d011c1b75aa0896269629",
+      "actual_sha256": "e45310b79c3c7b5afbad38265b52f022dd178646765d011c1b75aa0896269629",
+      "passed": true
+    },
+    {
+      "path": "photos/schema.json",
+      "expected_sha256": "1a864d0a619655077398570251c49c313ae910d4be663e6f7a7eef730ca6531b",
+      "actual_sha256": "1a864d0a619655077398570251c49c313ae910d4be663e6f7a7eef730ca6531b",
+      "passed": true
+    },
+    {
+      "path": "preview/aven-preview",
+      "expected_sha256": "f69dcb949fb2fc2c9884d72cf80be5ea9d53865161f3d5a9329dd38dc2c01fdd",
+      "actual_sha256": "f69dcb949fb2fc2c9884d72cf80be5ea9d53865161f3d5a9329dd38dc2c01fdd",
+      "passed": true
+    },
+    {
+      "path": "preview/aven_preview/__init__.py",
+      "expected_sha256": "0e28b1a87bcfa3e66bf7e2e9df4ef8a818f3e8fba1054d1ec579d24d55fb123b",
+      "actual_sha256": "0e28b1a87bcfa3e66bf7e2e9df4ef8a818f3e8fba1054d1ec579d24d55fb123b",
+      "passed": true
+    },
+    {
+      "path": "preview/aven_preview/__main__.py",
+      "expected_sha256": "a67c172046323b0efcafe92cb83abc266d5dd4bc931d9312cde1b7bed50643db",
+      "actual_sha256": "a67c172046323b0efcafe92cb83abc266d5dd4bc931d9312cde1b7bed50643db",
+      "passed": true
+    },
+    {
+      "path": "preview/aven_preview/app.py",
+      "expected_sha256": "e644488eecedf8b8efa4b03ecbdb2ed169723b6719d441ca294c848e3e9835cf",
+      "actual_sha256": "e644488eecedf8b8efa4b03ecbdb2ed169723b6719d441ca294c848e3e9835cf",
+      "passed": true
+    },
+    {
+      "path": "preview/aven_preview/core.py",
+      "expected_sha256": "b306dc366dac719584fc1f65d8458fc94191a0e06e8d3938d87d7d8859ce74ca",
+      "actual_sha256": "b306dc366dac719584fc1f65d8458fc94191a0e06e8d3938d87d7d8859ce74ca",
+      "passed": true
+    },
+    {
+      "path": "preview/tests/smoke_qt.py",
+      "expected_sha256": "ee0666ec4a633bb63f226cee577070140617d392a500579b59ab2427398c1739",
+      "actual_sha256": "ee0666ec4a633bb63f226cee577070140617d392a500579b59ab2427398c1739",
+      "passed": true
+    },
+    {
+      "path": "preview/tests/test_core.py",
+      "expected_sha256": "73b0ad42f9fa9f89218757f549ffd0aa06c26a2c8cac1913370f525379c44c27",
+      "actual_sha256": "73b0ad42f9fa9f89218757f549ffd0aa06c26a2c8cac1913370f525379c44c27",
+      "passed": true
+    },
+    {
+      "path": "typography/audit.py",
+      "expected_sha256": "cfc7d9504043b56a320a8df08e19a97a236732ccfcd2459aca668ee604104d33",
+      "actual_sha256": "cfc7d9504043b56a320a8df08e19a97a236732ccfcd2459aca668ee604104d33",
+      "passed": true
+    },
+    {
+      "path": "typography/aven-matrix-geometry.json",
+      "expected_sha256": "139e7ef8764b2043a19d05f05625820b8b14985447454944f22223866519b4ba",
+      "actual_sha256": "139e7ef8764b2043a19d05f05625820b8b14985447454944f22223866519b4ba",
+      "passed": true
+    },
+    {
+      "path": "typography/aven-matrix.json",
+      "expected_sha256": "e784321c5de039d26c5696f5777e70c1c30f849988085eeb595f8ef4118097a7",
+      "actual_sha256": "e784321c5de039d26c5696f5777e70c1c30f849988085eeb595f8ef4118097a7",
+      "passed": true
+    },
+    {
+      "path": "typography/aven-round04-matrix-geometry.json",
+      "expected_sha256": "e3e6d3e73c108cbeeb18005edc82d386b2f8484c425e5c22db6857c120830f2e",
+      "actual_sha256": "e3e6d3e73c108cbeeb18005edc82d386b2f8484c425e5c22db6857c120830f2e",
+      "passed": true
+    },
+    {
+      "path": "typography/aven-round04-matrix.json",
+      "expected_sha256": "2a9606cc520ff4515bb04c4444398ef66619fddcbc953d72af3c848cd4a0a7ed",
+      "actual_sha256": "2a9606cc520ff4515bb04c4444398ef66619fddcbc953d72af3c848cd4a0a7ed",
+      "passed": true
+    },
+    {
+      "path": "typography/aven-round04-process-locales.json",
+      "expected_sha256": "293269e277d131eb51444de15a3897b8edaf641774ef478dd2dc15237085c62f",
+      "actual_sha256": "293269e277d131eb51444de15a3897b8edaf641774ef478dd2dc15237085c62f",
+      "passed": true
+    },
+    {
+      "path": "typography/aven-round04-restoration.json",
+      "expected_sha256": "3cf4361bf379488a2268b3bda6f96c7ee4172060bbbfa1e13f1ab789f90baa0f",
+      "actual_sha256": "3cf4361bf379488a2268b3bda6f96c7ee4172060bbbfa1e13f1ab789f90baa0f",
+      "passed": true
+    },
+    {
+      "path": "typography/fedora-packages.txt",
+      "expected_sha256": "6c5dd78d52a87397fe8bbbde1d439747ecc380612e4025d18e8a6c683f25cb3b",
+      "actual_sha256": "6c5dd78d52a87397fe8bbbde1d439747ecc380612e4025d18e8a6c683f25cb3b",
+      "passed": true
+    },
+    {
+      "path": "typography/fontconfig/60-aven-families.conf",
+      "expected_sha256": "049a4febfe4e49c3ba6f44052e42f8164d7c37d20c96c8e36be9a1a29b667845",
+      "actual_sha256": "049a4febfe4e49c3ba6f44052e42f8164d7c37d20c96c8e36be9a1a29b667845",
+      "passed": true
+    },
+    {
+      "path": "typography/fontconfig/99-aven-rendering.conf",
+      "expected_sha256": "81bc7c6ba7aa6beb635acacc24e309e511dccd567b2a0c8c758953af2ff4f66a",
+      "actual_sha256": "81bc7c6ba7aa6beb635acacc24e309e511dccd567b2a0c8c758953af2ff4f66a",
+      "passed": true
+    },
+    {
+      "path": "typography/install.py",
+      "expected_sha256": "eea7c3cc229600c201368b2e5e459cd4b735533c83333c19b2986531fdcf23cf",
+      "actual_sha256": "eea7c3cc229600c201368b2e5e459cd4b735533c83333c19b2986531fdcf23cf",
+      "passed": true
+    },
+    {
+      "path": "typography/roles.json",
+      "expected_sha256": "af1b644412557f79c9674b80641a18cf0e047abe0a1a01db76a8e839f9b20453",
+      "actual_sha256": "af1b644412557f79c9674b80641a18cf0e047abe0a1a01db76a8e839f9b20453",
+      "passed": true
+    },
+    {
+      "path": "typography/round04-capture-plan.json",
+      "expected_sha256": "9939307ac765a05b473840825b96172e072d5453d8eb4ead73236610c336d8d6",
+      "actual_sha256": "9939307ac765a05b473840825b96172e072d5453d8eb4ead73236610c336d8d6",
+      "passed": true
+    },
+    {
+      "path": "typography/stock-matrix.json",
+      "expected_sha256": "c887c7e7225a8e8ec569a5d939f923c0cea6dca6dcabb73e49f93e6eafd527cd",
+      "actual_sha256": "c887c7e7225a8e8ec569a5d939f923c0cea6dca6dcabb73e49f93e6eafd527cd",
+      "passed": true
+    },
+    {
+      "path": "verification/aven-round03-takeover.md",
+      "expected_sha256": "8fa0a9d815dc04cac9f6f15ea6ae54e7353ae0e0b5ed4e0723916ccf0a94eeb9",
+      "actual_sha256": "8fa0a9d815dc04cac9f6f15ea6ae54e7353ae0e0b5ed4e0723916ccf0a94eeb9",
+      "passed": true
+    },
+    {
+      "path": "verification/aven-round04-takeover.md",
+      "expected_sha256": "547e57b723f484d4e79c151f76d139bce64733b89edfea21d1dd45113c82f9a3",
+      "actual_sha256": "547e57b723f484d4e79c151f76d139bce64733b89edfea21d1dd45113c82f9a3",
+      "passed": true
+    },
+    {
+      "path": "verification/evidence_gate.py",
+      "expected_sha256": "e1e8896e24978eef6f5e988cc86cf9737f12c75a21d995c7cef1f547b3ddb49d",
+      "actual_sha256": "e1e8896e24978eef6f5e988cc86cf9737f12c75a21d995c7cef1f547b3ddb49d",
+      "passed": true
+    },
+    {
+      "path": "verification/file_operations.py",
+      "expected_sha256": "5dc68b76686bd53f5000a43aa8dad6b65c3454057019932ae823fe88ca760db2",
+      "actual_sha256": "5dc68b76686bd53f5000a43aa8dad6b65c3454057019932ae823fe88ca760db2",
+      "passed": true
+    },
+    {
+      "path": "verification/guest_probe.py",
+      "expected_sha256": "56cfdbb0eeb95d6adea2201a47420a4381959db29f5a95e8b7e18f6b75c65752",
+      "actual_sha256": "56cfdbb0eeb95d6adea2201a47420a4381959db29f5a95e8b7e18f6b75c65752",
+      "passed": true
+    },
+    {
+      "path": "verification/iso-contract.md",
+      "expected_sha256": "822df25190d952c0f14741b2ca0ca7108db22495cf8ed35e831cc0915255687e",
+      "actual_sha256": "822df25190d952c0f14741b2ca0ca7108db22495cf8ed35e831cc0915255687e",
+      "passed": true
+    },
+    {
+      "path": "verification/iso_audit.py",
+      "expected_sha256": "7869b4ccc38f56c691927876fb1806996deb38a1e7e78bf261402fd46a9a509b",
+      "actual_sha256": "7869b4ccc38f56c691927876fb1806996deb38a1e7e78bf261402fd46a9a509b",
+      "passed": true
+    },
+    {
+      "path": "verification/iso_deployment_probe.py",
+      "expected_sha256": "e66f554cc55088172a89ea38b19be139e719aa5bc658515823bbdaa13a1875f4",
+      "actual_sha256": "e66f554cc55088172a89ea38b19be139e719aa5bc658515823bbdaa13a1875f4",
+      "passed": true
+    },
+    {
+      "path": "verification/kwin_windows.js",
+      "expected_sha256": "1b71fbc9e92501d54b2b5230728dd495f127b79af297be49909c342f56914279",
+      "actual_sha256": "1b71fbc9e92501d54b2b5230728dd495f127b79af297be49909c342f56914279",
+      "passed": true
+    },
+    {
+      "path": "verification/record_frames.py",
+      "expected_sha256": "c998af9dd97bc8f95c3b2bf1ac4cc8fb16565c1c15e614f82c488a886435496e",
+      "actual_sha256": "c998af9dd97bc8f95c3b2bf1ac4cc8fb16565c1c15e614f82c488a886435496e",
+      "passed": true
+    },
+    {
+      "path": "verification/restore_profile.py",
+      "expected_sha256": "11fb81e0dd7ad805e9ff767b5006b5c0e05162baae078832f98ce3c81c09268c",
+      "actual_sha256": "11fb81e0dd7ad805e9ff767b5006b5c0e05162baae078832f98ce3c81c09268c",
+      "passed": true
+    },
+    {
+      "path": "verification/rfb_capture.py",
+      "expected_sha256": "f5ad1a62385656f3de1e9011921b0e2b0411acd2833a3e69ba098a1e6a4386f6",
+      "actual_sha256": "f5ad1a62385656f3de1e9011921b0e2b0411acd2833a3e69ba098a1e6a4386f6",
+      "passed": true
+    },
+    {
+      "path": "verification/tests/test_evidence_gate.py",
+      "expected_sha256": "ef8c4cca548bee8321a3a5cf2f5ec234aee7c017f2eab30f0d3c94e9e92c1186",
+      "actual_sha256": "ef8c4cca548bee8321a3a5cf2f5ec234aee7c017f2eab30f0d3c94e9e92c1186",
+      "passed": true
+    },
+    {
+      "path": "verification/tests/test_guest_probe.py",
+      "expected_sha256": "f88e11ae3ec4be0c14e748cde49efcd4dc3e5ea5ce60645fb39a2b5976144f6b",
+      "actual_sha256": "f88e11ae3ec4be0c14e748cde49efcd4dc3e5ea5ce60645fb39a2b5976144f6b",
+      "passed": true
+    },
+    {
+      "path": "verification/tests/test_iso_audit.py",
+      "expected_sha256": "6df9756c5347cfa4e72c36469133f5330bee7bd1beb3c31f2823e2b7025b5533",
+      "actual_sha256": "6df9756c5347cfa4e72c36469133f5330bee7bd1beb3c31f2823e2b7025b5533",
+      "passed": true
+    },
+    {
+      "path": "verification/tests/test_iso_deployment_probe.py",
+      "expected_sha256": "a5c8876d76f36e22b0d254c800eb50f0ce396ead87840a0aa61ad76311ef968f",
+      "actual_sha256": "a5c8876d76f36e22b0d254c800eb50f0ce396ead87840a0aa61ad76311ef968f",
+      "passed": true
+    },
+    {
+      "path": "verification/tests/test_iso_packaging.py",
+      "expected_sha256": "a732220e5b616dd93543bbf96c092fef0ac0ae297509409f2cd2f9f617cfb188",
+      "actual_sha256": "a732220e5b616dd93543bbf96c092fef0ac0ae297509409f2cd2f9f617cfb188",
+      "passed": true
+    },
+    {
+      "path": "verification/tests/test_restore_places.py",
+      "expected_sha256": "112ce25ed07541464ebe20ccec8d7f7988202c66968f040813430caa33d716a3",
+      "actual_sha256": "112ce25ed07541464ebe20ccec8d7f7988202c66968f040813430caa33d716a3",
+      "passed": true
+    },
+    {
+      "path": "verification/tests/test_rfb_capture.py",
+      "expected_sha256": "dfcf36565207ed41e753ccae6af28d1b6bcf649551d682f913bb1feab7f9b4cd",
+      "actual_sha256": "dfcf36565207ed41e753ccae6af28d1b6bcf649551d682f913bb1feab7f9b4cd",
+      "passed": true
+    },
+    {
+      "path": "verification/window_tool.py",
+      "expected_sha256": "3e566bd89740c44996cc33b1771fcf5082e008e68e9f598e8860275ee003d36d",
+      "actual_sha256": "3e566bd89740c44996cc33b1771fcf5082e008e68e9f598e8860275ee003d36d",
+      "passed": true
+    },
+    {
+      "path": "visual/LICENSE",
+      "expected_sha256": "b672d2b6a6c935c5ee7cd8375bcdf1d65a0a8eac54d6f5ca1f4cb16b38e13aa1",
+      "actual_sha256": "b672d2b6a6c935c5ee7cd8375bcdf1d65a0a8eac54d6f5ca1f4cb16b38e13aa1",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/Avenrc",
+      "expected_sha256": "c8bf66dd1cc5d2f287912b882feb661abaa09db49f3df86d1b8ad4149391d095",
+      "actual_sha256": "c8bf66dd1cc5d2f287912b882feb661abaa09db49f3df86d1b8ad4149391d095",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/alldesktops.svg",
+      "expected_sha256": "cbdf3bb358674c95a87726d0870f493a3c64dc42815bc653e64cb9c587a402bf",
+      "actual_sha256": "cbdf3bb358674c95a87726d0870f493a3c64dc42815bc653e64cb9c587a402bf",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/appmenu.svg",
+      "expected_sha256": "2f5af13c1ffe8aa59461dbcbe7a19c259da812f887e5e7d429235867be0cd1ae",
+      "actual_sha256": "2f5af13c1ffe8aa59461dbcbe7a19c259da812f887e5e7d429235867be0cd1ae",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/close.svg",
+      "expected_sha256": "2355e6e292565ad2e40a8b573ad19c25470bbcd7e07ca598bb0e886598fac0f6",
+      "actual_sha256": "2355e6e292565ad2e40a8b573ad19c25470bbcd7e07ca598bb0e886598fac0f6",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/decoration.svg",
+      "expected_sha256": "a093a9acbd21e9d09a253563495f83084f04b26d26d431ad7de0f98e246bebbd",
+      "actual_sha256": "a093a9acbd21e9d09a253563495f83084f04b26d26d431ad7de0f98e246bebbd",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/help.svg",
+      "expected_sha256": "296ea8b8fe78530bab12eaab84a06c27568038811da79312e50c20db750b4bac",
+      "actual_sha256": "296ea8b8fe78530bab12eaab84a06c27568038811da79312e50c20db750b4bac",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/keepabove.svg",
+      "expected_sha256": "aa08ec666a6e755eaaa2ac5455d691644adb1c090d6c9a8da089a7249796d10e",
+      "actual_sha256": "aa08ec666a6e755eaaa2ac5455d691644adb1c090d6c9a8da089a7249796d10e",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/keepbelow.svg",
+      "expected_sha256": "11b78624d279abac693a02e4a8d3592899300610a03237a088045ff23273471b",
+      "actual_sha256": "11b78624d279abac693a02e4a8d3592899300610a03237a088045ff23273471b",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/maximize.svg",
+      "expected_sha256": "dfbf905ce5b43904c775520fee820cdf4116ea6af3b2baee697ab5b716f37c7c",
+      "actual_sha256": "dfbf905ce5b43904c775520fee820cdf4116ea6af3b2baee697ab5b716f37c7c",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/metadata.desktop",
+      "expected_sha256": "7d9699c6fc9c7a3c0823dfade2d2a3b037a95469daa627f84e60f4baed0cc504",
+      "actual_sha256": "7d9699c6fc9c7a3c0823dfade2d2a3b037a95469daa627f84e60f4baed0cc504",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/minimize.svg",
+      "expected_sha256": "28d540885326b1e9acebedd4ebb50e0057c26ec8ec5768c269a41d33f4679eea",
+      "actual_sha256": "28d540885326b1e9acebedd4ebb50e0057c26ec8ec5768c269a41d33f4679eea",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/restore.svg",
+      "expected_sha256": "addb65445485f6a6bcaa767df0a7508ae1d3c554c5b6319e643ed209716a8b78",
+      "actual_sha256": "addb65445485f6a6bcaa767df0a7508ae1d3c554c5b6319e643ed209716a8b78",
+      "passed": true
+    },
+    {
+      "path": "visual/aurorae/Aven/shade.svg",
+      "expected_sha256": "46af9a59ad90d17326e7edc9bd7baccbf2202a39cf4f4bc3c876b2d3e0cfeb49",
+      "actual_sha256": "46af9a59ad90d17326e7edc9bd7baccbf2202a39cf4f4bc3c876b2d3e0cfeb49",
+      "passed": true
+    },
+    {
+      "path": "visual/check_geometry.py",
+      "expected_sha256": "33522559bbe8357ec86532afd7ac6305f99aaff696bb29bd8b9a55b5ef6882d9",
+      "actual_sha256": "33522559bbe8357ec86532afd7ac6305f99aaff696bb29bd8b9a55b5ef6882d9",
+      "passed": true
+    },
+    {
+      "path": "visual/color-schemes/AvenMist.colors",
+      "expected_sha256": "7119da1784f957a1ce137ff5a7b29ae31fbbe1d298a7324333b14f1b9ea40289",
+      "actual_sha256": "7119da1784f957a1ce137ff5a7b29ae31fbbe1d298a7324333b14f1b9ea40289",
+      "passed": true
+    },
+    {
+      "path": "visual/generate_assets.py",
+      "expected_sha256": "85fb10bf5803e27d607eff8637c78ac3cb3b3ac3e3d5f25ae492dcb8ff9b2152",
+      "actual_sha256": "85fb10bf5803e27d607eff8637c78ac3cb3b3ac3e3d5f25ae492dcb8ff9b2152",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/index.theme",
+      "expected_sha256": "8d68459f7a6f1ab7eecfe8baaa021271e178ca5e5e96bb43066bf0e3b0c1105b",
+      "actual_sha256": "8d68459f7a6f1ab7eecfe8baaa021271e178ca5e5e96bb43066bf0e3b0c1105b",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/apps/aven.svg",
+      "expected_sha256": "f948b2e485e9595ac72ac88f8f28f2bc9af4ae6454d9ade5200ba303ecc5bd0c",
+      "actual_sha256": "f948b2e485e9595ac72ac88f8f28f2bc9af4ae6454d9ade5200ba303ecc5bd0c",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/mimetypes/inode-directory.svg",
+      "expected_sha256": "40b133d842381ef8a4b0a387e2a80b1af347148b70742ceb651438587b638d35",
+      "actual_sha256": "40b133d842381ef8a4b0a387e2a80b1af347148b70742ceb651438587b638d35",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/places/folder-documents.svg",
+      "expected_sha256": "77029c9fb19163d0c9c655d886ee3b4e39058c9e9e559eabc63d9be66f986e5f",
+      "actual_sha256": "77029c9fb19163d0c9c655d886ee3b4e39058c9e9e559eabc63d9be66f986e5f",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/places/folder-download.svg",
+      "expected_sha256": "c17682ecbc38f1aa3832c177c878c5fae295b5cb533f1a518e7e4fae8d1a81bf",
+      "actual_sha256": "c17682ecbc38f1aa3832c177c878c5fae295b5cb533f1a518e7e4fae8d1a81bf",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/places/folder-downloads.svg",
+      "expected_sha256": "c17682ecbc38f1aa3832c177c878c5fae295b5cb533f1a518e7e4fae8d1a81bf",
+      "actual_sha256": "c17682ecbc38f1aa3832c177c878c5fae295b5cb533f1a518e7e4fae8d1a81bf",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/places/folder-open.svg",
+      "expected_sha256": "40b133d842381ef8a4b0a387e2a80b1af347148b70742ceb651438587b638d35",
+      "actual_sha256": "40b133d842381ef8a4b0a387e2a80b1af347148b70742ceb651438587b638d35",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/places/folder-pictures.svg",
+      "expected_sha256": "15221c2218df5292f8b257008d207730b331c718edc003f7b80ba7ebbef19cb3",
+      "actual_sha256": "15221c2218df5292f8b257008d207730b331c718edc003f7b80ba7ebbef19cb3",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/places/folder.svg",
+      "expected_sha256": "40b133d842381ef8a4b0a387e2a80b1af347148b70742ceb651438587b638d35",
+      "actual_sha256": "40b133d842381ef8a4b0a387e2a80b1af347148b70742ceb651438587b638d35",
+      "passed": true
+    },
+    {
+      "path": "visual/icons/Aven/scalable/places/user-home.svg",
+      "expected_sha256": "53fc2f3646f40b8b5edab9d0859b7fa229c565f95b68d6b23d37fbb79274be5c",
+      "actual_sha256": "53fc2f3646f40b8b5edab9d0859b7fa229c565f95b68d6b23d37fbb79274be5c",
+      "passed": true
+    },
+    {
+      "path": "visual/tokens.json",
+      "expected_sha256": "442aefd10b38541c611898d37fb9d7f4bb42eaa85573f04aaab8ad7e74183aec",
+      "actual_sha256": "442aefd10b38541c611898d37fb9d7f4bb42eaa85573f04aaab8ad7e74183aec",
+      "passed": true
+    },
+    {
+      "path": "visual/wallpapers/AvenEstuary/contents/images/3840x2160.svg",
+      "expected_sha256": "965a75b91fe20f67b181f08d0554cd6b5ec18d4ecfd14b4da24b398a5aa27d4e",
+      "actual_sha256": "965a75b91fe20f67b181f08d0554cd6b5ec18d4ecfd14b4da24b398a5aa27d4e",
+      "passed": true
+    },
+    {
+      "path": "visual/wallpapers/AvenEstuary/metadata.json",
+      "expected_sha256": "d90ca0ccd38965caccc422eed62db354ba0e775274179eadecd48dd74ddfd19b",
+      "actual_sha256": "d90ca0ccd38965caccc422eed62db354ba0e775274179eadecd48dd74ddfd19b",
+      "passed": true
+    }
+  ],
+  "extra_source_files": [],
+  "missing_source_files": [],
+  "source_inventory_passed": true,
+  "installation_manifest_matches": true,
+  "installed_font_rules": {
+    "60-aven-families.conf": {
+      "active_sha256": "049a4febfe4e49c3ba6f44052e42f8164d7c37d20c96c8e36be9a1a29b667845",
+      "source_sha256": "049a4febfe4e49c3ba6f44052e42f8164d7c37d20c96c8e36be9a1a29b667845",
+      "matches_source": true
+    },
+    "99-aven-rendering.conf": {
+      "active_sha256": "81bc7c6ba7aa6beb635acacc24e309e511dccd567b2a0c8c758953af2ff4f66a",
+      "source_sha256": "81bc7c6ba7aa6beb635acacc24e309e511dccd567b2a0c8c758953af2ff4f66a",
+      "matches_source": true
+    }
+  },
+  "duplicate_flatpak_exports": {
+    "org.kde.gwenview": {
+      "exists": false,
+      "is_symlink": false
+    },
+    "org.kde.okular": {
+      "exists": false,
+      "is_symlink": false
+    }
+  },
+  "native_first_user_complete_marker": true,
+  "files": {
+    "/var/lib/aven/installation.json": {
+      "sha256": "7e0d83826a4e8c162a6aeca077ee0b6b1e3bcad17484bc86c1244e08140b07a0",
+      "bytes": 26554,
+      "mtime_ns": 1789463708343849989,
+      "uid": 0,
+      "mode": "0o644",
+      "evidence_file": "evidence/verification/iso-candidate3/installation-record.json",
+      "evidence_sha256": "7e0d83826a4e8c162a6aeca077ee0b6b1e3bcad17484bc86c1244e08140b07a0"
+    },
+    "/var/log/aven-install.log": {
+      "sha256": "e923566f32a3d0563ea6545e94242fb0768d6e7fe5122ba19892bf6c90d97695",
+      "bytes": 2098,
+      "mtime_ns": 1789464089837271493,
+      "uid": 0,
+      "mode": "0o600",
+      "evidence_file": "evidence/verification/iso-candidate3/aven-install.log",
+      "evidence_sha256": "e923566f32a3d0563ea6545e94242fb0768d6e7fe5122ba19892bf6c90d97695"
+    },
+    "/var/home/reader/.local/state/aven/iso-seed-v1.json": {
+      "sha256": "72bf724df5d9e5838ed218769688b991329fec27a5c465faa7b1aeb4dde1f890",
+      "bytes": 165,
+      "mtime_ns": 1789435986046881436,
+      "uid": 1000,
+      "mode": "0o644",
+      "evidence_file": "evidence/verification/iso-candidate3/reader-iso-seed-v1.json",
+      "evidence_sha256": "72bf724df5d9e5838ed218769688b991329fec27a5c465faa7b1aeb4dde1f890"
+    },
+    "/var/home/reader/.local/state/aven/iso-layout-v1.json": {
+      "sha256": "516de456516329636188d8e4cc4b0642e51b742cf48e4b233cc8f06ef700c77e",
+      "bytes": 167,
+      "mtime_ns": 1789435989344747746,
+      "uid": 1000,
+      "mode": "0o644",
+      "evidence_file": "evidence/verification/iso-candidate3/reader-iso-layout-v1.json",
+      "evidence_sha256": "516de456516329636188d8e4cc4b0642e51b742cf48e4b233cc8f06ef700c77e"
+    },
+    "/var/home/reader/.local/state/aven/iso-seed.log": {
+      "sha256": "eaa27b95a076063b186e49c7b8bcac8d41f456d04507ec7904657d06e644dd3e",
+      "bytes": 7955,
+      "mtime_ns": 1789435986031947351,
+      "uid": 1000,
+      "mode": "0o644",
+      "evidence_file": "evidence/verification/iso-candidate3/reader-iso-seed.log",
+      "evidence_sha256": "eaa27b95a076063b186e49c7b8bcac8d41f456d04507ec7904657d06e644dd3e"
+    },
+    "/var/home/reader/.local/state/aven/iso-layout.log": {
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1,
+      "mtime_ns": 1789435989334947351,
+      "uid": 1000,
+      "mode": "0o644",
+      "evidence_file": "evidence/verification/iso-candidate3/reader-iso-layout.log",
+      "evidence_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    }
+  },
+  "observer": "/root/verification",
+  "iso_sha256": "a0849b1ff8d263813a82fd47f53eb052e3b36600b2c97a2542ee0e08afedd96f",
+  "collection_method": "Read-only Python stream over root SSH after native first login; no guest files written."
+}

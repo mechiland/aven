@@ -1,0 +1,9 @@
+/run/install/repo/aven/source/iso/install-target.py:11: PyGIWarning: OSTree was imported without specifying a version first. Use gi.require_version('OSTree', '1.0') before import to ensure that the right version gets loaded.
+  from gi.repository import Gio, GLib, OSTree
+Traceback (most recent call last):
+  File "/run/install/repo/aven/source/iso/install-target.py", line 89, in <module>
+    main()
+    ~~~~^^
+  File "/run/install/repo/aven/source/iso/install-target.py", line 43, in main
+    raise RuntimeError('Anaconda must bind the deployment var before installing the profile')
+RuntimeError: Anaconda must bind the deployment var before installing the profile
