@@ -61,5 +61,46 @@
       "size_matches": true,
       "sha256_matches": true
     }
-  ]
+  ],
+  "independent_recheck_at": "2026-09-15T13:31:12.209146+00:00",
+  "independent_recheck_passed": true,
+  "source_archive_preserved": {
+    "asset_id": 565299664,
+    "name": "aven-source-and-evidence-round04.tar.gz",
+    "size": 974796866,
+    "digest": "sha256:946b513a56a3f8dca9e0c009a4cf5ffbbfdc261d6048cc8a0d46cc2717a25a62"
+  },
+  "retained_identical_asset_ids": [
+    565553864
+  ],
+  "upload_attempts_this_run": {
+    "000": 1,
+    "001": 0,
+    "002": 2,
+    "003": 1
+  },
+  "download_helpers_verified": [
+    {
+      "name": "ISO-PARTS.json",
+      "asset_id": 565736524,
+      "size": 1006,
+      "digest": "sha256:cfde0f39c9a387ba3fbff764337c5c5f9556ab2991e35205e8a6402a946a796f",
+      "matches": true
+    },
+    {
+      "name": "ISO-SHA256SUMS",
+      "asset_id": 565736525,
+      "size": 596,
+      "digest": "sha256:6128bed256d491ac684b1085e6cca0783999b70fad64e5bdefb5812ba2c0c1ed",
+      "matches": true
+    },
+    {
+      "name": "reassemble-iso.py",
+      "asset_id": 565736529,
+      "size": 2509,
+      "digest": "sha256:f60c239453d773fae123dcb9a4af6b36991db3fcd27bec5fd18e838c34a8c3f7",
+      "matches": true
+    }
+  ],
+  "active_iso_uploads": 0
 }

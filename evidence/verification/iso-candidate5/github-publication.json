@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-09-15T13:32:54.962010+00:00",
+  "repository": "mechiland/aven",
+  "release_id": 388990452,
+  "tag": "v0.1.0-prototype",
+  "release_url": "https://github.com/mechiland/aven/releases/tag/v0.1.0-prototype",
+  "published_at": "2026-09-15T13:31:27Z",
+  "draft": false,
+  "prerelease": true,
+  "release_commit": "bfba865f2f598ceefb275e3ce4af9dd99abb4a60",
+  "tag_resolves_to_release_commit": true,
+  "release_api_method": "Authenticated gh API; anonymous API initially returned HTTP 403 shared rate limit.",
+  "public_release_page_method": "Unauthenticated urllib HTTPS GET",
+  "public_release_page_status": 200,
+  "release_notes_match_committed_file": true,
+  "release_notes_sha256": "4b2370486d6c99b2fbb91aae936b0ffe6b32634ae4776c530dee69d3a32b7963",
+  "assets": [
+    {
+      "id": 565612258,
+      "name": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-000",
+      "size": 1992294400,
+      "digest": "sha256:8976b165ba52c9f5af5ec0738cb1775745a3f65810c220445589d98cda8499e9",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/mechiland/aven/releases/download/v0.1.0-prototype/Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-000"
+    },
+    {
+      "id": 565553864,
+      "name": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-001",
+      "size": 1992294400,
+      "digest": "sha256:223f14d7dbc9b5548889764f1eb356f682ea5d93b6616730e99f1499cf446fd1",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/mechiland/aven/releases/download/v0.1.0-prototype/Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-001"
+    },
+    {
+      "id": 565660016,
+      "name": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-002",
+      "size": 1992294400,
+      "digest": "sha256:a17cf2e87d843a286532d5725ee55530330fa133d21784c2f5f2dc7272b33dac",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/mechiland/aven/releases/download/v0.1.0-prototype/Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-002"
+    },
+    {
+      "id": 565704263,
+      "name": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-003",
+      "size": 1913192448,
+      "digest": "sha256:2bdee07bb5713abf4c6b1a2a7dd37f29f744388fafd9633d9454c24aa33021bd",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/mechiland/aven/releases/download/v0.1.0-prototype/Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-003"
+    },
+    {
+      "id": 565758044,
+      "name": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.json",
+      "size": 28876,
+      "digest": "sha256:eba983cfc6acb92945ade1697397fdbea3b58c93dd265e4a3b662c53fdef3962",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/mechiland/aven/releases/download/v0.1.0-prototype/Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.json"
+    },
+    {
+      "id": 565299664,
+      "name": "aven-source-and-evidence-round04.tar.gz",
+      "size": 974796866,
+      "digest": "sha256:946b513a56a3f8dca9e0c009a4cf5ffbbfdc261d6048cc8a0d46cc2717a25a62",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/mechiland/aven/releases/download/v0.1.0-prototype/aven-source-and-evidence-round04.tar.gz"
+    },
+    {
+      "id": 565758042,
+      "name": "critic-iso-candidate5.md",
+      "size": 10918,
+      "digest": "sha256:a3be1593e0402d4b715b90252b1200904c811e956ae71585f1ca6afe32c3ef05",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/mechiland/aven/releases/download/v0.1.0-prototype/critic-iso-candidate5.md"
+    },
+    {
+      "id": 565736524,
+      "name": "ISO-PARTS.json",
+      "size": 1006,
+      "digest": "sha256:cfde0f39c9a387ba3fbff764337c5c5f9556ab2991e35205e8a6402a946a796f",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/mechiland/aven/releases/download/v0.1.0-prototype/ISO-PARTS.json"
+    },
+    {
+      "id": 565736525,
+      "name": "ISO-SHA256SUMS",
+      "size": 596,
+      "digest": "sha256:6128bed256d491ac684b1085e6cca0783999b70fad64e5bdefb5812ba2c0c1ed",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/mechiland/aven/releases/download/v0.1.0-prototype/ISO-SHA256SUMS"
+    },
+    {
+      "id": 565758040,
+      "name": "ISO-VERIFICATION.md",
+      "size": 21175,
+      "digest": "sha256:a5000010ccca8922ca3086162709faa480520383e06dc5c6a68375b4597c6d07",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/mechiland/aven/releases/download/v0.1.0-prototype/ISO-VERIFICATION.md"
+    },
+    {
+      "id": 565736529,
+      "name": "reassemble-iso.py",
+      "size": 2509,
+      "digest": "sha256:f60c239453d773fae123dcb9a4af6b36991db3fcd27bec5fd18e838c34a8c3f7",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/mechiland/aven/releases/download/v0.1.0-prototype/reassemble-iso.py"
+    }
+  ],
+  "unauthenticated_asset_checks": [
+    {
+      "asset": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-000",
+      "method": "HEAD",
+      "status": 200,
+      "content_length": 1992294400
+    },
+    {
+      "asset": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-001",
+      "method": "HEAD",
+      "status": 200,
+      "content_length": 1992294400
+    },
+    {
+      "asset": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-002",
+      "method": "HEAD",
+      "status": 200,
+      "content_length": 1992294400
+    },
+    {
+      "asset": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-003",
+      "method": "HEAD",
+      "status": 200,
+      "content_length": 1913192448
+    },
+    {
+      "asset": "ISO-PARTS.json",
+      "method": "GET",
+      "status": 200,
+      "content_length": 1006,
+      "downloaded_sha256": "cfde0f39c9a387ba3fbff764337c5c5f9556ab2991e35205e8a6402a946a796f"
+    },
+    {
+      "asset": "ISO-SHA256SUMS",
+      "method": "GET",
+      "status": 200,
+      "content_length": 596,
+      "downloaded_sha256": "6128bed256d491ac684b1085e6cca0783999b70fad64e5bdefb5812ba2c0c1ed"
+    },
+    {
+      "asset": "reassemble-iso.py",
+      "method": "GET",
+      "status": 200,
+      "content_length": 2509,
+      "downloaded_sha256": "f60c239453d773fae123dcb9a4af6b36991db3fcd27bec5fd18e838c34a8c3f7"
+    }
+  ],
+  "public_download_checks_passed": true
+}

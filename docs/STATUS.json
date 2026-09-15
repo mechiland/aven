@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project": "Aven",
   "phase": "prototype_passed",
-  "updated_at": "2026-09-15T13:30:50.262960+00:00",
+  "updated_at": "2026-09-15T13:33:40.120362+00:00",
   "base": {
     "distribution": "Fedora Kinoite",
     "release": 44,
@@ -763,7 +763,7 @@
     "Minor native rough edges remain: bold breadcrumbs, Thunderbird sender truncation/top strip, Gwenview filmstrip bevels, extra Firefox title height and preview discoverability."
   ],
   "iso_release": {
-    "state": "verified_ready_to_publish",
+    "state": "published",
     "requested_artifact": "bootable_installer_iso",
     "code_remote": "https://github.com/mechiland/aven",
     "initial_commit": "a509729ae8e5834d28fc62d10bb408d78f3a39d1",
@@ -772,13 +772,13 @@
     "reason_for_rebuild": "Actual Wayland Preview Enter/Open closed the last window before Qt asynchronous application handoff; use a live native kde-open KIO job and wait for completion.",
     "boot_verified": true,
     "install_verified": true,
-    "published": false,
-    "updated_at": "2026-09-15T13:30:50.262960+00:00",
+    "published": true,
+    "updated_at": "2026-09-15T13:33:40.120362+00:00",
     "media_sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0",
     "bios_boot_verified": true,
     "uefi_boot_verified": true,
     "public_installer": "Native Fedora Anaconda; user creation occurs in native first-boot setup.",
-    "public_workflow": "Exact ISO passed native offline UEFI installation, native first-user creation, automatic Aven defaults, three Preview handoffs, focused native smoke and second disk-only online boot. Independent 1x visual critic passed. All GitHub assets have verified size and SHA-256; publication is next.",
+    "public_workflow": "Exact ISO passed native offline UEFI installation, native first-user creation, automatic Aven defaults, three Preview handoffs, focused native smoke and second disk-only online boot. Independent 1x critic passed at 8.27 overall / 8.5 Chinese. All 11 GitHub assets have verified server sizes and SHA-256. Prerelease published; unauthenticated public page, four part download endpoints and three downloaded helpers verified.",
     "parts_reassembled_verified": true,
     "release_draft_id": 388990452,
     "first_user_setup_verified": true,
@@ -809,6 +809,10 @@
     "release_tag": "v0.1.0-prototype",
     "release_url": "https://github.com/mechiland/aven/releases/tag/v0.1.0-prototype",
     "acceptance_record": "evidence/verification/iso-candidate5/release-acceptance.json",
-    "assets_record": "evidence/verification/iso-candidate5/github-iso-assets.json"
+    "assets_record": "evidence/verification/iso-candidate5/github-iso-assets.json",
+    "published_at": "2026-09-15T13:31:27Z",
+    "release_commit": "bfba865f2f598ceefb275e3ce4af9dd99abb4a60",
+    "public_downloads_verified": true,
+    "publication_record": "evidence/verification/iso-candidate5/github-publication.json"
   }
 }
