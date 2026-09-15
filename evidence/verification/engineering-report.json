@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-09-15T04:08:42.585374+00:00",
+  "scope": "host engineering validation only",
+  "host": "Linux-7.0.0-31-generic-x86_64-with-glibc2.43",
+  "visual_scores": null,
+  "visual_quality": "unassessed",
+  "checks": [
+    {
+      "label": "verification-integrity-and-rfb-contract",
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "verification/tests",
+        "-v"
+      ],
+      "environment_override": null,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_existing_directory_is_not_adopted (test_evidence_gate.ByteCheckTest.test_existing_directory_is_not_adopted) ... ok\ntest_preservation_and_correct_stage (test_evidence_gate.ByteCheckTest.test_preservation_and_correct_stage) ... ok\ntest_actual_scale_mismatch_rejected (test_evidence_gate.GateTest.test_actual_scale_mismatch_rejected) ... ok\ntest_app_version_mismatch_rejected (test_evidence_gate.GateTest.test_app_version_mismatch_rejected) ... ok\ntest_base_commit_mismatch_rejected (test_evidence_gate.GateTest.test_base_commit_mismatch_rejected) ... ok\ntest_chinese_threshold_is_independent_of_overall (test_evidence_gate.GateTest.test_chinese_threshold_is_independent_of_overall) ... ok\ntest_complete_gate_contract (test_evidence_gate.GateTest.test_complete_gate_contract) ... ok\ntest_evidence_path_escape_rejected (test_evidence_gate.GateTest.test_evidence_path_escape_rejected) ... ok\ntest_false_three_second_judgment_never_passes (test_evidence_gate.GateTest.test_false_three_second_judgment_never_passes) ... ok\ntest_image_tampering_rejected (test_evidence_gate.GateTest.test_image_tampering_rejected) ... ok\ntest_mean_cannot_be_selectively_weighted (test_evidence_gate.GateTest.test_mean_cannot_be_selectively_weighted) ... ok\ntest_missing_chinese_qt_coverage_rejected (test_evidence_gate.GateTest.test_missing_chinese_qt_coverage_rejected) ... ok\ntest_missing_font_package_rejected (test_evidence_gate.GateTest.test_missing_font_package_rejected) ... ok\ntest_missing_motion_rejected (test_evidence_gate.GateTest.test_missing_motion_rejected) ... ok\ntest_missing_or_boolean_score_never_passes (test_evidence_gate.GateTest.test_missing_or_boolean_score_never_passes) ... ok\ntest_rfb_framebuffer_transport_accepted (test_evidence_gate.GateTest.test_rfb_framebuffer_transport_accepted) ... ok\ntest_rfb_missing_transport_rejected (test_evidence_gate.GateTest.test_rfb_missing_transport_rejected) ... ok\ntest_shell_operations_do_not_prove_dolphin (test_evidence_gate.GateTest.test_shell_operations_do_not_prove_dolphin) ... ok\ntest_snapshot_provenance_missing_rejected (test_evidence_gate.GateTest.test_snapshot_provenance_missing_rejected) ... ok\ntest_stale_runtime_probe_rejected (test_evidence_gate.GateTest.test_stale_runtime_probe_rejected) ... ok\ntest_uninspected_exact_hash_rejected (test_evidence_gate.GateTest.test_uninspected_exact_hash_rejected) ... ok\ntest_wrong_aven_round_rejected (test_evidence_gate.GateTest.test_wrong_aven_round_rejected) ... ok\ntest_incomplete_frame_never_becomes_image (test_rfb_capture.RFBTest.test_incomplete_frame_never_becomes_image) ... ok\ntest_raw_pixels_keep_numeric_rgb_values (test_rfb_capture.RFBTest.test_raw_pixels_keep_numeric_rgb_values) ... ok\n\n----------------------------------------------------------------------\nRan 24 tests in 0.135s\n\nOK\n"
+    },
+    {
+      "label": "preview-local-file-boundary",
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "preview/tests",
+        "-v"
+      ],
+      "environment_override": {
+        "PYTHONPATH": "preview"
+      },
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_binary_and_unknown_encoding_are_not_rendered_as_garbled_text (test_core.PreviewBoundaryTests.test_binary_and_unknown_encoding_are_not_rendered_as_garbled_text) ... ok\ntest_chinese_unicode_encodings_are_exact (test_core.PreviewBoundaryTests.test_chinese_unicode_encodings_are_exact) ... ok\ntest_encoded_filename_is_decoded_once (test_core.PreviewBoundaryTests.test_encoded_filename_is_decoded_once) ... ok\ntest_file_replaced_by_fifo_is_rejected_without_blocking (test_core.PreviewBoundaryTests.test_file_replaced_by_fifo_is_rejected_without_blocking) ... ok\ntest_large_text_is_bounded_at_a_codepoint (test_core.PreviewBoundaryTests.test_large_text_is_bounded_at_a_codepoint) ... ok\ntest_regular_file_symlink_is_supported (test_core.PreviewBoundaryTests.test_regular_file_symlink_is_supported) ... ok\ntest_remote_urls_and_nonregular_files_are_rejected (test_core.PreviewBoundaryTests.test_remote_urls_and_nonregular_files_are_rejected) ... ok\ntest_selection_preserves_order_and_deduplicates (test_core.PreviewBoundaryTests.test_selection_preserves_order_and_deduplicates) ... ok\ntest_unicode_spaces_percent_hash_newline_and_shell_metacharacters (test_core.PreviewBoundaryTests.test_unicode_spaces_percent_hash_newline_and_shell_metacharacters) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.021s\n\nOK\n"
+    }
+  ],
+  "transport_probe": {
+    "image": "evidence/verification/installer-rfb-probe.png",
+    "provenance": "evidence/verification/installer-rfb-probe.rfb.json",
+    "inspected": true,
+    "observation": "Actual 1920x1200 installer boot console. No desktop polish inference.",
+    "gl_desktop_verified": false,
+    "sequence": "evidence/verification/installer-motion-transport/recording.json"
+  },
+  "native_pending": [
+    "stock/Aven paired desktop captures",
+    "all9 critic scores",
+    "Chinese rendering at100/125/150/200percent",
+    "native Dolphin operations",
+    "live application motion",
+    "Atomic rollback exercise"
+  ]
+}

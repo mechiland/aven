@@ -1,0 +1,750 @@
+{
+  "schema_version": 1,
+  "guest": "stock",
+  "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+  "started_at": "2026-09-15T05:41:44.284341+00:00",
+  "requested_seconds": 6.0,
+  "requested_fps": 10.0,
+  "frames": [
+    {
+      "file": "frame-0000.png",
+      "offset_seconds": 0.08251606294652447,
+      "capture_seconds": 0.1509145720046945,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:44.365382+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0001.png",
+      "offset_seconds": 0.22690479399170727,
+      "capture_seconds": 0.1416015289723873,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:44.511154+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0002.png",
+      "offset_seconds": 0.3716201079660095,
+      "capture_seconds": 0.14527880202513188,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:44.655881+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0003.png",
+      "offset_seconds": 0.5231290769879706,
+      "capture_seconds": 0.14571820700075477,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:44.807399+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0004.png",
+      "offset_seconds": 0.6746096819988452,
+      "capture_seconds": 0.1494032449554652,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:44.956882+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0005.png",
+      "offset_seconds": 0.828641936997883,
+      "capture_seconds": 0.15217313496395946,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:45.112897+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0006.png",
+      "offset_seconds": 0.9746990909916349,
+      "capture_seconds": 0.14730273198802024,
+      "sha256": "ffb5593defea57d87bac5bea995e6aa4cdc7098163e9c407a79248b665fefedc",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:45.257508+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0007.png",
+      "offset_seconds": 1.1292702579521574,
+      "capture_seconds": 0.14898399799130857,
+      "sha256": "18903f830b0394929cc2348b825c3894176b3c59b0599a02afc5674f710b2324",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:45.413507+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0008.png",
+      "offset_seconds": 1.2793920519761741,
+      "capture_seconds": 0.12188560399226844,
+      "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:45.563658+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0009.png",
+      "offset_seconds": 1.3987703589955345,
+      "capture_seconds": 0.12251564598409459,
+      "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:45.680717+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0010.png",
+      "offset_seconds": 1.5269946939661168,
+      "capture_seconds": 0.12365673994645476,
+      "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:45.811249+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0011.png",
+      "offset_seconds": 1.6374098139931448,
+      "capture_seconds": 0.10933606303296983,
+      "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:45.920188+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0012.png",
+      "offset_seconds": 1.7684939869795926,
+      "capture_seconds": 0.13072422798722982,
+      "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:46.052762+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0013.png",
+      "offset_seconds": 1.8810973749496043,
+      "capture_seconds": 0.11211644398281351,
+      "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:46.165353+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0014.png",
+      "offset_seconds": 2.0031317489920184,
+      "capture_seconds": 0.12375378102296963,
+      "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:46.287388+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0015.png",
+      "offset_seconds": 2.1216128419619054,
+      "capture_seconds": 0.11501128802774474,
+      "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:46.405873+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0016.png",
+      "offset_seconds": 2.2432062769657932,
+      "capture_seconds": 0.12241354497382417,
+      "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:46.527480+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0017.png",
+      "offset_seconds": 2.3659660019911826,
+      "capture_seconds": 0.12050904997158796,
+      "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:46.648332+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0018.png",
+      "offset_seconds": 2.4930060129845515,
+      "capture_seconds": 0.12794592196587473,
+      "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:46.777272+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0019.png",
+      "offset_seconds": 2.6069566809455864,
+      "capture_seconds": 0.11168030498083681,
+      "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:46.891223+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0020.png",
+      "offset_seconds": 2.7279050249489956,
+      "capture_seconds": 0.12242620903998613,
+      "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:47.009865+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0021.png",
+      "offset_seconds": 2.854421432944946,
+      "capture_seconds": 0.12629789800848812,
+      "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:47.138654+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0022.png",
+      "offset_seconds": 2.9700125699746422,
+      "capture_seconds": 0.1316779479966499,
+      "sha256": "4581b4f1c740c7ef330b763f0fa890e3ebd5280ebc43a3bf62ae99182409c250",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:47.254277+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0023.png",
+      "offset_seconds": 3.1213183569489047,
+      "capture_seconds": 0.16027789999498054,
+      "sha256": "53f6e1ac0b4e0827fcefdf767ad9e502b8dba81478a37e759cccf0692f758889",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:47.405584+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0024.png",
+      "offset_seconds": 3.274622054945212,
+      "capture_seconds": 0.1507206680253148,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:47.557293+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0025.png",
+      "offset_seconds": 3.431456690945197,
+      "capture_seconds": 0.15551747399149463,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:47.715672+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0026.png",
+      "offset_seconds": 3.578697486955207,
+      "capture_seconds": 0.14690055599203333,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:47.862956+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0027.png",
+      "offset_seconds": 3.723485707945656,
+      "capture_seconds": 0.14201655698707327,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:48.007739+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0028.png",
+      "offset_seconds": 3.8764117869432084,
+      "capture_seconds": 0.15265648305648938,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:48.159122+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0029.png",
+      "offset_seconds": 4.034782937960699,
+      "capture_seconds": 0.15588659601053223,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:48.319042+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0030.png",
+      "offset_seconds": 4.178506860975176,
+      "capture_seconds": 0.14133183198282495,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:48.462772+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0031.png",
+      "offset_seconds": 4.328371232957579,
+      "capture_seconds": 0.15013624302810058,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:48.612622+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0032.png",
+      "offset_seconds": 4.48176518996479,
+      "capture_seconds": 0.15243929502321407,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:48.763760+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0033.png",
+      "offset_seconds": 4.638016170996707,
+      "capture_seconds": 0.153923871985171,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:48.922280+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0034.png",
+      "offset_seconds": 4.781321317947004,
+      "capture_seconds": 0.14190580998547375,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:49.065582+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0035.png",
+      "offset_seconds": 4.9315473469905555,
+      "capture_seconds": 0.14953512302599847,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:49.215814+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0036.png",
+      "offset_seconds": 5.084893213992473,
+      "capture_seconds": 0.15131564502371475,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:49.367036+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0037.png",
+      "offset_seconds": 5.237242619972676,
+      "capture_seconds": 0.15094380703521892,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:49.521501+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0038.png",
+      "offset_seconds": 5.3841811879538,
+      "capture_seconds": 0.14639717200770974,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:49.668435+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0039.png",
+      "offset_seconds": 5.533827459963504,
+      "capture_seconds": 0.14757422200636938,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:49.818084+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0040.png",
+      "offset_seconds": 5.6860041309846565,
+      "capture_seconds": 0.14916577900294214,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:49.970262+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0041.png",
+      "offset_seconds": 5.832531657943036,
+      "capture_seconds": 0.14681461500003934,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:50.116795+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    },
+    {
+      "file": "frame-0042.png",
+      "offset_seconds": 5.987558970984537,
+      "capture_seconds": 0.15741157002048567,
+      "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+      "transport": {
+        "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+        "width": 1920,
+        "height": 1200,
+        "captured_at": "2026-09-15T05:41:50.269452+00:00",
+        "rfb_version": "RFB 003.008",
+        "server_name": "QEMU (Aven stock)",
+        "endpoint": "127.0.0.1:5920",
+        "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+        "input_events_sent": 0
+      }
+    }
+  ],
+  "limitations": [
+    "RFB readback and PNG encoding can skip compositor frames.",
+    "Timestamps describe capture completion on the host, not display presentation.",
+    "Replay this sequence to assess observed transitions; no physical frame-pacing claim is supported."
+  ],
+  "elapsed_seconds": 6.055834378988948,
+  "observed_fps": 7.100590489923383,
+  "largest_gap_seconds": 0.15837115101749077,
+  "complete": true
+}

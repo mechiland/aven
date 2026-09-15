@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-09-15T07:06:16.838025+00:00",
+  "method": "Read-only SHA256 of guest source and installed runtime files",
+  "files": [
+    {
+      "source": "preview/aven_preview/app.py",
+      "installed": ".local/libexec/aven-preview/aven_preview/app.py",
+      "source_sha256": "e644488eecedf8b8efa4b03ecbdb2ed169723b6719d441ca294c848e3e9835cf",
+      "installed_sha256": "e644488eecedf8b8efa4b03ecbdb2ed169723b6719d441ca294c848e3e9835cf",
+      "equal": true
+    },
+    {
+      "source": "preview/aven_preview/core.py",
+      "installed": ".local/libexec/aven-preview/aven_preview/core.py",
+      "source_sha256": "b306dc366dac719584fc1f65d8458fc94191a0e06e8d3938d87d7d8859ce74ca",
+      "installed_sha256": "b306dc366dac719584fc1f65d8458fc94191a0e06e8d3938d87d7d8859ce74ca",
+      "equal": true
+    },
+    {
+      "source": "browser/chrome/userChrome.css",
+      "installed": ".local/share/aven/firefox/chrome/userChrome.css",
+      "source_sha256": "71d7ab00fe28e5ff0d9adf07f21136a5dd2c4bf9eedf164df695198c2c7dd040",
+      "installed_sha256": "71d7ab00fe28e5ff0d9adf07f21136a5dd2c4bf9eedf164df695198c2c7dd040",
+      "equal": true
+    },
+    {
+      "source": "mail/chrome/userChrome.css",
+      "installed": ".local/share/aven/mail/default/chrome/userChrome.css",
+      "source_sha256": "51a8700fbc055724cbedf6768cd310b5ba01236a44059d3b34bae05155d53d20",
+      "installed_sha256": "51a8700fbc055724cbedf6768cd310b5ba01236a44059d3b34bae05155d53d20",
+      "equal": true
+    },
+    {
+      "source": "mail/chrome/userContent.css",
+      "installed": ".local/share/aven/mail/default/chrome/userContent.css",
+      "source_sha256": "53b809d08cc8f7a6c149739fea0e24d4b32d8d121f038daca2921d8ca79351a9",
+      "installed_sha256": "53b809d08cc8f7a6c149739fea0e24d4b32d8d121f038daca2921d8ca79351a9",
+      "equal": true
+    },
+    {
+      "source": "mail/chrome/userContent.css",
+      "installed": ".local/share/aven/mail/aven-demo/chrome/userContent.css",
+      "source_sha256": "53b809d08cc8f7a6c149739fea0e24d4b32d8d121f038daca2921d8ca79351a9",
+      "installed_sha256": "53b809d08cc8f7a6c149739fea0e24d4b32d8d121f038daca2921d8ca79351a9",
+      "equal": true
+    }
+  ]
+}

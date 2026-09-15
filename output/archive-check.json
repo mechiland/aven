@@ -1,0 +1,10 @@
+{
+  "path": "output/aven-source-and-evidence-round04.tar.gz",
+  "bytes": 974796866,
+  "sha256": "946b513a56a3f8dca9e0c009a4cf5ffbbfdc261d6048cc8a0d46cc2717a25a62",
+  "source_manifest": "output/SOURCE-MANIFEST.json",
+  "source_manifest_sha256": "128f1abd75a39e26cc2d9138afb32ff8a8d7bfb415cf39a536a2c4d3153ccd71",
+  "payload_files_verified": 1432,
+  "all_payload_hashes_match": true,
+  "completed_at": "2026-09-15T07:31:40.589682+00:00"
+}

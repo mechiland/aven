@@ -1,0 +1,414 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-09-15T06:54:59.732170+00:00",
+  "report": {
+    "file": "evidence/interaction/aven-round04-native-verification.json",
+    "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+  },
+  "guest": "aven",
+  "round": 4,
+  "required_operations": 17,
+  "required_operations_all_passed": true,
+  "motion_sequences": 6,
+  "motion_frame_count": 359,
+  "all_motion_frame_hashes_dimensions_and_monotonic_offsets_valid": true,
+  "accepted_screenshot_count": 35,
+  "screenshots": {
+    "evidence/aven/round-04/op-files-root-ready-1x.json": {
+      "sha256": "1e252642427da883eea5218b5ae75afe89d69056fee378ec9a586438b58aaf30",
+      "image_sha256": "e0aa438b8f6ba9390500a5b92091276ca10aba4dfe78b973c4e0a3da09f98f88",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:22:10.380014+00:00"
+    },
+    "evidence/aven/round-04/op-original-selected-1x.json": {
+      "sha256": "4fde8bddb32723c4c3b4c4af4b2f3e12f6edf80fa8e86e241e71f36f9562b242",
+      "image_sha256": "cce11d3bcfd99a5aeca3866dc9a2056a638b8112b64a320de4e518d839bb774d",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:22:35.974101+00:00"
+    },
+    "evidence/aven/round-04/op-default-open-photo-1x.json": {
+      "sha256": "a46e7928bf880646f29b07f17f87bbcb0736ab3d163663a1c60ba0b5e1311300",
+      "image_sha256": "f0be81977ecab07ff5d814fde33e9ddb2d7dbef75a9ede28c6fd194f16a81a02",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:25:48.589954+00:00"
+    },
+    "evidence/aven/round-04/op-restored-1x.json": {
+      "sha256": "adabd80997a04c506d21d26e867bfe09dbcac5254eeac138eb7d5169c2626c00",
+      "image_sha256": "5e26fd9d5592d0a5a6488d5632ea604a56606ecc69be35133884df1a7383bdc3",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:24:46.572680+00:00"
+    },
+    "evidence/aven/round-04/op-grid-selected-1x.json": {
+      "sha256": "9020c7f9b8270daac7bb73a99c9fc021117b684afd00d3bc0f7423db5669fa57",
+      "image_sha256": "921cf0e5ee7ffc3e1dd8f0868eb6874b83a0e59d22e3bbe952722edd0c6d29d5",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:24:50.861849+00:00"
+    },
+    "evidence/aven/round-04/op-sidebar-downloads-1x.json": {
+      "sha256": "d7e42f64c3810fe84908f8b22537fd956f49bdd9f3afdec44a87573f49e0dbaf",
+      "image_sha256": "2a66a8bd811aa7b312f3bc29bc11c66c701c2e23769d1d57727661da9b18ebae",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:25:16.606971+00:00"
+    },
+    "evidence/aven/round-04/op-sidebar-documents-1x.json": {
+      "sha256": "76332a842503de35c315287ff8d3ce6648077d0af4fd06b10aec81773711bfc1",
+      "image_sha256": "359953e2a724d9b6e96ac9d85114a5b33fb7daba60a776a95fbde338cee11784",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:25:19.157255+00:00"
+    },
+    "evidence/aven/round-04/op-sidebar-pictures-1x.json": {
+      "sha256": "e5a6963342b65d996773d7428b7ac2e83b1344fc52f4844668a0eee8055f8dc5",
+      "image_sha256": "19bccccac1380257f6e3f34ef559f197d36636731b9b61b68d66102ca66fe823",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:25:21.739394+00:00"
+    },
+    "evidence/aven/round-04/op-trash-view-1x.json": {
+      "sha256": "2be79000526edd4957ba3289f1f23569615a36760123c00d62482f434413ff7a",
+      "image_sha256": "296e96333d902b352a11832203432b20d0128dd7fba51e80a28c55c509868d3b",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:23:57.186597+00:00"
+    },
+    "evidence/aven/round-04/op-list-selected-1x.json": {
+      "sha256": "991d1fa1701079299f4f1c5eab9d7f035641ef6f05c85b1a3f7a19191be7f529",
+      "image_sha256": "e0a83875cfb28e8a118115043f4abe040b45e8ec61218ad6eea2b6cc3704b081",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:25:14.083503+00:00"
+    },
+    "evidence/aven/round-04/op-preview-selection-1x.json": {
+      "sha256": "1ed2e12562c0551b894a0379ed957640eaf4de9d1de5d7f8ab81741e2a5a53a5",
+      "image_sha256": "522c243ceeac20aa7035e869720e086c1b3e0c4349110c3bde7604d82216703d",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:27:55.912331+00:00"
+    },
+    "evidence/aven/round-04/op-copied-1x.json": {
+      "sha256": "c2db15f981d8c4aefc6550cbe9cbf5f6b9ed195d766151c9ab631f38e1a43cce",
+      "image_sha256": "9546c9237d646f6fe5c997f89f1a1dad3415dd3a8d61e7b13d558454a5fe0b61",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:23:02.701602+00:00"
+    },
+    "evidence/aven/round-04/op-moved-1x.json": {
+      "sha256": "f83564a358741611a7f9f37f8391562571f3f62649b788b8d610f4fec6c5933e",
+      "image_sha256": "81514e9cb49ee7d5cb165237c1b808c81e35b72d926764f30c7f5d86981f7de8",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:23:27.696127+00:00"
+    },
+    "evidence/aven/round-04/op-renamed-1x.json": {
+      "sha256": "d61373d7e9b8571b0487a9405239e8b7fd0746ecc656a99cafa9078dbab1fd08",
+      "image_sha256": "5e426b9634214952be14a0cef7e4a2983dbc4e893068ad9923d86f0856657cb8",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:23:41.165877+00:00"
+    },
+    "evidence/aven/round-04/op-restore-menu-1x.json": {
+      "sha256": "3190cd6f20ad3ce3e4a3303d52e3585a1d6d0bea30c8d8df1193c8f535e85fc8",
+      "image_sha256": "1cb35f601acff44436022cae050303e0f5fad2c4e3eea6abd5e225dc4838ec2a",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:24:13.271663+00:00"
+    },
+    "evidence/aven/round-04/op-preview-image-1x.json": {
+      "sha256": "1df9662735246101a152492a1b8810709159273daf3f9cd1df1f0391928a45a8",
+      "image_sha256": "a5e888430473ce785fc4d4d823831e8552f2bb2e8d28013d236e1bcca8776196",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:26:33.527094+00:00"
+    },
+    "evidence/aven/round-04/op-preview-toggle-1x.json": {
+      "sha256": "52dab2af4c910ab04b2b46fb456a40bc47a9449a0823f8ccba6b706eda05a69b",
+      "image_sha256": "5d2d1782e64be7d1eeaeb7ab6a6378355fa55f39130f55b9e0bae99e66827b8d",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:27:52.219232+00:00"
+    },
+    "evidence/aven/round-04/op-preview-escape-focus-1x.json": {
+      "sha256": "3c7b261c874c4332e679b6d1e0b54d0775bbd0c2525e691eee12bf99f3a8055f",
+      "image_sha256": "5f3f758c53c8c9e4ed717e633ea25809cc4006e6ff4071a274dc0ce95d6fe933",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:27:48.165665+00:00"
+    },
+    "evidence/aven/round-04/op-browser-settled-1x.json": {
+      "sha256": "e3bb853df19d8786d85b09298f85163b2072d78159f9d03897781a3b5388b047",
+      "image_sha256": "6585081606a1e9fbe06ca8c709d52f65d21c0d2c76c93d5dbcfa36db6a263e90",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:36:13.852331+00:00"
+    },
+    "evidence/aven/round-04/op-browser-download-complete-1x.json": {
+      "sha256": "3c33a4574536d9724d1bafe0875485e12e69875517869e41eba884b622b6b29a",
+      "image_sha256": "53ff04549fcbd215672169146ae4ea484d83c1a428bdaeaab752bb9a10379383",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:36:39.478859+00:00"
+    },
+    "evidence/aven/round-04/op-browser-reveal-1x.json": {
+      "sha256": "21d6e3f4d09c591cc7b41c5cdb5f15714e341d7d74d53a101ea102b1526c1dd5",
+      "image_sha256": "7b7d539ccf41b08f9c351a71e6e13cea3862fe23b5eeb0a5173ccf2fd7335d24",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:37:17.342590+00:00"
+    },
+    "evidence/aven/round-04/op-browser-picker-1x.json": {
+      "sha256": "209ef4dce0848afc5b39ff5e2f47520b6ad7894999adb76b0435bbee4915d7df",
+      "image_sha256": "26e8bf7a498e80843eeda141f7fe8c764b784886c08c8b8a16d5180d01611c1e",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:37:20.766335+00:00"
+    },
+    "evidence/aven/round-04/op-browser-picker-selected-1x.json": {
+      "sha256": "39127cb8942b9655f39cf055473934d716fdbb60709548ae4092e151e3b5eb0f",
+      "image_sha256": "647264b4a2f68aca760d5cb44add4be34a222943e1973550b049c61ceba56a9a",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:37:59.584209+00:00"
+    },
+    "evidence/aven/round-04/op-mail-demo-1x.json": {
+      "sha256": "f8082d5fa22753420dbb847b4f5680ec6b6c7a301aba595137539c9f6093a16e",
+      "image_sha256": "f7a2b048464f8399ae7e07be00d980e112a44e35df2c3589e4baa1a9df6a2707",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:43:37.289352+00:00"
+    },
+    "evidence/aven/round-04/mail-compose-1x.json": {
+      "sha256": "d22e01f2cd309c7ff317ba22a78becbbff80bb3654bf3abd359d172823068f8b",
+      "image_sha256": "36f1e37eb4e0de6012c5900c7e8fb27145d267d65368d894d946a83ddf968cce",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:45:14.405637+00:00"
+    },
+    "evidence/aven/round-04/op-mail-compose-wrapped-720-1x.json": {
+      "sha256": "de0cc4611d58b358bcd0c5b38746bb61e4a150d214fd8e32b4b49c60ea62c36d",
+      "image_sha256": "a6fe7e6bc7d9d8fcfc23c253bd854df8f85f3006cc5487c3bb931a0c7a77a300",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:44:40.532396+00:00"
+    },
+    "evidence/aven/round-04/op-mail-draft-saved-1x.json": {
+      "sha256": "29ef312a55be27ff71e045d944c07ede36f108a6b3a3871fa92f90f443ddd847",
+      "image_sha256": "a98a1c68d100c017e5d31ab543d42bc4c1ceee0d117031635648628cf543f2d5",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:45:20.017709+00:00"
+    },
+    "evidence/aven/round-04/op-mail-draft-reopened-1x.json": {
+      "sha256": "0dd3efc0bc0787cd30097cd5ace1956fd4e9c220d487059026b0c45b46a60d13",
+      "image_sha256": "87a1fc2ecab2a867f36c33bae844930a2722df5f531732d8e4837a2ce222e5ac",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:46:02.292886+00:00"
+    },
+    "evidence/aven/round-04/op-photo-previous-1x.json": {
+      "sha256": "7ca55c1464b68759541dd6ce6b57326d5765b51e9bea05dd7ed0371849627254",
+      "image_sha256": "5acf35a0c70e427280e8812a0b31ccbf04fce3ae7303432dd3262ba20e9be5a0",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:26:08.167454+00:00"
+    },
+    "evidence/aven/round-04/op-photo-fullscreen-1x.json": {
+      "sha256": "8c9d5ed5c4de0fa00e4d776f41015dadfd57877edddb6ba3631114a653c19625",
+      "image_sha256": "66d557ac281e98cbc1453d6791f882ccb66cb636e76838f9525680db03879d2f",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:26:29.351177+00:00"
+    },
+    "evidence/aven/round-04/op-preview-pdf-1x.json": {
+      "sha256": "da3e2abdc4b5b7ca2b2bd37b479eaf589155825747869880bd7def5618e7acbb",
+      "image_sha256": "5041281030429410377d09fc1fabc8252e85737ed265402101cd3a45a411a47a",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:30:04.449304+00:00"
+    },
+    "evidence/aven/round-04/op-preview-text-1x.json": {
+      "sha256": "975dca320884e2add75a64582a61be8f0c632be6bbab216a3a1bf666a6771e6a",
+      "image_sha256": "66d1955f5cb17132bd5c3646903653716ab7b691f02e0104d944d484f9f532eb",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:30:08.413909+00:00"
+    },
+    "evidence/aven/round-04/op-preview-audio-paused-1x.json": {
+      "sha256": "8be9abc65d976e157a0a8bcaf561e2f43ce27cace7b9d1f9b2e5b5d0f143b6c7",
+      "image_sha256": "485ea66961932685297a38c77c0f5bf9e64ffb4c68f7357f5335962a64e50020",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:30:12.378260+00:00"
+    },
+    "evidence/aven/round-04/op-preview-video-paused-1x.json": {
+      "sha256": "80836f55e83ef9dca1ced2e9ee0dc3a0de1be6a0f5ba56c479b0595633269f02",
+      "image_sha256": "9e4cd5d94ef9791b7ffa1610e157738aeddd90a1826694bb895d3ab43659a7a9",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:30:50.214291+00:00"
+    },
+    "evidence/aven/round-04/op-preview-video-playing-1x.json": {
+      "sha256": "1944487a82a4810965eaeb187f58f51131d16041dfbd5a7e33fc505f6436a20e",
+      "image_sha256": "2b7100f0ca66da126cefc8279cfaa5c722278eb377807b697409d1ee25f33f1c",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "scale": 1.0,
+      "measurement": "integer QScreen DPR with KScreen agreement",
+      "captured_at": "2026-09-15T06:31:23.726356+00:00"
+    }
+  },
+  "excluded_capture_count": 9,
+  "byte_stages_passed": [
+    "copied",
+    "moved",
+    "renamed",
+    "trashed",
+    "restored"
+  ],
+  "download_bytes_passed": true,
+  "visual_quality_scores": null,
+  "note": "Integrity and runtime scale verification cannot substitute for actual scene inspection. The associated source report separately identifies the original images and representative motion frames inspected by /root/verification."
+}

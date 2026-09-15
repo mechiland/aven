@@ -1,0 +1,1554 @@
+[
+  {
+    "locale": "zh_CN.UTF-8",
+    "scale": 1.0,
+    "app": "firefox",
+    "arrangement": {
+      "before": {
+        "id": "{dbdd38a3-0a18-4d42-9099-93dd7677aa9d}",
+        "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+        "app": "org.mozilla.firefox",
+        "resource_class": "org.mozilla.firefox",
+        "resource_name": "firefox",
+        "pid": 10980,
+        "active": true,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 40,
+          "y": 28,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 44,
+          "y": 66,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 500,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{dbdd38a3-0a18-4d42-9099-93dd7677aa9d}",
+          "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+          "app": "org.mozilla.firefox",
+          "resource_class": "org.mozilla.firefox",
+          "resource_name": "firefox",
+          "pid": 10980,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 500,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:36:41.174004+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  },
+  {
+    "locale": "zh_CN.UTF-8",
+    "scale": 1.0,
+    "app": "dolphin",
+    "arrangement": {
+      "before": {
+        "id": "{70a946b5-2872-4b25-83a6-dfd3e1c87349}",
+        "caption": "日常 · Everyday — Dolphin",
+        "app": "org.kde.dolphin",
+        "resource_class": "org.kde.dolphin",
+        "resource_name": "dolphin",
+        "pid": 10936,
+        "active": false,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 40,
+          "y": 28,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 44,
+          "y": 66,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 173,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{70a946b5-2872-4b25-83a6-dfd3e1c87349}",
+          "caption": "日常 · Everyday — Dolphin",
+          "app": "org.kde.dolphin",
+          "resource_class": "org.kde.dolphin",
+          "resource_name": "dolphin",
+          "pid": 10936,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 173,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:36:42.129219+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  },
+  {
+    "locale": "zh_CN.UTF-8",
+    "scale": 1.25,
+    "app": "firefox",
+    "arrangement": {
+      "before": {
+        "id": "{dbdd38a3-0a18-4d42-9099-93dd7677aa9d}",
+        "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+        "app": "org.mozilla.firefox",
+        "resource_class": "org.mozilla.firefox",
+        "resource_name": "firefox",
+        "pid": 10980,
+        "active": true,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 40,
+          "y": 28,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 44,
+          "y": 66,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 500,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{dbdd38a3-0a18-4d42-9099-93dd7677aa9d}",
+          "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+          "app": "org.mozilla.firefox",
+          "resource_class": "org.mozilla.firefox",
+          "resource_name": "firefox",
+          "pid": 10980,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 500,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:36:47.185490+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  },
+  {
+    "locale": "zh_CN.UTF-8",
+    "scale": 1.25,
+    "app": "dolphin",
+    "arrangement": {
+      "before": {
+        "id": "{70a946b5-2872-4b25-83a6-dfd3e1c87349}",
+        "caption": "日常 · Everyday — Dolphin",
+        "app": "org.kde.dolphin",
+        "resource_class": "org.kde.dolphin",
+        "resource_name": "dolphin",
+        "pid": 10936,
+        "active": false,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 40,
+          "y": 28,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 44,
+          "y": 66,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 173,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{70a946b5-2872-4b25-83a6-dfd3e1c87349}",
+          "caption": "日常 · Everyday — Dolphin",
+          "app": "org.kde.dolphin",
+          "resource_class": "org.kde.dolphin",
+          "resource_name": "dolphin",
+          "pid": 10936,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 173,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:36:48.153244+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  },
+  {
+    "locale": "zh_CN.UTF-8",
+    "scale": 1.5,
+    "app": "firefox",
+    "arrangement": {
+      "before": {
+        "id": "{dbdd38a3-0a18-4d42-9099-93dd7677aa9d}",
+        "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+        "app": "org.mozilla.firefox",
+        "resource_class": "org.mozilla.firefox",
+        "resource_name": "firefox",
+        "pid": 10980,
+        "active": true,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 40,
+          "y": 28,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 44,
+          "y": 66,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 500,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{dbdd38a3-0a18-4d42-9099-93dd7677aa9d}",
+          "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+          "app": "org.mozilla.firefox",
+          "resource_class": "org.mozilla.firefox",
+          "resource_name": "firefox",
+          "pid": 10980,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 500,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:36:54.839122+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  },
+  {
+    "locale": "zh_CN.UTF-8",
+    "scale": 1.5,
+    "app": "dolphin",
+    "arrangement": {
+      "before": {
+        "id": "{70a946b5-2872-4b25-83a6-dfd3e1c87349}",
+        "caption": "日常 · Everyday — Dolphin",
+        "app": "org.kde.dolphin",
+        "resource_class": "org.kde.dolphin",
+        "resource_name": "dolphin",
+        "pid": 10936,
+        "active": false,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 40,
+          "y": 28,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 44,
+          "y": 66,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 173,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{70a946b5-2872-4b25-83a6-dfd3e1c87349}",
+          "caption": "日常 · Everyday — Dolphin",
+          "app": "org.kde.dolphin",
+          "resource_class": "org.kde.dolphin",
+          "resource_name": "dolphin",
+          "pid": 10936,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 173,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:36:55.818656+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  },
+  {
+    "locale": "zh_CN.UTF-8",
+    "scale": 2.0,
+    "app": "firefox",
+    "arrangement": {
+      "before": {
+        "id": "{dbdd38a3-0a18-4d42-9099-93dd7677aa9d}",
+        "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+        "app": "org.mozilla.firefox",
+        "resource_class": "org.mozilla.firefox",
+        "resource_name": "firefox",
+        "pid": 10980,
+        "active": true,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 40,
+          "y": 28,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 44,
+          "y": 66,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 500,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{dbdd38a3-0a18-4d42-9099-93dd7677aa9d}",
+          "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+          "app": "org.mozilla.firefox",
+          "resource_class": "org.mozilla.firefox",
+          "resource_name": "firefox",
+          "pid": 10980,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 500,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:37:02.666999+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  },
+  {
+    "locale": "zh_CN.UTF-8",
+    "scale": 2.0,
+    "app": "dolphin",
+    "arrangement": {
+      "before": {
+        "id": "{70a946b5-2872-4b25-83a6-dfd3e1c87349}",
+        "caption": "日常 · Everyday — Dolphin",
+        "app": "org.kde.dolphin",
+        "resource_class": "org.kde.dolphin",
+        "resource_name": "dolphin",
+        "pid": 10936,
+        "active": false,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 40,
+          "y": 28,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 44,
+          "y": 66,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 173,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{70a946b5-2872-4b25-83a6-dfd3e1c87349}",
+          "caption": "日常 · Everyday — Dolphin",
+          "app": "org.kde.dolphin",
+          "resource_class": "org.kde.dolphin",
+          "resource_name": "dolphin",
+          "pid": 10936,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 173,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:37:03.643581+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  },
+  {
+    "locale": "zh_TW.UTF-8",
+    "scale": 1.0,
+    "app": "firefox",
+    "arrangement": {
+      "before": {
+        "id": "{4a5cbcf4-21a1-45d4-82d0-565f760ecbe9}",
+        "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+        "app": "org.mozilla.firefox",
+        "resource_class": "org.mozilla.firefox",
+        "resource_name": "firefox",
+        "pid": 14888,
+        "active": false,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 66.66666666666667,
+          "y": 35,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 70.66666666666667,
+          "y": 73,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 500,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{4a5cbcf4-21a1-45d4-82d0-565f760ecbe9}",
+          "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+          "app": "org.mozilla.firefox",
+          "resource_class": "org.mozilla.firefox",
+          "resource_name": "firefox",
+          "pid": 14888,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 500,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:38:58.033158+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  },
+  {
+    "locale": "zh_TW.UTF-8",
+    "scale": 1.0,
+    "app": "dolphin",
+    "arrangement": {
+      "before": {
+        "id": "{23063cb8-c891-41ac-bfd8-2631557408f9}",
+        "caption": "日常 · Everyday — Dolphin",
+        "app": "org.kde.dolphin",
+        "resource_class": "org.kde.dolphin",
+        "resource_name": "dolphin",
+        "pid": 14846,
+        "active": false,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 40,
+          "y": 28,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 44,
+          "y": 66,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 173,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{23063cb8-c891-41ac-bfd8-2631557408f9}",
+          "caption": "日常 · Everyday — Dolphin",
+          "app": "org.kde.dolphin",
+          "resource_class": "org.kde.dolphin",
+          "resource_name": "dolphin",
+          "pid": 14846,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 173,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:38:58.975093+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  },
+  {
+    "locale": "zh_TW.UTF-8",
+    "scale": 1.25,
+    "app": "firefox",
+    "arrangement": {
+      "before": {
+        "id": "{4a5cbcf4-21a1-45d4-82d0-565f760ecbe9}",
+        "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+        "app": "org.mozilla.firefox",
+        "resource_class": "org.mozilla.firefox",
+        "resource_name": "firefox",
+        "pid": 14888,
+        "active": true,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 40,
+          "y": 28,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 44,
+          "y": 66,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 500,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{4a5cbcf4-21a1-45d4-82d0-565f760ecbe9}",
+          "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+          "app": "org.mozilla.firefox",
+          "resource_class": "org.mozilla.firefox",
+          "resource_name": "firefox",
+          "pid": 14888,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 500,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:39:04.192362+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  },
+  {
+    "locale": "zh_TW.UTF-8",
+    "scale": 1.25,
+    "app": "dolphin",
+    "arrangement": {
+      "before": {
+        "id": "{23063cb8-c891-41ac-bfd8-2631557408f9}",
+        "caption": "日常 · Everyday — Dolphin",
+        "app": "org.kde.dolphin",
+        "resource_class": "org.kde.dolphin",
+        "resource_name": "dolphin",
+        "pid": 14846,
+        "active": false,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 40,
+          "y": 28,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 44,
+          "y": 66,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 173,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{23063cb8-c891-41ac-bfd8-2631557408f9}",
+          "caption": "日常 · Everyday — Dolphin",
+          "app": "org.kde.dolphin",
+          "resource_class": "org.kde.dolphin",
+          "resource_name": "dolphin",
+          "pid": 14846,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 173,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:39:05.158685+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  },
+  {
+    "locale": "zh_TW.UTF-8",
+    "scale": 1.5,
+    "app": "firefox",
+    "arrangement": {
+      "before": {
+        "id": "{4a5cbcf4-21a1-45d4-82d0-565f760ecbe9}",
+        "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+        "app": "org.mozilla.firefox",
+        "resource_class": "org.mozilla.firefox",
+        "resource_name": "firefox",
+        "pid": 14888,
+        "active": true,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 40,
+          "y": 28,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 44,
+          "y": 66,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 500,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{4a5cbcf4-21a1-45d4-82d0-565f760ecbe9}",
+          "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+          "app": "org.mozilla.firefox",
+          "resource_class": "org.mozilla.firefox",
+          "resource_name": "firefox",
+          "pid": 14888,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 500,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:39:11.946450+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  },
+  {
+    "locale": "zh_TW.UTF-8",
+    "scale": 1.5,
+    "app": "dolphin",
+    "arrangement": {
+      "before": {
+        "id": "{23063cb8-c891-41ac-bfd8-2631557408f9}",
+        "caption": "日常 · Everyday — Dolphin",
+        "app": "org.kde.dolphin",
+        "resource_class": "org.kde.dolphin",
+        "resource_name": "dolphin",
+        "pid": 14846,
+        "active": false,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 40,
+          "y": 28,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 44,
+          "y": 66,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 173,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{23063cb8-c891-41ac-bfd8-2631557408f9}",
+          "caption": "日常 · Everyday — Dolphin",
+          "app": "org.kde.dolphin",
+          "resource_class": "org.kde.dolphin",
+          "resource_name": "dolphin",
+          "pid": 14846,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 173,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:39:12.925698+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  },
+  {
+    "locale": "zh_TW.UTF-8",
+    "scale": 2.0,
+    "app": "firefox",
+    "arrangement": {
+      "before": {
+        "id": "{4a5cbcf4-21a1-45d4-82d0-565f760ecbe9}",
+        "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+        "app": "org.mozilla.firefox",
+        "resource_class": "org.mozilla.firefox",
+        "resource_name": "firefox",
+        "pid": 14888,
+        "active": true,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 40,
+          "y": 28,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 44,
+          "y": 66,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 500,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{4a5cbcf4-21a1-45d4-82d0-565f760ecbe9}",
+          "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+          "app": "org.mozilla.firefox",
+          "resource_class": "org.mozilla.firefox",
+          "resource_name": "firefox",
+          "pid": 14888,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 500,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:39:19.641542+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  },
+  {
+    "locale": "zh_TW.UTF-8",
+    "scale": 2.0,
+    "app": "dolphin",
+    "arrangement": {
+      "before": {
+        "id": "{23063cb8-c891-41ac-bfd8-2631557408f9}",
+        "caption": "日常 · Everyday — Dolphin",
+        "app": "org.kde.dolphin",
+        "resource_class": "org.kde.dolphin",
+        "resource_name": "dolphin",
+        "pid": 14846,
+        "active": false,
+        "minimized": false,
+        "full_screen": false,
+        "hidden": false,
+        "skip_taskbar": false,
+        "skip_switcher": false,
+        "normal_window": true,
+        "dialog": false,
+        "special": false,
+        "frame": {
+          "x": 40,
+          "y": 28,
+          "width": 1200,
+          "height": 630
+        },
+        "client": {
+          "x": 44,
+          "y": 66,
+          "width": 1192,
+          "height": 588
+        },
+        "output": "Virtual-1",
+        "movable": true,
+        "resizable": true,
+        "minimum_client_size": {
+          "width": 173,
+          "height": 150
+        }
+      },
+      "requested_geometry": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "requested_maximize": false,
+      "requested_activate": true,
+      "ok": true,
+      "after": [
+        {
+          "id": "{23063cb8-c891-41ac-bfd8-2631557408f9}",
+          "caption": "日常 · Everyday — Dolphin",
+          "app": "org.kde.dolphin",
+          "resource_class": "org.kde.dolphin",
+          "resource_name": "dolphin",
+          "pid": 14846,
+          "active": true,
+          "minimized": false,
+          "full_screen": false,
+          "hidden": false,
+          "skip_taskbar": false,
+          "skip_switcher": false,
+          "normal_window": true,
+          "dialog": false,
+          "special": false,
+          "frame": {
+            "x": 40,
+            "y": 28,
+            "width": 1200,
+            "height": 630
+          },
+          "client": {
+            "x": 44,
+            "y": 66,
+            "width": 1192,
+            "height": 588
+          },
+          "output": "Virtual-1",
+          "movable": true,
+          "resizable": true,
+          "minimum_client_size": {
+            "width": 173,
+            "height": 150
+          }
+        }
+      ],
+      "geometry_acknowledged": true,
+      "activation_acknowledged": true,
+      "schema_version": 1,
+      "captured_at": "2026-09-15T05:39:20.661315+00:00",
+      "method": "temporary KWin script via public Workspace/Window API",
+      "command": "arrange",
+      "persistent_kwin_changes": false
+    }
+  }
+]

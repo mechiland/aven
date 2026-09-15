@@ -1,0 +1,21 @@
+/* Aven palette only, verified against installed Firefox155 toolbar tokens.
+   This opt-in profile layer may need review after Mozilla chrome changes.
+   Keep all controls, layout, private-window styling and website content native. */
+@-moz-document url("chrome://browser/content/browser.xhtml") {
+  @media (prefers-color-scheme: light) and (prefers-contrast: no-preference) {
+    :root:not([privatebrowsingmode]) {
+      --toolbox-background-color: #F1F3EF !important;
+      --toolbox-background-color-inactive: #F5F5F1 !important;
+      --toolbox-text-color: #26342F !important;
+      --toolbox-text-color-inactive: #65706A !important;
+      --toolbar-background-color: #F7F7F3 !important;
+      --toolbar-text-color: #26342F !important;
+      --toolbar-field-background-color: #FDFCF9 !important;
+      --toolbar-field-color: #26342F !important;
+      --toolbar-field-focus-border-color: #326B60 !important;
+      --tab-selected-bgcolor: #FDFCF9 !important;
+      --chrome-content-separator-color: #D7DDD5 !important;
+      --focus-outline-color: #326B60 !important;
+    }
+  }
+}

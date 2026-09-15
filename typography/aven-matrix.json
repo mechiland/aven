@@ -1,0 +1,1042 @@
+{
+  "schema_version": 1,
+  "status": "aven-matrix-captured-inspected-runtime-scale-validated",
+  "round": 2,
+  "captured_guest": "aven",
+  "protocol": "docs/typography-stock-matrix.md",
+  "paired_findings": "docs/typography-paired-findings.md",
+  "geometry_record": "typography/aven-matrix-geometry.json",
+  "fixture_sha256": "ff6f9644427439f80bd3b9f0825ec9542ed2d41dfcddb28b9fe54a6f68c9a6b5",
+  "captures": [
+    {
+      "sidecar": "evidence/aven/round-02/typography-ui-sc-matrix-1x.json",
+      "image": "evidence/aven/round-02/typography-ui-sc-matrix-1x.png",
+      "sha256": "8a592c6f2a26bcfa3c7ea1a9e411fd63ba51d04dd169258c4e1544270c4e980b",
+      "tags": [
+        "qt_sc"
+      ],
+      "content_id": "typography-ui-sc-v1",
+      "declared_scale": 1.0,
+      "declared_locale": "zh_CN.UTF-8",
+      "framebuffer": [
+        1280,
+        720
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "integer QScreen DPR with KScreen agreement",
+        "observed_scale": 1.0
+      },
+      "captured_qscreen_dpr": 1.0,
+      "captured_qwindow_dpr": null,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans CJK SC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "Native SC Dolphin labels and mixed Chinese/Latin filenames visible, no missing-glyph boxes. Full location names fit the wider sidebar. Larger UI font, denser detail rows, smaller thumbnails than stock; current breadcrumb remains bold.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-ui-sc-matrix-1x.json",
+        "image": "evidence/stock/round-00/typography-ui-sc-matrix-1x.png",
+        "sha256": "a4262bc1746868affa3ca356e4723110c07daa0434128829c64f900b40ffb7fc"
+      },
+      "critic_score": null
+    },
+    {
+      "sidecar": "evidence/aven/round-02/typography-ui-sc-matrix-1.25x.json",
+      "image": "evidence/aven/round-02/typography-ui-sc-matrix-1.25x.png",
+      "sha256": "f9e69b97a95c902b5d8d329b08871a23ceb1a48a8456c1276abc19e92c133c7c",
+      "tags": [
+        "qt_sc"
+      ],
+      "content_id": "typography-ui-sc-v1",
+      "declared_scale": 1.25,
+      "declared_locale": "zh_CN.UTF-8",
+      "framebuffer": [
+        1600,
+        900
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement",
+        "observed_scale": 1.25
+      },
+      "captured_qscreen_dpr": 2.0,
+      "captured_qwindow_dpr": 1.25,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans CJK SC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "Native SC Dolphin labels and mixed Chinese/Latin filenames visible, no missing-glyph boxes. Full location names fit the wider sidebar. Larger UI font, denser detail rows, smaller thumbnails than stock; current breadcrumb remains bold.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-ui-sc-final-1.25x.json",
+        "image": "evidence/stock/round-00/typography-ui-sc-final-1.25x.png",
+        "sha256": "86bee96747321d1f660bd4a9943069eba3336fad03bca482048a40932cff45fd"
+      },
+      "critic_score": null
+    },
+    {
+      "sidecar": "evidence/aven/round-02/typography-ui-sc-matrix-1.5x.json",
+      "image": "evidence/aven/round-02/typography-ui-sc-matrix-1.5x.png",
+      "sha256": "56e9bd26b41b74a00f6f44fd22fc90f91e810b3330babdfce63f45180a9853c7",
+      "tags": [
+        "qt_sc"
+      ],
+      "content_id": "typography-ui-sc-v1",
+      "declared_scale": 1.5,
+      "declared_locale": "zh_CN.UTF-8",
+      "framebuffer": [
+        1920,
+        1080
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement",
+        "observed_scale": 1.5
+      },
+      "captured_qscreen_dpr": 2.0,
+      "captured_qwindow_dpr": 1.5,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans CJK SC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "Native SC Dolphin labels and mixed Chinese/Latin filenames visible, no missing-glyph boxes. Full location names fit the wider sidebar. Larger UI font, denser detail rows, smaller thumbnails than stock; current breadcrumb remains bold.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-ui-sc-final-1.5x.json",
+        "image": "evidence/stock/round-00/typography-ui-sc-final-1.5x.png",
+        "sha256": "95d1c097a9a3adfa59cdc7ea5208d345e18fc9506afa2a0195d0b870ca6400ec"
+      },
+      "critic_score": null
+    },
+    {
+      "sidecar": "evidence/aven/round-02/typography-ui-sc-matrix-2x.json",
+      "image": "evidence/aven/round-02/typography-ui-sc-matrix-2x.png",
+      "sha256": "c2b815451a59cc4b37e4b38740465e04ed3fb4eb96a82a5f3943027a6c2e239d",
+      "tags": [
+        "qt_sc"
+      ],
+      "content_id": "typography-ui-sc-v1",
+      "declared_scale": 2.0,
+      "declared_locale": "zh_CN.UTF-8",
+      "framebuffer": [
+        2560,
+        1440
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "integer QScreen DPR with KScreen agreement",
+        "observed_scale": 2.0
+      },
+      "captured_qscreen_dpr": 2.0,
+      "captured_qwindow_dpr": null,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans CJK SC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "Native SC Dolphin labels and mixed Chinese/Latin filenames visible, no missing-glyph boxes. Full location names fit the wider sidebar. Larger UI font, denser detail rows, smaller thumbnails than stock; current breadcrumb remains bold.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-ui-sc-matrix-2x.json",
+        "image": "evidence/stock/round-00/typography-ui-sc-matrix-2x.png",
+        "sha256": "fad1ff6c708895c70c886c4b503afc4ab889e965eb490b63f1c6ef0c43f19828"
+      },
+      "critic_score": null
+    },
+    {
+      "sidecar": "evidence/aven/round-02/typography-prose-sc-matrix-1x.json",
+      "image": "evidence/aven/round-02/typography-prose-sc-matrix-1x.png",
+      "sha256": "a0bb7eacc28388f3b5a850b1d2771e4984a3e52dfef12be206ba3cf2f6f64c46",
+      "tags": [
+        "typography_sc"
+      ],
+      "content_id": "typography-prose-sc-v1",
+      "declared_scale": 1.0,
+      "declared_locale": "zh_CN.UTF-8",
+      "framebuffer": [
+        1280,
+        720
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "integer QScreen DPR with KScreen agreement",
+        "observed_scale": 1.0
+      },
+      "captured_qscreen_dpr": 1.0,
+      "captured_qwindow_dpr": null,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans CJK SC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "All three SC prose paragraphs visible with mixed digits/Latin and punctuation; no visible missing glyphs. TC beginning visible below. Aven server-side titlebar consumes vertical space above matching content.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-prose-sc-matched-1x.json",
+        "image": "evidence/stock/round-00/typography-prose-sc-matched-1x.png",
+        "sha256": "a570b009e49c296a3d770d254d6a606929309b340e9cfeabce82f76cf9151758"
+      },
+      "critic_score": null
+    },
+    {
+      "sidecar": "evidence/aven/round-02/typography-prose-sc-matrix-1.25x.json",
+      "image": "evidence/aven/round-02/typography-prose-sc-matrix-1.25x.png",
+      "sha256": "041b2d3f5a261297a7793eb7a40523db63bf6b98aeb04388feebc62b0439a892",
+      "tags": [
+        "typography_sc"
+      ],
+      "content_id": "typography-prose-sc-v1",
+      "declared_scale": 1.25,
+      "declared_locale": "zh_CN.UTF-8",
+      "framebuffer": [
+        1600,
+        900
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement",
+        "observed_scale": 1.25
+      },
+      "captured_qscreen_dpr": 2.0,
+      "captured_qwindow_dpr": 1.25,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans CJK SC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "All three SC prose paragraphs visible with mixed digits/Latin and punctuation; no visible missing glyphs. TC beginning visible below. Aven server-side titlebar consumes vertical space above matching content.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-prose-sc-final-1.25x.json",
+        "image": "evidence/stock/round-00/typography-prose-sc-final-1.25x.png",
+        "sha256": "8d5378130a5c9bc011325481b8cb0775a9976c4b3c3f385c114ac8defd0db20a"
+      },
+      "critic_score": null
+    },
+    {
+      "sidecar": "evidence/aven/round-02/typography-prose-sc-matrix-1.5x.json",
+      "image": "evidence/aven/round-02/typography-prose-sc-matrix-1.5x.png",
+      "sha256": "65cfee95af5acfac90608ff0bff12fd3a4ffb32ed6fc8822d8c7a7f2871bac5a",
+      "tags": [
+        "typography_sc"
+      ],
+      "content_id": "typography-prose-sc-v1",
+      "declared_scale": 1.5,
+      "declared_locale": "zh_CN.UTF-8",
+      "framebuffer": [
+        1920,
+        1080
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement",
+        "observed_scale": 1.5
+      },
+      "captured_qscreen_dpr": 2.0,
+      "captured_qwindow_dpr": 1.5,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans CJK SC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "All three SC prose paragraphs visible with mixed digits/Latin and punctuation; no visible missing glyphs. TC beginning visible below. Aven server-side titlebar consumes vertical space above matching content.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-prose-sc-final-1.5x.json",
+        "image": "evidence/stock/round-00/typography-prose-sc-final-1.5x.png",
+        "sha256": "eaf23469d015d3eb33791c004837dca965aa0dffb355361cf03706b95048c00f"
+      },
+      "critic_score": null
+    },
+    {
+      "sidecar": "evidence/aven/round-02/typography-prose-sc-matrix-2x.json",
+      "image": "evidence/aven/round-02/typography-prose-sc-matrix-2x.png",
+      "sha256": "d51fc4cb7c0911fcc4aa9aefb00cdb189f68c7aa97b2d82c4a6551492e010de9",
+      "tags": [
+        "typography_sc"
+      ],
+      "content_id": "typography-prose-sc-v1",
+      "declared_scale": 2.0,
+      "declared_locale": "zh_CN.UTF-8",
+      "framebuffer": [
+        2560,
+        1440
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "integer QScreen DPR with KScreen agreement",
+        "observed_scale": 2.0
+      },
+      "captured_qscreen_dpr": 2.0,
+      "captured_qwindow_dpr": null,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans CJK SC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "All three SC prose paragraphs visible with mixed digits/Latin and punctuation; no visible missing glyphs. TC beginning visible below. Aven server-side titlebar consumes vertical space above matching content.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-prose-sc-matched-2x.json",
+        "image": "evidence/stock/round-00/typography-prose-sc-matched-2x.png",
+        "sha256": "0d85bf96d9c36ea676f67eebf149ab72f86f4f23874c19620fcd686a4ef15d19"
+      },
+      "critic_score": null
+    },
+    {
+      "sidecar": "evidence/aven/round-02/typography-ui-tc-matrix-1x.json",
+      "image": "evidence/aven/round-02/typography-ui-tc-matrix-1x.png",
+      "sha256": "8f9f55551c0f24875102230a80e1d725b69a596255f20d327da2c177146a3156",
+      "tags": [
+        "qt_tc"
+      ],
+      "content_id": "typography-ui-tc-v1",
+      "declared_scale": 1.0,
+      "declared_locale": "zh_TW.UTF-8",
+      "framebuffer": [
+        1280,
+        720
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "integer QScreen DPR with KScreen agreement",
+        "observed_scale": 1.0
+      },
+      "captured_qscreen_dpr": 1.0,
+      "captured_qwindow_dpr": null,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans CJK TC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "Native TC Dolphin labels and mixed Chinese/Latin filenames visible, no missing-glyph boxes. Full location names fit the wider sidebar. Larger UI font, denser detail rows, smaller thumbnails than stock; current breadcrumb remains bold.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-ui-tc-matrix-1x.json",
+        "image": "evidence/stock/round-00/typography-ui-tc-matrix-1x.png",
+        "sha256": "5741cee6010905ef3e6ceb8010b25ae91a2996d19bdca6dff618e9e94fddf7d2"
+      },
+      "critic_score": null
+    },
+    {
+      "sidecar": "evidence/aven/round-02/typography-ui-tc-matrix-1.25x.json",
+      "image": "evidence/aven/round-02/typography-ui-tc-matrix-1.25x.png",
+      "sha256": "911ee942a4c9b9282eaaaa8ee581bbd429fddabebc2bdf0c1a84fd73abdd7cf1",
+      "tags": [
+        "qt_tc"
+      ],
+      "content_id": "typography-ui-tc-v1",
+      "declared_scale": 1.25,
+      "declared_locale": "zh_TW.UTF-8",
+      "framebuffer": [
+        1600,
+        900
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement",
+        "observed_scale": 1.25
+      },
+      "captured_qscreen_dpr": 2.0,
+      "captured_qwindow_dpr": 1.25,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans CJK TC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "Native TC Dolphin labels and mixed Chinese/Latin filenames visible, no missing-glyph boxes. Full location names fit the wider sidebar. Larger UI font, denser detail rows, smaller thumbnails than stock; current breadcrumb remains bold.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-ui-tc-final-1.25x.json",
+        "image": "evidence/stock/round-00/typography-ui-tc-final-1.25x.png",
+        "sha256": "c97292c0bcf3bc691d2cf36e9a6f7f74cabf0af9141ec75a2a4c23f911850540"
+      },
+      "critic_score": null
+    },
+    {
+      "sidecar": "evidence/aven/round-02/typography-ui-tc-matrix-1.5x.json",
+      "image": "evidence/aven/round-02/typography-ui-tc-matrix-1.5x.png",
+      "sha256": "1b8e7a4715189ed2d7537769a98d06874dc7bb0db3889a8c28bc2e3296a0169b",
+      "tags": [
+        "qt_tc"
+      ],
+      "content_id": "typography-ui-tc-v1",
+      "declared_scale": 1.5,
+      "declared_locale": "zh_TW.UTF-8",
+      "framebuffer": [
+        1920,
+        1080
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement",
+        "observed_scale": 1.5
+      },
+      "captured_qscreen_dpr": 2.0,
+      "captured_qwindow_dpr": 1.5,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans CJK TC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "Native TC Dolphin labels and mixed Chinese/Latin filenames visible, no missing-glyph boxes. Full location names fit the wider sidebar. Larger UI font, denser detail rows, smaller thumbnails than stock; current breadcrumb remains bold.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-ui-tc-final-1.5x.json",
+        "image": "evidence/stock/round-00/typography-ui-tc-final-1.5x.png",
+        "sha256": "a4fa4543e3b5d4a1e00e25ea5c54c78019739a77d9f413b40483b6e6f0ee9321"
+      },
+      "critic_score": null
+    },
+    {
+      "sidecar": "evidence/aven/round-02/typography-ui-tc-matrix-2x.json",
+      "image": "evidence/aven/round-02/typography-ui-tc-matrix-2x.png",
+      "sha256": "bd9ed6265b2a296b2d3554c333d810977576205ce4080f21c4c88599030ca6e0",
+      "tags": [
+        "qt_tc"
+      ],
+      "content_id": "typography-ui-tc-v1",
+      "declared_scale": 2.0,
+      "declared_locale": "zh_TW.UTF-8",
+      "framebuffer": [
+        2560,
+        1440
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "integer QScreen DPR with KScreen agreement",
+        "observed_scale": 2.0
+      },
+      "captured_qscreen_dpr": 2.0,
+      "captured_qwindow_dpr": null,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans CJK TC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "Native TC Dolphin labels and mixed Chinese/Latin filenames visible, no missing-glyph boxes. Full location names fit the wider sidebar. Larger UI font, denser detail rows, smaller thumbnails than stock; current breadcrumb remains bold.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-ui-tc-matrix-2x.json",
+        "image": "evidence/stock/round-00/typography-ui-tc-matrix-2x.png",
+        "sha256": "61189b05340dfc10b3a089229973b1f64867396ce8981ed8d95da28180bbb8ba"
+      },
+      "critic_score": null
+    },
+    {
+      "sidecar": "evidence/aven/round-02/typography-prose-tc-matrix-1x.json",
+      "image": "evidence/aven/round-02/typography-prose-tc-matrix-1x.png",
+      "sha256": "821ea5952ebeb638445f37b1589de78cffc562616ae123511be6ecb3723b336a",
+      "tags": [
+        "typography_tc"
+      ],
+      "content_id": "typography-prose-tc-v1",
+      "declared_scale": 1.0,
+      "declared_locale": "zh_TW.UTF-8",
+      "framebuffer": [
+        1280,
+        720
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "integer QScreen DPR with KScreen agreement",
+        "observed_scale": 1.0
+      },
+      "captured_qscreen_dpr": 1.0,
+      "captured_qwindow_dpr": null,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans CJK TC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "All three TC prose paragraphs visible with mixed digits/Latin and punctuation; no visible missing glyphs. Full HK paragraph visible below. Aven server-side titlebar consumes vertical space above matching content.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-prose-tc-matched-1x.json",
+        "image": "evidence/stock/round-00/typography-prose-tc-matched-1x.png",
+        "sha256": "d761c2f28d64646f4b00bc6aff08c61563c8d59679d1cf28ca17c6be8131ec84"
+      },
+      "critic_score": null
+    },
+    {
+      "sidecar": "evidence/aven/round-02/typography-prose-tc-matrix-1.25x.json",
+      "image": "evidence/aven/round-02/typography-prose-tc-matrix-1.25x.png",
+      "sha256": "ff6a0fad282b3250f026adb211844674b6ea6e19940dcc958cd77d32fafee4df",
+      "tags": [
+        "typography_tc"
+      ],
+      "content_id": "typography-prose-tc-v1",
+      "declared_scale": 1.25,
+      "declared_locale": "zh_TW.UTF-8",
+      "framebuffer": [
+        1600,
+        900
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement",
+        "observed_scale": 1.25
+      },
+      "captured_qscreen_dpr": 2.0,
+      "captured_qwindow_dpr": 1.25,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans CJK TC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "All three TC prose paragraphs visible with mixed digits/Latin and punctuation; no visible missing glyphs. Full HK paragraph visible below. Aven server-side titlebar consumes vertical space above matching content.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-prose-tc-final-1.25x.json",
+        "image": "evidence/stock/round-00/typography-prose-tc-final-1.25x.png",
+        "sha256": "e80870c38d6db64387a2c03700010c31bee54034c6e95a05075f3080be68a33f"
+      },
+      "critic_score": null
+    },
+    {
+      "sidecar": "evidence/aven/round-02/typography-prose-tc-matrix-1.5x.json",
+      "image": "evidence/aven/round-02/typography-prose-tc-matrix-1.5x.png",
+      "sha256": "a203dd0d0718e2047abd1df1ff4e6cd6c2b80f1326fb4b1e1429c89f24806e4f",
+      "tags": [
+        "typography_tc"
+      ],
+      "content_id": "typography-prose-tc-v1",
+      "declared_scale": 1.5,
+      "declared_locale": "zh_TW.UTF-8",
+      "framebuffer": [
+        1920,
+        1080
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement",
+        "observed_scale": 1.5
+      },
+      "captured_qscreen_dpr": 2.0,
+      "captured_qwindow_dpr": 1.5,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans CJK TC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "All three TC prose paragraphs visible with mixed digits/Latin and punctuation; no visible missing glyphs. Full HK paragraph visible below. Aven server-side titlebar consumes vertical space above matching content.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-prose-tc-final-1.5x.json",
+        "image": "evidence/stock/round-00/typography-prose-tc-final-1.5x.png",
+        "sha256": "30b89122fabcc9aabced851b62d413d1681e8a266d860f39c47271a26af73aa5"
+      },
+      "critic_score": null
+    },
+    {
+      "sidecar": "evidence/aven/round-02/typography-prose-tc-matrix-2x.json",
+      "image": "evidence/aven/round-02/typography-prose-tc-matrix-2x.png",
+      "sha256": "a482eb3011c06c623e75e842adbef47ef5fa9d9a3c73f26490005f6b5d173642",
+      "tags": [
+        "typography_tc"
+      ],
+      "content_id": "typography-prose-tc-v1",
+      "declared_scale": 2.0,
+      "declared_locale": "zh_TW.UTF-8",
+      "framebuffer": [
+        2560,
+        1440
+      ],
+      "scale_validation": {
+        "status": "pass",
+        "method": "integer QScreen DPR with KScreen agreement",
+        "observed_scale": 2.0
+      },
+      "captured_qscreen_dpr": 2.0,
+      "captured_qwindow_dpr": null,
+      "qt_font_info": {
+        "family": "Noto Sans",
+        "point_size": 11.25,
+        "pixel_size": 15,
+        "weight": 400
+      },
+      "qt_shaping_runs": [
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "glyph_count": 22,
+          "missing_glyphs": 0
+        },
+        {
+          "family": "Noto Sans CJK TC",
+          "style": "Regular",
+          "glyph_count": 23,
+          "missing_glyphs": 0
+        }
+      ],
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:41:47.124514+00:00",
+      "observations": "All three TC prose paragraphs visible with mixed digits/Latin and punctuation; no visible missing glyphs. Full HK paragraph visible below. Aven server-side titlebar consumes vertical space above matching content.",
+      "stock_pair": {
+        "sidecar": "evidence/stock/round-00/typography-prose-tc-matched-2x.json",
+        "image": "evidence/stock/round-00/typography-prose-tc-matched-2x.png",
+        "sha256": "f0c08e3b05e5c0594b3653e0b7350ebe0178eea35afd77b4ee584659093778aa"
+      },
+      "critic_score": null
+    }
+  ],
+  "excluded": [],
+  "restored_display": {
+    "scale": 1,
+    "physical_framebuffer": [
+      1920,
+      1200
+    ],
+    "apps_closed": [
+      "dolphin",
+      "firefox"
+    ],
+    "verified_by": "KWin inventory and pgrep after native quit",
+    "verified_at": "2026-09-15T05:40:11.358894+00:00"
+  },
+  "limitations": [
+    "Typography agent observations only; no independent critic scores.",
+    "Matching outer frames retain each product decoration, so Aven client is1192x588 versus stock Dolphin1200x602/Firefox1200x630 at integer scales.",
+    "Dolphin density, sidebar contents and thumbnail size reflect integration defaults; this is not a font-only A/B test.",
+    "Controlled prose CSS is identical; it cannot establish quality for all web pages or all application text.",
+    "Only browser process locale is controlled; TC Firefox quit confirmation remained English. Native Dolphin UI is visibly localized SC/TC."
+  ],
+  "scores": null
+}

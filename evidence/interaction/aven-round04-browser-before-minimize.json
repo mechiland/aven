@@ -1,0 +1,86 @@
+{
+  "before": {
+    "id": "{8ae0bf6a-dba0-466f-9084-8c079fb52dac}",
+    "caption": "周末慢行 · 城市手记 — Mozilla Firefox",
+    "app": "org.mozilla.firefox",
+    "resource_class": "org.mozilla.firefox",
+    "resource_name": "firefox",
+    "pid": 11779,
+    "active": false,
+    "minimized": false,
+    "full_screen": false,
+    "hidden": false,
+    "skip_taskbar": false,
+    "skip_switcher": false,
+    "normal_window": true,
+    "dialog": false,
+    "special": false,
+    "frame": {
+      "x": 280,
+      "y": 150,
+      "width": 1440,
+      "height": 900
+    },
+    "client": {
+      "x": 284,
+      "y": 188,
+      "width": 1432,
+      "height": 858
+    },
+    "output": "Virtual-1",
+    "movable": true,
+    "resizable": true,
+    "minimum_client_size": {
+      "width": 500,
+      "height": 150
+    }
+  },
+  "requested_geometry": null,
+  "requested_maximize": false,
+  "requested_activate": true,
+  "ok": true,
+  "after": [
+    {
+      "id": "{8ae0bf6a-dba0-466f-9084-8c079fb52dac}",
+      "caption": "周末慢行 · 城市手记 — Mozilla Firefox",
+      "app": "org.mozilla.firefox",
+      "resource_class": "org.mozilla.firefox",
+      "resource_name": "firefox",
+      "pid": 11779,
+      "active": true,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 280,
+        "y": 150,
+        "width": 1440,
+        "height": 900
+      },
+      "client": {
+        "x": 284,
+        "y": 188,
+        "width": 1432,
+        "height": 858
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 500,
+        "height": 150
+      }
+    }
+  ],
+  "activation_acknowledged": true,
+  "schema_version": 1,
+  "captured_at": "2026-09-15T06:44:35.095846+00:00",
+  "method": "temporary KWin script via public Workspace/Window API",
+  "command": "arrange",
+  "persistent_kwin_changes": false
+}

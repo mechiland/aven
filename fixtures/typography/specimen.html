@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aven — 中文与 Latin 排版检查</title>
+<style>
+  /* This diagnostic uses generic families so the active OS/browser stack wins.
+     Keep this file identical for stock and Aven comparison screenshots. */
+  :root { color-scheme: light; font: 14.666667px/1.5 sans-serif; color: #26342f; background: #fdfcf9; }
+  * { box-sizing: border-box; }
+  body { margin: 0 auto; max-width: 1180px; padding: 40px; }
+  h1 { margin: 0 0 8px; font-size: 28px; font-weight: 500; }
+  h2 { margin: 0 0 18px; font-size: 19px; font-weight: 500; }
+  h3 { margin: 24px 0 8px; font-size: 15px; font-weight: 500; }
+  .meta { color: #65706a; font-size: 13.333333px; margin-bottom: 32px; }
+  section { border-top: 1px solid #dde2dc; padding: 28px 0; break-inside: avoid; }
+  p { margin: 0 0 18px; }
+  .reading { max-width: 51em; font-size: 17px; line-height: 1.75; }
+  :lang(en).reading { font-size: 16px; line-height: 1.65; }
+  .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+  button, input, select { font: inherit; min-height: 34px; }
+  button { padding: 3px 12px; }
+  input { min-width: 220px; padding: 3px 8px; }
+  nav { display: flex; flex-wrap: wrap; gap: 22px; margin: 18px 0; }
+  table { border-collapse: collapse; width: 100%; }
+  td, th { padding: 8px 12px 8px 0; text-align: left; border-bottom: 1px solid #e8ebe5; }
+  th { font-weight: 500; color: #65706a; }
+  .rows { display: grid; grid-template-columns: 90px 1fr; gap: 12px 20px; align-items: baseline; }
+  .label { color: #65706a; font: 12px/1.5 monospace; }
+  .sample { white-space: normal; }
+  .medium { font-weight: 500; }
+  .bold { font-weight: 700; }
+  .inverse { background: #26342f; color: #fdfcf9; border-radius: 8px; padding: 20px; }
+  code, pre { font-family: monospace; font-size: 13.333333px; line-height: 1.6; }
+  pre { overflow-x: auto; padding: 16px; background: #f1f3ef; }
+  a { color: #326b60; text-underline-offset: 3px; }
+  @media (max-width: 640px) { body { padding: 24px; } td, th { padding-right: 6px; } }
+  @media print { body { max-width: none; padding: 16px; } }
+</style>
+<h1>日常文字，清楚而从容。</h1>
+<div class="meta">Aven typography specimen · 同一文件用于 stock / Aven · 页面缩放 100%<br>
+  <span id="environment">等待浏览器提供显示比例…</span>
+</div>
+<section>
+  <h2>界面文字 / Interface</h2>
+  <nav aria-label="文件夹示例"><span>最近使用</span><span>文档</span><span>下载</span><span>图片</span><span>回收站</span></nav>
+  <div class="controls">
+    <label>搜索 <input type="search" placeholder="搜索此文件夹" value="杭州 September"></label>
+    <button type="button">新建文件夹</button><button type="button">重命名</button>
+    <label>排序 <select><option>修改时间</option><option>名称</option><option>文件大小</option></select></label>
+  </div>
+  <h3>文档 / 项目资料 / 2026 秋季</h3>
+  <table>
+    <thead><tr><th>名称</th><th>修改时间</th><th>大小</th><th>类型</th></tr></thead>
+    <tbody>
+      <tr><td>上海周末 — West Bund 2026.jpg</td><td>今天 14:08</td><td>4.8 MB</td><td>JPEG 图像</td></tr>
+      <tr><td>会议纪要（第 2 版）.pdf</td><td>昨天 09:30</td><td>820 KB</td><td>PDF 文档</td></tr>
+      <tr lang="zh-TW"><td>臺北散步・照片精選.png</td><td>9月12日 18:45</td><td>12.4 MB</td><td>PNG 圖像</td></tr>
+      <tr><td>旅行预算_¥1,280.50.txt</td><td>9月10日 08:15</td><td>2 KB</td><td>纯文本文档</td></tr>
+    </tbody>
+  </table>
+</section>
+<section id="sc">
+  <h2>简体中文 / zh-CN</h2>
+  <div class="reading" lang="zh-CN">
+    <p>早上打开电脑，先把昨天拍的照片放进“图片”文件夹，再读完两封邮件。窗外下着小雨，桌面上的事情却很清楚：哪些文件刚刚下载，哪张照片值得留下，下一封邮件要写给谁。</p>
+    <p>周末我们准备沿着江边慢慢走。从地铁站出来，经过图书馆和一家刚开门的咖啡店，下午三点到码头集合。如果天气转晴，就带上相机；如果继续下雨，也可以在室内整理这次旅行的笔记。</p>
+    <p>附件是《九月行程》第 2 版，共 12 页，大小为 3.6 MB。请在 9 月 18 日 17:30 前确认时间，并回复“可以参加”或“需要调整”。文件名里的中文、Latin、数字与标点应保持自然的节奏。</p>
+  </div>
+</section>
+<section id="tc" lang="zh-TW">
+  <h2>繁體中文 / zh-TW</h2>
+  <div class="reading">
+    <p>早上打開電腦，先把昨天拍的照片放進「圖片」資料夾，再讀完兩封郵件。窗外下著小雨，桌面上的事情卻很清楚：哪些檔案剛剛下載，哪張照片值得留下，下一封郵件要寫給誰。</p>
+    <p>週末我們準備沿著河邊慢慢走。從捷運站出來，經過圖書館和一家剛開門的咖啡店，下午三點到碼頭集合。如果天氣轉晴，就帶上相機；如果繼續下雨，也可以在室內整理這次旅行的筆記。</p>
+    <p>附件是《九月行程》第 2 版，共 12 頁，大小為 3.6 MB。請在 9 月 18 日 17:30 前確認時間，並回覆「可以參加」或「需要調整」。儲存前請檢查檔名與附件，避免重複傳送。</p>
+  </div>
+</section>
+<section lang="zh-HK">
+  <h2>繁體中文 / zh-HK</h2>
+  <p class="reading">下午沿海旁散步，經過圖書館後再到渡輪碼頭。這個資料夾收錄了本月的相片、行程及收據；請保留原始檔案，將選好的 24 張相片另存一份。會議時間改為星期五 10:30，附件共 2 份，總容量 8.5 MB。</p>
+</section>
+<section lang="en">
+  <h2>Latin reading</h2>
+  <p class="reading">A folder should make the next step clear. Open yesterday’s photographs, choose the few you want to keep, then return to the message you were writing. Familiar names, quiet controls, and readable text help a small task stay small.</p>
+  <p class="reading">At 09:30, the September plan arrived as a 3.6 MB attachment. Its filename — Shanghai notes, revision 2.pdf — should sit comfortably beside 上海旅行笔记. Compare lowercase shapes, the rhythm of numbers, and the weight of headings against the Chinese paragraphs above.</p>
+</section>
+<section>
+  <h2>字号、字重与密集笔画</h2>
+  <div class="rows">
+    <span class="label">10 pt / 400</span><span class="sample" style="font-size:10pt">复制完成 · 尚余 12 秒 · 餐厅藏书与鹭鸟 / Downloads 09:38</span>
+    <span class="label">11 pt / 400</span><span class="sample" style="font-size:11pt">复制完成 · 尚余 12 秒 · 餐厅藏书与鹭鸟 / Downloads 09:38</span>
+    <span class="label">11 pt / 500</span><span class="sample medium" style="font-size:11pt">复制完成 · 尚余 12 秒 · 餐厅藏书与鹭鸟 / Downloads 09:38</span>
+    <span class="label">11 pt / 700</span><span class="sample bold" style="font-size:11pt">复制完成 · 尚余 12 秒 · 餐厅藏书与鹭鸟 / Downloads 09:38</span>
+    <span class="label">12 pt / 400</span><span class="sample" style="font-size:12pt">复制完成 · 尚余 12 秒 · 餐厅藏书与鹭鸟 / Downloads 09:38</span>
+    <span class="label">17 px / 400</span><span class="sample" style="font-size:17px">复制完成 · 尚余 12 秒 · 餐厅藏书与鹭鸟 / Downloads 09:38</span>
+  </div>
+</section>
+<section>
+  <h2>地区字形与标点 / Regional forms</h2>
+  <div class="rows">
+    <span class="label">zh-CN</span><span lang="zh-CN">骨 直 令 遍 返 角 海 雨 ｜“中文”，（Latin 123）：《九月》……</span>
+    <span class="label">zh-TW</span><span lang="zh-TW">骨 直 令 遍 返 角 海 雨 ｜「中文」，（Latin 123）：《九月》……</span>
+    <span class="label">zh-HK</span><span lang="zh-HK">骨 直 令 遍 返 角 海 雨 ｜「中文」，（Latin 123）：《九月》……</span>
+    <span class="label">ja</span><span lang="ja">骨 直 令 遍 返 角 海 雨 ｜「写真」、（Latin 123）：午後の記録。</span>
+    <span class="label">Latin</span><span lang="en">Il1 O0 rn m fi fl Å É ü – — … 'single' “double” 1,280.50 / ¥ € $</span>
+  </div>
+  <h3>分行检查</h3>
+  <p class="reading" style="max-width:23em">请打开“九月照片（精选）”文件夹，查看《旅行笔记》第 12 页。接下来，选择“复制到……”并确认位置。换行时，句号、逗号和右括号不应孤立地出现在行首。</p>
+  <div class="inverse">深色表面：正在复制“杭州照片”… 尚余 12 秒<br><span lang="zh-TW">深色表面：正在複製「臺北照片」… 尚餘 12 秒</span><br><span lang="en">Dark surface: copying September photos… 12 seconds remaining</span></div>
+</section>
+<section>
+  <h2>等宽文字与 Emoji</h2>
+  <pre>name                 size    status
+notes.txt            2 KB    ready
+照片 / Photos        24 MB   已保存
+路徑 / Path          8 KB    已儲存
+Il1 O0 {} [] () &lt;= != 0xFF → 中文：１２３</pre>
+  <p>表情：😀 🙂 👩🏽‍💻 👨‍👩‍👧‍👦 🏳️‍🌈 🇨🇳 🇹🇼 🇭🇰</p>
+  <p>文本与表情变体：♥︎ ♥️ ☀︎ ☀️ ✈︎ ✈️ · 文件夹 📁 · 附件 📎</p>
+</section>
+<script>
+  function updateEnvironment() {
+    document.querySelector('#environment').textContent =
+      `devicePixelRatio=${window.devicePixelRatio} · viewport=${innerWidth}×${innerHeight} CSS px · ${navigator.language}`;
+  }
+  updateEnvironment();
+  addEventListener('resize', updateEnvironment);
+</script>
+</html>

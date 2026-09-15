@@ -1,0 +1,156 @@
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-f4", "at": "2026-09-15T04:20:04.519351+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "f11", "at": "2026-09-15T04:20:18.972696+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 758, "y": 380, "button": "left", "double": false, "at": "2026-09-15T04:20:33.101344+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T04:20:44.984720+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-f4", "at": "2026-09-15T04:21:12.797244+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 1233, "y": 879, "button": "left", "double": false, "at": "2026-09-15T04:33:54.979150+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "f11", "at": "2026-09-15T04:35:16.788075+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-shift-tab", "at": "2026-09-15T04:36:22.966087+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-w", "at": "2026-09-15T04:36:23.774825+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-l", "at": "2026-09-15T04:36:26.344932+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "paste", "text": "/home/aven/Documents/日常 · Everyday", "at": "2026-09-15T04:36:27.359399+00:00", "method": "QEMU native input; clipboard text pasted through the active application"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T04:36:28.165660+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 1868, "y": 984, "button": "left", "double": false, "at": "2026-09-15T04:37:19.633274+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-3", "at": "2026-09-15T04:37:20.442213+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-1", "at": "2026-09-15T04:38:04.115233+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-3", "at": "2026-09-15T04:38:06.336077+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 518, "y": 230, "button": "left", "double": false, "at": "2026-09-15T04:38:07.459204+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "f11", "at": "2026-09-15T04:38:08.265312+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 518, "y": 803, "button": "left", "double": false, "at": "2026-09-15T04:38:10.826676+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 519, "y": 594, "button": "left", "double": false, "at": "2026-09-15T04:38:13.453147+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 519, "y": 490, "button": "left", "double": false, "at": "2026-09-15T04:38:16.056239+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "f11", "at": "2026-09-15T04:39:20.353569+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-home", "at": "2026-09-15T04:39:21.163016+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-1", "at": "2026-09-15T04:39:21.975491+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-f4", "at": "2026-09-15T04:39:24.311854+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 1656, "y": 953, "button": "left", "double": false, "at": "2026-09-15T04:41:09.788058+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 696, "y": 228, "button": "left", "double": false, "at": "2026-09-15T04:41:12.333726+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 696, "y": 303, "button": "left", "double": false, "at": "2026-09-15T04:41:14.963160+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 380, "y": 274, "button": "left", "double": false, "at": "2026-09-15T04:41:51.466842+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 696, "y": 228, "button": "left", "double": true, "at": "2026-09-15T04:42:21.554558+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 577, "y": 571, "button": "left", "double": false, "at": "2026-09-15T04:43:07.071308+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-end", "at": "2026-09-15T04:43:07.887797+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T04:43:08.711170+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T04:43:09.524979+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "paste", "text": "已核对路线，周六见。", "at": "2026-09-15T04:43:10.591600+00:00", "method": "QEMU native input; clipboard text pasted through the active application"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-s", "at": "2026-09-15T04:43:11.403984+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-f4", "at": "2026-09-15T04:43:53.027983+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 696, "y": 228, "button": "left", "double": true, "at": "2026-09-15T04:43:54.364305+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-f4", "at": "2026-09-15T04:43:56.708009+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-f4", "at": "2026-09-15T04:43:57.561456+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T04:46:36.054906+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "right", "at": "2026-09-15T04:46:38.415972+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "right", "at": "2026-09-15T04:46:39.228006+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "right", "at": "2026-09-15T04:46:41.531511+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "right", "at": "2026-09-15T04:46:43.865535+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-f4", "at": "2026-09-15T04:47:47.104753+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 1656, "y": 210, "button": "left", "double": false, "at": "2026-09-15T04:50:15.487240+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 1357, "y": 487, "button": "left", "double": false, "at": "2026-09-15T04:50:59.368037+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 1536, "y": 217, "button": "left", "double": false, "at": "2026-09-15T04:51:50.825339+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-f4", "at": "2026-09-15T04:51:54.102921+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 1297, "y": 571, "button": "left", "double": false, "at": "2026-09-15T04:51:55.234500+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "paste", "text": "/home/aven/Pictures/京都春日/", "at": "2026-09-15T04:52:56.914253+00:00", "method": "QEMU native input; clipboard text pasted through the active application"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T04:52:57.726397+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "paste", "text": "06-山间河流.jpg", "at": "2026-09-15T04:56:58.024704+00:00", "method": "QEMU native input; clipboard text pasted through the active application"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T04:56:58.846930+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-l", "at": "2026-09-15T04:57:25.870083+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "paste", "text": "http://127.0.0.1:8765/browser/traditional.html", "at": "2026-09-15T04:57:26.855331+00:00", "method": "QEMU native input; clipboard text pasted through the active application"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T04:57:27.663983+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-t", "at": "2026-09-15T04:57:29.918828+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "paste", "text": "https://www.mozilla.org/zh-CN/firefox/new/", "at": "2026-09-15T04:57:30.893921+00:00", "method": "QEMU native input; clipboard text pasted through the active application"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T04:57:31.701750+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-l", "at": "2026-09-15T04:57:44.763728+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "paste", "text": "/home/aven/Pictures/京都春日/", "at": "2026-09-15T04:57:45.751098+00:00", "method": "QEMU native input; clipboard text pasted through the active application"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T04:57:46.556122+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "home", "at": "2026-09-15T04:58:09.642584+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "right", "at": "2026-09-15T04:58:10.451745+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 1044, "y": 268, "button": "left", "double": true, "at": "2026-09-15T04:58:21.399771+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1280, "height": 720, "action": "key", "keys": "ctrl-3", "at": "2026-09-15T05:02:16.048897+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1280, "height": 720, "action": "key", "keys": "ctrl-0", "at": "2026-09-15T05:03:15.304850+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1280, "height": 720, "action": "key", "keys": "ctrl-1", "at": "2026-09-15T05:03:45.544930+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1280, "height": 720, "action": "key", "keys": "ctrl-w", "at": "2026-09-15T05:03:46.290156+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1280, "height": 720, "action": "key", "keys": "ctrl-1", "at": "2026-09-15T05:03:47.036222+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1280, "height": 720, "action": "key", "keys": "ctrl-w", "at": "2026-09-15T05:03:47.781137+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1280, "height": 720, "action": "click", "x": 229, "y": 116, "button": "left", "double": false, "at": "2026-09-15T05:03:51.238461+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1280, "height": 720, "action": "key", "keys": "ctrl-l", "at": "2026-09-15T05:04:09.530614+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1280, "height": 720, "action": "paste", "text": "file:///home/aven/aven/fixtures/typography/specimen.html#sc", "at": "2026-09-15T05:04:10.447916+00:00", "method": "QEMU native input; clipboard text pasted through the active application"}
+{"guest": "stock", "width": 1280, "height": 720, "action": "key", "keys": "ret", "at": "2026-09-15T05:04:11.191006+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 2560, "height": 1440, "action": "key", "keys": "ctrl-q", "at": "2026-09-15T05:06:08.558161+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 2560, "height": 1440, "action": "key", "keys": "ctrl-q", "at": "2026-09-15T05:06:10.282023+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 2560, "height": 1440, "action": "key", "keys": "ret", "at": "2026-09-15T05:06:55.332169+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 2560, "height": 1440, "action": "key", "keys": "ctrl-0", "at": "2026-09-15T05:07:27.722021+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 2560, "height": 1440, "action": "key", "keys": "home", "at": "2026-09-15T05:07:30.930050+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1080, "action": "key", "keys": "shift", "at": "2026-09-15T05:24:24.956143+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1600, "height": 900, "action": "key", "keys": "ctrl-q", "at": "2026-09-15T05:28:36.333555+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1600, "height": 900, "action": "key", "keys": "ctrl-q", "at": "2026-09-15T05:28:38.013754+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1600, "height": 900, "action": "key", "keys": "ret", "at": "2026-09-15T05:28:51.425707+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1600, "height": 900, "action": "key", "keys": "ctrl-0", "at": "2026-09-15T05:29:14.728190+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1600, "height": 900, "action": "key", "keys": "ctrl-3", "at": "2026-09-15T05:29:16.428973+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "shift", "at": "2026-09-15T05:35:45.614321+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-tab", "at": "2026-09-15T05:36:06.018645+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-l", "at": "2026-09-15T05:36:06.835074+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "paste", "text": "/home/aven/Documents/Aven operation check 20260915-01", "at": "2026-09-15T05:36:07.816524+00:00", "method": "QEMU native input; clipboard text pasted through the active application"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T05:36:08.635035+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T05:36:32.609062+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-a", "at": "2026-09-15T05:36:33.426506+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-c", "at": "2026-09-15T05:36:35.906690+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-up", "at": "2026-09-15T05:36:36.727108+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "down", "at": "2026-09-15T05:36:37.542160+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T05:36:38.362162+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-v", "at": "2026-09-15T05:36:39.180417+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-x", "at": "2026-09-15T05:37:05.091342+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-up", "at": "2026-09-15T05:37:05.914071+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "down", "at": "2026-09-15T05:37:06.731600+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T05:37:07.542623+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-v", "at": "2026-09-15T05:37:08.360470+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "f2", "at": "2026-09-15T05:37:11.122084+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-a", "at": "2026-09-15T05:37:11.944085+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "paste", "text": "已整理 · Weekend.txt", "at": "2026-09-15T05:37:12.926225+00:00", "method": "QEMU native input; clipboard text pasted through the active application"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T05:37:14.143771+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "delete", "at": "2026-09-15T05:37:37.417277+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 82, "y": 357, "button": "left", "double": false, "at": "2026-09-15T05:37:39.282977+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 360, "y": 161, "button": "right", "double": false, "at": "2026-09-15T05:37:54.628598+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 454, "y": 180, "button": "left", "double": false, "at": "2026-09-15T05:38:22.328190+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-left", "at": "2026-09-15T05:38:23.151510+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 352, "y": 79, "button": "left", "double": false, "at": "2026-09-15T05:38:26.233248+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-1", "at": "2026-09-15T05:38:27.058958+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-a", "at": "2026-09-15T05:38:27.880309+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-3", "at": "2026-09-15T05:38:30.354034+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 84, "y": 237, "button": "left", "double": false, "at": "2026-09-15T05:38:58.146250+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 84, "y": 207, "button": "left", "double": false, "at": "2026-09-15T05:39:00.965866+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 84, "y": 297, "button": "left", "double": false, "at": "2026-09-15T05:39:03.804386+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 320, "y": 261, "button": "left", "double": true, "at": "2026-09-15T05:39:40.953497+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-n", "at": "2026-09-15T05:39:44.235436+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-f4", "at": "2026-09-15T05:39:46.179876+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-tab", "at": "2026-09-15T05:40:15.622892+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-tab", "at": "2026-09-15T05:40:17.569001+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 1217, "y": 79, "button": "left", "double": false, "at": "2026-09-15T05:40:22.298993+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "esc", "at": "2026-09-15T05:40:24.042124+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 324, "y": 158, "button": "left", "double": false, "at": "2026-09-15T05:41:03.456045+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "f11", "at": "2026-09-15T05:41:05.099146+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "down", "at": "2026-09-15T05:41:07.398372+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "f11", "at": "2026-09-15T05:41:08.143491+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T05:41:12.677727+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "right", "at": "2026-09-15T05:41:45.091143+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "left", "at": "2026-09-15T05:41:47.036455+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "meta_l-w", "at": "2026-09-15T05:42:17.511575+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "esc", "at": "2026-09-15T05:42:19.771597+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 1623, "y": 178, "button": "left", "double": false, "at": "2026-09-15T05:42:24.412007+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "esc", "at": "2026-09-15T05:42:27.030896+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-f4", "at": "2026-09-15T05:43:02.887617+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "f11", "at": "2026-09-15T05:43:03.720496+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "esc", "at": "2026-09-15T05:43:04.550749+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "f11", "at": "2026-09-15T05:43:07.033615+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "spc", "at": "2026-09-15T05:43:07.863703+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "esc", "at": "2026-09-15T05:43:10.377660+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "shift", "at": "2026-09-15T06:19:55.325340+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-f4", "at": "2026-09-15T06:20:21.564423+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-f4", "at": "2026-09-15T06:20:23.279722+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 757, "y": 225, "button": "left", "double": true, "at": "2026-09-15T06:20:24.534595+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-f4", "at": "2026-09-15T06:26:13.181012+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-f4", "at": "2026-09-15T06:26:13.921878+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "click", "x": 1615, "y": 978, "button": "left", "double": false, "at": "2026-09-15T06:32:39.444515+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ctrl-a", "at": "2026-09-15T06:32:40.188792+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "paste", "text": "800%", "at": "2026-09-15T06:32:41.104711+00:00", "method": "QEMU native input; clipboard text pasted through the active application"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "ret", "at": "2026-09-15T06:32:41.848886+00:00", "method": "QEMU native input"}
+{"guest": "stock", "width": 1920, "height": 1200, "action": "key", "keys": "alt-f4", "at": "2026-09-15T06:33:03.022327+00:00", "method": "QEMU native input"}

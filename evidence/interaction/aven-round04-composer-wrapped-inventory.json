@@ -1,0 +1,92 @@
+{
+  "before": {
+    "id": "{27639a94-5531-477f-ade3-0f02810fa443}",
+    "caption": "撰写：Re: 周末的照片与下一次散步 - Thunderbird",
+    "app": "net.thunderbird.Thunderbird",
+    "resource_class": "net.thunderbird.Thunderbird",
+    "resource_name": "thunderbird",
+    "pid": 14721,
+    "active": true,
+    "minimized": false,
+    "full_screen": false,
+    "hidden": false,
+    "skip_taskbar": false,
+    "skip_switcher": false,
+    "normal_window": true,
+    "dialog": false,
+    "special": false,
+    "frame": {
+      "x": 460,
+      "y": 156,
+      "width": 1000,
+      "height": 840
+    },
+    "client": {
+      "x": 464,
+      "y": 194,
+      "width": 992,
+      "height": 798
+    },
+    "output": "Virtual-1",
+    "movable": true,
+    "resizable": true,
+    "minimum_client_size": {
+      "width": 150,
+      "height": 150
+    }
+  },
+  "requested_geometry": {
+    "x": 600,
+    "y": 140,
+    "width": 720,
+    "height": 840
+  },
+  "requested_maximize": false,
+  "requested_activate": true,
+  "ok": true,
+  "after": [
+    {
+      "id": "{27639a94-5531-477f-ade3-0f02810fa443}",
+      "caption": "撰写：Re: 周末的照片与下一次散步 - Thunderbird",
+      "app": "net.thunderbird.Thunderbird",
+      "resource_class": "net.thunderbird.Thunderbird",
+      "resource_name": "thunderbird",
+      "pid": 14721,
+      "active": true,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 600,
+        "y": 140,
+        "width": 720,
+        "height": 840
+      },
+      "client": {
+        "x": 604,
+        "y": 178,
+        "width": 712,
+        "height": 798
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 150,
+        "height": 150
+      }
+    }
+  ],
+  "geometry_acknowledged": true,
+  "activation_acknowledged": true,
+  "schema_version": 1,
+  "captured_at": "2026-09-15T06:44:40.366545+00:00",
+  "method": "temporary KWin script via public Workspace/Window API",
+  "command": "arrange",
+  "persistent_kwin_changes": false
+}

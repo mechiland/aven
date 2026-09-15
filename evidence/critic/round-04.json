@@ -1,0 +1,2562 @@
+{
+  "schema_version": 1,
+  "round": 4,
+  "critic": {
+    "name": "/root/critic",
+    "independent": true,
+    "inspected_at": "2026-09-15T07:25:34.305648+00:00",
+    "method": "Opened all 74 original PNGs in 37 stock/Aven pairs and the additional Aven paused-media poster at original resolution. Also independently reviewed 40 stock and 46 Aven distinct native motion states in chronological order. No source changes, screenshot edits or guest UI input. Native operation outcomes are attributed to their recorded witnesses; the critic did not rerun those inputs."
+  },
+  "pairs": [
+    {
+      "id": "desktop",
+      "content_id": "Clean desktop with native panel",
+      "tags": [
+        "desktop"
+      ],
+      "stock": "evidence/stock/round-00/desktop-stable-1x.json",
+      "aven": "evidence/aven/round-04/desktop-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Stock has high-contrast blue relief and a nearly full-width dark panel. Aven has broad low-contrast jade curves and a shorter light panel, immediately quieter and visibly distinct. Native app identities remain recognizable. A still does not prove motion.",
+        "stock_sha256": "57e5bb3d0f09211376b96709a6c056943e025b102779103650cbc6dca2311223",
+        "aven_sha256": "116357c851342a6334e3b67b7f88f09b416d40fdba53d4867a66176c80d45b4e"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "files_home",
+      "content_id": "Same nine Home entries with Documents selected; product-default list/grid presentation",
+      "tags": [
+        "files_home",
+        "qt_sc",
+        "typography_latin"
+      ],
+      "stock": "evidence/stock/round-00/files-home-clean-1x.json",
+      "aven": "evidence/aven/round-04/files-home-final-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Both show the same nine Home entries with Documents selected. Aven uses a details list while stock uses a grid: this is a product-default comparison, not font-only. Wider Places labels are fully readable, common folders are focused, and jade folders and soft decoration are calmer. The unnamed red capacity bar and extra internal volume are absent. The remaining fedora_aven-lab volume is readable but technical. The current Home breadcrumb remains heavy.",
+        "stock_sha256": "36e8fd942934c4806bb3681f25824926e396785c3c537af3cd9edfbc2d80fb45",
+        "aven_sha256": "5b9df6f86a1f73b2f944f44601ff9245702fdfea973d654be57d93d560dd268a"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "files_list",
+      "content_id": "Dolphin 12-file Everyday folder in details view",
+      "tags": [
+        "files_list",
+        "qt_sc",
+        "typography_latin"
+      ],
+      "stock": "evidence/stock/round-00/files-list-1x.json",
+      "aven": "evidence/aven/round-04/files-list-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "The same twelve files are visible. Aven uses larger readable Chinese/Latin labels, approximately 36-pixel compact rows, smaller thumbnails and no tree-branch clutter; stock has approximately 52-pixel thumbnail rows. Dates and KiB remain aligned. Selection differs: Aven highlights the Chinese text file, while stock has an Earthrise focus outline. The current 日常 · Everyday breadcrumb is conspicuously bold.",
+        "stock_sha256": "461ab03420d0241700cf29a25dc29effd4bc711a794738da6f1c94473efee3e2",
+        "aven_sha256": "fc875bb690eeed86c5e87cd84fdca60ac12a7fdc2c583244871fc158989f4c95"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "files_mixed",
+      "content_id": "Dolphin 12-file Everyday folder in grid view",
+      "tags": [
+        "files_grid",
+        "files_mixed",
+        "qt_sc"
+      ],
+      "stock": "evidence/stock/round-00/files-mixed-clean-1x.json",
+      "aven": "evidence/aven/round-04/files-mixed-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Both show the twelve-file Everyday folder with an Earthrise focus outline. Aven uses four columns over three rows with much larger image, document and media thumbnails; stock has nine small items in the first row. Long mixed-script names mostly fit on one line in Aven. The subdued sidebar and chrome improve hierarchy. Generic audio/JSON icons retain strong native blue/purple colors.",
+        "stock_sha256": "253bcad1397d6a51ef3013ea454b8ec1430f146c883f2d58d3c7c487e5b4e435",
+        "aven_sha256": "4003ee8e5f38560fe2e4325ad67ca39d475c40f677e8ecd579764ab439b3b9a8"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "preview_image",
+      "content_id": "NASA Earthrise JPEG selected in Dolphin",
+      "tags": [
+        "preview_image"
+      ],
+      "stock": "evidence/stock/round-00/preview-image-1x.json",
+      "aven": "evidence/aven/round-04/preview-image-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Stock confines Earthrise to an approximately 160-pixel-wide information-panel thumbnail amid metadata and reflows Files. Aven gives the full image an approximately 832-pixel-wide focused overlay with a quiet localized title, JPEG 图像 / 84.1 KiB footer and clearly spaced Open control. The preview task icon reveals a separate native surface. Invocation and focus results are documented separately.",
+        "stock_sha256": "36cfc6903120007442331dc745ee623b7dbc691913c8d9377b22cfb2f745f38b",
+        "aven_sha256": "bf8618bf46ab0c98aae494404d9c6ee9a4d2534cf46c47fca3889c2661f56f22"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "preview_pdf",
+      "content_id": "Original bilingual weekend-walk PDF selected in Dolphin",
+      "tags": [
+        "preview_pdf"
+      ],
+      "stock": "evidence/stock/round-00/preview-pdf-1x.json",
+      "aven": "evidence/aven/round-04/preview-pdf-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "The same bilingual weekend-walk PDF is a tiny whole-page thumbnail in stock. Aven fits the page to a readable width with scrolling, a pale paper backing and consistent PDF 文档 / 260.6 KiB footer. Chinese paragraphs and mixed Latin headings are readable. The embedded PDF fonts are not evidence of OS fallback improvement; the lower page requires normal scrolling.",
+        "stock_sha256": "23fe39a1ef82869abf3d5294ccf550e83d056ee4146f41e4c4d1f16938075717",
+        "aven_sha256": "6c05cef765d2f6b777613c0ea0ba449f53dcb521c2308427bbdadd660451b1ed"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "preview_text",
+      "content_id": "Simplified Chinese and Latin text fixture selected in Dolphin",
+      "tags": [
+        "preview_text",
+        "typography_sc",
+        "typography_latin",
+        "qt_sc"
+      ],
+      "stock": "evidence/stock/round-00/preview-text-1x.json",
+      "aven": "evidence/aven/round-04/preview-text-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Stock shows a generic text icon and metadata rather than readable content. Aven exposes real SC paragraphs, mixed Latin, MB, times, paths, punctuation, dense characters and emoji. The approximately 18-pixel body, comfortable leading and inset are coherent. No missing-glyph boxes or clipped sample glyphs appear; the final emoji row is visible. Emoji styles retain their font-native differences.",
+        "stock_sha256": "a0960a83d58ce669bccc44ab7b094b01ff687f147fc26efdb08b4767078ee702",
+        "aven_sha256": "72d4b878cc2d0bb61023af33e4b55c9230af824c5af35f87e9a5fc98628f3110"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "preview_media",
+      "content_id": "Flower WebM selected in Dolphin",
+      "tags": [
+        "preview_media"
+      ],
+      "stock": "evidence/stock/round-00/preview-media-1x.json",
+      "aven": "evidence/aven/round-04/preview-media-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Stock has a small film-framed poster and metadata-dock player. Aven shows a large genuine playing flower frame, a pause control, seek line and 0:00 / 0:05 duration. Playback moments differ, so the exact flower pixels are not a matched still-frame comparison. The separately inspected paused poster also reports 0:00 / 0:05, resolving the prior zero-total label. Audio and full playback continuity are not established by this still.",
+        "stock_sha256": "b4da09307a0411c3788caf8ffba3f9df5262cf39beb31fa366793e7fdd31d644",
+        "aven_sha256": "5db7a7ad0cb64bc9a0251cfb536468a9a218575a77e107dc0b1b68b7523c4d7e"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "browser_sc",
+      "content_id": "Local Simplified Chinese City Notes article in Firefox",
+      "tags": [
+        "browser_sc",
+        "typography_sc",
+        "typography_latin"
+      ],
+      "stock": "evidence/stock/round-00/browser-sc-1x.json",
+      "aven": "evidence/aven/round-04/browser-sc-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "The same SC City Notes HTTP article is readable in both; body typography and authored page spacing remain very similar. Aven neutral tabs/toolbar match its shared decoration, and larger native chrome text is more comfortable. The extra titlebar repeats the title and costs about 38 logical pixels. Stock has a page-brand keyboard outline while Aven does not; that state difference is not a typography gain. A single Firefox task identity is visible.",
+        "stock_sha256": "e1d7de2cfcabf86a805d19770fab7e1c686728aa3ea253ada673bd57a695c93b",
+        "aven_sha256": "5002bf633517559474b55e83dab40bb177c2506f34677a518082d350d9c1fd21"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "browser_tc",
+      "content_id": "Local Traditional Chinese City Notes article in Firefox",
+      "tags": [
+        "browser_tc",
+        "typography_tc"
+      ],
+      "stock": "evidence/stock/round-00/browser-tc-1x.json",
+      "aven": "evidence/aven/round-04/browser-tc-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "The same TC City Notes article retains clear corner quotes, punctuation and mixed English/numbers. Body rendering already looks strong in stock and is nearly unchanged. Aven neutral chrome is more coherent with the surrounding desktop, with larger chrome labels and a single task identity. The additional server-side titlebar reduces content height. Fixture-authored reading rhythm is not credited as an OS change.",
+        "stock_sha256": "76ee785cefef840aa9993209cebdf3ebd89e3bcb4a0e90654c93d75f92a5d1ad",
+        "aven_sha256": "2690f590aa5602c4dcd3cc0ed9b6692bcec6ff37464ec4ddff1d13dab39c2e8e"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "browser_web",
+      "content_id": "Live Chinese Firefox website in native Firefox",
+      "tags": [
+        "browser_web",
+        "typography_latin"
+      ],
+      "stock": "evidence/stock/round-00/browser-web-1x.json",
+      "aven": "evidence/aven/round-04/browser-web-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Both show the actual Chinese Firefox website with its large purple hero. Aven quiet neutral chrome frames the branded site coherently while leaving its page design intact. Stock has two tabs and Aven one; URL query/context differs slightly, while the principal content is matched. Chinese web text remains readable. This is a real web-page frame, not a broad compatibility test.",
+        "stock_sha256": "0d0c8eced834aea43773b48f62ed15e6213d64b5b0e26a96ed1810960b9daedb",
+        "aven_sha256": "0865f95fbfa3eb90980152eb9f15b5aeca225e67fca6a881ad6fd8e6014c0dcf"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "mail_list",
+      "content_id": "Four fictional offline messages in Thunderbird inbox",
+      "tags": [
+        "mail_list"
+      ],
+      "stock": "evidence/stock/round-00/mail-list-1x.json",
+      "aven": "evidence/aven/round-04/mail-list-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "The same four fictional messages appear. Aven warm neutral surfaces, larger text and jade compose control fit the desktop better. The approximately 330-pixel message cards are narrower than stock's approximately 430 pixels, truncating sender addresses in three rows. Subjects remain readable. A titlebar plus mostly empty top strip consumes more height than stock. The single Thunderbird task identity is coherent, but list efficiency is still a weak point.",
+        "stock_sha256": "f40072653d9715af86401557c42358de7dcd6076de5b75c2192bedd3430d37fe",
+        "aven_sha256": "26fe77d39c6e924950d9166c18ddf6ebfb071f7d78f5622091f9c87214dde561"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "mail_sc",
+      "content_id": "Same fictional Simplified Chinese email opened in Thunderbird",
+      "tags": [
+        "mail_sc",
+        "typography_sc",
+        "typography_latin"
+      ],
+      "stock": "evidence/stock/round-00/mail-sc-1x.json",
+      "aven": "evidence/aven/round-04/mail-sc-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "The same fictional SC message is comfortably inset and spaced in Aven, with approximately 17-pixel body text and 30-pixel leading versus stock's tighter 24-pixel rhythm and near-edge body. Latin address text and Chinese punctuation remain clear; paragraph breaks are preserved. The narrow adjacent message list and extra top strip remain. Window/client layout differences are acknowledged.",
+        "stock_sha256": "935fd7f46174ab3a64fa947a26cc9a0e4c8bc4aa9d2cf7002310abeadfdca9cf",
+        "aven_sha256": "ecc1011e90c8ffcbc020a04b0953b05b0fe70cb75c88bf473fd9b5069fe3968b"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "mail_tc",
+      "content_id": "Same fictional Traditional Chinese email opened in Thunderbird",
+      "tags": [
+        "mail_tc",
+        "typography_tc"
+      ],
+      "stock": "evidence/stock/round-00/mail-tc-1x.json",
+      "aven": "evidence/aven/round-04/mail-tc-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "The same fictional TC message has a calm, readable body with generous inset and leading, preserving punctuation, v2.1 and 11:00. Stock is readable but tighter and close to the content edge. Native header controls and bold labels remain somewhat dense. The message-card truncation and mostly empty upper strip still limit coherence. This is a 1x primary mail comparison.",
+        "stock_sha256": "be19c62a6e6509ad5200690c5e80a0ba69d31c1063b664393ac3076e3b523f1e",
+        "aven_sha256": "0d107937a05c05d2da0b51dd375c4f6fd7e47725bd92787f6772fd49eb9fe651"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "mail_compose",
+      "content_id": "Same fictional saved reply with appended route-confirmation sentence",
+      "tags": [
+        "mail_compose",
+        "typography_sc",
+        "typography_latin"
+      ],
+      "stock": "evidence/stock/round-00/mail-compose-1x.json",
+      "aven": "evidence/aven/round-04/mail-compose-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Both show the same fictional saved draft, including 已核对路线，周六见。 before round-04 editing. Aven now gives wrapped/body and signature lines approximately 30-pixel leading, visibly more comfortable than stock's approximately 24 pixels, with a useful inset. This resolves the round-03 writing-versus-reading rhythm defect. The 1000×840 outer frame is matched. The existing blank paragraph before the appended sentence belongs to the draft. The matched 720-pixel supplemental pair confirms the improvement under wrapping.",
+        "stock_sha256": "74ade757d5e01b0e4ae33be8a2167260405c1d52ed9eda4604b4d57eec7aa39a",
+        "aven_sha256": "36f1e37eb4e0de6012c5900c7e8fb27145d267d65368d894d946a83ddf968cce"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "photos_grid",
+      "content_id": "Eight-photo Kyoto travel album in Gwenview browse view",
+      "tags": [
+        "photos_grid",
+        "qt_sc"
+      ],
+      "stock": "evidence/stock/round-00/photos-grid-1x.json",
+      "aven": "evidence/aven/round-04/photos-grid-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "The same eight Kyoto album images appear. Aven's approximately 240-pixel thumbnails form five-plus-three rows and make the album immediately useful; stock places eight tiny thumbnails in one row. Aven selects the river image while stock selects the first image, and Aven has a small native hover affordance. The heavy breadcrumb surround and native thumbnail frames remain more mechanical than Files.",
+        "stock_sha256": "d4ce5c702b163332f00d22d041401f864aa2e3a9370e1bd084b75de68ecaf1f6",
+        "aven_sha256": "751ff518e79539fa8e2bd50561733895798ed2eef12dff66b372fdfce06cfdbc"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "photos_view",
+      "content_id": "Kyoto mountain-river landscape in Gwenview fitted view",
+      "tags": [
+        "photo_landscape"
+      ],
+      "stock": "evidence/stock/round-00/photos-view-1x.json",
+      "aven": "evidence/aven/round-04/photos-view-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Both show the same Kyoto mountain-river image upright. Aven fits it at 79% with a short filmstrip; stock fits at 92% with no filmstrip. Navigation context is useful but costs photo area. The filmstrip's beveled/gradient cells and horizontal bar retain an older native KDE appearance. This is a reasonable mature-viewer tradeoff, not a premium new photo surface.",
+        "stock_sha256": "0669a9f8c1e1152310e5e004946352bcb9ee7a7d882a3b80c5abbfcf2b3e2403",
+        "aven_sha256": "96ccd06c2455be5ff613114bf48b228eaf087902a8d3c0f3aff66e0d6673a17e"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "photo_exif",
+      "content_id": "Same labeled EXIF-6 waterfall orientation fixture",
+      "tags": [
+        "photo_exif"
+      ],
+      "stock": "evidence/stock/round-00/photo-exif-1x.json",
+      "aven": "evidence/aven/round-04/photo-exif-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Both correctly display the same EXIF-6 fixture upright, with the original TOP/LEFT/RIGHT/BOTTOM labels in the correct orientation. Aven fits at 56% versus stock 65% because of its filmstrip. This verifies this orientation sample visually, not every EXIF orientation or color-management case.",
+        "stock_sha256": "dba07e0a5495e6d92790d4545a9b45d64ede9172ff2b727817330ce6b3be1b5f",
+        "aven_sha256": "b8fe3f30312490ee82281dafbe899b99f3d00065beec0c9c0e0bdca2c3e465b4"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "photo_alpha",
+      "content_id": "Same unmodified 32×32 alpha PNG at native 100% image zoom",
+      "tags": [
+        "photo_alpha"
+      ],
+      "stock": "evidence/stock/round-00/photo-alpha-1x.json",
+      "aven": "evidence/aven/round-04/photo-alpha-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Both show the unmodified 32×32 transparent PNG at native 100%, so it is intentionally small. Aven checkerboard makes transparency distinguishable; stock's transparent side blends into its white canvas. The matched 800% supplemental pair makes this distinction much clearer. This is not evidence of changed asset pixels or display color accuracy.",
+        "stock_sha256": "9516c0786d63a4632664a00f14db47aa5566f26631e19460d60063a47fd96c86",
+        "aven_sha256": "43bb2d0797a20337e9e3f56b2b83d296fb997b4a82d1117f0c5a37304b85fe81"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "mail_compose_wrapped",
+      "content_id": "Same unchanged fictional SC draft in matched 720×840 outer frame at 600,140",
+      "tags": [
+        "mail_compose",
+        "typography_sc",
+        "typography_latin"
+      ],
+      "stock": "evidence/stock/round-00/mail-compose-wrapped-720-1x.json",
+      "aven": "evidence/aven/round-04/op-mail-compose-wrapped-720-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Opened both original 1920×1200 frames. In the matched narrow composer, the existing Chinese paragraph wraps naturally. Aven successive wrapped lines and signature lines have approximately 30-pixel leading versus stock's approximately 24 pixels. Mixed Latin and Chinese remain clear, and Aven's inset prevents body text hugging the edge. Identical draft content was captured before the round-04 save test; the pre-existing blank paragraph remains. This is the concrete visible correction supporting the small Chinese/mail score increase.",
+        "stock_sha256": "de4c939b93f000863995014b28c109258a04bb01b4cd5b995e8e8812247a920e",
+        "aven_sha256": "a6fe7e6bc7d9d8fcfc23c253bd854df8f85f3006cc5487c3bb931a0c7a77a300"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "photo_alpha_zoom",
+      "content_id": "Same unmodified 32×32 transparent PNG shown at 800% image zoom",
+      "tags": [
+        "photo_alpha"
+      ],
+      "stock": "evidence/stock/round-00/photo-alpha-zoom-1x.json",
+      "aven": "evidence/aven/round-04/photo-alpha-zoom-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Opened both original frames. At 800%, the same 256-pixel-square displayed asset clearly shows its alpha gradient: stock fades into the white canvas, while Aven exposes a checkerboard behind the transparent area. The checker is a useful viewer presentation default rather than image corruption. The filmstrip remains visibly beveled. No calibrated-color claim follows.",
+        "stock_sha256": "a6e55e3e11ec1307208d68629cec73fe99d1c83513508679fbf061f6e55c660e",
+        "aven_sha256": "483c6cf9e3b1a3bb908ff8b5c0cfb237eaa319685433e5119b194a965066d531"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "typography_ui_sc_matrix_1p0",
+      "content_id": "typography-ui-sc-v1",
+      "tags": [
+        "qt_sc"
+      ],
+      "scale": 1,
+      "stock": "evidence/stock/round-00/typography-ui-sc-matrix-1x.json",
+      "aven": "evidence/aven/round-04/typography-ui-sc-matrix-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Native Simplified Chinese Dolphin at actual 1x was opened as an unmodified original alongside stock. Aven regular labels are larger and the wider sidebar keeps common labels readable; mixed Chinese/Latin filenames, dates and KiB have no visible clipped glyphs or missing-glyph boxes. The current 日常 · Everyday breadcrumb remains markedly heavy. Aven's small-thumbnail, roughly 26-logical-pixel matrix rows fit all twelve files versus stock's larger thumbnail rows; these controlled matrix states are not the primary Files density comparison. Aven has a first-row Earthrise focus outline; stock has it at integer scales but not the two fractional scales. This capture-state difference is not a font defect. At 100%, the native-pixel text remains comfortable and legible in the inspected VM.",
+        "stock_sha256": "a4262bc1746868affa3ca356e4723110c07daa0434128829c64f900b40ffb7fc",
+        "aven_sha256": "9a6868da27315f1d04e0509952c53e0d1b86228d249f72fc24a23f14b72aba14"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "typography_ui_sc_matrix_1p25",
+      "content_id": "typography-ui-sc-v1",
+      "tags": [
+        "qt_sc"
+      ],
+      "scale": 1.25,
+      "stock": "evidence/stock/round-00/typography-ui-sc-final-1.25x.json",
+      "aven": "evidence/aven/round-04/typography-ui-sc-matrix-1.25x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Native Simplified Chinese Dolphin at actual 1.25x was opened as an unmodified original alongside stock. Aven regular labels are larger and the wider sidebar keeps common labels readable; mixed Chinese/Latin filenames, dates and KiB have no visible clipped glyphs or missing-glyph boxes. The current 日常 · Everyday breadcrumb remains markedly heavy. Aven's small-thumbnail, roughly 26-logical-pixel matrix rows fit all twelve files versus stock's larger thumbnail rows; these controlled matrix states are not the primary Files density comparison. Aven has a first-row Earthrise focus outline; stock has it at integer scales but not the two fractional scales. This capture-state difference is not a font defect. At 125%, normal antialiased edge softness is present, without a conspicuous whole-window blur or punctuation collision.",
+        "stock_sha256": "86bee96747321d1f660bd4a9943069eba3336fad03bca482048a40932cff45fd",
+        "aven_sha256": "f80b4f97b37ff4f1f7d4edfa86d1f51efb1ade1800ce3137860902e17b9c7bd0"
+      },
+      "_verified_scale": 1.25
+    },
+    {
+      "id": "typography_ui_sc_matrix_1p5",
+      "content_id": "typography-ui-sc-v1",
+      "tags": [
+        "qt_sc"
+      ],
+      "scale": 1.5,
+      "stock": "evidence/stock/round-00/typography-ui-sc-final-1.5x.json",
+      "aven": "evidence/aven/round-04/typography-ui-sc-matrix-1.5x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Native Simplified Chinese Dolphin at actual 1.5x was opened as an unmodified original alongside stock. Aven regular labels are larger and the wider sidebar keeps common labels readable; mixed Chinese/Latin filenames, dates and KiB have no visible clipped glyphs or missing-glyph boxes. The current 日常 · Everyday breadcrumb remains markedly heavy. Aven's small-thumbnail, roughly 26-logical-pixel matrix rows fit all twelve files versus stock's larger thumbnail rows; these controlled matrix states are not the primary Files density comparison. Aven has a first-row Earthrise focus outline; stock has it at integer scales but not the two fractional scales. This capture-state difference is not a font defect. At 150%, dense strokes and Latin counters stay clear, without conspicuous baseline jumps or doubled contours.",
+        "stock_sha256": "95d1c097a9a3adfa59cdc7ea5208d345e18fc9506afa2a0195d0b870ca6400ec",
+        "aven_sha256": "12cf7ed0b3b10d36093ecd9ece4a4a8bd1131cd9f34e711abb4fafed7292ccbc"
+      },
+      "_verified_scale": 1.5
+    },
+    {
+      "id": "typography_ui_sc_matrix_2p0",
+      "content_id": "typography-ui-sc-v1",
+      "tags": [
+        "qt_sc"
+      ],
+      "scale": 2,
+      "stock": "evidence/stock/round-00/typography-ui-sc-matrix-2x.json",
+      "aven": "evidence/aven/round-04/typography-ui-sc-matrix-2x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Native Simplified Chinese Dolphin at actual 2x was opened as an unmodified original alongside stock. Aven regular labels are larger and the wider sidebar keeps common labels readable; mixed Chinese/Latin filenames, dates and KiB have no visible clipped glyphs or missing-glyph boxes. The current 日常 · Everyday breadcrumb remains markedly heavy. Aven's small-thumbnail, roughly 26-logical-pixel matrix rows fit all twelve files versus stock's larger thumbnail rows; these controlled matrix states are not the primary Files density comparison. Aven has a first-row Earthrise focus outline; stock has it at integer scales but not the two fractional scales. This capture-state difference is not a font defect. At 200%, dense CJK strokes and Latin counters are distinct in both products.",
+        "stock_sha256": "fad1ff6c708895c70c886c4b503afc4ab889e965eb490b63f1c6ef0c43f19828",
+        "aven_sha256": "38c005ae6411141f3819ad95492fe85e33fd00173ce66021b56d0a57e2d96835"
+      },
+      "_verified_scale": 2.0
+    },
+    {
+      "id": "typography_prose_sc_matrix_1p0",
+      "content_id": "typography-prose-sc-v1",
+      "tags": [
+        "typography_sc"
+      ],
+      "scale": 1,
+      "stock": "evidence/stock/round-00/typography-prose-sc-matched-1x.json",
+      "aven": "evidence/aven/round-04/typography-prose-sc-matrix-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "SC paragraphs at actual 1x were opened as unmodified originals alongside stock. Regular strokes, corner quotes/book-title punctuation, dates, time and mixed Latin/MB remain balanced and readable, with stable wraps and no visible missing glyphs. Body rendering is very similar in both products; the shared 17-pixel / 1.75 specimen already gives stock good rhythm. Aven's neutral Firefox chrome is more coherent, but its extra titlebar reduces client height by about 38 logical pixels. At 100%, the native-pixel text remains comfortable and legible in the inspected VM.",
+        "stock_sha256": "a570b009e49c296a3d770d254d6a606929309b340e9cfeabce82f76cf9151758",
+        "aven_sha256": "effb052220e683726eca2c4d7187e11722dcdc420a47b7e4976d7bb93101e86e"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "typography_prose_sc_matrix_1p25",
+      "content_id": "typography-prose-sc-v1",
+      "tags": [
+        "typography_sc"
+      ],
+      "scale": 1.25,
+      "stock": "evidence/stock/round-00/typography-prose-sc-final-1.25x.json",
+      "aven": "evidence/aven/round-04/typography-prose-sc-matrix-1.25x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "SC paragraphs at actual 1.25x were opened as unmodified originals alongside stock. Regular strokes, corner quotes/book-title punctuation, dates, time and mixed Latin/MB remain balanced and readable, with stable wraps and no visible missing glyphs. Body rendering is very similar in both products; the shared 17-pixel / 1.75 specimen already gives stock good rhythm. Aven's neutral Firefox chrome is more coherent, but its extra titlebar reduces client height by about 38 logical pixels. At 125%, normal antialiased edge softness is present, without a conspicuous whole-window blur or punctuation collision.",
+        "stock_sha256": "8d5378130a5c9bc011325481b8cb0775a9976c4b3c3f385c114ac8defd0db20a",
+        "aven_sha256": "8a855bda5b579b8a7e9c27604f7b06eb7a35cc99db905799707d5f3c0190c184"
+      },
+      "_verified_scale": 1.25
+    },
+    {
+      "id": "typography_prose_sc_matrix_1p5",
+      "content_id": "typography-prose-sc-v1",
+      "tags": [
+        "typography_sc"
+      ],
+      "scale": 1.5,
+      "stock": "evidence/stock/round-00/typography-prose-sc-final-1.5x.json",
+      "aven": "evidence/aven/round-04/typography-prose-sc-matrix-1.5x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "SC paragraphs at actual 1.5x were opened as unmodified originals alongside stock. Regular strokes, corner quotes/book-title punctuation, dates, time and mixed Latin/MB remain balanced and readable, with stable wraps and no visible missing glyphs. Body rendering is very similar in both products; the shared 17-pixel / 1.75 specimen already gives stock good rhythm. Aven's neutral Firefox chrome is more coherent, but its extra titlebar reduces client height by about 38 logical pixels. At 150%, dense strokes and Latin counters stay clear, without conspicuous baseline jumps or doubled contours.",
+        "stock_sha256": "eaf23469d015d3eb33791c004837dca965aa0dffb355361cf03706b95048c00f",
+        "aven_sha256": "be9d6ccb8c21fcf79c0b548a2b57c4474fad8d3dbf6071772fd1ef3778d10f33"
+      },
+      "_verified_scale": 1.5
+    },
+    {
+      "id": "typography_prose_sc_matrix_2p0",
+      "content_id": "typography-prose-sc-v1",
+      "tags": [
+        "typography_sc"
+      ],
+      "scale": 2,
+      "stock": "evidence/stock/round-00/typography-prose-sc-matched-2x.json",
+      "aven": "evidence/aven/round-04/typography-prose-sc-matrix-2x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "SC paragraphs at actual 2x were opened as unmodified originals alongside stock. Regular strokes, corner quotes/book-title punctuation, dates, time and mixed Latin/MB remain balanced and readable, with stable wraps and no visible missing glyphs. Body rendering is very similar in both products; the shared 17-pixel / 1.75 specimen already gives stock good rhythm. Aven's neutral Firefox chrome is more coherent, but its extra titlebar reduces client height by about 38 logical pixels. At 200%, dense CJK strokes and Latin counters are distinct in both products.",
+        "stock_sha256": "0d85bf96d9c36ea676f67eebf149ab72f86f4f23874c19620fcd686a4ef15d19",
+        "aven_sha256": "4ef0b621f44b76865695e0d4e324f4ff368a5282e65b8440a5be2560099b6bcd"
+      },
+      "_verified_scale": 2.0
+    },
+    {
+      "id": "typography_ui_tc_matrix_1p0",
+      "content_id": "typography-ui-tc-v1",
+      "tags": [
+        "qt_tc"
+      ],
+      "scale": 1,
+      "stock": "evidence/stock/round-00/typography-ui-tc-matrix-1x.json",
+      "aven": "evidence/aven/round-04/typography-ui-tc-matrix-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Native Traditional Chinese Dolphin at actual 1x was opened as an unmodified original alongside stock. Aven regular labels are larger and the wider sidebar keeps common labels readable; mixed Chinese/Latin filenames, dates and KiB have no visible clipped glyphs or missing-glyph boxes. The current 日常 · Everyday breadcrumb remains markedly heavy. Aven's small-thumbnail, roughly 26-logical-pixel matrix rows fit all twelve files versus stock's larger thumbnail rows; these controlled matrix states are not the primary Files density comparison. Actual localized labels include 快速存取, 家目錄, 最近檔案 and 已變更; neither pair member has a selected row. At 100%, the native-pixel text remains comfortable and legible in the inspected VM.",
+        "stock_sha256": "5741cee6010905ef3e6ceb8010b25ae91a2996d19bdca6dff618e9e94fddf7d2",
+        "aven_sha256": "0e77035131b56cdd7e58af0b4ae269f16893ac945ec87158c72b520cbd9d29d4"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "typography_ui_tc_matrix_1p25",
+      "content_id": "typography-ui-tc-v1",
+      "tags": [
+        "qt_tc"
+      ],
+      "scale": 1.25,
+      "stock": "evidence/stock/round-00/typography-ui-tc-final-1.25x.json",
+      "aven": "evidence/aven/round-04/typography-ui-tc-matrix-1.25x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Native Traditional Chinese Dolphin at actual 1.25x was opened as an unmodified original alongside stock. Aven regular labels are larger and the wider sidebar keeps common labels readable; mixed Chinese/Latin filenames, dates and KiB have no visible clipped glyphs or missing-glyph boxes. The current 日常 · Everyday breadcrumb remains markedly heavy. Aven's small-thumbnail, roughly 26-logical-pixel matrix rows fit all twelve files versus stock's larger thumbnail rows; these controlled matrix states are not the primary Files density comparison. Actual localized labels include 快速存取, 家目錄, 最近檔案 and 已變更; neither pair member has a selected row. At 125%, normal antialiased edge softness is present, without a conspicuous whole-window blur or punctuation collision.",
+        "stock_sha256": "c97292c0bcf3bc691d2cf36e9a6f7f74cabf0af9141ec75a2a4c23f911850540",
+        "aven_sha256": "04564c4071ee0a5101bf680b449ca99447842616afe5bfaf50b5eef6dc5a10e9"
+      },
+      "_verified_scale": 1.25
+    },
+    {
+      "id": "typography_ui_tc_matrix_1p5",
+      "content_id": "typography-ui-tc-v1",
+      "tags": [
+        "qt_tc"
+      ],
+      "scale": 1.5,
+      "stock": "evidence/stock/round-00/typography-ui-tc-final-1.5x.json",
+      "aven": "evidence/aven/round-04/typography-ui-tc-matrix-1.5x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Native Traditional Chinese Dolphin at actual 1.5x was opened as an unmodified original alongside stock. Aven regular labels are larger and the wider sidebar keeps common labels readable; mixed Chinese/Latin filenames, dates and KiB have no visible clipped glyphs or missing-glyph boxes. The current 日常 · Everyday breadcrumb remains markedly heavy. Aven's small-thumbnail, roughly 26-logical-pixel matrix rows fit all twelve files versus stock's larger thumbnail rows; these controlled matrix states are not the primary Files density comparison. Actual localized labels include 快速存取, 家目錄, 最近檔案 and 已變更; neither pair member has a selected row. At 150%, dense strokes and Latin counters stay clear, without conspicuous baseline jumps or doubled contours.",
+        "stock_sha256": "a4fa4543e3b5d4a1e00e25ea5c54c78019739a77d9f413b40483b6e6f0ee9321",
+        "aven_sha256": "54fc212536cb811cc38ccf6407c6550c489229a0281f9febc4a7c0311fdf0366"
+      },
+      "_verified_scale": 1.5
+    },
+    {
+      "id": "typography_ui_tc_matrix_2p0",
+      "content_id": "typography-ui-tc-v1",
+      "tags": [
+        "qt_tc"
+      ],
+      "scale": 2,
+      "stock": "evidence/stock/round-00/typography-ui-tc-matrix-2x.json",
+      "aven": "evidence/aven/round-04/typography-ui-tc-matrix-2x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Native Traditional Chinese Dolphin at actual 2x was opened as an unmodified original alongside stock. Aven regular labels are larger and the wider sidebar keeps common labels readable; mixed Chinese/Latin filenames, dates and KiB have no visible clipped glyphs or missing-glyph boxes. The current 日常 · Everyday breadcrumb remains markedly heavy. Aven's small-thumbnail, roughly 26-logical-pixel matrix rows fit all twelve files versus stock's larger thumbnail rows; these controlled matrix states are not the primary Files density comparison. Actual localized labels include 快速存取, 家目錄, 最近檔案 and 已變更; neither pair member has a selected row. At 200%, dense CJK strokes and Latin counters are distinct in both products.",
+        "stock_sha256": "61189b05340dfc10b3a089229973b1f64867396ce8981ed8d95da28180bbb8ba",
+        "aven_sha256": "53f497b7d8b8c2eae6e208ddea69b1195d9cfe49bf0cc2d32d0c482992e1690f"
+      },
+      "_verified_scale": 2.0
+    },
+    {
+      "id": "typography_prose_tc_matrix_1p0",
+      "content_id": "typography-prose-tc-v1",
+      "tags": [
+        "typography_tc"
+      ],
+      "scale": 1,
+      "stock": "evidence/stock/round-00/typography-prose-tc-matched-1x.json",
+      "aven": "evidence/aven/round-04/typography-prose-tc-matrix-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Taiwan TC and the complete Hong Kong paragraph at actual 1x were opened as unmodified originals alongside stock. Regular strokes, corner quotes/book-title punctuation, dates, time and mixed Latin/MB remain balanced and readable, with stable wraps and no visible missing glyphs. Body rendering is very similar in both products; the shared 17-pixel / 1.75 specimen already gives stock good rhythm. Aven's neutral Firefox chrome is more coherent, but its extra titlebar reduces client height by about 38 logical pixels. At 100%, the native-pixel text remains comfortable and legible in the inspected VM.",
+        "stock_sha256": "d761c2f28d64646f4b00bc6aff08c61563c8d59679d1cf28ca17c6be8131ec84",
+        "aven_sha256": "f1076cb9da25d11ac0d2dec306dd659406a63975166d1db598bfebff50a3d821"
+      },
+      "_verified_scale": 1.0
+    },
+    {
+      "id": "typography_prose_tc_matrix_1p25",
+      "content_id": "typography-prose-tc-v1",
+      "tags": [
+        "typography_tc"
+      ],
+      "scale": 1.25,
+      "stock": "evidence/stock/round-00/typography-prose-tc-final-1.25x.json",
+      "aven": "evidence/aven/round-04/typography-prose-tc-matrix-1.25x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Taiwan TC and the complete Hong Kong paragraph at actual 1.25x were opened as unmodified originals alongside stock. Regular strokes, corner quotes/book-title punctuation, dates, time and mixed Latin/MB remain balanced and readable, with stable wraps and no visible missing glyphs. Body rendering is very similar in both products; the shared 17-pixel / 1.75 specimen already gives stock good rhythm. Aven's neutral Firefox chrome is more coherent, but its extra titlebar reduces client height by about 38 logical pixels. At 125%, normal antialiased edge softness is present, without a conspicuous whole-window blur or punctuation collision.",
+        "stock_sha256": "e80870c38d6db64387a2c03700010c31bee54034c6e95a05075f3080be68a33f",
+        "aven_sha256": "1e209231e2a01820e542ffbb031ed3aad59959c57aeab0f93bbc810810e3ecb0"
+      },
+      "_verified_scale": 1.25
+    },
+    {
+      "id": "typography_prose_tc_matrix_1p5",
+      "content_id": "typography-prose-tc-v1",
+      "tags": [
+        "typography_tc"
+      ],
+      "scale": 1.5,
+      "stock": "evidence/stock/round-00/typography-prose-tc-final-1.5x.json",
+      "aven": "evidence/aven/round-04/typography-prose-tc-matrix-1.5x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Taiwan TC and the complete Hong Kong paragraph at actual 1.5x were opened as unmodified originals alongside stock. Regular strokes, corner quotes/book-title punctuation, dates, time and mixed Latin/MB remain balanced and readable, with stable wraps and no visible missing glyphs. Body rendering is very similar in both products; the shared 17-pixel / 1.75 specimen already gives stock good rhythm. Aven's neutral Firefox chrome is more coherent, but its extra titlebar reduces client height by about 38 logical pixels. At 150%, dense strokes and Latin counters stay clear, without conspicuous baseline jumps or doubled contours.",
+        "stock_sha256": "30b89122fabcc9aabced851b62d413d1681e8a266d860f39c47271a26af73aa5",
+        "aven_sha256": "3e2453a85f98c186651ed62adb1755060b0b51f11e529ee3af02d87d2bc5603f"
+      },
+      "_verified_scale": 1.5
+    },
+    {
+      "id": "typography_prose_tc_matrix_2p0",
+      "content_id": "typography-prose-tc-v1",
+      "tags": [
+        "typography_tc"
+      ],
+      "scale": 2,
+      "stock": "evidence/stock/round-00/typography-prose-tc-matched-2x.json",
+      "aven": "evidence/aven/round-04/typography-prose-tc-matrix-2x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Taiwan TC and the complete Hong Kong paragraph at actual 2x were opened as unmodified originals alongside stock. Regular strokes, corner quotes/book-title punctuation, dates, time and mixed Latin/MB remain balanced and readable, with stable wraps and no visible missing glyphs. Body rendering is very similar in both products; the shared 17-pixel / 1.75 specimen already gives stock good rhythm. Aven's neutral Firefox chrome is more coherent, but its extra titlebar reduces client height by about 38 logical pixels. At 200%, dense CJK strokes and Latin counters are distinct in both products.",
+        "stock_sha256": "f0c08e3b05e5c0594b3653e0b7350ebe0178eea35afd77b4ee584659093778aa",
+        "aven_sha256": "56223f36cf096394adaa5c387ef320831f253bcc75c61b2db2fde73190399798"
+      },
+      "_verified_scale": 2.0
+    }
+  ],
+  "scores": {
+    "chinese_typography": {
+      "score": 8.5,
+      "pairs": [
+        "typography_ui_sc_matrix_1p0",
+        "typography_ui_sc_matrix_1p25",
+        "typography_ui_sc_matrix_1p5",
+        "typography_ui_sc_matrix_2p0",
+        "typography_prose_sc_matrix_1p0",
+        "typography_prose_sc_matrix_1p25",
+        "typography_prose_sc_matrix_1p5",
+        "typography_prose_sc_matrix_2p0",
+        "typography_ui_tc_matrix_1p0",
+        "typography_ui_tc_matrix_1p25",
+        "typography_ui_tc_matrix_1p5",
+        "typography_ui_tc_matrix_2p0",
+        "typography_prose_tc_matrix_1p0",
+        "typography_prose_tc_matrix_1p25",
+        "typography_prose_tc_matrix_1p5",
+        "typography_prose_tc_matrix_2p0",
+        "files_home",
+        "files_list",
+        "preview_text",
+        "browser_sc",
+        "browser_tc",
+        "mail_sc",
+        "mail_tc",
+        "mail_compose",
+        "mail_compose_wrapped"
+      ],
+      "rationale": "The four-scale current SC/TC native and prose matrix is clean. Larger ordinary UI text, full readable Places labels, the comfortable preview body, and now-consistent mail reading/writing rhythm form a product-grade Chinese experience. The matched narrow composer concretely resolves the prior crowded 24-pixel leading. This is a small justified increase from round 03, not a claim of transformed font rasterization.",
+      "limitations": [
+        "Stock already has correct Noto SC/TC fallback and clean controlled browser prose; there is no demonstrated dramatic prose-rasterization advantage.",
+        "Native current breadcrumbs remain too dark. Mail and preview body comparisons are at 1x; the four-scale matrix covers Dolphin and Firefox.",
+        "No direct macOS screenshots, physical-panel reading study or arbitrary-content coverage."
+      ]
+    },
+    "latin_typography": {
+      "score": 8.4,
+      "pairs": [
+        "files_home",
+        "files_list",
+        "preview_text",
+        "browser_web",
+        "browser_sc",
+        "mail_sc",
+        "mail_compose_wrapped"
+      ],
+      "rationale": "Larger native UI labels, clear filenames/extensions, calm preview text and comfortable mail leading make Latin text a coherent partner to Chinese. Browser chrome, titles and addresses have legible hierarchy.",
+      "limitations": [
+        "Current breadcrumbs are heavy; Thunderbird cards truncate addresses because of width.",
+        "Page-authored typography is not credited as a system rendering change."
+      ]
+    },
+    "files_experience": {
+      "score": 8.4,
+      "pairs": [
+        "files_home",
+        "files_list",
+        "files_mixed"
+      ],
+      "rationale": "The wider focused sidebar, much more useful mixed-file grid, readable compact details view and subdued folder/selection treatment substantially improve the primary surface. The verification agent records successful native navigation, selection and reversible file operations with byte checks.",
+      "limitations": [
+        "Active breadcrumbs and the remaining technical volume label retain KDE character.",
+        "Primary Home defaults differ in view mode; matrix row density is a separate controlled state.",
+        "Critic inspected visual evidence; operation inputs were performed by the named verification witnesses."
+      ]
+    },
+    "file_preview": {
+      "score": 8.6,
+      "pairs": [
+        "preview_image",
+        "preview_pdf",
+        "preview_text",
+        "preview_media"
+      ],
+      "rationale": "Images, PDFs, real Chinese text and media are now useful at a glance in a coherent focused overlay. The corrected paused duration removes a misleading zero-total detail. Independently inspected native transition states show a stable underlying Files list and retained selection, and verification confirms repeat-toggle and Escape focus return.",
+      "limitations": [
+        "Ctrl+Alt+P is functional but less discoverable than a dedicated obvious preview affordance.",
+        "A separate preview task icon briefly appears. PDF fonts are embedded; audio and full continuous video playback were not independently established."
+      ]
+    },
+    "browser_coherence": {
+      "score": 8.4,
+      "pairs": [
+        "browser_sc",
+        "browser_tc",
+        "browser_web"
+      ],
+      "rationale": "Firefox has compatible neutral tabs, toolbar and shared decoration with larger readable chrome text and one task identity. Both Chinese fixture articles and the live Chinese Firefox page remain intact. Native download/reveal and portal selection are verified separately.",
+      "limitations": [
+        "The extra titlebar repeats page title and consumes height.",
+        "Actual site bodies were already good in stock; no broad web-compatibility or complete TC UI-localization claim."
+      ]
+    },
+    "mail_coherence": {
+      "score": 8.1,
+      "pairs": [
+        "mail_list",
+        "mail_sc",
+        "mail_tc",
+        "mail_compose",
+        "mail_compose_wrapped"
+      ],
+      "rationale": "Warm surfaces and restrained jade emphasis fit Aven. Real SC/TC reading is comfortable, and the corrected editable-body leading makes writing equally calm at both matched window widths. A native offline edit/save/close/reopen round trip succeeded according to verification.",
+      "limitations": [
+        "The narrow message-card column truncates sender addresses; the mostly empty top strip wastes space.",
+        "Native header and formatting controls remain denser than Files.",
+        "No account setup, live receive or sending was tested."
+      ]
+    },
+    "photo_experience": {
+      "score": 8,
+      "pairs": [
+        "photos_grid",
+        "photos_view",
+        "photo_exif",
+        "photo_alpha",
+        "photo_alpha_zoom"
+      ],
+      "rationale": "The large eight-image album is substantially more useful than stock's tiny single row. The short filmstrip gives context while keeping the viewed photo prominent. Inspected EXIF-6 orientation and transparent-image presentation are correct; native next/previous and fullscreen were verified.",
+      "limitations": [
+        "Breadcrumb surround and beveled filmstrip still look distinctly native KDE.",
+        "The filmstrip reduces fitted-photo area versus stock, and only one labeled EXIF orientation was sampled.",
+        "No calibrated color-management or broad image-format claim."
+      ]
+    },
+    "visual_coherence": {
+      "score": 8.3,
+      "pairs": [
+        "desktop",
+        "files_home",
+        "files_mixed",
+        "browser_web",
+        "mail_list",
+        "photos_grid",
+        "preview_image"
+      ],
+      "rationale": "The jade/neutral desktop, quiet surfaces, shared decoration, consistent UI scale and focused Files/preview establish a recognizable Aven product. Browser and mail now sit within the same palette without altering their content.",
+      "limitations": [
+        "Thunderbird's upper strip and Gwenview's framing are still visibly less resolved; native application icons retain distinct colors.",
+        "This judgment covers the four focused experiences, not the rest of KDE."
+      ]
+    },
+    "perceived_polish": {
+      "score": 8.3,
+      "pairs": [
+        "desktop",
+        "files_mixed",
+        "preview_image",
+        "preview_media",
+        "mail_compose",
+        "mail_compose_wrapped",
+        "photos_view"
+      ],
+      "rationale": "The strongest surfaces are Files and preview. The final compose rhythm and accurate paused-media duration remove concrete small defects. Inspected sampled transitions are restrained, with calmer fixed-bound window fades and no observed blocking transition defect.",
+      "limitations": [
+        "Sparse VM motion frames support transition character, not 60 Hz smoothness, exact input latency or frame pacing.",
+        "Mail/card density and Gwenview framing prevent a premium-consumer-OS score."
+      ]
+    }
+  },
+  "three_second": {
+    "answer": true,
+    "pairs": [
+      "desktop",
+      "files_home",
+      "files_mixed",
+      "preview_image"
+    ],
+    "rationale": "Yes. The broad pale/jade background and short light panel change the desktop silhouette immediately. The shared quiet chrome, readable sidebar and much larger content/preview hierarchy make the difference more refined as well as conspicuous. This is an independent visual first-impression judgment, not a blinded user study."
+  },
+  "operations": [
+    {
+      "id": "folders",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): Opened a fresh lab root in Dolphin, then Return entered 01 原件. Native double-click entered Pictures/周末散步. The lab fixture was prepared separately; all tested file mutations used Dolphin UI. Stock baseline (/root/verification, passed=true): Opened the fresh lab root in Dolphin location field, then entered 01 原件 with Return and the photo folder by native double-click. No operation was performed by shell.",
+      "pairs": [
+        "files_home",
+        "files_list"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "folders",
+        "guest": "stock",
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Opened the fresh lab root in Dolphin location field, then entered 01 原件 with Return and the photo folder by native double-click. No operation was performed by shell.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/operations-root-1x.json",
+            "sidecar_sha256": "56b0c703c2da38002f92470d6437fdcd7350247c1b8b4288fcc76a6a765fd106",
+            "image": "evidence/stock/round-00/operations-root-1x.png",
+            "image_sha256": "7c418b2da780f8a9140e3a2188fac12b914aefeadc50a8a36ab4da0d040c048c",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-original-selected-1x.json",
+            "sidecar_sha256": "1611a6c67085dfd113a540c4b3e1e9515a064baba8ce0e41df5c0a3856fa4541",
+            "image": "evidence/stock/round-00/operations-original-selected-1x.png",
+            "image_sha256": "039480c6dc384821395e591cc4ed9240494d8b0283e125a59e670643445e381e",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-photo-files-1x.json",
+            "sidecar_sha256": "353a15a26233d2380022737af39eba7e23a54fcc1a886c8f73f08ca2ea278774",
+            "image": "evidence/stock/round-00/operations-photo-files-1x.png",
+            "image_sha256": "57c516f037e1555ce27e7eadf1ee0c546a6125ebff087913bee27e20aca6e705",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "aven_observation": {
+        "operation": "folders",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Opened a fresh lab root in Dolphin, then Return entered 01 原件. Native double-click entered Pictures/周末散步. The lab fixture was prepared separately; all tested file mutations used Dolphin UI.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-files-root-ready-1x.json",
+            "sidecar_sha256": "1e252642427da883eea5218b5ae75afe89d69056fee378ec9a586438b58aaf30",
+            "image": "evidence/aven/round-04/op-files-root-ready-1x.png",
+            "image_sha256": "e0aa438b8f6ba9390500a5b92091276ca10aba4dfe78b973c4e0a3da09f98f88",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-original-selected-1x.json",
+            "sidecar_sha256": "4fde8bddb32723c4c3b4c4af4b2f3e12f6edf80fa8e86e241e71f36f9562b242",
+            "image": "evidence/aven/round-04/op-original-selected-1x.png",
+            "image_sha256": "cce11d3bcfd99a5aeca3866dc9a2056a638b8112b64a320de4e518d839bb774d",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-default-open-photo-1x.json",
+            "sidecar_sha256": "a46e7928bf880646f29b07f17f87bbcb0736ab3d163663a1c60ba0b5e1311300",
+            "image": "evidence/aven/round-04/op-default-open-photo-1x.png",
+            "image_sha256": "f0be81977ecab07ff5d814fde33e9ddb2d7dbef75a9ede28c6fd194f16a81a02",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      }
+    },
+    {
+      "id": "breadcrumbs",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): Clicked the parent breadcrumb from 03 移动 to the lab root. Alt+Up and Alt+Left also navigated correctly throughout the native operations. Stock baseline (/root/verification, passed=true): Clicked the parent breadcrumb from 03 移动; root view contains all three operation folders. Alt+Up and Alt+Left also navigated successfully during operations.",
+      "pairs": [
+        "files_list"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "breadcrumbs",
+        "guest": "stock",
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Clicked the parent breadcrumb from 03 移动; root view contains all three operation folders. Alt+Up and Alt+Left also navigated successfully during operations.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/operations-restored-1x.json",
+            "sidecar_sha256": "af8ccfe2acc66ee8e29f755b52b914066c6f94f2f93a5ded980bd00fb4cbd50a",
+            "image": "evidence/stock/round-00/operations-restored-1x.png",
+            "image_sha256": "6d12701d5e755492d180a362c6a6731a5f05a495fb2200084e69d929001b0d49",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-grid-selected-1x.json",
+            "sidecar_sha256": "37978db037d94421d55532c17208e761d1ee2c209ec014a149375652c83f3c07",
+            "image": "evidence/stock/round-00/operations-grid-selected-1x.png",
+            "image_sha256": "cb908364d5f4883ada1a6d8e6351a99b25cd245480073ad45a66840d510d3ae9",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "aven_observation": {
+        "operation": "breadcrumbs",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Clicked the parent breadcrumb from 03 移动 to the lab root. Alt+Up and Alt+Left also navigated correctly throughout the native operations.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-restored-1x.json",
+            "sidecar_sha256": "adabd80997a04c506d21d26e867bfe09dbcac5254eeac138eb7d5169c2626c00",
+            "image": "evidence/aven/round-04/op-restored-1x.png",
+            "image_sha256": "5e26fd9d5592d0a5a6488d5632ea604a56606ecc69be35133884df1a7383bdc3",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-grid-selected-1x.json",
+            "sidecar_sha256": "9020c7f9b8270daac7bb73a99c9fc021117b684afd00d3bc0f7423db5669fa57",
+            "image": "evidence/aven/round-04/op-grid-selected-1x.png",
+            "image_sha256": "921cf0e5ee7ffc3e1dd8f0868eb6874b83a0e59d22e3bbe952722edd0c6d29d5",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      }
+    },
+    {
+      "id": "sidebar",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): Clicked Downloads, Documents, Pictures and Trash in native Places. Titles and visible content correspond to each destination. Stock baseline (/root/verification, passed=true): Clicked Documents, Downloads, Pictures, and Trash in the native Places sidebar. Each title and listed content matches the clicked location.",
+      "pairs": [
+        "files_home"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "sidebar",
+        "guest": "stock",
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Clicked Documents, Downloads, Pictures, and Trash in the native Places sidebar. Each title and listed content matches the clicked location.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/operations-sidebar-documents-1x.json",
+            "sidecar_sha256": "90b30f7fe92b0a3c987dca4c8c623c8751fe14befd6231eb10bfba04a01bf07f",
+            "image": "evidence/stock/round-00/operations-sidebar-documents-1x.png",
+            "image_sha256": "e9408ff2a8f2a36c487965906606e9e68cb1932b825d06ef5796d4a3dd5e4eeb",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-sidebar-downloads-1x.json",
+            "sidecar_sha256": "e0db0aedcff45c243eac6ec665867848bc4baa7eeb858c99ea2395dc25146a64",
+            "image": "evidence/stock/round-00/operations-sidebar-downloads-1x.png",
+            "image_sha256": "e9e3edcae764c5d592a2ad2b9a86020554fb33a48ea487f80efbebafab2fda4a",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-sidebar-pictures-1x.json",
+            "sidecar_sha256": "80daef8579b24039de3f5b7875877241b0cb1a3760ddef5a1bdc21a87b7e4758",
+            "image": "evidence/stock/round-00/operations-sidebar-pictures-1x.png",
+            "image_sha256": "657a1f0980a3cbb2a4ba13856710295209be7324df1b50cdcaa736a0bdde0b2a",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-trash-view-1x.json",
+            "sidecar_sha256": "0ba56432a3772114d896ff4892d7f598d5a9978f7ff61b98936635a746ae433c",
+            "image": "evidence/stock/round-00/operations-trash-view-1x.png",
+            "image_sha256": "64583d39205c2e55506ee2df283e90c0898450de9e9964465303086b3007f2c1",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "aven_observation": {
+        "operation": "sidebar",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Clicked Downloads, Documents, Pictures and Trash in native Places. Titles and visible content correspond to each destination.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-sidebar-downloads-1x.json",
+            "sidecar_sha256": "d7e42f64c3810fe84908f8b22537fd956f49bdd9f3afdec44a87573f49e0dbaf",
+            "image": "evidence/aven/round-04/op-sidebar-downloads-1x.png",
+            "image_sha256": "2a66a8bd811aa7b312f3bc29bc11c66c701c2e23769d1d57727661da9b18ebae",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-sidebar-documents-1x.json",
+            "sidecar_sha256": "76332a842503de35c315287ff8d3ce6648077d0af4fd06b10aec81773711bfc1",
+            "image": "evidence/aven/round-04/op-sidebar-documents-1x.png",
+            "image_sha256": "359953e2a724d9b6e96ac9d85114a5b33fb7daba60a776a95fbde338cee11784",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-sidebar-pictures-1x.json",
+            "sidecar_sha256": "e5a6963342b65d996773d7428b7ac2e83b1344fc52f4844668a0eee8055f8dc5",
+            "image": "evidence/aven/round-04/op-sidebar-pictures-1x.png",
+            "image_sha256": "19bccccac1380257f6e3f34ef559f197d36636731b9b61b68d66102ca66fe823",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-trash-view-1x.json",
+            "sidecar_sha256": "2be79000526edd4957ba3289f1f23569615a36760123c00d62482f434413ff7a",
+            "image": "evidence/aven/round-04/op-trash-view-1x.png",
+            "image_sha256": "296e96333d902b352a11832203432b20d0128dd7fba51e80a28c55c509868d3b",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      }
+    },
+    {
+      "id": "grid_list",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): Ctrl+1 changed the lab root to icon view; Ctrl+3 returned to details. Three-folder selection remained visible. Stock baseline (/root/verification, passed=true): Ctrl+1 displayed the three folders as icons; Ctrl+3 returned to details view. Three-folder selection remained visible.",
+      "pairs": [
+        "files_list",
+        "files_mixed"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "grid_list",
+        "guest": "stock",
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Ctrl+1 displayed the three folders as icons; Ctrl+3 returned to details view. Three-folder selection remained visible.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/operations-grid-selected-1x.json",
+            "sidecar_sha256": "37978db037d94421d55532c17208e761d1ee2c209ec014a149375652c83f3c07",
+            "image": "evidence/stock/round-00/operations-grid-selected-1x.png",
+            "image_sha256": "cb908364d5f4883ada1a6d8e6351a99b25cd245480073ad45a66840d510d3ae9",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-list-selected-1x.json",
+            "sidecar_sha256": "4d6f78c0399920f52e7f13ccceeb67bc7438ce7c6796b507dd900b5d2a2c03e1",
+            "image": "evidence/stock/round-00/operations-list-selected-1x.png",
+            "image_sha256": "d38e8d1537f01be7fe2cfa9b7685109ef153576ad440578848143167494af47f",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "aven_observation": {
+        "operation": "grid_list",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Ctrl+1 changed the lab root to icon view; Ctrl+3 returned to details. Three-folder selection remained visible.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-grid-selected-1x.json",
+            "sidecar_sha256": "9020c7f9b8270daac7bb73a99c9fc021117b684afd00d3bc0f7423db5669fa57",
+            "image": "evidence/aven/round-04/op-grid-selected-1x.png",
+            "image_sha256": "921cf0e5ee7ffc3e1dd8f0868eb6874b83a0e59d22e3bbe952722edd0c6d29d5",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-list-selected-1x.json",
+            "sidecar_sha256": "991d1fa1701079299f4f1c5eab9d7f035641ef6f05c85b1a3f7a19191be7f529",
+            "image": "evidence/aven/round-04/op-list-selected-1x.png",
+            "image_sha256": "e0a83875cfb28e8a118115043f4abe040b45e8ec61218ad6eea2b6cc3704b081",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      }
+    },
+    {
+      "id": "selection",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): Ctrl+A selected the long Chinese/Latin filename and later all three folders. Home then Shift+Down selected two JPEGs. Selection counts and highlights were inspected. Stock baseline (/root/verification, passed=true): Ctrl+A selected a long mixed Chinese/Latin file and later all three folders; selected counts and blue highlights were inspected.",
+      "pairs": [
+        "files_list",
+        "files_mixed"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "selection",
+        "guest": "stock",
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Ctrl+A selected a long mixed Chinese/Latin file and later all three folders; selected counts and blue highlights were inspected.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/operations-original-selected-1x.json",
+            "sidecar_sha256": "1611a6c67085dfd113a540c4b3e1e9515a064baba8ce0e41df5c0a3856fa4541",
+            "image": "evidence/stock/round-00/operations-original-selected-1x.png",
+            "image_sha256": "039480c6dc384821395e591cc4ed9240494d8b0283e125a59e670643445e381e",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-grid-selected-1x.json",
+            "sidecar_sha256": "37978db037d94421d55532c17208e761d1ee2c209ec014a149375652c83f3c07",
+            "image": "evidence/stock/round-00/operations-grid-selected-1x.png",
+            "image_sha256": "cb908364d5f4883ada1a6d8e6351a99b25cd245480073ad45a66840d510d3ae9",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-list-selected-1x.json",
+            "sidecar_sha256": "4d6f78c0399920f52e7f13ccceeb67bc7438ce7c6796b507dd900b5d2a2c03e1",
+            "image": "evidence/stock/round-00/operations-list-selected-1x.png",
+            "image_sha256": "d38e8d1537f01be7fe2cfa9b7685109ef153576ad440578848143167494af47f",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "aven_observation": {
+        "operation": "selection",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Ctrl+A selected the long Chinese/Latin filename and later all three folders. Home then Shift+Down selected two JPEGs. Selection counts and highlights were inspected.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-original-selected-1x.json",
+            "sidecar_sha256": "4fde8bddb32723c4c3b4c4af4b2f3e12f6edf80fa8e86e241e71f36f9562b242",
+            "image": "evidence/aven/round-04/op-original-selected-1x.png",
+            "image_sha256": "cce11d3bcfd99a5aeca3866dc9a2056a638b8112b64a320de4e518d839bb774d",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-grid-selected-1x.json",
+            "sidecar_sha256": "9020c7f9b8270daac7bb73a99c9fc021117b684afd00d3bc0f7423db5669fa57",
+            "image": "evidence/aven/round-04/op-grid-selected-1x.png",
+            "image_sha256": "921cf0e5ee7ffc3e1dd8f0868eb6874b83a0e59d22e3bbe952722edd0c6d29d5",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-list-selected-1x.json",
+            "sidecar_sha256": "991d1fa1701079299f4f1c5eab9d7f035641ef6f05c85b1a3f7a19191be7f529",
+            "image": "evidence/aven/round-04/op-list-selected-1x.png",
+            "image_sha256": "e0a83875cfb28e8a118115043f4abe040b45e8ec61218ad6eea2b6cc3704b081",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-preview-selection-1x.json",
+            "sidecar_sha256": "1ed2e12562c0551b894a0379ed957640eaf4de9d1de5d7f8ab81741e2a5a53a5",
+            "image": "evidence/aven/round-04/op-preview-selection-1x.png",
+            "image_sha256": "522c243ceeac20aa7035e869720e086c1b3e0c4349110c3bde7604d82216703d",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      }
+    },
+    {
+      "id": "copy",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): Ctrl+C on the original; Alt+Up, Down, Return entered 02 复制; Ctrl+V copied. Read-only checks confirm both original and copy match the source bytes. Stock baseline (/root/verification, passed=true): Ctrl+C on the original file; Alt+Up, Down, Return navigated to 02 复制; Ctrl+V copied. Original and copy hashes match.",
+      "pairs": [
+        "files_list"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "copy",
+        "guest": "stock",
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Ctrl+C on the original file; Alt+Up, Down, Return navigated to 02 复制; Ctrl+V copied. Original and copy hashes match.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/operations-original-selected-1x.json",
+            "sidecar_sha256": "1611a6c67085dfd113a540c4b3e1e9515a064baba8ce0e41df5c0a3856fa4541",
+            "image": "evidence/stock/round-00/operations-original-selected-1x.png",
+            "image_sha256": "039480c6dc384821395e591cc4ed9240494d8b0283e125a59e670643445e381e",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-copied-1x.json",
+            "sidecar_sha256": "91a53e2daa3bd2b16c49bdcb06c63716fe3454eb1e90653a107eea1eb9fe5336",
+            "image": "evidence/stock/round-00/operations-copied-1x.png",
+            "image_sha256": "48732eb7330a9ec740205a2df0006f5b43a848701cb3b740e8f5bfa55dc57f58",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ],
+        "byte_check": {
+          "path": "evidence/interaction/stock-copied.json",
+          "sha256": "8541d3bc851d4dc36ef68bd693b1397501e9e5ef7e7b15c645309767b5fa0c29"
+        }
+      },
+      "aven_observation": {
+        "operation": "copy",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Ctrl+C on the original; Alt+Up, Down, Return entered 02 复制; Ctrl+V copied. Read-only checks confirm both original and copy match the source bytes.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-original-selected-1x.json",
+            "sidecar_sha256": "4fde8bddb32723c4c3b4c4af4b2f3e12f6edf80fa8e86e241e71f36f9562b242",
+            "image": "evidence/aven/round-04/op-original-selected-1x.png",
+            "image_sha256": "cce11d3bcfd99a5aeca3866dc9a2056a638b8112b64a320de4e518d839bb774d",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-copied-1x.json",
+            "sidecar_sha256": "c2db15f981d8c4aefc6550cbe9cbf5f6b9ed195d766151c9ab631f38e1a43cce",
+            "image": "evidence/aven/round-04/op-copied-1x.png",
+            "image_sha256": "9546c9237d646f6fe5c997f89f1a1dad3415dd3a8d61e7b13d558454a5fe0b61",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ],
+        "filesystem_check": {
+          "file": "evidence/interaction/aven-round04-copied-check.json",
+          "sha256": "b21a908bee73704a4ade0efa69a44c806760fa2f7cacb2e7bd059a1bdb75163f"
+        }
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      },
+      "stock_check": "evidence/interaction/stock-copied.json",
+      "aven_check": "evidence/interaction/aven-round04-copied-check.json"
+    },
+    {
+      "id": "move",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): Ctrl+X on the copy; Alt+Up, Down, Return entered 03 移动; Ctrl+V moved it. The copied source disappeared, the destination hash matches, and the original remains unchanged. Stock baseline (/root/verification, passed=true): Ctrl+X on the copy; Alt+Up, Down, Return navigated to 03 移动; Ctrl+V moved. Copied source is absent and original remains.",
+      "pairs": [
+        "files_list"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "move",
+        "guest": "stock",
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Ctrl+X on the copy; Alt+Up, Down, Return navigated to 03 移动; Ctrl+V moved. Copied source is absent and original remains.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/operations-copied-1x.json",
+            "sidecar_sha256": "91a53e2daa3bd2b16c49bdcb06c63716fe3454eb1e90653a107eea1eb9fe5336",
+            "image": "evidence/stock/round-00/operations-copied-1x.png",
+            "image_sha256": "48732eb7330a9ec740205a2df0006f5b43a848701cb3b740e8f5bfa55dc57f58",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-moved-1x.json",
+            "sidecar_sha256": "707e3eaeb9a4f5895cb200ad514a914147f626ea6066df2aaf6cf382af83856b",
+            "image": "evidence/stock/round-00/operations-moved-1x.png",
+            "image_sha256": "e10fa21b06b0fc461b675b2156251a8675305deecf8719f2b068fd6ebe148655",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ],
+        "byte_check": {
+          "path": "evidence/interaction/stock-moved.json",
+          "sha256": "b11a78943d1dc0c593ec53761dd5c28baa75fcf3449ce2df87883aaa340c867b"
+        }
+      },
+      "aven_observation": {
+        "operation": "move",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Ctrl+X on the copy; Alt+Up, Down, Return entered 03 移动; Ctrl+V moved it. The copied source disappeared, the destination hash matches, and the original remains unchanged.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-copied-1x.json",
+            "sidecar_sha256": "c2db15f981d8c4aefc6550cbe9cbf5f6b9ed195d766151c9ab631f38e1a43cce",
+            "image": "evidence/aven/round-04/op-copied-1x.png",
+            "image_sha256": "9546c9237d646f6fe5c997f89f1a1dad3415dd3a8d61e7b13d558454a5fe0b61",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-moved-1x.json",
+            "sidecar_sha256": "f83564a358741611a7f9f37f8391562571f3f62649b788b8d610f4fec6c5933e",
+            "image": "evidence/aven/round-04/op-moved-1x.png",
+            "image_sha256": "81514e9cb49ee7d5cb165237c1b808c81e35b72d926764f30c7f5d86981f7de8",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ],
+        "filesystem_check": {
+          "file": "evidence/interaction/aven-round04-moved-check.json",
+          "sha256": "afb3edfdc413158132b00828557f374e7d917852a299f0884b7f10e57aac3c48"
+        }
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      },
+      "stock_check": "evidence/interaction/stock-moved.json",
+      "aven_check": "evidence/interaction/aven-round04-moved-check.json"
+    },
+    {
+      "id": "rename",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): F2, Ctrl+A, Unicode text entry and Return renamed the moved file to 已整理 · Weekend.txt. Content is unchanged and the previous name is absent. Stock baseline (/root/verification, passed=true): F2 inline edit, Ctrl+A, native clipboard paste 已整理 · Weekend.txt, Return. New filename and unchanged 160-byte file inspected.",
+      "pairs": [
+        "files_list"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "rename",
+        "guest": "stock",
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "F2 inline edit, Ctrl+A, native clipboard paste 已整理 · Weekend.txt, Return. New filename and unchanged 160-byte file inspected.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/operations-moved-1x.json",
+            "sidecar_sha256": "707e3eaeb9a4f5895cb200ad514a914147f626ea6066df2aaf6cf382af83856b",
+            "image": "evidence/stock/round-00/operations-moved-1x.png",
+            "image_sha256": "e10fa21b06b0fc461b675b2156251a8675305deecf8719f2b068fd6ebe148655",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-renamed-1x.json",
+            "sidecar_sha256": "536e9a3fe418cbd0c63878ce2b9e4eee27937e8c0e0e11c125259b2ac44e0d6b",
+            "image": "evidence/stock/round-00/operations-renamed-1x.png",
+            "image_sha256": "d6488dfda96fc7cd00f16d744de7446fd4bdc0d2737808752c86919e579a7df2",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ],
+        "byte_check": {
+          "path": "evidence/interaction/stock-renamed.json",
+          "sha256": "9a062fc1ea978574b4385d2e4a37640494f06de73a7bb86a302357ee8bca19b5"
+        }
+      },
+      "aven_observation": {
+        "operation": "rename",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "F2, Ctrl+A, Unicode text entry and Return renamed the moved file to 已整理 · Weekend.txt. Content is unchanged and the previous name is absent.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-moved-1x.json",
+            "sidecar_sha256": "f83564a358741611a7f9f37f8391562571f3f62649b788b8d610f4fec6c5933e",
+            "image": "evidence/aven/round-04/op-moved-1x.png",
+            "image_sha256": "81514e9cb49ee7d5cb165237c1b808c81e35b72d926764f30c7f5d86981f7de8",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-renamed-1x.json",
+            "sidecar_sha256": "d61373d7e9b8571b0487a9405239e8b7fd0746ecc656a99cafa9078dbab1fd08",
+            "image": "evidence/aven/round-04/op-renamed-1x.png",
+            "image_sha256": "5e426b9634214952be14a0cef7e4a2983dbc4e893068ad9923d86f0856657cb8",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ],
+        "filesystem_check": {
+          "file": "evidence/interaction/aven-round04-renamed-check.json",
+          "sha256": "975bc4042cca21c78ea6450be180aa3852aceb1476bc9f4012b4664988867374"
+        }
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      },
+      "stock_check": "evidence/interaction/stock-renamed.json",
+      "aven_check": "evidence/interaction/aven-round04-renamed-check.json"
+    },
+    {
+      "id": "trash",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): Delete moved only the disposable renamed fixture to Trash. The native Trash view and Restore to previous location menu were inspected. Trash was not emptied. Stock baseline (/root/verification, passed=true): Delete moved only the selected disposable file to Trash, without a confirmation dialog. Native Trash view shows the same filename and full original lab path.",
+      "pairs": [
+        "files_home"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "trash",
+        "guest": "stock",
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Delete moved only the selected disposable file to Trash, without a confirmation dialog. Native Trash view shows the same filename and full original lab path.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/operations-renamed-1x.json",
+            "sidecar_sha256": "536e9a3fe418cbd0c63878ce2b9e4eee27937e8c0e0e11c125259b2ac44e0d6b",
+            "image": "evidence/stock/round-00/operations-renamed-1x.png",
+            "image_sha256": "d6488dfda96fc7cd00f16d744de7446fd4bdc0d2737808752c86919e579a7df2",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-trash-view-1x.json",
+            "sidecar_sha256": "0ba56432a3772114d896ff4892d7f598d5a9978f7ff61b98936635a746ae433c",
+            "image": "evidence/stock/round-00/operations-trash-view-1x.png",
+            "image_sha256": "64583d39205c2e55506ee2df283e90c0898450de9e9964465303086b3007f2c1",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ],
+        "byte_check": {
+          "path": "evidence/interaction/stock-trashed.json",
+          "sha256": "a34ec4a341e013fb20ce0257efc1cfe3218b05ec004ceae5354fceeaad619208"
+        }
+      },
+      "aven_observation": {
+        "operation": "trash",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Delete moved only the disposable renamed fixture to Trash. The native Trash view and Restore to previous location menu were inspected. Trash was not emptied.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-renamed-1x.json",
+            "sidecar_sha256": "d61373d7e9b8571b0487a9405239e8b7fd0746ecc656a99cafa9078dbab1fd08",
+            "image": "evidence/aven/round-04/op-renamed-1x.png",
+            "image_sha256": "5e426b9634214952be14a0cef7e4a2983dbc4e893068ad9923d86f0856657cb8",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-trash-view-1x.json",
+            "sidecar_sha256": "2be79000526edd4957ba3289f1f23569615a36760123c00d62482f434413ff7a",
+            "image": "evidence/aven/round-04/op-trash-view-1x.png",
+            "image_sha256": "296e96333d902b352a11832203432b20d0128dd7fba51e80a28c55c509868d3b",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-restore-menu-1x.json",
+            "sidecar_sha256": "3190cd6f20ad3ce3e4a3303d52e3585a1d6d0bea30c8d8df1193c8f535e85fc8",
+            "image": "evidence/aven/round-04/op-restore-menu-1x.png",
+            "image_sha256": "1cb35f601acff44436022cae050303e0f5fad2c4e3eea6abd5e225dc4838ec2a",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ],
+        "filesystem_check": {
+          "file": "evidence/interaction/aven-round04-trashed-check.json",
+          "sha256": "825b79f7a624c2ffeb5d254531f0e660bc1a5adf2aed5c0d5a1e3e0fbad3a3c2"
+        }
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      },
+      "stock_check": "evidence/interaction/stock-trashed.json",
+      "aven_check": "evidence/interaction/aven-round04-trashed-check.json"
+    },
+    {
+      "id": "restore",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): Clicked native Restore to previous location, then Alt+Left returned to the destination. The file reappeared with its original bytes; the original lab source is preserved. Stock baseline (/root/verification, passed=true): Right-clicked the selected Trash item and clicked Restore to previous location. Alt+Left returned to the restored destination; verified bytes and preserved original.",
+      "pairs": [
+        "files_home"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "restore",
+        "guest": "stock",
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Right-clicked the selected Trash item and clicked Restore to previous location. Alt+Left returned to the restored destination; verified bytes and preserved original.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/operations-restore-menu-1x.json",
+            "sidecar_sha256": "5a6e2e582bc02d5a475a23489c1bc0362f69453d151d4c5dea11a3589c243b7a",
+            "image": "evidence/stock/round-00/operations-restore-menu-1x.png",
+            "image_sha256": "d7cdf9f6653891bb8eeb55d4dd53e847b6fb71de22a8bb4c98701e64aca847a7",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-restored-1x.json",
+            "sidecar_sha256": "af8ccfe2acc66ee8e29f755b52b914066c6f94f2f93a5ded980bd00fb4cbd50a",
+            "image": "evidence/stock/round-00/operations-restored-1x.png",
+            "image_sha256": "6d12701d5e755492d180a362c6a6731a5f05a495fb2200084e69d929001b0d49",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ],
+        "byte_check": {
+          "path": "evidence/interaction/stock-restored.json",
+          "sha256": "adde6ab0a36d7a9a31e39aa0eb6cafe472c3bb8a7337df3c8173cdcd9e9d34d3"
+        }
+      },
+      "aven_observation": {
+        "operation": "restore",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Clicked native Restore to previous location, then Alt+Left returned to the destination. The file reappeared with its original bytes; the original lab source is preserved.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-restore-menu-1x.json",
+            "sidecar_sha256": "3190cd6f20ad3ce3e4a3303d52e3585a1d6d0bea30c8d8df1193c8f535e85fc8",
+            "image": "evidence/aven/round-04/op-restore-menu-1x.png",
+            "image_sha256": "1cb35f601acff44436022cae050303e0f5fad2c4e3eea6abd5e225dc4838ec2a",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-restored-1x.json",
+            "sidecar_sha256": "adabd80997a04c506d21d26e867bfe09dbcac5254eeac138eb7d5169c2626c00",
+            "image": "evidence/aven/round-04/op-restored-1x.png",
+            "image_sha256": "5e26fd9d5592d0a5a6488d5632ea604a56606ecc69be35133884df1a7383bdc3",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ],
+        "filesystem_check": {
+          "file": "evidence/interaction/aven-round04-restored-check.json",
+          "sha256": "dd608e7bab445cc98727a6da7b512a794dc38c4db83e16dec41b8e9a9758d253"
+        }
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      },
+      "stock_check": "evidence/interaction/stock-restored.json",
+      "aven_check": "evidence/interaction/aven-round04-restored-check.json"
+    },
+    {
+      "id": "default_open",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): Return on the selected landscape JPEG in Dolphin opened Gwenview through the configured default handler. No direct renderer command was used for this check. Stock baseline (/root/verification, passed=true): Return on the selected landscape JPEG in Dolphin opened Gwenview with that exact image. No MIME association was changed.",
+      "pairs": [
+        "photos_view",
+        "files_mixed"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "default_open",
+        "guest": "stock",
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Return on the selected landscape JPEG in Dolphin opened Gwenview with that exact image. No MIME association was changed.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/operations-photo-files-1x.json",
+            "sidecar_sha256": "353a15a26233d2380022737af39eba7e23a54fcc1a886c8f73f08ca2ea278774",
+            "image": "evidence/stock/round-00/operations-photo-files-1x.png",
+            "image_sha256": "57c516f037e1555ce27e7eadf1ee0c546a6125ebff087913bee27e20aca6e705",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-default-open-photo-1x.json",
+            "sidecar_sha256": "b1493eb89bd9220f125c330a5f4f8dc4450c62ab1eb4b3a0da498f69e891f325",
+            "image": "evidence/stock/round-00/operations-default-open-photo-1x.png",
+            "image_sha256": "80ea3a03188c5cedc20e31c595ed2d35539bc781b12d66f91c07f5e255872a59",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "aven_observation": {
+        "operation": "default_open",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Return on the selected landscape JPEG in Dolphin opened Gwenview through the configured default handler. No direct renderer command was used for this check.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-default-open-photo-1x.json",
+            "sidecar_sha256": "a46e7928bf880646f29b07f17f87bbcb0736ab3d163663a1c60ba0b5e1311300",
+            "image": "evidence/aven/round-04/op-default-open-photo-1x.png",
+            "image_sha256": "f0be81977ecab07ff5d814fde33e9ddb2d7dbef75a9ede28c6fd194f16a81a02",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      }
+    },
+    {
+      "id": "preview_toggle",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): Ctrl+Alt+P on the native Dolphin selection opened, closed, and reopened one preview window. Repeated invocation did not accumulate windows. With two JPEGs selected, Alt+Right advanced Earthrise 1/2 to landscape 2/2; Alt+Left returned, then Escape closed the preview. The preview motion sequence is recorded separately. Stock baseline (/root/verification, passed=true): F11 opened Dolphin information panel for Earthrise. Down selected landscape and updated preview; F11 closed panel. This verifies the stock panel, not a lightweight quick-preview overlay.",
+      "pairs": [
+        "preview_image"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "preview_toggle",
+        "guest": "stock",
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "F11 opened Dolphin information panel for Earthrise. Down selected landscape and updated preview; F11 closed panel. This verifies the stock panel, not a lightweight quick-preview overlay.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/operations-info-preview-1x.json",
+            "sidecar_sha256": "043a12c0529f9f749b4a5615977bb1f41c87f33665534001aaa3202bf816179f",
+            "image": "evidence/stock/round-00/operations-info-preview-1x.png",
+            "image_sha256": "6291398daf48586a4e974646cf4f21fd0b23389bacf2f3926e6b35fa5323dae9",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-default-open-photo-1x.json",
+            "sidecar_sha256": "b1493eb89bd9220f125c330a5f4f8dc4450c62ab1eb4b3a0da498f69e891f325",
+            "image": "evidence/stock/round-00/operations-default-open-photo-1x.png",
+            "image_sha256": "80ea3a03188c5cedc20e31c595ed2d35539bc781b12d66f91c07f5e255872a59",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "aven_observation": {
+        "operation": "preview_toggle",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Ctrl+Alt+P on the native Dolphin selection opened, closed, and reopened one preview window. Repeated invocation did not accumulate windows. With two JPEGs selected, Alt+Right advanced Earthrise 1/2 to landscape 2/2; Alt+Left returned, then Escape closed the preview. The preview motion sequence is recorded separately.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-preview-image-1x.json",
+            "sidecar_sha256": "1df9662735246101a152492a1b8810709159273daf3f9cd1df1f0391928a45a8",
+            "image": "evidence/aven/round-04/op-preview-image-1x.png",
+            "image_sha256": "a5e888430473ce785fc4d4d823831e8552f2bb2e8d28013d236e1bcca8776196",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-preview-toggle-1x.json",
+            "sidecar_sha256": "52dab2af4c910ab04b2b46fb456a40bc47a9449a0823f8ccba6b706eda05a69b",
+            "image": "evidence/aven/round-04/op-preview-toggle-1x.png",
+            "image_sha256": "5d2d1782e64be7d1eeaeb7ab6a6378355fa55f39130f55b9e0bae99e66827b8d",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-preview-selection-1x.json",
+            "sidecar_sha256": "1ed2e12562c0551b894a0379ed957640eaf4de9d1de5d7f8ab81741e2a5a53a5",
+            "image": "evidence/aven/round-04/op-preview-selection-1x.png",
+            "image_sha256": "522c243ceeac20aa7035e869720e086c1b3e0c4349110c3bde7604d82216703d",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ],
+        "inventory": {
+          "file": "evidence/interaction/aven-round04-preview-repeat-inventory.json",
+          "sha256": "17dd7a4b39d8c66d156ade734ec02dc62c1d04552b879775278db0b911268962"
+        }
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      }
+    },
+    {
+      "id": "preview_escape_focus",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): Escape dismissed the preview, retained the selected file, and returned the active KWin UUID to the same Dolphin window: {378a7df2-be9a-43ec-9e1e-b43897540eb4}. Before/after inventories confirm the focus identity. Stock baseline (/root/verification, passed=false): Escape did not close the stock information panel. It cleared image selection, leaving keyboard focus outline and folder information. F11 was required to hide panel.",
+      "pairs": [
+        "preview_image"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "preview_escape_focus",
+        "guest": "stock",
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": false,
+        "notes": "Escape did not close the stock information panel. It cleared image selection, leaving keyboard focus outline and folder information. F11 was required to hide panel.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/operations-preview-escape-1x.json",
+            "sidecar_sha256": "42d85fde9004c11faab40f81037efd253ea893f31877dacc09549200bec1a281",
+            "image": "evidence/stock/round-00/operations-preview-escape-1x.png",
+            "image_sha256": "645d9c03628ba08215ab359fe5707f49f640fd0476a0107a55f870e301bb16c7",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "aven_observation": {
+        "operation": "preview_escape_focus",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Escape dismissed the preview, retained the selected file, and returned the active KWin UUID to the same Dolphin window: {378a7df2-be9a-43ec-9e1e-b43897540eb4}. Before/after inventories confirm the focus identity.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-preview-image-1x.json",
+            "sidecar_sha256": "1df9662735246101a152492a1b8810709159273daf3f9cd1df1f0391928a45a8",
+            "image": "evidence/aven/round-04/op-preview-image-1x.png",
+            "image_sha256": "a5e888430473ce785fc4d4d823831e8552f2bb2e8d28013d236e1bcca8776196",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-preview-escape-focus-1x.json",
+            "sidecar_sha256": "3c7b261c874c4332e679b6d1e0b54d0775bbd0c2525e691eee12bf99f3a8055f",
+            "image": "evidence/aven/round-04/op-preview-escape-focus-1x.png",
+            "image_sha256": "5f3f758c53c8c9e4ed717e633ea25809cc4006e6ff4071a274dc0ce95d6fe933",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ],
+        "inventories": [
+          {
+            "file": "evidence/interaction/aven-round04-preview-before-inventory.json",
+            "sha256": "a7fe14d47aa91213e67454ac14e5960a6c9ff8bdd746839197e08865030637ed"
+          },
+          {
+            "file": "evidence/interaction/aven-round04-preview-after-inventory.json",
+            "sha256": "8d37dbac1b212909bf1bd3201f7b9d40d8580be1d2db43cfc554a2b6e8eb1ee7"
+          }
+        ]
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      }
+    },
+    {
+      "id": "browser_download",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): Clicked the download link on the local HTTP fixture in native Firefox. The completed download popover showed 周末路线(2).txt; Show in Folder opened Dolphin Downloads with that file selected. The 428-byte result matches the fixture SHA-256. Earlier translation-popover interference was resolved by dismissing the offer; failed operator captures are excluded. Stock baseline (/root, passed=true): Firefox native Downloads popup shows 周末路线.txt completed at428bytes from local HTTP fixture. The next capture shows Dolphin Downloads with that same file selected after Show in Folder. Current SHA256 and byte count match both host and guest fixture.",
+      "pairs": [
+        "browser_sc",
+        "files_home"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "browser_download",
+        "guest": "stock",
+        "method": "native-ui",
+        "operator": "/root",
+        "observer": "/root",
+        "independent_reviewer": "/root/verification",
+        "reviewed_at": "2026-09-15T05:49:07.399054+00:00",
+        "review_method": "Independent inspection of exact original framebuffer captures and new read-only hash check; native workflow was originally operated by root, not rerun.",
+        "passed": true,
+        "notes": "Firefox native Downloads popup shows 周末路线.txt completed at428bytes from local HTTP fixture. The next capture shows Dolphin Downloads with that same file selected after Show in Folder. Current SHA256 and byte count match both host and guest fixture.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/browser-download-1x.json",
+            "sidecar_sha256": "dcf5f3b64643f9e7340cba80356b7452809c8ef42553bb10e9122a7180962bc0",
+            "image": "evidence/stock/round-00/browser-download-1x.png",
+            "image_sha256": "287b4424c89c3c8a5f0125d4a8ae9642dfcb78ad58cb461ec91285a9b9e6503d",
+            "inspected_by": "/root/verification",
+            "inspected_at": "2026-09-15T05:49:07.399054+00:00",
+            "visually_inspected": true,
+            "original_capture_operator": "/root"
+          },
+          {
+            "sidecar": "evidence/stock/round-00/browser-reveal-1x.json",
+            "sidecar_sha256": "fabed025fb7d1f48950c365b05b9156786d97360b02f3c57a8c6c311692136df",
+            "image": "evidence/stock/round-00/browser-reveal-1x.png",
+            "image_sha256": "86f4f507808f7b997f46113394715f241ef1e9cfcc768de4b4ab1b8c9e8be29c",
+            "inspected_by": "/root/verification",
+            "inspected_at": "2026-09-15T05:49:07.399054+00:00",
+            "visually_inspected": true,
+            "original_capture_operator": "/root"
+          }
+        ],
+        "byte_check": {
+          "path": "evidence/interaction/stock-browser-download-check.json",
+          "sha256": "0412756c035320ca9340ac8fcea5f0d70814db86cdb3fb0f70ef207ab70d14a9"
+        }
+      },
+      "aven_observation": {
+        "operation": "browser_download",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Clicked the download link on the local HTTP fixture in native Firefox. The completed download popover showed 周末路线(2).txt; Show in Folder opened Dolphin Downloads with that file selected. The 428-byte result matches the fixture SHA-256. Earlier translation-popover interference was resolved by dismissing the offer; failed operator captures are excluded.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-browser-settled-1x.json",
+            "sidecar_sha256": "e3bb853df19d8786d85b09298f85163b2072d78159f9d03897781a3b5388b047",
+            "image": "evidence/aven/round-04/op-browser-settled-1x.png",
+            "image_sha256": "6585081606a1e9fbe06ca8c709d52f65d21c0d2c76c93d5dbcfa36db6a263e90",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-browser-download-complete-1x.json",
+            "sidecar_sha256": "3c33a4574536d9724d1bafe0875485e12e69875517869e41eba884b622b6b29a",
+            "image": "evidence/aven/round-04/op-browser-download-complete-1x.png",
+            "image_sha256": "53ff04549fcbd215672169146ae4ea484d83c1a428bdaeaab752bb9a10379383",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-browser-reveal-1x.json",
+            "sidecar_sha256": "21d6e3f4d09c591cc7b41c5cdb5f15714e341d7d74d53a101ea102b1526c1dd5",
+            "image": "evidence/aven/round-04/op-browser-reveal-1x.png",
+            "image_sha256": "7b7d539ccf41b08f9c351a71e6e13cea3862fe23b5eeb0a5173ccf2fd7335d24",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ],
+        "download_check": {
+          "file": "evidence/interaction/aven-round04-browser-download-check.json",
+          "sha256": "582f9d207233661f94ebec34cf44ed3805d7ff8b17403e00e5637f44b54323f8"
+        }
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      }
+    },
+    {
+      "id": "browser_file_picker",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): Clicked the fixture’s plain file input, selected 06-山间河流.jpg in the native KDE portal, and returned to Firefox with that filename shown in the input. The fixture has no upload form or upload request; no file was uploaded. Stock baseline (/root, passed=true): Firefox invoked the native KDE portal chooser in Pictures/京都春日. The post-selection browser capture visibly displays06-山间河流.jpg. Fixture has a plain local file input, no form submission or upload script; selection stayed local. The portal UI is English while the Firefox/page UI is Chinese, a stock coherence limitation retained in the evidence.",
+      "pairs": [
+        "browser_sc",
+        "photos_grid"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "browser_file_picker",
+        "guest": "stock",
+        "method": "native-ui",
+        "operator": "/root",
+        "observer": "/root",
+        "independent_reviewer": "/root/verification",
+        "reviewed_at": "2026-09-15T05:49:07.399054+00:00",
+        "review_method": "Independent inspection of exact original native-picker and post-selection browser captures; original operator root, no rerun.",
+        "passed": true,
+        "notes": "Firefox invoked the native KDE portal chooser in Pictures/京都春日. The post-selection browser capture visibly displays06-山间河流.jpg. Fixture has a plain local file input, no form submission or upload script; selection stayed local. The portal UI is English while the Firefox/page UI is Chinese, a stock coherence limitation retained in the evidence.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/browser-picker-1x.json",
+            "sidecar_sha256": "ac1b55262bf4a8ce76ab17bf18d1cf98f8b2a76fe2c7d7c769184768f8b47ba7",
+            "image": "evidence/stock/round-00/browser-picker-1x.png",
+            "image_sha256": "b0bc8c88f3d32e8419f43904b154280d5ea3f28ad9ca7dde536cb2879cdc6bf7",
+            "inspected_by": "/root/verification",
+            "inspected_at": "2026-09-15T05:49:07.399054+00:00",
+            "visually_inspected": true,
+            "original_capture_operator": "/root"
+          },
+          {
+            "sidecar": "evidence/stock/round-00/browser-picker-selected-1x.json",
+            "sidecar_sha256": "e672c0b4982959e5b0cd284c22cefb99daee113bf649aa03cc2e8e1fa566854d",
+            "image": "evidence/stock/round-00/browser-picker-selected-1x.png",
+            "image_sha256": "a3a74037c3d751c646789c511b4ecb4f6d9d82b8f5d13701cdbac1d21fa30b6c",
+            "inspected_by": "/root/verification",
+            "inspected_at": "2026-09-15T05:49:07.399054+00:00",
+            "visually_inspected": true,
+            "original_capture_operator": "/root"
+          }
+        ],
+        "fixture_html_sha256": "dc098fee7faa69c9ea44d60e428a17d35ae18df61d53bb119526546f61c2e6cc"
+      },
+      "aven_observation": {
+        "operation": "browser_file_picker",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Clicked the fixture’s plain file input, selected 06-山间河流.jpg in the native KDE portal, and returned to Firefox with that filename shown in the input. The fixture has no upload form or upload request; no file was uploaded.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-browser-picker-1x.json",
+            "sidecar_sha256": "209ef4dce0848afc5b39ff5e2f47520b6ad7894999adb76b0435bbee4915d7df",
+            "image": "evidence/aven/round-04/op-browser-picker-1x.png",
+            "image_sha256": "26e8bf7a498e80843eeda141f7fe8c764b784886c08c8b8a16d5180d01611c1e",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-browser-picker-selected-1x.json",
+            "sidecar_sha256": "39127cb8942b9655f39cf055473934d716fdbb60709548ae4092e151e3b5eb0f",
+            "image": "evidence/aven/round-04/op-browser-picker-selected-1x.png",
+            "image_sha256": "647264b4a2f68aca760d5cb44add4be34a222943e1973550b049c61ceba56a9a",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      }
+    },
+    {
+      "id": "mail_draft_save",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): Opened the existing offline aven-demo draft. Before editing, captured unchanged Chinese content at the canonical 1000×840 frame (460,140) and wrapped 720×840 frame (600,140). Appended 已保存本轮草稿，周末见。 using native composer input, Ctrl+S saved, closed the composer, then reopened the Drafts row. The newly saved sentence remained visible. No mail was sent. Stock baseline (/root, passed=true): Opened Drafts with native sidebar, double-clicked original draft, clicked body, Ctrl+End then two Enter presses; pasted 已核对路线，周六见。; Ctrl+S. Closed editor, reopened Drafts item and directly inspected persisted sentence. No SMTP account and no sending.",
+      "pairs": [
+        "mail_compose",
+        "mail_compose_wrapped"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "mail_draft_save",
+        "guest": "stock",
+        "method": "native-ui",
+        "operator": "/root",
+        "observer": "/root",
+        "independent_reviewer": "/root/verification",
+        "reviewed_at": "2026-09-15T05:49:07.399054+00:00",
+        "review_method": "Preserved root native observation; independently inspected exact compose and reopened-draft screenshots.",
+        "passed": true,
+        "notes": "Opened Drafts with native sidebar, double-clicked original draft, clicked body, Ctrl+End then two Enter presses; pasted 已核对路线，周六见。; Ctrl+S. Closed editor, reopened Drafts item and directly inspected persisted sentence. No SMTP account and no sending.",
+        "source_observation": {
+          "path": "evidence/interaction/observations.json",
+          "recorded_at": "2026-09-15T04:47:48.219991+00:00",
+          "operator": "/root"
+        },
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/mail-compose-1x.json",
+            "sidecar_sha256": "8f4fba41196f8e73b6b55cf38674a3682d2edf9955c5c071d6d2d3aeaa84f517",
+            "image": "evidence/stock/round-00/mail-compose-1x.png",
+            "image_sha256": "74ade757d5e01b0e4ae33be8a2167260405c1d52ed9eda4604b4d57eec7aa39a",
+            "inspected_by": "/root/verification",
+            "inspected_at": "2026-09-15T05:49:07.399054+00:00",
+            "visually_inspected": true,
+            "original_capture_operator": "/root"
+          },
+          {
+            "sidecar": "evidence/stock/round-00/mail-draft-reopened-1x.json",
+            "sidecar_sha256": "3c3916a917665c03e3d24515c637e81124f28eaade7274711645e34ad6c4c564",
+            "image": "evidence/stock/round-00/mail-draft-reopened-1x.png",
+            "image_sha256": "5c061c50ebd3b041aae87374bbee60fcaf0961d0464477953b433be78a735aa4",
+            "inspected_by": "/root/verification",
+            "inspected_at": "2026-09-15T05:49:07.399054+00:00",
+            "visually_inspected": true,
+            "original_capture_operator": "/root"
+          }
+        ]
+      },
+      "aven_observation": {
+        "operation": "mail_draft_save",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Opened the existing offline aven-demo draft. Before editing, captured unchanged Chinese content at the canonical 1000×840 frame (460,140) and wrapped 720×840 frame (600,140). Appended 已保存本轮草稿，周末见。 using native composer input, Ctrl+S saved, closed the composer, then reopened the Drafts row. The newly saved sentence remained visible. No mail was sent.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-mail-demo-1x.json",
+            "sidecar_sha256": "f8082d5fa22753420dbb847b4f5680ec6b6c7a301aba595137539c9f6093a16e",
+            "image": "evidence/aven/round-04/op-mail-demo-1x.png",
+            "image_sha256": "f7a2b048464f8399ae7e07be00d980e112a44e35df2c3589e4baa1a9df6a2707",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/mail-compose-1x.json",
+            "sidecar_sha256": "d22e01f2cd309c7ff317ba22a78becbbff80bb3654bf3abd359d172823068f8b",
+            "image": "evidence/aven/round-04/mail-compose-1x.png",
+            "image_sha256": "36f1e37eb4e0de6012c5900c7e8fb27145d267d65368d894d946a83ddf968cce",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-mail-compose-wrapped-720-1x.json",
+            "sidecar_sha256": "de0cc4611d58b358bcd0c5b38746bb61e4a150d214fd8e32b4b49c60ea62c36d",
+            "image": "evidence/aven/round-04/op-mail-compose-wrapped-720-1x.png",
+            "image_sha256": "a6fe7e6bc7d9d8fcfc23c253bd854df8f85f3006cc5487c3bb931a0c7a77a300",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-mail-draft-saved-1x.json",
+            "sidecar_sha256": "29ef312a55be27ff71e045d944c07ede36f108a6b3a3871fa92f90f443ddd847",
+            "image": "evidence/aven/round-04/op-mail-draft-saved-1x.png",
+            "image_sha256": "a98a1c68d100c017e5d31ab543d42bc4c1ceee0d117031635648628cf543f2d5",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-mail-draft-reopened-1x.json",
+            "sidecar_sha256": "0dd3efc0bc0787cd30097cd5ace1956fd4e9c220d487059026b0c45b46a60d13",
+            "image": "evidence/aven/round-04/op-mail-draft-reopened-1x.png",
+            "image_sha256": "87a1fc2ecab2a867f36c33bae844930a2722df5f531732d8e4837a2ce222e5ac",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ],
+        "arrangement_inventories": [
+          {
+            "file": "evidence/interaction/aven-round04-composer-wrapped-inventory.json",
+            "sha256": "51f66ea589b7ecacf9a660b11f3180334e5da247318243e2fec126390a042a83"
+          },
+          {
+            "file": "evidence/interaction/aven-round04-composer-canonical-inventory.json",
+            "sha256": "5dba49e62ab9775c3bffae047fdacb1d162811d0213182f4b39a1453a865b924"
+          }
+        ]
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      }
+    },
+    {
+      "id": "photo_next_previous",
+      "passed": true,
+      "method": "native-ui",
+      "observation": "Witnessed Aven result (/root/verification): In Gwenview, Right changed landscape 2/5 to portrait 3/5 and Left returned to landscape 2/5, with original representative motion frames inspected. Native fullscreen entry and Escape return worked; Alt+F4 returned to Files. Stock baseline (/root/verification, passed=true): Right in Gwenview moved from landscape image2 to portrait image3; Left returned to landscape image2. Titles, image content, and image counter inspected.",
+      "pairs": [
+        "photos_view",
+        "photo_exif"
+      ],
+      "pair_reference_role": "Inspected primary visual context; native action evidence is separately preserved below, not inferred from these still pairs.",
+      "stock_observation": {
+        "operation": "photo_next_previous",
+        "guest": "stock",
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "Right in Gwenview moved from landscape image2 to portrait image3; Left returned to landscape image2. Titles, image content, and image counter inspected.",
+        "evidence": [
+          {
+            "sidecar": "evidence/stock/round-00/operations-default-open-photo-1x.json",
+            "sidecar_sha256": "b1493eb89bd9220f125c330a5f4f8dc4450c62ab1eb4b3a0da498f69e891f325",
+            "image": "evidence/stock/round-00/operations-default-open-photo-1x.png",
+            "image_sha256": "80ea3a03188c5cedc20e31c595ed2d35539bc781b12d66f91c07f5e255872a59",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/stock/round-00/operations-photo-previous-1x.json",
+            "sidecar_sha256": "9ceb23126f57f115ea6f85733f4328ea431b68439b706e9a4fcb057636dd03e7",
+            "image": "evidence/stock/round-00/operations-photo-previous-1x.png",
+            "image_sha256": "80ea3a03188c5cedc20e31c595ed2d35539bc781b12d66f91c07f5e255872a59",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "aven_observation": {
+        "operation": "photo_next_previous",
+        "guest": "aven",
+        "round": 4,
+        "method": "native-ui",
+        "observer": "/root/verification",
+        "passed": true,
+        "notes": "In Gwenview, Right changed landscape 2/5 to portrait 3/5 and Left returned to landscape 2/5, with original representative motion frames inspected. Native fullscreen entry and Escape return worked; Alt+F4 returned to Files.",
+        "evidence": [
+          {
+            "sidecar": "evidence/aven/round-04/op-default-open-photo-1x.json",
+            "sidecar_sha256": "a46e7928bf880646f29b07f17f87bbcb0736ab3d163663a1c60ba0b5e1311300",
+            "image": "evidence/aven/round-04/op-default-open-photo-1x.png",
+            "image_sha256": "f0be81977ecab07ff5d814fde33e9ddb2d7dbef75a9ede28c6fd194f16a81a02",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-photo-previous-1x.json",
+            "sidecar_sha256": "7ca55c1464b68759541dd6ce6b57326d5765b51e9bea05dd7ed0371849627254",
+            "image": "evidence/aven/round-04/op-photo-previous-1x.png",
+            "image_sha256": "5acf35a0c70e427280e8812a0b31ccbf04fce3ae7303432dd3262ba20e9be5a0",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          },
+          {
+            "sidecar": "evidence/aven/round-04/op-photo-fullscreen-1x.json",
+            "sidecar_sha256": "8c9d5ed5c4de0fa00e4d776f41015dadfd57877edddb6ba3631114a653c19625",
+            "image": "evidence/aven/round-04/op-photo-fullscreen-1x.png",
+            "image_sha256": "66d557ac281e98cbc1453d6791f882ccb66cb636e76838f9525680db03879d2f",
+            "inspected_by": "/root/verification",
+            "visually_inspected": true
+          }
+        ]
+      },
+      "operation_inputs_reperformed_by_critic": false,
+      "critic_review": "Read original witness records and independently verified referenced evidence hashes. Visual scoring uses the explicitly inspected primary/matrix pairs; this record does not claim critic-operated guest UI.",
+      "source_reports": {
+        "stock": {
+          "file": "evidence/interaction/stock-native-verification.json",
+          "sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2"
+        },
+        "aven": {
+          "file": "evidence/interaction/aven-round04-native-verification.json",
+          "sha256": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+        }
+      }
+    }
+  ],
+  "motion": [
+    {
+      "id": "window_open_close",
+      "passed": true,
+      "method": "recording",
+      "observer": "/root/critic",
+      "pairs": [
+        "files_home"
+      ],
+      "pair_reference_role": "Primary scene context; actual motion evidence is the linked original chronological recording frames.",
+      "observation": "Aven opens and closes the second Dolphin with a fade at fixed bounds. Stock has a modest visible size change as well as fading. Aven looks calmer in the captured states. Both show some asynchronous application content settling. Frames 0011–0015 show initial translucent window, file drawing, breadcrumb layout and footer settling. Frames 0030–0032 fade out without a visible size change; frame 0033 returns to the initial state.",
+      "limitations": [
+        "Stock opens a five-image Photos folder at 1200×630; Aven opens text Downloads at 1440×900. Startup performance and exact transition speed are not comparable.",
+        "All distinct unmodified native PNG states opened chronologically; repeated identical states hash-verified. Sparse capture is not continuous physical display playback and cannot establish 60 Hz smoothness, exact latency or frame pacing."
+      ],
+      "pass_definition": "No blocking defect in independently observed sampled native transition character and return state. Physical smoothness remains unscored.",
+      "stock_recording": "evidence/interaction/stock-motion-window-open-close/recording.json",
+      "stock_sha256": "b09d4a6fdc25005f89c2d5e70714ff9e7219facc88ad7d45883e57a7173517ec",
+      "aven_recording": "evidence/interaction/aven-round04-motion-window-open-close/recording.json",
+      "aven_sha256": "5c35645657f379c7555e11df0dc4050ca8a427c376c44bb41249bf8d1dd8e363",
+      "inspection_manifest": {
+        "file": "evidence/critic/motion-paired-round-04.json",
+        "sha256": "49200e96c5702dc0527c7939e2d09e7413efa8a2823994951882290fd56decf0"
+      },
+      "stock_distinct_original_states_inspected": 8,
+      "aven_distinct_original_states_inspected": 9,
+      "perceived_smoothness_score": null
+    },
+    {
+      "id": "window_switch",
+      "passed": true,
+      "method": "recording",
+      "observer": "/root/critic",
+      "pairs": [
+        "files_list",
+        "browser_sc"
+      ],
+      "pair_reference_role": "Primary scene context; actual motion evidence is the linked original chronological recording frames.",
+      "observation": "Both switch directly from Dolphin to Firefox and back, without a held switcher popup. Aven matching warm application chrome reduces palette discontinuity; no distinct motion improvement is demonstrated. Frames 0008–0010 show the Chinese HTTP fixture; frames 0029–0030 restore Dolphin focus decoration, with the original pixels returned by frame 0031.",
+      "limitations": [
+        "Firefox content and window geometry differ. Quick Alt+Tab was tested, not a held switcher or cycling many applications.",
+        "All distinct unmodified native PNG states opened chronologically; repeated identical states hash-verified. Sparse capture is not continuous physical display playback and cannot establish 60 Hz smoothness, exact latency or frame pacing."
+      ],
+      "pass_definition": "No blocking defect in independently observed sampled native transition character and return state. Physical smoothness remains unscored.",
+      "stock_recording": "evidence/interaction/stock-motion-window-switch/recording.json",
+      "stock_sha256": "a063605d13512c2e6511a395ab5bb892cace614dc8de2a397124b121cd6a5395",
+      "aven_recording": "evidence/interaction/aven-round04-motion-window-switch/recording.json",
+      "aven_sha256": "c840e92cdee195d2cc6a7f27816d1fba402594b24ec4359fa2543e47078a227b",
+      "inspection_manifest": {
+        "file": "evidence/critic/motion-paired-round-04.json",
+        "sha256": "49200e96c5702dc0527c7939e2d09e7413efa8a2823994951882290fd56decf0"
+      },
+      "stock_distinct_original_states_inspected": 7,
+      "aven_distinct_original_states_inspected": 6,
+      "perceived_smoothness_score": null
+    },
+    {
+      "id": "menus_popovers",
+      "passed": true,
+      "method": "recording",
+      "observer": "/root/critic",
+      "pairs": [
+        "files_list"
+      ],
+      "pair_reference_role": "Primary scene context; actual motion evidence is the linked original chronological recording frames.",
+      "observation": "Both use a stationary menu fade. Aven has visibly larger Chinese labels and warm neutral surfaces; the motion itself remains similar, restrained native behavior. Frames 0009–0010 fade in; 0033–0035 fade out. Frame 0036 returns to the pre-open highlighted hamburger state.",
+      "limitations": [
+        "Menu placement and selected context differ. Aven menu reaches the display right edge but observed labels and submenu chevrons remain visible.",
+        "All distinct unmodified native PNG states opened chronologically; repeated identical states hash-verified. Sparse capture is not continuous physical display playback and cannot establish 60 Hz smoothness, exact latency or frame pacing."
+      ],
+      "pass_definition": "No blocking defect in independently observed sampled native transition character and return state. Physical smoothness remains unscored.",
+      "stock_recording": "evidence/interaction/stock-motion-menus-popovers/recording.json",
+      "stock_sha256": "1b3be9eb2a61aa32a9a9c4e9c64ca8e343afaacf1d1c914ed0267eb6c46e02a3",
+      "aven_recording": "evidence/interaction/aven-round04-motion-menus-popovers/recording.json",
+      "aven_sha256": "9260da62d10aacf4ab6fdd36a4bc6c66412d31f4b1a59d4fc47fd073a74b0c1b",
+      "inspection_manifest": {
+        "file": "evidence/critic/motion-paired-round-04.json",
+        "sha256": "49200e96c5702dc0527c7939e2d09e7413efa8a2823994951882290fd56decf0"
+      },
+      "stock_distinct_original_states_inspected": 7,
+      "aven_distinct_original_states_inspected": 7,
+      "perceived_smoothness_score": null
+    },
+    {
+      "id": "preview",
+      "passed": true,
+      "method": "recording",
+      "observer": "/root/critic",
+      "pairs": [
+        "preview_image"
+      ],
+      "pair_reference_role": "Primary scene context; actual motion evidence is the linked original chronological recording frames.",
+      "observation": "Aven is a substantial preview improvement: an approximately 832-pixel-wide image occupies a focused overlay, while the underlying file list stays stable. Stock opens a narrow information panel, reflows the list and displays an approximately 160-pixel-wide image amid metadata. Aven retains overlay bounds when changing images and returns with both files selected. Frames 0011–0012 fade in at fixed geometry. Frame 0024 shows landscape 2/2; frame 0039 returns to Earthrise 1/2. Frames 0052–0054 fade away and frame 0055 shows both original files selected. No intermediate image slide was captured. A standalone preview task icon briefly joins the panel.",
+      "limitations": [
+        "These are different native interactions: stock F11 information panel with one selected file at a time, Aven Ctrl+Alt+P with a two-file selection. The matching Earthrise/landscape assets support a usability comparison, not a timing benchmark.",
+        "All distinct unmodified native PNG states opened chronologically; repeated identical states hash-verified. Sparse capture is not continuous physical display playback and cannot establish 60 Hz smoothness, exact latency or frame pacing."
+      ],
+      "pass_definition": "No blocking defect in independently observed sampled native transition character and return state. Physical smoothness remains unscored.",
+      "stock_recording": "evidence/interaction/stock-motion-preview/recording.json",
+      "stock_sha256": "f7ce581dff90bf2d1133d6c76085ba433a2cf0984c4d85be3d60bad05b3ac2af",
+      "aven_recording": "evidence/interaction/aven-round04-motion-preview/recording.json",
+      "aven_sha256": "6dbe563baccf7b1f1ef9ac99e0704531760fa85e5d78035fefd19ddaa13cc0d3",
+      "inspection_manifest": {
+        "file": "evidence/critic/motion-paired-round-04.json",
+        "sha256": "49200e96c5702dc0527c7939e2d09e7413efa8a2823994951882290fd56decf0"
+      },
+      "stock_distinct_original_states_inspected": 5,
+      "aven_distinct_original_states_inspected": 10,
+      "perceived_smoothness_score": null
+    },
+    {
+      "id": "photo_transition",
+      "passed": true,
+      "method": "recording",
+      "observer": "/root/critic",
+      "pairs": [
+        "photos_view",
+        "photo_exif"
+      ],
+      "pair_reference_role": "Primary scene context; actual motion evidence is the linked original chronological recording frames.",
+      "observation": "Both show Gwenview crossfades between upright landscape and portrait images, with a brief blend on a light canvas and no added pan or zoom. Aven filmstrip gives navigation context but reduces the fitted photo area. This is a useful integration tradeoff, not evidence of a newly improved transition. Filmstrip selection moves in frame 0007; 0008–0009 blend to the portrait; 0010 settles. Frames 0027–0028 blend back and frame 0029 is identical to the initial landscape state.",
+      "limitations": [
+        "Same fixture images and outer window size, but different position and Aven filmstrip. Landscape fits at 56% in Aven versus 65% stock; portrait 37% versus 43%. Sparse states do not resolve exact transition duration.",
+        "All distinct unmodified native PNG states opened chronologically; repeated identical states hash-verified. Sparse capture is not continuous physical display playback and cannot establish 60 Hz smoothness, exact latency or frame pacing."
+      ],
+      "pass_definition": "No blocking defect in independently observed sampled native transition character and return state. Physical smoothness remains unscored.",
+      "stock_recording": "evidence/interaction/stock-motion-photo-transition/recording.json",
+      "stock_sha256": "423bd4b231911773edc287d355305aaa4278fcd05afb06a0dd3b4a064d74b6bc",
+      "aven_recording": "evidence/interaction/aven-round04-motion-photo-transition/recording.json",
+      "aven_sha256": "3b4beee1aadb80e2ed7f696fa895cdba38a560c3ab344c45bab08ebb60aca807",
+      "inspection_manifest": {
+        "file": "evidence/critic/motion-paired-round-04.json",
+        "sha256": "49200e96c5702dc0527c7939e2d09e7413efa8a2823994951882290fd56decf0"
+      },
+      "stock_distinct_original_states_inspected": 6,
+      "aven_distinct_original_states_inspected": 8,
+      "perceived_smoothness_score": null
+    },
+    {
+      "id": "overview",
+      "passed": true,
+      "method": "recording",
+      "observer": "/root/critic",
+      "pairs": [
+        "desktop",
+        "files_list",
+        "browser_sc"
+      ],
+      "pair_reference_role": "Primary scene context; actual motion evidence is the linked original chronological recording frames.",
+      "observation": "Aven enters the native overview with two side-by-side windows and reverses to Dolphin. Sampled entry/exit states are restrained. Stock has three windows arranged across two rows, so Aven simplicity cannot be credited as a layout or motion improvement. Frames 0010–0011 show two window cards settling; frame 0030 shows exit enlargement and overlap; 0031 approaches original geometry; frame 0032 exactly restores initial pixels.",
+      "limitations": [
+        "Different numbers of applications and window contents; not a matched layout comparison. There is only one sampled intermediate entry state.",
+        "All distinct unmodified native PNG states opened chronologically; repeated identical states hash-verified. Sparse capture is not continuous physical display playback and cannot establish 60 Hz smoothness, exact latency or frame pacing."
+      ],
+      "pass_definition": "No blocking defect in independently observed sampled native transition character and return state. Physical smoothness remains unscored.",
+      "stock_recording": "evidence/interaction/stock-motion-overview/recording.json",
+      "stock_sha256": "cfb6b9c30e182adacea2422304e16406578e33b39e4ab5198e461a69d890b8b1",
+      "aven_recording": "evidence/interaction/aven-round04-motion-overview/recording.json",
+      "aven_sha256": "ab4518006d6632b122223b90175b26c590159913049188efe5db67bb7a869317",
+      "inspection_manifest": {
+        "file": "evidence/critic/motion-paired-round-04.json",
+        "sha256": "49200e96c5702dc0527c7939e2d09e7413efa8a2823994951882290fd56decf0"
+      },
+      "stock_distinct_original_states_inspected": 7,
+      "aven_distinct_original_states_inspected": 6,
+      "perceived_smoothness_score": null
+    }
+  ],
+  "declared_overall": 8.333333333333334,
+  "pass": true,
+  "assessment_status": "Pass: final independent focused VM prototype assessment. Overall 8.333333333333334, Chinese 8.5, affirmative three-second judgment, current paired matrix, native operations and sampled motion coverage complete.",
+  "scope": "Current round-04 primary 1x scenes, complete current SC/TC Dolphin/Firefox matrix at 1/1.25/1.5/2x, named native operations, and independently inspected sampled paired motion.",
+  "coverage": {
+    "primary_pairs": 19,
+    "matrix_pairs": 16,
+    "supplemental_pairs": 2,
+    "paired_original_pngs_inspected": 74,
+    "additional_original_pngs_inspected": 1,
+    "stock_motion_distinct_states_inspected": 40,
+    "aven_motion_distinct_states_inspected": 46,
+    "stock_motion_frames_hash_verified": 307,
+    "aven_motion_frames_hash_verified": 359
+  },
+  "unverified": {
+    "physical_display_frame_pacing": null,
+    "physical_display_perceived_smoothness_score": null,
+    "exact_input_latency": null,
+    "physical_panel_font_rendering": null,
+    "audio_output": null,
+    "continuous_media_playback_quality": null,
+    "live_mail_send_receive": null,
+    "mail_photos_full_fractional_matrix": null,
+    "macos_parity": null
+  },
+  "remaining_nonblocking_findings": [
+    "Heavy native active breadcrumbs, especially Gwenview's surrounding frame.",
+    "Narrow Thunderbird message cards truncate sender addresses; mostly empty upper strip remains.",
+    "Gwenview filmstrip bevels/gradient cells and scrollbar remain less refined than Files.",
+    "Firefox titlebar repeats page title and costs client height.",
+    "Quick preview has a working keyboard binding but could be more discoverable."
+  ],
+  "supplemental_inspections": [
+    {
+      "sidecar": "evidence/aven/round-04/preview-media-poster-1x.json",
+      "by": "/root/critic",
+      "notes": "Opened the original unmodified paused-media poster. The flower frame is present, the play button is paused, progress is at the start, and the duration correctly reads 0:00 / 0:05. This fixes the round-03 misleading 0:00 / 0:00 label. No stock image is reused as an extra pair.",
+      "image": "evidence/aven/round-04/preview-media-poster-1x.png",
+      "sha256": "dbb5ae8cf70c5336d45dc1a146945daf508ef552f26ed153f10d78101f5a9151",
+      "sidecar_sha256": "21559a1ae7bfe791b9e7ffd479740eb4ee824ee4be1ca8c4c6e4d75773505fc9"
+    }
+  ],
+  "source_reports": {
+    "typography": "typography/aven-round04-matrix.json",
+    "typography_findings": "docs/typography-round04-findings.md",
+    "motion": "evidence/critic/motion-paired-round-04.json",
+    "stock_operations": "evidence/interaction/stock-native-verification.json",
+    "aven_operations": "evidence/interaction/aven-round04-native-verification.json"
+  },
+  "historical_scores_unchanged": true,
+  "operation_evidence_integrity": {
+    "referenced_files_independently_hash_verified": 125,
+    "native_inputs_performed_by": "Named witnesses in source reports",
+    "critic_performed_native_inputs": false,
+    "stock_preview_escape_passed": false,
+    "aven_all_17_required_operations_passed": true
+  },
+  "source_report_hashes": {
+    "typography": "2a9606cc520ff4515bb04c4444398ef66619fddcbc953d72af3c848cd4a0a7ed",
+    "typography_findings": "868bf94735ef9c922fd3db2d86a6cf53f3d4bffb3586fa0a835b717a15fcfc3c",
+    "motion": "49200e96c5702dc0527c7939e2d09e7413efa8a2823994951882290fd56decf0",
+    "stock_operations": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2",
+    "aven_operations": "8331845e7617744e2340728bb5210f1fd718a937472a761d3b4460452b9d486a"
+  },
+  "evidence_gate_diagnostic": {
+    "file": "evidence/critic/round-04-gate.json",
+    "pass": true,
+    "errors": 0,
+    "warnings": 27,
+    "warning_explanation": "Original stock integer captures use capture-time QScreen/KScreen agreement. Fractional pairs require real mapped QWindow DPR and compositor agreement; no original stock provenance was rewritten."
+  }
+}

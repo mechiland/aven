@@ -1,0 +1,13 @@
+{
+  "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+  "width": 1920,
+  "height": 1200,
+  "captured_at": "2026-09-15T04:02:46.580989+00:00",
+  "rfb_version": "RFB 003.008",
+  "server_name": "QEMU (Aven stock)",
+  "endpoint": "127.0.0.1:5920",
+  "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+  "input_events_sent": 0,
+  "image": "evidence/verification/installer-rfb-probe.png",
+  "sha256": "b16953c169ef80211e41491459c0ed79dde9d0d04d9e012062890e2d6aa584c3"
+}

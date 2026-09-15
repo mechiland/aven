@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3840" height="2160" viewBox="0 0 3840 2160">
+  <title>Estuary — Aven</title>
+  <desc>Original abstract landscape in porcelain, mineral green and deep water. CC0-1.0.</desc>
+  <defs>
+    <linearGradient id="air" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f1e8"/>
+      <stop offset="0.62" stop-color="#e3e8df"/>
+      <stop offset="1" stop-color="#cbdad1"/>
+    </linearGradient>
+    <linearGradient id="bank" x1="0" y1="0" x2="1" y2="0.8">
+      <stop offset="0" stop-color="#c5d7cb"/>
+      <stop offset="0.60" stop-color="#b1c8b8"/>
+      <stop offset="1" stop-color="#94b2a3"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#829f90"/>
+      <stop offset="0.45" stop-color="#577e6e"/>
+      <stop offset="1" stop-color="#294f44"/>
+    </linearGradient>
+    <linearGradient id="near" x1="0" y1="0" x2="1" y2="0.7">
+      <stop offset="0" stop-color="#f2eddf"/>
+      <stop offset="0.55" stop-color="#e3ddca"/>
+      <stop offset="1" stop-color="#cfcbb9"/>
+    </linearGradient>
+    <linearGradient id="deep" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b6657"/>
+      <stop offset="1" stop-color="#23473d"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f9f8ed" stop-opacity="0.0"/>
+      <stop offset="0.52" stop-color="#f9f8ed" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#f9f8ed" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="3840" height="2160" fill="url(#air)"/>
+  <path d="M3840 252 C3296 322 3270 690 2640 768 C1970 850 1540 622 865 968 C565 1122 260 1308 0 1290 L0 2160 L3840 2160 Z" fill="url(#bank)"/>
+  <path d="M3840 561 C3232 552 3362 1002 2564 1087 C1940 1154 1447 936 804 1210 C461 1356 257 1561 0 1590 L0 2160 L3840 2160 Z" fill="url(#water)"/>
+  <path d="M3840 561 C3232 552 3362 1002 2564 1087 C1940 1154 1447 936 804 1210 C461 1356 257 1561 0 1590" fill="none" stroke="url(#edge)" stroke-width="3"/>
+  <path d="M0 1575 C350 1670 578 1532 915 1492 C1345 1441 1616 1601 1681 1814 C1716 1926 1743 2052 2045 2160 L0 2160 Z" fill="url(#near)"/>
+  <path d="M3840 1128 C3503 1189 3501 1466 3204 1623 C2858 1805 2481 1724 2245 1878 C2120 1960 2130 2098 2201 2160 L3840 2160 Z" fill="url(#deep)"/>
+  <path d="M0 1575 C350 1670 578 1532 915 1492 C1345 1441 1616 1601 1681 1814" fill="none" stroke="#fffdf3" stroke-width="2" stroke-opacity="0.35"/>
+</svg>

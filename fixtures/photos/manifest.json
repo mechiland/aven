@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "retrieved": "2026-09-15",
+  "purpose": "Identical photo, EXIF, transparency and video fixtures for stock/Aven comparisons",
+  "assets": [
+    {
+      "file": "00-地出-Earthrise.jpg",
+      "source": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/climate/2023/12/August-2013_1920x1200.jpg?crop=faces%2Cfocalpoint&fit=clip&h=1200&w=1920",
+      "source_page": "https://science.nasa.gov/resource/image-earthrise/",
+      "creator": "NASA / William Anders (Apollo 8)",
+      "license": "NASA media use guidelines — factual informational photo fixture",
+      "sha256": "b0cd972974f71b36164dbc5c1dc8808ed5bcddbf09de3adebb40c559b99a1e4d",
+      "bytes": 86108,
+      "transformation": "Unmodified downloaded bytes; bilingual filename only",
+      "format": "JPEG",
+      "pixel_dimensions": [
+        1920,
+        1200
+      ],
+      "mode": "RGB",
+      "exif_orientation": null
+    },
+    {
+      "file": "01-瀑布横幅-EXIF-1.jpg",
+      "source": "https://raw.githubusercontent.com/recurser/exif-orientation-examples/master/Landscape_1.jpg",
+      "source_page": "https://github.com/recurser/exif-orientation-examples",
+      "creator": "Pierre Bouillot; test annotations by Dave Perrett",
+      "license": "MIT",
+      "sha256": "a23b1b0eac8c5ee5ae0373d07984b8d57df152e6be363d2ab77b304285bcad81",
+      "bytes": 347327,
+      "transformation": "Unmodified downloaded bytes; bilingual filename only",
+      "format": "JPEG",
+      "pixel_dimensions": [
+        1800,
+        1200
+      ],
+      "mode": "RGB",
+      "exif_orientation": 1
+    },
+    {
+      "file": "02-瀑布竖幅-EXIF-1.jpg",
+      "source": "https://raw.githubusercontent.com/recurser/exif-orientation-examples/master/Portrait_1.jpg",
+      "source_page": "https://github.com/recurser/exif-orientation-examples",
+      "creator": "John Salvino; test annotations by Dave Perrett",
+      "license": "MIT",
+      "sha256": "2d8247813c4cedbfcbec5205963655cce449a0286399c5a0128fae4dc9ec50ce",
+      "bytes": 245684,
+      "transformation": "Unmodified downloaded bytes; bilingual filename only",
+      "format": "JPEG",
+      "pixel_dimensions": [
+        1200,
+        1800
+      ],
+      "mode": "RGB",
+      "exif_orientation": 1
+    },
+    {
+      "file": "03-旋转方向-EXIF-6.jpg",
+      "source": "https://raw.githubusercontent.com/recurser/exif-orientation-examples/master/Landscape_6.jpg",
+      "source_page": "https://github.com/recurser/exif-orientation-examples",
+      "creator": "Pierre Bouillot; test annotations by Dave Perrett",
+      "license": "MIT",
+      "sha256": "9b344e9f0c869d8637ea22e672df9451d8d3cc1d2d0b291af3b284e538e5f124",
+      "bytes": 352727,
+      "transformation": "Unmodified downloaded bytes; bilingual filename only",
+      "format": "JPEG",
+      "pixel_dimensions": [
+        1200,
+        1800
+      ],
+      "mode": "RGB",
+      "exif_orientation": 6
+    },
+    {
+      "file": "04-透明色阶-Transparency.png",
+      "source": "https://raw.githubusercontent.com/golang/go/master/src/image/png/testdata/pngsuite/basn6a08.png",
+      "source_page": "https://github.com/golang/go/tree/master/src/image/png/testdata/pngsuite",
+      "creator": "Willem van Schaik",
+      "license": "PngSuite permission to use, copy, distribute for any purpose without fee",
+      "sha256": "756a03364c02e3c9f85d6f4029eb3cef2488c081dc537d46e102bebcb9e02732",
+      "bytes": 184,
+      "transformation": "Unmodified downloaded bytes; bilingual filename only",
+      "format": "PNG",
+      "pixel_dimensions": [
+        32,
+        32
+      ],
+      "mode": "RGBA",
+      "exif_orientation": null
+    },
+    {
+      "file": "05-花开-Flower.webm",
+      "source": "https://raw.githubusercontent.com/mdn/interactive-examples/main/live-examples/media/cc0-videos/flower.webm",
+      "source_page": "https://github.com/mdn/interactive-examples/blob/main/LICENSE",
+      "creator": "MDN interactive-examples contributors",
+      "license": "CC0-1.0",
+      "sha256": "c6f8a348953395598a9a73b9bab1676436410797bce9f398f4be1531d6e76dda",
+      "bytes": 554058,
+      "transformation": "Unmodified downloaded bytes; bilingual filename only"
+    }
+  ]
+}

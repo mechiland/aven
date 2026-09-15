@@ -1,0 +1,34 @@
+// Public Plasma scripting API. Modify the existing panel without replacing widgets.
+for (const desktop of desktops()) {
+    desktop.wallpaperPlugin = 'org.kde.image';
+    desktop.currentConfigGroup = ['Wallpaper', 'org.kde.image', 'General'];
+    desktop.writeConfig('Image', '@WALLPAPER@');
+}
+for (const panel of panels()) {
+    panel.location = 'bottom';
+    panel.alignment = 'center';
+    panel.height = 48;
+    panel.lengthMode = 'custom';
+    panel.length = 1040;
+    panel.minimumLength = 1040;
+    panel.maximumLength = 1040;
+    panel.hiding = 'none';
+    panel.floating = true;
+    for (const widget of panel.widgets()) {
+        if (widget.type === 'org.kde.plasma.icontasks') {
+            widget.currentConfigGroup = ['General'];
+            widget.writeConfig('launchers', ['applications:org.kde.dolphin.desktop', 'applications:org.mozilla.firefox.desktop', 'applications:net.thunderbird.Thunderbird.desktop', 'applications:org.kde.gwenview.desktop']);
+        }
+        if (widget.type === 'org.kde.plasma.kickoff') {
+            widget.currentConfigGroup = ['General'];
+            widget.writeConfig('icon', 'aven');
+        }
+        if (widget.type === 'org.kde.plasma.digitalclock') {
+            widget.currentConfigGroup = ['Appearance'];
+            widget.writeConfig('showSeconds', 0);
+            widget.writeConfig('showDate', true);
+            widget.writeConfig('dateFormat', 'shortDate');
+            widget.writeConfig('use24hFormat', 2);
+        }
+    }
+}

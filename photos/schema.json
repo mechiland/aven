@@ -1,0 +1,208 @@
+{
+  "purpose": "Selected public KConfig keys and defaults for semantic read-only audit",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/KDE/gwenview/v25.12.3/lib/gwenviewconfig.kcfg",
+      "sha256": "973a83dea3f734fc8b906496b2e82e149d8eb01abb1c821cc759ba42462f1a24"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/KDE/gwenview/v26.04.0/lib/gwenviewconfig.kcfg",
+      "sha256": "973a83dea3f734fc8b906496b2e82e149d8eb01abb1c821cc759ba42462f1a24"
+    }
+  ],
+  "groups": {
+    "General": {
+      "BackgroundColorMode": {
+        "type": "Enum",
+        "default": "DocumentView::Auto",
+        "choices": [
+          "DocumentView::Auto",
+          "DocumentView::Light",
+          "DocumentView::Neutral",
+          "DocumentView::Dark"
+        ]
+      },
+      "ThumbnailActions": {
+        "type": "Enum",
+        "default": "ThumbnailActions::AllButtons",
+        "choices": [
+          "ThumbnailActions::AllButtons",
+          "ThumbnailActions::ShowSelectionButtonOnly",
+          "ThumbnailActions::None"
+        ]
+      },
+      "ThumbnailBarIsVisible": {
+        "type": "Bool",
+        "default": "false"
+      },
+      "ThumbnailBarOrientation": {
+        "type": "Enum",
+        "default": "Horizontal",
+        "choices": [
+          "Dummy",
+          "Horizontal",
+          "Vertical"
+        ]
+      },
+      "ThumbnailBarRowCount": {
+        "type": "Int",
+        "default": "1"
+      },
+      "UrlNavigatorIsEditable": {
+        "type": "Bool",
+        "default": "false"
+      },
+      "UrlNavigatorShowFullPath": {
+        "type": "Bool",
+        "default": "false"
+      },
+      "FullScreenBackground": {
+        "type": "Enum",
+        "default": "FullScreenBackground::Image",
+        "choices": [
+          "FullScreenBackground::Image",
+          "FullScreenBackground::Black"
+        ]
+      }
+    },
+    "ImageView": {
+      "AlphaBackgroundMode": {
+        "type": "Enum",
+        "default": "AbstractImageView::AlphaBackgroundNone",
+        "choices": [
+          "AbstractImageView::AlphaBackgroundNone",
+          "AbstractImageView::AlphaBackgroundCheckBoard",
+          "AbstractImageView::AlphaBackgroundSolid"
+        ]
+      },
+      "ApplyExifOrientation": {
+        "type": "Bool",
+        "default": "true"
+      },
+      "EnableColorManagement": {
+        "type": "Bool",
+        "default": "true"
+      },
+      "RenderingIntent": {
+        "type": "Enum",
+        "default": "RenderingIntent::Perceptual",
+        "choices": [
+          "RenderingIntent::Perceptual",
+          "RenderingIntent::Relative"
+        ]
+      },
+      "AnimationMethod": {
+        "type": "Enum",
+        "default": "DocumentView::SoftwareAnimation",
+        "choices": [
+          "DocumentView::NoAnimation",
+          "DocumentView::SoftwareAnimation",
+          "DocumentView::GLAnimation"
+        ]
+      },
+      "EnlargeSmallerImages": {
+        "type": "Bool",
+        "default": "false"
+      },
+      "ZoomMode": {
+        "type": "Enum",
+        "default": "ZoomMode::Autofit",
+        "choices": [
+          "ZoomMode::Autofit",
+          "ZoomMode::KeepSame",
+          "ZoomMode::Individual"
+        ]
+      },
+      "MouseWheelBehavior": {
+        "type": "Enum",
+        "default": "MouseWheelBehavior::Scroll",
+        "choices": [
+          "MouseWheelBehavior::Scroll",
+          "MouseWheelBehavior::Browse",
+          "MouseWheelBehavior::Zoom"
+        ]
+      },
+      "NavigationEndNotification": {
+        "type": "Enum",
+        "default": "Gwenview::SlideShow::NavigationEndNotification::WarnOnSlideshow",
+        "choices": [
+          "NavigationEndNotification::NeverWarn",
+          "NavigationEndNotification::WarnOnSlideshow",
+          "NavigationEndNotification::AlwaysWarn"
+        ]
+      },
+      "ThumbnailSplitterSizes": {
+        "type": "IntList",
+        "default": "350,100",
+        "mutable_layout": true,
+        "source": "https://raw.githubusercontent.com/KDE/gwenview/v26.08.1/lib/gwenviewconfig.kcfg"
+      }
+    },
+    "ThumbnailView": {
+      "ThumbnailSize": {
+        "type": "Int",
+        "default": "128"
+      },
+      "ThumbnailDetails": {
+        "type": "Int",
+        "default": "1"
+      },
+      "ThumbnailAspectRatio": {
+        "type": "Double",
+        "default": "1.5"
+      },
+      "ListVideos": {
+        "type": "Bool",
+        "default": "true"
+      },
+      "AutoplayVideos": {
+        "type": "Bool",
+        "default": "false"
+      },
+      "Sorting": {
+        "type": "Enum",
+        "default": "Sorting::Name",
+        "choices": [
+          "Sorting::Name",
+          "Sorting::Size",
+          "Sorting::Date",
+          "Sorting::Rating"
+        ]
+      },
+      "SortDescending": {
+        "type": "Bool",
+        "default": "false"
+      }
+    },
+    "SideBar": {
+      "IsVisible ViewMode": {
+        "type": "Bool",
+        "default": "false"
+      }
+    },
+    "FullScreen": {
+      "ShowFullScreenThumbnails": {
+        "type": "Bool",
+        "default": "true"
+      },
+      "FullScreenModeActive": {
+        "type": "Bool",
+        "default": "false"
+      }
+    },
+    "slide show": {
+      "interval": {
+        "type": "Double",
+        "default": "5.0"
+      },
+      "random": {
+        "type": "Bool",
+        "default": "false"
+      },
+      "loop": {
+        "type": "Bool",
+        "default": "false"
+      }
+    }
+  }
+}

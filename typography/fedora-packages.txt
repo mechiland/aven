@@ -1,0 +1,6 @@
+# Native Fedora fonts. Resolve versions from the same release as the guest.
+google-noto-sans-vf-fonts
+google-noto-sans-mono-vf-fonts
+google-noto-sans-cjk-vf-fonts
+google-noto-sans-mono-cjk-vf-fonts
+google-noto-color-emoji-fonts

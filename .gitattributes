@@ -1,0 +1,3 @@
+# Preserve captured logs and third-party license text verbatim.
+evidence/**/*.log -whitespace
+fixtures/photos/LICENSE-pngsuite.txt -whitespace

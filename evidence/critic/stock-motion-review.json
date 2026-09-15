@@ -1,0 +1,729 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-15T06:37:36.200240+00:00",
+  "reviewer": "/root/critic",
+  "scope": "Independent stock-only supplemental motion review. Historical visual scores unchanged.",
+  "source_manifest": "evidence/interaction/stock-native-verification.json",
+  "source_manifest_sha256": "82ab22e82675de70678502f238569f64e33e9b2dcfd8f852f0e694c7f00602d2",
+  "method": "Read all recording metadata; verified every native frame hash; opened every distinct native PNG state in chronological order. Repeated identical frames were verified by hash and their timing/return-state mapping retained. No synthetic, cropped, resized, or interpolated evidence used.",
+  "recordings": [
+    {
+      "id": "window_open_close",
+      "recording": "evidence/interaction/stock-motion-window-open-close/recording.json",
+      "recording_sha256": "b09d4a6fdc25005f89c2d5e70714ff9e7219facc88ad7d45883e57a7173517ec",
+      "all_frame_hashes_verified": true,
+      "native_frame_count": 50,
+      "unique_native_frames_visually_inspected": [
+        {
+          "file": "evidence/interaction/stock-motion-window-open-close/frame-0000.png",
+          "sha256": "fcbb240bd6f16f8bf99be578016395437e37ce46712a814af72b0c0da24fa641",
+          "offset_seconds": 0.08934941195184365,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-window-open-close/frame-0009.png",
+          "sha256": "917180ddd76715d181c6e3f2ee05befb3b8f033d22308559bebc7f34d5fc0da4",
+          "offset_seconds": 1.2000167349469848,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-window-open-close/frame-0010.png",
+          "sha256": "a9f21ecb29477b1347bb136eba6eb88188a998a3b73a518e80a6d0696e5cd082",
+          "offset_seconds": 1.3131914949626662,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-window-open-close/frame-0011.png",
+          "sha256": "14b1cf4343a7b0fd93467777a4672fff822b68666dc71e9786e7a33d8f37e1c7",
+          "offset_seconds": 1.4348939459887333,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-window-open-close/frame-0012.png",
+          "sha256": "8d7bcd92f50ec7d5079c282d5f5097114c882b2063a072ed81de67093986535f",
+          "offset_seconds": 1.5612349349539727,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-window-open-close/frame-0013.png",
+          "sha256": "03cac819bb154220ac9485139e82601b59477a4ff845b01267b82d53ce903ee8",
+          "offset_seconds": 1.6734948979574256,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-window-open-close/frame-0023.png",
+          "sha256": "c9345f13b57664177aad9508b2c97646ded88b5cc08d94094090f5930b80ffbd",
+          "offset_seconds": 2.8839816889958456,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-window-open-close/frame-0024.png",
+          "sha256": "b36bb71c7f3e1de93c6a599fd55647a22eca4a692b2e04d642c39fa655cecfdb",
+          "offset_seconds": 3.007594536000397,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        }
+      ],
+      "ordered_state_runs": [
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-open-close/frame-0000.png",
+          "offset_seconds": 0.08934941195184365,
+          "representative": "evidence/interaction/stock-motion-window-open-close/frame-0000.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-open-close/frame-0009.png",
+          "offset_seconds": 1.2000167349469848,
+          "representative": "evidence/interaction/stock-motion-window-open-close/frame-0009.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-open-close/frame-0010.png",
+          "offset_seconds": 1.3131914949626662,
+          "representative": "evidence/interaction/stock-motion-window-open-close/frame-0010.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-open-close/frame-0011.png",
+          "offset_seconds": 1.4348939459887333,
+          "representative": "evidence/interaction/stock-motion-window-open-close/frame-0011.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-open-close/frame-0012.png",
+          "offset_seconds": 1.5612349349539727,
+          "representative": "evidence/interaction/stock-motion-window-open-close/frame-0012.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-open-close/frame-0013.png",
+          "offset_seconds": 1.6734948979574256,
+          "representative": "evidence/interaction/stock-motion-window-open-close/frame-0013.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-open-close/frame-0023.png",
+          "offset_seconds": 2.8839816889958456,
+          "representative": "evidence/interaction/stock-motion-window-open-close/frame-0023.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-open-close/frame-0024.png",
+          "offset_seconds": 3.007594536000397,
+          "representative": "evidence/interaction/stock-motion-window-open-close/frame-0024.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-open-close/frame-0025.png",
+          "offset_seconds": 3.137075749982614,
+          "representative": "evidence/interaction/stock-motion-window-open-close/frame-0000.png"
+        }
+      ],
+      "final_frame": {
+        "file": "evidence/interaction/stock-motion-window-open-close/frame-0049.png",
+        "offset_seconds": 6.037694031954743,
+        "sha256": "fcbb240bd6f16f8bf99be578016395437e37ce46712a814af72b0c0da24fa641",
+        "identical_inspected_representative": "evidence/interaction/stock-motion-window-open-close/frame-0000.png"
+      },
+      "requested_fps": 10.0,
+      "observed_fps": 8.224193706090771,
+      "largest_gap_seconds": 0.14305208099540323,
+      "elapsed_seconds": 6.079623338999227,
+      "observation": "The second Dolphin window appears centered with a modest scale and opacity change. Frame 0010 still has generic image icons; thumbnails arrive by 0011, with remaining footer/storage painting settling through 0013. Closing frames 0023–0024 contract and fade the second window. Frame 0025 is byte-identical to the initial original-window view.",
+      "character": "Subtle scale/fade; a visible short-lived thumbnail-loading state.",
+      "pairing_note": "Compare the same new-window action and settled content. Do not attribute thumbnail loading time to the compositor animation.",
+      "behavior_observed_by_critic": true,
+      "perceived_smoothness_score": null,
+      "aven_comparison": null
+    },
+    {
+      "id": "window_switch",
+      "recording": "evidence/interaction/stock-motion-window-switch/recording.json",
+      "recording_sha256": "a063605d13512c2e6511a395ab5bb892cace614dc8de2a397124b121cd6a5395",
+      "all_frame_hashes_verified": true,
+      "native_frame_count": 50,
+      "unique_native_frames_visually_inspected": [
+        {
+          "file": "evidence/interaction/stock-motion-window-switch/frame-0000.png",
+          "sha256": "cc2c6cdebdebea6891b9d67cdd56ce1cbd5382fb7174cb9567970a347885d764",
+          "offset_seconds": 0.10076176701113582,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-window-switch/frame-0007.png",
+          "sha256": "fdaa79d67c1abb6d2ef421d005a96eee0a7a4e458a9a865d0721bef347c181a7",
+          "offset_seconds": 0.967258180025965,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-window-switch/frame-0008.png",
+          "sha256": "1a61f02ace741bf194e4a96e2f8a06a436272b365a9cfd07ee5b04f04282f058",
+          "offset_seconds": 1.0900813050102443,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-window-switch/frame-0009.png",
+          "sha256": "de640e12f661e38a8d8c4dd7376174f011c06c7ceb42a149eb982016a321d791",
+          "offset_seconds": 1.2071696529746987,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-window-switch/frame-0023.png",
+          "sha256": "aa096b2e6496b88a2f3f61ee2feaff1272def4cc4ceffd12979bb77b786ec9af",
+          "offset_seconds": 2.900645182002336,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-window-switch/frame-0024.png",
+          "sha256": "5c242489ed3364762f179d42661c6e3b2a7541c96d772536f867c91659b99752",
+          "offset_seconds": 3.021802088012919,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-window-switch/frame-0025.png",
+          "sha256": "da0a8c7904eddcffe2eff28b80b55eac92300c1cb545171692db9745503aa769",
+          "offset_seconds": 3.1524356349837035,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        }
+      ],
+      "ordered_state_runs": [
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-switch/frame-0000.png",
+          "offset_seconds": 0.10076176701113582,
+          "representative": "evidence/interaction/stock-motion-window-switch/frame-0000.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-switch/frame-0007.png",
+          "offset_seconds": 0.967258180025965,
+          "representative": "evidence/interaction/stock-motion-window-switch/frame-0007.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-switch/frame-0008.png",
+          "offset_seconds": 1.0900813050102443,
+          "representative": "evidence/interaction/stock-motion-window-switch/frame-0008.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-switch/frame-0009.png",
+          "offset_seconds": 1.2071696529746987,
+          "representative": "evidence/interaction/stock-motion-window-switch/frame-0009.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-switch/frame-0023.png",
+          "offset_seconds": 2.900645182002336,
+          "representative": "evidence/interaction/stock-motion-window-switch/frame-0023.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-switch/frame-0024.png",
+          "offset_seconds": 3.021802088012919,
+          "representative": "evidence/interaction/stock-motion-window-switch/frame-0024.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-window-switch/frame-0025.png",
+          "offset_seconds": 3.1524356349837035,
+          "representative": "evidence/interaction/stock-motion-window-switch/frame-0025.png"
+        }
+      ],
+      "final_frame": {
+        "file": "evidence/interaction/stock-motion-window-switch/frame-0049.png",
+        "offset_seconds": 6.051130315987393,
+        "sha256": "da0a8c7904eddcffe2eff28b80b55eac92300c1cb545171692db9745503aa769",
+        "identical_inspected_representative": "evidence/interaction/stock-motion-window-switch/frame-0025.png"
+      },
+      "requested_fps": 10.0,
+      "observed_fps": 8.203833760983757,
+      "largest_gap_seconds": 0.14666680700611323,
+      "elapsed_seconds": 6.094711504003499,
+      "observation": "The captured sequence changes from Dolphin to Firefox containing real SC/TC prose, then back to Dolphin. Firefox content is already fully drawn in the first switched frame. Subsequent distinct frames chiefly show active chrome/task-state settling. No held Alt+Tab popup or large travel is visible.",
+      "character": "Direct switch with small focus-color settling in the sampled states.",
+      "pairing_note": "This checks quick Alt+Tab only; it does not establish held-switcher design or animation quality.",
+      "behavior_observed_by_critic": true,
+      "perceived_smoothness_score": null,
+      "aven_comparison": null
+    },
+    {
+      "id": "menus_popovers",
+      "recording": "evidence/interaction/stock-motion-menus-popovers/recording.json",
+      "recording_sha256": "1b3be9eb2a61aa32a9a9c4e9c64ca8e343afaacf1d1c914ed0267eb6c46e02a3",
+      "all_frame_hashes_verified": true,
+      "native_frame_count": 49,
+      "unique_native_frames_visually_inspected": [
+        {
+          "file": "evidence/interaction/stock-motion-menus-popovers/frame-0000.png",
+          "sha256": "da0a8c7904eddcffe2eff28b80b55eac92300c1cb545171692db9745503aa769",
+          "offset_seconds": 0.09628817904740572,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-menus-popovers/frame-0007.png",
+          "sha256": "aec049d6a395cb3162175b39093f4d4788b900b73d42997948ce88003de7d8aa",
+          "offset_seconds": 0.964197224995587,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-menus-popovers/frame-0008.png",
+          "sha256": "ea825a6f167e0d56b69912a6aa40b389c9743296214341f776f3da01f59a8d4f",
+          "offset_seconds": 1.078436675015837,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-menus-popovers/frame-0009.png",
+          "sha256": "05a1ed2119f43ce2211f583ee10f956c4eebabe943ebb745b934913680f4ac6f",
+          "offset_seconds": 1.2009384560515173,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-menus-popovers/frame-0024.png",
+          "sha256": "20b4fec374d1b56e8812bc35d22ec0c29fe0d79bbe291ebd2159473f9babb3b9",
+          "offset_seconds": 3.021334682009183,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-menus-popovers/frame-0025.png",
+          "sha256": "14c9cdb6d0d94601723e7d84297c1fd828cc023cae9a07dd0696f9203dd6d8b2",
+          "offset_seconds": 3.1504088320070878,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-menus-popovers/frame-0026.png",
+          "sha256": "c7907c81631562000bd8440324c1a9ce06d2df3bd49c8fc96c2eddb6beee00fb",
+          "offset_seconds": 3.2941375140217133,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        }
+      ],
+      "ordered_state_runs": [
+        {
+          "first_frame": "evidence/interaction/stock-motion-menus-popovers/frame-0000.png",
+          "offset_seconds": 0.09628817904740572,
+          "representative": "evidence/interaction/stock-motion-menus-popovers/frame-0000.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-menus-popovers/frame-0007.png",
+          "offset_seconds": 0.964197224995587,
+          "representative": "evidence/interaction/stock-motion-menus-popovers/frame-0007.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-menus-popovers/frame-0008.png",
+          "offset_seconds": 1.078436675015837,
+          "representative": "evidence/interaction/stock-motion-menus-popovers/frame-0008.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-menus-popovers/frame-0009.png",
+          "offset_seconds": 1.2009384560515173,
+          "representative": "evidence/interaction/stock-motion-menus-popovers/frame-0009.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-menus-popovers/frame-0024.png",
+          "offset_seconds": 3.021334682009183,
+          "representative": "evidence/interaction/stock-motion-menus-popovers/frame-0024.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-menus-popovers/frame-0025.png",
+          "offset_seconds": 3.1504088320070878,
+          "representative": "evidence/interaction/stock-motion-menus-popovers/frame-0025.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-menus-popovers/frame-0026.png",
+          "offset_seconds": 3.2941375140217133,
+          "representative": "evidence/interaction/stock-motion-menus-popovers/frame-0026.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-menus-popovers/frame-0027.png",
+          "offset_seconds": 3.415959138015751,
+          "representative": "evidence/interaction/stock-motion-menus-popovers/frame-0007.png"
+        }
+      ],
+      "final_frame": {
+        "file": "evidence/interaction/stock-motion-menus-popovers/frame-0048.png",
+        "offset_seconds": 5.958582943014335,
+        "sha256": "aec049d6a395cb3162175b39093f4d4788b900b73d42997948ce88003de7d8aa",
+        "identical_inspected_representative": "evidence/interaction/stock-motion-menus-popovers/frame-0007.png"
+      },
+      "requested_fps": 10.0,
+      "observed_fps": 8.165999479940782,
+      "largest_gap_seconds": 0.14372868201462552,
+      "elapsed_seconds": 6.000490218051709,
+      "observation": "The hamburger button highlights, then the menu is partially transparent at 0008 and opaque by 0009. On dismissal, frames 0024–0026 fade the same stationary menu. By 0027 the frame is byte-identical to highlighted-button/no-menu frame 0007. Chinese entries remain clear in the opaque state.",
+      "character": "Stationary fade with no sampled bounce or large displacement.",
+      "pairing_note": "Compare the same native menu and dismissal; only coarse fade behavior can be inferred.",
+      "behavior_observed_by_critic": true,
+      "perceived_smoothness_score": null,
+      "aven_comparison": null
+    },
+    {
+      "id": "preview",
+      "recording": "evidence/interaction/stock-motion-preview/recording.json",
+      "recording_sha256": "f7ce581dff90bf2d1133d6c76085ba433a2cf0984c4d85be3d60bad05b3ac2af",
+      "all_frame_hashes_verified": true,
+      "native_frame_count": 66,
+      "unique_native_frames_visually_inspected": [
+        {
+          "file": "evidence/interaction/stock-motion-preview/frame-0000.png",
+          "sha256": "34bdbd9edd04c58a467ad7d387b31ed0999e8b77badf4ef3281b67477d0b45b5",
+          "offset_seconds": 0.1117360100033693,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-preview/frame-0007.png",
+          "sha256": "9508dfa8a162977f8dd3e1cd907f4e392effe261724e8b0de29b737f16f0c0dc",
+          "offset_seconds": 0.9794905360322446,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-preview/frame-0026.png",
+          "sha256": "d3c5cf3e47cc486dabcf4e0351c1fb82b19cb8845caef12ebafbb12f2e645816",
+          "offset_seconds": 3.2712521190405823,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-preview/frame-0028.png",
+          "sha256": "7f56ad441e233b0de49efc3820ecc1b3c5b1bdcf8949c038f4637104ac444368",
+          "offset_seconds": 3.5119511400116608,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-preview/frame-0032.png",
+          "sha256": "b54b1ec39639ce0abee6119018414b66574498fdc585859df296971c79dd587a",
+          "offset_seconds": 3.9944350810255855,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        }
+      ],
+      "ordered_state_runs": [
+        {
+          "first_frame": "evidence/interaction/stock-motion-preview/frame-0000.png",
+          "offset_seconds": 0.1117360100033693,
+          "representative": "evidence/interaction/stock-motion-preview/frame-0000.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-preview/frame-0007.png",
+          "offset_seconds": 0.9794905360322446,
+          "representative": "evidence/interaction/stock-motion-preview/frame-0007.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-preview/frame-0026.png",
+          "offset_seconds": 3.2712521190405823,
+          "representative": "evidence/interaction/stock-motion-preview/frame-0026.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-preview/frame-0028.png",
+          "offset_seconds": 3.5119511400116608,
+          "representative": "evidence/interaction/stock-motion-preview/frame-0028.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-preview/frame-0032.png",
+          "offset_seconds": 3.9944350810255855,
+          "representative": "evidence/interaction/stock-motion-preview/frame-0032.png"
+        }
+      ],
+      "final_frame": {
+        "file": "evidence/interaction/stock-motion-preview/frame-0065.png",
+        "offset_seconds": 7.995482644997537,
+        "sha256": "b54b1ec39639ce0abee6119018414b66574498fdc585859df296971c79dd587a",
+        "identical_inspected_representative": "evidence/interaction/stock-motion-preview/frame-0032.png"
+      },
+      "requested_fps": 10.0,
+      "observed_fps": 8.208097765508244,
+      "largest_gap_seconds": 0.14120737800840288,
+      "elapsed_seconds": 8.040839898050763,
+      "observation": "F11 exposes the right information panel and reduces the file-list width. Earthrise is a small approximately 160 px-wide image above a dense metadata block. Down changes selection and the panel image to the landscape by 0026; the bottom status label still names Earthrise until 0028. F11 hides the panel by 0032, retaining the landscape selection and restoring list width. No intermediate panel animation was captured.",
+      "character": "Direct layout change and small image replacement; the list reflows horizontally.",
+      "pairing_note": "Stock information-panel preview and Aven overlay are different native interactions. Compare friction, content usefulness, focus continuity, and transition character; do not claim a matched shortcut or identical surface.",
+      "behavior_observed_by_critic": true,
+      "perceived_smoothness_score": null,
+      "aven_comparison": null
+    },
+    {
+      "id": "photo_transition",
+      "recording": "evidence/interaction/stock-motion-photo-transition/recording.json",
+      "recording_sha256": "423bd4b231911773edc287d355305aaa4278fcd05afb06a0dd3b4a064d74b6bc",
+      "all_frame_hashes_verified": true,
+      "native_frame_count": 43,
+      "unique_native_frames_visually_inspected": [
+        {
+          "file": "evidence/interaction/stock-motion-photo-transition/frame-0000.png",
+          "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+          "offset_seconds": 0.08251606294652447,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-photo-transition/frame-0006.png",
+          "sha256": "ffb5593defea57d87bac5bea995e6aa4cdc7098163e9c407a79248b665fefedc",
+          "offset_seconds": 0.9746990909916349,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-photo-transition/frame-0007.png",
+          "sha256": "18903f830b0394929cc2348b825c3894176b3c59b0599a02afc5674f710b2324",
+          "offset_seconds": 1.1292702579521574,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-photo-transition/frame-0008.png",
+          "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+          "offset_seconds": 1.2793920519761741,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-photo-transition/frame-0022.png",
+          "sha256": "4581b4f1c740c7ef330b763f0fa890e3ebd5280ebc43a3bf62ae99182409c250",
+          "offset_seconds": 2.9700125699746422,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-photo-transition/frame-0023.png",
+          "sha256": "53f6e1ac0b4e0827fcefdf767ad9e502b8dba81478a37e759cccf0692f758889",
+          "offset_seconds": 3.1213183569489047,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        }
+      ],
+      "ordered_state_runs": [
+        {
+          "first_frame": "evidence/interaction/stock-motion-photo-transition/frame-0000.png",
+          "offset_seconds": 0.08251606294652447,
+          "representative": "evidence/interaction/stock-motion-photo-transition/frame-0000.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-photo-transition/frame-0006.png",
+          "offset_seconds": 0.9746990909916349,
+          "representative": "evidence/interaction/stock-motion-photo-transition/frame-0006.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-photo-transition/frame-0007.png",
+          "offset_seconds": 1.1292702579521574,
+          "representative": "evidence/interaction/stock-motion-photo-transition/frame-0007.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-photo-transition/frame-0008.png",
+          "offset_seconds": 1.2793920519761741,
+          "representative": "evidence/interaction/stock-motion-photo-transition/frame-0008.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-photo-transition/frame-0022.png",
+          "offset_seconds": 2.9700125699746422,
+          "representative": "evidence/interaction/stock-motion-photo-transition/frame-0022.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-photo-transition/frame-0023.png",
+          "offset_seconds": 3.1213183569489047,
+          "representative": "evidence/interaction/stock-motion-photo-transition/frame-0023.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-photo-transition/frame-0024.png",
+          "offset_seconds": 3.274622054945212,
+          "representative": "evidence/interaction/stock-motion-photo-transition/frame-0000.png"
+        }
+      ],
+      "final_frame": {
+        "file": "evidence/interaction/stock-motion-photo-transition/frame-0042.png",
+        "offset_seconds": 5.987558970984537,
+        "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+        "identical_inspected_representative": "evidence/interaction/stock-motion-photo-transition/frame-0000.png"
+      },
+      "requested_fps": 10.0,
+      "observed_fps": 7.100590489923383,
+      "largest_gap_seconds": 0.15837115101749077,
+      "elapsed_seconds": 6.055834378988948,
+      "observation": "The landscape is fit at 65%; portrait settles at 43% with white side margins. Frame 0007 blends both images, and 0008 shows the upright portrait. Return frames 0022–0023 again blend portrait and landscape; 0024 is byte-identical to the initial landscape frame. There is no sampled pan or zoom animation, only crossfade and changed fitted image bounds. Window title temporarily reads only Gwenview at 0006 before the new filename.",
+      "character": "Simple crossfade. Differing aspect ratios produce a visibly light transitional outer area against the white viewer canvas.",
+      "pairing_note": "Use the same landscape and portrait fixture pair. The sampled blend is expected transition content, not a duplicated-image rendering defect.",
+      "behavior_observed_by_critic": true,
+      "perceived_smoothness_score": null,
+      "aven_comparison": null
+    },
+    {
+      "id": "overview",
+      "recording": "evidence/interaction/stock-motion-overview/recording.json",
+      "recording_sha256": "cfb6b9c30e182adacea2422304e16406578e33b39e4ab5198e461a69d890b8b1",
+      "all_frame_hashes_verified": true,
+      "native_frame_count": 49,
+      "unique_native_frames_visually_inspected": [
+        {
+          "file": "evidence/interaction/stock-motion-overview/frame-0000.png",
+          "sha256": "30c69a6bf6b26686dae2b59e4065f4a9535201a62a40f1c45de4274bd5a9116c",
+          "offset_seconds": 0.10054948896868154,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-overview/frame-0006.png",
+          "sha256": "8dede94ca650a887dcf3c21c505a52a0aab0c27a82b0bb1e936990edd0b6329b",
+          "offset_seconds": 0.9934219849528745,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-overview/frame-0007.png",
+          "sha256": "fb7f3419f07aaeb892893951beff617995ed8b1750647e0158285974f9c4d3a4",
+          "offset_seconds": 1.1545450539560989,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-overview/frame-0008.png",
+          "sha256": "9835f4f992ff6aceee26d0d4d78dbee47fdb2356f3f37f9b434f8a170d28c4b0",
+          "offset_seconds": 1.2693739189999178,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-overview/frame-0009.png",
+          "sha256": "ff1a60f6eb4aabb22f6aa980cebb485373dc2065180d0065a05891852a64e7c6",
+          "offset_seconds": 1.3874427839764394,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-overview/frame-0023.png",
+          "sha256": "5c202462152513c4c2898d4fade8f63a5b174487b5a808c940947abb22b8b995",
+          "offset_seconds": 3.1909531429992057,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        },
+        {
+          "file": "evidence/interaction/stock-motion-overview/frame-0024.png",
+          "sha256": "751257710df24498f645da4027024d27d9e2a6d37a9503fef72268963e1c4610",
+          "offset_seconds": 3.33331688598264,
+          "inspected_by": "/root/critic",
+          "visually_inspected": true,
+          "inspection": "Opened original unmodified PNG at native 1920x1200 resolution in chronological order."
+        }
+      ],
+      "ordered_state_runs": [
+        {
+          "first_frame": "evidence/interaction/stock-motion-overview/frame-0000.png",
+          "offset_seconds": 0.10054948896868154,
+          "representative": "evidence/interaction/stock-motion-overview/frame-0000.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-overview/frame-0006.png",
+          "offset_seconds": 0.9934219849528745,
+          "representative": "evidence/interaction/stock-motion-overview/frame-0006.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-overview/frame-0007.png",
+          "offset_seconds": 1.1545450539560989,
+          "representative": "evidence/interaction/stock-motion-overview/frame-0007.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-overview/frame-0008.png",
+          "offset_seconds": 1.2693739189999178,
+          "representative": "evidence/interaction/stock-motion-overview/frame-0008.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-overview/frame-0009.png",
+          "offset_seconds": 1.3874427839764394,
+          "representative": "evidence/interaction/stock-motion-overview/frame-0009.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-overview/frame-0023.png",
+          "offset_seconds": 3.1909531429992057,
+          "representative": "evidence/interaction/stock-motion-overview/frame-0023.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-overview/frame-0024.png",
+          "offset_seconds": 3.33331688598264,
+          "representative": "evidence/interaction/stock-motion-overview/frame-0024.png"
+        },
+        {
+          "first_frame": "evidence/interaction/stock-motion-overview/frame-0025.png",
+          "offset_seconds": 3.4843344939872622,
+          "representative": "evidence/interaction/stock-motion-overview/frame-0000.png"
+        }
+      ],
+      "final_frame": {
+        "file": "evidence/interaction/stock-motion-overview/frame-0048.png",
+        "offset_seconds": 6.956372087995987,
+        "sha256": "30c69a6bf6b26686dae2b59e4065f4a9535201a62a40f1c45de4274bd5a9116c",
+        "identical_inspected_representative": "evidence/interaction/stock-motion-overview/frame-0000.png"
+      },
+      "requested_fps": 10.0,
+      "observed_fps": 6.979498407459889,
+      "largest_gap_seconds": 0.16112306900322437,
+      "elapsed_seconds": 7.0205618139589205,
+      "observation": "The desktop and three windows shrink and rearrange into native Overview. Frame 0007 is still in transit, with Firefox and Dolphin touching/overlapping; frames0008–0009 settle into separated two-above/one-below positions. Search and desktop controls occupy the top. On exit 0023–0024 scale and rearrange back; 0025 is byte-identical to the initial desktop. No cube, wobble, or decorative flourish is visible in the captured states.",
+      "character": "The largest spatial transition in this set; simple overview scaling and placement.",
+      "pairing_note": "Compare the same three-app arrangement. Transitional small text is resampled by the effect and should not be mistaken for the normal typography baseline.",
+      "behavior_observed_by_critic": true,
+      "perceived_smoothness_score": null,
+      "aven_comparison": null
+    }
+  ],
+  "totals": {
+    "recordings": 6,
+    "frame_hashes_verified": 307,
+    "unique_native_pngs_visually_inspected": 40
+  },
+  "limitations": [
+    "This is an ordered native-frame review, not continuous real-time playback.",
+    "Requested 10 fps recordings achieved 6.98–8.22fps. Maximum sample gaps are141–161ms. Many compositor frames can be absent.",
+    "RFB readback and PNG encoding may skip compositor frames. Capture-completion timestamps are host timestamps, not display-presentation or input-delivery timestamps.",
+    "These data establish sampled transition character and end states. They cannot establish 60 Hz smoothness, physical frame pacing, exact animation duration, or precise input latency.",
+    "No Aven recordings were used in this stock-only supplement; Aven comparison and motion quality scores remain pending.",
+    "Other native operation outcomes in the source manifest are verification-agent observations, not newly independently visually inspected operations in this report."
+  ],
+  "scores": null,
+  "pass": false,
+  "final_pass_evaluated": false
+}

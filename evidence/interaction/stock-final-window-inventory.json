@@ -1,0 +1,131 @@
+{
+  "windows": [
+    {
+      "id": "{dca570e2-eed3-4e83-8c68-05eedfbbd03e}",
+      "caption": "Wayland to X Recording bridge — Xwayland Video Bridge",
+      "app": "org.kde.xwaylandvideobridge",
+      "resource_class": "xwaylandvideobridge",
+      "resource_name": "xwaylandvideobridge",
+      "pid": 1804,
+      "active": false,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": true,
+      "skip_switcher": true,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 960,
+        "y": 630,
+        "width": 640,
+        "height": 360
+      },
+      "client": {
+        "x": 960,
+        "y": 630,
+        "width": 640,
+        "height": 360
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "id": "{11ceeebb-385c-4748-8bce-2285f1b78981}",
+      "caption": "Aven — 中文与 Latin 排版检查 — Mozilla Firefox",
+      "app": "org.mozilla.firefox",
+      "resource_class": "org.mozilla.firefox",
+      "resource_name": "firefox",
+      "pid": 16609,
+      "active": false,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 500,
+        "height": 120
+      }
+    },
+    {
+      "id": "{80268166-e16c-45bb-9ffa-fff4d604bf9e}",
+      "caption": "周末散步 — Dolphin",
+      "app": "org.kde.dolphin",
+      "resource_class": "org.kde.dolphin",
+      "resource_name": "dolphin",
+      "pid": 16565,
+      "active": true,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 40,
+        "y": 56,
+        "width": 1200,
+        "height": 602
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 173,
+        "height": 150
+      }
+    }
+  ],
+  "screens": [
+    {
+      "name": "Virtual-1",
+      "scale": 1,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1200
+      }
+    }
+  ],
+  "active_window": "{80268166-e16c-45bb-9ffa-fff4d604bf9e}",
+  "ok": true,
+  "schema_version": 1,
+  "captured_at": "2026-09-15T05:45:37.441736+00:00",
+  "method": "temporary KWin script via public Workspace/Window API",
+  "command": "inventory",
+  "persistent_kwin_changes": false
+}

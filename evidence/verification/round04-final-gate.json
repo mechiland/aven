@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "round": 4,
+  "pass": true,
+  "overall": 8.333333333333334,
+  "errors": [],
+  "warnings": [
+    "desktop/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "files_home/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "files_list/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "files_mixed/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "preview_image/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "preview_pdf/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "preview_text/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "preview_media/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "browser_sc/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "browser_tc/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "browser_web/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "mail_list/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "mail_sc/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "mail_tc/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "mail_compose/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "photos_grid/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "photos_view/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "photo_exif/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "photo_alpha/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "typography_ui_sc_matrix_1p0/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "typography_ui_sc_matrix_2p0/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "typography_prose_sc_matrix_1p0/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "typography_prose_sc_matrix_2p0/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "typography_ui_tc_matrix_1p0/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "typography_ui_tc_matrix_2p0/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "typography_prose_tc_matrix_1p0/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe",
+    "typography_prose_tc_matrix_2p0/stock: legacy integer QScreen DPR with capture-time KScreen agreement; no mapped surface in original probe"
+  ],
+  "limitations": [
+    "Integrity and completeness checks do not authenticate a screenshot or substitute for honest visual inspection."
+  ]
+}

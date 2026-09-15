@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "observations": [
+    {
+      "at": "2026-09-15T04:47:48.219991+00:00",
+      "guest": "stock",
+      "operation": "mail_draft_save",
+      "passed": true,
+      "method": "native-ui",
+      "observer": "root",
+      "notes": "Opened Drafts with native sidebar, double-clicked original draft, clicked body, Ctrl+End then two Enter presses; pasted 已核对路线，周六见。; Ctrl+S. Closed editor, reopened Drafts item and directly inspected persisted sentence. No SMTP account and no sending.",
+      "evidence": [
+        "evidence/stock/round-00/mail-compose-1x.json",
+        "evidence/stock/round-00/mail-draft-reopened-1x.json"
+      ]
+    },
+    {
+      "at": "2026-09-15T04:47:48.220019+00:00",
+      "guest": "stock",
+      "operation": "photo_next_previous",
+      "passed": null,
+      "method": "native-ui",
+      "observer": "root",
+      "notes": "Right arrow visited Earthrise, landscape1, portrait1, EXIF6, alpha. Titles and EXIF6 orientation inspected. Reverse traversal and fullscreen pending.",
+      "evidence": [
+        "evidence/stock/round-00/photo-landscape-1x.json",
+        "evidence/stock/round-00/photo-exif-1x.json",
+        "evidence/stock/round-00/photo-alpha-1x.json"
+      ]
+    }
+  ]
+}

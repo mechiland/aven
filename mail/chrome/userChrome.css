@@ -1,0 +1,63 @@
+/* Aven's deliberately small Thunderbird chrome layer. No control is hidden.
+   Reviewed against installed Thunderbird153 chrome; repeat guest visual QA on upgrades.
+   Keep virtual message-row geometry owned by Thunderbird's density controller. */
+@-moz-document url-prefix("chrome://messenger/content/"), url("about:3pane"), url("about:message") {
+  :root {
+    font-family: "Noto Sans", sans-serif !important;
+    font-size: 11pt !important;
+    --transition-duration: 100ms !important;
+    --transition-timing: ease-out !important;
+    --panelui-subview-transition-duration: 120ms !important;
+    --button-border-radius: 6px !important;
+  }
+  @media (prefers-color-scheme: light) and (prefers-contrast: no-preference) {
+    :root {
+      --layout-background-0: #FDFCF9 !important;
+      --layout-background-1: #F1F3EF !important;
+      --layout-background-2: #E5ECE6 !important;
+      --layout-background-3: #F7F7F3 !important;
+      --layout-background-4: #DCE8E0 !important;
+      --layout-color-0: #26342F !important;
+      --layout-color-1: #26342F !important;
+      --layout-color-2: #65706A !important;
+      --layout-border-0: #D7DDD5 !important;
+      --layout-border-1: #D7DDD5 !important;
+      --layout-border-2: #D7DDD5 !important;
+      --sidebar-background-color: #F1F3EF !important;
+      --sidebar-text-color: #26342F !important;
+      --sidebar-border-color: #D7DDD5 !important;
+      --sidebar-highlight-background-color: #326B60 !important;
+      --sidebar-highlight-text-color: #FFFFFF !important;
+      --selected-item-color: #326B60 !important;
+      --selected-item-text-color: #FFFFFF !important;
+      --toolbar-background-color: #F1F3EF !important;
+      --tabs-toolbar-background-color: #F1F3EF !important;
+      --toolbox-background-color: #F1F3EF !important;
+      --toolbox-background-color-inactive: #F5F5F1 !important;
+      --toolbox-text-color: #26342F !important;
+      --toolbox-text-color-inactive: #65706A !important;
+      --toolbar-text-color: #26342F !important;
+      --toolbar-field-background-color: #FDFCF9 !important;
+      --toolbar-field-focus-border-color: #326B60 !important;
+      --button-primary-background-color: #326B60 !important;
+      --button-primary-hover-background-color: #3F7C70 !important;
+      --button-primary-active-background-color: #28564D !important;
+      --button-primary-text-color: #FFFFFF !important;
+      --button-primary-border-color: #326B60 !important;
+      --focus-outline-color: #326B60 !important;
+      --chrome-content-separator-color: #D7DDD5 !important;
+      --link-color: #326B60 !important;
+    }
+    #unifiedToolbarContainer, #tabs-toolbar {
+      background-color: #F1F3EF !important;
+      color: #26342F !important;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :root { --transition-duration: 0ms !important; --panelui-subview-transition-duration: 0ms !important; }
+  }
+}
+/* Inset the native editor viewport. This is chrome, never serialized into mail. */
+@-moz-document url("chrome://messenger/content/messengercompose/messengercompose.xhtml") {
+  #messageEditor { margin: 16px 24px 24px !important; }
+}

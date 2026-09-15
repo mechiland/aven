@@ -1,0 +1,526 @@
+{
+  "schema_version": 1,
+  "round": 2,
+  "critic": {
+    "name": "/root/critic",
+    "independent": true,
+    "inspected_at": "2026-09-15T05:32:08.362203+00:00",
+    "method": "Opened every cited unmodified PNG with view_image and compared stock/Aven directly; no guest UI control or source changes."
+  },
+  "pairs": [
+    {
+      "id": "desktop",
+      "content_id": "Clean desktop with native panel",
+      "tags": [
+        "desktop"
+      ],
+      "stock": "evidence/stock/round-00/desktop-stable-1x.json",
+      "aven": "evidence/aven/round-02/desktop-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Aven replaces the busy blue relief wallpaper and nearly full-width dark panel with broad low-contrast jade forms and a shorter light panel. Its overall silhouette is immediately quieter. Application identities remain recognizable.",
+        "stock_sha256": "57e5bb3d0f09211376b96709a6c056943e025b102779103650cbc6dca2311223",
+        "aven_sha256": "e5951e32a8160e336155ea1298a368e68bdfa74c13f62f92dc2b61bea8f1aeda"
+      }
+    },
+    {
+      "id": "files_home",
+      "content_id": "Dolphin Home with Documents selected",
+      "tags": [
+        "files_home",
+        "qt_sc",
+        "typography_latin"
+      ],
+      "stock": "evidence/stock/round-00/files-home-clean-1x.json",
+      "aven": "evidence/aven/round-02/files-home-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Aven uses a readable 224 px places sidebar, larger UI text, calmer selection, and softer decoration. Stock truncates ordinary sidebar labels. Aven Home is a list while stock is a grid; Aven also contains an extra thunderbird folder, so this pair is a default-presentation comparison, not identical directory state. An unnamed red capacity bar and internal device identifiers remain conspicuous.",
+        "stock_sha256": "36e8fd942934c4806bb3681f25824926e396785c3c537af3cd9edfbc2d80fb45",
+        "aven_sha256": "380cea5b14e6c69b0f05537c13d55f19ff31a6c41c0ceb48d1824a8da6f2b792"
+      }
+    },
+    {
+      "id": "files_list",
+      "content_id": "Dolphin 12-file Everyday folder in details view",
+      "tags": [
+        "files_list",
+        "qt_sc",
+        "typography_latin"
+      ],
+      "stock": "evidence/stock/round-00/files-list-1x.json",
+      "aven": "evidence/aven/round-02/files-list-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "The same 12 files are visible. Aven removes visual tree-branch clutter, increases label size, and reduces the oversized stock rows. Mixed Chinese/Latin filenames remain readable without clipping. The current breadcrumb is markedly heavy compared with regular row text. Fixed-volume capacity bars distract from everyday places.",
+        "stock_sha256": "461ab03420d0241700cf29a25dc29effd4bc711a794738da6f1c94473efee3e2",
+        "aven_sha256": "2e1e37daba4288d925d2b81ccf540a7356d803b2b4c66a5d32c334ebc2a722a3"
+      }
+    },
+    {
+      "id": "files_mixed",
+      "content_id": "Dolphin 12-file Everyday folder in grid view",
+      "tags": [
+        "files_grid",
+        "files_mixed",
+        "qt_sc"
+      ],
+      "stock": "evidence/stock/round-00/files-mixed-clean-1x.json",
+      "aven": "evidence/aven/round-02/files-mixed-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Aven presents four larger previews per row instead of nine small items across the first stock row. Long mixed-language filenames now fit on a single line and image contents are much easier to distinguish. The native generic media/document icons remain recognizable. The wide sidebar is useful; internal volume entries still add unrelated visual noise.",
+        "stock_sha256": "253bcad1397d6a51ef3013ea454b8ec1430f146c883f2d58d3c7c487e5b4e435",
+        "aven_sha256": "5e83d7e0719258a3d60f0286dcc3e8e8cf082382479835bfc748b275647c8691"
+      }
+    },
+    {
+      "id": "preview_image",
+      "content_id": "NASA Earthrise JPEG selected in Dolphin",
+      "tags": [
+        "preview_image"
+      ],
+      "stock": "evidence/stock/round-00/preview-image-1x.json",
+      "aven": "evidence/aven/round-02/preview-image-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Stock shows only a small image in a narrow metadata dock. Aven shows the complete image at a useful size in a restrained floating preview, preserving the selected file behind it. The native Open action is legible. The footer says 86.1 KB while Dolphin says 84.1 KiB for the same bytes.",
+        "stock_sha256": "36cfc6903120007442331dc745ee623b7dbc691913c8d9377b22cfb2f745f38b",
+        "aven_sha256": "c0bd0e12cf1e30a231c2cf05a384d451a02df9ac33a5f3766c2495ee8da61f2d"
+      }
+    },
+    {
+      "id": "preview_pdf",
+      "content_id": "Original bilingual weekend-walk PDF selected in Dolphin",
+      "tags": [
+        "preview_pdf"
+      ],
+      "stock": "evidence/stock/round-00/preview-pdf-1x.json",
+      "aven": "evidence/aven/round-02/preview-pdf-ready-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "The ready Aven preview makes the title and Chinese paragraphs readable; stock only offers a tiny whole-page thumbnail. Aven fits page width and exposes a scrollbar for the rest of the page. The medium-gray PDF backing is harsher than the other Aven preview surfaces. Embedded document typography is not evidence that the OS font fallback improved. The premature Aven preview-pdf capture is excluded.",
+        "stock_sha256": "23fe39a1ef82869abf3d5294ccf550e83d056ee4146f41e4c4d1f16938075717",
+        "aven_sha256": "3337004abd2f3332a3a052cd092bd82b62d9c6c3d9859ef1262735af99780e60"
+      }
+    },
+    {
+      "id": "preview_text",
+      "content_id": "Simplified Chinese and Latin text fixture selected in Dolphin",
+      "tags": [
+        "preview_text",
+        "typography_sc",
+        "typography_latin",
+        "qt_sc"
+      ],
+      "stock": "evidence/stock/round-00/preview-text-1x.json",
+      "aven": "evidence/aven/round-02/preview-text-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Stock displays a generic text icon and metadata without the document text. Aven displays actual paragraphs, mixed Latin and numbers, Chinese punctuation and emoji. Regular Chinese text has comfortable leading and clear counters. English metadata in the footer is less integrated with the Chinese Open action; binary-versus-decimal sizes differ from Dolphin.",
+        "stock_sha256": "a0960a83d58ce669bccc44ab7b094b01ff687f147fc26efdb08b4767078ee702",
+        "aven_sha256": "7c2c1bc0ccfb16000ee24d766b9a358237593766ac4e5f059d9200c30df22f08"
+      }
+    },
+    {
+      "id": "preview_media",
+      "content_id": "Flower WebM selected in Dolphin",
+      "tags": [
+        "preview_media"
+      ],
+      "stock": "evidence/stock/round-00/preview-media-1x.json",
+      "aven": "evidence/aven/round-02/preview-media-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Aven provides a large video surface and clearly spaced play/pause, seek and time controls. Stock confines playback to its narrow information dock. The captured video frame differs because playback time differs. A static image proves a rendered frame, not continuous playback, latency, audio quality or smooth motion.",
+        "stock_sha256": "b4da09307a0411c3788caf8ffba3f9df5262cf39beb31fa366793e7fdd31d644",
+        "aven_sha256": "73db3fcd078e4969082d209058df076ada95c0f70f58835627f5d95589b9184a"
+      }
+    },
+    {
+      "id": "browser_sc",
+      "content_id": "Local Simplified Chinese City Notes article in Firefox",
+      "tags": [
+        "browser_sc",
+        "typography_sc",
+        "typography_latin"
+      ],
+      "stock": "evidence/stock/round-00/browser-sc-1x.json",
+      "aven": "evidence/aven/round-02/browser-sc-clean-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "The same article remains readable with balanced Chinese/Latin text. Most page typography was already good in stock; its authored layout must not be credited as an Aven redesign. Aven adds the shared native titlebar, but the Firefox tab strip retains a cool lavender-gray fill against the warmer window chrome. The panel shows separate pinned and running Firefox icons. The stock header focus ring is absent in Aven, a transient focus-state difference.",
+        "stock_sha256": "e1d7de2cfcabf86a805d19770fab7e1c686728aa3ea253ada673bd57a695c93b",
+        "aven_sha256": "f06fbb09b56638003c5f026a602d730ed94cc21818257edfbf494b3a9cb6c25f"
+      }
+    },
+    {
+      "id": "browser_tc",
+      "content_id": "Local Traditional Chinese City Notes article in Firefox",
+      "tags": [
+        "browser_tc",
+        "typography_tc"
+      ],
+      "stock": "evidence/stock/round-00/browser-tc-1x.json",
+      "aven": "evidence/aven/round-02/browser-tc-clean-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Traditional Chinese paragraphs, corner quotes and mixed Latin/numbers render clearly in both versions. Aven chrome text is larger and its window surface is calmer, but the tab strip remains visibly separate from the Aven palette. Aven has a duplicate Firefox panel icon. This is Traditional Chinese page content, not evidence of Traditional Chinese native Qt UI.",
+        "stock_sha256": "76ee785cefef840aa9993209cebdf3ebd89e3bcb4a0e90654c93d75f92a5d1ad",
+        "aven_sha256": "6cf884b2bb3a6600d990c255c7c5a6b03f3b4fc3da8fd59f5057f002a760b369"
+      }
+    },
+    {
+      "id": "browser_web",
+      "content_id": "Live Chinese Firefox website in native Firefox",
+      "tags": [
+        "browser_web",
+        "typography_latin"
+      ],
+      "stock": "evidence/stock/round-00/browser-web-1x.json",
+      "aven": "evidence/aven/round-02/browser-web-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Both images show the live firefox.com Chinese page with its own design and graphics intact. Aven provides consistent external window controls but has three visibly different chrome bands and a duplicate task icon. The extra titlebar consumes some content height. Page animation and the first background tab differ; no site behavior or loading-performance judgment is made from these frames.",
+        "stock_sha256": "0d0c8eced834aea43773b48f62ed15e6213d64b5b0e26a96ed1810960b9daedb",
+        "aven_sha256": "f853229944080540ab1362d3a328bc74633b1eca492be67b260f596519f1b7f7"
+      }
+    },
+    {
+      "id": "mail_list",
+      "content_id": "Four fictional offline messages in Thunderbird inbox",
+      "tags": [
+        "mail_list"
+      ],
+      "stock": "evidence/stock/round-00/mail-list-1x.json",
+      "aven": "evidence/aven/round-02/mail-list-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Aven enlarges and softens UI text and uses the shared jade accent. Its narrower message list truncates more sender addresses than stock. The broad empty lavender-gray toolbar band conflicts with the warmer panels below. A second Thunderbird task icon is visible beside the pinned launcher.",
+        "stock_sha256": "f40072653d9715af86401557c42358de7dcd6076de5b75c2192bedd3430d37fe",
+        "aven_sha256": "eef6fbc6169f9845af9fb7315eed50e65047feffb2e4ddd3aeed3977acc10968"
+      }
+    },
+    {
+      "id": "mail_sc",
+      "content_id": "Same fictional Simplified Chinese email opened in Thunderbird",
+      "tags": [
+        "mail_sc",
+        "typography_sc",
+        "typography_latin"
+      ],
+      "stock": "evidence/stock/round-00/mail-sc-1x.json",
+      "aven": "evidence/aven/round-02/mail-sc-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Aven adds useful body margins and more comfortable paragraph leading. Chinese text and embedded times, PDF, README.txt and 2.5 km remain legible and naturally balanced. The header actions remain compact and heavily outlined. The upper toolbar color and duplicate task icon weaken product coherence.",
+        "stock_sha256": "935fd7f46174ab3a64fa947a26cc9a0e4c8bc4aa9d2cf7002310abeadfdca9cf",
+        "aven_sha256": "b40eb967a473afafcc0adfc41acbe8083c3548d8c6c4e7d2298e2dd273a1a6b5"
+      }
+    },
+    {
+      "id": "mail_tc",
+      "content_id": "Same fictional Traditional Chinese email opened in Thunderbird",
+      "tags": [
+        "mail_tc",
+        "typography_tc"
+      ],
+      "stock": "evidence/stock/round-00/mail-tc-1x.json",
+      "aven": "evidence/aven/round-02/mail-tc-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "The Traditional Chinese body is comfortably readable in Aven, with clear dense characters, corner quotation marks, numbers and em dash. Body margins and leading are better than stock. The message-list width causes extra ellipsis, and the cool upper band remains discordant. No missing glyphs are visible in this text sample.",
+        "stock_sha256": "be19c62a6e6509ad5200690c5e80a0ba69d31c1063b664393ac3076e3b523f1e",
+        "aven_sha256": "53755cc2293019c27d1c2990896594b67c9c6fab8973dc307a7fd5c5d87f9b61"
+      }
+    },
+    {
+      "id": "mail_compose",
+      "content_id": "Same fictional saved reply with appended route-confirmation sentence",
+      "tags": [
+        "mail_compose",
+        "typography_sc",
+        "typography_latin"
+      ],
+      "stock": "evidence/stock/round-00/mail-compose-1x.json",
+      "aven": "evidence/aven/round-02/mail-compose-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Both show the same draft text and appended confirmation. Aven decoration, labels and controls are calmer, but the writing body still begins only a few pixels from the left edge, unlike the comfortable reading pane. Compose leading is also tighter than the reading view. The large form/formatting area still feels like conventional Thunderbird. This pair does not itself establish successful saving or sending.",
+        "stock_sha256": "74ade757d5e01b0e4ae33be8a2167260405c1d52ed9eda4604b4d57eec7aa39a",
+        "aven_sha256": "ee6364ce43f78610896ed95edf01d1e5dc53c0510e51225384e4a7c0b7dac4b5"
+      }
+    },
+    {
+      "id": "photos_grid",
+      "content_id": "Eight-photo Kyoto travel album in Gwenview browse view",
+      "tags": [
+        "photos_grid",
+        "qt_sc"
+      ],
+      "stock": "evidence/stock/round-00/photos-grid-1x.json",
+      "aven": "evidence/aven/round-02/photos-grid-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "Aven makes text slightly larger and shares the soft chrome, but the eight photos still form one small row at the top of a mostly empty window. The 144 px-style thumbnails are too small to make browsing feel substantially better than stock. The active Chinese breadcrumb looks disproportionately bold.",
+        "stock_sha256": "d4ce5c702b163332f00d22d041401f864aa2e3a9370e1bd084b75de68ecaf1f6",
+        "aven_sha256": "69d56dce5228a024de1da2cf1fbd2e572ae94c3c1c040b038df30850141e5c4a"
+      }
+    },
+    {
+      "id": "photos_view",
+      "content_id": "Kyoto mountain-river landscape in Gwenview fitted view",
+      "tags": [
+        "photo_landscape"
+      ],
+      "stock": "evidence/stock/round-00/photos-view-1x.json",
+      "aven": "evidence/aven/round-02/photos-view-1x.json",
+      "inspection": {
+        "by": "/root/critic",
+        "notes": "The same complete landscape is displayed without a visible orientation problem. Aven exposes useful adjacent images, but its roughly 150 px-tall filmstrip consumes too much space: the title reports 70% versus stock 92%, and the main image is substantially smaller. The strip is visually heavier than the image-viewing chrome. A shorter strip would retain navigation while restoring focus to the photograph.",
+        "stock_sha256": "0669a9f8c1e1152310e5e004946352bcb9ee7a7d882a3b80c5abbfcf2b3e2403",
+        "aven_sha256": "3a30cd5725c7b38acb43a7b75c8bd82e9017a9c6e8524d02396710330899b6b8"
+      }
+    }
+  ],
+  "scores": {
+    "chinese_typography": {
+      "score": 8.2,
+      "pairs": [
+        "files_home",
+        "files_list",
+        "files_mixed",
+        "preview_text",
+        "browser_sc",
+        "browser_tc",
+        "mail_sc",
+        "mail_tc",
+        "mail_compose",
+        "photos_grid"
+      ],
+      "rationale": "The larger native Chinese UI and readable preview/mail prose are a clear improvement. Simplified and Traditional Chinese body samples have balanced Latin/numerals and no visible missing glyphs. Heavy current breadcrumbs, uneven reading-versus-composing rhythm, and only modest differentiation in browser content keep the observed 1x result below the 8.5 premium reading target.",
+      "limitations": [
+        "Traditional Chinese native Qt UI and fractional/HiDPI paired matrix are not part of this review.",
+        "Browser fixture layout already exists in stock.",
+        "Embedded PDF fonts are excluded from OS font-quality credit."
+      ],
+      "status": "provisional_1x_visual_only"
+    },
+    "latin_typography": {
+      "score": 8.3,
+      "pairs": [
+        "files_home",
+        "files_list",
+        "preview_text",
+        "browser_sc",
+        "browser_web",
+        "mail_sc",
+        "mail_compose"
+      ],
+      "rationale": "Native filenames, window titles and labels are calmer and more legible than the small stock UI. Mixed English/Chinese text has a natural size balance. Mail sender ellipsis and uneven editor margins still interrupt the rhythm.",
+      "limitations": [
+        "No dedicated Latin-only reading or monospace matrix was inspected in this round."
+      ],
+      "status": "provisional_1x_visual_only"
+    },
+    "files_experience": {
+      "score": 8.0,
+      "pairs": [
+        "files_home",
+        "files_list",
+        "files_mixed"
+      ],
+      "rationale": "The wider places sidebar, quieter details view, larger image grid and readable filenames make Files visibly more useful. Internal volume labels and the unnamed red capacity bar remain a distracting unfinished detail.",
+      "limitations": [
+        "Static visual score only; copy/move/rename/trash/restore and navigation behavior are not witnessed by this critic.",
+        "Home state differs: list versus grid and one extra Aven folder."
+      ],
+      "status": "provisional_1x_visual_only"
+    },
+    "file_preview": {
+      "score": 8.4,
+      "pairs": [
+        "preview_image",
+        "preview_pdf",
+        "preview_text",
+        "preview_media"
+      ],
+      "rationale": "The strongest improvement: actual readable content replaces tiny thumbnails or a generic icon, with a restrained shared window and obvious Open control. Minor finish issues are inconsistent size units, English metadata in Chinese chrome and the darker PDF backing.",
+      "limitations": [
+        "Toggle, Escape focus return, repeated invocation, playback continuity, latency and media audio are not established by these stills."
+      ],
+      "status": "provisional_1x_visual_only"
+    },
+    "browser_coherence": {
+      "score": 7.0,
+      "pairs": [
+        "browser_sc",
+        "browser_tc",
+        "browser_web"
+      ],
+      "rationale": "Firefox retains mature browsing and adopts shared external decoration, but the lavender tab strip visibly clashes with Aven chrome. The duplicate pinned/running icon is an integration defect. Web typography is good but mostly already good in the stock fixture.",
+      "limitations": [
+        "Download, file picker, menus and motion are outside this visual review."
+      ],
+      "status": "provisional_1x_visual_only"
+    },
+    "mail_coherence": {
+      "score": 7.3,
+      "pairs": [
+        "mail_list",
+        "mail_sc",
+        "mail_tc",
+        "mail_compose"
+      ],
+      "rationale": "Reading gains useful margins and line spacing, and the jade accent connects it to Files. The empty cool-colored upper strip, cramped composer body edge, compact outlined header actions and duplicate task icon still make it feel only partially integrated.",
+      "limitations": [
+        "Offline fixture only; no sending or account-quality claims.",
+        "Draft save/reopen is not established by this critic from the compose still alone."
+      ],
+      "status": "provisional_1x_visual_only"
+    },
+    "photo_experience": {
+      "score": 6.5,
+      "pairs": [
+        "photos_grid",
+        "photos_view"
+      ],
+      "rationale": "Shared fonts and surfaces improve the frame, but browsing remains a small single thumbnail row. The oversized filmstrip reduces the main photograph from stock 92% fit to 70% fit. This is the least convincing everyday-experience improvement.",
+      "limitations": [
+        "No EXIF/alpha/fullscreen/next-previous or color-management proof is claimed from these two pairs.",
+        "No image transition motion was inspected."
+      ],
+      "status": "provisional_1x_visual_only"
+    },
+    "visual_coherence": {
+      "score": 7.3,
+      "pairs": [
+        "desktop",
+        "files_home",
+        "files_mixed",
+        "browser_web",
+        "mail_list",
+        "photos_grid"
+      ],
+      "rationale": "Wallpaper, panel, decoration, Files and preview form a recognizable restrained visual language. Mozilla interior chrome and duplicated task entries break the single-product impression. Gwenview retains an overly heavy breadcrumb surround and thumbnail strip.",
+      "limitations": [
+        "Assessment covers only the requested application surfaces at 1x."
+      ],
+      "status": "provisional_1x_visual_only"
+    },
+    "perceived_polish": {
+      "score": 7.3,
+      "pairs": [
+        "desktop",
+        "files_mixed",
+        "preview_image",
+        "mail_compose",
+        "photos_view",
+        "browser_web"
+      ],
+      "rationale": "Aven is visibly more intentional and useful, especially in Files and preview. Duplicate launch/task icons, the internal-volume alarm-like bar, uneven text margins and unbalanced photo browsing are conspicuous enough to prevent product-grade overall finish.",
+      "limitations": [
+        "No smoothness or perceived latency claims are made from static frames."
+      ],
+      "status": "provisional_1x_visual_only"
+    }
+  },
+  "three_second": {
+    "answer": true,
+    "pairs": [
+      "desktop",
+      "files_home",
+      "files_mixed"
+    ],
+    "rationale": "Yes for the paired desktop and primary Files surfaces: the broad jade wallpaper, shorter light panel, softer shared decoration and calmer Files layout are unmistakably different and more refined within a glance. This does not mean every application reaches the product-grade quality threshold."
+  },
+  "operations": [],
+  "motion": [],
+  "declared_overall": 7.588888888888889,
+  "pass": false,
+  "assessment_status": "provisional_visual_review_at_1x",
+  "scope": {
+    "paired_scenes": 17,
+    "inspected_pngs": 34,
+    "scale": 1.0,
+    "excluded": [
+      "evidence/aven/round-02/preview-pdf-1x.png"
+    ],
+    "excluded_reason": "Premature PDF frame; ready capture used instead."
+  },
+  "provisional_visual_threshold_pass": false,
+  "pending": [
+    "Complete paired Simplified/Traditional Chinese prose and native Qt UI at 1x, 1.25x, 1.5x and 2x.",
+    "Witness native operations and inspect their evidence.",
+    "Inspect paired motion recordings or observe motion live.",
+    "Reinspect corrected Photos, Firefox/Thunderbird chrome and launcher identity, composer margins and Files sidebar."
+  ],
+  "recommended_fixes": [
+    {
+      "priority": 1,
+      "area": "Photos",
+      "pairs": [
+        "photos_grid",
+        "photos_view"
+      ],
+      "change": "Increase browse thumbnails enough for a useful multi-row album (try 240–280 logical px), and reduce the viewer filmstrip to roughly 84–100 logical px. Recheck both landscape and portrait before choosing the final defaults."
+    },
+    {
+      "priority": 1,
+      "area": "Browser/Mail launcher identity",
+      "pairs": [
+        "browser_sc",
+        "browser_web",
+        "mail_list"
+      ],
+      "change": "Make each running native application bind to its pinned Aven launcher so one icon represents one app. Retain the real Firefox/Thunderbird application identity."
+    },
+    {
+      "priority": 1,
+      "area": "Mozilla chrome",
+      "pairs": [
+        "browser_sc",
+        "browser_web",
+        "mail_list"
+      ],
+      "change": "Bring the lavender tab/toolbar strips into the same neutral surface family as the shared titlebar using the smallest supported theme/configuration change. Keep site and message content rendering independent."
+    },
+    {
+      "priority": 1,
+      "area": "Mail writing typography",
+      "pairs": [
+        "mail_compose",
+        "mail_sc"
+      ],
+      "change": "Give the compose body a modest reading-like inset, around 24 px, and verify comfortable Chinese line/paragraph rhythm without changing message semantics."
+    },
+    {
+      "priority": 2,
+      "area": "Files sidebar",
+      "pairs": [
+        "files_home",
+        "files_list"
+      ],
+      "change": "Hide only known irrelevant internal/immutable system-volume entries by default or give useful volumes meaningful labels. Do not suppress a real user-volume capacity warning or remove device access."
+    },
+    {
+      "priority": 2,
+      "area": "Chinese UI weight",
+      "pairs": [
+        "files_list",
+        "photos_grid"
+      ],
+      "change": "Check the actual current-breadcrumb weight against the regular Chinese UI. Reduce the visually heavy emphasis only if a small maintainable native adjustment is available; avoid global fake bold or font distortion."
+    },
+    {
+      "priority": 2,
+      "area": "Preview details",
+      "pairs": [
+        "preview_image",
+        "preview_pdf",
+        "preview_text"
+      ],
+      "change": "Use the same byte-size convention as Dolphin and a gentler neutral PDF backing. Localize owned metadata labels consistently where feasible."
+    }
+  ]
+}

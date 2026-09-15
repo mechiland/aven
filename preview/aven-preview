@@ -1,0 +1,5 @@
+#!/usr/bin/python3
+"""Installed beside aven_preview so no custom PYTHONPATH is required."""
+from aven_preview.app import main
+
+raise SystemExit(main())

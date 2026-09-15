@@ -1,0 +1,10 @@
+{
+    "image-end-offset": 9778102272,
+    "compressed-clusters": 245418,
+    "total-clusters": 786432,
+    "check-errors": 0,
+    "allocated-clusters": 278958,
+    "filename": "output/aven-prototype-round04.qcow2",
+    "format": "qcow2",
+    "fragmented-clusters": 249928
+}

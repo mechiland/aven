@@ -1,0 +1,923 @@
+{
+  "captured_at": "2026-09-15T06:35:43.795978+00:00",
+  "guest": "aven",
+  "round": 4,
+  "scene": "op-browser-cn-ready",
+  "declared_scale": 1.0,
+  "declared_locale": "zh_CN.UTF-8",
+  "note": "Managed Firefox relaunched in zh_CN locale for matched native browser interaction; wait for actual scene.",
+  "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+  "framebuffer_transport": {
+    "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+    "width": 1920,
+    "height": 1200,
+    "captured_at": "2026-09-15T06:35:43.795978+00:00",
+    "rfb_version": "RFB 003.008",
+    "server_name": "QEMU (Aven aven)",
+    "endpoint": "127.0.0.1:5921",
+    "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+    "input_events_sent": 0
+  },
+  "image": "evidence/aven/round-04/op-browser-cn-ready-1x.png",
+  "sha256": "66a20fed4241e29a62c1d635f6d62e7a7f31d795d673eba4a569c6d28a7cdfc1",
+  "guest_probe_stdout": "{\n  \"deployments\" : [\n    {\n      \"unlocked\" : \"none\",\n      \"base-local-replacements\" : [],\n      \"requested-local-packages\" : [],\n      \"base-commit-meta\" : {\n        \"ostree.bootable\" : true,\n        \"ostree.composefs.digest.v0\" : [\n          210,\n          130,\n          150,\n          56,\n          32,\n          158,\n          174,\n          90,\n          135,\n          139,\n          252,\n          144,\n          214,\n          247,\n          250,\n          92,\n          94,\n          235,\n          208,\n          127,\n          59,\n          28,\n          50,\n          28,\n          196,\n          204,\n          131,\n          178,\n          192,\n          240,\n          85,\n          179\n        ],\n        \"rpmostree.inputhash\" : \"d1c5e33056e32f841f41b08fb1b120b2eb1531b77a23dd6c0249d80fa1246b0a\",\n        \"version\" : \"44.20260913.0\",\n        \"ostree.linux\" : \"7.2.5-200.fc44.x86_64\",\n        \"ostree.container-cmd\" : [\n          \"/usr/bin/bash\"\n        ],\n        \"rpmostree.rpmmd-repos\" : [\n          {\n            \"id\" : \"repo-0\",\n            \"timestamp\" : 7552229162816110592\n          },\n          {\n            \"id\" : \"repo-1\",\n            \"timestamp\" : 715128315530182656\n          },\n          {\n            \"id\" : \"repo-2\",\n            \"timestamp\" : -5337709583655763968\n          }\n        ]\n      },\n      \"base-removals\" : [],\n      \"gpg-enabled\" : true,\n      \"pinned\" : true,\n      \"osname\" : \"fedora\",\n      \"base-remote-replacements\" : {      },\n      \"origin\" : \"fedora:fedora/44/x86_64/kinoite\",\n      \"regenerate-initramfs\" : false,\n      \"checksum\" : \"37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551\",\n      \"requested-base-local-replacements\" : [],\n      \"id\" : \"fedora-37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551.0\",\n      \"version\" : \"44.20260913.0\",\n      \"base-version\" : \"44.20260913.0\",\n      \"base-checksum\" : \"be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df\",\n      \"requested-base-removals\" : [],\n      \"requested-local-fileoverride-packages\" : [],\n      \"serial\" : 0,\n      \"base-timestamp\" : 1789260742,\n      \"staged\" : false,\n      \"booted\" : true,\n      \"layered-commit-meta\" : {\n        \"rpmostree.clientlayer\" : true,\n        \"version\" : \"44.20260913.0\",\n        \"rpmostree.clientlayer_version\" : 6,\n        \"rpmostree.state-sha512\" : \"be4b2a1f27bf9b5c35155cf49a8d9756410daa635a6c86a50616fb321d92aadfd195ad6920964e0ea07750fb2db89e40aa6a99c8541f5f7030f92b8c5c2d43c9\",\n        \"rpmostree.rpmmd-repos\" : [\n          {\n            \"id\" : \"fedora-cisco-openh264\",\n            \"timestamp\" : 1774348624\n          },\n          {\n            \"id\" : \"updates\",\n            \"timestamp\" : 1789432644\n          },\n          {\n            \"id\" : \"fedora\",\n            \"timestamp\" : 1776864872\n          },\n          {\n            \"id\" : \"updates-archive\",\n            \"timestamp\" : 1789007268\n          }\n        ],\n        \"ostree.linux\" : \"7.2.5-200.fc44.x86_64\",\n        \"ostree.bootable\" : true\n      },\n      \"packages\" : [\n        \"glibc-langpack-zh\",\n        \"gwenview\",\n        \"okular\",\n        \"thunderbird\"\n      ],\n      \"requested-packages\" : [\n        \"glibc-langpack-zh\",\n        \"gwenview\",\n        \"okular\",\n        \"python3-pyside6\",\n        \"thunderbird\"\n      ],\n      \"timestamp\" : 1789446670,\n      \"signatures\" : [\n        [\n          true,\n          false,\n          false,\n          false,\n          false,\n          \"36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6\",\n          1789260873,\n          0,\n          \"RSA\",\n          \"SHA256\",\n          \"Fedora\",\n          \"fedora-44-primary@fedoraproject.org\",\n          \"36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6\",\n          0,\n          0\n        ]\n      ]\n    },\n    {\n      \"unlocked\" : \"none\",\n      \"pending-base-version\" : \"44.20260913.0\",\n      \"requested-local-packages\" : [],\n      \"base-commit-meta\" : {\n        \"ostree.bootable\" : true,\n        \"ostree.composefs.digest.v0\" : [\n          247,\n          148,\n          109,\n          26,\n          201,\n          236,\n          131,\n          35,\n          216,\n          178,\n          215,\n          229,\n          185,\n          66,\n          202,\n          78,\n          24,\n          153,\n          19,\n          144,\n          175,\n          197,\n          240,\n          248,\n          169,\n          224,\n          254,\n          134,\n          36,\n          15,\n          146,\n          119\n        ],\n        \"rpmostree.inputhash\" : \"90a6c2ba83c304d79812497c33a260f44f4440fa37ae303fe72a0c251e5c7dc1\",\n        \"version\" : \"44.1.7\",\n        \"ostree.linux\" : \"6.19.10-300.fc44.x86_64\",\n        \"ostree.container-cmd\" : [\n          \"/usr/bin/bash\"\n        ],\n        \"rpmostree.rpmmd-repos\" : [\n          {\n            \"id\" : \"repo-0\",\n            \"timestamp\" : 4812633214491295744\n          },\n          {\n            \"id\" : \"repo-1\",\n            \"timestamp\" : 4380569125240438784\n          }\n        ]\n      },\n      \"base-removals\" : [],\n      \"gpg-enabled\" : true,\n      \"pinned\" : false,\n      \"osname\" : \"fedora\",\n      \"base-remote-replacements\" : {      },\n      \"origin\" : \"fedora:fedora/44/x86_64/kinoite\",\n      \"regenerate-initramfs\" : false,\n      \"checksum\" : \"13e5eb8feb19a2cd200d10ecd06c5d04f77c6e5324e74f8d57940e67b6189b3d\",\n      \"requested-base-local-replacements\" : [],\n      \"id\" : \"fedora-13e5eb8feb19a2cd200d10ecd06c5d04f77c6e5324e74f8d57940e67b6189b3d.0\",\n      \"version\" : \"44.1.7\",\n      \"requested-local-fileoverride-packages\" : [],\n      \"requested-base-removals\" : [],\n      \"signatures\" : [\n        [\n          true,\n          false,\n          false,\n          false,\n          false,\n          \"36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6\",\n          1776864643,\n          0,\n          \"RSA\",\n          \"SHA256\",\n          \"Fedora\",\n          \"fedora-44-primary@fedoraproject.org\",\n          \"36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6\",\n          0,\n          0\n        ]\n      ],\n      \"requested-packages\" : [],\n      \"serial\" : 0,\n      \"timestamp\" : 1776864538,\n      \"staged\" : false,\n      \"booted\" : false,\n      \"packages\" : [],\n      \"pending-base-timestamp\" : 1789260742,\n      \"base-local-replacements\" : [],\n      \"pending-base-checksum\" : \"be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df\"\n    }\n  ],\n  \"transaction\" : null,\n  \"cached-update\" : null,\n  \"update-driver\" : null\n}plasma-desktop-6.7.5-1.fc44.x86_64\nkwin-6.7.5-1.fc44.x86_64\ndolphin-26.08.1-1.fc44.x86_64\nfirefox-155.0-1.fc44.x86_64\nthunderbird-153.0.2-2.fc44.x86_64\ngwenview-26.08.1-1.fc44.x86_64\nfontconfig-2.17.0-4.fc44.x86_64\nfreetype-2.14.3-1.fc44.x86_64\nNAME=\"Fedora Linux\"\nVERSION=\"44.20260913.0 (Kinoite)\"\nRELEASE_TYPE=stable\nID=fedora\nVERSION_ID=44\nVERSION_CODENAME=\"\"\nPRETTY_NAME=\"Fedora Linux 44.20260913.0 (Kinoite)\"\nANSI_COLOR=\"0;38;2;60;110;180\"\nLOGO=fedora-logo-icon\nCPE_NAME=\"cpe:/o:fedoraproject:fedora:44\"\nDEFAULT_HOSTNAME=\"fedora\"\nHOME_URL=\"https://kinoite.fedoraproject.org\"\nDOCUMENTATION_URL=\"https://docs.fedoraproject.org/en-US/fedora-kinoite/\"\nSUPPORT_URL=\"https://ask.fedoraproject.org/\"\nBUG_REPORT_URL=\"https://pagure.io/fedora-kde/SIG/issues\"\nREDHAT_BUGZILLA_PRODUCT=\"Fedora\"\nREDHAT_BUGZILLA_PRODUCT_VERSION=44\nREDHAT_SUPPORT_PRODUCT=\"Fedora\"\nREDHAT_SUPPORT_PRODUCT_VERSION=44\nSUPPORT_END=2027-05-19\nVARIANT=\"Kinoite\"\nVARIANT_ID=kinoite\nOSTREE_VERSION='44.20260913.0'\n\u001b[01;32mOutput: \u001b[0;0m1 Virtual-1 352972cb-4edc-4d1b-83fa-d6b0eb6b1e0a\n\t\u001b[01;32menabled\u001b[0;0m\n\t\u001b[01;32mconnected\u001b[0;0m\n\t\u001b[01;32mpriority 1\u001b[0;0m\n\t\u001b[01;33mUnknown\u001b[0;0m\n\t\u001b[01;33mreplication source:\u001b[0;0m0\n\t\u001b[01;34mModes: \u001b[0;0m 1:\u001b[01;32m1920x1200@75.00*\u001b[0;0m!  2:5120x2160@50.00  3:4096x2160@50.00  4:3840x2160@60.00  5:3840x2160@59.94  6:3840x2160@50.00  7:1920x1440@60.00  8:2560x1080@50.00  9:1856x1392@59.99  10:1792x1344@60.00  11:2048x1152@60.00  12:1920x1200@59.88  13:1920x1080@60.00  14:1920x1080@50.00  15:1600x1200@60.00  16:1680x1050@59.95  17:1400x1050@59.98  18:1280x1024@60.02  19:1440x900@59.89  20:1280x960@60.00  21:1360x768@60.01  22:1280x768@59.87  23:1024x768@60.00  24:800x600@60.32  25:640x480@60.00  26:640x480@59.94  27:1280x720@59.74  28:1600x900@59.83  29:2560x1440@59.95 \n\u001b[01;33m\tCustom modes:\u001b[0;0m\n\t\t0: 1280x720@59.74 (reduced blanking)\n\t\t1: 1600x900@59.83 (reduced blanking)\n\t\t2: 2560x1440@59.95 (reduced blanking)\n\u001b[01;33m\tGeometry: \u001b[0;0m0,0 1920x1200\n\u001b[01;33m\tScale: \u001b[0;0m1\n\u001b[01;33m\tRotation: \u001b[0;0m1\n\u001b[01;33m\tOverscan: \u001b[0;0m0\n\u001b[01;33m\tVrr: \u001b[0;0mincapable\n\u001b[01;33m\tRgbRange: \u001b[0;0munknown\n\u001b[01;33m\tHDR: \u001b[0;0mincapable\n\u001b[01;33m\tWide Color Gamut: \u001b[0;0mincapable\n\u001b[01;33m\tICC profile: \u001b[0;0mnone\n\u001b[01;33m\tColor profile source: \u001b[0;0msRGB\n\u001b[01;33m\tColor power preference: \u001b[0;0mprefer efficiency and performance\n\u001b[01;33m\tBrightness control: \u001b[0;0msupported, set to 100% and dimming to 100%\n\u001b[01;33m\tColor resolution: unknown\n\u001b[01;33m\tAllow EDR: \u001b[0;0munsupported\n\u001b[01;33m\tSharpness control: \u001b[0;0munsupported\n\u001b[01;33m\tAutomatic brightness: \u001b[0;0munsupported\n\u001b[01;33m\tAuto Rotate Policy: \u001b[0;0mincapable\n\u001b[01;33m\tAdaptive backlight modulation: \u001b[0;0munsupported\n",
+  "guest_probe_stderr": "",
+  "guest_probe_exit_code": 0,
+  "runtime_probe": {
+    "schema_version": 1,
+    "captured_at": "2026-09-15T06:35:44.396694+00:00",
+    "guest": "aven",
+    "method": "guest runtime probe; integer QScreen without a window, fractional transparent Qt surface after capture with focus-return check",
+    "machine": "x86_64",
+    "os_release": "NAME=\"Fedora Linux\"\nVERSION=\"44.20260913.0 (Kinoite)\"\nRELEASE_TYPE=stable\nID=fedora\nVERSION_ID=44\nVERSION_CODENAME=\"\"\nPRETTY_NAME=\"Fedora Linux 44.20260913.0 (Kinoite)\"\nANSI_COLOR=\"0;38;2;60;110;180\"\nLOGO=fedora-logo-icon\nCPE_NAME=\"cpe:/o:fedoraproject:fedora:44\"\nDEFAULT_HOSTNAME=\"fedora\"\nHOME_URL=\"https://kinoite.fedoraproject.org\"\nDOCUMENTATION_URL=\"https://docs.fedoraproject.org/en-US/fedora-kinoite/\"\nSUPPORT_URL=\"https://ask.fedoraproject.org/\"\nBUG_REPORT_URL=\"https://pagure.io/fedora-kde/SIG/issues\"\nREDHAT_BUGZILLA_PRODUCT=\"Fedora\"\nREDHAT_BUGZILLA_PRODUCT_VERSION=44\nREDHAT_SUPPORT_PRODUCT=\"Fedora\"\nREDHAT_SUPPORT_PRODUCT_VERSION=44\nSUPPORT_END=2027-05-19\nVARIANT=\"Kinoite\"\nVARIANT_ID=kinoite\nOSTREE_VERSION='44.20260913.0'\n",
+    "ostree_booted": true,
+    "environment": {
+      "XDG_SESSION_TYPE": "wayland",
+      "XDG_CURRENT_DESKTOP": "KDE",
+      "WAYLAND_DISPLAY": "wayland-0",
+      "LANG": "zh_CN.UTF-8",
+      "LC_ALL": "zh_CN.UTF-8",
+      "LANGUAGE": "zh_CN",
+      "QT_SCALE_FACTOR": null,
+      "QT_SCREEN_SCALE_FACTORS": null,
+      "GDK_SCALE": null,
+      "GDK_DPI_SCALE": null,
+      "FREETYPE_PROPERTIES": null
+    },
+    "config_sha256": {
+      "/home/aven/.config/kdeglobals": "a014c2cb5e87fa7f627828522dfab396698a2e74a917524f9c137679c03eb588",
+      "/home/aven/.config/kwinrc": "dc67d98e975a44aa7e6f181f19f36e9a5435e3e23c7afb8f438961019d9a785a",
+      "/home/aven/.config/dolphinrc": "8af0e3b7f84b5f5d73f2db095c6248a383b32208b41975fae3b25ed8ff7f7bda",
+      "/home/aven/.config/gwenviewrc": "599e30e39d4cc4a9e6c168ae5bbcd216803b8f7539c3389fdf93d4747172b574",
+      "/home/aven/.config/gtk-3.0/settings.ini": "e081ac5805953ce0154ddf868929528d51da928f1fb2d9d251fadf497aa3ad87",
+      "/home/aven/.config/gtk-4.0/settings.ini": "0455e632db2c7aa05866f33fd6cd1f5b0625358a3001c788621e6ad40c2c51d8",
+      "/etc/fonts/conf.d/60-aven-families.conf": "049a4febfe4e49c3ba6f44052e42f8164d7c37d20c96c8e36be9a1a29b667845",
+      "/etc/fonts/conf.d/99-aven-rendering.conf": "81bc7c6ba7aa6beb635acacc24e309e511dccd567b2a0c8c758953af2ff4f66a"
+    },
+    "commands": {
+      "atomic": {
+        "argv": [
+          "rpm-ostree",
+          "status",
+          "--json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"deployments\" : [\n    {\n      \"unlocked\" : \"none\",\n      \"base-local-replacements\" : [],\n      \"requested-local-packages\" : [],\n      \"base-commit-meta\" : {\n        \"ostree.bootable\" : true,\n        \"ostree.composefs.digest.v0\" : [\n          210,\n          130,\n          150,\n          56,\n          32,\n          158,\n          174,\n          90,\n          135,\n          139,\n          252,\n          144,\n          214,\n          247,\n          250,\n          92,\n          94,\n          235,\n          208,\n          127,\n          59,\n          28,\n          50,\n          28,\n          196,\n          204,\n          131,\n          178,\n          192,\n          240,\n          85,\n          179\n        ],\n        \"rpmostree.inputhash\" : \"d1c5e33056e32f841f41b08fb1b120b2eb1531b77a23dd6c0249d80fa1246b0a\",\n        \"version\" : \"44.20260913.0\",\n        \"ostree.linux\" : \"7.2.5-200.fc44.x86_64\",\n        \"ostree.container-cmd\" : [\n          \"/usr/bin/bash\"\n        ],\n        \"rpmostree.rpmmd-repos\" : [\n          {\n            \"id\" : \"repo-0\",\n            \"timestamp\" : 7552229162816110592\n          },\n          {\n            \"id\" : \"repo-1\",\n            \"timestamp\" : 715128315530182656\n          },\n          {\n            \"id\" : \"repo-2\",\n            \"timestamp\" : -5337709583655763968\n          }\n        ]\n      },\n      \"base-removals\" : [],\n      \"gpg-enabled\" : true,\n      \"pinned\" : true,\n      \"osname\" : \"fedora\",\n      \"base-remote-replacements\" : {      },\n      \"origin\" : \"fedora:fedora/44/x86_64/kinoite\",\n      \"regenerate-initramfs\" : false,\n      \"checksum\" : \"37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551\",\n      \"requested-base-local-replacements\" : [],\n      \"id\" : \"fedora-37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551.0\",\n      \"version\" : \"44.20260913.0\",\n      \"base-version\" : \"44.20260913.0\",\n      \"base-checksum\" : \"be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df\",\n      \"requested-base-removals\" : [],\n      \"requested-local-fileoverride-packages\" : [],\n      \"serial\" : 0,\n      \"base-timestamp\" : 1789260742,\n      \"staged\" : false,\n      \"booted\" : true,\n      \"layered-commit-meta\" : {\n        \"rpmostree.clientlayer\" : true,\n        \"version\" : \"44.20260913.0\",\n        \"rpmostree.clientlayer_version\" : 6,\n        \"rpmostree.state-sha512\" : \"be4b2a1f27bf9b5c35155cf49a8d9756410daa635a6c86a50616fb321d92aadfd195ad6920964e0ea07750fb2db89e40aa6a99c8541f5f7030f92b8c5c2d43c9\",\n        \"rpmostree.rpmmd-repos\" : [\n          {\n            \"id\" : \"fedora-cisco-openh264\",\n            \"timestamp\" : 1774348624\n          },\n          {\n            \"id\" : \"updates\",\n            \"timestamp\" : 1789432644\n          },\n          {\n            \"id\" : \"fedora\",\n            \"timestamp\" : 1776864872\n          },\n          {\n            \"id\" : \"updates-archive\",\n            \"timestamp\" : 1789007268\n          }\n        ],\n        \"ostree.linux\" : \"7.2.5-200.fc44.x86_64\",\n        \"ostree.bootable\" : true\n      },\n      \"packages\" : [\n        \"glibc-langpack-zh\",\n        \"gwenview\",\n        \"okular\",\n        \"thunderbird\"\n      ],\n      \"requested-packages\" : [\n        \"glibc-langpack-zh\",\n        \"gwenview\",\n        \"okular\",\n        \"python3-pyside6\",\n        \"thunderbird\"\n      ],\n      \"timestamp\" : 1789446670,\n      \"signatures\" : [\n        [\n          true,\n          false,\n          false,\n          false,\n          false,\n          \"36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6\",\n          1789260873,\n          0,\n          \"RSA\",\n          \"SHA256\",\n          \"Fedora\",\n          \"fedora-44-primary@fedoraproject.org\",\n          \"36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6\",\n          0,\n          0\n        ]\n      ]\n    },\n    {\n      \"unlocked\" : \"none\",\n      \"pending-base-version\" : \"44.20260913.0\",\n      \"requested-local-packages\" : [],\n      \"base-commit-meta\" : {\n        \"ostree.bootable\" : true,\n        \"ostree.composefs.digest.v0\" : [\n          247,\n          148,\n          109,\n          26,\n          201,\n          236,\n          131,\n          35,\n          216,\n          178,\n          215,\n          229,\n          185,\n          66,\n          202,\n          78,\n          24,\n          153,\n          19,\n          144,\n          175,\n          197,\n          240,\n          248,\n          169,\n          224,\n          254,\n          134,\n          36,\n          15,\n          146,\n          119\n        ],\n        \"rpmostree.inputhash\" : \"90a6c2ba83c304d79812497c33a260f44f4440fa37ae303fe72a0c251e5c7dc1\",\n        \"version\" : \"44.1.7\",\n        \"ostree.linux\" : \"6.19.10-300.fc44.x86_64\",\n        \"ostree.container-cmd\" : [\n          \"/usr/bin/bash\"\n        ],\n        \"rpmostree.rpmmd-repos\" : [\n          {\n            \"id\" : \"repo-0\",\n            \"timestamp\" : 4812633214491295744\n          },\n          {\n            \"id\" : \"repo-1\",\n            \"timestamp\" : 4380569125240438784\n          }\n        ]\n      },\n      \"base-removals\" : [],\n      \"gpg-enabled\" : true,\n      \"pinned\" : false,\n      \"osname\" : \"fedora\",\n      \"base-remote-replacements\" : {      },\n      \"origin\" : \"fedora:fedora/44/x86_64/kinoite\",\n      \"regenerate-initramfs\" : false,\n      \"checksum\" : \"13e5eb8feb19a2cd200d10ecd06c5d04f77c6e5324e74f8d57940e67b6189b3d\",\n      \"requested-base-local-replacements\" : [],\n      \"id\" : \"fedora-13e5eb8feb19a2cd200d10ecd06c5d04f77c6e5324e74f8d57940e67b6189b3d.0\",\n      \"version\" : \"44.1.7\",\n      \"requested-local-fileoverride-packages\" : [],\n      \"requested-base-removals\" : [],\n      \"signatures\" : [\n        [\n          true,\n          false,\n          false,\n          false,\n          false,\n          \"36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6\",\n          1776864643,\n          0,\n          \"RSA\",\n          \"SHA256\",\n          \"Fedora\",\n          \"fedora-44-primary@fedoraproject.org\",\n          \"36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6\",\n          0,\n          0\n        ]\n      ],\n      \"requested-packages\" : [],\n      \"serial\" : 0,\n      \"timestamp\" : 1776864538,\n      \"staged\" : false,\n      \"booted\" : false,\n      \"packages\" : [],\n      \"pending-base-timestamp\" : 1789260742,\n      \"base-local-replacements\" : [],\n      \"pending-base-checksum\" : \"be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df\"\n    }\n  ],\n  \"transaction\" : null,\n  \"cached-update\" : null,\n  \"update-driver\" : null\n}",
+        "stderr": "",
+        "json": {
+          "deployments": [
+            {
+              "unlocked": "none",
+              "base-local-replacements": [],
+              "requested-local-packages": [],
+              "base-commit-meta": {
+                "ostree.bootable": true,
+                "ostree.composefs.digest.v0": [
+                  210,
+                  130,
+                  150,
+                  56,
+                  32,
+                  158,
+                  174,
+                  90,
+                  135,
+                  139,
+                  252,
+                  144,
+                  214,
+                  247,
+                  250,
+                  92,
+                  94,
+                  235,
+                  208,
+                  127,
+                  59,
+                  28,
+                  50,
+                  28,
+                  196,
+                  204,
+                  131,
+                  178,
+                  192,
+                  240,
+                  85,
+                  179
+                ],
+                "rpmostree.inputhash": "d1c5e33056e32f841f41b08fb1b120b2eb1531b77a23dd6c0249d80fa1246b0a",
+                "version": "44.20260913.0",
+                "ostree.linux": "7.2.5-200.fc44.x86_64",
+                "ostree.container-cmd": [
+                  "/usr/bin/bash"
+                ],
+                "rpmostree.rpmmd-repos": [
+                  {
+                    "id": "repo-0",
+                    "timestamp": 7552229162816110592
+                  },
+                  {
+                    "id": "repo-1",
+                    "timestamp": 715128315530182656
+                  },
+                  {
+                    "id": "repo-2",
+                    "timestamp": -5337709583655763968
+                  }
+                ]
+              },
+              "base-removals": [],
+              "gpg-enabled": true,
+              "pinned": true,
+              "osname": "fedora",
+              "base-remote-replacements": {},
+              "origin": "fedora:fedora/44/x86_64/kinoite",
+              "regenerate-initramfs": false,
+              "checksum": "37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551",
+              "requested-base-local-replacements": [],
+              "id": "fedora-37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551.0",
+              "version": "44.20260913.0",
+              "base-version": "44.20260913.0",
+              "base-checksum": "be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df",
+              "requested-base-removals": [],
+              "requested-local-fileoverride-packages": [],
+              "serial": 0,
+              "base-timestamp": 1789260742,
+              "staged": false,
+              "booted": true,
+              "layered-commit-meta": {
+                "rpmostree.clientlayer": true,
+                "version": "44.20260913.0",
+                "rpmostree.clientlayer_version": 6,
+                "rpmostree.state-sha512": "be4b2a1f27bf9b5c35155cf49a8d9756410daa635a6c86a50616fb321d92aadfd195ad6920964e0ea07750fb2db89e40aa6a99c8541f5f7030f92b8c5c2d43c9",
+                "rpmostree.rpmmd-repos": [
+                  {
+                    "id": "fedora-cisco-openh264",
+                    "timestamp": 1774348624
+                  },
+                  {
+                    "id": "updates",
+                    "timestamp": 1789432644
+                  },
+                  {
+                    "id": "fedora",
+                    "timestamp": 1776864872
+                  },
+                  {
+                    "id": "updates-archive",
+                    "timestamp": 1789007268
+                  }
+                ],
+                "ostree.linux": "7.2.5-200.fc44.x86_64",
+                "ostree.bootable": true
+              },
+              "packages": [
+                "glibc-langpack-zh",
+                "gwenview",
+                "okular",
+                "thunderbird"
+              ],
+              "requested-packages": [
+                "glibc-langpack-zh",
+                "gwenview",
+                "okular",
+                "python3-pyside6",
+                "thunderbird"
+              ],
+              "timestamp": 1789446670,
+              "signatures": [
+                [
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  "36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6",
+                  1789260873,
+                  0,
+                  "RSA",
+                  "SHA256",
+                  "Fedora",
+                  "fedora-44-primary@fedoraproject.org",
+                  "36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6",
+                  0,
+                  0
+                ]
+              ]
+            },
+            {
+              "unlocked": "none",
+              "pending-base-version": "44.20260913.0",
+              "requested-local-packages": [],
+              "base-commit-meta": {
+                "ostree.bootable": true,
+                "ostree.composefs.digest.v0": [
+                  247,
+                  148,
+                  109,
+                  26,
+                  201,
+                  236,
+                  131,
+                  35,
+                  216,
+                  178,
+                  215,
+                  229,
+                  185,
+                  66,
+                  202,
+                  78,
+                  24,
+                  153,
+                  19,
+                  144,
+                  175,
+                  197,
+                  240,
+                  248,
+                  169,
+                  224,
+                  254,
+                  134,
+                  36,
+                  15,
+                  146,
+                  119
+                ],
+                "rpmostree.inputhash": "90a6c2ba83c304d79812497c33a260f44f4440fa37ae303fe72a0c251e5c7dc1",
+                "version": "44.1.7",
+                "ostree.linux": "6.19.10-300.fc44.x86_64",
+                "ostree.container-cmd": [
+                  "/usr/bin/bash"
+                ],
+                "rpmostree.rpmmd-repos": [
+                  {
+                    "id": "repo-0",
+                    "timestamp": 4812633214491295744
+                  },
+                  {
+                    "id": "repo-1",
+                    "timestamp": 4380569125240438784
+                  }
+                ]
+              },
+              "base-removals": [],
+              "gpg-enabled": true,
+              "pinned": false,
+              "osname": "fedora",
+              "base-remote-replacements": {},
+              "origin": "fedora:fedora/44/x86_64/kinoite",
+              "regenerate-initramfs": false,
+              "checksum": "13e5eb8feb19a2cd200d10ecd06c5d04f77c6e5324e74f8d57940e67b6189b3d",
+              "requested-base-local-replacements": [],
+              "id": "fedora-13e5eb8feb19a2cd200d10ecd06c5d04f77c6e5324e74f8d57940e67b6189b3d.0",
+              "version": "44.1.7",
+              "requested-local-fileoverride-packages": [],
+              "requested-base-removals": [],
+              "signatures": [
+                [
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  "36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6",
+                  1776864643,
+                  0,
+                  "RSA",
+                  "SHA256",
+                  "Fedora",
+                  "fedora-44-primary@fedoraproject.org",
+                  "36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6",
+                  0,
+                  0
+                ]
+              ],
+              "requested-packages": [],
+              "serial": 0,
+              "timestamp": 1776864538,
+              "staged": false,
+              "booted": false,
+              "packages": [],
+              "pending-base-timestamp": 1789260742,
+              "base-local-replacements": [],
+              "pending-base-checksum": "be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df"
+            }
+          ],
+          "transaction": null,
+          "cached-update": null,
+          "update-driver": null
+        }
+      },
+      "packages": {
+        "argv": [
+          "rpm",
+          "-q",
+          "plasma-desktop",
+          "kwin",
+          "dolphin",
+          "firefox",
+          "thunderbird",
+          "gwenview",
+          "fontconfig",
+          "freetype",
+          "python3-pyside6",
+          "xdg-desktop-portal-kde"
+        ],
+        "exit_code": 0,
+        "stdout": "plasma-desktop-6.7.5-1.fc44.x86_64\nkwin-6.7.5-1.fc44.x86_64\ndolphin-26.08.1-1.fc44.x86_64\nfirefox-155.0-1.fc44.x86_64\nthunderbird-153.0.2-2.fc44.x86_64\ngwenview-26.08.1-1.fc44.x86_64\nfontconfig-2.17.0-4.fc44.x86_64\nfreetype-2.14.3-1.fc44.x86_64\npython3-pyside6-6.11.2-1.fc44.x86_64\nxdg-desktop-portal-kde-6.7.5-1.fc44.x86_64\n",
+        "stderr": ""
+      },
+      "font_packages": {
+        "argv": [
+          "rpm",
+          "-qa",
+          "*noto*",
+          "*cjk*",
+          "glibc-langpack-zh"
+        ],
+        "exit_code": 0,
+        "stdout": "google-noto-fonts-common-20251201-2.fc44.noarch\ngoogle-noto-sans-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-mono-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-devanagari-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-bengali-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-hebrew-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-color-emoji-fonts-20250623-4.fc44.noarch\ngoogle-noto-naskh-arabic-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-arabic-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-armenian-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-canadian-aboriginal-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-cherokee-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-ethiopic-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-georgian-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-gothic-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-gujarati-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-gurmukhi-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-kannada-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-khmer-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-lao-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-math-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-meetei-mayek-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-mono-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-nko-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-ol-chiki-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-oriya-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-sinhala-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-symbols-2-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-symbols-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-syriac-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-tamil-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-telugu-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-thaana-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-thai-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-yi-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-armenian-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-bengali-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-devanagari-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-ethiopic-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-georgian-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-gujarati-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-gurmukhi-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-hebrew-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-kannada-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-khmer-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-lao-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-oriya-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-sinhala-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-tamil-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-telugu-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-serif-thai-vf-fonts-20251201-2.fc44.noarch\ngoogle-noto-sans-cjk-vf-fonts-2.004-11.fc44.noarch\ngoogle-noto-sans-mono-cjk-vf-fonts-2.004-11.fc44.noarch\ngoogle-noto-serif-cjk-vf-fonts-2.003-4.fc44.noarch\ndefault-fonts-cjk-serif-4.3-1.fc44.noarch\ndefault-fonts-cjk-mono-4.3-1.fc44.noarch\ndefault-fonts-cjk-sans-4.3-1.fc44.noarch\ngoogle-noto-serif-fonts-20251201-2.fc44.noarch\ngoogle-noto-emoji-fonts-20250623-4.fc44.noarch\nglibc-langpack-zh-2.43-8.fc44.x86_64\n",
+        "stderr": ""
+      },
+      "display": {
+        "argv": [
+          "kscreen-doctor",
+          "-o"
+        ],
+        "exit_code": 0,
+        "stdout": "\u001b[01;32mOutput: \u001b[0;0m1 Virtual-1 352972cb-4edc-4d1b-83fa-d6b0eb6b1e0a\n\t\u001b[01;32menabled\u001b[0;0m\n\t\u001b[01;32mconnected\u001b[0;0m\n\t\u001b[01;32mpriority 1\u001b[0;0m\n\t\u001b[01;33mUnknown\u001b[0;0m\n\t\u001b[01;33mreplication source:\u001b[0;0m0\n\t\u001b[01;34mModes: \u001b[0;0m 1:\u001b[01;32m1920x1200@75.00*\u001b[0;0m!  2:5120x2160@50.00  3:4096x2160@50.00  4:3840x2160@60.00  5:3840x2160@59.94  6:3840x2160@50.00  7:1920x1440@60.00  8:2560x1080@50.00  9:1856x1392@59.99  10:1792x1344@60.00  11:2048x1152@60.00  12:1920x1200@59.88  13:1920x1080@60.00  14:1920x1080@50.00  15:1600x1200@60.00  16:1680x1050@59.95  17:1400x1050@59.98  18:1280x1024@60.02  19:1440x900@59.89  20:1280x960@60.00  21:1360x768@60.01  22:1280x768@59.87  23:1024x768@60.00  24:800x600@60.32  25:640x480@60.00  26:640x480@59.94  27:1280x720@59.74  28:1600x900@59.83  29:2560x1440@59.95 \n\u001b[01;33m\tCustom modes:\u001b[0;0m\n\t\t0: 1280x720@59.74 (reduced blanking)\n\t\t1: 1600x900@59.83 (reduced blanking)\n\t\t2: 2560x1440@59.95 (reduced blanking)\n\u001b[01;33m\tGeometry: \u001b[0;0m0,0 1920x1200\n\u001b[01;33m\tScale: \u001b[0;0m1\n\u001b[01;33m\tRotation: \u001b[0;0m1\n\u001b[01;33m\tOverscan: \u001b[0;0m0\n\u001b[01;33m\tVrr: \u001b[0;0mincapable\n\u001b[01;33m\tRgbRange: \u001b[0;0munknown\n\u001b[01;33m\tHDR: \u001b[0;0mincapable\n\u001b[01;33m\tWide Color Gamut: \u001b[0;0mincapable\n\u001b[01;33m\tICC profile: \u001b[0;0mnone\n\u001b[01;33m\tColor profile source: \u001b[0;0msRGB\n\u001b[01;33m\tColor power preference: \u001b[0;0mprefer efficiency and performance\n\u001b[01;33m\tBrightness control: \u001b[0;0msupported, set to 100% and dimming to 100%\n\u001b[01;33m\tColor resolution: unknown\n\u001b[01;33m\tAllow EDR: \u001b[0;0munsupported\n\u001b[01;33m\tSharpness control: \u001b[0;0munsupported\n\u001b[01;33m\tAutomatic brightness: \u001b[0;0munsupported\n\u001b[01;33m\tAuto Rotate Policy: \u001b[0;0mincapable\n\u001b[01;33m\tAdaptive backlight modulation: \u001b[0;0munsupported\n",
+        "stderr": ""
+      },
+      "display_json": {
+        "argv": [
+          "kscreen-doctor",
+          "-j"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n    \"features\": 255,\n    \"outputs\": [\n        {\n            \"brightness\": 1,\n            \"clones\": [\n            ],\n            \"connected\": true,\n            \"currentModeId\": \"1\",\n            \"enabled\": true,\n            \"followPreferredMode\": false,\n            \"iccProfilePath\": \"\",\n            \"icon\": \"\",\n            \"id\": 1,\n            \"modes\": [\n                {\n                    \"id\": \"1\",\n                    \"name\": \"1920x1200@75\",\n                    \"refreshRate\": 74.9990005493164,\n                    \"size\": {\n                        \"height\": 1200,\n                        \"width\": 1920\n                    }\n                },\n                {\n                    \"id\": \"10\",\n                    \"name\": \"1792x1344@60\",\n                    \"refreshRate\": 60,\n                    \"size\": {\n                        \"height\": 1344,\n                        \"width\": 1792\n                    }\n                },\n                {\n                    \"id\": \"11\",\n                    \"name\": \"2048x1152@60\",\n                    \"refreshRate\": 60,\n                    \"size\": {\n                        \"height\": 1152,\n                        \"width\": 2048\n                    }\n                },\n                {\n                    \"id\": \"12\",\n                    \"name\": \"1920x1200@60\",\n                    \"refreshRate\": 59.8849983215332,\n                    \"size\": {\n                        \"height\": 1200,\n                        \"width\": 1920\n                    }\n                },\n                {\n                    \"id\": \"13\",\n                    \"name\": \"1920x1080@60\",\n                    \"refreshRate\": 60,\n                    \"size\": {\n                        \"height\": 1080,\n                        \"width\": 1920\n                    }\n                },\n                {\n                    \"id\": \"14\",\n                    \"name\": \"1920x1080@50\",\n                    \"refreshRate\": 50,\n                    \"size\": {\n                        \"height\": 1080,\n                        \"width\": 1920\n                    }\n                },\n                {\n                    \"id\": \"15\",\n                    \"name\": \"1600x1200@60\",\n                    \"refreshRate\": 60,\n                    \"size\": {\n                        \"height\": 1200,\n                        \"width\": 1600\n                    }\n                },\n                {\n                    \"id\": \"16\",\n                    \"name\": \"1680x1050@60\",\n                    \"refreshRate\": 59.95399856567383,\n                    \"size\": {\n                        \"height\": 1050,\n                        \"width\": 1680\n                    }\n                },\n                {\n                    \"id\": \"17\",\n                    \"name\": \"1400x1050@60\",\n                    \"refreshRate\": 59.97800064086914,\n                    \"size\": {\n                        \"height\": 1050,\n                        \"width\": 1400\n                    }\n                },\n                {\n                    \"id\": \"18\",\n                    \"name\": \"1280x1024@60\",\n                    \"refreshRate\": 60.02000045776367,\n                    \"size\": {\n                        \"height\": 1024,\n                        \"width\": 1280\n                    }\n                },\n                {\n                    \"id\": \"19\",\n                    \"name\": \"1440x900@60\",\n                    \"refreshRate\": 59.887001037597656,\n                    \"size\": {\n                        \"height\": 900,\n                        \"width\": 1440\n                    }\n                },\n                {\n                    \"id\": \"2\",\n                    \"name\": \"5120x2160@50\",\n                    \"refreshRate\": 50,\n                    \"size\": {\n                        \"height\": 2160,\n                        \"width\": 5120\n                    }\n                },\n                {\n                    \"id\": \"20\",\n                    \"name\": \"1280x960@60\",\n                    \"refreshRate\": 60,\n                    \"size\": {\n                        \"height\": 960,\n                        \"width\": 1280\n                    }\n                },\n                {\n                    \"id\": \"21\",\n                    \"name\": \"1360x768@60\",\n                    \"refreshRate\": 60.01499938964844,\n                    \"size\": {\n                        \"height\": 768,\n                        \"width\": 1360\n                    }\n                },\n                {\n                    \"id\": \"22\",\n                    \"name\": \"1280x768@60\",\n                    \"refreshRate\": 59.869998931884766,\n                    \"size\": {\n                        \"height\": 768,\n                        \"width\": 1280\n                    }\n                },\n                {\n                    \"id\": \"23\",\n                    \"name\": \"1024x768@60\",\n                    \"refreshRate\": 60.00400161743164,\n                    \"size\": {\n                        \"height\": 768,\n                        \"width\": 1024\n                    }\n                },\n                {\n                    \"id\": \"24\",\n                    \"name\": \"800x600@60\",\n                    \"refreshRate\": 60.31700134277344,\n                    \"size\": {\n                        \"height\": 600,\n                        \"width\": 800\n                    }\n                },\n                {\n                    \"id\": \"25\",\n                    \"name\": \"640x480@60\",\n                    \"refreshRate\": 60,\n                    \"size\": {\n                        \"height\": 480,\n                        \"width\": 640\n                    }\n                },\n                {\n                    \"id\": \"26\",\n                    \"name\": \"640x480@60\",\n                    \"refreshRate\": 59.939998626708984,\n                    \"size\": {\n                        \"height\": 480,\n                        \"width\": 640\n                    }\n                },\n                {\n                    \"id\": \"27\",\n                    \"name\": \"1280x720@60\",\n                    \"refreshRate\": 59.744998931884766,\n                    \"size\": {\n                        \"height\": 720,\n                        \"width\": 1280\n                    }\n                },\n                {\n                    \"id\": \"28\",\n                    \"name\": \"1600x900@60\",\n                    \"refreshRate\": 59.82500076293945,\n                    \"size\": {\n                        \"height\": 900,\n                        \"width\": 1600\n                    }\n                },\n                {\n                    \"id\": \"29\",\n                    \"name\": \"2560x1440@60\",\n                    \"refreshRate\": 59.95100021362305,\n                    \"size\": {\n                        \"height\": 1440,\n                        \"width\": 2560\n                    }\n                },\n                {\n                    \"id\": \"3\",\n                    \"name\": \"4096x2160@50\",\n                    \"refreshRate\": 50,\n                    \"size\": {\n                        \"height\": 2160,\n                        \"width\": 4096\n                    }\n                },\n                {\n                    \"id\": \"4\",\n                    \"name\": \"3840x2160@60\",\n                    \"refreshRate\": 60,\n                    \"size\": {\n                        \"height\": 2160,\n                        \"width\": 3840\n                    }\n                },\n                {\n                    \"id\": \"5\",\n                    \"name\": \"3840x2160@60\",\n                    \"refreshRate\": 59.939998626708984,\n                    \"size\": {\n                        \"height\": 2160,\n                        \"width\": 3840\n                    }\n                },\n                {\n                    \"id\": \"6\",\n                    \"name\": \"3840x2160@50\",\n                    \"refreshRate\": 50,\n                    \"size\": {\n                        \"height\": 2160,\n                        \"width\": 3840\n                    }\n                },\n                {\n                    \"id\": \"7\",\n                    \"name\": \"1920x1440@60\",\n                    \"refreshRate\": 60,\n                    \"size\": {\n                        \"height\": 1440,\n                        \"width\": 1920\n                    }\n                },\n                {\n                    \"id\": \"8\",\n                    \"name\": \"2560x1080@50\",\n                    \"refreshRate\": 50,\n                    \"size\": {\n                        \"height\": 1080,\n                        \"width\": 2560\n                    }\n                },\n                {\n                    \"id\": \"9\",\n                    \"name\": \"1856x1392@60\",\n                    \"refreshRate\": 59.994998931884766,\n                    \"size\": {\n                        \"height\": 1392,\n                        \"width\": 1856\n                    }\n                }\n            ],\n            \"name\": \"Virtual-1\",\n            \"pos\": {\n                \"x\": 0,\n                \"y\": 0\n            },\n            \"preferredModes\": [\n                \"1\"\n            ],\n            \"priority\": 1,\n            \"replicationSource\": 0,\n            \"rotation\": 1,\n            \"scale\": 1,\n            \"size\": {\n                \"height\": 1200,\n                \"width\": 1920\n            },\n            \"sizeMM\": {\n                \"height\": 304,\n                \"width\": 487\n            },\n            \"type\": 0\n        }\n    ],\n    \"screen\": {\n        \"currentSize\": {\n            \"height\": 1200,\n            \"width\": 1920\n        },\n        \"id\": 0,\n        \"maxActiveOutputsCount\": 1,\n        \"maxSize\": {\n            \"height\": 64000,\n            \"width\": 64000\n        },\n        \"minSize\": {\n            \"height\": 0,\n            \"width\": 0\n        }\n    },\n    \"tabletModeAvailable\": false,\n    \"tabletModeEngaged\": false\n}\n",
+        "stderr": "",
+        "json": {
+          "features": 255,
+          "outputs": [
+            {
+              "brightness": 1,
+              "clones": [],
+              "connected": true,
+              "currentModeId": "1",
+              "enabled": true,
+              "followPreferredMode": false,
+              "iccProfilePath": "",
+              "icon": "",
+              "id": 1,
+              "modes": [
+                {
+                  "id": "1",
+                  "name": "1920x1200@75",
+                  "refreshRate": 74.9990005493164,
+                  "size": {
+                    "height": 1200,
+                    "width": 1920
+                  }
+                },
+                {
+                  "id": "10",
+                  "name": "1792x1344@60",
+                  "refreshRate": 60,
+                  "size": {
+                    "height": 1344,
+                    "width": 1792
+                  }
+                },
+                {
+                  "id": "11",
+                  "name": "2048x1152@60",
+                  "refreshRate": 60,
+                  "size": {
+                    "height": 1152,
+                    "width": 2048
+                  }
+                },
+                {
+                  "id": "12",
+                  "name": "1920x1200@60",
+                  "refreshRate": 59.8849983215332,
+                  "size": {
+                    "height": 1200,
+                    "width": 1920
+                  }
+                },
+                {
+                  "id": "13",
+                  "name": "1920x1080@60",
+                  "refreshRate": 60,
+                  "size": {
+                    "height": 1080,
+                    "width": 1920
+                  }
+                },
+                {
+                  "id": "14",
+                  "name": "1920x1080@50",
+                  "refreshRate": 50,
+                  "size": {
+                    "height": 1080,
+                    "width": 1920
+                  }
+                },
+                {
+                  "id": "15",
+                  "name": "1600x1200@60",
+                  "refreshRate": 60,
+                  "size": {
+                    "height": 1200,
+                    "width": 1600
+                  }
+                },
+                {
+                  "id": "16",
+                  "name": "1680x1050@60",
+                  "refreshRate": 59.95399856567383,
+                  "size": {
+                    "height": 1050,
+                    "width": 1680
+                  }
+                },
+                {
+                  "id": "17",
+                  "name": "1400x1050@60",
+                  "refreshRate": 59.97800064086914,
+                  "size": {
+                    "height": 1050,
+                    "width": 1400
+                  }
+                },
+                {
+                  "id": "18",
+                  "name": "1280x1024@60",
+                  "refreshRate": 60.02000045776367,
+                  "size": {
+                    "height": 1024,
+                    "width": 1280
+                  }
+                },
+                {
+                  "id": "19",
+                  "name": "1440x900@60",
+                  "refreshRate": 59.887001037597656,
+                  "size": {
+                    "height": 900,
+                    "width": 1440
+                  }
+                },
+                {
+                  "id": "2",
+                  "name": "5120x2160@50",
+                  "refreshRate": 50,
+                  "size": {
+                    "height": 2160,
+                    "width": 5120
+                  }
+                },
+                {
+                  "id": "20",
+                  "name": "1280x960@60",
+                  "refreshRate": 60,
+                  "size": {
+                    "height": 960,
+                    "width": 1280
+                  }
+                },
+                {
+                  "id": "21",
+                  "name": "1360x768@60",
+                  "refreshRate": 60.01499938964844,
+                  "size": {
+                    "height": 768,
+                    "width": 1360
+                  }
+                },
+                {
+                  "id": "22",
+                  "name": "1280x768@60",
+                  "refreshRate": 59.869998931884766,
+                  "size": {
+                    "height": 768,
+                    "width": 1280
+                  }
+                },
+                {
+                  "id": "23",
+                  "name": "1024x768@60",
+                  "refreshRate": 60.00400161743164,
+                  "size": {
+                    "height": 768,
+                    "width": 1024
+                  }
+                },
+                {
+                  "id": "24",
+                  "name": "800x600@60",
+                  "refreshRate": 60.31700134277344,
+                  "size": {
+                    "height": 600,
+                    "width": 800
+                  }
+                },
+                {
+                  "id": "25",
+                  "name": "640x480@60",
+                  "refreshRate": 60,
+                  "size": {
+                    "height": 480,
+                    "width": 640
+                  }
+                },
+                {
+                  "id": "26",
+                  "name": "640x480@60",
+                  "refreshRate": 59.939998626708984,
+                  "size": {
+                    "height": 480,
+                    "width": 640
+                  }
+                },
+                {
+                  "id": "27",
+                  "name": "1280x720@60",
+                  "refreshRate": 59.744998931884766,
+                  "size": {
+                    "height": 720,
+                    "width": 1280
+                  }
+                },
+                {
+                  "id": "28",
+                  "name": "1600x900@60",
+                  "refreshRate": 59.82500076293945,
+                  "size": {
+                    "height": 900,
+                    "width": 1600
+                  }
+                },
+                {
+                  "id": "29",
+                  "name": "2560x1440@60",
+                  "refreshRate": 59.95100021362305,
+                  "size": {
+                    "height": 1440,
+                    "width": 2560
+                  }
+                },
+                {
+                  "id": "3",
+                  "name": "4096x2160@50",
+                  "refreshRate": 50,
+                  "size": {
+                    "height": 2160,
+                    "width": 4096
+                  }
+                },
+                {
+                  "id": "4",
+                  "name": "3840x2160@60",
+                  "refreshRate": 60,
+                  "size": {
+                    "height": 2160,
+                    "width": 3840
+                  }
+                },
+                {
+                  "id": "5",
+                  "name": "3840x2160@60",
+                  "refreshRate": 59.939998626708984,
+                  "size": {
+                    "height": 2160,
+                    "width": 3840
+                  }
+                },
+                {
+                  "id": "6",
+                  "name": "3840x2160@50",
+                  "refreshRate": 50,
+                  "size": {
+                    "height": 2160,
+                    "width": 3840
+                  }
+                },
+                {
+                  "id": "7",
+                  "name": "1920x1440@60",
+                  "refreshRate": 60,
+                  "size": {
+                    "height": 1440,
+                    "width": 1920
+                  }
+                },
+                {
+                  "id": "8",
+                  "name": "2560x1080@50",
+                  "refreshRate": 50,
+                  "size": {
+                    "height": 1080,
+                    "width": 2560
+                  }
+                },
+                {
+                  "id": "9",
+                  "name": "1856x1392@60",
+                  "refreshRate": 59.994998931884766,
+                  "size": {
+                    "height": 1392,
+                    "width": 1856
+                  }
+                }
+              ],
+              "name": "Virtual-1",
+              "pos": {
+                "x": 0,
+                "y": 0
+              },
+              "preferredModes": [
+                "1"
+              ],
+              "priority": 1,
+              "replicationSource": 0,
+              "rotation": 1,
+              "scale": 1,
+              "size": {
+                "height": 1200,
+                "width": 1920
+              },
+              "sizeMM": {
+                "height": 304,
+                "width": 487
+              },
+              "type": 0
+            }
+          ],
+          "screen": {
+            "currentSize": {
+              "height": 1200,
+              "width": 1920
+            },
+            "id": 0,
+            "maxActiveOutputsCount": 1,
+            "maxSize": {
+              "height": 64000,
+              "width": 64000
+            },
+            "minSize": {
+              "height": 0,
+              "width": 0
+            }
+          },
+          "tabletModeAvailable": false,
+          "tabletModeEngaged": false
+        }
+      },
+      "qt": {
+        "argv": [
+          "/usr/bin/python3",
+          "-c",
+          "\nimport json\nimport sys\nfrom PySide6.QtCore import QLibraryInfo, QLocale, QRect, Qt, QTimer\nfrom PySide6.QtGui import (QBackingStore, QFontInfo, QGuiApplication, QPainter,\n    QRegion, QSurface, QSurfaceFormat, QTextLayout, QWindow)\napp = QGuiApplication([])\napp.setApplicationName(\"aven-runtime-scale-probe\")\napp.setQuitOnLastWindowClosed(False)\ncompositor_scale = float(sys.argv[1])\nif app.platformName() != \"wayland\" or len(app.screens()) != 1:\n    raise RuntimeError(\"One-screen native Wayland session required\")\n# A mapped wl_surface receives wp_fractional_scale preferred_scale. A bare\n# QGuiApplication only receives integer wl_output scale. Submit an alpha-zero\n# backing buffer so the surface is genuinely mapped without visible pixels.\nclass ScaleWindow(QWindow):\n    def __init__(self):\n        super().__init__()\n        self.setFlags(Qt.SplashScreen | Qt.FramelessWindowHint | Qt.NoDropShadowWindowHint\n            | Qt.WindowDoesNotAcceptFocus | Qt.WindowTransparentForInput)\n        self.setSurfaceType(QSurface.RasterSurface)\n        fmt = QSurfaceFormat()\n        fmt.setAlphaBufferSize(8)\n        self.setFormat(fmt)\n        self.resize(4, 4)\n        self.setScreen(app.primaryScreen())\n        self.backing = QBackingStore(self)\n        self.frames_submitted = 0\n        self.exposed_once = False\n    def exposeEvent(self, event):\n        if self.isExposed():\n            self.exposed_once = True\n            self.backing.resize(self.size())\n            region = QRegion(QRect(0, 0, self.width(), self.height()))\n            self.backing.beginPaint(region)\n            painter = QPainter(self.backing.paintDevice())\n            painter.setCompositionMode(QPainter.CompositionMode_Source)\n            painter.fillRect(QRect(0, 0, self.width(), self.height()), Qt.transparent)\n            painter.end()\n            self.backing.endPaint()\n            self.backing.flush(region)\n            self.frames_submitted += 1\nwindow_probe = None\nif compositor_scale in (1, 2):\n    if app.primaryScreen().devicePixelRatio() != compositor_scale:\n        raise RuntimeError(\"Integer QScreen DPR differs from KScreen; refusing to map a measurement window\")\n    measurement = {\"method\": \"integer QScreen DPR with KScreen agreement\",\n        \"scale\": app.primaryScreen().devicePixelRatio(), \"surface_mapped\": False}\nelse:\n    window = ScaleWindow()\n    window.show()\n    window_probe = {}\n    def sample_window():\n        window_probe.update({\"scale\": window.devicePixelRatio(), \"exposed\": window.isExposed(),\n            \"exposed_once\": window.exposed_once, \"visible\": window.isVisible(),\n            \"screen\": window.screen().name() if window.screen() else None,\n            \"frames_submitted\": window.frames_submitted, \"active\": window.isActive(),\n            \"size\": [window.width(), window.height()], \"alpha_buffer_size\": window.format().alphaBufferSize(),\n            \"method\": \"mapped transparent 4x4 QWindow with alpha-zero QBackingStore; input-transparent; focus hint may be ignored by Wayland\"})\n        app.quit()\n    QTimer.singleShot(700, sample_window)\n    app.exec()\n    window.close()\n    app.processEvents()\n    measurement = {\"method\": \"mapped QWindow DPR with KScreen agreement\",\n        \"scale\": window_probe.get(\"scale\"), \"surface_mapped\": True}\nfont = QFontInfo(app.font())\nsample = \"文件 / Documents：12 个项目，24.8 MB。繁體中文：國門骨直，清晰舒適。\"\nlayout = QTextLayout(sample, app.font())\nlayout.beginLayout()\nline = layout.createLine()\nline.setLineWidth(1800)\nlayout.endLayout()\nglyph_runs = [{\"family\": run.rawFont().familyName(), \"style\": run.rawFont().styleName(),\n    \"glyph_count\": len(run.glyphIndexes()), \"missing_glyphs\": sum(i == 0 for i in run.glyphIndexes())}\n    for run in layout.glyphRuns()]\nprint(json.dumps({\n    \"platform\": app.platformName(), \"qt\": QLibraryInfo.version().toString(),\n    \"locale\": QLocale.system().name(),\n    \"font\": {\"family\": font.family(), \"point_size\": font.pointSizeF(), \"pixel_size\": font.pixelSize(), \"weight\": font.weight()},\n    \"qt_shaping_sample\": sample, \"qt_shaping_runs\": glyph_runs,\n    \"window\": window_probe,\n    \"scale_measurement\": measurement,\n    \"screens\": [{\"name\": s.name(), \"scale\": s.devicePixelRatio(),\n        \"logical_dpi\": s.logicalDotsPerInch(), \"physical_dpi\": s.physicalDotsPerInch(),\n        \"refresh_hz\": s.refreshRate(),\n        \"geometry\": [s.geometry().x(), s.geometry().y(), s.geometry().width(), s.geometry().height()],\n        \"available\": [s.availableGeometry().x(), s.availableGeometry().y(), s.availableGeometry().width(), s.availableGeometry().height()]}\n        for s in app.screens()]\n}))\n",
+          "1"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"platform\": \"wayland\", \"qt\": \"6.11.2\", \"locale\": \"zh_CN\", \"font\": {\"family\": \"Noto Sans\", \"point_size\": 11.25, \"pixel_size\": 15, \"weight\": 400}, \"qt_shaping_sample\": \"\\u6587\\u4ef6 / Documents\\uff1a12 \\u4e2a\\u9879\\u76ee\\uff0c24.8 MB\\u3002\\u7e41\\u9ad4\\u4e2d\\u6587\\uff1a\\u570b\\u9580\\u9aa8\\u76f4\\uff0c\\u6e05\\u6670\\u8212\\u9069\\u3002\", \"qt_shaping_runs\": [{\"family\": \"Noto Sans CJK SC\", \"style\": \"Regular\", \"glyph_count\": 23, \"missing_glyphs\": 0}, {\"family\": \"Noto Sans\", \"style\": \"Regular\", \"glyph_count\": 22, \"missing_glyphs\": 0}], \"window\": null, \"scale_measurement\": {\"method\": \"integer QScreen DPR with KScreen agreement\", \"scale\": 1.0, \"surface_mapped\": false}, \"screens\": [{\"name\": \"Virtual-1\", \"scale\": 1.0, \"logical_dpi\": 96.0, \"physical_dpi\": 100.20139414244028, \"refresh_hz\": 74.9990005493164, \"geometry\": [0, 0, 1920, 1200], \"available\": [0, 0, 1920, 1200]}]}\n",
+        "stderr": "",
+        "json": {
+          "platform": "wayland",
+          "qt": "6.11.2",
+          "locale": "zh_CN",
+          "font": {
+            "family": "Noto Sans",
+            "point_size": 11.25,
+            "pixel_size": 15,
+            "weight": 400
+          },
+          "qt_shaping_sample": "文件 / Documents：12 个项目，24.8 MB。繁體中文：國門骨直，清晰舒適。",
+          "qt_shaping_runs": [
+            {
+              "family": "Noto Sans CJK SC",
+              "style": "Regular",
+              "glyph_count": 23,
+              "missing_glyphs": 0
+            },
+            {
+              "family": "Noto Sans",
+              "style": "Regular",
+              "glyph_count": 22,
+              "missing_glyphs": 0
+            }
+          ],
+          "window": null,
+          "scale_measurement": {
+            "method": "integer QScreen DPR with KScreen agreement",
+            "scale": 1.0,
+            "surface_mapped": false
+          },
+          "screens": [
+            {
+              "name": "Virtual-1",
+              "scale": 1.0,
+              "logical_dpi": 96.0,
+              "physical_dpi": 100.20139414244028,
+              "refresh_hz": 74.9990005493164,
+              "geometry": [
+                0,
+                0,
+                1920,
+                1200
+              ],
+              "available": [
+                0,
+                0,
+                1920,
+                1200
+              ]
+            }
+          ]
+        }
+      },
+      "locales": {
+        "argv": [
+          "locale",
+          "-a"
+        ],
+        "exit_code": 0,
+        "stdout": "aa_DJ\naa_DJ.iso88591\naa_DJ.utf8\naa_ER\naa_ER.utf8\naa_ET\naa_ET.utf8\naf_ZA\naf_ZA.iso88591\naf_ZA.utf8\nagr_PE\nagr_PE.utf8\nak_GH\nak_GH.utf8\nam_ET\nam_ET.utf8\nan_ES\nan_ES.iso885915\nan_ES.utf8\nanp_IN\nanp_IN.utf8\nar_AE\nar_AE.iso88596\nar_AE.utf8\nar_BH\nar_BH.iso88596\nar_BH.utf8\nar_DZ\nar_DZ.iso88596\nar_DZ.utf8\nar_EG\nar_EG.iso88596\nar_EG.utf8\nar_IN\nar_IN.utf8\nar_IQ\nar_IQ.iso88596\nar_IQ.utf8\nar_JO\nar_JO.iso88596\nar_JO.utf8\nar_KW\nar_KW.iso88596\nar_KW.utf8\nar_LB\nar_LB.iso88596\nar_LB.utf8\nar_LY\nar_LY.iso88596\nar_LY.utf8\nar_MA\nar_MA.iso88596\nar_MA.utf8\nar_OM\nar_OM.iso88596\nar_OM.utf8\nar_QA\nar_QA.iso88596\nar_QA.utf8\nar_SA\nar_SA.iso88596\nar_SA.utf8\nar_SD\nar_SD.iso88596\nar_SD.utf8\nar_SS\nar_SS.utf8\nar_SY\nar_SY.iso88596\nar_SY.utf8\nar_TN\nar_TN.iso88596\nar_TN.utf8\nar_YE\nar_YE.iso88596\nar_YE.utf8\nas_IN\nas_IN.utf8\nast_ES\nast_ES.iso885915\nast_ES.utf8\nayc_PE\nayc_PE.utf8\naz_AZ\naz_AZ.utf8\naz_IR\naz_IR.utf8\nbe_BY\nbe_BY.cp1251\nbe_BY@latin\nbe_BY.utf8\nbe_BY.utf8@latin\nbem_ZM\nbem_ZM.utf8\nber_DZ\nber_DZ.utf8\nber_MA\nber_MA.utf8\nbg_BG\nbg_BG.cp1251\nbg_BG.utf8\nbhb_IN.utf8\nbho_IN\nbho_IN.utf8\nbho_NP\nbho_NP.utf8\nbi_VU\nbi_VU.utf8\nbn_BD\nbn_BD.utf8\nbn_IN\nbn_IN.utf8\nbo_CN\nbo_CN.utf8\nbo_IN\nbo_IN.utf8\nbokmal\nbr_FR\nbr_FR@euro\nbr_FR.iso88591\nbr_FR.iso885915@euro\nbr_FR.utf8\nbrx_IN\nbrx_IN.utf8\nbs_BA\nbs_BA.iso88592\nbs_BA.utf8\nbyn_ER\nbyn_ER.utf8\nC\nca_AD\nca_AD.iso885915\nca_AD.utf8\nca_ES\nca_ES@euro\nca_ES.iso88591\nca_ES.iso885915@euro\nca_ES.utf8\nca_ES.utf8@valencia\nca_ES@valencia\nca_FR\nca_FR.iso885915\nca_FR.utf8\nca_IT\nca_IT.iso885915\nca_IT.utf8\ncatalan\nce_RU\nce_RU.utf8\nchr_US\nchr_US.utf8\nckb_IQ\nckb_IQ.utf8\ncmn_TW\ncmn_TW.utf8\ncrh_RU\ncrh_RU.utf8\ncrh_UA\ncrh_UA.utf8\ncroatian\ncsb_PL\ncsb_PL.utf8\ncs_CZ\ncs_CZ.iso88592\ncs_CZ.utf8\nC.utf8\ncv_RU\ncv_RU.utf8\ncy_GB\ncy_GB.iso885914\ncy_GB.utf8\nczech\nda_DK\nda_DK.iso88591\nda_DK.iso885915\nda_DK.utf8\ndanish\ndansk\nde_AT\nde_AT@euro\nde_AT.iso88591\nde_AT.iso885915@euro\nde_AT.utf8\nde_BE\nde_BE@euro\nde_BE.iso88591\nde_BE.iso885915@euro\nde_BE.utf8\nde_CH\nde_CH.iso88591\nde_CH.utf8\nde_DE\nde_DE@euro\nde_DE.iso88591\nde_DE.iso885915@euro\nde_DE.utf8\nde_IT\nde_IT.iso88591\nde_IT.utf8\nde_LI.utf8\nde_LU\nde_LU@euro\nde_LU.iso88591\nde_LU.iso885915@euro\nde_LU.utf8\ndeutsch\ndoi_IN\ndoi_IN.utf8\ndsb_DE\ndsb_DE.utf8\ndutch\ndv_MV\ndv_MV.utf8\ndz_BT\ndz_BT.utf8\neesti\nel_CY\nel_CY.iso88597\nel_CY.utf8\nel_GR\nel_GR@euro\nel_GR.iso88597\nel_GR.iso88597@euro\nel_GR.utf8\nen_AG\nen_AG.utf8\nen_AU\nen_AU.iso88591\nen_AU.utf8\nen_BW\nen_BW.iso88591\nen_BW.utf8\nen_CA\nen_CA.iso88591\nen_CA.utf8\nen_DK\nen_DK.iso88591\nen_DK.utf8\nen_GB\nen_GB.iso88591\nen_GB.iso885915\nen_GB.utf8\nen_HK\nen_HK.iso88591\nen_HK.utf8\nen_IE\nen_IE@euro\nen_IE.iso88591\nen_IE.iso885915@euro\nen_IE.utf8\nen_IL\nen_IL.utf8\nen_IN\nen_IN.utf8\nen_NG\nen_NG.utf8\nen_NZ\nen_NZ.iso88591\nen_NZ.utf8\nen_PH\nen_PH.iso88591\nen_PH.utf8\nen_SC.utf8\nen_SE.utf8\nen_SG\nen_SG.iso88591\nen_SG.utf8\nen_US\nen_US.iso88591\nen_US.iso885915\nen_US.utf8\nen_ZA\nen_ZA.iso88591\nen_ZA.utf8\nen_ZM\nen_ZM.utf8\nen_ZW\nen_ZW.iso88591\nen_ZW.utf8\neo\neo.utf8\nes_AR\nes_AR.iso88591\nes_AR.utf8\nes_BO\nes_BO.iso88591\nes_BO.utf8\nes_CL\nes_CL.iso88591\nes_CL.utf8\nes_CO\nes_CO.iso88591\nes_CO.utf8\nes_CR\nes_CR.iso88591\nes_CR.utf8\nes_CU\nes_CU.utf8\nes_DO\nes_DO.iso88591\nes_DO.utf8\nes_EC\nes_EC.iso88591\nes_EC.utf8\nes_ES\nes_ES@euro\nes_ES.iso88591\nes_ES.iso885915@euro\nes_ES.utf8\nes_GT\nes_GT.iso88591\nes_GT.utf8\nes_HN\nes_HN.iso88591\nes_HN.utf8\nes_MX\nes_MX.iso88591\nes_MX.utf8\nes_NI\nes_NI.iso88591\nes_NI.utf8\nes_PA\nes_PA.iso88591\nes_PA.utf8\nes_PE\nes_PE.iso88591\nes_PE.utf8\nes_PR\nes_PR.iso88591\nes_PR.utf8\nes_PY\nes_PY.iso88591\nes_PY.utf8\nes_SV\nes_SV.iso88591\nes_SV.utf8\nestonian\nes_US\nes_US.iso88591\nes_US.utf8\nes_UY\nes_UY.iso88591\nes_UY.utf8\nes_VE\nes_VE.iso88591\nes_VE.utf8\net_EE\net_EE.iso88591\net_EE.iso885915\net_EE.utf8\neu_ES\neu_ES@euro\neu_ES.iso88591\neu_ES.iso885915@euro\neu_ES.utf8\nfa_IR\nfa_IR.utf8\nff_SN\nff_SN.utf8\nfi_FI\nfi_FI@euro\nfi_FI.iso88591\nfi_FI.iso885915@euro\nfi_FI.utf8\nfil_PH\nfil_PH.utf8\nfinnish\nfo_FO\nfo_FO.iso88591\nfo_FO.utf8\nfr_BE\nfr_BE@euro\nfr_BE.iso88591\nfr_BE.iso885915@euro\nfr_BE.utf8\nfr_CA\nfr_CA.iso88591\nfr_CA.utf8\nfr_CH\nfr_CH.iso88591\nfr_CH.utf8\nfrench\nfr_FR\nfr_FR@euro\nfr_FR.iso88591\nfr_FR.iso885915@euro\nfr_FR.utf8\nfr_LU\nfr_LU@euro\nfr_LU.iso88591\nfr_LU.iso885915@euro\nfr_LU.utf8\nfur_IT\nfur_IT.utf8\nfy_DE\nfy_DE.utf8\nfy_NL\nfy_NL.utf8\nga_IE\nga_IE@euro\nga_IE.iso88591\nga_IE.iso885915@euro\nga_IE.utf8\ngalego\ngalician\ngbm_IN\ngbm_IN.utf8\ngd_GB\ngd_GB.iso885915\ngd_GB.utf8\ngerman\ngez_ER\ngez_ER@abegede\ngez_ER.utf8\ngez_ER.utf8@abegede\ngez_ET\ngez_ET@abegede\ngez_ET.utf8\ngez_ET.utf8@abegede\ngl_ES\ngl_ES@euro\ngl_ES.iso88591\ngl_ES.iso885915@euro\ngl_ES.utf8\ngreek\ngu_IN\ngu_IN.utf8\ngv_GB\ngv_GB.iso88591\ngv_GB.utf8\nhak_TW\nhak_TW.utf8\nha_NG\nha_NG.utf8\nhebrew\nhe_IL\nhe_IL.iso88598\nhe_IL.utf8\nhif_FJ\nhif_FJ.utf8\nhi_IN\nhi_IN.utf8\nhne_IN\nhne_IN.utf8\nhr_HR\nhr_HR.iso88592\nhr_HR.utf8\nhrvatski\nhsb_DE\nhsb_DE.iso88592\nhsb_DE.utf8\nht_HT\nht_HT.utf8\nhu_HU\nhu_HU.iso88592\nhu_HU.utf8\nhungarian\nhy_AM\nhy_AM.armscii8\nhy_AM.utf8\nia_FR\nia_FR.utf8\nicelandic\nid_ID\nid_ID.iso88591\nid_ID.utf8\nig_NG\nig_NG.utf8\nik_CA\nik_CA.utf8\nis_IS\nis_IS.iso88591\nis_IS.utf8\nitalian\nit_CH\nit_CH.iso88591\nit_CH.utf8\nit_IT\nit_IT@euro\nit_IT.iso88591\nit_IT.iso885915@euro\nit_IT.utf8\niu_CA\niu_CA.utf8\nja_JP\nja_JP.eucjp\nja_JP.ujis\nja_JP.utf8\njapanese\njapanese.euc\nkab_DZ\nkab_DZ.utf8\nka_GE\nka_GE.georgianps\nka_GE.utf8\nkk_KZ\nkk_KZ.pt154\nkk_KZ.utf8\nkl_GL\nkl_GL.iso88591\nkl_GL.utf8\nkm_KH\nkm_KH.utf8\nkn_IN\nkn_IN.utf8\nkok_IN\nkok_IN.utf8\nko_KR\nko_KR.euckr\nko_KR.utf8\nkorean\nkorean.euc\nks_IN\nks_IN@devanagari\nks_IN.utf8\nks_IN.utf8@devanagari\nku_TR\nku_TR.iso88599\nku_TR.utf8\nkv_RU\nkv_RU.utf8\nkw_GB\nkw_GB.iso88591\nkw_GB.utf8\nky_KG\nky_KG.utf8\nlb_LU\nlb_LU.utf8\nlg_UG\nlg_UG.iso885910\nlg_UG.utf8\nli_BE\nli_BE.utf8\nlij_IT\nlij_IT.utf8\nli_NL\nli_NL.utf8\nlithuanian\nln_CD\nln_CD.utf8\nlo_LA\nlo_LA.utf8\nltg_LV.utf8\nlt_LT\nlt_LT.iso885913\nlt_LT.utf8\nlv_LV\nlv_LV.iso885913\nlv_LV.utf8\nlzh_TW\nlzh_TW.utf8\nmag_IN\nmag_IN.utf8\nmai_IN\nmai_IN.utf8\nmai_NP\nmai_NP.utf8\nmdf_RU\nmdf_RU.utf8\nmfe_MU\nmfe_MU.utf8\nmg_MG\nmg_MG.iso885915\nmg_MG.utf8\nmhr_RU\nmhr_RU.utf8\nmi_NZ\nmi_NZ.iso885913\nmi_NZ.utf8\nmiq_NI\nmiq_NI.utf8\nmjw_IN\nmjw_IN.utf8\nmk_MK\nmk_MK.iso88595\nmk_MK.utf8\nml_IN\nml_IN.utf8\nmni_IN\nmni_IN.utf8\nmn_MN\nmn_MN.utf8\nmnw_MM\nmnw_MM.utf8\nmr_IN\nmr_IN.utf8\nms_MY\nms_MY.iso88591\nms_MY.utf8\nmt_MT\nmt_MT.iso88593\nmt_MT.utf8\nmy_MM\nmy_MM.utf8\nnan_TW\nnan_TW@latin\nnan_TW.utf8\nnan_TW.utf8@latin\nnb_NO\nnb_NO.iso88591\nnb_NO.utf8\nnds_DE\nnds_DE.utf8\nnds_NL\nnds_NL.utf8\nne_NP\nne_NP.utf8\nnhn_MX\nnhn_MX.utf8\nniu_NU\nniu_NU.utf8\nniu_NZ\nniu_NZ.utf8\nnl_AW\nnl_AW.utf8\nnl_BE\nnl_BE@euro\nnl_BE.iso88591\nnl_BE.iso885915@euro\nnl_BE.utf8\nnl_NL\nnl_NL@euro\nnl_NL.iso88591\nnl_NL.iso885915@euro\nnl_NL.utf8\nnn_NO\nnn_NO.iso88591\nnn_NO.utf8\nno_NO\nno_NO.ISO-8859-1\nnorwegian\nnr_ZA\nnr_ZA.utf8\nnso_ZA\nnso_ZA.utf8\nnynorsk\noc_FR\noc_FR.iso88591\noc_FR.utf8\nom_ET\nom_ET.utf8\nom_KE\nom_KE.iso88591\nom_KE.utf8\nor_IN\nor_IN.utf8\nos_RU\nos_RU.utf8\npa_IN\npa_IN.utf8\npap_AW\npap_AW.utf8\npap_CW\npap_CW.utf8\npa_PK\npa_PK.utf8\npl_PL\npl_PL.iso88592\npl_PL.utf8\npolish\nportuguese\nPOSIX\nps_AF\nps_AF.utf8\npt_BR\npt_BR.iso88591\npt_BR.utf8\npt_PT\npt_PT@euro\npt_PT.iso88591\npt_PT.iso885915@euro\npt_PT.utf8\nquz_PE\nquz_PE.utf8\nraj_IN\nraj_IN.utf8\nrif_MA\nrif_MA.utf8\nromanian\nro_RO\nro_RO.iso88592\nro_RO.utf8\nru_RU\nru_RU.iso88595\nru_RU.koi8r\nru_RU.utf8\nrussian\nru_UA\nru_UA.koi8u\nru_UA.utf8\nrw_RW\nrw_RW.utf8\nsah_RU\nsah_RU.utf8\nsa_IN\nsa_IN.utf8\nsat_IN\nsat_IN.utf8\nsc_IT\nsc_IT.utf8\nscn_IT\nscn_IT.utf8\nsd_IN\nsd_IN@devanagari\nsd_IN.utf8\nsd_IN.utf8@devanagari\nse_NO\nse_NO.utf8\nsgs_LT\nsgs_LT.utf8\nshn_MM\nshn_MM.utf8\nshs_CA\nshs_CA.utf8\nsid_ET\nsid_ET.utf8\nsi_LK\nsi_LK.utf8\nsk_SK\nsk_SK.iso88592\nsk_SK.utf8\nslovak\nslovene\nslovenian\nsl_SI\nsl_SI.iso88592\nsl_SI.utf8\nsm_WS\nsm_WS.utf8\nso_DJ\nso_DJ.iso88591\nso_DJ.utf8\nso_ET\nso_ET.utf8\nso_KE\nso_KE.iso88591\nso_KE.utf8\nso_SO\nso_SO.iso88591\nso_SO.utf8\nspanish\nsq_AL\nsq_AL.iso88591\nsq_AL.utf8\nsq_MK\nsq_MK.utf8\nsr_ME\nsr_ME.utf8\nsr_RS\nsr_RS@latin\nsr_RS.utf8\nsr_RS.utf8@latin\nssy_ER\nssy_ER.utf8\nss_ZA\nss_ZA.utf8\nst_ZA\nst_ZA.iso88591\nst_ZA.utf8\nsu_ID\nsu_ID.utf8\nsv_FI\nsv_FI@euro\nsv_FI.iso88591\nsv_FI.iso885915@euro\nsv_FI.utf8\nsv_SE\nsv_SE.iso88591\nsv_SE.iso885915\nsv_SE.utf8\nswedish\nsw_KE\nsw_KE.utf8\nsw_TZ\nsw_TZ.utf8\nsyr\nsyr.utf8\nszl_PL\nszl_PL.utf8\nta_IN\nta_IN.utf8\nta_LK\nta_LK.utf8\ntcy_IN.utf8\nte_IN\nte_IN.utf8\ntg_TJ\ntg_TJ.koi8t\ntg_TJ.utf8\nthai\nthe_NP\nthe_NP.utf8\nth_TH\nth_TH.tis620\nth_TH.utf8\nti_ER\nti_ER.utf8\nti_ET\nti_ET.utf8\ntig_ER\ntig_ER.utf8\ntk_TM\ntk_TM.utf8\ntl_PH\ntl_PH.iso88591\ntl_PH.utf8\ntn_ZA\ntn_ZA.utf8\ntok\ntok.utf8\nto_TO\nto_TO.utf8\ntpi_PG\ntpi_PG.utf8\ntr_CY\ntr_CY.iso88599\ntr_CY.utf8\ntr_TR\ntr_TR.iso88599\ntr_TR.utf8\nts_ZA\nts_ZA.utf8\ntt_RU\ntt_RU@iqtelif\ntt_RU.utf8\ntt_RU.utf8@iqtelif\nturkish\nug_CN\nug_CN.utf8\nuk_UA\nuk_UA.koi8u\nuk_UA.utf8\nunm_US\nunm_US.utf8\nur_IN\nur_IN.utf8\nur_PK\nur_PK.utf8\nuz_UZ\nuz_UZ@cyrillic\nuz_UZ.iso88591\nuz_UZ.utf8\nuz_UZ.utf8@cyrillic\nve_ZA\nve_ZA.utf8\nvi_VN\nvi_VN.utf8\nwa_BE\nwa_BE@euro\nwa_BE.iso88591\nwa_BE.iso885915@euro\nwa_BE.utf8\nwae_CH\nwae_CH.utf8\nwal_ET\nwal_ET.utf8\nwo_SN\nwo_SN.utf8\nxh_ZA\nxh_ZA.iso88591\nxh_ZA.utf8\nyi_US\nyi_US.cp1255\nyi_US.utf8\nyo_NG\nyo_NG.utf8\nyue_HK\nyue_HK.utf8\nyuw_PG\nyuw_PG.utf8\nzgh_MA\nzgh_MA.utf8\nzh_CN\nzh_CN.gb18030\nzh_CN.gb2312\nzh_CN.gbk\nzh_CN.utf8\nzh_HK\nzh_HK.big5hkscs\nzh_HK.utf8\nzh_SG\nzh_SG.gb2312\nzh_SG.gbk\nzh_SG.utf8\nzh_TW\nzh_TW.big5\nzh_TW.euctw\nzh_TW.utf8\nzu_ZA\nzu_ZA.iso88591\nzu_ZA.utf8\n",
+        "stderr": ""
+      },
+      "default_browser": {
+        "argv": [
+          "xdg-mime",
+          "query",
+          "default",
+          "x-scheme-handler/https"
+        ],
+        "exit_code": 0,
+        "stdout": "aven-browser.desktop\n",
+        "stderr": ""
+      },
+      "default_mail": {
+        "argv": [
+          "xdg-mime",
+          "query",
+          "default",
+          "x-scheme-handler/mailto"
+        ],
+        "exit_code": 0,
+        "stdout": "aven-mail.desktop\n",
+        "stderr": ""
+      },
+      "default_photo": {
+        "argv": [
+          "xdg-mime",
+          "query",
+          "default",
+          "image/jpeg"
+        ],
+        "exit_code": 0,
+        "stdout": "org.kde.gwenview.desktop\n",
+        "stderr": ""
+      },
+      "default_pdf": {
+        "argv": [
+          "xdg-mime",
+          "query",
+          "default",
+          "application/pdf"
+        ],
+        "exit_code": 0,
+        "stdout": "org.kde.okular.desktop\n",
+        "stderr": ""
+      },
+      "kwin_loaded_effects": {
+        "argv": [
+          "/usr/bin/qdbus-qt6",
+          "org.kde.KWin",
+          "/Effects",
+          "org.kde.kwin.Effects.loadedEffects"
+        ],
+        "exit_code": 0,
+        "stdout": "shakecursor\noutputlocator\ncolorpicker\nzoom\nscreenedge\nblur\nsessionquit\nlogout\nlogin\nslidingpopups\nslidingnotifications\nmaximize\nfullscreen\nfrozenapp\nfadingpopups\nfade\ndimscreen\ndialogparent\nwindowview\ntileseditor\noverview\nhighlightwindow\nblendchanges\nstartupfeedback\nsystembell\nscreentransform\nkscreen\n",
+        "stderr": ""
+      },
+      "kwin_active_effects": {
+        "argv": [
+          "/usr/bin/qdbus-qt6",
+          "org.kde.KWin",
+          "/Effects",
+          "org.kde.kwin.Effects.activeEffects"
+        ],
+        "exit_code": 0,
+        "stdout": "blur\n",
+        "stderr": ""
+      },
+      "kwin_support": {
+        "argv": [
+          "/usr/bin/qdbus-qt6",
+          "org.kde.KWin",
+          "/KWin",
+          "org.kde.KWin.supportInformation"
+        ],
+        "exit_code": 0,
+        "stdout": "KWin Support Information:\nThe following information should be used when requesting support on e.g. https://discuss.kde.org.\nIt provides information about the currently running instance, which options are used,\nwhat OpenGL driver and which effects are running.\nPlease post the information provided underneath this introductory text to a paste bin service\nlike https://paste.kde.org instead of pasting into support threads.\n\n==========================\n\nVersion\n=======\nKWin version: 6.7.5\nQt Version: 6.11.2\nQt compile version: 6.11.2\nXCB compile version: 1.17.0\n\nOperation Mode: Wayland\n\nBuild Options\n=============\nKWIN_BUILD_DECORATIONS: yes\nKWIN_BUILD_TABBOX: yes\nKWIN_BUILD_ACTIVITIES: yes\nHAVE_X11_XCB: yes\n\nX11\n===\nVendor: The X.Org Foundation\nVendor Release: 12401013\nProtocol Version/Revision: 11/0\nSHAPE: yes; Version: 0x11\nRANDR: yes; Version: 0x14\nComposite: yes; Version: 0x4\nRENDER: yes; Version: 0xb\nXFIXES: yes; Version: 0x50\nSYNC: yes; Version: 0x31\nRES: yes; Version: 0x12\n\nDecoration\n==========\nPlugin: org.kde.kwin.aurorae.v2\nTheme: __aurorae__svg__Aven\nPlugin recommends border size: No\nonAllDesktopsAvailable: false\nalphaChannelSupported: true\ncloseOnDoubleClickOnMenu: false\nalwaysShowExcludeFromCapture: false\ndecorationButtonsLeft: \ndecorationButtonsRight: 3, 4, 5\nborderSize: 3\ngridUnit: 10\nfont: Noto Sans,11,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,,0,0\nsmallSpacing: 2\nlargeSpacing: 10\n\nLogicalOutput backend\n==============\nName: DRM\nAtomic Mode Setting on GPU 0: true\n\nCursor\n======\nthemeName: breeze_cursors\nthemeSize: 24\n\nOptions\n=======\nfocusPolicy: ClickToFocus\nxwaylandCrashPolicy: 1\nxwaylandMaxCrashCount: 3\nnextFocusPrefersMouse: false\nclickRaise: true\nautoRaise: false\nautoRaiseInterval: 0\ndelayFocusInterval: 0\nseparateScreenFocus: true\nplacement: 5\nactivationDesktopPolicy: SwitchToOtherDesktop\nfocusPolicyIsReasonable: true\nborderSnapZone: 10\nwindowSnapZone: 10\ncenterSnapZone: 0\nsnapOnlyWhenOverlapping: false\nedgeBarrier: 100\ncornerBarrier: 1\nrollOverDesktops: false\nperOutputVirtualDesktops: false\nfocusStealingPreventionLevel: 1\noperationTitlebarDblClick: 5000\noperationMaxButtonLeftClick: 5000\noperationMaxButtonMiddleClick: 5013\noperationMaxButtonRightClick: 5012\ncommandActiveTitlebar1: MouseRaise\ncommandActiveTitlebar2: MouseNothing\ncommandActiveTitlebar3: MouseOperationsMenu\ncommandInactiveTitlebar1: MouseActivateAndRaise\ncommandInactiveTitlebar2: MouseNothing\ncommandInactiveTitlebar3: MouseOperationsMenu\ncommandWindow1: MouseActivateRaiseOnReleaseAndPassClick\ncommandWindow2: MouseActivateAndPassClick\ncommandWindow3: MouseActivateAndPassClick\ncommandWindowWheel: MouseNothing\ncommandAll1: MouseUnrestrictedMove\ncommandAll2: MouseToggleRaiseAndLower\ncommandAll3: MouseUnrestrictedResize\nkeyCmdAllModKey: 16777250\ndoubleClickBorderToMaximize: true\ncondensedTitle: false\nelectricBorderMaximize: true\nelectricBorderTiling: true\nelectricBorderAllScreenCorner: true\nelectricBorderCornerRatio: 0.25\nborderlessMaximizedWindows: false\nkillPingTimeout: 5000\ncompositingMode: 1\nallowTearing: true\ninteractiveWindowMoveEnabled: true\npictureInPictureHomeCorner: BottomRightCorner\npictureInPictureMargin: 20\noverlayVirtualKeyboardOnWindows: false\n\nScreen Edges\n============\ndesktopSwitching: false\ndesktopSwitchingMovingClients: false\ncursorPushBackDistance: 1x1\nactionTopLeft: 0\nactionTop: 0\nactionTopRight: 0\nactionRight: 0\nactionBottomRight: 0\nactionBottom: 0\nactionBottomLeft: 0\nactionLeft: 0\n\nScreens\n=======\nNumber of Screens: 1\n\nScreen 0:\n---------\nName: Virtual-1\nEnabled: 1\nGeometry: 0,0,1920x1200\nPhysical size: 487x304mm\nScale: 1\nRefresh Rate: 74999\nAdaptive Sync: incapable\n\nCompositing\n===========\nCompositing is active\nCompositing Type: OpenGL\nOpenGL vendor string: Mesa\nOpenGL renderer string: virgl (AMD Radeon 780M Graphics (radeonsi, phoenix, ACO, DR...)\nOpenGL version string: 4.3 (Core Profile) Mesa 26.1.8\nOpenGL platform interface: EGL\nOpenGL shading language version string: 4.30\nDriver: Unknown\nGPU class: Unknown\nOpenGL version: 4.3\nGLSL version: 4.30\nMesa version: 26.1.8\nX server version: 1.24.1\nLinux kernel version: 7.2.5\nDirect rendering: Requires strict binding: no\nVirtual Machine:  no\nOpenGL 2 Shaders are used\n\nLoaded Effects:\n---------------\nshakecursor\noutputlocator\ncolorpicker\nzoom\nscreenedge\nblur\nsessionquit\nlogout\nlogin\nslidingpopups\nslidingnotifications\nmaximize\nfullscreen\nfrozenapp\nfadingpopups\nfade\ndimscreen\ndialogparent\nwindowview\ntileseditor\noverview\nhighlightwindow\nblendchanges\nstartupfeedback\nsystembell\nscreentransform\nkscreen\n\nCurrently Active Effects:\n-------------------------\nblur\n\nEffect Settings:\n----------------\nshakecursor:\n\noutputlocator:\n\ncolorpicker:\n\nzoom:\nzoomFactor: 1.2\nmouseTracking: 0\nfocusDelay: 350\nmoveFactor: 20\ntargetZoom: 1\n\nscreenedge:\n\nblur:\n\nsessionquit:\npluginId: sessionquit\nisActiveFullScreenEffect: false\n\nlogout:\npluginId: logout\nisActiveFullScreenEffect: false\n\nlogin:\npluginId: login\nisActiveFullScreenEffect: false\n\nslidingpopups:\nslideInDuration: 130\nslideOutDuration: 130\n\nslidingnotifications:\n\nmaximize:\npluginId: maximize\nisActiveFullScreenEffect: false\n\nfullscreen:\npluginId: fullscreen\nisActiveFullScreenEffect: false\n\nfrozenapp:\npluginId: frozenapp\nisActiveFullScreenEffect: false\n\nfadingpopups:\npluginId: fadingpopups\nisActiveFullScreenEffect: false\n\nfade:\npluginId: fade\nisActiveFullScreenEffect: false\n\ndimscreen:\npluginId: dimscreen\nisActiveFullScreenEffect: false\n\ndialogparent:\npluginId: dialogparent\nisActiveFullScreenEffect: false\n\nwindowview:\nactiveView: \ndelegate: \nanimationDuration: 195\nignoreMinimized: false\nmode: ModeCurrentDesktop\npartialActivationFactor: 0\ngestureInProgress: false\nsearchText: \nselectedIds: \n\ntileseditor:\nactiveView: \ndelegate: \nanimationDuration: 200\n\noverview:\nactiveView: \ndelegate: \nanimationDuration: 195\nignoreMinimized: false\nfilterWindows: true\norganizedGrid: true\noverviewPartialActivationFactor: 0\noverviewGestureInProgress: false\ntransitionPartialActivationFactor: 0\ntransitionGestureInProgress: false\ngridPartialActivationFactor: 0\ngridGestureInProgress: false\nsearchText: \n\nhighlightwindow:\n\nblendchanges:\n\nstartupfeedback:\ntype: 1\n\nsystembell:\n\nscreentransform:\n\nkscreen:\n\n\nLoaded Plugins:\n---------------\nBounceKeysPlugin\nKeyNotificationPlugin\nMouseKeysPlugin\nSlowKeysPlugin\nStickyKeysPlugin\nTouchpadShortcutsPlugin\nbuttonsrebind\neis\nkrunnerintegration\nnightlight\nscreencast\nscreenshot\n\nAvailable Plugins:\n------------------\nBounceKeysPlugin\nKeyNotificationPlugin\nMouseKeysPlugin\nSlowKeysPlugin\nStickyKeysPlugin\nTouchpadShortcutsPlugin\nbuttonsrebind\neis\ngamecontroller\nkrunnerintegration\nnightlight\nscreencast\nscreenshot\n\n",
+        "stderr": ""
+      }
+    },
+    "font_matches": {
+      "sans-serif:lang=en:charset=0041": {
+        "argv": [
+          "fc-match",
+          "--format",
+          "%{family}|%{style}|%{weight}|%{hintstyle}|%{rgba}|%{embolden}|%{file}\n",
+          "sans-serif:lang=en:charset=0041"
+        ],
+        "exit_code": 0,
+        "stdout": "Noto Sans|Regular|80|1|5|False|/usr/share/fonts/google-noto/NotoSans-Regular.ttf\n",
+        "stderr": ""
+      },
+      "Noto Sans:lang=zh-cn:charset=4e2d": {
+        "argv": [
+          "fc-match",
+          "--format",
+          "%{family}|%{style}|%{weight}|%{hintstyle}|%{rgba}|%{embolden}|%{file}\n",
+          "Noto Sans:lang=zh-cn:charset=4e2d"
+        ],
+        "exit_code": 0,
+        "stdout": "Noto Sans CJK SC|Regular|80|1|5|False|/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc\n",
+        "stderr": ""
+      },
+      "Noto Sans:lang=zh-tw:charset=4e2d": {
+        "argv": [
+          "fc-match",
+          "--format",
+          "%{family}|%{style}|%{weight}|%{hintstyle}|%{rgba}|%{embolden}|%{file}\n",
+          "Noto Sans:lang=zh-tw:charset=4e2d"
+        ],
+        "exit_code": 0,
+        "stdout": "Noto Sans CJK TC|Regular|80|1|5|False|/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc\n",
+        "stderr": ""
+      },
+      "Noto Sans:lang=zh-hk:charset=4e2d": {
+        "argv": [
+          "fc-match",
+          "--format",
+          "%{family}|%{style}|%{weight}|%{hintstyle}|%{rgba}|%{embolden}|%{file}\n",
+          "Noto Sans:lang=zh-hk:charset=4e2d"
+        ],
+        "exit_code": 0,
+        "stdout": "Noto Sans CJK HK|Regular|80|1|5|False|/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc\n",
+        "stderr": ""
+      },
+      "Noto Sans:lang=zh-cn:weight=medium:charset=4e2d": {
+        "argv": [
+          "fc-match",
+          "--format",
+          "%{family}|%{style}|%{weight}|%{hintstyle}|%{rgba}|%{embolden}|%{file}\n",
+          "Noto Sans:lang=zh-cn:weight=medium:charset=4e2d"
+        ],
+        "exit_code": 0,
+        "stdout": "Noto Sans CJK SC|Medium|100|1|5|False|/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc\n",
+        "stderr": ""
+      },
+      "monospace:lang=zh-cn:charset=4e2d": {
+        "argv": [
+          "fc-match",
+          "--format",
+          "%{family}|%{style}|%{weight}|%{hintstyle}|%{rgba}|%{embolden}|%{file}\n",
+          "monospace:lang=zh-cn:charset=4e2d"
+        ],
+        "exit_code": 0,
+        "stdout": "Noto Sans Mono CJK SC|Regular|80|1|5|False|/usr/share/fonts/google-noto-sans-mono-cjk-vf-fonts/NotoSansMonoCJK-VF.ttc\n",
+        "stderr": ""
+      },
+      "emoji:charset=1f600": {
+        "argv": [
+          "fc-match",
+          "--format",
+          "%{family}|%{style}|%{weight}|%{hintstyle}|%{rgba}|%{embolden}|%{file}\n",
+          "emoji:charset=1f600"
+        ],
+        "exit_code": 0,
+        "stdout": "Noto Color Emoji|Regular|80|1|5||/usr/share/fonts/google-noto-color-emoji-fonts/Noto-COLRv1.ttf\n",
+        "stderr": ""
+      }
+    },
+    "limitations": [
+      "Font matching and configuration hashes do not prove visual quality.",
+      "At integer scales the Qt probe creates no window; QScreen and KScreen must agree.",
+      "At fractional scales the separate measurement surface is mapped after the screenshot, not part of captured pixels.",
+      "Wayland may temporarily focus the fractional alpha-zero surface; original KWin active UUID must return after it closes.",
+      "The fractional probe can dismiss native menus/popovers even when the active UUID returns. Popup state is not restored; reopen it through the native application before further interaction.",
+      "QScreen scale may be rounded on Wayland; use mapped QWindow scale with KScreen agreement for fractional captures.",
+      "Atomic state reports available deployments; rollback must be exercised separately."
+    ]
+  },
+  "runtime_probe_stderr": "",
+  "visually_inspected": false
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-09-15T07:12:45.875476+00:00",
+  "source": ".cache/vm/aven.qcow2",
+  "output": "output/aven-prototype-round04.qcow2",
+  "source_qemu_info": {
+    "children": [
+      {
+        "name": "file",
+        "info": {
+          "children": [],
+          "virtual-size": 18285199360,
+          "filename": ".cache/vm/aven.qcow2",
+          "format": "file",
+          "actual-size": 18288807936,
+          "format-specific": {
+            "type": "file",
+            "data": {}
+          },
+          "dirty-flag": false
+        }
+      }
+    ],
+    "virtual-size": 51539607552,
+    "filename": ".cache/vm/aven.qcow2",
+    "cluster-size": 65536,
+    "format": "qcow2",
+    "actual-size": 18288807936,
+    "format-specific": {
+      "type": "qcow2",
+      "data": {
+        "compat": "1.1",
+        "compression-type": "zlib",
+        "lazy-refcounts": false,
+        "refcount-bits": 16,
+        "corrupt": false,
+        "extended-l2": false
+      }
+    },
+    "dirty-flag": false
+  },
+  "clean_shutdown_requested": true,
+  "qmp_closed_before_export": true,
+  "command": [
+    "qemu-img",
+    "convert",
+    "-c",
+    "-m",
+    "8",
+    "-O",
+    "qcow2",
+    ".cache/vm/aven.qcow2",
+    "output/aven-prototype-round04.qcow2"
+  ],
+  "finished_at": "2026-09-15T07:18:33.917547+00:00",
+  "output_qemu_info": {
+    "children": [
+      {
+        "name": "file",
+        "info": {
+          "children": [],
+          "virtual-size": 9778102272,
+          "filename": "output/aven-prototype-round04.qcow2",
+          "format": "file",
+          "actual-size": 9755308032,
+          "format-specific": {
+            "type": "file",
+            "data": {}
+          },
+          "dirty-flag": false
+        }
+      }
+    ],
+    "virtual-size": 51539607552,
+    "filename": "output/aven-prototype-round04.qcow2",
+    "cluster-size": 65536,
+    "format": "qcow2",
+    "actual-size": 9755308032,
+    "format-specific": {
+      "type": "qcow2",
+      "data": {
+        "compat": "1.1",
+        "compression-type": "zlib",
+        "lazy-refcounts": false,
+        "refcount-bits": 16,
+        "corrupt": false,
+        "extended-l2": false
+      }
+    },
+    "dirty-flag": false
+  },
+  "conversion_exit_code": 0,
+  "qemu_check": {
+    "image-end-offset": 9778102272,
+    "compressed-clusters": 245418,
+    "total-clusters": 786432,
+    "check-errors": 0,
+    "allocated-clusters": 278958,
+    "filename": "output/aven-prototype-round04.qcow2",
+    "format": "qcow2",
+    "fragmented-clusters": 249928
+  },
+  "disk_hash": {
+    "path": "output/aven-prototype-round04.qcow2",
+    "bytes": 9778102272,
+    "sha256": "f739eb99cb2d60c28baf9c5e336e80009ebfd3efc0721713c5d837d0fa4a0e51",
+    "checked_at": "2026-09-15T07:20:32.841569+00:00"
+  },
+  "qemu_check_exit_code": 0,
+  "virtual_content_comparison": {
+    "command": "qemu-img compare -f qcow2 -F qcow2 .cache/vm/aven.qcow2 output/aven-prototype-round04.qcow2",
+    "exit_code": 0,
+    "stdout": "Images are identical.\n",
+    "finished_at": "2026-09-15T07:22:02.768792+00:00"
+  }
+}

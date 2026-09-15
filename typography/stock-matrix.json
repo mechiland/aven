@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "status": "stock-matrix-captured-inspected-runtime-scale-validated",
+  "captured_guest": "stock",
+  "scope": "baseline-only; no paired visual score",
+  "protocol": "docs/typography-stock-matrix.md",
+  "fixture_sha256": "ff6f9644427439f80bd3b9f0825ec9542ed2d41dfcddb28b9fe54a6f68c9a6b5",
+  "captures": [
+    {
+      "sidecar": "evidence/stock/round-00/typography-ui-sc-matrix-1x.json",
+      "image": "evidence/stock/round-00/typography-ui-sc-matrix-1x.png",
+      "sha256": "a4262bc1746868affa3ca356e4723110c07daa0434128829c64f900b40ffb7fc",
+      "tags": [
+        "qt_sc"
+      ],
+      "content_id": "typography-ui-sc-v1",
+      "declared_scale": 1.0,
+      "captured_compositor_scale": 1.0,
+      "captured_qscreen_dpr": 1.0,
+      "framebuffer": [
+        1280,
+        720
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:11:49.390343+00:00",
+      "observations": "Native SC Dolphin sidebar/column labels, mixed Chinese/Latin filenames visible. Narrow sidebar truncates location labels; small UI font and bold breadcrumb. No visible missing-glyph boxes.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "scale_validation": {
+        "status": "pass",
+        "method": "legacy integer QScreen DPR with capture-time KScreen agreement"
+      }
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-ui-sc-final-1.25x.json",
+      "image": "evidence/stock/round-00/typography-ui-sc-final-1.25x.png",
+      "sha256": "86bee96747321d1f660bd4a9943069eba3336fad03bca482048a40932cff45fd",
+      "tags": [
+        "qt_sc"
+      ],
+      "content_id": "typography-ui-sc-v1",
+      "declared_scale": 1.25,
+      "captured_compositor_scale": 1.25,
+      "captured_qscreen_dpr": 2.0,
+      "framebuffer": [
+        1600,
+        900
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:32:28.214835+00:00",
+      "observations": "Native SC Dolphin sidebar/column labels, mixed Chinese/Latin filenames visible. Narrow sidebar truncates location labels; small UI font and bold breadcrumb. No visible missing-glyph boxes. Restarted SC process has no visible selected row in fractional captures.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "captured_qwindow_dpr": 1.25,
+      "probe_focus_restored": true,
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement"
+      }
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-ui-sc-final-1.5x.json",
+      "image": "evidence/stock/round-00/typography-ui-sc-final-1.5x.png",
+      "sha256": "95d1c097a9a3adfa59cdc7ea5208d345e18fc9506afa2a0195d0b870ca6400ec",
+      "tags": [
+        "qt_sc"
+      ],
+      "content_id": "typography-ui-sc-v1",
+      "declared_scale": 1.5,
+      "captured_compositor_scale": 1.5,
+      "captured_qscreen_dpr": 2.0,
+      "framebuffer": [
+        1920,
+        1080
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:32:28.214835+00:00",
+      "observations": "Native SC Dolphin sidebar/column labels, mixed Chinese/Latin filenames visible. Narrow sidebar truncates location labels; small UI font and bold breadcrumb. No visible missing-glyph boxes. Restarted SC process has no visible selected row in fractional captures.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "captured_qwindow_dpr": 1.5,
+      "probe_focus_restored": true,
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement"
+      }
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-ui-sc-matrix-2x.json",
+      "image": "evidence/stock/round-00/typography-ui-sc-matrix-2x.png",
+      "sha256": "fad1ff6c708895c70c886c4b503afc4ab889e965eb490b63f1c6ef0c43f19828",
+      "tags": [
+        "qt_sc"
+      ],
+      "content_id": "typography-ui-sc-v1",
+      "declared_scale": 2.0,
+      "captured_compositor_scale": 2.0,
+      "captured_qscreen_dpr": 2.0,
+      "framebuffer": [
+        2560,
+        1440
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:11:49.394167+00:00",
+      "observations": "Native SC Dolphin sidebar/column labels, mixed Chinese/Latin filenames visible. Narrow sidebar truncates location labels; small UI font and bold breadcrumb. No visible missing-glyph boxes.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "scale_validation": {
+        "status": "pass",
+        "method": "legacy integer QScreen DPR with capture-time KScreen agreement"
+      }
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-sc-matched-1x.json",
+      "image": "evidence/stock/round-00/typography-prose-sc-matched-1x.png",
+      "sha256": "a570b009e49c296a3d770d254d6a606929309b340e9cfeabce82f76cf9151758",
+      "tags": [
+        "typography_sc"
+      ],
+      "content_id": "typography-prose-sc-v1",
+      "declared_scale": 1.0,
+      "captured_compositor_scale": 1.0,
+      "captured_qscreen_dpr": 1.0,
+      "framebuffer": [
+        1280,
+        720
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:11:49.394982+00:00",
+      "observations": "Complete SC three paragraphs visibly present, mixed Chinese/Latin/digits and punctuation. Reading layout preserves lines at matched logical viewport. Beginning of TC section visible below.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "scale_validation": {
+        "status": "pass",
+        "method": "legacy integer QScreen DPR with capture-time KScreen agreement"
+      }
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-sc-final-1.25x.json",
+      "image": "evidence/stock/round-00/typography-prose-sc-final-1.25x.png",
+      "sha256": "8d5378130a5c9bc011325481b8cb0775a9976c4b3c3f385c114ac8defd0db20a",
+      "tags": [
+        "typography_sc"
+      ],
+      "content_id": "typography-prose-sc-v1",
+      "declared_scale": 1.25,
+      "captured_compositor_scale": 1.25,
+      "captured_qscreen_dpr": 2.0,
+      "framebuffer": [
+        1600,
+        900
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:32:28.214835+00:00",
+      "observations": "Complete SC three paragraphs visibly present, mixed Chinese/Latin/digits and punctuation. Reading layout preserves lines at matched logical viewport. Beginning of TC section visible below.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "captured_qwindow_dpr": 1.25,
+      "probe_focus_restored": true,
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement"
+      }
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-sc-final-1.5x.json",
+      "image": "evidence/stock/round-00/typography-prose-sc-final-1.5x.png",
+      "sha256": "eaf23469d015d3eb33791c004837dca965aa0dffb355361cf03706b95048c00f",
+      "tags": [
+        "typography_sc"
+      ],
+      "content_id": "typography-prose-sc-v1",
+      "declared_scale": 1.5,
+      "captured_compositor_scale": 1.5,
+      "captured_qscreen_dpr": 2.0,
+      "framebuffer": [
+        1920,
+        1080
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:32:28.214835+00:00",
+      "observations": "Complete SC three paragraphs visibly present, mixed Chinese/Latin/digits and punctuation. Reading layout preserves lines at matched logical viewport. Beginning of TC section visible below.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "captured_qwindow_dpr": 1.5,
+      "probe_focus_restored": true,
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement"
+      }
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-sc-matched-2x.json",
+      "image": "evidence/stock/round-00/typography-prose-sc-matched-2x.png",
+      "sha256": "0d85bf96d9c36ea676f67eebf149ab72f86f4f23874c19620fcd686a4ef15d19",
+      "tags": [
+        "typography_sc"
+      ],
+      "content_id": "typography-prose-sc-v1",
+      "declared_scale": 2.0,
+      "captured_compositor_scale": 2.0,
+      "captured_qscreen_dpr": 2.0,
+      "framebuffer": [
+        2560,
+        1440
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:11:49.398204+00:00",
+      "observations": "Complete SC three paragraphs visibly present, mixed Chinese/Latin/digits and punctuation. Reading layout preserves lines at matched logical viewport. Beginning of TC section visible below.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "scale_validation": {
+        "status": "pass",
+        "method": "legacy integer QScreen DPR with capture-time KScreen agreement"
+      }
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-ui-tc-matrix-1x.json",
+      "image": "evidence/stock/round-00/typography-ui-tc-matrix-1x.png",
+      "sha256": "5741cee6010905ef3e6ceb8010b25ae91a2996d19bdca6dff618e9e94fddf7d2",
+      "tags": [
+        "qt_tc"
+      ],
+      "content_id": "typography-ui-tc-v1",
+      "declared_scale": 1.0,
+      "captured_compositor_scale": 1.0,
+      "captured_qscreen_dpr": 1.0,
+      "framebuffer": [
+        1280,
+        720
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:11:49.398658+00:00",
+      "observations": "Native TC Dolphin sidebar/column labels, mixed Chinese/Latin filenames visible. Narrow sidebar truncates location labels; small UI font and bold breadcrumb. No visible missing-glyph boxes.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "scale_validation": {
+        "status": "pass",
+        "method": "legacy integer QScreen DPR with capture-time KScreen agreement"
+      }
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-ui-tc-final-1.25x.json",
+      "image": "evidence/stock/round-00/typography-ui-tc-final-1.25x.png",
+      "sha256": "c97292c0bcf3bc691d2cf36e9a6f7f74cabf0af9141ec75a2a4c23f911850540",
+      "tags": [
+        "qt_tc"
+      ],
+      "content_id": "typography-ui-tc-v1",
+      "declared_scale": 1.25,
+      "captured_compositor_scale": 1.25,
+      "captured_qscreen_dpr": 2.0,
+      "framebuffer": [
+        1600,
+        900
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:32:28.214835+00:00",
+      "observations": "Native TC Dolphin sidebar/column labels, mixed Chinese/Latin filenames visible. Narrow sidebar truncates location labels; small UI font and bold breadcrumb. No visible missing-glyph boxes.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "captured_qwindow_dpr": 1.25,
+      "probe_focus_restored": true,
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement"
+      }
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-ui-tc-final-1.5x.json",
+      "image": "evidence/stock/round-00/typography-ui-tc-final-1.5x.png",
+      "sha256": "a4fa4543e3b5d4a1e00e25ea5c54c78019739a77d9f413b40483b6e6f0ee9321",
+      "tags": [
+        "qt_tc"
+      ],
+      "content_id": "typography-ui-tc-v1",
+      "declared_scale": 1.5,
+      "captured_compositor_scale": 1.5,
+      "captured_qscreen_dpr": 2.0,
+      "framebuffer": [
+        1920,
+        1080
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:32:28.214835+00:00",
+      "observations": "Native TC Dolphin sidebar/column labels, mixed Chinese/Latin filenames visible. Narrow sidebar truncates location labels; small UI font and bold breadcrumb. No visible missing-glyph boxes.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "captured_qwindow_dpr": 1.5,
+      "probe_focus_restored": true,
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement"
+      }
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-ui-tc-matrix-2x.json",
+      "image": "evidence/stock/round-00/typography-ui-tc-matrix-2x.png",
+      "sha256": "61189b05340dfc10b3a089229973b1f64867396ce8981ed8d95da28180bbb8ba",
+      "tags": [
+        "qt_tc"
+      ],
+      "content_id": "typography-ui-tc-v1",
+      "declared_scale": 2.0,
+      "captured_compositor_scale": 2.0,
+      "captured_qscreen_dpr": 2.0,
+      "framebuffer": [
+        2560,
+        1440
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:11:49.401210+00:00",
+      "observations": "Native TC Dolphin sidebar/column labels, mixed Chinese/Latin filenames visible. Narrow sidebar truncates location labels; small UI font and bold breadcrumb. No visible missing-glyph boxes.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "scale_validation": {
+        "status": "pass",
+        "method": "legacy integer QScreen DPR with capture-time KScreen agreement"
+      }
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-tc-matched-1x.json",
+      "image": "evidence/stock/round-00/typography-prose-tc-matched-1x.png",
+      "sha256": "d761c2f28d64646f4b00bc6aff08c61563c8d59679d1cf28ca17c6be8131ec84",
+      "tags": [
+        "typography_tc"
+      ],
+      "content_id": "typography-prose-tc-v1",
+      "declared_scale": 1.0,
+      "captured_compositor_scale": 1.0,
+      "captured_qscreen_dpr": 1.0,
+      "framebuffer": [
+        1280,
+        720
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:11:49.401646+00:00",
+      "observations": "Complete TC three paragraphs visibly present, mixed Chinese/Latin/digits and punctuation. Reading layout preserves lines at matched logical viewport. HK paragraph also completely visible.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "scale_validation": {
+        "status": "pass",
+        "method": "legacy integer QScreen DPR with capture-time KScreen agreement"
+      }
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-tc-final-1.25x.json",
+      "image": "evidence/stock/round-00/typography-prose-tc-final-1.25x.png",
+      "sha256": "e80870c38d6db64387a2c03700010c31bee54034c6e95a05075f3080be68a33f",
+      "tags": [
+        "typography_tc"
+      ],
+      "content_id": "typography-prose-tc-v1",
+      "declared_scale": 1.25,
+      "captured_compositor_scale": 1.25,
+      "captured_qscreen_dpr": 2.0,
+      "framebuffer": [
+        1600,
+        900
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:32:28.214835+00:00",
+      "observations": "Complete TC three paragraphs visibly present, mixed Chinese/Latin/digits and punctuation. Reading layout preserves lines at matched logical viewport. HK paragraph also completely visible.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "captured_qwindow_dpr": 1.25,
+      "probe_focus_restored": true,
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement"
+      }
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-tc-final-1.5x.json",
+      "image": "evidence/stock/round-00/typography-prose-tc-final-1.5x.png",
+      "sha256": "30b89122fabcc9aabced851b62d413d1681e8a266d860f39c47271a26af73aa5",
+      "tags": [
+        "typography_tc"
+      ],
+      "content_id": "typography-prose-tc-v1",
+      "declared_scale": 1.5,
+      "captured_compositor_scale": 1.5,
+      "captured_qscreen_dpr": 2.0,
+      "framebuffer": [
+        1920,
+        1080
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:32:28.214835+00:00",
+      "observations": "Complete TC three paragraphs visibly present, mixed Chinese/Latin/digits and punctuation. Reading layout preserves lines at matched logical viewport. HK paragraph also completely visible.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "captured_qwindow_dpr": 1.5,
+      "probe_focus_restored": true,
+      "scale_validation": {
+        "status": "pass",
+        "method": "mapped QWindow DPR with KScreen agreement"
+      }
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-tc-matched-2x.json",
+      "image": "evidence/stock/round-00/typography-prose-tc-matched-2x.png",
+      "sha256": "f0c08e3b05e5c0594b3653e0b7350ebe0178eea35afd77b4ee584659093778aa",
+      "tags": [
+        "typography_tc"
+      ],
+      "content_id": "typography-prose-tc-v1",
+      "declared_scale": 2.0,
+      "captured_compositor_scale": 2.0,
+      "captured_qscreen_dpr": 2.0,
+      "framebuffer": [
+        2560,
+        1440
+      ],
+      "inspected_by": "typography-agent",
+      "inspected_at": "2026-09-15T05:11:49.403892+00:00",
+      "observations": "Complete TC three paragraphs visibly present, mixed Chinese/Latin/digits and punctuation. Reading layout preserves lines at matched logical viewport. HK paragraph also completely visible.",
+      "gate_status": "baseline-capture-only-awaiting-Aven-pair",
+      "scale_validation": {
+        "status": "pass",
+        "method": "legacy integer QScreen DPR with capture-time KScreen agreement"
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "sidecar": "evidence/stock/round-00/typography-ui-sc-1x.json",
+      "reason": "Provisional two-tab Dolphin view; canonical UI uses single-tab -matrix scene."
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-sc-1x.json",
+      "reason": "Provisional three-tab browser view; canonical prose uses single-tab -matched scene."
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-sc-matrix-1x.json",
+      "reason": "Native navigation error: screenshot actually shows preexisting traditional browser fixture page, not SC typography specimen. Original claimed capture note is incorrect. Exclude from typography evidence."
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-ui-sc-matrix-1.25x.json",
+      "reason": "Real visible image inspected, but original fractional sidecar uses rounded QScreen-only DPR. Superseded by fresh -final capture with mapped native surface DPR and compositor agreement."
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-ui-sc-matrix-1.5x.json",
+      "reason": "Real visible image inspected, but original fractional sidecar uses rounded QScreen-only DPR. Superseded by fresh -final capture with mapped native surface DPR and compositor agreement."
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-sc-matched-1.25x.json",
+      "reason": "Real visible image inspected, but original fractional sidecar uses rounded QScreen-only DPR. Superseded by fresh -final capture with mapped native surface DPR and compositor agreement."
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-sc-matched-1.5x.json",
+      "reason": "Real visible image inspected, but original fractional sidecar uses rounded QScreen-only DPR. Superseded by fresh -final capture with mapped native surface DPR and compositor agreement."
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-ui-tc-matrix-1.25x.json",
+      "reason": "Real visible image inspected, but original fractional sidecar uses rounded QScreen-only DPR. Superseded by fresh -final capture with mapped native surface DPR and compositor agreement."
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-ui-tc-matrix-1.5x.json",
+      "reason": "Real visible image inspected, but original fractional sidecar uses rounded QScreen-only DPR. Superseded by fresh -final capture with mapped native surface DPR and compositor agreement."
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-tc-matched-1.25x.json",
+      "reason": "Real visible image inspected, but original fractional sidecar uses rounded QScreen-only DPR. Superseded by fresh -final capture with mapped native surface DPR and compositor agreement."
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-tc-matched-1.5x.json",
+      "reason": "Real visible image inspected, but original fractional sidecar uses rounded QScreen-only DPR. Superseded by fresh -final capture with mapped native surface DPR and compositor agreement."
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-tc-verified-1.25x.json",
+      "reason": "Inspected PNG contains only Display output is not active after stock idle DPMS timeout. Runtime scale metadata passes but image is unsuitable; replaced by visible -final capture after native wake input."
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-prose-tc-verified-1.5x.json",
+      "reason": "Inspected PNG contains only Display output is not active after stock idle DPMS timeout. Runtime scale metadata passes but image is unsuitable; replaced by visible -final capture after native wake input."
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-ui-tc-verified-1.25x.json",
+      "reason": "Inspected PNG contains only Display output is not active after stock idle DPMS timeout. Runtime scale metadata passes but image is unsuitable; replaced by visible -final capture after native wake input."
+    },
+    {
+      "sidecar": "evidence/stock/round-00/typography-ui-tc-verified-1.5x.json",
+      "reason": "Inspected PNG contains only Display output is not active after stock idle DPMS timeout. Runtime scale metadata passes but image is unsuitable; replaced by visible -final capture after native wake input."
+    }
+  ],
+  "scores": null,
+  "restored_display": {
+    "scale": 1,
+    "physical_framebuffer": [
+      1920,
+      1200
+    ],
+    "mode_id": "1",
+    "refresh_hz": 75,
+    "verified_by": "kscreen-doctor -o",
+    "verified_at": "2026-09-15T05:32:28.214835+00:00"
+  },
+  "limitations": [
+    "Baseline only: no paired Aven score.",
+    "Integer 1x/2x captures retain original QScreen/KScreen measurement; fractional captures use mapped QWindow/KScreen agreement.",
+    "SC integer first-row focus outline differs from restarted fractional view, which has no selected row.",
+    "The specimen is a controlled diagnostic with fixed CSS; native Dolphin demonstrates system UI appearance."
+  ]
+}

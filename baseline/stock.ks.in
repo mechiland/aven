@@ -1,0 +1,35 @@
+# VM-only harness. No Aven visual or application preferences are applied.
+text
+lang en_US.UTF-8
+keyboard us
+timezone Asia/Shanghai --utc
+network --bootproto=dhcp --device=link --activate --hostname=aven-lab
+rootpw --lock
+user --name=aven --groups=wheel --lock --gecos="Aven Lab"
+sshkey --username=aven "@SSH_PUBLIC_KEY@"
+firewall --enabled --service=ssh
+services --enabled=sshd,plasmalogin
+selinux --enforcing
+firstboot --disable
+ignoredisk --only-use=vda
+zerombr
+clearpart --all --initlabel --drives=vda
+autopart --type=btrfs --noswap
+bootloader --location=mbr --append="console=tty0 console=ttyS0,115200n8"
+ostreesetup --osname=fedora --remote=fedora --url=file:///ostree/repo --ref=fedora/44/x86_64/kinoite --nogpg
+poweroff
+
+%post --erroronfail
+mkdir -p /etc/sudoers.d /etc/plasmalogin.conf.d
+echo 'aven ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/aven-lab
+chmod 0440 /etc/sudoers.d/aven-lab
+cat > /etc/plasmalogin.conf.d/00-lab-autologin.conf <<'EOF'
+[Autologin]
+User=aven
+Session=plasma.desktop
+Relogin=false
+EOF
+systemctl set-default graphical.target
+# The lab user was already created by Kickstart; skip the native first-user wizard.
+touch /etc/plasma-setup-done
+%end

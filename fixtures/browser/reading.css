@@ -1,0 +1,37 @@
+/* Ordinary authored content. Same fixture bytes in stock and Aven. Generic
+   system fonts expose installed fontconfig/Firefox fallback, without downloads. */
+:root { color-scheme: light; font: 17px/1.75 sans-serif; color: #26342f; background: #fdfcf9; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #326b60; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible, input:focus-visible { outline: 2px solid #326b60; outline-offset: 4px; }
+header { max-width: 1120px; margin: auto; padding: 24px 32px; border-bottom: 1px solid #d7ddd5; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+.wordmark { font-size: 21px; font-weight: 600; color: inherit; white-space: nowrap; }
+.wordmark span { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: .14em; margin-left: 12px; }
+nav { display: flex; gap: 24px; font-size: 14px; }
+main { max-width: 1120px; margin: auto; padding: 32px; display: grid; grid-template-columns: minmax(0, 760px) 208px; gap: 48px; }
+.eyebrow, .byline, .small { font-size: 12px; color: #65706a; }
+.eyebrow { margin: 0 0 12px; }
+h1 { font-size: 32px; line-height: 1.4; font-weight: 500; margin: 0 0 12px; }
+.standfirst { font-size: 16px; color: #65706a; margin: 0 0 24px; }
+.landscape { height: 136px; position: relative; overflow: hidden; background: #dce8e0; border-radius: 6px; }
+.landscape::before { content: ''; position: absolute; width: 120%; height: 112px; left: -8%; top: 14px; border-radius: 50%; transform: rotate(-12deg); background: #a8c1c0; border: 12px solid #e9e7d8; }
+.landscape::after { content: ''; position: absolute; width: 100%; height: 90px; left: 30%; bottom: -78px; border-radius: 50%; transform: rotate(-12deg); background: #93b2a5; }
+.landscape span { position: absolute; z-index: 1; left: 20px; top: 12px; font: 11px/1.5 sans-serif; letter-spacing: .06em; }
+.body p { margin: 24px 0; text-align: start; }
+h2 { font-size: 19px; font-weight: 500; line-height: 1.5; margin: 32px 0 12px; }
+blockquote { border-left: 2px solid #326b60; margin: 24px 0; padding: 8px 20px; color: #326b60; }
+aside { border-left: 1px solid #d7ddd5; padding-left: 24px; font-size: 14px; }
+aside h2 { font-size: 15px; margin-top: 0; }
+aside h2:not(:first-child) { margin-top: 36px; }
+dl { display: grid; grid-template-columns: 44px 1fr; gap: 12px 8px; margin: 20px 0 24px; }
+dt { color: #65706a; }
+dd { margin: 0; }
+.button { display: block; padding: 7px 12px; border: 1px solid #326b60; border-radius: 6px; text-align: center; }
+.upload { display: block; margin-top: 20px; }
+input { font: inherit; max-width: 100%; margin-top: 8px; font-size: 12px; }
+.story { display: block; margin: 20px 0; }
+.story span { display: block; color: #65706a; font-size: 12px; margin-top: 4px; }
+footer { max-width: 1056px; margin: 16px auto 32px; padding: 24px 0; border-top: 1px solid #d7ddd5; color: #65706a; font-size: 12px; }
+@media (max-width: 800px) { header { align-items: flex-start; } .wordmark span { display: block; margin: 0; } nav { gap: 12px; } main { grid-template-columns: 1fr; gap: 24px; padding: 24px; } aside { border-left: 0; border-top: 1px solid #d7ddd5; padding: 24px 0 0; } footer { margin: 16px 24px; } }

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-15T05:49:07.399054+00:00",
+  "guest": "stock",
+  "observer": "/root/verification",
+  "method": "read-only SHA256 and byte-count query of the existing native Firefox download",
+  "file": "/home/aven/Downloads/周末路线.txt",
+  "source_fixture": "fixtures/browser/周末路线.txt",
+  "expected_sha256": "4372c686ff8ad721173bb63d024a3c685b0d12b0f14f0942d09598a336ef6fee",
+  "actual_sha256": "4372c686ff8ad721173bb63d024a3c685b0d12b0f14f0942d09598a336ef6fee",
+  "guest_source_sha256": "4372c686ff8ad721173bb63d024a3c685b0d12b0f14f0942d09598a336ef6fee",
+  "size_bytes": 428,
+  "passed": true,
+  "raw_stdout": "4372c686ff8ad721173bb63d024a3c685b0d12b0f14f0942d09598a336ef6fee  /home/aven/Downloads/周末路线.txt\n4372c686ff8ad721173bb63d024a3c685b0d12b0f14f0942d09598a336ef6fee  /home/aven/aven/fixtures/browser/周末路线.txt\n428 /home/aven/Downloads/周末路线.txt\n",
+  "download_operator": "/root",
+  "native_download_captured_at": "2026-09-15T04:51:49.157722+00:00",
+  "limitation": "Current byte equality complements the original native download screenshots; no new download was performed by verification."
+}

@@ -1,0 +1,62 @@
+[
+  1,
+  3,
+  null,
+  {
+    "value": {
+      "uri": "about:blank?compose",
+      "mode": "on",
+      "bodyHTML": "<body>\n    <main class=\"aven-letter\" lang=\"zh-CN\">\n      <p>林清，你好：</p>\n      <p>周六 10:30 没问题。我已经看过湖边的照片，喜欢那张有树影的；我们可以先在书店碰面，再慢慢走过去。</p>\n      <p>我会带上相机和那本书。路线图已存到 Documents，出门前再看一眼就好。</p>\n      <p>周末见！<br>\n        安宁</p>\n      <p><br>\n      </p>\n      <p>已核对路线，周六见。</p>\n    </main>\n  \n\n</body>",
+      "computed": [
+        {
+          "tag": "BODY",
+          "rw": true,
+          "font": "17px \"Noto Sans\", sans-serif",
+          "line": "normal"
+        },
+        {
+          "tag": "MAIN",
+          "rw": true,
+          "font": "17px \"Noto Sans\", sans-serif",
+          "line": "normal"
+        },
+        {
+          "tag": "P",
+          "rw": true,
+          "font": "17px \"Noto Sans\", sans-serif",
+          "line": "normal"
+        },
+        {
+          "tag": "P",
+          "rw": true,
+          "font": "17px \"Noto Sans\", sans-serif",
+          "line": "normal"
+        },
+        {
+          "tag": "P",
+          "rw": true,
+          "font": "17px \"Noto Sans\", sans-serif",
+          "line": "normal"
+        },
+        {
+          "tag": "P",
+          "rw": true,
+          "font": "17px \"Noto Sans\", sans-serif",
+          "line": "normal"
+        },
+        {
+          "tag": "P",
+          "rw": true,
+          "font": "17px \"Noto Sans\", sans-serif",
+          "line": "normal"
+        },
+        {
+          "tag": "P",
+          "rw": true,
+          "font": "17px \"Noto Sans\", sans-serif",
+          "line": "normal"
+        }
+      ]
+    }
+  }
+]

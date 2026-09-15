@@ -1,0 +1,11 @@
+{
+  "root": "/var/home/aven/Documents/Aven operation check 20260915-round04",
+  "fixture": {
+    "schema_version": 1,
+    "name": "周末 清单 100% #1.txt",
+    "renamed": "已整理 · Weekend.txt",
+    "sha256": "24f37943e05a3114a979ade1c4b0ed1c46e4057975fccd6f9ac09743d32c104b",
+    "prepared_at": "2026-09-15T06:21:33.789821+00:00"
+  },
+  "next": "Open this folder in Dolphin; follow docs/verification.md operations sequence"
+}

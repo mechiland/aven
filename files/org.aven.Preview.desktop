@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Preview
+Name[zh_CN]=预览
+Name[zh_TW]=預覽
+Exec=aven-preview -- %U
+Icon=document-preview
+Terminal=false
+NoDisplay=true
+Categories=Qt;KDE;Utility;

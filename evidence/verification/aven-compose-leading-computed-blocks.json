@@ -1,0 +1,116 @@
+[
+  1,
+  3,
+  null,
+  {
+    "value": {
+      "uri": "about:blank?compose",
+      "url": "about:blank?compose",
+      "loc": "about:blank?compose",
+      "bodyHTML": "<body>\n    <main class=\"aven-letter\" lang=\"zh-CN\">\n      <p>林清，你好：</p>\n      <p>周六 10:30 没问题。我已经看过湖边的照片，喜欢那张有树影的；我们可以先在书店碰面，再慢慢走过去。</p>\n      <p>我会带上相机和那本书。路线图已存到 Documents，出门前再看一眼就好。</p>\n      <p>周末见！<br>\n        安宁</p>\n      <p><br>\n      </p>\n      <p>已核对路线，周六见。</p>\n    </main>\n  \n\n</body>",
+      "computed": [
+        {
+          "tag": "BODY",
+          "rw": true,
+          "font": "17px \"Noto Sans\", sans-serif",
+          "line": "normal"
+        },
+        {
+          "tag": "MAIN",
+          "rw": true,
+          "font": "17px / 29.75px \"Noto Sans\", sans-serif",
+          "line": "29.75px"
+        },
+        {
+          "tag": "P",
+          "rw": true,
+          "font": "17px / 29.75px \"Noto Sans\", sans-serif",
+          "line": "29.75px"
+        },
+        {
+          "tag": "P",
+          "rw": true,
+          "font": "17px / 29.75px \"Noto Sans\", sans-serif",
+          "line": "29.75px"
+        },
+        {
+          "tag": "P",
+          "rw": true,
+          "font": "17px / 29.75px \"Noto Sans\", sans-serif",
+          "line": "29.75px"
+        },
+        {
+          "tag": "P",
+          "rw": true,
+          "font": "17px / 29.75px \"Noto Sans\", sans-serif",
+          "line": "29.75px"
+        },
+        {
+          "tag": "P",
+          "rw": true,
+          "font": "17px / 29.75px \"Noto Sans\", sans-serif",
+          "line": "29.75px"
+        },
+        {
+          "tag": "P",
+          "rw": true,
+          "font": "17px / 29.75px \"Noto Sans\", sans-serif",
+          "line": "29.75px"
+        }
+      ],
+      "sheets": [
+        {
+          "href": "resource://gre-resources/ua.css",
+          "rules": null
+        },
+        {
+          "href": "resource://gre-resources/mathml.css",
+          "rules": null
+        },
+        {
+          "href": "resource://gre/res/svg.css",
+          "rules": null
+        },
+        {
+          "href": "resource://gre-resources/html.css",
+          "rules": null
+        },
+        {
+          "href": "resource://gre-resources/counterstyles.css",
+          "rules": null
+        },
+        {
+          "href": "resource://gre-resources/forms.css",
+          "rules": null
+        },
+        {
+          "href": "resource://gre-resources/scrollbars.css",
+          "rules": null
+        },
+        {
+          "href": "resource://gre-resources/quirk.css",
+          "rules": null
+        },
+        {
+          "href": "chrome://messenger/skin/shared/editorContent.css",
+          "rules": null
+        },
+        {
+          "href": "chrome://messenger/skin/messageQuotes.css",
+          "rules": null
+        },
+        {
+          "href": "chrome://messenger/skin/shared/composerOverlay.css",
+          "rules": null
+        },
+        {
+          "href": "file:///var/home/aven/.local/share/aven/mail/aven-demo/chrome/userContent.css",
+          "rules": [
+            "@-moz-document url-prefix(\"mailbox:\"), url-prefix(\"imap:\"), url-prefix(\"imaps:\"), url-prefix(\"file:\"), url(\"about:blank\") { .moz-text-plain, .moz-text-flowed, .aven-letter { font-family: \"Noto Sans\", sans-serif !important; font-size: 16px !important; line-height: 1.65 !important; font-weight: 400; } .moz-text-plain:lang(zh), .moz-text-flowed:lang(zh), .aven-letter:lang(zh) { font-size: 17px !important; line-height: 1.75 !important; } .aven-letter { max-inline-size: 42rem; margin-inline: auto; padding: 16px 24px; } .aven-letter p { margin-block: 0px 1em; } .aven-letter:lang(zh-CN), .aven-letter:lang(zh-SG) { font-family: \"Noto Sans\", \"Noto Sans CJK SC\", sans-serif !important; } .aven-letter:lang(zh-TW) { font-family: \"Noto Sans\", \"Noto Sans CJK TC\", sans-serif !important; } .aven-letter:lang(zh-HK) { font-family: \"Noto Sans\", \"Noto Sans CJK HK\", sans-serif !important; } .moz-text-plain pre, .moz-text-flowed pre, .aven-letter pre, .aven-letter code { font-family: \"Noto Sans Mono\", monospace !important; font-size: 14px !important; } @media (prefers-color-scheme: light) and (prefers-contrast: no-preference) {\n  body:has(> .aven-letter), body:has(> .moz-text-plain), body:has(> .moz-text-flowed) { background: rgb(253, 252, 249) !important; color: rgb(38, 52, 47) !important; }\n} }",
+            "@-moz-document url(\"about:blank?compose\") { body:read-write { font-family: \"Noto Sans\", sans-serif; font-size: 17px; } body:read-write > :is(p, div, main, ul, ol) { line-height: 1.75; } }"
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "windows": [
+    {
+      "id": "{3522b054-883a-4ab2-a8af-2322988e6d10}",
+      "caption": "Wayland to X Recording bridge — Xwayland Video Bridge",
+      "app": "org.kde.xwaylandvideobridge",
+      "resource_class": "xwaylandvideobridge",
+      "resource_name": "xwaylandvideobridge",
+      "pid": 1664,
+      "active": true,
+      "minimized": false,
+      "full_screen": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 0,
+        "y": 99,
+        "width": 1,
+        "height": 1
+      },
+      "client": {
+        "x": -99,
+        "y": 0,
+        "width": 100,
+        "height": 100
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 0,
+        "height": 0
+      }
+    }
+  ],
+  "screens": [
+    {
+      "name": "Virtual-1",
+      "scale": 1,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1200
+      }
+    }
+  ],
+  "active_window": "{3522b054-883a-4ab2-a8af-2322988e6d10}",
+  "ok": true,
+  "schema_version": 1,
+  "captured_at": "2026-09-15T04:21:36.493163+00:00",
+  "method": "temporary KWin script via public Workspace/Window API",
+  "command": "inventory",
+  "persistent_kwin_changes": false
+}

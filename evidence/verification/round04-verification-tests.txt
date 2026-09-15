@@ -1,0 +1,56 @@
+test_existing_directory_is_not_adopted (test_evidence_gate.ByteCheckTest.test_existing_directory_is_not_adopted) ... ok
+test_preservation_and_correct_stage (test_evidence_gate.ByteCheckTest.test_preservation_and_correct_stage) ... ok
+test_actual_scale_mismatch_rejected (test_evidence_gate.GateTest.test_actual_scale_mismatch_rejected) ... ok
+test_app_version_mismatch_rejected (test_evidence_gate.GateTest.test_app_version_mismatch_rejected) ... ok
+test_base_commit_mismatch_rejected (test_evidence_gate.GateTest.test_base_commit_mismatch_rejected) ... ok
+test_chinese_threshold_is_independent_of_overall (test_evidence_gate.GateTest.test_chinese_threshold_is_independent_of_overall) ... ok
+test_complete_gate_contract (test_evidence_gate.GateTest.test_complete_gate_contract) ... ok
+test_compositor_disagreement_rejected (test_evidence_gate.GateTest.test_compositor_disagreement_rejected) ... ok
+test_evidence_path_escape_rejected (test_evidence_gate.GateTest.test_evidence_path_escape_rejected) ... ok
+test_explicit_integer_measurement_needs_no_window_or_focus_probe (test_evidence_gate.GateTest.test_explicit_integer_measurement_needs_no_window_or_focus_probe) ... ok
+test_false_three_second_judgment_never_passes (test_evidence_gate.GateTest.test_false_three_second_judgment_never_passes) ... ok
+test_focus_must_return_without_activation_request (test_evidence_gate.GateTest.test_focus_must_return_without_activation_request) ... ok
+test_fractional_qscreen_alone_rejected (test_evidence_gate.GateTest.test_fractional_qscreen_alone_rejected) ... ok
+test_fractional_surface_accepts_rounded_qscreen (test_evidence_gate.GateTest.test_fractional_surface_accepts_rounded_qscreen) ... ok
+test_image_tampering_rejected (test_evidence_gate.GateTest.test_image_tampering_rejected) ... ok
+test_integer_no_window_claim_cannot_substitute_for_fractional_surface (test_evidence_gate.GateTest.test_integer_no_window_claim_cannot_substitute_for_fractional_surface) ... ok
+test_legacy_integer_capture_requires_recorded_compositor (test_evidence_gate.GateTest.test_legacy_integer_capture_requires_recorded_compositor) ... ok
+test_mean_cannot_be_selectively_weighted (test_evidence_gate.GateTest.test_mean_cannot_be_selectively_weighted) ... ok
+test_missing_chinese_qt_coverage_rejected (test_evidence_gate.GateTest.test_missing_chinese_qt_coverage_rejected) ... ok
+test_missing_font_package_rejected (test_evidence_gate.GateTest.test_missing_font_package_rejected) ... ok
+test_missing_motion_rejected (test_evidence_gate.GateTest.test_missing_motion_rejected) ... ok
+test_missing_or_boolean_score_never_passes (test_evidence_gate.GateTest.test_missing_or_boolean_score_never_passes) ... ok
+test_rfb_framebuffer_transport_accepted (test_evidence_gate.GateTest.test_rfb_framebuffer_transport_accepted) ... ok
+test_rfb_missing_transport_rejected (test_evidence_gate.GateTest.test_rfb_missing_transport_rejected) ... ok
+test_shell_operations_do_not_prove_dolphin (test_evidence_gate.GateTest.test_shell_operations_do_not_prove_dolphin) ... ok
+test_snapshot_provenance_missing_rejected (test_evidence_gate.GateTest.test_snapshot_provenance_missing_rejected) ... ok
+test_stale_runtime_probe_rejected (test_evidence_gate.GateTest.test_stale_runtime_probe_rejected) ... ok
+test_uninspected_exact_hash_rejected (test_evidence_gate.GateTest.test_uninspected_exact_hash_rejected) ... ok
+test_unmapped_surface_rejected (test_evidence_gate.GateTest.test_unmapped_surface_rejected) ... ok
+test_wrong_aven_round_rejected (test_evidence_gate.GateTest.test_wrong_aven_round_rejected) ... ok
+test_failed_compositor_query_never_maps_a_surface (test_guest_probe.ProbeTest.test_failed_compositor_query_never_maps_a_surface) ... ok
+test_fractional_driver_checks_focus_and_records_popup_limit (test_guest_probe.ProbeTest.test_fractional_driver_checks_focus_and_records_popup_limit) ... ok
+test_integer_disagreement_fails_without_mapping_fallback (test_guest_probe.ProbeTest.test_integer_disagreement_fails_without_mapping_fallback) ... ok
+test_integer_driver_never_inventories_or_requests_focus (test_guest_probe.ProbeTest.test_integer_driver_never_inventories_or_requests_focus) ... ok
+test_integer_embedded_program_creates_no_window (test_guest_probe.ProbeTest.test_integer_embedded_program_creates_no_window) ... ok
+test_ambiguous_device_is_retained_and_reported (test_restore_places.RestorePlacesTests.test_ambiguous_device_is_retained_and_reported) ... ok
+test_apply_and_unchanged_undo_are_byte_exact (test_restore_places.RestorePlacesTests.test_apply_and_unchanged_undo_are_byte_exact) ... ok
+test_exact_record_reverts_only_owned_flag_preserving_bookmarks_and_metadata (test_restore_places.RestorePlacesTests.test_exact_record_reverts_only_owned_flag_preserving_bookmarks_and_metadata) ... ok
+test_explicit_current_visibility_is_preserved (test_restore_places.RestorePlacesTests.test_explicit_current_visibility_is_preserved) ... ok
+test_explicit_ordinary_place_visibility_is_preserved (test_restore_places.RestorePlacesTests.test_explicit_ordinary_place_visibility_is_preserved) ... ok
+test_later_bookmarks_prevent_whole_file_undo (test_restore_places.RestorePlacesTests.test_later_bookmarks_prevent_whole_file_undo) ... ok
+test_malformed_or_uncommitted_records_fail_preflight (test_restore_places.RestorePlacesTests.test_malformed_or_uncommitted_records_fail_preflight) ... ok
+test_missing_uuid_does_not_fall_back_to_kernel_name (test_restore_places.RestorePlacesTests.test_missing_uuid_does_not_fall_back_to_kernel_name) ... ok
+test_no_record_does_not_infer_from_hidden_system_device (test_restore_places.RestorePlacesTests.test_no_record_does_not_infer_from_hidden_system_device) ... ok
+test_overlay_udi_without_uuid_is_restored (test_restore_places.RestorePlacesTests.test_overlay_udi_without_uuid_is_restored) ... ok
+test_record_preflight_rejects_unowned_transition (test_restore_places.RestorePlacesTests.test_record_preflight_rejects_unowned_transition) ... ok
+test_selected_snapshot_already_hidden_stays_hidden (test_restore_places.RestorePlacesTests.test_selected_snapshot_already_hidden_stays_hidden) ... ok
+test_uuid_reused_udi_is_not_owned (test_restore_places.RestorePlacesTests.test_uuid_reused_udi_is_not_owned) ... ok
+test_uuid_survives_changed_udi (test_restore_places.RestorePlacesTests.test_uuid_survives_changed_udi) ... ok
+test_incomplete_frame_never_becomes_image (test_rfb_capture.RFBTest.test_incomplete_frame_never_becomes_image) ... ok
+test_raw_pixels_keep_numeric_rgb_values (test_rfb_capture.RFBTest.test_raw_pixels_keep_numeric_rgb_values) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 0.162s
+
+OK

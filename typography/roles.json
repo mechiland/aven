@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "candidate-awaiting-native-visual-review",
+  "units": {"ui_sizes": "points", "owned_content_sizes": "logical pixels"},
+  "ui": {"family": "Noto Sans", "point_size": 11, "weight": 400},
+  "secondary": {"family": "Noto Sans", "point_size": 10, "weight": 400},
+  "emphasis": {"family": "Noto Sans", "point_size": 11, "weight": 500},
+  "window_title": {"family": "Noto Sans", "point_size": 11, "weight": 500},
+  "monospace": {"family": "Noto Sans Mono", "point_size": 10, "weight": 400},
+  "reading": {"family": "Noto Sans", "pixel_size": 16, "cjk_pixel_size": 17, "latin_line_height": 1.65, "cjk_line_height": 1.75, "weight": 400},
+  "cjk": {"zh-CN": "Noto Sans CJK SC", "zh-SG": "Noto Sans CJK SC", "zh-TW": "Noto Sans CJK TC", "zh-HK": "Noto Sans CJK HK", "zh-MO": "Noto Sans CJK HK", "untagged": "Noto Sans CJK SC"},
+  "emoji": {"family": "Noto Color Emoji"},
+  "rendering": {"antialias": "grayscale", "hintstyle": "hintslight", "autohint": false, "synthetic_bold": false, "global_dpi_override": null},
+  "scale_matrix": [1, 1.25, 1.5, 2]
+}

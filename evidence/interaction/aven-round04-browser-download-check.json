@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "reported_at": "2026-09-15T06:54:59.732170+00:00",
+  "guest": "aven",
+  "observer": "/root/verification",
+  "method": "read-only sha256sum and wc after witnessed native Firefox download",
+  "source_record": {
+    "file": "evidence/interaction/aven-round04-browser-download-bytes.txt",
+    "sha256": "4e43be4bda808c4461fc48ce8d5fb2262c3cfff6016c28e3338236ce9bf18b19"
+  },
+  "downloaded_file": "/home/aven/Downloads/周末路线(2).txt",
+  "fixture_source": "/home/aven/aven/fixtures/browser/周末路线.txt",
+  "host_fixture": "fixtures/browser/周末路线.txt",
+  "bytes": 428,
+  "actual_sha256": "4372c686ff8ad721173bb63d024a3c685b0d12b0f14f0942d09598a336ef6fee",
+  "expected_sha256": "4372c686ff8ad721173bb63d024a3c685b0d12b0f14f0942d09598a336ef6fee",
+  "passed": true,
+  "ui_verified": false,
+  "note": "Bytes only. Native download popover and Show in Folder observations are in aven-round04-native-verification.json. Existing downloads were preserved; Firefox chose the (2) suffix."
+}

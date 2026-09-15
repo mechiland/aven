@@ -1,0 +1,426 @@
+{
+  "method": "offscreen Qt QApplication/QTextLayout only; no window created, no preferences changed",
+  "platform": "offscreen",
+  "qt": "6.11.2",
+  "locale": "zh_TW",
+  "environment": {
+    "LC_ALL": "zh_TW.UTF-8",
+    "LANG": "zh_TW.UTF-8",
+    "LANGUAGE": "zh_TW",
+    "QT_QPA_PLATFORM": "offscreen",
+    "QT_QPA_PLATFORMTHEME": "kde"
+  },
+  "application_font": "Noto Sans,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0",
+  "sample": "日常 · Everyday 文件 / Documents：12 个项目，繁體中文：國門骨直。",
+  "rows": [
+    {
+      "case": "application",
+      "requested": {
+        "serialized": "Noto Sans,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0",
+        "family": "Noto Sans",
+        "style_name": "",
+        "point_size": 11.0,
+        "weight": 400,
+        "bold": false
+      },
+      "resolved_font_info": {
+        "family": "Noto Sans",
+        "style_name": "Regular",
+        "point_size": 11.25,
+        "weight": 400
+      },
+      "runs": [
+        {
+          "family": "Noto Sans",
+          "style": "Regular",
+          "qt_raw_weight": 400,
+          "pixel_size": 15.0,
+          "glyph_count": 27,
+          "missing_glyphs": 0,
+          "os2_usWeightClass": 400,
+          "fvar_present": false,
+          "os2_sha256": "2b102b8b6868dd057b970eb9414c4fa96c03c3679a80d8217982eab6ebe04320",
+          "fc_match_pattern": "Noto Sans:style=Regular:weight=80:lang=zh-TW:charset=65",
+          "fc_match_fields": [
+            "file",
+            "index",
+            "family",
+            "style",
+            "weight",
+            "variable",
+            "embolden"
+          ],
+          "fc_match_result": [
+            "/usr/share/fonts/google-noto/NotoSans-Regular.ttf",
+            "0",
+            "Noto Sans",
+            "Regular",
+            "80",
+            "False",
+            "False"
+          ],
+          "fc_match_error": ""
+        },
+        {
+          "family": "Noto Sans CJK TC",
+          "style": "Regular",
+          "qt_raw_weight": 400,
+          "pixel_size": 15.0,
+          "glyph_count": 19,
+          "missing_glyphs": 0,
+          "os2_usWeightClass": 100,
+          "fvar_present": true,
+          "os2_sha256": "30ea31c18d310a78881c794112e428a60c14bf52b5290968c586cff2b8d4521f",
+          "fc_match_pattern": "Noto Sans CJK TC:style=Regular:weight=80:lang=zh-TW:charset=65e5",
+          "fc_match_fields": [
+            "file",
+            "index",
+            "family",
+            "style",
+            "weight",
+            "variable",
+            "embolden"
+          ],
+          "fc_match_result": [
+            "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "262147",
+            "Noto Sans CJK TC",
+            "Regular",
+            "80",
+            "False",
+            "False"
+          ],
+          "fc_match_error": ""
+        }
+      ]
+    },
+    {
+      "case": "setBold(true)",
+      "requested": {
+        "serialized": "Noto Sans,11,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,,0,0",
+        "family": "Noto Sans",
+        "style_name": "",
+        "point_size": 11.0,
+        "weight": 700,
+        "bold": true
+      },
+      "resolved_font_info": {
+        "family": "Noto Sans",
+        "style_name": "Bold",
+        "point_size": 11.25,
+        "weight": 700
+      },
+      "runs": [
+        {
+          "family": "Noto Sans CJK TC",
+          "style": "Bold",
+          "qt_raw_weight": 700,
+          "pixel_size": 15.0,
+          "glyph_count": 19,
+          "missing_glyphs": 0,
+          "os2_usWeightClass": 100,
+          "fvar_present": true,
+          "os2_sha256": "30ea31c18d310a78881c794112e428a60c14bf52b5290968c586cff2b8d4521f",
+          "fc_match_pattern": "Noto Sans CJK TC:style=Bold:weight=200:lang=zh-TW:charset=65e5",
+          "fc_match_fields": [
+            "file",
+            "index",
+            "family",
+            "style",
+            "weight",
+            "variable",
+            "embolden"
+          ],
+          "fc_match_result": [
+            "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "393219",
+            "Noto Sans CJK TC",
+            "Bold",
+            "200",
+            "False",
+            "False"
+          ],
+          "fc_match_error": ""
+        },
+        {
+          "family": "Noto Sans",
+          "style": "Bold",
+          "qt_raw_weight": 700,
+          "pixel_size": 15.0,
+          "glyph_count": 27,
+          "missing_glyphs": 0,
+          "os2_usWeightClass": 400,
+          "fvar_present": true,
+          "os2_sha256": "2b102b8b6868dd057b970eb9414c4fa96c03c3679a80d8217982eab6ebe04320",
+          "fc_match_pattern": "Noto Sans:style=Bold:weight=200:lang=zh-TW:charset=65",
+          "fc_match_fields": [
+            "file",
+            "index",
+            "family",
+            "style",
+            "weight",
+            "variable",
+            "embolden"
+          ],
+          "fc_match_result": [
+            "/usr/share/fonts/google-noto/NotoSans-Bold.ttf",
+            "0",
+            "Noto Sans",
+            "Bold",
+            "200",
+            "False",
+            "False"
+          ],
+          "fc_match_error": ""
+        }
+      ]
+    },
+    {
+      "case": "explicit700",
+      "requested": {
+        "serialized": "Noto Sans,11,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,,0,0",
+        "family": "Noto Sans",
+        "style_name": "",
+        "point_size": 11.0,
+        "weight": 700,
+        "bold": true
+      },
+      "resolved_font_info": {
+        "family": "Noto Sans",
+        "style_name": "Bold",
+        "point_size": 11.25,
+        "weight": 700
+      },
+      "runs": [
+        {
+          "family": "Noto Sans CJK TC",
+          "style": "Bold",
+          "qt_raw_weight": 700,
+          "pixel_size": 15.0,
+          "glyph_count": 19,
+          "missing_glyphs": 0,
+          "os2_usWeightClass": 100,
+          "fvar_present": true,
+          "os2_sha256": "30ea31c18d310a78881c794112e428a60c14bf52b5290968c586cff2b8d4521f",
+          "fc_match_pattern": "Noto Sans CJK TC:style=Bold:weight=200:lang=zh-TW:charset=65e5",
+          "fc_match_fields": [
+            "file",
+            "index",
+            "family",
+            "style",
+            "weight",
+            "variable",
+            "embolden"
+          ],
+          "fc_match_result": [
+            "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "393219",
+            "Noto Sans CJK TC",
+            "Bold",
+            "200",
+            "False",
+            "False"
+          ],
+          "fc_match_error": ""
+        },
+        {
+          "family": "Noto Sans",
+          "style": "Bold",
+          "qt_raw_weight": 700,
+          "pixel_size": 15.0,
+          "glyph_count": 27,
+          "missing_glyphs": 0,
+          "os2_usWeightClass": 400,
+          "fvar_present": true,
+          "os2_sha256": "2b102b8b6868dd057b970eb9414c4fa96c03c3679a80d8217982eab6ebe04320",
+          "fc_match_pattern": "Noto Sans:style=Bold:weight=200:lang=zh-TW:charset=65",
+          "fc_match_fields": [
+            "file",
+            "index",
+            "family",
+            "style",
+            "weight",
+            "variable",
+            "embolden"
+          ],
+          "fc_match_result": [
+            "/usr/share/fonts/google-noto/NotoSans-Bold.ttf",
+            "0",
+            "Noto Sans",
+            "Bold",
+            "200",
+            "False",
+            "False"
+          ],
+          "fc_match_error": ""
+        }
+      ]
+    },
+    {
+      "case": "explicit500",
+      "requested": {
+        "serialized": "Noto Sans,11,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,,0,0",
+        "family": "Noto Sans",
+        "style_name": "",
+        "point_size": 11.0,
+        "weight": 500,
+        "bold": false
+      },
+      "resolved_font_info": {
+        "family": "Noto Sans",
+        "style_name": "Medium",
+        "point_size": 11.25,
+        "weight": 500
+      },
+      "runs": [
+        {
+          "family": "Noto Sans CJK TC",
+          "style": "Medium",
+          "qt_raw_weight": 500,
+          "pixel_size": 15.0,
+          "glyph_count": 19,
+          "missing_glyphs": 0,
+          "os2_usWeightClass": 100,
+          "fvar_present": true,
+          "os2_sha256": "30ea31c18d310a78881c794112e428a60c14bf52b5290968c586cff2b8d4521f",
+          "fc_match_pattern": "Noto Sans CJK TC:style=Medium:weight=100:lang=zh-TW:charset=65e5",
+          "fc_match_fields": [
+            "file",
+            "index",
+            "family",
+            "style",
+            "weight",
+            "variable",
+            "embolden"
+          ],
+          "fc_match_result": [
+            "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "327683",
+            "Noto Sans CJK TC",
+            "Medium",
+            "100",
+            "False",
+            "False"
+          ],
+          "fc_match_error": ""
+        },
+        {
+          "family": "Noto Sans",
+          "style": "Medium",
+          "qt_raw_weight": 500,
+          "pixel_size": 15.0,
+          "glyph_count": 27,
+          "missing_glyphs": 0,
+          "os2_usWeightClass": 500,
+          "fvar_present": false,
+          "os2_sha256": "9077165807b3faad4e9815c8b1b90ab40f1abce4010c62e88c68aad22882b97f",
+          "fc_match_pattern": "Noto Sans:style=Medium:weight=100:lang=zh-TW:charset=65",
+          "fc_match_fields": [
+            "file",
+            "index",
+            "family",
+            "style",
+            "weight",
+            "variable",
+            "embolden"
+          ],
+          "fc_match_result": [
+            "/usr/share/fonts/google-noto/NotoSans-Medium.ttf",
+            "0",
+            "Noto Sans,Noto Sans Medium",
+            "Medium,Regular",
+            "100",
+            "False",
+            "False"
+          ],
+          "fc_match_error": ""
+        }
+      ]
+    },
+    {
+      "case": "explicit900-control",
+      "requested": {
+        "serialized": "Noto Sans,11,-1,5,900,0,0,0,0,0,0,0,0,0,0,1,,0,0",
+        "family": "Noto Sans",
+        "style_name": "",
+        "point_size": 11.0,
+        "weight": 900,
+        "bold": true
+      },
+      "resolved_font_info": {
+        "family": "Noto Sans",
+        "style_name": "Black",
+        "point_size": 11.25,
+        "weight": 900
+      },
+      "runs": [
+        {
+          "family": "Noto Sans",
+          "style": "Black",
+          "qt_raw_weight": 900,
+          "pixel_size": 15.0,
+          "glyph_count": 27,
+          "missing_glyphs": 0,
+          "os2_usWeightClass": 900,
+          "fvar_present": false,
+          "os2_sha256": "b40a39867aa58649aaa3ae77a0ddfd1a9972a24562b26a660b7ed12eb6a1a27c",
+          "fc_match_pattern": "Noto Sans:style=Black:weight=210:lang=zh-TW:charset=65",
+          "fc_match_fields": [
+            "file",
+            "index",
+            "family",
+            "style",
+            "weight",
+            "variable",
+            "embolden"
+          ],
+          "fc_match_result": [
+            "/usr/share/fonts/google-noto/NotoSans-Black.ttf",
+            "0",
+            "Noto Sans,Noto Sans Black",
+            "Black,Regular",
+            "210",
+            "False",
+            "False"
+          ],
+          "fc_match_error": ""
+        },
+        {
+          "family": "Noto Sans CJK TC",
+          "style": "Black",
+          "qt_raw_weight": 900,
+          "pixel_size": 15.0,
+          "glyph_count": 19,
+          "missing_glyphs": 0,
+          "os2_usWeightClass": 100,
+          "fvar_present": true,
+          "os2_sha256": "30ea31c18d310a78881c794112e428a60c14bf52b5290968c586cff2b8d4521f",
+          "fc_match_pattern": "Noto Sans CJK TC:style=Black:weight=210:lang=zh-TW:charset=65e5",
+          "fc_match_fields": [
+            "file",
+            "index",
+            "family",
+            "style",
+            "weight",
+            "variable",
+            "embolden"
+          ],
+          "fc_match_result": [
+            "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "458755",
+            "Noto Sans CJK TC",
+            "Black",
+            "210",
+            "False",
+            "False"
+          ],
+          "fc_match_error": ""
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "fc-match is an independent fallback query using the shaped physical family/style/weight, not a Qt font-engine file pointer.",
+    "OS/2 usWeightClass can describe a variable font default; it does not by itself identify applied variation coordinates."
+  ]
+}

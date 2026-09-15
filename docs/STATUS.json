@@ -1,0 +1,765 @@
+{
+  "schema_version": 1,
+  "project": "Aven",
+  "phase": "prototype_passed",
+  "updated_at": "2026-09-15T07:30:24.154062+00:00",
+  "base": {
+    "distribution": "Fedora Kinoite",
+    "release": 44,
+    "compose": "44-1.7",
+    "architecture": "x86_64",
+    "release_verified_at": "2026-09-15",
+    "source": "https://fedoraproject.org/atomic-desktops/kinoite/download/",
+    "iso": "Fedora-Kinoite-ostree-x86_64-44-1.7.iso",
+    "sha256": "4a944312b4e861ab625fd9786957174ef122a8a406bbb54caba7665e0d9f0e92",
+    "checksum_verified": true,
+    "signature_verified": true,
+    "booted": true,
+    "installation_recovery": {
+      "cause": "VM kickstart attempted obsolete sddm service; Fedora44 uses plasmalogin",
+      "payload_deployed": true,
+      "recovery": "Created intended lab user/SSH/autologin and enabled native plasmalogin in installed deployment; no Aven visuals applied",
+      "kickstart_corrected": true,
+      "result": "SSH boot succeeded, but Atomic daemon and remount checks failed. Discard from baseline; clean reinstall with corrected kickstart required."
+    },
+    "installation": "Clean corrected kickstart completed without error",
+    "ostree_commit": "13e5eb8feb19a2cd200d10ecd06c5d04f77c6e5324e74f8d57940e67b6189b3d",
+    "stock_known_issues": [
+      "systemd-remount-fs root-overlay reconfiguration warning is a known Fedora Atomic issue; rpm-ostree status and GPG verification work",
+      "mcelog fails on QEMU virtual CPU",
+      "Initial bundled Gwenview Flatpak cannot load libraw.so.24; version-matched native Gwenview selected for both guests"
+    ],
+    "stable_update": "Booted and pinned signed stable deployment 44.20260913.0; native Gwenview/Okular/Thunderbird and Chinese locales available.",
+    "stable_compose": "44.20260913.0",
+    "stable_commit": "be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df",
+    "stable_booted": true,
+    "deployment_pinned": true,
+    "versions": {
+      "Plasma": "6.7.5",
+      "Dolphin": "26.08.1",
+      "Gwenview": "26.08.1",
+      "Okular": "26.08.1",
+      "Firefox": "155.0",
+      "Thunderbird": "153.0.2",
+      "Qt": "6.11.2"
+    }
+  },
+  "environment": {
+    "host": "Ubuntu x86_64",
+    "kvm_accessible": true,
+    "qemu_available": true,
+    "gpu_render_node_accessible": true
+  },
+  "scope": [
+    "files",
+    "browser",
+    "mail",
+    "photos",
+    "typography"
+  ],
+  "round": 4,
+  "baseline_screenshots": {
+    "desktop_initial": {
+      "path": "evidence/stock/round-00/desktop-clean-1x.png",
+      "inspected": true,
+      "notes": "Pristine Fedora44.1.7 desktop; stable-update matched comparison will follow."
+    },
+    "files_initial": {
+      "path": "evidence/stock/round-00/files-initial-1x.png",
+      "inspected": true,
+      "notes": "Initial Fedora44.1.7; final matched capture after stable update remains pending"
+    },
+    "browser_initial": {
+      "path": "evidence/stock/round-00/browser-initial-1x.png",
+      "inspected": true,
+      "notes": "Initial Fedora44.1.7; final matched capture after stable update remains pending"
+    },
+    "mixed_initial": {
+      "path": "evidence/stock/round-00/mixed-initial-1x.png",
+      "inspected": true,
+      "notes": "Initial Fedora44.1.7; final matched capture after stable update remains pending"
+    },
+    "preview-image_initial": {
+      "path": "evidence/stock/round-00/preview-image-initial-1x.png",
+      "inspected": true,
+      "notes": "Initial Fedora44.1.7; final matched capture after stable update remains pending"
+    },
+    "desktop-stable": {
+      "path": "evidence/stock/round-00/desktop-stable-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "files-home-clean": {
+      "path": "evidence/stock/round-00/files-home-clean-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "files-list": {
+      "path": "evidence/stock/round-00/files-list-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "preview-image": {
+      "path": "evidence/stock/round-00/preview-image-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "preview-pdf": {
+      "path": "evidence/stock/round-00/preview-pdf-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "preview-text": {
+      "path": "evidence/stock/round-00/preview-text-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "preview-media": {
+      "path": "evidence/stock/round-00/preview-media-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "mail-sc": {
+      "path": "evidence/stock/round-00/mail-sc-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "mail-tc": {
+      "path": "evidence/stock/round-00/mail-tc-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "mail-compose": {
+      "path": "evidence/stock/round-00/mail-compose-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "mail-draft-reopened": {
+      "path": "evidence/stock/round-00/mail-draft-reopened-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "photos-grid": {
+      "path": "evidence/stock/round-00/photos-grid-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "photos-view": {
+      "path": "evidence/stock/round-00/photos-view-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "photo-landscape": {
+      "path": "evidence/stock/round-00/photo-landscape-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "photo-exif": {
+      "path": "evidence/stock/round-00/photo-exif-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "photo-alpha": {
+      "path": "evidence/stock/round-00/photo-alpha-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "browser-sc": {
+      "path": "evidence/stock/round-00/browser-sc-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "browser-tc": {
+      "path": "evidence/stock/round-00/browser-tc-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "browser-web": {
+      "path": "evidence/stock/round-00/browser-web-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "browser-download": {
+      "path": "evidence/stock/round-00/browser-download-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "browser-reveal": {
+      "path": "evidence/stock/round-00/browser-reveal-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "browser-picker": {
+      "path": "evidence/stock/round-00/browser-picker-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "browser-picker-selected": {
+      "path": "evidence/stock/round-00/browser-picker-selected-1x.png",
+      "inspected": true,
+      "notes": "Signed stable 44.20260913.0; actual native framebuffer. Locale and runtime probes recorded in sidecar."
+    },
+    "files-mixed-clean": {
+      "path": "evidence/stock/round-00/files-mixed-clean-1x.png",
+      "inspected": true,
+      "notes": "Exact PNG inspected by independent critic in round2."
+    }
+  },
+  "aven_screenshots": {
+    "desktop": {
+      "path": "evidence/aven/round-04/desktop-1x.png",
+      "sidecar": "evidence/aven/round-04/desktop-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "files-home-final": {
+      "path": "evidence/aven/round-04/files-home-final-1x.png",
+      "sidecar": "evidence/aven/round-04/files-home-final-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "files-mixed": {
+      "path": "evidence/aven/round-04/files-mixed-1x.png",
+      "sidecar": "evidence/aven/round-04/files-mixed-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "files-list": {
+      "path": "evidence/aven/round-04/files-list-1x.png",
+      "sidecar": "evidence/aven/round-04/files-list-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "preview-image": {
+      "path": "evidence/aven/round-04/preview-image-1x.png",
+      "sidecar": "evidence/aven/round-04/preview-image-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "preview-text": {
+      "path": "evidence/aven/round-04/preview-text-1x.png",
+      "sidecar": "evidence/aven/round-04/preview-text-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "preview-pdf": {
+      "path": "evidence/aven/round-04/preview-pdf-1x.png",
+      "sidecar": "evidence/aven/round-04/preview-pdf-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "preview-media": {
+      "path": "evidence/aven/round-04/preview-media-1x.png",
+      "sidecar": "evidence/aven/round-04/preview-media-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "browser-sc": {
+      "path": "evidence/aven/round-04/browser-sc-1x.png",
+      "sidecar": "evidence/aven/round-04/browser-sc-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "browser-tc": {
+      "path": "evidence/aven/round-04/browser-tc-1x.png",
+      "sidecar": "evidence/aven/round-04/browser-tc-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "browser-web": {
+      "path": "evidence/aven/round-04/browser-web-1x.png",
+      "sidecar": "evidence/aven/round-04/browser-web-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "mail-list": {
+      "path": "evidence/aven/round-04/mail-list-1x.png",
+      "sidecar": "evidence/aven/round-04/mail-list-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "mail-sc": {
+      "path": "evidence/aven/round-04/mail-sc-1x.png",
+      "sidecar": "evidence/aven/round-04/mail-sc-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "mail-tc": {
+      "path": "evidence/aven/round-04/mail-tc-1x.png",
+      "sidecar": "evidence/aven/round-04/mail-tc-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "mail-compose": {
+      "path": "evidence/aven/round-04/mail-compose-1x.png",
+      "sidecar": "evidence/aven/round-04/mail-compose-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "photos-grid": {
+      "path": "evidence/aven/round-04/photos-grid-1x.png",
+      "sidecar": "evidence/aven/round-04/photos-grid-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "photos-view": {
+      "path": "evidence/aven/round-04/photos-view-1x.png",
+      "sidecar": "evidence/aven/round-04/photos-view-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "photo-exif": {
+      "path": "evidence/aven/round-04/photo-exif-1x.png",
+      "sidecar": "evidence/aven/round-04/photo-exif-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    },
+    "photo-alpha": {
+      "path": "evidence/aven/round-04/photo-alpha-1x.png",
+      "sidecar": "evidence/aven/round-04/photo-alpha-1x.json",
+      "inspected": true,
+      "critic_round": 4
+    }
+  },
+  "scores": {
+    "chinese_typography": 8.5,
+    "latin_typography": 8.4,
+    "files_experience": 8.4,
+    "file_preview": 8.6,
+    "browser_coherence": 8.4,
+    "mail_coherence": 8.1,
+    "photo_experience": 8,
+    "visual_coherence": 8.3,
+    "perceived_polish": 8.3,
+    "overall": 8.333333333333334
+  },
+  "three_second_test": {
+    "answer": true,
+    "pairs": [
+      "desktop",
+      "files_home",
+      "files_mixed",
+      "preview_image"
+    ],
+    "rationale": "Yes. The broad pale/jade background and short light panel change the desktop silhouette immediately. The shared quiet chrome, readable sidebar and much larger content/preview hierarchy make the difference more refined as well as conspicuous. This is an independent visual first-impression judgment, not a blinded user study."
+  },
+  "pass": true,
+  "blockers": [],
+  "next_actions": [],
+  "rounds": [
+    {
+      "round": 1,
+      "phase": "integration_smoke",
+      "pass": false,
+      "scores": null,
+      "critic": "Pending complete paired set; runtime defects found and rejected by integrator",
+      "defects": [
+        "Legacy short QFont strings clamped requested400/500 weights to900; fixed with full native QFont serialization",
+        "Minimal version49 XMLGUI seed replaced native Dolphin toolbar; fixed with version0 native migration",
+        "Decoration stroke bounds caused tiled seams and corner protrusions; fixed with stretch hints and contained fills",
+        "Plasma default-theme tool removed setting and inherited Fedora dark shell on reboot; explicit user override added",
+        "xdg-settings depended on missing unversioned qtpaths; native GIO association write+verification substituted"
+      ],
+      "evidence": [
+        "evidence/aven/round-01/files-home-1x.json",
+        "evidence/aven/round-01/preview-image-1x.json",
+        "evidence/aven/round-01/preview-text-1x.json",
+        "evidence/aven/round-01/preview-pdf-1x.json"
+      ],
+      "excluded": [
+        "evidence/aven/round-01/desktop-1x.json: boot console captured before desktop readiness"
+      ],
+      "operations_observed": [
+        "Native Dolphin CtrlAltP image/text/PDF preview",
+        "Esc closes preview and next file selection works"
+      ]
+    },
+    {
+      "round": 2,
+      "phase": "paired_visual_review",
+      "pass": false,
+      "scores": {
+        "chinese_typography": {
+          "score": 8.2,
+          "pairs": [
+            "files_home",
+            "files_list",
+            "files_mixed",
+            "preview_text",
+            "browser_sc",
+            "browser_tc",
+            "mail_sc",
+            "mail_tc",
+            "mail_compose",
+            "photos_grid"
+          ],
+          "rationale": "The larger native Chinese UI and readable preview/mail prose are a clear improvement. Simplified and Traditional Chinese body samples have balanced Latin/numerals and no visible missing glyphs. Heavy current breadcrumbs, uneven reading-versus-composing rhythm, and only modest differentiation in browser content keep the observed 1x result below the 8.5 premium reading target.",
+          "limitations": [
+            "Traditional Chinese native Qt UI and fractional/HiDPI paired matrix are not part of this review.",
+            "Browser fixture layout already exists in stock.",
+            "Embedded PDF fonts are excluded from OS font-quality credit."
+          ],
+          "status": "provisional_1x_visual_only"
+        },
+        "latin_typography": {
+          "score": 8.3,
+          "pairs": [
+            "files_home",
+            "files_list",
+            "preview_text",
+            "browser_sc",
+            "browser_web",
+            "mail_sc",
+            "mail_compose"
+          ],
+          "rationale": "Native filenames, window titles and labels are calmer and more legible than the small stock UI. Mixed English/Chinese text has a natural size balance. Mail sender ellipsis and uneven editor margins still interrupt the rhythm.",
+          "limitations": [
+            "No dedicated Latin-only reading or monospace matrix was inspected in this round."
+          ],
+          "status": "provisional_1x_visual_only"
+        },
+        "files_experience": {
+          "score": 8.0,
+          "pairs": [
+            "files_home",
+            "files_list",
+            "files_mixed"
+          ],
+          "rationale": "The wider places sidebar, quieter details view, larger image grid and readable filenames make Files visibly more useful. Internal volume labels and the unnamed red capacity bar remain a distracting unfinished detail.",
+          "limitations": [
+            "Static visual score only; copy/move/rename/trash/restore and navigation behavior are not witnessed by this critic.",
+            "Home state differs: list versus grid and one extra Aven folder."
+          ],
+          "status": "provisional_1x_visual_only"
+        },
+        "file_preview": {
+          "score": 8.4,
+          "pairs": [
+            "preview_image",
+            "preview_pdf",
+            "preview_text",
+            "preview_media"
+          ],
+          "rationale": "The strongest improvement: actual readable content replaces tiny thumbnails or a generic icon, with a restrained shared window and obvious Open control. Minor finish issues are inconsistent size units, English metadata in Chinese chrome and the darker PDF backing.",
+          "limitations": [
+            "Toggle, Escape focus return, repeated invocation, playback continuity, latency and media audio are not established by these stills."
+          ],
+          "status": "provisional_1x_visual_only"
+        },
+        "browser_coherence": {
+          "score": 7.0,
+          "pairs": [
+            "browser_sc",
+            "browser_tc",
+            "browser_web"
+          ],
+          "rationale": "Firefox retains mature browsing and adopts shared external decoration, but the lavender tab strip visibly clashes with Aven chrome. The duplicate pinned/running icon is an integration defect. Web typography is good but mostly already good in the stock fixture.",
+          "limitations": [
+            "Download, file picker, menus and motion are outside this visual review."
+          ],
+          "status": "provisional_1x_visual_only"
+        },
+        "mail_coherence": {
+          "score": 7.3,
+          "pairs": [
+            "mail_list",
+            "mail_sc",
+            "mail_tc",
+            "mail_compose"
+          ],
+          "rationale": "Reading gains useful margins and line spacing, and the jade accent connects it to Files. The empty cool-colored upper strip, cramped composer body edge, compact outlined header actions and duplicate task icon still make it feel only partially integrated.",
+          "limitations": [
+            "Offline fixture only; no sending or account-quality claims.",
+            "Draft save/reopen is not established by this critic from the compose still alone."
+          ],
+          "status": "provisional_1x_visual_only"
+        },
+        "photo_experience": {
+          "score": 6.5,
+          "pairs": [
+            "photos_grid",
+            "photos_view"
+          ],
+          "rationale": "Shared fonts and surfaces improve the frame, but browsing remains a small single thumbnail row. The oversized filmstrip reduces the main photograph from stock 92% fit to 70% fit. This is the least convincing everyday-experience improvement.",
+          "limitations": [
+            "No EXIF/alpha/fullscreen/next-previous or color-management proof is claimed from these two pairs.",
+            "No image transition motion was inspected."
+          ],
+          "status": "provisional_1x_visual_only"
+        },
+        "visual_coherence": {
+          "score": 7.3,
+          "pairs": [
+            "desktop",
+            "files_home",
+            "files_mixed",
+            "browser_web",
+            "mail_list",
+            "photos_grid"
+          ],
+          "rationale": "Wallpaper, panel, decoration, Files and preview form a recognizable restrained visual language. Mozilla interior chrome and duplicated task entries break the single-product impression. Gwenview retains an overly heavy breadcrumb surround and thumbnail strip.",
+          "limitations": [
+            "Assessment covers only the requested application surfaces at 1x."
+          ],
+          "status": "provisional_1x_visual_only"
+        },
+        "perceived_polish": {
+          "score": 7.3,
+          "pairs": [
+            "desktop",
+            "files_mixed",
+            "preview_image",
+            "mail_compose",
+            "photos_view",
+            "browser_web"
+          ],
+          "rationale": "Aven is visibly more intentional and useful, especially in Files and preview. Duplicate launch/task icons, the internal-volume alarm-like bar, uneven text margins and unbalanced photo browsing are conspicuous enough to prevent product-grade overall finish.",
+          "limitations": [
+            "No smoothness or perceived latency claims are made from static frames."
+          ],
+          "status": "provisional_1x_visual_only"
+        }
+      },
+      "critic": "docs/critic-round-02.md",
+      "manifest": "evidence/critic/round-02.json",
+      "pending": [
+        "Matched Chinese scale matrix",
+        "Native operations",
+        "Motion review"
+      ],
+      "fixes_next": [
+        "Larger photo grid and smaller native filmstrip",
+        "Native browser/mail desktop identity",
+        "Mozilla chrome palette",
+        "Composer reading inset",
+        "Preview metadata and internal system volume clutter"
+      ]
+    },
+    {
+      "round": 3,
+      "phase": "paired_visual_review",
+      "pass": false,
+      "scores": {
+        "chinese_typography": 8.4,
+        "latin_typography": 8.4,
+        "files_experience": 8.4,
+        "file_preview": 8.5,
+        "browser_coherence": 8.4,
+        "mail_coherence": 8.0,
+        "photo_experience": 8.0,
+        "visual_coherence": 8.3,
+        "perceived_polish": 8.2,
+        "overall": 8.288888888888888
+      },
+      "critic": "docs/critic-round-03.md",
+      "manifest": "evidence/critic/round-03.json",
+      "pending": [
+        "Current-round paired SC/TC native UI and prose at 1x, 1.25x, 1.5x and 2x.",
+        "Witness native operations and inspect evidence.",
+        "Inspect paired motion recordings or observe motion live.",
+        "Reinspect actual Chinese compose line rhythm and media initial-duration correction after their next boot."
+      ],
+      "fixes_next": [
+        "Compose block line spacing: native body UA-important rule identified; actual 29.75px block leading now verified",
+        "Paused media duration label updates before playback",
+        "Current-build scale matrix, native operations and paired motion review"
+      ]
+    },
+    {
+      "round": 4,
+      "phase": "complete_focused_vm_assessment",
+      "pass": true,
+      "scores": {
+        "chinese_typography": 8.5,
+        "latin_typography": 8.4,
+        "files_experience": 8.4,
+        "file_preview": 8.6,
+        "browser_coherence": 8.4,
+        "mail_coherence": 8.1,
+        "photo_experience": 8,
+        "visual_coherence": 8.3,
+        "perceived_polish": 8.3,
+        "overall": 8.333333333333334
+      },
+      "critic": "docs/critic-round-04.md",
+      "manifest": "evidence/critic/round-04.json",
+      "gate": "evidence/verification/round04-final-gate.json",
+      "pending": [],
+      "limits": []
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-09-15T03:35:00Z",
+      "event": "Empty repository inspected; Fedora 44 verified current stable; KVM accessible; independent typography, Files/preview and visual-system agents started."
+    },
+    {
+      "at": "2026-09-15T03:38:59.095997+00:00",
+      "event": "Official checksum signature verified with Fedora44 key; hardware-accelerated QEMU harness authored. Image transfer in progress."
+    },
+    {
+      "at": "2026-09-15T03:46:24.846792+00:00",
+      "event": "QEMU EGL/KVM startup probe passed. PDF bilingual fixture rendered and inspected without clipping. This is fixture QA, not OS visual evidence."
+    },
+    {
+      "at": "2026-09-15T03:47:52.519370+00:00",
+      "event": "Complete official 4.09GB ISO SHA256 matches signed Fedora44 checksum. Starting stock installation."
+    },
+    {
+      "at": "2026-09-15T03:55:15.671131+00:00",
+      "event": "Stock OSTree deployment complete in installer; bundled Fedora Flatpaks installing. Full independent clone selected after verification caught backing-file hazard. No baseline desktop captured yet."
+    },
+    {
+      "at": "2026-09-15T03:58:21.359890+00:00",
+      "event": "Recovered post-install lab setup from Anaconda service-enable failure. Stock OSTree payload and native Plasma Login Manager retained; boot validation next."
+    },
+    {
+      "at": "2026-09-15T04:00:12.518038+00:00",
+      "event": "Manual recovery fails Atomic health checks; not accepted as baseline. Preserving failed install and reinstalling cleanly with corrected Fedora44 service."
+    },
+    {
+      "at": "2026-09-15T04:10:22.289718+00:00",
+      "event": "Clean stock boot: rpm-ostree daemon healthy, official deployment signature valid. Native PLM first-user wizard appeared despite kickstart user; added documented /etc/plasma-setup-done harness flag and rebooting. RFB genuine GL desktop pixels verified."
+    },
+    {
+      "at": "2026-09-15T04:18:05.776630+00:00",
+      "event": "Genuine clean stock desktop captured and inspected after successful clean boot. Stable F44 update with matched native application package set in progress; no Aven preferences applied."
+    },
+    {
+      "at": "2026-09-15T04:31:16.360269+00:00",
+      "event": "Captured and inspected stock Files, mixed grid, information-panel image preview and Firefox Chinese reading. Base stable-update transfer complete (44.20260913.0); native apps installing. Source compile and 24 verification/9 preview tests plus real Qt renderer/layout checks passed."
+    },
+    {
+      "at": "2026-09-15T04:58:49.686245+00:00",
+      "event": "Stock stable baseline covers all seven requested scenes; inspected SC/TC mail and browser, image/EXIF rendering, native download reveal and picker, and saved/reopened mail draft. No Aven settings applied to stock. First candidate integration next."
+    },
+    {
+      "at": "2026-09-15T05:11:58.556999+00:00",
+      "event": "Independent Aven clone booted; first integration defects fixed from inspected framebuffer and actual Qt/KDE runtime. Rebooting corrected round2; all visual scores remain unassigned until independent critic."
+    },
+    {
+      "at": "2026-09-15T05:38:33.848317+00:00",
+      "event": "Independent34-frame comparison: overall7.59, Chinese8.2, three-second yes; passfalse. Source refinements and paired scale/operations/motion evidence continue."
+    },
+    {
+      "at": "2026-09-15T05:54:04.326954+00:00",
+      "event": "Round3 cleanboot afterfullprofileinstall succeeded. Native Files andfourpreviewtypes inspected. ChineseSC/TC16pair matrix complete; source weightdiagnosis anddurationlabelfix underway."
+    },
+    {
+      "at": "2026-09-15T06:18:29.177364+00:00",
+      "event": "Independent round 3 comparison: overall 8.29, Chinese 8.4, three-second yes; pass false. Composer block leading now visibly corrected and native computed styles verified. Building and rebooting round 4 with preview duration fix."
+    },
+    {
+      "at": "2026-09-15T07:02:09.703772+00:00",
+      "event": "Round 4 final primary scenes captured and inspected. All 17 native operations and six motion sequences verified. Independent current matrix and critic in progress; scores remain the completed round 3 result."
+    },
+    {
+      "at": "2026-09-15T07:13:15.440890+00:00",
+      "event": "Final 16-frame Chinese matrix captured and inspected with canonical stock; actual scales pass. Aven cleanly shut down after restoring normal geometry. Compressed independent disk export started."
+    },
+    {
+      "at": "2026-09-15T07:30:24.154062+00:00",
+      "event": "Independent final round4 PASS: overall8.33, Chinese8.5, three-second yes. Integrator reran strict gate:0 errors,27 preserved legacy stock integer-probe warnings. Standalone9.8GB disk passes integrity and exact virtual-content comparison. Live Aven rebooted and desktop inspected."
+    }
+  ],
+  "candidates": {
+    "typography": "Current16 SC/TC UI/prose pairs at100/125/150/200% inspected; Chinese8.5, Latin8.4. NativeUI readability and reading/writing rhythm improve; controlled paragraph rasterization remains close to already-clean stock.",
+    "visual_system": "Original Aven shared surfaces installed and booted; visual coherence8.3, three-second refinement yes.",
+    "files_preview": "Dolphin retained; Files8.4 and preview8.6. All required navigation/file operations and four preview types pass. Correct paused duration, stable underlying folder and Escape focus return verified.",
+    "browser": "NativeFirefox155; coherence8.4. Real HTTPS browsing, download/reveal and native KDE file picker verified.",
+    "mail": "NativeThunderbird153.0.2; coherence8.1. SC/TC reading, normal and wrapped composition, native offline save/reopen verified.",
+    "photos": "NativeGwenview26.08.1; experience8.0. Large album grid, short filmstrip, landscape/portrait, EXIF6, alpha800%, navigation/fullscreen and restrained native transitions inspected.",
+    "verification": "75 automated tests pass:51 verification+14 Files+10 preview. All17 required native operations pass; all666 stock/Aven motion-frame hashes checked. Strict final evidence gate passes with0 errors."
+  },
+  "score_round": 4,
+  "native_verification": {
+    "report": "evidence/interaction/aven-round04-native-verification.json",
+    "integrity_report": "evidence/verification/aven-round04-native-evidence-validation.json",
+    "successful_required_operations": 17,
+    "required_operations": 17,
+    "motion_sequences": 6,
+    "motion_frames": 359,
+    "unit_tests": {
+      "verification": 51,
+      "files": 14,
+      "preview": 10
+    }
+  },
+  "supplemental_round04": [
+    "evidence/aven/round-04/op-mail-compose-wrapped-720-1x.png",
+    "evidence/aven/round-04/photo-alpha-zoom-1x.png",
+    "evidence/aven/round-04/preview-media-poster-1x.png"
+  ],
+  "excluded_round04_primary": {
+    "evidence/aven/round-04/files-home-clean-1x.png": "Operator selected Desktop after changing native view; final canonical Home is files-home-final with Documents selected and native no-thumbnail details."
+  },
+  "runtime_source_check": {
+    "path": "evidence/verification/round04-runtime-source-hashes.json",
+    "equal_files": 6,
+    "all_equal": true,
+    "includes": "Installed preview code, Firefox chrome, and both regular and offline Thunderbird compose styles match the final guest source."
+  },
+  "artifacts": {
+    "portable_disk": {
+      "path": "output/aven-prototype-round04.qcow2",
+      "status": "exported_and_verified",
+      "bytes": 9778102272,
+      "sha256": "f739eb99cb2d60c28baf9c5e336e80009ebfd3efc0721713c5d837d0fa4a0e51",
+      "virtual_contents_identical": true,
+      "qemu_check_errors": 0
+    },
+    "try_guide": "docs/TRY.md",
+    "comparison_index": "docs/COMPARISON.md",
+    "manifest": "output/BUILD.json",
+    "live_handoff": {
+      "guest": "aven",
+      "vnc": "127.0.0.1:5921",
+      "running": true,
+      "screenshot": "evidence/aven/round-04/handoff-desktop-1x.png",
+      "inspected": true,
+      "normal_display": "1920x1200@1x",
+      "fixture_http_running": true
+    },
+    "source_evidence_archive": {
+      "path": "output/aven-source-and-evidence-round04.tar.gz",
+      "manifest": "output/SOURCE-MANIFEST.json"
+    }
+  },
+  "typography_matrix": {
+    "manifest": "typography/aven-round04-matrix.json",
+    "findings": "docs/typography-round04-findings.md",
+    "current_captures": 16,
+    "stock_pairs": 16,
+    "actual_scale_checks_pass": 16,
+    "scales": [
+      1,
+      1.25,
+      1.5,
+      2
+    ],
+    "scripts": [
+      "SC",
+      "TC"
+    ],
+    "restoration": "typography/aven-round04-restoration.json"
+  },
+  "critic": {
+    "report": "docs/critic-round-04.md",
+    "manifest": "evidence/critic/round-04.json",
+    "independent_gate": "evidence/critic/round-04-gate.json",
+    "integrator_gate": "evidence/verification/round04-final-gate.json",
+    "errors": 0,
+    "preserved_stock_probe_warnings": 27,
+    "inspected_stills": 75,
+    "exact_pairs": 37,
+    "distinct_motion_states": 86
+  },
+  "limits": [
+    "This is the focused VM prototype, not a complete OS release or claim of macOS parity.",
+    "Physical-display font rendering and60/120Hz frame pacing are not established by VM screenshots and8–10fps recordings.",
+    "Audio backend is silent; live mail delivery was not tested.",
+    "The four-scale matrix covers Dolphin and Firefox; mail/photo primary comparisons are1x.",
+    "Live Atomic rollback and live preference restoration were not performed; signed pinned deployment and rollback entry remain intact.",
+    "Minor native rough edges remain: bold breadcrumbs, Thunderbird sender truncation/top strip, Gwenview filmstrip bevels, extra Firefox title height and preview discoverability."
+  ]
+}

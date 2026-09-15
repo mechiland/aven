@@ -1,0 +1,189 @@
+{
+  "method": "isolated temporary FONTCONFIG_FILE, python3.14 prgname exactly matching actual probe executable; no guest preference install",
+  "results": [
+    {
+      "rule_enabled": false,
+      "fc_match_with_explicit_prgname": "Noto Sans|Bold|200\n",
+      "qt": [
+        {
+          "requested_weight": 400,
+          "runs": [
+            {
+              "family": "Noto Sans CJK SC",
+              "style": "Regular",
+              "weight": 400,
+              "outline_sha256": "4901db30adcda883f7eba6a42a2174dd333f1ae23cfd468acabc7a6bd6e0ec1c"
+            },
+            {
+              "family": "Noto Sans",
+              "style": "Regular",
+              "weight": 400,
+              "outline_sha256": "a94b8acbfb8ffd57b06ebab85fc9dfd624dcc1eb1aca2631abbc260dfc923061"
+            }
+          ]
+        },
+        {
+          "requested_weight": 500,
+          "runs": [
+            {
+              "family": "Noto Sans",
+              "style": "Medium",
+              "weight": 500,
+              "outline_sha256": "9312e1207c16da68e42f71547d7b5f750a8cd572286791f351381172e82b9b5b"
+            },
+            {
+              "family": "Noto Sans CJK SC",
+              "style": "Medium",
+              "weight": 500,
+              "outline_sha256": "0ef6d736551e79978ca89f77cb0fcf705308b7f8966feaec5a64e1f7a0b37ec9"
+            }
+          ]
+        },
+        {
+          "requested_weight": 600,
+          "runs": [
+            {
+              "family": "Noto Sans",
+              "style": "SemiBold",
+              "weight": 600,
+              "outline_sha256": "3df1ec1ce3e5b805a44a99d9a222870324d4b2675faaa336bcfa90d44b8b3349"
+            },
+            {
+              "family": "Noto Sans CJK SC",
+              "style": "Medium",
+              "weight": 600,
+              "outline_sha256": "0ef6d736551e79978ca89f77cb0fcf705308b7f8966feaec5a64e1f7a0b37ec9"
+            }
+          ]
+        },
+        {
+          "requested_weight": 700,
+          "runs": [
+            {
+              "family": "Noto Sans CJK SC",
+              "style": "Bold",
+              "weight": 700,
+              "outline_sha256": "1a2c12e615f5c0d0678fc15c936fd6fc60d90c38c8a052324d80e42b7c964890"
+            },
+            {
+              "family": "Noto Sans",
+              "style": "Bold",
+              "weight": 700,
+              "outline_sha256": "063747cd484e36d1087172f68a9cfd3ee0df8aeaaa69d825f1a374116499a668"
+            }
+          ]
+        },
+        {
+          "requested_weight": 900,
+          "runs": [
+            {
+              "family": "Noto Sans",
+              "style": "Black",
+              "weight": 900,
+              "outline_sha256": "1465695500832db3d2414ac0f573bf43b0762a84567ab96fe34a7335f7273c8a"
+            },
+            {
+              "family": "Noto Sans CJK SC",
+              "style": "Black",
+              "weight": 900,
+              "outline_sha256": "d471a5dd7abcbb72c3c100c0bb67ff97ef41ac258142ea701257635554183097"
+            }
+          ]
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "rule_enabled": true,
+      "fc_match_with_explicit_prgname": "Noto Sans,Noto Sans SemiBold|SemiBold,Regular|180\n",
+      "qt": [
+        {
+          "requested_weight": 400,
+          "runs": [
+            {
+              "family": "Noto Sans",
+              "style": "Regular",
+              "weight": 400,
+              "outline_sha256": "a94b8acbfb8ffd57b06ebab85fc9dfd624dcc1eb1aca2631abbc260dfc923061"
+            },
+            {
+              "family": "Noto Sans CJK SC",
+              "style": "Regular",
+              "weight": 400,
+              "outline_sha256": "4901db30adcda883f7eba6a42a2174dd333f1ae23cfd468acabc7a6bd6e0ec1c"
+            }
+          ]
+        },
+        {
+          "requested_weight": 500,
+          "runs": [
+            {
+              "family": "Noto Sans CJK SC",
+              "style": "Medium",
+              "weight": 500,
+              "outline_sha256": "0ef6d736551e79978ca89f77cb0fcf705308b7f8966feaec5a64e1f7a0b37ec9"
+            },
+            {
+              "family": "Noto Sans",
+              "style": "Medium",
+              "weight": 500,
+              "outline_sha256": "9312e1207c16da68e42f71547d7b5f750a8cd572286791f351381172e82b9b5b"
+            }
+          ]
+        },
+        {
+          "requested_weight": 600,
+          "runs": [
+            {
+              "family": "Noto Sans",
+              "style": "SemiBold",
+              "weight": 600,
+              "outline_sha256": "3df1ec1ce3e5b805a44a99d9a222870324d4b2675faaa336bcfa90d44b8b3349"
+            },
+            {
+              "family": "Noto Sans CJK SC",
+              "style": "Medium",
+              "weight": 600,
+              "outline_sha256": "0ef6d736551e79978ca89f77cb0fcf705308b7f8966feaec5a64e1f7a0b37ec9"
+            }
+          ]
+        },
+        {
+          "requested_weight": 700,
+          "runs": [
+            {
+              "family": "Noto Sans CJK SC",
+              "style": "Bold",
+              "weight": 700,
+              "outline_sha256": "1a2c12e615f5c0d0678fc15c936fd6fc60d90c38c8a052324d80e42b7c964890"
+            },
+            {
+              "family": "Noto Sans",
+              "style": "Bold",
+              "weight": 700,
+              "outline_sha256": "063747cd484e36d1087172f68a9cfd3ee0df8aeaaa69d825f1a374116499a668"
+            }
+          ]
+        },
+        {
+          "requested_weight": 900,
+          "runs": [
+            {
+              "family": "Noto Sans CJK SC",
+              "style": "Black",
+              "weight": 900,
+              "outline_sha256": "d471a5dd7abcbb72c3c100c0bb67ff97ef41ac258142ea701257635554183097"
+            },
+            {
+              "family": "Noto Sans",
+              "style": "Black",
+              "weight": 900,
+              "outline_sha256": "1465695500832db3d2414ac0f573bf43b0762a84567ab96fe34a7335f7273c8a"
+            }
+          ]
+        }
+      ],
+      "stderr": ""
+    }
+  ]
+}

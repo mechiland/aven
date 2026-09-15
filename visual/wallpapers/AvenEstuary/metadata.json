@@ -1,0 +1,11 @@
+{
+  "KPlugin": {
+    "Id": "AvenEstuary",
+    "Name": "Estuary",
+    "Description": "Mineral light over quiet water. Original Aven wallpaper.",
+    "Authors": [{"Name": "Aven"}],
+    "License": "CC0-1.0",
+    "Version": "1.0"
+  },
+  "X-KDE-PlasmaImageWallpaper-AccentColor": "#326B60"
+}

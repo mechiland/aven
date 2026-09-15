@@ -1,0 +1,14 @@
+.cache/
+__pycache__/
+*.pyc
+*.qcow2
+*.iso
+*.raw
+*.sock
+
+
+# Large release artifacts and recorded motion frames live in release assets.
+/output/*.tar.gz
+/output/*.partial
+/output/release-assets/
+/evidence/interaction/*/frame-*.png

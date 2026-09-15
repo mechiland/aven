@@ -1,0 +1,3 @@
+# Keep native KDE integration. Record versions in both stock and Aven guests.
+gwenview
+qt6-qtimageformats

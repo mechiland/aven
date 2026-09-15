@@ -1,0 +1,792 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-15T05:44:48.743254+00:00",
+  "guest": "stock",
+  "observer": "/root/verification",
+  "fixture_root": "/home/aven/Documents/Aven operation check 20260915-01",
+  "fixture_preserved": true,
+  "input_log": "evidence/interaction/stock.jsonl",
+  "observations": [
+    {
+      "operation": "folders",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Opened the fresh lab root in Dolphin location field, then entered 01 原件 with Return and the photo folder by native double-click. No operation was performed by shell.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-root-1x.json",
+          "sidecar_sha256": "56b0c703c2da38002f92470d6437fdcd7350247c1b8b4288fcc76a6a765fd106",
+          "image": "evidence/stock/round-00/operations-root-1x.png",
+          "image_sha256": "7c418b2da780f8a9140e3a2188fac12b914aefeadc50a8a36ab4da0d040c048c",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-original-selected-1x.json",
+          "sidecar_sha256": "1611a6c67085dfd113a540c4b3e1e9515a064baba8ce0e41df5c0a3856fa4541",
+          "image": "evidence/stock/round-00/operations-original-selected-1x.png",
+          "image_sha256": "039480c6dc384821395e591cc4ed9240494d8b0283e125a59e670643445e381e",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-photo-files-1x.json",
+          "sidecar_sha256": "353a15a26233d2380022737af39eba7e23a54fcc1a886c8f73f08ca2ea278774",
+          "image": "evidence/stock/round-00/operations-photo-files-1x.png",
+          "image_sha256": "57c516f037e1555ce27e7eadf1ee0c546a6125ebff087913bee27e20aca6e705",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "breadcrumbs",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Clicked the parent breadcrumb from 03 移动; root view contains all three operation folders. Alt+Up and Alt+Left also navigated successfully during operations.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-restored-1x.json",
+          "sidecar_sha256": "af8ccfe2acc66ee8e29f755b52b914066c6f94f2f93a5ded980bd00fb4cbd50a",
+          "image": "evidence/stock/round-00/operations-restored-1x.png",
+          "image_sha256": "6d12701d5e755492d180a362c6a6731a5f05a495fb2200084e69d929001b0d49",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-grid-selected-1x.json",
+          "sidecar_sha256": "37978db037d94421d55532c17208e761d1ee2c209ec014a149375652c83f3c07",
+          "image": "evidence/stock/round-00/operations-grid-selected-1x.png",
+          "image_sha256": "cb908364d5f4883ada1a6d8e6351a99b25cd245480073ad45a66840d510d3ae9",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "sidebar",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Clicked Documents, Downloads, Pictures, and Trash in the native Places sidebar. Each title and listed content matches the clicked location.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-sidebar-documents-1x.json",
+          "sidecar_sha256": "90b30f7fe92b0a3c987dca4c8c623c8751fe14befd6231eb10bfba04a01bf07f",
+          "image": "evidence/stock/round-00/operations-sidebar-documents-1x.png",
+          "image_sha256": "e9408ff2a8f2a36c487965906606e9e68cb1932b825d06ef5796d4a3dd5e4eeb",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-sidebar-downloads-1x.json",
+          "sidecar_sha256": "e0db0aedcff45c243eac6ec665867848bc4baa7eeb858c99ea2395dc25146a64",
+          "image": "evidence/stock/round-00/operations-sidebar-downloads-1x.png",
+          "image_sha256": "e9e3edcae764c5d592a2ad2b9a86020554fb33a48ea487f80efbebafab2fda4a",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-sidebar-pictures-1x.json",
+          "sidecar_sha256": "80daef8579b24039de3f5b7875877241b0cb1a3760ddef5a1bdc21a87b7e4758",
+          "image": "evidence/stock/round-00/operations-sidebar-pictures-1x.png",
+          "image_sha256": "657a1f0980a3cbb2a4ba13856710295209be7324df1b50cdcaa736a0bdde0b2a",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-trash-view-1x.json",
+          "sidecar_sha256": "0ba56432a3772114d896ff4892d7f598d5a9978f7ff61b98936635a746ae433c",
+          "image": "evidence/stock/round-00/operations-trash-view-1x.png",
+          "image_sha256": "64583d39205c2e55506ee2df283e90c0898450de9e9964465303086b3007f2c1",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "grid_list",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Ctrl+1 displayed the three folders as icons; Ctrl+3 returned to details view. Three-folder selection remained visible.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-grid-selected-1x.json",
+          "sidecar_sha256": "37978db037d94421d55532c17208e761d1ee2c209ec014a149375652c83f3c07",
+          "image": "evidence/stock/round-00/operations-grid-selected-1x.png",
+          "image_sha256": "cb908364d5f4883ada1a6d8e6351a99b25cd245480073ad45a66840d510d3ae9",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-list-selected-1x.json",
+          "sidecar_sha256": "4d6f78c0399920f52e7f13ccceeb67bc7438ce7c6796b507dd900b5d2a2c03e1",
+          "image": "evidence/stock/round-00/operations-list-selected-1x.png",
+          "image_sha256": "d38e8d1537f01be7fe2cfa9b7685109ef153576ad440578848143167494af47f",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "selection",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Ctrl+A selected a long mixed Chinese/Latin file and later all three folders; selected counts and blue highlights were inspected.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-original-selected-1x.json",
+          "sidecar_sha256": "1611a6c67085dfd113a540c4b3e1e9515a064baba8ce0e41df5c0a3856fa4541",
+          "image": "evidence/stock/round-00/operations-original-selected-1x.png",
+          "image_sha256": "039480c6dc384821395e591cc4ed9240494d8b0283e125a59e670643445e381e",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-grid-selected-1x.json",
+          "sidecar_sha256": "37978db037d94421d55532c17208e761d1ee2c209ec014a149375652c83f3c07",
+          "image": "evidence/stock/round-00/operations-grid-selected-1x.png",
+          "image_sha256": "cb908364d5f4883ada1a6d8e6351a99b25cd245480073ad45a66840d510d3ae9",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-list-selected-1x.json",
+          "sidecar_sha256": "4d6f78c0399920f52e7f13ccceeb67bc7438ce7c6796b507dd900b5d2a2c03e1",
+          "image": "evidence/stock/round-00/operations-list-selected-1x.png",
+          "image_sha256": "d38e8d1537f01be7fe2cfa9b7685109ef153576ad440578848143167494af47f",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "copy",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Ctrl+C on the original file; Alt+Up, Down, Return navigated to 02 复制; Ctrl+V copied. Original and copy hashes match.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-original-selected-1x.json",
+          "sidecar_sha256": "1611a6c67085dfd113a540c4b3e1e9515a064baba8ce0e41df5c0a3856fa4541",
+          "image": "evidence/stock/round-00/operations-original-selected-1x.png",
+          "image_sha256": "039480c6dc384821395e591cc4ed9240494d8b0283e125a59e670643445e381e",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-copied-1x.json",
+          "sidecar_sha256": "91a53e2daa3bd2b16c49bdcb06c63716fe3454eb1e90653a107eea1eb9fe5336",
+          "image": "evidence/stock/round-00/operations-copied-1x.png",
+          "image_sha256": "48732eb7330a9ec740205a2df0006f5b43a848701cb3b740e8f5bfa55dc57f58",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ],
+      "byte_check": {
+        "path": "evidence/interaction/stock-copied.json",
+        "sha256": "8541d3bc851d4dc36ef68bd693b1397501e9e5ef7e7b15c645309767b5fa0c29"
+      }
+    },
+    {
+      "operation": "move",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Ctrl+X on the copy; Alt+Up, Down, Return navigated to 03 移动; Ctrl+V moved. Copied source is absent and original remains.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-copied-1x.json",
+          "sidecar_sha256": "91a53e2daa3bd2b16c49bdcb06c63716fe3454eb1e90653a107eea1eb9fe5336",
+          "image": "evidence/stock/round-00/operations-copied-1x.png",
+          "image_sha256": "48732eb7330a9ec740205a2df0006f5b43a848701cb3b740e8f5bfa55dc57f58",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-moved-1x.json",
+          "sidecar_sha256": "707e3eaeb9a4f5895cb200ad514a914147f626ea6066df2aaf6cf382af83856b",
+          "image": "evidence/stock/round-00/operations-moved-1x.png",
+          "image_sha256": "e10fa21b06b0fc461b675b2156251a8675305deecf8719f2b068fd6ebe148655",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ],
+      "byte_check": {
+        "path": "evidence/interaction/stock-moved.json",
+        "sha256": "b11a78943d1dc0c593ec53761dd5c28baa75fcf3449ce2df87883aaa340c867b"
+      }
+    },
+    {
+      "operation": "rename",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "F2 inline edit, Ctrl+A, native clipboard paste 已整理 · Weekend.txt, Return. New filename and unchanged 160-byte file inspected.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-moved-1x.json",
+          "sidecar_sha256": "707e3eaeb9a4f5895cb200ad514a914147f626ea6066df2aaf6cf382af83856b",
+          "image": "evidence/stock/round-00/operations-moved-1x.png",
+          "image_sha256": "e10fa21b06b0fc461b675b2156251a8675305deecf8719f2b068fd6ebe148655",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-renamed-1x.json",
+          "sidecar_sha256": "536e9a3fe418cbd0c63878ce2b9e4eee27937e8c0e0e11c125259b2ac44e0d6b",
+          "image": "evidence/stock/round-00/operations-renamed-1x.png",
+          "image_sha256": "d6488dfda96fc7cd00f16d744de7446fd4bdc0d2737808752c86919e579a7df2",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ],
+      "byte_check": {
+        "path": "evidence/interaction/stock-renamed.json",
+        "sha256": "9a062fc1ea978574b4385d2e4a37640494f06de73a7bb86a302357ee8bca19b5"
+      }
+    },
+    {
+      "operation": "trash",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Delete moved only the selected disposable file to Trash, without a confirmation dialog. Native Trash view shows the same filename and full original lab path.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-renamed-1x.json",
+          "sidecar_sha256": "536e9a3fe418cbd0c63878ce2b9e4eee27937e8c0e0e11c125259b2ac44e0d6b",
+          "image": "evidence/stock/round-00/operations-renamed-1x.png",
+          "image_sha256": "d6488dfda96fc7cd00f16d744de7446fd4bdc0d2737808752c86919e579a7df2",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-trash-view-1x.json",
+          "sidecar_sha256": "0ba56432a3772114d896ff4892d7f598d5a9978f7ff61b98936635a746ae433c",
+          "image": "evidence/stock/round-00/operations-trash-view-1x.png",
+          "image_sha256": "64583d39205c2e55506ee2df283e90c0898450de9e9964465303086b3007f2c1",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ],
+      "byte_check": {
+        "path": "evidence/interaction/stock-trashed.json",
+        "sha256": "a34ec4a341e013fb20ce0257efc1cfe3218b05ec004ceae5354fceeaad619208"
+      }
+    },
+    {
+      "operation": "restore",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Right-clicked the selected Trash item and clicked Restore to previous location. Alt+Left returned to the restored destination; verified bytes and preserved original.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-restore-menu-1x.json",
+          "sidecar_sha256": "5a6e2e582bc02d5a475a23489c1bc0362f69453d151d4c5dea11a3589c243b7a",
+          "image": "evidence/stock/round-00/operations-restore-menu-1x.png",
+          "image_sha256": "d7cdf9f6653891bb8eeb55d4dd53e847b6fb71de22a8bb4c98701e64aca847a7",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-restored-1x.json",
+          "sidecar_sha256": "af8ccfe2acc66ee8e29f755b52b914066c6f94f2f93a5ded980bd00fb4cbd50a",
+          "image": "evidence/stock/round-00/operations-restored-1x.png",
+          "image_sha256": "6d12701d5e755492d180a362c6a6731a5f05a495fb2200084e69d929001b0d49",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ],
+      "byte_check": {
+        "path": "evidence/interaction/stock-restored.json",
+        "sha256": "adde6ab0a36d7a9a31e39aa0eb6cafe472c3bb8a7337df3c8173cdcd9e9d34d3"
+      }
+    },
+    {
+      "operation": "default_open",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Return on the selected landscape JPEG in Dolphin opened Gwenview with that exact image. No MIME association was changed.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-photo-files-1x.json",
+          "sidecar_sha256": "353a15a26233d2380022737af39eba7e23a54fcc1a886c8f73f08ca2ea278774",
+          "image": "evidence/stock/round-00/operations-photo-files-1x.png",
+          "image_sha256": "57c516f037e1555ce27e7eadf1ee0c546a6125ebff087913bee27e20aca6e705",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-default-open-photo-1x.json",
+          "sidecar_sha256": "b1493eb89bd9220f125c330a5f4f8dc4450c62ab1eb4b3a0da498f69e891f325",
+          "image": "evidence/stock/round-00/operations-default-open-photo-1x.png",
+          "image_sha256": "80ea3a03188c5cedc20e31c595ed2d35539bc781b12d66f91c07f5e255872a59",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "preview_toggle",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "F11 opened Dolphin information panel for Earthrise. Down selected landscape and updated preview; F11 closed panel. This verifies the stock panel, not a lightweight quick-preview overlay.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-info-preview-1x.json",
+          "sidecar_sha256": "043a12c0529f9f749b4a5615977bb1f41c87f33665534001aaa3202bf816179f",
+          "image": "evidence/stock/round-00/operations-info-preview-1x.png",
+          "image_sha256": "6291398daf48586a4e974646cf4f21fd0b23389bacf2f3926e6b35fa5323dae9",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-default-open-photo-1x.json",
+          "sidecar_sha256": "b1493eb89bd9220f125c330a5f4f8dc4450c62ab1eb4b3a0da498f69e891f325",
+          "image": "evidence/stock/round-00/operations-default-open-photo-1x.png",
+          "image_sha256": "80ea3a03188c5cedc20e31c595ed2d35539bc781b12d66f91c07f5e255872a59",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "preview_escape_focus",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": false,
+      "notes": "Escape did not close the stock information panel. It cleared image selection, leaving keyboard focus outline and folder information. F11 was required to hide panel.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-preview-escape-1x.json",
+          "sidecar_sha256": "42d85fde9004c11faab40f81037efd253ea893f31877dacc09549200bec1a281",
+          "image": "evidence/stock/round-00/operations-preview-escape-1x.png",
+          "image_sha256": "645d9c03628ba08215ab359fe5707f49f640fd0476a0107a55f870e301bb16c7",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "space_quick_preview",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": false,
+      "notes": "Space entered Dolphin selection mode rather than opening file preview. Escape exited selection mode.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-space-key-1x.json",
+          "sidecar_sha256": "00938e0e44f74145598ce7b90da9ab5c4235761f4d0db74358a47e56aecf9952",
+          "image": "evidence/stock/round-00/operations-space-key-1x.png",
+          "image_sha256": "9ecad22c653514879f63a91fd3b738560503db31db9f301926a3e8077df702ce",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "photo_next_previous",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Right in Gwenview moved from landscape image2 to portrait image3; Left returned to landscape image2. Titles, image content, and image counter inspected.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-default-open-photo-1x.json",
+          "sidecar_sha256": "b1493eb89bd9220f125c330a5f4f8dc4450c62ab1eb4b3a0da498f69e891f325",
+          "image": "evidence/stock/round-00/operations-default-open-photo-1x.png",
+          "image_sha256": "80ea3a03188c5cedc20e31c595ed2d35539bc781b12d66f91c07f5e255872a59",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-photo-previous-1x.json",
+          "sidecar_sha256": "9ceb23126f57f115ea6f85733f4328ea431b68439b706e9a4fcb057636dd03e7",
+          "image": "evidence/stock/round-00/operations-photo-previous-1x.png",
+          "image_sha256": "80ea3a03188c5cedc20e31c595ed2d35539bc781b12d66f91c07f5e255872a59",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "photo_fullscreen",
+      "guest": "stock",
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Clicked Gwenview fullscreen icon; image filled display and native strip appeared. Escape returned to the same windowed landscape view, directly inspected.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/operations-photo-fullscreen-1x.json",
+          "sidecar_sha256": "bcaa2342a358115f16fbe830c7868b8f8e7ac9916b41763feb3203ed60dce422",
+          "image": "evidence/stock/round-00/operations-photo-fullscreen-1x.png",
+          "image_sha256": "1dd419f783c1f24678750be71755f78cad8dfbf361d11a053348e50e88edaadf",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/stock/round-00/operations-photo-previous-1x.json",
+          "sidecar_sha256": "9ceb23126f57f115ea6f85733f4328ea431b68439b706e9a4fcb057636dd03e7",
+          "image": "evidence/stock/round-00/operations-photo-previous-1x.png",
+          "image_sha256": "80ea3a03188c5cedc20e31c595ed2d35539bc781b12d66f91c07f5e255872a59",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "browser_download",
+      "guest": "stock",
+      "method": "native-ui",
+      "operator": "/root",
+      "observer": "/root",
+      "independent_reviewer": "/root/verification",
+      "reviewed_at": "2026-09-15T05:49:07.399054+00:00",
+      "review_method": "Independent inspection of exact original framebuffer captures and new read-only hash check; native workflow was originally operated by root, not rerun.",
+      "passed": true,
+      "notes": "Firefox native Downloads popup shows 周末路线.txt completed at428bytes from local HTTP fixture. The next capture shows Dolphin Downloads with that same file selected after Show in Folder. Current SHA256 and byte count match both host and guest fixture.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/browser-download-1x.json",
+          "sidecar_sha256": "dcf5f3b64643f9e7340cba80356b7452809c8ef42553bb10e9122a7180962bc0",
+          "image": "evidence/stock/round-00/browser-download-1x.png",
+          "image_sha256": "287b4424c89c3c8a5f0125d4a8ae9642dfcb78ad58cb461ec91285a9b9e6503d",
+          "inspected_by": "/root/verification",
+          "inspected_at": "2026-09-15T05:49:07.399054+00:00",
+          "visually_inspected": true,
+          "original_capture_operator": "/root"
+        },
+        {
+          "sidecar": "evidence/stock/round-00/browser-reveal-1x.json",
+          "sidecar_sha256": "fabed025fb7d1f48950c365b05b9156786d97360b02f3c57a8c6c311692136df",
+          "image": "evidence/stock/round-00/browser-reveal-1x.png",
+          "image_sha256": "86f4f507808f7b997f46113394715f241ef1e9cfcc768de4b4ab1b8c9e8be29c",
+          "inspected_by": "/root/verification",
+          "inspected_at": "2026-09-15T05:49:07.399054+00:00",
+          "visually_inspected": true,
+          "original_capture_operator": "/root"
+        }
+      ],
+      "byte_check": {
+        "path": "evidence/interaction/stock-browser-download-check.json",
+        "sha256": "0412756c035320ca9340ac8fcea5f0d70814db86cdb3fb0f70ef207ab70d14a9"
+      }
+    },
+    {
+      "operation": "browser_file_picker",
+      "guest": "stock",
+      "method": "native-ui",
+      "operator": "/root",
+      "observer": "/root",
+      "independent_reviewer": "/root/verification",
+      "reviewed_at": "2026-09-15T05:49:07.399054+00:00",
+      "review_method": "Independent inspection of exact original native-picker and post-selection browser captures; original operator root, no rerun.",
+      "passed": true,
+      "notes": "Firefox invoked the native KDE portal chooser in Pictures/京都春日. The post-selection browser capture visibly displays06-山间河流.jpg. Fixture has a plain local file input, no form submission or upload script; selection stayed local. The portal UI is English while the Firefox/page UI is Chinese, a stock coherence limitation retained in the evidence.",
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/browser-picker-1x.json",
+          "sidecar_sha256": "ac1b55262bf4a8ce76ab17bf18d1cf98f8b2a76fe2c7d7c769184768f8b47ba7",
+          "image": "evidence/stock/round-00/browser-picker-1x.png",
+          "image_sha256": "b0bc8c88f3d32e8419f43904b154280d5ea3f28ad9ca7dde536cb2879cdc6bf7",
+          "inspected_by": "/root/verification",
+          "inspected_at": "2026-09-15T05:49:07.399054+00:00",
+          "visually_inspected": true,
+          "original_capture_operator": "/root"
+        },
+        {
+          "sidecar": "evidence/stock/round-00/browser-picker-selected-1x.json",
+          "sidecar_sha256": "e672c0b4982959e5b0cd284c22cefb99daee113bf649aa03cc2e8e1fa566854d",
+          "image": "evidence/stock/round-00/browser-picker-selected-1x.png",
+          "image_sha256": "a3a74037c3d751c646789c511b4ecb4f6d9d82b8f5d13701cdbac1d21fa30b6c",
+          "inspected_by": "/root/verification",
+          "inspected_at": "2026-09-15T05:49:07.399054+00:00",
+          "visually_inspected": true,
+          "original_capture_operator": "/root"
+        }
+      ],
+      "fixture_html_sha256": "dc098fee7faa69c9ea44d60e428a17d35ae18df61d53bb119526546f61c2e6cc"
+    },
+    {
+      "operation": "mail_draft_save",
+      "guest": "stock",
+      "method": "native-ui",
+      "operator": "/root",
+      "observer": "/root",
+      "independent_reviewer": "/root/verification",
+      "reviewed_at": "2026-09-15T05:49:07.399054+00:00",
+      "review_method": "Preserved root native observation; independently inspected exact compose and reopened-draft screenshots.",
+      "passed": true,
+      "notes": "Opened Drafts with native sidebar, double-clicked original draft, clicked body, Ctrl+End then two Enter presses; pasted 已核对路线，周六见。; Ctrl+S. Closed editor, reopened Drafts item and directly inspected persisted sentence. No SMTP account and no sending.",
+      "source_observation": {
+        "path": "evidence/interaction/observations.json",
+        "recorded_at": "2026-09-15T04:47:48.219991+00:00",
+        "operator": "/root"
+      },
+      "evidence": [
+        {
+          "sidecar": "evidence/stock/round-00/mail-compose-1x.json",
+          "sidecar_sha256": "8f4fba41196f8e73b6b55cf38674a3682d2edf9955c5c071d6d2d3aeaa84f517",
+          "image": "evidence/stock/round-00/mail-compose-1x.png",
+          "image_sha256": "74ade757d5e01b0e4ae33be8a2167260405c1d52ed9eda4604b4d57eec7aa39a",
+          "inspected_by": "/root/verification",
+          "inspected_at": "2026-09-15T05:49:07.399054+00:00",
+          "visually_inspected": true,
+          "original_capture_operator": "/root"
+        },
+        {
+          "sidecar": "evidence/stock/round-00/mail-draft-reopened-1x.json",
+          "sidecar_sha256": "3c3916a917665c03e3d24515c637e81124f28eaade7274711645e34ad6c4c564",
+          "image": "evidence/stock/round-00/mail-draft-reopened-1x.png",
+          "image_sha256": "5c061c50ebd3b041aae87374bbee60fcaf0961d0464477953b433be78a735aa4",
+          "inspected_by": "/root/verification",
+          "inspected_at": "2026-09-15T05:49:07.399054+00:00",
+          "visually_inspected": true,
+          "original_capture_operator": "/root"
+        }
+      ]
+    }
+  ],
+  "motion": [
+    {
+      "id": "window_open_close",
+      "guest": "stock",
+      "method": "recording",
+      "observer": "/root/verification",
+      "captured": true,
+      "behavior_observed": true,
+      "recording": "evidence/interaction/stock-motion-window-open-close/recording.json",
+      "sha256": "b09d4a6fdc25005f89c2d5e70714ff9e7219facc88ad7d45883e57a7173517ec",
+      "frame_count": 50,
+      "observed_fps": 8.224193706090771,
+      "largest_gap_seconds": 0.14305208099540323,
+      "inspected_frames": [
+        {
+          "file": "evidence/interaction/stock-motion-window-open-close/frame-0014.png",
+          "sha256": "03cac819bb154220ac9485139e82601b59477a4ff845b01267b82d53ce903ee8",
+          "offset_seconds": 1.8024018239811994,
+          "inspected_by": "/root/verification"
+        },
+        {
+          "file": "evidence/interaction/stock-motion-window-open-close/frame-0024.png",
+          "sha256": "b36bb71c7f3e1de93c6a599fd55647a22eca4a692b2e04d642c39fa655cecfdb",
+          "offset_seconds": 3.007594536000397,
+          "inspected_by": "/root/verification"
+        }
+      ],
+      "observation": "Ctrl+N opens a second Dolphin window; Alt+F4 closes it. Inspected a second centered window and a partially transparent closing frame, followed by the original window.",
+      "perceived_smoothness_score": null,
+      "limitations": [
+        "RFB readback and PNG encoding can skip compositor frames.",
+        "Timestamps describe capture completion on the host, not display presentation.",
+        "Replay this sequence to assess observed transitions; no physical frame-pacing claim is supported.",
+        "Representative original frames were inspected; no claim of physical frame pacing or premium motion quality is made."
+      ]
+    },
+    {
+      "id": "window_switch",
+      "guest": "stock",
+      "method": "recording",
+      "observer": "/root/verification",
+      "captured": true,
+      "behavior_observed": true,
+      "recording": "evidence/interaction/stock-motion-window-switch/recording.json",
+      "sha256": "a063605d13512c2e6511a395ab5bb892cace614dc8de2a397124b121cd6a5395",
+      "frame_count": 50,
+      "observed_fps": 8.203833760983757,
+      "largest_gap_seconds": 0.14666680700611323,
+      "inspected_frames": [
+        {
+          "file": "evidence/interaction/stock-motion-window-switch/frame-0014.png",
+          "sha256": "de640e12f661e38a8d8c4dd7376174f011c06c7ceb42a149eb982016a321d791",
+          "offset_seconds": 1.811563212017063,
+          "inspected_by": "/root/verification"
+        }
+      ],
+      "observation": "Alt+Tab changed from Dolphin to Firefox Chinese prose; a second Alt+Tab returned to Dolphin. This sequence uses quick switching, not a held switcher popup.",
+      "perceived_smoothness_score": null,
+      "limitations": [
+        "RFB readback and PNG encoding can skip compositor frames.",
+        "Timestamps describe capture completion on the host, not display presentation.",
+        "Replay this sequence to assess observed transitions; no physical frame-pacing claim is supported.",
+        "Representative original frames were inspected; no claim of physical frame pacing or premium motion quality is made."
+      ]
+    },
+    {
+      "id": "menus_popovers",
+      "guest": "stock",
+      "method": "recording",
+      "observer": "/root/verification",
+      "captured": true,
+      "behavior_observed": true,
+      "recording": "evidence/interaction/stock-motion-menus-popovers/recording.json",
+      "sha256": "1b3be9eb2a61aa32a9a9c4e9c64ca8e343afaacf1d1c914ed0267eb6c46e02a3",
+      "frame_count": 49,
+      "observed_fps": 8.165999479940782,
+      "largest_gap_seconds": 0.14372868201462552,
+      "inspected_frames": [
+        {
+          "file": "evidence/interaction/stock-motion-menus-popovers/frame-0015.png",
+          "sha256": "05a1ed2119f43ce2211f583ee10f956c4eebabe943ebb745b934913680f4ac6f",
+          "offset_seconds": 1.9336631310288794,
+          "inspected_by": "/root/verification"
+        }
+      ],
+      "observation": "Clicked native Dolphin hamburger menu, then Escape. Inspected menu surface and its native Chinese entries; later preview sequence starts with it dismissed.",
+      "perceived_smoothness_score": null,
+      "limitations": [
+        "RFB readback and PNG encoding can skip compositor frames.",
+        "Timestamps describe capture completion on the host, not display presentation.",
+        "Replay this sequence to assess observed transitions; no physical frame-pacing claim is supported.",
+        "Representative original frames were inspected; no claim of physical frame pacing or premium motion quality is made."
+      ]
+    },
+    {
+      "id": "preview",
+      "guest": "stock",
+      "method": "recording",
+      "observer": "/root/verification",
+      "captured": true,
+      "behavior_observed": true,
+      "recording": "evidence/interaction/stock-motion-preview/recording.json",
+      "sha256": "f7ce581dff90bf2d1133d6c76085ba433a2cf0984c4d85be3d60bad05b3ac2af",
+      "frame_count": 66,
+      "observed_fps": 8.208097765508244,
+      "largest_gap_seconds": 0.14120737800840288,
+      "inspected_frames": [
+        {
+          "file": "evidence/interaction/stock-motion-preview/frame-0031.png",
+          "sha256": "7f56ad441e233b0de49efc3820ecc1b3c5b1bdcf8949c038f4637104ac444368",
+          "offset_seconds": 3.871303968015127,
+          "inspected_by": "/root/verification"
+        }
+      ],
+      "observation": "F11 opens the information panel, Down changes Earthrise to landscape thumbnail, F11 closes it. Frame31 shows updated landscape preview and retained selected file.",
+      "perceived_smoothness_score": null,
+      "limitations": [
+        "RFB readback and PNG encoding can skip compositor frames.",
+        "Timestamps describe capture completion on the host, not display presentation.",
+        "Replay this sequence to assess observed transitions; no physical frame-pacing claim is supported.",
+        "Representative original frames were inspected; no claim of physical frame pacing or premium motion quality is made."
+      ]
+    },
+    {
+      "id": "photo_transition",
+      "guest": "stock",
+      "method": "recording",
+      "observer": "/root/verification",
+      "captured": true,
+      "behavior_observed": true,
+      "recording": "evidence/interaction/stock-motion-photo-transition/recording.json",
+      "sha256": "423bd4b231911773edc287d355305aaa4278fcd05afb06a0dd3b4a064d74b6bc",
+      "frame_count": 43,
+      "observed_fps": 7.100590489923383,
+      "largest_gap_seconds": 0.15837115101749077,
+      "inspected_frames": [
+        {
+          "file": "evidence/interaction/stock-motion-photo-transition/frame-0014.png",
+          "sha256": "fd4d008ccaef87b5e28c8fc4c9191c9da63e24339ce50b2c622db18fae03d36e",
+          "offset_seconds": 2.0031317489920184,
+          "inspected_by": "/root/verification"
+        },
+        {
+          "file": "evidence/interaction/stock-motion-photo-transition/frame-0040.png",
+          "sha256": "24e8a50d0386de57662c4b566399071f58c405c411146aeafaaf5047b1e91022",
+          "offset_seconds": 5.6860041309846565,
+          "inspected_by": "/root/verification"
+        }
+      ],
+      "observation": "Right changes landscape to portrait; Left returns to landscape. Both image content and title/index changed correctly.",
+      "perceived_smoothness_score": null,
+      "limitations": [
+        "RFB readback and PNG encoding can skip compositor frames.",
+        "Timestamps describe capture completion on the host, not display presentation.",
+        "Replay this sequence to assess observed transitions; no physical frame-pacing claim is supported.",
+        "Representative original frames were inspected; no claim of physical frame pacing or premium motion quality is made."
+      ]
+    },
+    {
+      "id": "overview",
+      "guest": "stock",
+      "method": "recording",
+      "observer": "/root/verification",
+      "captured": true,
+      "behavior_observed": true,
+      "recording": "evidence/interaction/stock-motion-overview/recording.json",
+      "sha256": "cfb6b9c30e182adacea2422304e16406578e33b39e4ab5198e461a69d890b8b1",
+      "frame_count": 49,
+      "observed_fps": 6.979498407459889,
+      "largest_gap_seconds": 0.16112306900322437,
+      "inspected_frames": [
+        {
+          "file": "evidence/interaction/stock-motion-overview/frame-0007.png",
+          "sha256": "fb7f3419f07aaeb892893951beff617995ed8b1750647e0158285974f9c4d3a4",
+          "offset_seconds": 1.1545450539560989,
+          "inspected_by": "/root/verification"
+        }
+      ],
+      "observation": "Configured Meta+W enters stock KWin Overview; Escape exits. Inspected intermediate rearrangement and settled three-window Overview capture.",
+      "perceived_smoothness_score": null,
+      "limitations": [
+        "RFB readback and PNG encoding can skip compositor frames.",
+        "Timestamps describe capture completion on the host, not display presentation.",
+        "Replay this sequence to assess observed transitions; no physical frame-pacing claim is supported.",
+        "Representative original frames were inspected; no claim of physical frame pacing or premium motion quality is made."
+      ]
+    }
+  ],
+  "visual_quality_scores": null,
+  "limitations": [
+    "Stock-only behavior evidence; comparison and Aven acceptance remain separate.",
+    "Space quick preview and Escape dismissal of the information panel do not work on stock; these failures are retained as baseline findings.",
+    "Current 1× captures use the no-window Qt probe; original native Restore context menu remained available after its capture.",
+    "Browser download/picker and mail draft native actions were operated by root. Verification independently inspected the original hashed captures and checked the existing download bytes; attribution remains explicit."
+  ],
+  "updated_at": "2026-09-15T05:49:07.399054+00:00",
+  "required_operations_covered": [
+    "breadcrumbs",
+    "browser_download",
+    "browser_file_picker",
+    "copy",
+    "default_open",
+    "folders",
+    "grid_list",
+    "mail_draft_save",
+    "move",
+    "photo_next_previous",
+    "preview_escape_focus",
+    "preview_toggle",
+    "rename",
+    "restore",
+    "selection",
+    "sidebar",
+    "trash"
+  ],
+  "required_operations_missing": [],
+  "all_required_operations_have_observations": true
+}

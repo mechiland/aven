@@ -1,0 +1,1014 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-15T06:54:59.732170+00:00",
+  "guest": "aven",
+  "round": 4,
+  "observer": "/root/verification",
+  "fixture_root": "/home/aven/Documents/Aven operation check 20260915-round04",
+  "fixture_preserved": true,
+  "fixture_preparation": {
+    "file": "evidence/interaction/aven-round04-fixture.json",
+    "sha256": "f08ba4ff4727d9a59d17026d477542b6bd4aef1b9796c18b5106dfa0030871bb"
+  },
+  "input_log": "evidence/interaction/aven.jsonl",
+  "input_log_note": "Native QMP actions include this verification and other root actions; log remains append-only and may grow after this report.",
+  "observations": [
+    {
+      "operation": "folders",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Opened a fresh lab root in Dolphin, then Return entered 01 原件. Native double-click entered Pictures/周末散步. The lab fixture was prepared separately; all tested file mutations used Dolphin UI.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-files-root-ready-1x.json",
+          "sidecar_sha256": "1e252642427da883eea5218b5ae75afe89d69056fee378ec9a586438b58aaf30",
+          "image": "evidence/aven/round-04/op-files-root-ready-1x.png",
+          "image_sha256": "e0aa438b8f6ba9390500a5b92091276ca10aba4dfe78b973c4e0a3da09f98f88",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-original-selected-1x.json",
+          "sidecar_sha256": "4fde8bddb32723c4c3b4c4af4b2f3e12f6edf80fa8e86e241e71f36f9562b242",
+          "image": "evidence/aven/round-04/op-original-selected-1x.png",
+          "image_sha256": "cce11d3bcfd99a5aeca3866dc9a2056a638b8112b64a320de4e518d839bb774d",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-default-open-photo-1x.json",
+          "sidecar_sha256": "a46e7928bf880646f29b07f17f87bbcb0736ab3d163663a1c60ba0b5e1311300",
+          "image": "evidence/aven/round-04/op-default-open-photo-1x.png",
+          "image_sha256": "f0be81977ecab07ff5d814fde33e9ddb2d7dbef75a9ede28c6fd194f16a81a02",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "breadcrumbs",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Clicked the parent breadcrumb from 03 移动 to the lab root. Alt+Up and Alt+Left also navigated correctly throughout the native operations.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-restored-1x.json",
+          "sidecar_sha256": "adabd80997a04c506d21d26e867bfe09dbcac5254eeac138eb7d5169c2626c00",
+          "image": "evidence/aven/round-04/op-restored-1x.png",
+          "image_sha256": "5e26fd9d5592d0a5a6488d5632ea604a56606ecc69be35133884df1a7383bdc3",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-grid-selected-1x.json",
+          "sidecar_sha256": "9020c7f9b8270daac7bb73a99c9fc021117b684afd00d3bc0f7423db5669fa57",
+          "image": "evidence/aven/round-04/op-grid-selected-1x.png",
+          "image_sha256": "921cf0e5ee7ffc3e1dd8f0868eb6874b83a0e59d22e3bbe952722edd0c6d29d5",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "sidebar",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Clicked Downloads, Documents, Pictures and Trash in native Places. Titles and visible content correspond to each destination.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-sidebar-downloads-1x.json",
+          "sidecar_sha256": "d7e42f64c3810fe84908f8b22537fd956f49bdd9f3afdec44a87573f49e0dbaf",
+          "image": "evidence/aven/round-04/op-sidebar-downloads-1x.png",
+          "image_sha256": "2a66a8bd811aa7b312f3bc29bc11c66c701c2e23769d1d57727661da9b18ebae",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-sidebar-documents-1x.json",
+          "sidecar_sha256": "76332a842503de35c315287ff8d3ce6648077d0af4fd06b10aec81773711bfc1",
+          "image": "evidence/aven/round-04/op-sidebar-documents-1x.png",
+          "image_sha256": "359953e2a724d9b6e96ac9d85114a5b33fb7daba60a776a95fbde338cee11784",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-sidebar-pictures-1x.json",
+          "sidecar_sha256": "e5a6963342b65d996773d7428b7ac2e83b1344fc52f4844668a0eee8055f8dc5",
+          "image": "evidence/aven/round-04/op-sidebar-pictures-1x.png",
+          "image_sha256": "19bccccac1380257f6e3f34ef559f197d36636731b9b61b68d66102ca66fe823",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-trash-view-1x.json",
+          "sidecar_sha256": "2be79000526edd4957ba3289f1f23569615a36760123c00d62482f434413ff7a",
+          "image": "evidence/aven/round-04/op-trash-view-1x.png",
+          "image_sha256": "296e96333d902b352a11832203432b20d0128dd7fba51e80a28c55c509868d3b",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "grid_list",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Ctrl+1 changed the lab root to icon view; Ctrl+3 returned to details. Three-folder selection remained visible.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-grid-selected-1x.json",
+          "sidecar_sha256": "9020c7f9b8270daac7bb73a99c9fc021117b684afd00d3bc0f7423db5669fa57",
+          "image": "evidence/aven/round-04/op-grid-selected-1x.png",
+          "image_sha256": "921cf0e5ee7ffc3e1dd8f0868eb6874b83a0e59d22e3bbe952722edd0c6d29d5",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-list-selected-1x.json",
+          "sidecar_sha256": "991d1fa1701079299f4f1c5eab9d7f035641ef6f05c85b1a3f7a19191be7f529",
+          "image": "evidence/aven/round-04/op-list-selected-1x.png",
+          "image_sha256": "e0a83875cfb28e8a118115043f4abe040b45e8ec61218ad6eea2b6cc3704b081",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "selection",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Ctrl+A selected the long Chinese/Latin filename and later all three folders. Home then Shift+Down selected two JPEGs. Selection counts and highlights were inspected.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-original-selected-1x.json",
+          "sidecar_sha256": "4fde8bddb32723c4c3b4c4af4b2f3e12f6edf80fa8e86e241e71f36f9562b242",
+          "image": "evidence/aven/round-04/op-original-selected-1x.png",
+          "image_sha256": "cce11d3bcfd99a5aeca3866dc9a2056a638b8112b64a320de4e518d839bb774d",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-grid-selected-1x.json",
+          "sidecar_sha256": "9020c7f9b8270daac7bb73a99c9fc021117b684afd00d3bc0f7423db5669fa57",
+          "image": "evidence/aven/round-04/op-grid-selected-1x.png",
+          "image_sha256": "921cf0e5ee7ffc3e1dd8f0868eb6874b83a0e59d22e3bbe952722edd0c6d29d5",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-list-selected-1x.json",
+          "sidecar_sha256": "991d1fa1701079299f4f1c5eab9d7f035641ef6f05c85b1a3f7a19191be7f529",
+          "image": "evidence/aven/round-04/op-list-selected-1x.png",
+          "image_sha256": "e0a83875cfb28e8a118115043f4abe040b45e8ec61218ad6eea2b6cc3704b081",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-preview-selection-1x.json",
+          "sidecar_sha256": "1ed2e12562c0551b894a0379ed957640eaf4de9d1de5d7f8ab81741e2a5a53a5",
+          "image": "evidence/aven/round-04/op-preview-selection-1x.png",
+          "image_sha256": "522c243ceeac20aa7035e869720e086c1b3e0c4349110c3bde7604d82216703d",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "copy",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Ctrl+C on the original; Alt+Up, Down, Return entered 02 复制; Ctrl+V copied. Read-only checks confirm both original and copy match the source bytes.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-original-selected-1x.json",
+          "sidecar_sha256": "4fde8bddb32723c4c3b4c4af4b2f3e12f6edf80fa8e86e241e71f36f9562b242",
+          "image": "evidence/aven/round-04/op-original-selected-1x.png",
+          "image_sha256": "cce11d3bcfd99a5aeca3866dc9a2056a638b8112b64a320de4e518d839bb774d",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-copied-1x.json",
+          "sidecar_sha256": "c2db15f981d8c4aefc6550cbe9cbf5f6b9ed195d766151c9ab631f38e1a43cce",
+          "image": "evidence/aven/round-04/op-copied-1x.png",
+          "image_sha256": "9546c9237d646f6fe5c997f89f1a1dad3415dd3a8d61e7b13d558454a5fe0b61",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ],
+      "filesystem_check": {
+        "file": "evidence/interaction/aven-round04-copied-check.json",
+        "sha256": "b21a908bee73704a4ade0efa69a44c806760fa2f7cacb2e7bd059a1bdb75163f"
+      }
+    },
+    {
+      "operation": "move",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Ctrl+X on the copy; Alt+Up, Down, Return entered 03 移动; Ctrl+V moved it. The copied source disappeared, the destination hash matches, and the original remains unchanged.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-copied-1x.json",
+          "sidecar_sha256": "c2db15f981d8c4aefc6550cbe9cbf5f6b9ed195d766151c9ab631f38e1a43cce",
+          "image": "evidence/aven/round-04/op-copied-1x.png",
+          "image_sha256": "9546c9237d646f6fe5c997f89f1a1dad3415dd3a8d61e7b13d558454a5fe0b61",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-moved-1x.json",
+          "sidecar_sha256": "f83564a358741611a7f9f37f8391562571f3f62649b788b8d610f4fec6c5933e",
+          "image": "evidence/aven/round-04/op-moved-1x.png",
+          "image_sha256": "81514e9cb49ee7d5cb165237c1b808c81e35b72d926764f30c7f5d86981f7de8",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ],
+      "filesystem_check": {
+        "file": "evidence/interaction/aven-round04-moved-check.json",
+        "sha256": "afb3edfdc413158132b00828557f374e7d917852a299f0884b7f10e57aac3c48"
+      }
+    },
+    {
+      "operation": "rename",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "F2, Ctrl+A, Unicode text entry and Return renamed the moved file to 已整理 · Weekend.txt. Content is unchanged and the previous name is absent.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-moved-1x.json",
+          "sidecar_sha256": "f83564a358741611a7f9f37f8391562571f3f62649b788b8d610f4fec6c5933e",
+          "image": "evidence/aven/round-04/op-moved-1x.png",
+          "image_sha256": "81514e9cb49ee7d5cb165237c1b808c81e35b72d926764f30c7f5d86981f7de8",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-renamed-1x.json",
+          "sidecar_sha256": "d61373d7e9b8571b0487a9405239e8b7fd0746ecc656a99cafa9078dbab1fd08",
+          "image": "evidence/aven/round-04/op-renamed-1x.png",
+          "image_sha256": "5e426b9634214952be14a0cef7e4a2983dbc4e893068ad9923d86f0856657cb8",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ],
+      "filesystem_check": {
+        "file": "evidence/interaction/aven-round04-renamed-check.json",
+        "sha256": "975bc4042cca21c78ea6450be180aa3852aceb1476bc9f4012b4664988867374"
+      }
+    },
+    {
+      "operation": "trash",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Delete moved only the disposable renamed fixture to Trash. The native Trash view and Restore to previous location menu were inspected. Trash was not emptied.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-renamed-1x.json",
+          "sidecar_sha256": "d61373d7e9b8571b0487a9405239e8b7fd0746ecc656a99cafa9078dbab1fd08",
+          "image": "evidence/aven/round-04/op-renamed-1x.png",
+          "image_sha256": "5e426b9634214952be14a0cef7e4a2983dbc4e893068ad9923d86f0856657cb8",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-trash-view-1x.json",
+          "sidecar_sha256": "2be79000526edd4957ba3289f1f23569615a36760123c00d62482f434413ff7a",
+          "image": "evidence/aven/round-04/op-trash-view-1x.png",
+          "image_sha256": "296e96333d902b352a11832203432b20d0128dd7fba51e80a28c55c509868d3b",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-restore-menu-1x.json",
+          "sidecar_sha256": "3190cd6f20ad3ce3e4a3303d52e3585a1d6d0bea30c8d8df1193c8f535e85fc8",
+          "image": "evidence/aven/round-04/op-restore-menu-1x.png",
+          "image_sha256": "1cb35f601acff44436022cae050303e0f5fad2c4e3eea6abd5e225dc4838ec2a",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ],
+      "filesystem_check": {
+        "file": "evidence/interaction/aven-round04-trashed-check.json",
+        "sha256": "825b79f7a624c2ffeb5d254531f0e660bc1a5adf2aed5c0d5a1e3e0fbad3a3c2"
+      }
+    },
+    {
+      "operation": "restore",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Clicked native Restore to previous location, then Alt+Left returned to the destination. The file reappeared with its original bytes; the original lab source is preserved.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-restore-menu-1x.json",
+          "sidecar_sha256": "3190cd6f20ad3ce3e4a3303d52e3585a1d6d0bea30c8d8df1193c8f535e85fc8",
+          "image": "evidence/aven/round-04/op-restore-menu-1x.png",
+          "image_sha256": "1cb35f601acff44436022cae050303e0f5fad2c4e3eea6abd5e225dc4838ec2a",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-restored-1x.json",
+          "sidecar_sha256": "adabd80997a04c506d21d26e867bfe09dbcac5254eeac138eb7d5169c2626c00",
+          "image": "evidence/aven/round-04/op-restored-1x.png",
+          "image_sha256": "5e26fd9d5592d0a5a6488d5632ea604a56606ecc69be35133884df1a7383bdc3",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ],
+      "filesystem_check": {
+        "file": "evidence/interaction/aven-round04-restored-check.json",
+        "sha256": "dd608e7bab445cc98727a6da7b512a794dc38c4db83e16dec41b8e9a9758d253"
+      }
+    },
+    {
+      "operation": "default_open",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Return on the selected landscape JPEG in Dolphin opened Gwenview through the configured default handler. No direct renderer command was used for this check.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-default-open-photo-1x.json",
+          "sidecar_sha256": "a46e7928bf880646f29b07f17f87bbcb0736ab3d163663a1c60ba0b5e1311300",
+          "image": "evidence/aven/round-04/op-default-open-photo-1x.png",
+          "image_sha256": "f0be81977ecab07ff5d814fde33e9ddb2d7dbef75a9ede28c6fd194f16a81a02",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "preview_toggle",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Ctrl+Alt+P on the native Dolphin selection opened, closed, and reopened one preview window. Repeated invocation did not accumulate windows. With two JPEGs selected, Alt+Right advanced Earthrise 1/2 to landscape 2/2; Alt+Left returned, then Escape closed the preview. The preview motion sequence is recorded separately.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-preview-image-1x.json",
+          "sidecar_sha256": "1df9662735246101a152492a1b8810709159273daf3f9cd1df1f0391928a45a8",
+          "image": "evidence/aven/round-04/op-preview-image-1x.png",
+          "image_sha256": "a5e888430473ce785fc4d4d823831e8552f2bb2e8d28013d236e1bcca8776196",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-preview-toggle-1x.json",
+          "sidecar_sha256": "52dab2af4c910ab04b2b46fb456a40bc47a9449a0823f8ccba6b706eda05a69b",
+          "image": "evidence/aven/round-04/op-preview-toggle-1x.png",
+          "image_sha256": "5d2d1782e64be7d1eeaeb7ab6a6378355fa55f39130f55b9e0bae99e66827b8d",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-preview-selection-1x.json",
+          "sidecar_sha256": "1ed2e12562c0551b894a0379ed957640eaf4de9d1de5d7f8ab81741e2a5a53a5",
+          "image": "evidence/aven/round-04/op-preview-selection-1x.png",
+          "image_sha256": "522c243ceeac20aa7035e869720e086c1b3e0c4349110c3bde7604d82216703d",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ],
+      "inventory": {
+        "file": "evidence/interaction/aven-round04-preview-repeat-inventory.json",
+        "sha256": "17dd7a4b39d8c66d156ade734ec02dc62c1d04552b879775278db0b911268962"
+      }
+    },
+    {
+      "operation": "preview_escape_focus",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Escape dismissed the preview, retained the selected file, and returned the active KWin UUID to the same Dolphin window: {378a7df2-be9a-43ec-9e1e-b43897540eb4}. Before/after inventories confirm the focus identity.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-preview-image-1x.json",
+          "sidecar_sha256": "1df9662735246101a152492a1b8810709159273daf3f9cd1df1f0391928a45a8",
+          "image": "evidence/aven/round-04/op-preview-image-1x.png",
+          "image_sha256": "a5e888430473ce785fc4d4d823831e8552f2bb2e8d28013d236e1bcca8776196",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-preview-escape-focus-1x.json",
+          "sidecar_sha256": "3c7b261c874c4332e679b6d1e0b54d0775bbd0c2525e691eee12bf99f3a8055f",
+          "image": "evidence/aven/round-04/op-preview-escape-focus-1x.png",
+          "image_sha256": "5f3f758c53c8c9e4ed717e633ea25809cc4006e6ff4071a274dc0ce95d6fe933",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ],
+      "inventories": [
+        {
+          "file": "evidence/interaction/aven-round04-preview-before-inventory.json",
+          "sha256": "a7fe14d47aa91213e67454ac14e5960a6c9ff8bdd746839197e08865030637ed"
+        },
+        {
+          "file": "evidence/interaction/aven-round04-preview-after-inventory.json",
+          "sha256": "8d37dbac1b212909bf1bd3201f7b9d40d8580be1d2db43cfc554a2b6e8eb1ee7"
+        }
+      ]
+    },
+    {
+      "operation": "browser_download",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Clicked the download link on the local HTTP fixture in native Firefox. The completed download popover showed 周末路线(2).txt; Show in Folder opened Dolphin Downloads with that file selected. The 428-byte result matches the fixture SHA-256. Earlier translation-popover interference was resolved by dismissing the offer; failed operator captures are excluded.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-browser-settled-1x.json",
+          "sidecar_sha256": "e3bb853df19d8786d85b09298f85163b2072d78159f9d03897781a3b5388b047",
+          "image": "evidence/aven/round-04/op-browser-settled-1x.png",
+          "image_sha256": "6585081606a1e9fbe06ca8c709d52f65d21c0d2c76c93d5dbcfa36db6a263e90",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-browser-download-complete-1x.json",
+          "sidecar_sha256": "3c33a4574536d9724d1bafe0875485e12e69875517869e41eba884b622b6b29a",
+          "image": "evidence/aven/round-04/op-browser-download-complete-1x.png",
+          "image_sha256": "53ff04549fcbd215672169146ae4ea484d83c1a428bdaeaab752bb9a10379383",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-browser-reveal-1x.json",
+          "sidecar_sha256": "21d6e3f4d09c591cc7b41c5cdb5f15714e341d7d74d53a101ea102b1526c1dd5",
+          "image": "evidence/aven/round-04/op-browser-reveal-1x.png",
+          "image_sha256": "7b7d539ccf41b08f9c351a71e6e13cea3862fe23b5eeb0a5173ccf2fd7335d24",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ],
+      "download_check": {
+        "file": "evidence/interaction/aven-round04-browser-download-check.json",
+        "sha256": "582f9d207233661f94ebec34cf44ed3805d7ff8b17403e00e5637f44b54323f8"
+      }
+    },
+    {
+      "operation": "browser_file_picker",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Clicked the fixture’s plain file input, selected 06-山间河流.jpg in the native KDE portal, and returned to Firefox with that filename shown in the input. The fixture has no upload form or upload request; no file was uploaded.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-browser-picker-1x.json",
+          "sidecar_sha256": "209ef4dce0848afc5b39ff5e2f47520b6ad7894999adb76b0435bbee4915d7df",
+          "image": "evidence/aven/round-04/op-browser-picker-1x.png",
+          "image_sha256": "26e8bf7a498e80843eeda141f7fe8c764b784886c08c8b8a16d5180d01611c1e",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-browser-picker-selected-1x.json",
+          "sidecar_sha256": "39127cb8942b9655f39cf055473934d716fdbb60709548ae4092e151e3b5eb0f",
+          "image": "evidence/aven/round-04/op-browser-picker-selected-1x.png",
+          "image_sha256": "647264b4a2f68aca760d5cb44add4be34a222943e1973550b049c61ceba56a9a",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "operation": "mail_draft_save",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Opened the existing offline aven-demo draft. Before editing, captured unchanged Chinese content at the canonical 1000×840 frame (460,140) and wrapped 720×840 frame (600,140). Appended 已保存本轮草稿，周末见。 using native composer input, Ctrl+S saved, closed the composer, then reopened the Drafts row. The newly saved sentence remained visible. No mail was sent.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-mail-demo-1x.json",
+          "sidecar_sha256": "f8082d5fa22753420dbb847b4f5680ec6b6c7a301aba595137539c9f6093a16e",
+          "image": "evidence/aven/round-04/op-mail-demo-1x.png",
+          "image_sha256": "f7a2b048464f8399ae7e07be00d980e112a44e35df2c3589e4baa1a9df6a2707",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/mail-compose-1x.json",
+          "sidecar_sha256": "d22e01f2cd309c7ff317ba22a78becbbff80bb3654bf3abd359d172823068f8b",
+          "image": "evidence/aven/round-04/mail-compose-1x.png",
+          "image_sha256": "36f1e37eb4e0de6012c5900c7e8fb27145d267d65368d894d946a83ddf968cce",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-mail-compose-wrapped-720-1x.json",
+          "sidecar_sha256": "de0cc4611d58b358bcd0c5b38746bb61e4a150d214fd8e32b4b49c60ea62c36d",
+          "image": "evidence/aven/round-04/op-mail-compose-wrapped-720-1x.png",
+          "image_sha256": "a6fe7e6bc7d9d8fcfc23c253bd854df8f85f3006cc5487c3bb931a0c7a77a300",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-mail-draft-saved-1x.json",
+          "sidecar_sha256": "29ef312a55be27ff71e045d944c07ede36f108a6b3a3871fa92f90f443ddd847",
+          "image": "evidence/aven/round-04/op-mail-draft-saved-1x.png",
+          "image_sha256": "a98a1c68d100c017e5d31ab543d42bc4c1ceee0d117031635648628cf543f2d5",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-mail-draft-reopened-1x.json",
+          "sidecar_sha256": "0dd3efc0bc0787cd30097cd5ace1956fd4e9c220d487059026b0c45b46a60d13",
+          "image": "evidence/aven/round-04/op-mail-draft-reopened-1x.png",
+          "image_sha256": "87a1fc2ecab2a867f36c33bae844930a2722df5f531732d8e4837a2ce222e5ac",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ],
+      "arrangement_inventories": [
+        {
+          "file": "evidence/interaction/aven-round04-composer-wrapped-inventory.json",
+          "sha256": "51f66ea589b7ecacf9a660b11f3180334e5da247318243e2fec126390a042a83"
+        },
+        {
+          "file": "evidence/interaction/aven-round04-composer-canonical-inventory.json",
+          "sha256": "5dba49e62ab9775c3bffae047fdacb1d162811d0213182f4b39a1453a865b924"
+        }
+      ]
+    },
+    {
+      "operation": "photo_next_previous",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "In Gwenview, Right changed landscape 2/5 to portrait 3/5 and Left returned to landscape 2/5, with original representative motion frames inspected. Native fullscreen entry and Escape return worked; Alt+F4 returned to Files.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-default-open-photo-1x.json",
+          "sidecar_sha256": "a46e7928bf880646f29b07f17f87bbcb0736ab3d163663a1c60ba0b5e1311300",
+          "image": "evidence/aven/round-04/op-default-open-photo-1x.png",
+          "image_sha256": "f0be81977ecab07ff5d814fde33e9ddb2d7dbef75a9ede28c6fd194f16a81a02",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-photo-previous-1x.json",
+          "sidecar_sha256": "7ca55c1464b68759541dd6ce6b57326d5765b51e9bea05dd7ed0371849627254",
+          "image": "evidence/aven/round-04/op-photo-previous-1x.png",
+          "image_sha256": "5acf35a0c70e427280e8812a0b31ccbf04fce3ae7303432dd3262ba20e9be5a0",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-photo-fullscreen-1x.json",
+          "sidecar_sha256": "8c9d5ed5c4de0fa00e4d776f41015dadfd57877edddb6ba3631114a653c19625",
+          "image": "evidence/aven/round-04/op-photo-fullscreen-1x.png",
+          "image_sha256": "66d557ac281e98cbc1453d6791f882ccb66cb636e76838f9525680db03879d2f",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    }
+  ],
+  "additional_observations": [
+    {
+      "operation": "preview_supported_formats",
+      "guest": "aven",
+      "round": 4,
+      "method": "native-ui",
+      "observer": "/root/verification",
+      "passed": true,
+      "notes": "Opened the selected PDF, Chinese text, WAV, and WebM through the Dolphin preview shortcut. PDF and text render actual content. WAV shows 0:00/0:02 and playback controls. WebM changes from the bud poster at 0:00/0:05 to a later frame with slider progress and Pause control after Space. Playback audio was not audibly assessed. Escape closed each preview.",
+      "evidence": [
+        {
+          "sidecar": "evidence/aven/round-04/op-preview-pdf-1x.json",
+          "sidecar_sha256": "da3e2abdc4b5b7ca2b2bd37b479eaf589155825747869880bd7def5618e7acbb",
+          "image": "evidence/aven/round-04/op-preview-pdf-1x.png",
+          "image_sha256": "5041281030429410377d09fc1fabc8252e85737ed265402101cd3a45a411a47a",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-preview-text-1x.json",
+          "sidecar_sha256": "975dca320884e2add75a64582a61be8f0c632be6bbab216a3a1bf666a6771e6a",
+          "image": "evidence/aven/round-04/op-preview-text-1x.png",
+          "image_sha256": "66d1955f5cb17132bd5c3646903653716ab7b691f02e0104d944d484f9f532eb",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-preview-audio-paused-1x.json",
+          "sidecar_sha256": "8be9abc65d976e157a0a8bcaf561e2f43ce27cace7b9d1f9b2e5b5d0f143b6c7",
+          "image": "evidence/aven/round-04/op-preview-audio-paused-1x.png",
+          "image_sha256": "485ea66961932685297a38c77c0f5bf9e64ffb4c68f7357f5335962a64e50020",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-preview-video-paused-1x.json",
+          "sidecar_sha256": "80836f55e83ef9dca1ced2e9ee0dc3a0de1be6a0f5ba56c479b0595633269f02",
+          "image": "evidence/aven/round-04/op-preview-video-paused-1x.png",
+          "image_sha256": "9e4cd5d94ef9791b7ffa1610e157738aeddd90a1826694bb895d3ab43659a7a9",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        },
+        {
+          "sidecar": "evidence/aven/round-04/op-preview-video-playing-1x.json",
+          "sidecar_sha256": "1944487a82a4810965eaeb187f58f51131d16041dfbd5a7e33fc505f6436a20e",
+          "image": "evidence/aven/round-04/op-preview-video-playing-1x.png",
+          "image_sha256": "2b7100f0ca66da126cefc8279cfaa5c722278eb377807b697409d1ee25f33f1c",
+          "inspected_by": "/root/verification",
+          "visually_inspected": true
+        }
+      ]
+    }
+  ],
+  "motion": [
+    {
+      "id": "window_open_close",
+      "guest": "aven",
+      "round": 4,
+      "method": "recording",
+      "observer": "/root/verification",
+      "captured": true,
+      "behavior_observed": true,
+      "recording": "evidence/interaction/aven-round04-motion-window-open-close/recording.json",
+      "sha256": "5c35645657f379c7555e11df0dc4050ca8a427c376c44bb41249bf8d1dd8e363",
+      "frame_count": 58,
+      "observed_fps": 9.617762347149373,
+      "largest_gap_seconds": 0.12985556898638606,
+      "inspected_frames": [
+        {
+          "file": "evidence/interaction/aven-round04-motion-window-open-close/frame-0018.png",
+          "sha256": "b84f399fb000021b01cb8d5942c00be1dd842c4f01f7b62afe2c033f3243beeb",
+          "offset_seconds": 1.970641014049761,
+          "inspected_by": "/root/verification"
+        },
+        {
+          "file": "evidence/interaction/aven-round04-motion-window-open-close/frame-0057.png",
+          "sha256": "fc35f5b8a7475b2a335ad0af74fb8a0dc0fbe293024f07d764d7e6651f01a833",
+          "offset_seconds": 5.999059908033814,
+          "inspected_by": "/root/verification"
+        }
+      ],
+      "observation": "Ctrl+N opened a second Dolphin Downloads window; Alt+F4 closed it. Original representative frames show the new window, then the original Downloads window with the downloaded file selected.",
+      "perceived_smoothness_score": null,
+      "all_frame_hashes_verified": true,
+      "limitations": [
+        "RFB readback and PNG encoding can skip compositor frames.",
+        "Timestamps describe capture completion on the host, not display presentation.",
+        "Replay this sequence to assess observed transitions; no physical frame-pacing claim is supported.",
+        "Representative original frames and endpoints were inspected. Sampling does not establish physical display frame pacing or premium motion quality."
+      ]
+    },
+    {
+      "id": "window_switch",
+      "guest": "aven",
+      "round": 4,
+      "method": "recording",
+      "observer": "/root/verification",
+      "captured": true,
+      "behavior_observed": true,
+      "recording": "evidence/interaction/aven-round04-motion-window-switch/recording.json",
+      "sha256": "c840e92cdee195d2cc6a7f27816d1fba402594b24ec4359fa2543e47078a227b",
+      "frame_count": 58,
+      "observed_fps": 9.64759481402708,
+      "largest_gap_seconds": 0.1285700040170923,
+      "inspected_frames": [
+        {
+          "file": "evidence/interaction/aven-round04-motion-window-switch/frame-0018.png",
+          "sha256": "365d05b0b4259822db86f9ed4039495dc189c4c2018cd0a908bfa93b3bc9a16b",
+          "offset_seconds": 1.9911772689665668,
+          "inspected_by": "/root/verification"
+        },
+        {
+          "file": "evidence/interaction/aven-round04-motion-window-switch/frame-0057.png",
+          "sha256": "fc35f5b8a7475b2a335ad0af74fb8a0dc0fbe293024f07d764d7e6651f01a833",
+          "offset_seconds": 5.984814580006059,
+          "inspected_by": "/root/verification"
+        }
+      ],
+      "observation": "Alt+Tab switched from Dolphin to Firefox’s Chinese HTTP fixture; a second Alt+Tab returned to Dolphin. This is quick switching, not a held switcher popup.",
+      "perceived_smoothness_score": null,
+      "all_frame_hashes_verified": true,
+      "limitations": [
+        "RFB readback and PNG encoding can skip compositor frames.",
+        "Timestamps describe capture completion on the host, not display presentation.",
+        "Replay this sequence to assess observed transitions; no physical frame-pacing claim is supported.",
+        "Representative original frames and endpoints were inspected. Sampling does not establish physical display frame pacing or premium motion quality."
+      ]
+    },
+    {
+      "id": "menus_popovers",
+      "guest": "aven",
+      "round": 4,
+      "method": "recording",
+      "observer": "/root/verification",
+      "captured": true,
+      "behavior_observed": true,
+      "recording": "evidence/interaction/aven-round04-motion-menus-popovers/recording.json",
+      "sha256": "9260da62d10aacf4ab6fdd36a4bc6c66412d31f4b1a59d4fc47fd073a74b0c1b",
+      "frame_count": 59,
+      "observed_fps": 9.728261442720449,
+      "largest_gap_seconds": 0.13378314598230645,
+      "inspected_frames": [
+        {
+          "file": "evidence/interaction/aven-round04-motion-menus-popovers/frame-0018.png",
+          "sha256": "b98a4c7a2e9663a4bf01805dbd432914fd922655e67c1cbe44694d29cc343990",
+          "offset_seconds": 1.9695381019846536,
+          "inspected_by": "/root/verification"
+        },
+        {
+          "file": "evidence/interaction/aven-round04-motion-menus-popovers/frame-0058.png",
+          "sha256": "03b317e6fb18893fb7c8538cf9da7b621b899698e509bf24a06901d8ee8a75f1",
+          "offset_seconds": 6.05360467499122,
+          "inspected_by": "/root/verification"
+        }
+      ],
+      "observation": "Clicked Dolphin’s native hamburger menu, inspected its visible entries, then Escape dismissed it; the final frame shows the original window.",
+      "perceived_smoothness_score": null,
+      "all_frame_hashes_verified": true,
+      "limitations": [
+        "RFB readback and PNG encoding can skip compositor frames.",
+        "Timestamps describe capture completion on the host, not display presentation.",
+        "Replay this sequence to assess observed transitions; no physical frame-pacing claim is supported.",
+        "Representative original frames and endpoints were inspected. Sampling does not establish physical display frame pacing or premium motion quality."
+      ]
+    },
+    {
+      "id": "preview",
+      "guest": "aven",
+      "round": 4,
+      "method": "recording",
+      "observer": "/root/verification",
+      "captured": true,
+      "behavior_observed": true,
+      "recording": "evidence/interaction/aven-round04-motion-preview/recording.json",
+      "sha256": "6dbe563baccf7b1f1ef9ac99e0704531760fa85e5d78035fefd19ddaa13cc0d3",
+      "frame_count": 74,
+      "observed_fps": 9.170975268675228,
+      "largest_gap_seconds": 0.13416391395730898,
+      "inspected_frames": [
+        {
+          "file": "evidence/interaction/aven-round04-motion-preview/frame-0016.png",
+          "sha256": "52c4a9c136afcf79a29327ede09f6362892424c252ed312da2a5cb915f3672ff",
+          "offset_seconds": 1.782209601951763,
+          "inspected_by": "/root/verification"
+        },
+        {
+          "file": "evidence/interaction/aven-round04-motion-preview/frame-0030.png",
+          "sha256": "a92f3b45e05039b1e762d7293fe2c03ab453ebb6e96caa00b729c9fbfd6305c9",
+          "offset_seconds": 3.390127938997466,
+          "inspected_by": "/root/verification"
+        },
+        {
+          "file": "evidence/interaction/aven-round04-motion-preview/frame-0048.png",
+          "sha256": "58db634d5534b6051cb6de94ab26a65a3dd713c76e83b1c8bd55c6dc8fb3bfdd",
+          "offset_seconds": 5.421570812992286,
+          "inspected_by": "/root/verification"
+        },
+        {
+          "file": "evidence/interaction/aven-round04-motion-preview/frame-0067.png",
+          "sha256": "d8a3611bc17115b047ce1a24cfc69864f9ad0b953e9d3ed242a84048158d0fa3",
+          "offset_seconds": 7.418307296989951,
+          "inspected_by": "/root/verification"
+        }
+      ],
+      "observation": "Ctrl+Alt+P opened the selected JPEGs in one preview. Alt+Right changed Earthrise 1/2 to landscape 2/2; Alt+Left returned to Earthrise 1/2. Escape returned to Dolphin with both files selected.",
+      "perceived_smoothness_score": null,
+      "all_frame_hashes_verified": true,
+      "limitations": [
+        "RFB readback and PNG encoding can skip compositor frames.",
+        "Timestamps describe capture completion on the host, not display presentation.",
+        "Replay this sequence to assess observed transitions; no physical frame-pacing claim is supported.",
+        "Representative original frames and endpoints were inspected. Sampling does not establish physical display frame pacing or premium motion quality."
+      ]
+    },
+    {
+      "id": "photo_transition",
+      "guest": "aven",
+      "round": 4,
+      "method": "recording",
+      "observer": "/root/verification",
+      "captured": true,
+      "behavior_observed": true,
+      "recording": "evidence/interaction/aven-round04-motion-photo-transition/recording.json",
+      "sha256": "3b4beee1aadb80e2ed7f696fa895cdba38a560c3ab344c45bab08ebb60aca807",
+      "frame_count": 51,
+      "observed_fps": 8.441945844314793,
+      "largest_gap_seconds": 0.12929660099325702,
+      "inspected_frames": [
+        {
+          "file": "evidence/interaction/aven-round04-motion-photo-transition/frame-0014.png",
+          "sha256": "db63fbd8d4b650fe8117e10d2ce2704a5ad393f2249586eb11dad87be845f5dc",
+          "offset_seconds": 1.7913394320057705,
+          "inspected_by": "/root/verification"
+        },
+        {
+          "file": "evidence/interaction/aven-round04-motion-photo-transition/frame-0050.png",
+          "sha256": "3526f28e1b68559c2fcc9857f03f3ed6f632650b5233bc978d404a3a95ef7110",
+          "offset_seconds": 6.001859555020928,
+          "inspected_by": "/root/verification"
+        }
+      ],
+      "observation": "Right changed Gwenview from landscape 2/5 to portrait 3/5; Left returned to landscape 2/5. Representative original frames show both image contents and indices.",
+      "perceived_smoothness_score": null,
+      "all_frame_hashes_verified": true,
+      "limitations": [
+        "RFB readback and PNG encoding can skip compositor frames.",
+        "Timestamps describe capture completion on the host, not display presentation.",
+        "Replay this sequence to assess observed transitions; no physical frame-pacing claim is supported.",
+        "Representative original frames and endpoints were inspected. Sampling does not establish physical display frame pacing or premium motion quality."
+      ]
+    },
+    {
+      "id": "overview",
+      "guest": "aven",
+      "round": 4,
+      "method": "recording",
+      "observer": "/root/verification",
+      "captured": true,
+      "behavior_observed": true,
+      "recording": "evidence/interaction/aven-round04-motion-overview/recording.json",
+      "sha256": "ab4518006d6632b122223b90175b26c590159913049188efe5db67bb7a869317",
+      "frame_count": 59,
+      "observed_fps": 9.747031469446796,
+      "largest_gap_seconds": 0.12805264204507694,
+      "inspected_frames": [
+        {
+          "file": "evidence/interaction/aven-round04-motion-overview/frame-0018.png",
+          "sha256": "c6d936e19b99655ee7be1dae6fc9d156c4c2bb5b42a5655fa43a9cd60e30c757",
+          "offset_seconds": 1.9520594700006768,
+          "inspected_by": "/root/verification"
+        },
+        {
+          "file": "evidence/interaction/aven-round04-motion-overview/frame-0058.png",
+          "sha256": "03b317e6fb18893fb7c8538cf9da7b621b899698e509bf24a06901d8ee8a75f1",
+          "offset_seconds": 6.0420215469785035,
+          "inspected_by": "/root/verification"
+        }
+      ],
+      "observation": "Configured Meta+W entered Overview with the two open application cards; Escape returned to the original Dolphin window.",
+      "perceived_smoothness_score": null,
+      "all_frame_hashes_verified": true,
+      "limitations": [
+        "RFB readback and PNG encoding can skip compositor frames.",
+        "Timestamps describe capture completion on the host, not display presentation.",
+        "Replay this sequence to assess observed transitions; no physical frame-pacing claim is supported.",
+        "Representative original frames and endpoints were inspected. Sampling does not establish physical display frame pacing or premium motion quality."
+      ]
+    }
+  ],
+  "total_motion_frames": 359,
+  "visual_quality_scores": null,
+  "limitations": [
+    "Operation success is separate from visual quality; no automatic visual or motion polish score is assigned.",
+    "The Firefox functional run uses its observed native English chrome with Chinese page content; the declared screenshot locale records the probe locale. Separate matched locale captures establish typography quality.",
+    "Space remains Dolphin selection mode. Aven quick preview uses Ctrl+Alt+P; Alt+Right/Left traverse the selection.",
+    "Current 1× runtime probes do not map a measurement window. Fractional measurement probes may dismiss native popovers and cannot restore popup state.",
+    "Mail uses the existing fictional offline aven-demo profile. No network mail send or real account integration is claimed.",
+    "Fixtures and prior downloads are preserved. No profile apply, default changes, guest reboot, or Atomic rollback was performed during this operation round.",
+    "Motion is genuine VM RFB sampling at approximately 8.4–9.75 fps; physical compositor frame pacing remains unverified."
+  ],
+  "excluded_captures": [
+    {
+      "sidecar": "evidence/aven/round-04/op-files-root-1x.json",
+      "sidecar_sha256": "dbb44653452cf0b3ae3bedf87f2a4f83a5ec77661238c9c6aa8ad3654a82f007",
+      "image": "evidence/aven/round-04/op-files-root-1x.png",
+      "image_sha256": "c1371fe36e675f85e09e8561ca2fbb75f269350588787d355d40c95767a3d117",
+      "excluded_reason": "Initial background application launch terminated before a window appeared; desktop only.",
+      "visually_inspected": true
+    },
+    {
+      "sidecar": "evidence/aven/round-04/op-browser-ready-1x.json",
+      "sidecar_sha256": "ff9a22e5718f52b819c89d7e8c7d82003ff15ac8076b5268f6a32c9fd30e3eab",
+      "image": "evidence/aven/round-04/op-browser-ready-1x.png",
+      "image_sha256": "7e8622aaecbc003fae30558a9d8a5b556f2e506ba956bbaf0d8bd0b656bc9844",
+      "excluded_reason": "Firefox startup had not completed; Dolphin remained visible.",
+      "visually_inspected": true
+    },
+    {
+      "sidecar": "evidence/aven/round-04/op-browser-fixture-1x.json",
+      "sidecar_sha256": "03dcd69337b7d93f4a5854c7a5dd9dae5bc6a9f710a4a057b5fe887f7d7345c4",
+      "image": "evidence/aven/round-04/op-browser-fixture-1x.png",
+      "image_sha256": "43ce01ea3d298163ba1dacbc9623f26b462058755f74d97f25149d038f59ecb2",
+      "excluded_reason": "Translation offer and panel hover state were not yet settled; this is not download proof.",
+      "visually_inspected": true
+    },
+    {
+      "sidecar": "evidence/aven/round-04/op-browser-download-1x.json",
+      "sidecar_sha256": "c7eaa9bc7c4fc24a9a6a240bad8cda2f710a3b369be497ad800cea53896e8323",
+      "image": "evidence/aven/round-04/op-browser-download-1x.png",
+      "image_sha256": "78bfbd514f37ace03a0150aada68c504f5fbdb04149421252340e64b90a9c752",
+      "excluded_reason": "The initial click interacted with Firefox’s translation offer; no download occurred.",
+      "visually_inspected": true
+    },
+    {
+      "sidecar": "evidence/aven/round-04/op-browser-download-list-1x.json",
+      "sidecar_sha256": "ccb94042e20f3da2b8e3ad3c491a4c592fded024321dc028327b673a575a4097",
+      "image": "evidence/aven/round-04/op-browser-download-list-1x.png",
+      "image_sha256": "04936a06ae1b95a46e2c5e4551cdadb50c537b5b773d49a5549d503725457464",
+      "excluded_reason": "Ctrl+J opened a search field on this native Linux build; no download was demonstrated.",
+      "visually_inspected": true
+    },
+    {
+      "sidecar": "evidence/aven/round-04/op-browser-cn-ready-1x.json",
+      "sidecar_sha256": "77a2aa93f91553d15641ae3ab2fdf04f482d43b8634244798ca2833a5d419233",
+      "image": "evidence/aven/round-04/op-browser-cn-ready-1x.png",
+      "image_sha256": "66a20fed4241e29a62c1d635f6d62e7a7f31d795d673eba4a569c6d28a7cdfc1",
+      "excluded_reason": "Firefox startup showed a blank page before the fixture loaded.",
+      "visually_inspected": true
+    },
+    {
+      "sidecar": "evidence/aven/round-04/op-mail-ready-1x.json",
+      "sidecar_sha256": "50340e42e99fd3bb58211cce117df841bd79cf4ed503e824d4c8e6edb6b95c91",
+      "image": "evidence/aven/round-04/op-mail-ready-1x.png",
+      "image_sha256": "ee4139eb5bb764e8b9d3e070bfb617bdb1fe36bf9af47c2f694ce683350a5762",
+      "excluded_reason": "Mail startup had not completed; Dolphin remained visible.",
+      "visually_inspected": true
+    },
+    {
+      "sidecar": "evidence/aven/round-04/op-mail-settled-1x.json",
+      "sidecar_sha256": "16ea22490b6b0e3e27620f61a73888a209d8ced455ed18c6fb1c97e84513bba5",
+      "image": "evidence/aven/round-04/op-mail-settled-1x.png",
+      "image_sha256": "086513bc3284224cee846903403c2a9c4c3d612a54cc8ac639e6d5ff0ffbe42b",
+      "excluded_reason": "Normal wrapper opened the unused regular profile’s account setup instead of the intended offline fixture; closed without account changes.",
+      "visually_inspected": true
+    },
+    {
+      "sidecar": "evidence/aven/round-04/op-mail-demo-ready-1x.json",
+      "sidecar_sha256": "429d9b7ba8f18a160ae3d0e6834d3c91468ad1db80efe0cce8e30cc837c06aed",
+      "image": "evidence/aven/round-04/op-mail-demo-ready-1x.png",
+      "image_sha256": "16dcfa4962ce0f8f2db26934cc82212363ae102284a28bbb4636be8df0d98183",
+      "excluded_reason": "Transitional startup capture excluded; not visually inspected.",
+      "visually_inspected": false
+    }
+  ],
+  "required_operations_covered": [
+    "breadcrumbs",
+    "browser_download",
+    "browser_file_picker",
+    "copy",
+    "default_open",
+    "folders",
+    "grid_list",
+    "mail_draft_save",
+    "move",
+    "photo_next_previous",
+    "preview_escape_focus",
+    "preview_toggle",
+    "rename",
+    "restore",
+    "selection",
+    "sidebar",
+    "trash"
+  ],
+  "required_operations_missing": [],
+  "all_required_operations_have_observations": true,
+  "all_required_operations_passed": true,
+  "gui_released_at": "2026-09-15T06:46:00+00:00",
+  "gui_release_note": "Approximate handoff time. Thunderbird, Gwenview and Preview closed; Firefox and Dolphin minimized; root resumed canonical capture work.",
+  "final_window_inventory": {
+    "file": "evidence/interaction/aven-round04-final-window-inventory.json",
+    "sha256": "1f5e3f5d60e1eae81ec50d831a6432fa73226719f5501423bc0daef118b3ccbf"
+  }
+}

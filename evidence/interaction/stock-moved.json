@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-09-15T05:37:09.345047+00:00",
+  "root": "/var/home/aven/Documents/Aven operation check 20260915-01",
+  "stage": "moved",
+  "passed": true,
+  "checks": [
+    {
+      "path": "01 原件/周末 清单 100% #1.txt",
+      "expected": "24f37943e05a3114a979ade1c4b0ed1c46e4057975fccd6f9ac09743d32c104b",
+      "actual": "24f37943e05a3114a979ade1c4b0ed1c46e4057975fccd6f9ac09743d32c104b",
+      "passed": true
+    },
+    {
+      "path": "03 移动/周末 清单 100% #1.txt",
+      "expected": "24f37943e05a3114a979ade1c4b0ed1c46e4057975fccd6f9ac09743d32c104b",
+      "actual": "24f37943e05a3114a979ade1c4b0ed1c46e4057975fccd6f9ac09743d32c104b",
+      "passed": true
+    },
+    {
+      "path": "02 复制/周末 清单 100% #1.txt",
+      "expected": "absent",
+      "passed": true
+    }
+  ],
+  "ui_verified": false,
+  "note": "Bytes and source preservation only; pair with witnessed Dolphin UI action evidence."
+}

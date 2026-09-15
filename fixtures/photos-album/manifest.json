@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "album": "京都春日",
+  "retrieved": "2026-09-15",
+  "purpose": "Unannotated natural consumer travel album, identical in stock and Aven",
+  "assets": [
+    {
+      "file": "01-春日小径.jpg",
+      "title": "Promenade to Heian-kyo garden, Kyoto, 2016.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Promenade_to_Heian-kyo_garden,_Kyoto,_2016.jpg",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Promenade_to_Heian-kyo_garden%2C_Kyoto%2C_2016.jpg/1280px-Promenade_to_Heian-kyo_garden%2C_Kyoto%2C_2016.jpg",
+      "creator": "DimiTalen",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "bytes": 503711,
+      "sha256": "08720ef697439905eddb2f4d475c120dec182f8fbc152d6fd7b9ab7ed7f5929b",
+      "pixel_dimensions": [
+        1280,
+        851
+      ],
+      "transformation": "Wikimedia-hosted scaled JPEG; downloaded bytes unchanged; Chinese filename only",
+      "source_page_sha256": "8ebdfd108391ac8760d300c10b07b718dcf7236cec474c4f1fb5ee8ee530fa4b",
+      "rights_evidence": "The photographer’s own-work Licensing section applies CC0 1.0 to this image."
+    },
+    {
+      "file": "02-湖畔树林.jpg",
+      "title": "Heian-kyo garden, with forested hill in the background, Kyoto, 2016.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Heian-kyo_garden,_with_forested_hill_in_the_background,_Kyoto,_2016.jpg",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Heian-kyo_garden%2C_with_forested_hill_in_the_background%2C_Kyoto%2C_2016.jpg/1280px-Heian-kyo_garden%2C_with_forested_hill_in_the_background%2C_Kyoto%2C_2016.jpg",
+      "creator": "DimiTalen",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "bytes": 424474,
+      "sha256": "397debf7b3449182b8cb6db38a9e65a082547fd5fd95d7eb176fc451cf9a960e",
+      "pixel_dimensions": [
+        1280,
+        851
+      ],
+      "transformation": "Wikimedia-hosted scaled JPEG; downloaded bytes unchanged; Chinese filename only",
+      "source_page_sha256": "56181c8ff59cc525f03174e6f28d6b236c4153b41b83d88e99273e465086b6a5",
+      "rights_evidence": "The photographer’s own-work Licensing section applies CC0 1.0 to this image."
+    },
+    {
+      "file": "03-庭院倒影.jpg",
+      "title": "Pond in Shinden's north garden, with tea house and five-storied pagoda in the background, Ninna-ji, Kyoto, 2016.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pond_in_Shinden%27s_north_garden,_with_tea_house_and_five-storied_pagoda_in_the_background,_Ninna-ji,_Kyoto,_2016.jpg",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Pond_in_Shinden%27s_north_garden%2C_with_tea_house_and_five-storied_pagoda_in_the_background%2C_Ninna-ji%2C_Kyoto%2C_2016.jpg/960px-Pond_in_Shinden%27s_north_garden%2C_with_tea_house_and_five-storied_pagoda_in_the_background%2C_Ninna-ji%2C_Kyoto%2C_2016.jpg",
+      "creator": "DimiTalen",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "bytes": 476139,
+      "sha256": "17d6d16f26aa72ea62e7eced1eb72fdfa4b32ba9058a39afd2700e052f5e1b5f",
+      "pixel_dimensions": [
+        960,
+        1444
+      ],
+      "transformation": "Wikimedia-hosted scaled JPEG; downloaded bytes unchanged; Chinese filename only",
+      "source_page_sha256": "c5dd8fe0630c2043506f3b055273a56ad63fbc9b9ad0d711c411147e98f4d551",
+      "rights_evidence": "The photographer’s own-work Licensing section applies CC0 1.0 to this image."
+    },
+    {
+      "file": "04-枯山水.jpg",
+      "title": "Ryōan-ji rock garden with silhouettes of tourists, Kyoto, 2016.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ry%C5%8Dan-ji_rock_garden_with_silhouettes_of_tourists,_Kyoto,_2016.jpg",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Ry%C5%8Dan-ji_rock_garden_with_silhouettes_of_tourists%2C_Kyoto%2C_2016.jpg/1280px-Ry%C5%8Dan-ji_rock_garden_with_silhouettes_of_tourists%2C_Kyoto%2C_2016.jpg",
+      "creator": "DimiTalen",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "bytes": 409197,
+      "sha256": "aec11aa2593fe477c2f9a5ccc51283761795de47fc2a26215973191a6170f93f",
+      "pixel_dimensions": [
+        1280,
+        851
+      ],
+      "transformation": "Wikimedia-hosted scaled JPEG; downloaded bytes unchanged; Chinese filename only",
+      "source_page_sha256": "2eed6e0bc92aa5c1215de87c50bc777ba8d89cee72d81abf060631a18fe80bf3",
+      "rights_evidence": "The photographer’s own-work Licensing section applies CC0 1.0 to this image."
+    },
+    {
+      "file": "05-桥边樱花.jpg",
+      "title": "Katsura River canal seen from Nakanoshima Bridge, Kyoto, 2016.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Katsura_River_canal_seen_from_Nakanoshima_Bridge,_Kyoto,_2016.jpg",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Katsura_River_canal_seen_from_Nakanoshima_Bridge%2C_Kyoto%2C_2016.jpg/960px-Katsura_River_canal_seen_from_Nakanoshima_Bridge%2C_Kyoto%2C_2016.jpg",
+      "creator": "DimiTalen",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "bytes": 382392,
+      "sha256": "b0d14c4bf9b468d98bca79884f1623875d0b14ded84d271b016d34c1d8a62e56",
+      "pixel_dimensions": [
+        960,
+        1444
+      ],
+      "transformation": "Wikimedia-hosted scaled JPEG; downloaded bytes unchanged; Chinese filename only",
+      "source_page_sha256": "0fd0a614d9ca18a4bcbe0d3a6ba711d66c4e082a28ee0bb882872e12f13c2569",
+      "rights_evidence": "The photographer’s own-work Licensing section applies CC0 1.0 to this image."
+    },
+    {
+      "file": "06-山间河流.jpg",
+      "title": "View of the Katsura River and the Arashiyama mountains from Togetsukyo Bridge, Kyoto, 2016.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:View_of_the_Katsura_River_and_the_Arashiyama_mountains_from_Togetsukyo_Bridge,_Kyoto,_2016.jpg",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/View_of_the_Katsura_River_and_the_Arashiyama_mountains_from_Togetsukyo_Bridge%2C_Kyoto%2C_2016.jpg/1280px-View_of_the_Katsura_River_and_the_Arashiyama_mountains_from_Togetsukyo_Bridge%2C_Kyoto%2C_2016.jpg",
+      "creator": "DimiTalen",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "bytes": 316773,
+      "sha256": "e7f63711ac3703ef4f11f3764093dc94cef41adc244843e4d6e4a47a935e2dc5",
+      "pixel_dimensions": [
+        1280,
+        851
+      ],
+      "transformation": "Wikimedia-hosted scaled JPEG; downloaded bytes unchanged; Chinese filename only",
+      "source_page_sha256": "871a152630922e52ea3e9e59288f20dd487963a590f6b97dce3b521d0b607304",
+      "rights_evidence": "The photographer’s own-work Licensing section applies CC0 1.0 to this image."
+    },
+    {
+      "file": "07-岚山街角.jpg",
+      "title": "Busy commercial street near Arashiyama Station (Keifuku), Kyoto, 2016.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Busy_commercial_street_near_Arashiyama_Station_(Keifuku),_Kyoto,_2016.jpg",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Busy_commercial_street_near_Arashiyama_Station_%28Keifuku%29%2C_Kyoto%2C_2016.jpg/1280px-Busy_commercial_street_near_Arashiyama_Station_%28Keifuku%29%2C_Kyoto%2C_2016.jpg",
+      "creator": "DimiTalen",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "bytes": 302107,
+      "sha256": "c7d340abb607219099f6eb17946e9ec0a4a013752b6fccba4a9f09d1bd2dba48",
+      "pixel_dimensions": [
+        1280,
+        851
+      ],
+      "transformation": "Wikimedia-hosted scaled JPEG; downloaded bytes unchanged; Chinese filename only",
+      "source_page_sha256": "e215985b976c2bbb679275fd99f73c0bbd84a7644550cb636fa87c0b5b085adf",
+      "rights_evidence": "The photographer’s own-work Licensing section applies CC0 1.0 to this image."
+    },
+    {
+      "file": "08-京都小巷.jpg",
+      "title": "Japanese street Kyoto.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Japanese_street_Kyoto.jpg",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Japanese_street_Kyoto.jpg",
+      "creator": "Floodmfx",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "bytes": 94849,
+      "sha256": "25c5b12e1d63ee11a8f3d4853bf888a0db6dc67ed281be69b1f4eaaf15dfd159",
+      "pixel_dimensions": [
+        720,
+        960
+      ],
+      "transformation": "Original uploaded JPEG; downloaded bytes unchanged; Chinese filename only",
+      "source_page_sha256": "cffcb2f57ecbda4acdf171d037a33248176977720d5b52c05a3856568fef90a1",
+      "rights_evidence": "The photographer’s own-work Licensing section applies CC0 1.0 to this image."
+    }
+  ]
+}

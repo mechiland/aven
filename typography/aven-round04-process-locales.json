@@ -1,0 +1,44 @@
+{
+  "sc": [
+    {
+      "pid": 23550,
+      "command": "dolphin /home/aven/Documents/日常 · Everyday ",
+      "locale": {
+        "LC_ALL": "zh_CN.UTF-8",
+        "LANG": "zh_CN.UTF-8",
+        "LANGUAGE": "zh_CN"
+      }
+    },
+    {
+      "pid": 23621,
+      "command": "/usr/lib64/firefox/firefox --profile /var/home/aven/.local/share/aven/firefox file:///home/aven/aven/fixtures/typography/specimen.html#sc ",
+      "locale": {
+        "LC_ALL": "zh_CN.UTF-8",
+        "LANG": "zh_CN.UTF-8",
+        "LANGUAGE": "zh_CN"
+      }
+    }
+  ],
+  "verified_at": "2026-09-15T07:02:05.251506+00:00",
+  "tc": [
+    {
+      "pid": 27333,
+      "command": "dolphin /home/aven/Documents/日常 · Everyday ",
+      "locale": {
+        "LC_ALL": "zh_TW.UTF-8",
+        "LANG": "zh_TW.UTF-8",
+        "LANGUAGE": "zh_TW"
+      }
+    },
+    {
+      "pid": 27397,
+      "command": "/usr/lib64/firefox/firefox --profile /var/home/aven/.local/share/aven/firefox file:///home/aven/aven/fixtures/typography/specimen.html#tc ",
+      "locale": {
+        "LC_ALL": "zh_TW.UTF-8",
+        "LANG": "zh_TW.UTF-8",
+        "LANGUAGE": "zh_TW"
+      }
+    }
+  ],
+  "tc_verified_at": "2026-09-15T07:05:52.633586+00:00"
+}

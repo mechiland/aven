@@ -1,0 +1,95 @@
+{
+  "windows": [
+    {
+      "id": "{76bc175e-61e6-4a07-9a32-3b6d959b03c8}",
+      "caption": "Wayland to X Recording bridge — Xwayland Video Bridge",
+      "app": "org.kde.xwaylandvideobridge",
+      "resource_class": "xwaylandvideobridge",
+      "resource_name": "xwaylandvideobridge",
+      "pid": 1805,
+      "active": false,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": true,
+      "skip_switcher": true,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 640,
+        "y": 420,
+        "width": 640,
+        "height": 360
+      },
+      "client": {
+        "x": 640,
+        "y": 420,
+        "width": 640,
+        "height": 360
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "id": "{378a7df2-be9a-43ec-9e1e-b43897540eb4}",
+      "caption": "周末散步 — Dolphin",
+      "app": "org.kde.dolphin",
+      "resource_class": "org.kde.dolphin",
+      "resource_name": "dolphin",
+      "pid": 2685,
+      "active": true,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 240,
+        "y": 126,
+        "width": 1440,
+        "height": 900
+      },
+      "client": {
+        "x": 244,
+        "y": 164,
+        "width": 1432,
+        "height": 858
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 225,
+        "height": 166
+      }
+    }
+  ],
+  "screens": [
+    {
+      "name": "Virtual-1",
+      "scale": 1,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1200
+      }
+    }
+  ],
+  "active_window": "{378a7df2-be9a-43ec-9e1e-b43897540eb4}",
+  "ok": true,
+  "schema_version": 1,
+  "captured_at": "2026-09-15T06:26:32.621182+00:00",
+  "method": "temporary KWin script via public Workspace/Window API",
+  "command": "inventory",
+  "persistent_kwin_changes": false
+}
