@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-15T11:50:45.399960+00:00",
+  "candidate": "iso-candidate4",
+  "repository": "mechiland/aven",
+  "release_id": 388990452,
+  "release_draft": true,
+  "state": "paused_after_current_part_completed",
+  "reason": "Root requested candidate4 supersession after confirmed Preview default-open defect; finish current001 only",
+  "controller_stopped": true,
+  "worker_pid": 2402726,
+  "finished_upload_pid": 2462625,
+  "finished_upload_exit_code": 0,
+  "active_iso_uploads": 0,
+  "completed_parts_verified": [
+    {
+      "part": "000",
+      "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-000",
+      "asset_id": 565516442,
+      "state": "uploaded",
+      "bytes": 1992294400,
+      "sha256": "03dd800a12cdbc527830d6a5e33ff3b84a653227ed8daf8c9c6435edc6f6674f",
+      "server_digest": "sha256:03dd800a12cdbc527830d6a5e33ff3b84a653227ed8daf8c9c6435edc6f6674f",
+      "size_matches": true,
+      "sha256_matches": true
+    },
+    {
+      "part": "001",
+      "file": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-001",
+      "asset_id": 565553864,
+      "state": "uploaded",
+      "bytes": 1992294400,
+      "sha256": "223f14d7dbc9b5548889764f1eb356f682ea5d93b6616730e99f1499cf446fd1",
+      "server_digest": "sha256:223f14d7dbc9b5548889764f1eb356f682ea5d93b6616730e99f1499cf446fd1",
+      "size_matches": true,
+      "sha256_matches": true
+    }
+  ],
+  "unstarted_parts": [
+    "002",
+    "003"
+  ],
+  "all_four_parts_uploaded": false,
+  "iso_source_safe_to_replace": true,
+  "source_archive_preserved": {
+    "asset_id": 565299664,
+    "name": "aven-source-and-evidence-round04.tar.gz",
+    "digest": "sha256:946b513a56a3f8dca9e0c009a4cf5ffbbfdc261d6048cc8a0d46cc2717a25a62"
+  },
+  "resume_policy": "Do not resume candidate4 worker; compare new candidate5 part hashes and sizes against retained uploaded assets, reusing exact matches"
+}
