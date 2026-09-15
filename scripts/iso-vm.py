@@ -7,6 +7,7 @@ import shutil
 import socket
 import subprocess
 import sys
+import time
 
 ROOT = Path(__file__).resolve().parents[1]
 LAB = ROOT / '.cache/iso-test'
@@ -42,8 +43,12 @@ def prepare(iso):
     # Test-only account/access and disk erasure, never copied into the public ISO.
     ks = (ROOT / 'baseline/stock.ks.in').read_text()
     ks = ks.replace('@SSH_PUBLIC_KEY@', (LAB / 'id_ed25519.pub').read_text().strip())
-    ks = '\n'.join(line for line in ks.splitlines() if not line.startswith('ostreesetup '))
-    public = (ROOT / 'iso/aven.ks').read_text().replace('\ngraphical\n', '\n')
+    ks = ks.replace('services --enabled=sshd,plasmalogin', 'services --enabled=sshd')
+    ks = '\n'.join(line for line in ks.splitlines()
+                   if not line.startswith(('ostreesetup ', 'systemctl set-default ', 'touch /etc/plasma-setup-done')))
+    run('xorriso', '-osirrox', 'on', '-overwrite', 'on', '-indev', iso,
+        '-extract', '/aven/aven.ks', LAB / 'public-aven.ks')
+    public = (LAB / 'public-aven.ks').read_text().replace('\ngraphical\n', '\n')
     (LAB / 'iso-test.ks').write_text(ks + '\n' + public)
     run('xorriso', '-osirrox', 'on', '-overwrite', 'on', '-indev', iso,
         '-extract', '/images/pxeboot/vmlinuz', LAB / 'vmlinuz',
@@ -53,7 +58,7 @@ def prepare(iso):
         stream.write(archive)
 
 
-def start(mode, iso, uefi=False):
+def start(mode, iso, uefi=False, disk=None):
     LAB.mkdir(parents=True, exist_ok=True)
     if (LAB / 'vm.qmp').exists():
         try:
@@ -79,12 +84,16 @@ def start(mode, iso, uefi=False):
             shutil.copy2('/usr/share/OVMF/OVMF_VARS_4M.fd', vars_path)
         args += ['-drive', 'if=pflash,format=raw,readonly=on,file=/usr/share/OVMF/OVMF_CODE_4M.fd',
                  '-drive', f'if=pflash,format=raw,file={vars_path}']
-    disk = LAB / 'installed.qcow2'
-    if mode == 'install':
+    disk = (disk or LAB / 'installed.qcow2').resolve()
+    if mode in ['install', 'public-install']:
         if disk.exists():
             raise RuntimeError('Refusing to overwrite a test installation; archive it explicitly first')
         run('qemu-img', 'create', '-f', 'qcow2', disk, '48G')
-        args += ['-drive', f'file={disk},format=qcow2,if=virtio', '-cdrom', str(iso),
+        args += ['-drive', f'file={disk},format=qcow2,if=virtio', '-cdrom', str(iso)]
+        if mode == 'public-install':
+            args += ['-boot', 'order=d']
+        else:
+            args += [
                  '-kernel', str(LAB / 'vmlinuz'), '-initrd', str(LAB / 'initrd.img'),
                  '-append', 'inst.ks=file:/iso-test.ks inst.stage2=hd:LABEL=Fedora-Knt-ostree-x86_64-44 inst.text console=tty0 console=ttyS0,115200n8', '-no-reboot']
     elif mode == 'optical':
@@ -99,21 +108,50 @@ def start(mode, iso, uefi=False):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action', choices=['prepare', 'optical', 'install', 'boot', 'status', 'stop', 'quit', 'key', 'screenshot', 'ssh'])
+    parser.add_argument('action', choices=['prepare', 'optical', 'install', 'public-install', 'boot', 'status', 'stop', 'quit', 'key', 'click', 'text', 'screenshot', 'ssh'])
     parser.add_argument('--iso', type=Path, default=ISO)
     parser.add_argument('--uefi', action='store_true')
+    parser.add_argument('--disk', type=Path, help='Explicit disposable test disk; new installs never overwrite it')
     parser.add_argument('args', nargs='*')
     args = parser.parse_args()
     if args.action == 'prepare':
         prepare(args.iso)
-    elif args.action in ['optical', 'install', 'boot']:
-        start(args.action, args.iso, args.uefi)
+    elif args.action in ['optical', 'install', 'public-install', 'boot']:
+        start(args.action, args.iso, args.uefi, args.disk)
     elif args.action == 'status':
         print(json.dumps(qmp('query-status')))
     elif args.action in ['stop', 'quit']:
         qmp('system_powerdown' if args.action == 'stop' else 'quit')
     elif args.action == 'key':
         qmp('human-monitor-command', {'command-line': 'sendkey ' + args.args[0]})
+    elif args.action == 'click':
+        x, y = map(int, args.args)
+        if not (0 <= x < 1920 and 0 <= y < 1200):
+            parser.error('Coordinates must be within the 1920x1200 test viewport')
+        qmp('input-send-event', {'events': [{'type': 'abs', 'data': {'axis': axis, 'value': round(value / (size - 1) * 32767)}}
+                                         for axis, value, size in [('x', x, 1920), ('y', y, 1200)]]})
+        time.sleep(.12)
+        qmp('input-send-event', {'events': [{'type': 'btn', 'data': {'down': True, 'button': 'left'}}]})
+        time.sleep(.1)
+        qmp('input-send-event', {'events': [{'type': 'btn', 'data': {'down': False, 'button': 'left'}}]})
+    elif args.action == 'text':
+        names = {' ': 'spc', '-': 'minus', '_': 'shift-minus', '.': 'dot', '/': 'slash',
+                 ':': 'shift-semicolon', ';': 'semicolon', '=': 'equal', '+': 'shift-equal',
+                 '@': 'shift-2', '\n': 'ret', "'": 'apostrophe', '"': 'shift-apostrophe',
+                 '>': 'shift-dot', '<': 'shift-comma', '|': 'shift-backslash', '~': 'shift-grave',
+                 '*': 'shift-8', '&': 'shift-7', '!': 'shift-1', '$': 'shift-4',
+                 '(': 'shift-9', ')': 'shift-0', ',': 'comma', '?': 'shift-slash'}
+        keys = []
+        for char in args.args[0]:
+            if char in names:
+                keys.append(names[char])
+            elif char.isascii() and char.isalnum():
+                keys.append('shift-' + char.lower() if char.isupper() else char)
+            else:
+                parser.error('The native typing helper supports only mapped ASCII text')
+        for key in keys:
+            qmp('human-monitor-command', {'command-line': 'sendkey ' + key + ' 30'})
+            time.sleep(.045)
     elif args.action == 'screenshot':
         path = Path(args.args[0]).resolve()
         path.parent.mkdir(parents=True, exist_ok=True)

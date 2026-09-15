@@ -19,7 +19,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('phase', choices=['seed', 'layout'])
     args = parser.parse_args()
-    if os.getuid() == 0 or not Path('/run/ostree-booted').exists():
+    # Fedora's native first-user setup runs under a system account. Seed only
+    # real desktop users, after that unchanged setup has created their account.
+    if os.getuid() < 1000:
+        return
+    if not Path('/run/ostree-booted').exists():
         parser.error('Only a desktop user on the installed Atomic system may run this')
     STATE.mkdir(parents=True, exist_ok=True)
     marker = STATE / f'iso-{args.phase}-v1.json'

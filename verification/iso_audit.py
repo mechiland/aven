@@ -205,7 +205,9 @@ def installed(args):
         result["installed_system"] = json.loads(r.stdout)
     except json.JSONDecodeError:
         result["stdout"] = r.stdout
-    result["installed_atomic_checks_passed"] = r.returncode == 0 and result.get("installed_system", {}).get("atomic_identity_passed") is True
+    result["installed_atomic_checks_passed"] = result.get("installed_system", {}).get("atomic_identity_passed") is True
+    result["installed_desktop_checks_passed"] = result.get("installed_system", {}).get("desktop_startup_passed") is True
+    result["installed_checks_passed"] = r.returncode == 0 and result["installed_atomic_checks_passed"] and result["installed_desktop_checks_passed"]
     return result
 
 
@@ -240,7 +242,7 @@ def main():
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(rendered)
     print(rendered, end="")
-    return 0 if result.get("static_media_checks_passed") or result.get("installed_atomic_checks_passed") else 1
+    return 0 if result.get("static_media_checks_passed") or result.get("installed_checks_passed") else 1
 
 
 if __name__ == "__main__":

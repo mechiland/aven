@@ -18,6 +18,8 @@ LAYER = "37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551"
 BASE = "be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df"
 ORIGIN = "fedora:fedora/44/x86_64/kinoite"
 PACKAGES = {"glibc-langpack-zh", "gwenview", "okular", "python3-pyside6", "thunderbird"}
+DUPLICATE_FLATPAKS = {"org.kde.gwenview", "org.kde.okular"}
+DESKTOP_PROBES = {"system_flatpak_apps", "display_manager", "default_target"}
 
 
 def command(argv):
@@ -68,6 +70,25 @@ def assess(status, origin_text, layer=LAYER, base=BASE):
     return errors
 
 
+def assess_desktop(probes):
+    """Verify public login startup and absence of the bundled system duplicates."""
+    errors = []
+    for name in DESKTOP_PROBES:
+        if probes.get(name, {}).get("exit_code") != 0:
+            errors.append(name + " command failed")
+    installed = set(probes.get("system_flatpak_apps", {}).get("stdout", "").splitlines())
+    duplicates = sorted(installed & DUPLICATE_FLATPAKS)
+    if duplicates:
+        errors.append("Bundled system Flatpak duplicates remain: " + ", ".join(duplicates))
+    dm = dict(line.split("=", 1) for line in probes.get("display_manager", {}).get("stdout", "").splitlines() if "=" in line)
+    if (dm.get("Id") != "plasmalogin.service" or dm.get("LoadState") != "loaded"
+            or dm.get("ActiveState") != "active" or dm.get("UnitFileState") != "enabled"):
+        errors.append("Native Plasma Login Manager is not loaded, active, and enabled as display-manager")
+    if probes.get("default_target", {}).get("stdout", "").strip() != "graphical.target":
+        errors.append("Default system target is not graphical.target")
+    return errors
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--expected-layer", default=LAYER)
@@ -87,6 +108,9 @@ def main():
         "ostreed": command(["systemctl", "is-active", "rpm-ostreed"]),
         "root_mount": command(["findmnt", "--json", "--output", "TARGET,OPTIONS", "--target", "/"]),
         "failed_units": command(["systemctl", "--failed", "--no-legend", "--plain"]),
+        "system_flatpak_apps": command(["flatpak", "list", "--system", "--app", "--columns=application"]),
+        "display_manager": command(["systemctl", "show", "display-manager.service", "--property=Id,LoadState,ActiveState,UnitFileState"]),
+        "default_target": command(["systemctl", "get-default"]),
     }
     status = probes["atomic"].get("json", {})
     booted = [d for d in status.get("deployments", []) if d.get("booted") is True]
@@ -101,7 +125,7 @@ def main():
                 origin_text = origin_file.read_text()
     errors = assess(status, origin_text, args.expected_layer, args.expected_base)
     for name in probes:
-        if probes[name]["exit_code"] != 0:
+        if name not in DESKTOP_PROBES and probes[name]["exit_code"] != 0:
             errors.append(name + " command failed")
     signature = probes["base_signature"]
     if "Good signature" not in signature.get("stdout", "") + signature.get("stderr", ""):
@@ -116,13 +140,17 @@ def main():
     mounts = probes["root_mount"].get("json", {}).get("filesystems", [])
     if len(mounts) != 1 or "ro" not in mounts[0].get("options", "").split(","):
         errors.append("Root filesystem is not read-only")
+    atomic_errors = errors[:]
+    desktop_errors = assess_desktop(probes)
+    errors.extend(desktop_errors)
     print(json.dumps({"schema_version": 1, "captured_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "expected_layer": args.expected_layer, "expected_base": args.expected_base,
         "origin_file": str(origin_file) if origin_file else None, "origin_text": origin_text,
         "origin_sha256": hashlib.sha256(origin_text.encode()).hexdigest() if origin_text else None,
-        "probes": probes, "atomic_identity_passed": not errors, "errors": errors,
+        "probes": probes, "atomic_identity_passed": not atomic_errors,
+        "desktop_startup_passed": not desktop_errors, "errors": errors,
         "iso_boot_install_accepted": None,
-        "limitations": ["Read-only deployment checks do not prove optical firmware boot, network-free installation, first-login profile completion, visual quality, or live rollback.", "Failed units are recorded for comparison with the known baseline; they are not silently discarded."]}, indent=2))
+        "limitations": ["Read-only deployment checks do not prove optical firmware boot, network-free installation, first-login profile completion, visual quality, or live rollback.", "Failed units are recorded for comparison with the known baseline; they are not silently discarded.", "Duplicate Flatpak check covers system applications imported by Anaconda, not applications later installed in individual user accounts."]}, indent=2))
     return 1 if errors else 0
 
 

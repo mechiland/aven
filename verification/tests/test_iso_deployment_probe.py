@@ -41,5 +41,39 @@ class IsoDeploymentIdentityTests(unittest.TestCase):
         self.assertTrue(any("GPG" in e for e in probe.assess(self.status, self.origin)))
 
 
+class IsoDesktopStartupTests(unittest.TestCase):
+    def setUp(self):
+        self.probes = {
+            "system_flatpak_apps": {"exit_code": 0, "stdout": "org.example.Unrelated\n"},
+            "display_manager": {"exit_code": 0, "stdout": "Id=plasmalogin.service\nLoadState=loaded\nActiveState=active\nUnitFileState=enabled\n"},
+            "default_target": {"exit_code": 0, "stdout": "graphical.target\n"},
+        }
+
+    def test_native_login_and_unrelated_flatpak_are_allowed(self):
+        self.assertEqual(probe.assess_desktop(self.probes), [])
+
+    def test_each_bundled_duplicate_is_rejected(self):
+        for app in probe.DUPLICATE_FLATPAKS:
+            with self.subTest(app=app):
+                self.probes["system_flatpak_apps"]["stdout"] = app + "\n"
+                self.assertTrue(any(app in e for e in probe.assess_desktop(self.probes)))
+
+    def test_failed_flatpak_query_is_not_empty_application_success(self):
+        self.probes["system_flatpak_apps"] = {"exit_code": 1, "stdout": ""}
+        self.assertTrue(any("command failed" in e for e in probe.assess_desktop(self.probes)))
+
+    def test_disabled_but_currently_running_login_service_is_rejected(self):
+        self.probes["display_manager"]["stdout"] = self.probes["display_manager"]["stdout"].replace("UnitFileState=enabled", "UnitFileState=disabled")
+        self.assertTrue(probe.assess_desktop(self.probes))
+
+    def test_old_display_manager_is_rejected(self):
+        self.probes["display_manager"]["stdout"] = self.probes["display_manager"]["stdout"].replace("plasmalogin", "sddm")
+        self.assertTrue(probe.assess_desktop(self.probes))
+
+    def test_text_default_target_is_rejected(self):
+        self.probes["default_target"]["stdout"] = "multi-user.target\n"
+        self.assertTrue(any("graphical.target" in e for e in probe.assess_desktop(self.probes)))
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -8,6 +8,8 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import gi
+gi.require_version('OSTree', '1.0')
 from gi.repository import Gio, GLib, OSTree
 
 MEDIA = Path('/run/install/repo/aven')
@@ -24,7 +26,7 @@ def main():
     platform = json.loads((MEDIA / 'source/iso/platform.json').read_text())
     ostree = platform['ostree']
     layer, base = ostree['layered_commit'], ostree['base_commit']
-    roots = [path for path in [Path('/mnt/sysroot'), Path('/mnt/sysimage')]
+    roots = [path for path in [Path('/mnt/sysimage'), Path('/mnt/sysroot')]
              if (path / 'ostree/repo/config').is_file()]
     if not roots:
         raise RuntimeError('Anaconda physical OSTree root was not found')
@@ -36,7 +38,13 @@ def main():
     if len(deployments) != 1:
         raise RuntimeError(f'Expected exactly one Aven deployment, found {deployments}')
     deployment = deployments[0]
-    target = Path(sysroot.get_deployment_directory(deployment).get_path())
+    deployment_directory = Path(sysroot.get_deployment_directory(deployment).get_path())
+    # Current Anaconda binds the deployment at /mnt/sysroot, then mounts /var,
+    # /boot and API filesystems under that alias. Those child mounts do not
+    # appear when traversing the original physical deployment directory.
+    target = Path('/mnt/sysroot')
+    if not target.is_dir() or not os.path.samefile(target, deployment_directory):
+        raise RuntimeError('Anaconda system root does not match the exact selected deployment')
     var_mount = subprocess.run(['findmnt', '--mountpoint', str(target / 'var')],
                                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     if not (target / 'var/lib').is_dir() or var_mount.returncode:
@@ -57,6 +65,13 @@ def main():
         raise RuntimeError('The native Fedora update remote is missing')
     shutil.copy2(expected_remote, fedora_remote)
     run('chroot', target, 'ostree', 'show', '--gpg-verify-remote=fedora', base)
+    # The original installer also seeds older Flatpak copies. Aven uses the
+    # tested native Gwenview/Okular packages; remove only these duplicate apps.
+    flatpaks = subprocess.check_output(['chroot', str(target), 'flatpak', 'list',
+                                       '--system', '--app', '--columns=application'], text=True).splitlines()
+    for app in ['org.kde.gwenview', 'org.kde.okular']:
+        if app in flatpaks:
+            run('chroot', target, 'flatpak', 'uninstall', '--system', '--noninteractive', '--assumeyes', app)
     destination = target / 'var/lib/aven/source'
     if destination.exists():
         raise RuntimeError('Refusing to replace an existing Aven source installation')
@@ -78,7 +93,7 @@ def main():
     if any(1000 <= int(user[2]) < 60000 for user in users):
         (target / 'etc/plasma-setup-done').touch()
     record = {'schema_version': 1, 'installed_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
-              'platform': platform, 'source_manifest': manifest, 'deployment': target.name,
+              'platform': platform, 'source_manifest': manifest, 'deployment': deployment_directory.name,
               'profile': 'per-user first Plasma login', 'laboratory_profiles_copied': False}
     (target / 'var/lib/aven/installation.json').write_text(json.dumps(record, indent=2) + '\n')
     run('chroot', target, 'restorecon', '-RF', '/etc/fonts/conf.d', '/etc/xdg', '/var/lib/aven')

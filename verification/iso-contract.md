@@ -79,12 +79,29 @@ assert deployment.get_csum() == aven_layer
 deployment_path = target.get_deployment_directory(deployment).get_path()
 ```
 
-Anaconda prepares bind mounts for `/var`, `/run`, and `/boot` at that deployment
-before `%post`. Check the deployment's `/var` mount before writing
-`deployment_path + '/var/lib/aven/source'`; a separately partitioned `/var` must
-not accidentally be replaced by a write into the unmounted stateroot directory.
-Install the two font rules beneath the deployment's `/etc`, and set up the
-first-user profile using source-owned hooks. Do not copy the lab home.
+The candidate-02 installation exposed an important distinction: Anaconda binds
+the actual deployment at `/mnt/sysroot`, then mounts `/var`, `/run`, and `/boot`
+under that alias. Those mounts are not visible through the original GI deployment
+directory. The earlier source-only contract incorrectly treated the two paths as
+interchangeable; the actual install corrected that assumption.
+
+Require `os.path.samefile('/mnt/sysroot', deployment_path)`, then use
+`/mnt/sysroot` for chroot, font installation, and source copying. Require
+`findmnt --mountpoint /mnt/sysroot/var` to succeed before writing
+`/mnt/sysroot/var/lib/aven/source`. Retain `/mnt/sysimage/ostree/repo` for repository
+operations and the GI sysroot for the origin writer. This avoids copying into an
+unmounted or incorrect `/var` when the user selects separate storage.
+
+Install the two font rules beneath `/mnt/sysroot/etc`, and set up the first-user
+profile using source-owned hooks. Do not copy the lab home. The system-account
+guard must run before state-directory creation so Fedora Plasma Setup remains
+untouched until it creates a normal user.
+
+The unchanged installer runtime also imports old bundled Flatpak applications.
+Remove only the system `org.kde.gwenview` and `org.kde.okular` duplicates during
+the install, retaining the tested native layered applications. Do not use a
+general all-app or unused-runtime cleanup. Verify the system application list
+after installation; Atomic commit identity alone cannot detect `/var` Flatpaks.
 
 Import the parent and point the Fedora tracking ref at the base, not the layer:
 
@@ -140,8 +157,11 @@ python3 verification/iso_audit.py installed --ssh-host aven@127.0.0.1 \
 ```
 
 The installed audit streams a read-only root probe; it does not copy files to the
-guest, change the desktop, update, or reboot. Its success establishes Atomic
-identity only. The same probe passed against the existing tested Aven guest at
+guest, change the desktop, update, or reboot. Atomic identity and desktop startup
+are reported separately. Startup requires the native Plasma Login Manager to be
+loaded, active and enabled, the graphical default target, and no system Gwenview
+or Okular Flatpak duplicates. This does not establish first-login visual success.
+The earlier identity-only probe passed against the existing tested Aven guest at
 `evidence/verification/iso-probe-existing-aven.json`; that is not ISO installation
 evidence.
 
