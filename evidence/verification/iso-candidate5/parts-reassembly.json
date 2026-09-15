@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "candidate": "iso-candidate5",
+  "verified_at": "2026-09-15T11:57:23.317937+00:00",
+  "source_commit": "9500b72a79320ce062a8b7360eac5806b142c93a",
+  "manifest": "output/release-assets/ISO-PARTS.json",
+  "part_count": 4,
+  "reassembly_program": "scripts/reassemble-iso.py",
+  "reassembly_exit_code": 0,
+  "independent_reconstructed_sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0",
+  "expected_sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0",
+  "reconstructed_bytes": 7890075648,
+  "expected_bytes": 7890075648,
+  "parts_checked_by_reassembly": true,
+  "sha256_matches": true,
+  "bytes_match": true,
+  "passed": true,
+  "reconstructed_iso_moved_to": ".cache/iso-candidates/candidate5-reassembled/Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso",
+  "stdout": "Verifying Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-000\nVerifying Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-001\nVerifying Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-002\nVerifying Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-003\nVerified ISO: /home/michael/work/aven/output/release-assets/Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso\nSHA-256: ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0\n"
+}

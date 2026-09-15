@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "observer": "/root/verification",
+  "host_reviewed_at": "2026-09-15T12:33:29.308641+00:00",
+  "ownership_record": "evidence/verification/iso-candidate5/places-20260915T122549.146252Z-b42429f946c9.json",
+  "ownership_record_sha256": "56930cf801871e2463cc310d8cb89a4de5d99b4bb19a31b876b2b859e63cec95",
+  "before_sha256": "fee2d6c2734fa7eb083fe6aa8ca2462410268f47f748ffb2e909c607af96234e",
+  "before_matches_record": true,
+  "current_sha256": "74a7be2fa0917568a74cb185ebe987ad2d61aa3817c9548028615076247cc640",
+  "current_equals_exact_after_record": true,
+  "owned_change_checks": [
+    {
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "file:///var/home/reader/Desktop",
+        "title": "Desktop",
+        "id": "1789475147/1"
+      },
+      "match_count": 1,
+      "current_hidden": "true",
+      "passed": true
+    },
+    {
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "file:///var/home/reader/Music",
+        "title": "Music",
+        "id": "1789475147/6"
+      },
+      "match_count": 1,
+      "current_hidden": "true",
+      "passed": true
+    },
+    {
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "file:///var/home/reader/Videos",
+        "title": "Videos",
+        "id": "1789475147/8"
+      },
+      "match_count": 1,
+      "current_hidden": "true",
+      "passed": true
+    },
+    {
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "recentlyused:/locations",
+        "title": "Recent Locations",
+        "id": "1789475147/10"
+      },
+      "match_count": 1,
+      "current_hidden": "true",
+      "passed": true
+    },
+    {
+      "kind": "system-device",
+      "identifiers": {
+        "udi": "/org/kde/fstab/overlay/",
+        "uuid": ""
+      },
+      "match_count": 1,
+      "current_hidden": "true",
+      "passed": true
+    },
+    {
+      "kind": "system-device",
+      "identifiers": {
+        "udi": "/org/freedesktop/UDisks2/block_devices/vda1",
+        "uuid": "5019-1319"
+      },
+      "match_count": 1,
+      "current_hidden": "true",
+      "passed": true
+    },
+    {
+      "kind": "system-device",
+      "identifiers": {
+        "udi": "/org/freedesktop/UDisks2/block_devices/vda2",
+        "uuid": "8b79eb93-26f3-4c19-8917-a826fd267180"
+      },
+      "match_count": 1,
+      "current_hidden": "true",
+      "passed": true
+    }
+  ],
+  "all_owned_changes_current": true,
+  "live_restore_tested": false,
+  "method": "Host inspection of byte-exact read-only guest copies; no Places rewrite or restore invoked."
+}

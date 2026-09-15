@@ -1,0 +1,27 @@
+{
+  "verified_at": "2026-09-15T13:16:32.206619+00:00",
+  "release_id": 388990452,
+  "assets": [
+    {
+      "name": "ISO-PARTS.json",
+      "asset_id": 565736524,
+      "bytes": 1006,
+      "sha256": "cfde0f39c9a387ba3fbff764337c5c5f9556ab2991e35205e8a6402a946a796f",
+      "verified": true
+    },
+    {
+      "name": "ISO-SHA256SUMS",
+      "asset_id": 565736525,
+      "bytes": 596,
+      "sha256": "6128bed256d491ac684b1085e6cca0783999b70fad64e5bdefb5812ba2c0c1ed",
+      "verified": true
+    },
+    {
+      "name": "reassemble-iso.py",
+      "asset_id": 565736529,
+      "bytes": 2509,
+      "sha256": "f60c239453d773fae123dcb9a4af6b36991db3fcd27bec5fd18e838c34a8c3f7",
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-09-15T11:57:15.052876+00:00",
+  "observer": "/root/verification",
+  "iso_sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0",
+  "source_commit": "9500b72a79320ce062a8b7360eac5806b142c93a",
+  "source_worktree_dirty": false,
+  "embedded_source_files": 150,
+  "embedded_preview": {
+    "path": "preview/aven_preview/app.py",
+    "sha256": "99d794d2c9f148d164b979547dd839cd41906a5b219434a9f3cc21bf7366a695",
+    "bytes": 19461
+  },
+  "matches_candidate4_debug_fix": true,
+  "all_embedded_files_verified": true,
+  "media_audit_sha256": "692a3ab8fd4186f6d7fab96d036f194adc86c7b70fd34787f64b43291a96cdff",
+  "build_manifest_sha256": "e7c52830b45ed1bf1ab5eba2ba8b484a6a6dc204f841e64f0b6794fc0e71099c",
+  "installed_handoff_verified": null,
+  "limitations": [
+    "Matching the debug fix hash proves inclusion, not a working fresh installed handoff.",
+    "Candidate4 repaired-runtime successes are excluded from candidate5 release proof."
+  ]
+}

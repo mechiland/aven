@@ -23,6 +23,12 @@ Plasma 6.7.5, Dolphin/Gwenview/Okular 26.08.1, Firefox 155 and Thunderbird
 The release artifact is a **bootable x86_64 installer ISO** with an offline Aven
 payload and Fedora's native Anaconda installer and first-user setup.
 
+The exact release ISO passes offline installation, native first-user setup,
+automatic Aven defaults, preview handoffs and second-boot persistence. Its fresh
+[installed-ISO visual review](docs/critic-iso-candidate5.md) passes at **8.27 overall
+and 8.5 Chinese** at 1×. Fractional-scale and motion evidence above belongs to the
+round-4 prototype.
+
 Download all four `.iso.part-*` files, `ISO-PARTS.json`, and `reassemble-iso.py`
 from the [prototype release](https://github.com/mechiland/aven/releases/tag/v0.1.0-prototype).
 Keep them in one directory, then run:

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-15T11:58:10.665353+00:00",
+  "release_id": 388990452,
+  "release_draft": true,
+  "retained_identical_assets": [
+    {
+      "id": 565553864,
+      "name": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-001",
+      "bytes": 1992294400,
+      "digest": "sha256:223f14d7dbc9b5548889764f1eb356f682ea5d93b6616730e99f1499cf446fd1"
+    }
+  ],
+  "removed_differing_assets": [
+    {
+      "id": 565516442,
+      "name": "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-000",
+      "old_digest": "sha256:03dd800a12cdbc527830d6a5e33ff3b84a653227ed8daf8c9c6435edc6f6674f",
+      "new_digest": "sha256:8976b165ba52c9f5af5ec0738cb1775745a3f65810c220445589d98cda8499e9"
+    }
+  ],
+  "parts_requiring_upload": [
+    "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-000",
+    "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-002",
+    "Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-003"
+  ],
+  "source_archive_preserved": {
+    "id": 565299664,
+    "name": "aven-source-and-evidence-round04.tar.gz",
+    "digest": "sha256:946b513a56a3f8dca9e0c009a4cf5ffbbfdc261d6048cc8a0d46cc2717a25a62"
+  }
+}

@@ -1,0 +1,1373 @@
+{
+  "schema_version": 1,
+  "candidate": "iso-candidate5",
+  "reviewer": "/root/critic",
+  "status": "complete_scoped_installed_iso_1x_visual_review",
+  "updated_at": "2026-09-15T13:21:43.785958+00:00",
+  "scope": "Independent original-PNG 1x visual regression review of installed ISO, compared with official stock round00 and accepted round04. No guest input, source changes, screenshot edits or inherited scores.",
+  "iso_sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0",
+  "source_commit": "9500b72a79320ce062a8b7360eac5806b142c93a",
+  "identity_basis": {
+    "path": "evidence/verification/iso-candidate5/source-fix-inclusion.json",
+    "sha256": "851d6a46d84ce6adb06b243b6b2aaa37a5ff07331b39cd591af95e81378ef618",
+    "bytes": 1009
+  },
+  "inspections": [
+    {
+      "id": "first-desktop",
+      "path": "evidence/verification/iso-candidate5/first-desktop.png",
+      "sha256": "44bc358c8943abc6e3ac3a26f6ecb0ed19eccaab3d5c4bdca013d5371eed5b13",
+      "bytes": 132027,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Untouched first desktop has the accepted jade/cream broad curves and centered short light panel. No visible default desktop regression. English-only desktop is not Chinese evidence."
+    },
+    {
+      "id": "first-dolphin-home",
+      "path": "evidence/verification/iso-candidate5/first-dolphin-home.png",
+      "sha256": "b8d0b11f7ba13bc48ded5ef7a65463447a6707d9d53cb705288d9f1cb1a5bfac",
+      "bytes": 168548,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Untouched fresh-user English Home shows focused Home/Documents/Downloads/Pictures/Trash, Network, Recent Files and only fedora_fedora. No blank red root bar or 2GiB boot volume. Compact native first window is usable; empty directories differ from populated reference user."
+    },
+    {
+      "id": "files-sc-home",
+      "path": "evidence/verification/iso-candidate5/files-sc-home.png",
+      "sha256": "c967c28e81f8433701e11b764722aaab4dc64b0fe14310ccace03ee5dcbc76a4",
+      "bytes": 148971,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Arranged SC Home has readable localized chrome and focused Places, eight existing English-named home directories, and compact 26px rows. On-disk folder names come from the account creation locale; this is not untranslated SC chrome."
+    },
+    {
+      "id": "files-sc-list-initial",
+      "path": "evidence/verification/iso-candidate5/files-sc-list-initial.png",
+      "sha256": "eaddeef9921a84f8c2b99b694dd3cbc8760a5df14dbfa8d863ce15d456e36f17",
+      "bytes": 182874,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Actual first SC Everyday details view has all twelve mixed files, correct short 文档 > 日常 · Everyday breadcrumb, clear full-size Chinese/Latin labels and aligned metadata. Rows are about 26px with small icons, tighter than accepted 36px rows. Nonblocking density inconsistency; this first state is not replaced by the later post-grid state."
+    },
+    {
+      "id": "files-sc-grid",
+      "path": "evidence/verification/iso-candidate5/files-sc-grid.png",
+      "sha256": "dcf5de6ac4275668eb54cc2b56195a3e08714c58bb3ef49e9b038e6b228d8e3d",
+      "bytes": 322385,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Four columns by three rows retain the accepted large image/document/media thumbnails, readable filenames and restrained focused sidebar. Earthrise has a focus outline. Stock shows much smaller nine-plus-three items. Current breadcrumb remains excessively heavy."
+    },
+    {
+      "id": "files-sc-list-after-grid",
+      "path": "evidence/verification/iso-candidate5/files-sc-list-after-grid.png",
+      "sha256": "0283761a8b8fda71c0220e8eed40247d3d245375deee5660460d43ed5288b492",
+      "bytes": 189533,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Returned details view visibly uses about 36px rows and larger icons, matching accepted primary density. It is explicitly a later state, not the untouched default. Same twelve files and readable column alignment."
+    },
+    {
+      "id": "files-tc-list-observed",
+      "path": "evidence/verification/iso-candidate5/files-tc-list-observed.png",
+      "sha256": "09d9261616c084513d5a41f6e899da62024b1021414f4f9698ded68a4572813e",
+      "bytes": 187502,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Genuine TC native labels including 快速存取, 家目錄, 文件, 垃圾桶, 最近檔案 and 已變更. Compact 26px rows remain legible. Locale changes sorting; TC full-text file is last. Selected travel checklist in this frame is not the subsequent full TC preview target."
+    },
+    {
+      "id": "preview-text-tc",
+      "path": "evidence/verification/iso-candidate5/preview-text-tc.png",
+      "sha256": "3ae7eba9c5a30d5b4c7b2cbf5fbc8145e9d5ef64af96e322cea891a083731f06",
+      "bytes": 274316,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Genuine full TC text fixture, title 繁體中文與Latin.txt, TC 預覽/純文字/開啟 chrome and selected last file behind. Real TC paragraphs, dense characters, corner quotes, mixed Latin, dates, currency, punctuation and emoji have comfortable leading/inset without observed missing glyphs or clipping. No exact stock/round04 TC text-preview counterpart exists; supplemental check only."
+    },
+    {
+      "id": "preview-image",
+      "path": "evidence/verification/iso-candidate5/preview-image.png",
+      "sha256": "35a36b7336aeb2244d74b8513d731dac64f8bcb0c7ad070f54a41c9bf3fe3f96",
+      "bytes": 1363363,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Waterfall EXIF-1 image is upright and fills the large focused preview without distracting metadata. It differs from stock/accepted Earthrise content; supplemental image and handoff coverage only."
+    },
+    {
+      "id": "preview-earthrise",
+      "path": "evidence/verification/iso-candidate5/preview-earthrise.png",
+      "sha256": "3ce3d91bb703ecc2fa78daf2c6d0d97d2bb19628c6d4a1c935e45052cd58d2f2",
+      "bytes": 465351,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Exact Earthrise content match. Approximately 832px-wide image and quiet footer/Open control retain accepted preview; stock confines it to roughly 160px information-panel thumbnail. Background Dolphin now has two tabs, a capture-state difference."
+    },
+    {
+      "id": "preview-text-sc",
+      "path": "evidence/verification/iso-candidate5/preview-text-sc.png",
+      "sha256": "643403c71cb96119f477cfea21eb458cb4618ca3fadd46c36e32536401a7eadf",
+      "bytes": 271106,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Exact SC/Latin fixture content: complete paragraphs, dense glyphs, mixed dates/numbers/paths and final emoji row, around 18px body and 30px leading. No observed clipping/tofu. Stock information panel exposes no readable text; accepted preview retained."
+    },
+    {
+      "id": "preview-pdf",
+      "path": "evidence/verification/iso-candidate5/preview-pdf.png",
+      "sha256": "b435979e35210170586000bb7d321655c773698b32fff0bad3bc01818d136805",
+      "bytes": 214297,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Exact Weekend walk PDF renders width-fit headline and readable Chinese paragraph with restrained scrollbar/footer. Same accepted content area; stock tiny information-panel thumbnail is not a reading view. PDF embedded typography is not used to claim system font improvement."
+    },
+    {
+      "id": "preview-media-paused",
+      "path": "evidence/verification/iso-candidate5/preview-media-paused.png",
+      "sha256": "cb36b3a4c355eb621dfcafaa70457465f9d40a96935eac36970ed8399f34fb3a",
+      "bytes": 1028899,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Native paused flower poster plus correct 0:00 / 0:05 and play control. Accepted round04 duration correction visibly retained."
+    },
+    {
+      "id": "preview-media-playing",
+      "path": "evidence/verification/iso-candidate5/preview-media-playing.png",
+      "sha256": "1aef94a80aa3010ac01b7169f29bd6b1aa8bb865bd7c8ffa07522a4d4603e719",
+      "bytes": 1168238,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Different genuine flower video frame, pause icon and 0:02 / 0:05 progress visible. Still pair shows progression; it does not establish audio or smooth frame pacing."
+    },
+    {
+      "id": "preview-enter-pdf",
+      "path": "evidence/verification/iso-candidate5/preview-enter-pdf.png",
+      "sha256": "98632f36f4fa7dc466593110772fb5077e2729df6b39533b71dcec7a78bc277e",
+      "bytes": 202630,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Native Okular visibly opens the matching PDF after reported Enter handoff, with matching Chinese headline and page thumbnail; preview surface absent. Input sequence belongs to integrator/verification records, not critic UI operation."
+    },
+    {
+      "id": "preview-button-pdf",
+      "path": "evidence/verification/iso-candidate5/preview-button-pdf.png",
+      "sha256": "6de6e5f604003588d0e1ce732201b8d28387d26da8602483264fb4afb95c3cd2",
+      "bytes": 202629,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Second native Okular window renders matching PDF after reported Open-button handoff; preview absent. Button/input causality attributed to verification."
+    },
+    {
+      "id": "preview-enter-image",
+      "path": "evidence/verification/iso-candidate5/preview-enter-image.png",
+      "sha256": "d35ac91ed521a12c04b5e18753cd15ae45b3c8e8dce6c949b0b6f6af9b091141",
+      "bytes": 644015,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Matching waterfall JPEG opens in native Gwenview after reported Enter. Its initial 648x520 window and small filmstrip are usable but show less image than the prior preview. Native viewer handoff is not a replacement for the arranged album review."
+    },
+    {
+      "id": "browser-first-run",
+      "path": "evidence/verification/iso-candidate5/browser-first-run.png",
+      "sha256": "649c9dfe7415b62a9750da8954da24b9e6a3cdd6642c57357015b9bbdf684c9d",
+      "bytes": 260663,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Native initial Firefox fixture view uses neutral Aven chrome and readable SC body. Extra Problem loading page tab is preserved in evidence, not counted as successful external browsing."
+    },
+    {
+      "id": "browser-first-notice",
+      "path": "evidence/verification/iso-candidate5/browser-first-notice.png",
+      "sha256": "7b449ba1a6f0e3a44c11f765a41b1d39aa9c913f3307d728dc61cf5154dcc98f",
+      "bytes": 241919,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Native Firefox first-use telemetry notice is visibly present and coherent enough, with an English notice/button in this English-profile app. No claim that all first-run notices were removed."
+    },
+    {
+      "id": "browser-sc",
+      "path": "evidence/verification/iso-candidate5/browser-sc.png",
+      "sha256": "55bfa668b9734c4a5eb85a106d512775cf9df3e0863cfcaf0f9924f27b4b2b49",
+      "bytes": 237843,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "SC City Notes body retains stock and accepted authored spacing; clean Chinese/Latin rhythm, not evidence of dramatic rasterization gain. Neutral tab/toolbar/title surfaces and larger chrome text remain coherent. C5 omits the former left sidebar button. Focus outline around site logo differs from accepted screenshot."
+    },
+    {
+      "id": "browser-tc",
+      "path": "evidence/verification/iso-candidate5/browser-tc.png",
+      "sha256": "258afa4c6f3fdb4a3b04d17c85a0c2cd610d9329fcdfe31bc508514b5d5c0e80",
+      "bytes": 247848,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "TC City Notes paragraphs, corner quotes, punctuation, English/NT$/times remain clean and match accepted prose. Neutral chrome retained. Hover status link at bottom is a capture-state difference. Real TC content, while browser profile controls remain English."
+    },
+    {
+      "id": "browser-download",
+      "path": "evidence/verification/iso-candidate5/browser-download.png",
+      "sha256": "a3555088394776330a581456d4c67b02629a8e28c21a53b3cd91a848ad96c225",
+      "bytes": 251048,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Native download popover displays completed 周末路线.txt, 428 bytes and reveal icon. Neutral surface/type fits browser. This is local HTTP fixture download, not external HTTPS browsing."
+    },
+    {
+      "id": "browser-download-reveal",
+      "path": "evidence/verification/iso-candidate5/browser-download-reveal.png",
+      "sha256": "38aab05ce7475293dc662d81a80d30971e2531446c1e77c27024adf0ae7b4f3f",
+      "bytes": 140775,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Dolphin Downloads displays selected downloaded Chinese filename with focused Places and native tab. English chrome follows launched browser locale. Clear result; compact row density persists."
+    },
+    {
+      "id": "browser-native-picker",
+      "path": "evidence/verification/iso-candidate5/browser-native-picker.png",
+      "sha256": "4c716b661199d105cb4d6c50e85f956c5b2fea153a3e1697983b4ba92daea439",
+      "bytes": 183269,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Native KDE file picker shares Aven palette, font and controls. Focused Places visible; device label truncates in narrower picker sidebar. Desktop is initially empty; selection is shown in subsequent browser result."
+    },
+    {
+      "id": "browser-picker-selected",
+      "path": "evidence/verification/iso-candidate5/browser-picker-selected.png",
+      "sha256": "105bee500b5b9b41a569a35c9bfa40b412a3ff2d9eb0855ccdee82717537fe2f",
+      "bytes": 245469,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Page input displays selected waterfall JPEG filename after native picker. Long name uses expected elision in authored HTML control; no upload is claimed."
+    },
+    {
+      "id": "mail-first-run",
+      "path": "evidence/verification/iso-candidate5/mail-first-run.png",
+      "sha256": "fa5a25f4035fae44c46a0be456c4f5ba5444abdeb30d379ff1b3ccb29a8fb9f3",
+      "bytes": 137757,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "First native mail window is tall with bottom status area near/behind panel; screenshots preserve actual initial placement. Selected Local Folders inbox with four fixtures, jade compose control and quiet surfaces. Arranged review follows; first-run window geometry is not presented as the matched reference."
+    },
+    {
+      "id": "mail-list",
+      "path": "evidence/verification/iso-candidate5/mail-list.png",
+      "sha256": "be909601b7de77b70b5824205b5e119d80ab92748d2b4d11262f4addbeb617d0",
+      "bytes": 171043,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Four SC/TC/Latin message cards, readable labels and same quiet surfaces/330px list as accepted. Three sender addresses truncate versus wider stock list. Native first-use rights notice remains visible at bottom; later reading frames show it dismissed."
+    },
+    {
+      "id": "mail-sc",
+      "path": "evidence/verification/iso-candidate5/mail-sc.png",
+      "sha256": "368383bc70109feddcf188857ad5c634f391ae595ee34ff9ea4755b672ff9702",
+      "bytes": 237463,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Exact SC reading content, comfortable inset and about 30px successive line rhythm retained, versus stock tighter 24px/near-edge body. Header and cards fit; large mostly empty top strip remains. No missing glyphs, collision or clipping observed."
+    },
+    {
+      "id": "mail-tc",
+      "path": "evidence/verification/iso-candidate5/mail-tc.png",
+      "sha256": "75db06b46051d08a1c2718d0b3912b30a1d46854764825989eb73da58afc2465",
+      "bytes": 237696,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Exact TC reading content retains clear dense glyphs/corner quotes/numbers and about 30px leading. Neutral chrome and well-separated reading pane match accepted. Native top-strip overhead and card truncation remain."
+    },
+    {
+      "id": "mail-compose-initial",
+      "path": "evidence/verification/iso-candidate5/mail-compose-initial.png",
+      "sha256": "63632c37fd028fab7530181fe4f6883743a187894de2d5be98f1479e2c48deb2",
+      "bytes": 197364,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Initial 866px-wide draft window genuinely wraps SC paragraph with comfortable approximately 30px leading and inset. Fonts and controls fit; no source-created mockup or content rewrite used for critique."
+    },
+    {
+      "id": "mail-compose",
+      "path": "evidence/verification/iso-candidate5/mail-compose.png",
+      "sha256": "172d92b0df5d8e86ca5580e5b59cfeb4631f5073625b262d98cd531fe9a6c9f6",
+      "bytes": 193375,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Arranged 1000x840 compose view preserves clean SC/Latin, inset and about 30px signature leading versus stock 24px. Core draft text matches; accepted primary also has a different historical added line, so compare shared paragraphs and rhythm, not byte-identical entire message."
+    },
+    {
+      "id": "mail-draft-saved",
+      "path": "evidence/verification/iso-candidate5/mail-draft-saved.png",
+      "sha256": "6f50e9cfecb4a2c652530c9da4cfa4d9c6390f1329dc033d3b81d24788fe82fb",
+      "bytes": 199851,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Saved draft visibly includes newly typed 补充：路线已经核对，周六见。 and original Chinese paragraphs. Native font dropdown briefly exposes Noto Sans,sans-serif after editing; saved view remains readable. No sending claim."
+    },
+    {
+      "id": "mail-draft-reopened",
+      "path": "evidence/verification/iso-candidate5/mail-draft-reopened.png",
+      "sha256": "1b88357057472f02718557077ecd09f7884f00e5f891bd4f6678991f235c2e94",
+      "bytes": 197832,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Reopened compose window visibly retains the exact new Chinese addition and original paragraphs, same inset and signature rhythm. Persistence causality is attributed to native operator/report."
+    },
+    {
+      "id": "mail-compose-wrapped",
+      "path": "evidence/verification/iso-candidate5/mail-compose-wrapped.png",
+      "sha256": "8f34e2240834ebc568b19bf0dafd20bcd1caf80712a37c8e16fbf7ee0d0e3019",
+      "bytes": 208005,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "720x840 compose view matches reference width and shared core paragraphs; wrapping and approximately 30px line rhythm are retained versus stock 24px. Different appended operational sentence/spacing is explicitly not an exact full-message match."
+    },
+    {
+      "id": "files-copy-downloads",
+      "path": "evidence/verification/iso-candidate5/files-copy-downloads.png",
+      "sha256": "62e723a5626878a503fd904c25974ab1fb0a2a825a0477e34894432d51eaeedc",
+      "bytes": 134900,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "TC native Downloads shows copied 160B travel checklist selected alongside original download note. Labels/metadata readable; operation byte identity recorded separately."
+    },
+    {
+      "id": "files-renamed-moved",
+      "path": "evidence/verification/iso-candidate5/files-renamed-moved.png",
+      "sha256": "4c94d478d889b2adcacd5dccc2a0e41c6348ab58e54b3f80cbc686bda5438c8b",
+      "bytes": 134816,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "TC Documents shows selected ISO-copy.txt 160B beside Everyday folder. Native selected-row styling and metadata remain clear."
+    },
+    {
+      "id": "files-trash-item",
+      "path": "evidence/verification/iso-candidate5/files-trash-item.png",
+      "sha256": "9d8ee78dc455613d9c6cf3cf798dd45ba5f95dd2e7d5802d470e53d102c8a028",
+      "bytes": 132824,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "TC Trash displays ISO-copy.txt and original Documents path/deletion time, with focused Trash sidebar. No permanent deletion is claimed."
+    },
+    {
+      "id": "files-after-trash",
+      "path": "evidence/verification/iso-candidate5/files-after-trash.png",
+      "sha256": "db7cf37dc187ad389951776dce022eed006d08d1716cbb4910aad727080ea011",
+      "bytes": 129007,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Documents now contains only Everyday folder after trash operation; no error/dialog visible. This is an operation endpoint, not proof of transfer timing."
+    },
+    {
+      "id": "photos-grid",
+      "path": "evidence/verification/iso-candidate5/photos-grid.png",
+      "sha256": "933096cea5d0dcbae3c81bf41e8afe02e53eb2342e10ed96178a5d8d6a9ea4dc",
+      "bytes": 737095,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Same eight Kyoto photos in accepted 240px grid, five plus three. Larger previews and readable Chinese labels substantially improve stock tiny single-row album. Current breadcrumb and gray surround remain visually heavy. Different selected photo is a native state difference."
+    },
+    {
+      "id": "photos-view",
+      "path": "evidence/verification/iso-candidate5/photos-view.png",
+      "sha256": "9c856b26ce3bbf9e7e7243930f86d577259b1c8bb7f4eea606c38c2a23209087",
+      "bytes": 2014946,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "First Kyoto path photo shown intact, fit 73%, with roughly 118px filmstrip. This is taller than accepted ~66px strip and leaves less viewed image. Same-dimensional image class but not exact primary reference photo; retain as first view evidence."
+    },
+    {
+      "id": "photos-next",
+      "path": "evidence/verification/iso-candidate5/photos-next.png",
+      "sha256": "e426dcbbd82827a24283a55128de2d9316547a685257de5a66541564ba48d596",
+      "bytes": 1790157,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Next Kyoto photo displays intact at 73% and selected second filmstrip item. Native result shows traversal endpoint, not a measured transition. Taller strip persists."
+    },
+    {
+      "id": "photos-fullscreen",
+      "path": "evidence/verification/iso-candidate5/photos-fullscreen.png",
+      "sha256": "b46426a750783a8f21a01c6d4c266b7e168c0629c590f3e09d99b3c429ae3d9c",
+      "bytes": 3305764,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Native fullscreen shows first photo at original 1280x851 size centered on dark backdrop. Native top filmstrip/controls are still visible in this capture. No clean hidden-overlay or motion claim."
+    },
+    {
+      "id": "second-desktop",
+      "path": "evidence/verification/iso-candidate5/second-desktop.png",
+      "sha256": "37f2134e1a965b3bffb6fbed88bb718e1e6ba09a170648ae9813497e8099d21b",
+      "bytes": 131778,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Same broad jade/cream curves, short centered light panel, Aven launcher and four recognizable app identities remain after second boot. No visible desktop regression. Boot causality is corroborated by verification, not inferred from a still."
+    },
+    {
+      "id": "second-dolphin",
+      "path": "evidence/verification/iso-candidate5/second-dolphin.png",
+      "sha256": "8d81d55a516a373c0dabed1c88122c39d214796772c5dd95b5da96129ec74623",
+      "bytes": 126559,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Native English Trash restores ISO-copy.txt with its original Documents path and deletion time. Focused Places and quiet surfaces persist, with no extraneous immutable root/boot entries. This is a visual persistence/operation endpoint, not Chinese evidence."
+    },
+    {
+      "id": "photos-river-exact",
+      "path": "evidence/verification/iso-candidate5/photos-river-exact.png",
+      "sha256": "02966f6f79ec2f80820c505039bbc5bddae710ade82ce6398a75c794c1867de2",
+      "bytes": 1532630,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Exact stock/accepted 06-山间河流.jpg, 1280x851, displayed at native 73% fit with intact uncropped image. C5 main photo is about 938x624; filmstrip about 118px tall versus accepted about 66px and 79% fit. Stock fits at 92% with strip hidden. This exact-content comparison confirms a real photo-area regression after native resize; no configuration repair was applied."
+    },
+    {
+      "id": "browser-https-initial",
+      "path": "evidence/verification/iso-candidate5/browser-https-initial.png",
+      "sha256": "cb0157d67a5a55e7dc548cb0397f33e5ff48d599ff992b0ced9131e4a47661e9",
+      "bytes": 285511,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Official Firefox Chinese hero visibly renders with native English translation popover and restore-session hint. These genuine first-use notices are preserved. Neutral popover and jade Translate button fit native chrome. No certificate warning is visible; navigation/no-override causality is attributed to the native operator record."
+    },
+    {
+      "id": "browser-https",
+      "path": "evidence/verification/iso-candidate5/browser-https.png",
+      "sha256": "bf10e571d21f41fc1048b5f5eef03747e9cc754620b6d94be3c58e3a5c0b25ee",
+      "bytes": 293093,
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_by": "/root/critic",
+      "inspection_resolution": "original",
+      "note": "Same official Firefox Chinese page hero as stock/accepted at arranged 1440x900 window. Neutral title/tab/toolbar surfaces remain coherent; Chinese headline and paragraph render normally at www.firefox.com/zh-CN/. C5 translation icon and page-brand keyboard outline differ from accepted capture state. Website purple/orange branding is content, not an Aven palette defect. Native navigation record reports actual HTTPS redirect without certificate override."
+    }
+  ],
+  "reference_review": {
+    "path": "evidence/critic/iso-reference-review.json",
+    "sha256": "dfe808e0f432c98247d5c0c39fc27090c5f0560e77b3b3360b69136e9d473a09",
+    "bytes": 22845
+  },
+  "reference_pairs": [
+    {
+      "id": "desktop",
+      "content_id": "Clean desktop with native panel",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/desktop-stable-1x.json",
+        "image": "evidence/stock/round-00/desktop-stable-1x.png",
+        "sha256": "57e5bb3d0f09211376b96709a6c056943e025b102779103650cbc6dca2311223"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/desktop-1x.json",
+        "image": "evidence/aven/round-04/desktop-1x.png",
+        "sha256": "116357c851342a6334e3b67b7f88f09b416d40fdba53d4867a66176c80d45b4e"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Stock has high-contrast blue relief and a nearly full-width dark panel. Aven has broad low-contrast jade curves and a shorter light panel, immediately quieter and visibly distinct. Native app identities remain recognizable. A still does not prove motion.",
+      "candidate5_inspections": [
+        "first-desktop",
+        "second-desktop"
+      ],
+      "candidate5_comparison_notes": "Accepted desktop identity visibly retained on first and second desktop; clock/tray state differs."
+    },
+    {
+      "id": "files_home",
+      "content_id": "Native Home directory and focused Places",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/files-home-clean-1x.json",
+        "image": "evidence/stock/round-00/files-home-clean-1x.png",
+        "sha256": "36e8fd942934c4806bb3681f25824926e396785c3c537af3cd9edfbc2d80fb45"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/files-home-final-1x.json",
+        "image": "evidence/aven/round-04/files-home-final-1x.png",
+        "sha256": "5b9df6f86a1f73b2f944f44601ff9245702fdfea973d654be57d93d560dd268a"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Stock Home uses cramped sidebar and small labels. Accepted Home itself has compact approximately 26px rows, larger labels and focused Places; it must not be conflated with accepted Everyday 36px primary details. Different user directories are acknowledged.",
+      "candidate5_inspections": [
+        "first-dolphin-home",
+        "files-sc-home"
+      ],
+      "candidate5_comparison_notes": "Fresh user has eight on-disk English-named home directories versus nine reference directories including workspace aven. Chrome is genuinely localized in SC. Focused Places work automatically before fixtures; no C3 red root/boot clutter."
+    },
+    {
+      "id": "files_list",
+      "content_id": "Dolphin 12-file Everyday folder in details view",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/files-list-1x.json",
+        "image": "evidence/stock/round-00/files-list-1x.png",
+        "sha256": "461ab03420d0241700cf29a25dc29effd4bc711a794738da6f1c94473efee3e2"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/files-list-1x.json",
+        "image": "evidence/aven/round-04/files-list-1x.png",
+        "sha256": "fc875bb690eeed86c5e87cd84fdca60ac12a7fdc2c583244871fc158989f4c95"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "The same twelve files are visible. Aven uses larger readable Chinese/Latin labels, approximately 36-pixel compact rows, smaller thumbnails and no tree-branch clutter; stock has approximately 52-pixel thumbnail rows. Dates and KiB remain aligned. Selection differs: Aven highlights the Chinese text file, while stock has an Earthrise focus outline. The current 日常 · Everyday breadcrumb is conspicuously bold.",
+      "candidate5_inspections": [
+        "files-sc-list-initial",
+        "files-sc-list-after-grid",
+        "files-tc-list-observed"
+      ],
+      "candidate5_comparison_notes": "Same twelve mixed files. Initial SC and later TC native details use about 26px rows/small icons; after grid SC details uses about 36px. Initial state is tighter than accepted Everyday but full-size labels remain legible and aligned. Locale affects order; selections differ."
+    },
+    {
+      "id": "files_mixed",
+      "content_id": "Dolphin 12-file Everyday folder in grid view",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/files-mixed-clean-1x.json",
+        "image": "evidence/stock/round-00/files-mixed-clean-1x.png",
+        "sha256": "253bcad1397d6a51ef3013ea454b8ec1430f146c883f2d58d3c7c487e5b4e435"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/files-mixed-1x.json",
+        "image": "evidence/aven/round-04/files-mixed-1x.png",
+        "sha256": "4003ee8e5f38560fe2e4325ad67ca39d475c40f677e8ecd579764ab439b3b9a8"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Both show the twelve-file Everyday folder with an Earthrise focus outline. Aven uses four columns over three rows with much larger image, document and media thumbnails; stock has nine small items in the first row. Long mixed-script names mostly fit on one line in Aven. The subdued sidebar and chrome improve hierarchy. Generic audio/JSON icons retain strong native blue/purple colors.",
+      "candidate5_inspections": [
+        "files-sc-grid"
+      ],
+      "candidate5_comparison_notes": "Same twelve-file folder, four columns by three rows and large useful thumbnails retained versus stock nine-plus-three small items. Current breadcrumb remains heavy."
+    },
+    {
+      "id": "preview_image",
+      "content_id": "NASA Earthrise JPEG selected in Dolphin",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/preview-image-1x.json",
+        "image": "evidence/stock/round-00/preview-image-1x.png",
+        "sha256": "36cfc6903120007442331dc745ee623b7dbc691913c8d9377b22cfb2f745f38b"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/preview-image-1x.json",
+        "image": "evidence/aven/round-04/preview-image-1x.png",
+        "sha256": "bf8618bf46ab0c98aae494404d9c6ee9a4d2534cf46c47fca3889c2661f56f22"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Stock confines Earthrise to an approximately 160-pixel-wide information-panel thumbnail amid metadata and reflows Files. Aven gives the full image an approximately 832-pixel-wide focused overlay with a quiet localized title, JPEG 图像 / 84.1 KiB footer and clearly spaced Open control. The preview task icon reveals a separate native surface. Invocation and focus results are documented separately.",
+      "candidate5_inspections": [
+        "preview-earthrise"
+      ],
+      "candidate5_comparison_notes": "Exact Earthrise pair uses this frame, not C5 waterfall preview-image. Large focused preview retains accepted readability versus stock tiny information-panel image. Background tabs/focus state differ."
+    },
+    {
+      "id": "preview_text",
+      "content_id": "Simplified Chinese and Latin text fixture selected in Dolphin",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/preview-text-1x.json",
+        "image": "evidence/stock/round-00/preview-text-1x.png",
+        "sha256": "a0960a83d58ce669bccc44ab7b094b01ff687f147fc26efdb08b4767078ee702"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/preview-text-1x.json",
+        "image": "evidence/aven/round-04/preview-text-1x.png",
+        "sha256": "72d4b878cc2d0bb61023af33e4b55c9230af824c5af35f87e9a5fc98628f3110"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Stock shows a generic text icon and metadata rather than readable content. Aven exposes real SC paragraphs, mixed Latin, MB, times, paths, punctuation, dense characters and emoji. The approximately 18-pixel body, comfortable leading and inset are coherent. No missing-glyph boxes or clipped sample glyphs appear; the final emoji row is visible. Emoji styles retain their font-native differences.",
+      "candidate5_inspections": [
+        "preview-text-sc"
+      ],
+      "candidate5_comparison_notes": "Exact shared SC/Latin text retains comfortable body, leading and inset. Stock exposes metadata rather than readable text. Full TC preview is supplemental because no exact stock/accepted counterpart exists."
+    },
+    {
+      "id": "preview_pdf",
+      "content_id": "Original bilingual weekend-walk PDF selected in Dolphin",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/preview-pdf-1x.json",
+        "image": "evidence/stock/round-00/preview-pdf-1x.png",
+        "sha256": "23fe39a1ef82869abf3d5294ccf550e83d056ee4146f41e4c4d1f16938075717"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/preview-pdf-1x.json",
+        "image": "evidence/aven/round-04/preview-pdf-1x.png",
+        "sha256": "6c05cef765d2f6b777613c0ea0ba449f53dcb521c2308427bbdadd660451b1ed"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "The same bilingual weekend-walk PDF is a tiny whole-page thumbnail in stock. Aven fits the page to a readable width with scrolling, a pale paper backing and consistent PDF 文档 / 260.6 KiB footer. Chinese paragraphs and mixed Latin headings are readable. The embedded PDF fonts are not evidence of OS fallback improvement; the lower page requires normal scrolling.",
+      "candidate5_inspections": [
+        "preview-pdf"
+      ],
+      "candidate5_comparison_notes": "Same embedded-font PDF content is readable in C5 width-fit preview; no OS fallback improvement inferred from embedded fonts."
+    },
+    {
+      "id": "preview_media",
+      "content_id": "Flower WebM selected in Dolphin",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/preview-media-1x.json",
+        "image": "evidence/stock/round-00/preview-media-1x.png",
+        "sha256": "b4da09307a0411c3788caf8ffba3f9df5262cf39beb31fa366793e7fdd31d644"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/preview-media-1x.json",
+        "image": "evidence/aven/round-04/preview-media-1x.png",
+        "sha256": "5db7a7ad0cb64bc9a0251cfb536468a9a218575a77e107dc0b1b68b7523c4d7e"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Stock has a small film-framed poster and metadata-dock player. Aven shows a large genuine playing flower frame, a pause control, seek line and 0:00 / 0:05 duration. Playback moments differ, so the exact flower pixels are not a matched still-frame comparison. The separately inspected paused poster also reports 0:00 / 0:05, resolving the prior zero-total label. Audio and full playback continuity are not established by this still.",
+      "candidate5_inspections": [
+        "preview-media-paused",
+        "preview-media-playing"
+      ],
+      "candidate5_comparison_notes": "Same flower video at differing genuine moments. Correct 0:00 / 0:05 paused poster and 0:02 / 0:05 playing state retain accepted duration fix. No frame-pacing/audio inference."
+    },
+    {
+      "id": "browser_sc",
+      "content_id": "Local Simplified Chinese City Notes article in Firefox",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/browser-sc-1x.json",
+        "image": "evidence/stock/round-00/browser-sc-1x.png",
+        "sha256": "e1d7de2cfcabf86a805d19770fab7e1c686728aa3ea253ada673bd57a695c93b"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/browser-sc-1x.json",
+        "image": "evidence/aven/round-04/browser-sc-1x.png",
+        "sha256": "5002bf633517559474b55e83dab40bb177c2506f34677a518082d350d9c1fd21"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "The same SC City Notes HTTP article is readable in both; body typography and authored page spacing remain very similar. Aven neutral tabs/toolbar match its shared decoration, and larger native chrome text is more comfortable. The extra titlebar repeats the title and costs about 38 logical pixels. Stock has a page-brand keyboard outline while Aven does not; that state difference is not a typography gain. A single Firefox task identity is visible.",
+      "candidate5_inspections": [
+        "browser-sc"
+      ],
+      "candidate5_comparison_notes": "Same City Notes SC body. C5 neutral chrome remains coherent. Authored prose is already strong in stock; native focus outline and sidebar button state differ."
+    },
+    {
+      "id": "browser_tc",
+      "content_id": "Local Traditional Chinese City Notes article in Firefox",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/browser-tc-1x.json",
+        "image": "evidence/stock/round-00/browser-tc-1x.png",
+        "sha256": "76ee785cefef840aa9993209cebdf3ebd89e3bcb4a0e90654c93d75f92a5d1ad"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/browser-tc-1x.json",
+        "image": "evidence/aven/round-04/browser-tc-1x.png",
+        "sha256": "2690f590aa5602c4dcd3cc0ed9b6692bcec6ff37464ec4ddff1d13dab39c2e8e"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "The same TC City Notes article retains clear corner quotes, punctuation and mixed English/numbers. Body rendering already looks strong in stock and is nearly unchanged. Aven neutral chrome is more coherent with the surrounding desktop, with larger chrome labels and a single task identity. The additional server-side titlebar reduces content height. Fixture-authored reading rhythm is not credited as an OS change.",
+      "candidate5_inspections": [
+        "browser-tc"
+      ],
+      "candidate5_comparison_notes": "Same real TC paragraphs and mixed-script punctuation. English-profile browser controls are not TC-localized chrome. Hover/status state differs; no dramatic rasterization claim."
+    },
+    {
+      "id": "browser_web",
+      "content_id": "Official Firefox Chinese HTTPS page hero",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/browser-web-1x.json",
+        "image": "evidence/stock/round-00/browser-web-1x.png",
+        "sha256": "0d0c8eced834aea43773b48f62ed15e6213d64b5b0e26a96ed1810960b9daedb"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/browser-web-1x.json",
+        "image": "evidence/aven/round-04/browser-web-1x.png",
+        "sha256": "0865f95fbfa3eb90980152eb9f15b5aeca225e67fca6a881ad6fd8e6014c0dcf"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Same official Chinese Firefox hero is visible in stock and accepted. Aven neutral chrome and larger native text integrate the mature browser. The additional titlebar costs about 38px of page height. Website colors and authored body typography are not credited as Aven changes.",
+      "candidate5_inspections": [
+        "browser-https-initial",
+        "browser-https"
+      ],
+      "candidate5_comparison_notes": "Same official Chinese Firefox hero rendered after actual HTTPS navigation on second disk-only boot. First native prompts preserved separately. Current brand focus outline/translation icon differ; website branding remains native content."
+    },
+    {
+      "id": "mail_list",
+      "content_id": "Four fictional SC/TC/Latin messages in Thunderbird local Inbox",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/mail-list-1x.json",
+        "image": "evidence/stock/round-00/mail-list-1x.png",
+        "sha256": "f40072653d9715af86401557c42358de7dcd6076de5b75c2192bedd3430d37fe"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/mail-list-1x.json",
+        "image": "evidence/aven/round-04/mail-list-1x.png",
+        "sha256": "26fe77d39c6e924950d9166c18ddf6ebfb071f7d78f5622091f9c87214dde561"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Both show the same four fixture messages. Aven quiet surfaces and larger type remain, but its approximately 330px card list truncates three sender addresses versus the wider stock list. Accepted and C5 share the mostly empty upper strip.",
+      "candidate5_inspections": [
+        "mail-list"
+      ],
+      "candidate5_comparison_notes": "Same four fictional messages, quiet surfaces and narrow card list; three sender addresses truncate. C5 native rights notice remains at bottom in this state."
+    },
+    {
+      "id": "mail_sc",
+      "content_id": "Same fictional Simplified Chinese email opened in Thunderbird",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/mail-sc-1x.json",
+        "image": "evidence/stock/round-00/mail-sc-1x.png",
+        "sha256": "935fd7f46174ab3a64fa947a26cc9a0e4c8bc4aa9d2cf7002310abeadfdca9cf"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/mail-sc-1x.json",
+        "image": "evidence/aven/round-04/mail-sc-1x.png",
+        "sha256": "ecc1011e90c8ffcbc020a04b0953b05b0fe70cb75c88bf473fd9b5069fe3968b"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "The same fictional SC message is comfortably inset and spaced in Aven, with approximately 17-pixel body text and 30-pixel leading versus stock's tighter 24-pixel rhythm and near-edge body. Latin address text and Chinese punctuation remain clear; paragraph breaks are preserved. The narrow adjacent message list and extra top strip remain. Window/client layout differences are acknowledged.",
+      "candidate5_inspections": [
+        "mail-sc"
+      ],
+      "candidate5_comparison_notes": "Exact SC reading message retains approximately 30px leading and useful inset versus stock approximately 24px and near-edge body. Native top-strip overhead remains."
+    },
+    {
+      "id": "mail_tc",
+      "content_id": "Same fictional Traditional Chinese email opened in Thunderbird",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/mail-tc-1x.json",
+        "image": "evidence/stock/round-00/mail-tc-1x.png",
+        "sha256": "be19c62a6e6509ad5200690c5e80a0ba69d31c1063b664393ac3076e3b523f1e"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/mail-tc-1x.json",
+        "image": "evidence/aven/round-04/mail-tc-1x.png",
+        "sha256": "0d107937a05c05d2da0b51dd375c4f6fd7e47725bd92787f6772fd49eb9fe651"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "The same fictional TC message has a calm, readable body with generous inset and leading, preserving punctuation, v2.1 and 11:00. Stock is readable but tighter and close to the content edge. Native header controls and bold labels remain somewhat dense. The message-card truncation and mostly empty upper strip still limit coherence. This is a 1x primary mail comparison.",
+      "candidate5_inspections": [
+        "mail-tc"
+      ],
+      "candidate5_comparison_notes": "Exact TC reading message retains calm dense glyphs, punctuation and mixed runs. Comfortable leading/inset retained; card truncation/top strip remain."
+    },
+    {
+      "id": "mail_compose",
+      "content_id": "Same fictional saved reply with appended route-confirmation sentence",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/mail-compose-1x.json",
+        "image": "evidence/stock/round-00/mail-compose-1x.png",
+        "sha256": "74ade757d5e01b0e4ae33be8a2167260405c1d52ed9eda4604b4d57eec7aa39a"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/mail-compose-1x.json",
+        "image": "evidence/aven/round-04/mail-compose-1x.png",
+        "sha256": "36f1e37eb4e0de6012c5900c7e8fb27145d267d65368d894d946a83ddf968cce"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Both show the same fictional saved draft, including 已核对路线，周六见。 before round-04 editing. Aven now gives wrapped/body and signature lines approximately 30-pixel leading, visibly more comfortable than stock's approximately 24 pixels, with a useful inset. This resolves the round-03 writing-versus-reading rhythm defect. The 1000×840 outer frame is matched. The existing blank paragraph before the appended sentence belongs to the draft. The matched 720-pixel supplemental pair confirms the improvement under wrapping.",
+      "candidate5_inspections": [
+        "mail-compose",
+        "mail-draft-saved",
+        "mail-draft-reopened"
+      ],
+      "candidate5_comparison_notes": "1000x840 comparison shows shared original Chinese reply and signature with approximately 30px leading. C5 adds 补充：路线已经核对，周六见。 whereas historical reference adds 已核对路线，周六见。; compare shared paragraphs, not complete byte-identical message."
+    },
+    {
+      "id": "mail_compose_wrapped",
+      "content_id": "Shared fictional Chinese draft paragraphs at 720x840 outer window",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/mail-compose-wrapped-720-1x.json",
+        "image": "evidence/stock/round-00/mail-compose-wrapped-720-1x.png",
+        "sha256": "de4c939b93f000863995014b28c109258a04bb01b4cd5b995e8e8812247a920e"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/op-mail-compose-wrapped-720-1x.json",
+        "image": "evidence/aven/round-04/op-mail-compose-wrapped-720-1x.png",
+        "sha256": "a6fe7e6bc7d9d8fcfc23c253bd854df8f85f3006cc5487c3bb931a0c7a77a300"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Stock and accepted shared Chinese paragraphs wrap at the same outer width. Accepted inset and approximately 30px leading are more comfortable than stock approximately 24px. Operation-added sentence differs from C5; whole-message byte identity is not claimed.",
+      "candidate5_inspections": [
+        "mail-compose-wrapped"
+      ],
+      "candidate5_comparison_notes": "Same 720x840 outer size and core reply paragraphs; C5 shared text wraps cleanly with improved leading. Appended operation sentence/blank spacing differ explicitly."
+    },
+    {
+      "id": "photos_grid",
+      "content_id": "Eight-photo Kyoto travel album in Gwenview browse view",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/photos-grid-1x.json",
+        "image": "evidence/stock/round-00/photos-grid-1x.png",
+        "sha256": "d4ce5c702b163332f00d22d041401f864aa2e3a9370e1bd084b75de68ecaf1f6"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/photos-grid-1x.json",
+        "image": "evidence/aven/round-04/photos-grid-1x.png",
+        "sha256": "751ff518e79539fa8e2bd50561733895798ed2eef12dff66b372fdfce06cfdbc"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "The same eight Kyoto album images appear. Aven's approximately 240-pixel thumbnails form five-plus-three rows and make the album immediately useful; stock places eight tiny thumbnails in one row. Aven selects the river image while stock selects the first image, and Aven has a small native hover affordance. The heavy breadcrumb surround and native thumbnail frames remain more mechanical than Files.",
+      "candidate5_inspections": [
+        "photos-grid"
+      ],
+      "candidate5_comparison_notes": "Same eight Kyoto photos retain approximately 240px five-plus-three grid versus stock eight small items in one row. Selected item/hover state differs; native bevels remain."
+    },
+    {
+      "id": "photos_view",
+      "content_id": "Kyoto mountain-river landscape in Gwenview fitted view",
+      "stock": {
+        "sidecar": "evidence/stock/round-00/photos-view-1x.json",
+        "image": "evidence/stock/round-00/photos-view-1x.png",
+        "sha256": "0669a9f8c1e1152310e5e004946352bcb9ee7a7d882a3b80c5abbfcf2b3e2403"
+      },
+      "accepted_round04": {
+        "sidecar": "evidence/aven/round-04/photos-view-1x.json",
+        "image": "evidence/aven/round-04/photos-view-1x.png",
+        "sha256": "96ccd06c2455be5ff613114bf48b228eaf087902a8d3c0f3aff66e0d6673a17e"
+      },
+      "reopened_originals_by": "/root/critic",
+      "accepted_visual_notes": "Both show the same Kyoto mountain-river image upright. Aven fits it at 79% with a short filmstrip; stock fits at 92% with no filmstrip. Navigation context is useful but costs photo area. The filmstrip's beveled/gradient cells and horizontal bar retain an older native KDE appearance. This is a reasonable mature-viewer tradeoff, not a premium new photo surface.",
+      "candidate5_inspections": [
+        "photos-river-exact"
+      ],
+      "candidate5_comparison_notes": "Exact same 1280x851 river photo at 73% C5 versus 79% accepted and 92% stock. C5 filmstrip approximately 118px versus accepted 66px after native resize. Main image intact; visible reduced photo area warrants deduction."
+    }
+  ],
+  "scores": {
+    "chinese_typography": {
+      "score": 8.5,
+      "pairs": [
+        "files_home",
+        "files_list",
+        "preview_text",
+        "browser_sc",
+        "browser_tc",
+        "browser_web",
+        "mail_sc",
+        "mail_tc",
+        "mail_compose",
+        "mail_compose_wrapped"
+      ],
+      "supplemental_inspections": [
+        "files-tc-list-observed",
+        "preview-text-tc"
+      ],
+      "rationale": "Real SC/TC native UI and paragraphs retain clean readable weight, mixed-script baselines, punctuation, comfortable preview spacing and approximately 30px mail reading/writing rhythm. Narrow composed text and saved/reopened Chinese addition remain comfortable. This meets the focused 1x Chinese bar on actual installed screenshots.",
+      "limitations": [
+        "Stock authored browser prose is already clean; no dramatic rasterization improvement is demonstrated.",
+        "Current breadcrumb is still conspicuously heavy.",
+        "Current candidate5 fractional-scale matrix is not rerun. No physical-panel/macOS side-by-side equivalence is claimed."
+      ]
+    },
+    "latin_typography": {
+      "score": 8.4,
+      "pairs": [
+        "files_home",
+        "files_list",
+        "preview_text",
+        "browser_sc",
+        "browser_web",
+        "mail_sc",
+        "mail_compose_wrapped"
+      ],
+      "rationale": "Clear native labels, extensions, addresses and mixed runs retain coherent scale and weight with Chinese. Neutral chrome and comfortable text-preview/mail leading remain stronger than stock at 1x.",
+      "limitations": [
+        "Bold breadcrumbs and narrow sender-card truncation remain."
+      ]
+    },
+    "files_experience": {
+      "score": 8.2,
+      "pairs": [
+        "files_home",
+        "files_list",
+        "files_mixed"
+      ],
+      "supplemental_inspections": [
+        "files-copy-downloads",
+        "files-renamed-moved",
+        "files-trash-item",
+        "files-after-trash",
+        "browser-download-reveal"
+      ],
+      "rationale": "Automatically focused Places, readable labels, short localized Documents breadcrumb and large four-by-three grid remain substantially more purposeful than stock. Native copy/move/rename/trash results are coherent and corroborated by checks.",
+      "limitations": [
+        "Initial Everyday details has approximately 26px rows/small icons, changing to 36px after grid; this lowers consistency versus accepted Everyday primary. Full-size text remains legible, so the issue is nonblocking.",
+        "Home itself was also compact in accepted evidence. Technical fedora_fedora label and heavy breadcrumb remain.",
+        "Restore from Trash and complete historical operation suite are not repeated in candidate5."
+      ]
+    },
+    "file_preview": {
+      "score": 8.6,
+      "pairs": [
+        "preview_image",
+        "preview_text",
+        "preview_pdf",
+        "preview_media"
+      ],
+      "supplemental_inspections": [
+        "preview-text-tc",
+        "preview-enter-pdf",
+        "preview-button-pdf",
+        "preview-enter-image"
+      ],
+      "rationale": "Large focused image, readable real Chinese text and width-fit PDF retain the most dramatic everyday gain over stock metadata previews. Media has a genuine poster and correct duration; visible playing state advances. Three native viewer handoffs have inspected endpoints and independent verification.",
+      "limitations": [
+        "Invocation/discoverability and separate task identity remain less seamless than a premium integrated preview.",
+        "No audio or smooth playback timing inference from stills."
+      ]
+    },
+    "browser_coherence": {
+      "score": 8.4,
+      "pairs": [
+        "browser_sc",
+        "browser_tc",
+        "browser_web"
+      ],
+      "supplemental_inspections": [
+        "browser-download",
+        "browser-native-picker",
+        "browser-picker-selected"
+      ],
+      "rationale": "Neutral mature Firefox tab/toolbar and shared decoration remain coherent with Aven. Local SC/TC reading, actual external Chinese HTTPS rendering, completed download and native KDE picker are visible and usable.",
+      "limitations": [
+        "Extra titlebar repeats the title and costs content height.",
+        "Native first-use prompts and website branding remain visible; controlled article spacing is not an Aven improvement."
+      ]
+    },
+    "mail_coherence": {
+      "score": 8.1,
+      "pairs": [
+        "mail_list",
+        "mail_sc",
+        "mail_tc",
+        "mail_compose",
+        "mail_compose_wrapped"
+      ],
+      "supplemental_inspections": [
+        "mail-draft-saved",
+        "mail-draft-reopened"
+      ],
+      "rationale": "Quiet native surfaces and comfortable Chinese reading/writing inset and leading retain accepted quality. The narrow composer wraps naturally, and the edited draft visibly survives reopening.",
+      "limitations": [
+        "Narrow cards truncate sender addresses and a mostly empty upper strip wastes space.",
+        "Initial tall native window geometry is less composed than arranged reference views.",
+        "Local fictional mailbox only; no live sending or receiving."
+      ]
+    },
+    "photo_experience": {
+      "score": 7.8,
+      "pairs": [
+        "photos_grid",
+        "photos_view"
+      ],
+      "supplemental_inspections": [
+        "photos-view",
+        "photos-next",
+        "photos-fullscreen"
+      ],
+      "rationale": "The large eight-photo album grid is useful and substantially clearer than stock. Viewing, next image and fullscreen remain native and usable. Exact river comparison reveals a real regression: a taller resized filmstrip makes the photo smaller than accepted.",
+      "limitations": [
+        "C5 strip is about 118px versus accepted 66px; river fit is 73% versus accepted 79% and stock 92% with hidden strip.",
+        "Native beveled cells and framing remain mechanical. First JPEG handoff opens in a small native window.",
+        "No repeated candidate5 alpha/EXIF6 or calibrated color-management check."
+      ]
+    },
+    "visual_coherence": {
+      "score": 8.3,
+      "pairs": [
+        "desktop",
+        "files_home",
+        "files_mixed",
+        "preview_image",
+        "browser_web",
+        "mail_list",
+        "photos_grid"
+      ],
+      "rationale": "Broad jade/cream wallpaper, compact light panel, readable UI scale, quiet shared chrome and focused Files/preview remain recognizably one product. Actual installed first/second desktop states retain the visual identity.",
+      "limitations": [
+        "Mail upper strip and Gwenview framing remain more visibly native; app identities keep their own icon colors.",
+        "Only the focused four experiences are judged."
+      ]
+    },
+    "perceived_polish": {
+      "score": 8.1,
+      "pairs": [
+        "desktop",
+        "files_list",
+        "files_mixed",
+        "preview_image",
+        "preview_media",
+        "mail_compose_wrapped",
+        "photos_view"
+      ],
+      "rationale": "Readable preview, accurate paused duration, calm native surfaces and improved compose rhythm survive the installed ISO. Initial details-density inconsistency and enlarged photo strip reduce the finish relative to accepted round04.",
+      "limitations": [
+        "This current score is a still/operation impression; candidate5 motion sequences were not rerun.",
+        "First native window placement and retained application framing prevent a premium-consumer-OS score."
+      ]
+    }
+  },
+  "declared_overall": 8.266666666666667,
+  "three_second": {
+    "answer": true,
+    "pairs": [
+      "desktop",
+      "files_home",
+      "files_mixed",
+      "preview_image"
+    ],
+    "candidate5_inspections": [
+      "first-desktop",
+      "second-desktop",
+      "files-sc-home",
+      "files-sc-grid",
+      "preview-earthrise"
+    ],
+    "rationale": "Yes. The broad pale/jade background and short light panel immediately change the desktop silhouette. Quiet shared chrome, focused readable Places and much larger content/preview hierarchy make the difference visibly more refined as well as conspicuous. This is an independent critic judgment, not a blinded user study."
+  },
+  "installed_iso_visual_regression_pass": true,
+  "full_four_scale_and_motion_rerun_pass": null,
+  "iso_boot_install_accepted": null,
+  "remaining_nonblocking_findings": [
+    "Initial Everyday details uses approximately 26px rows and smaller thumbnails than accepted 36px Everyday primary; native post-grid view changes to 36px. Both states remain preserved; text is legible in the initial state.",
+    "Gwenview filmstrip is approximately 118px after native window resize versus accepted approximately 66px; exact river photo fit falls from 79% to 73%. Album grid remains strong, viewer area/polish is reduced.",
+    "Heavy native breadcrumbs; retained technical volume label; Firefox duplicate title strip; Thunderbird upper-strip overhead and truncated sender addresses; native Gwenview beveled filmstrip framing."
+  ],
+  "unverified": {
+    "candidate5_full_fractional_matrix": null,
+    "candidate5_paired_motion_sequences": null,
+    "physical_frame_pacing": null,
+    "audio": null,
+    "live_mail_send_receive": null,
+    "physical_hardware_typography": null,
+    "candidate5_restore_from_trash": null,
+    "candidate5_alpha_and_exif6_repeat": null,
+    "candidate5_complete_historical_operations_rerun": null
+  },
+  "historical_evidence": [
+    {
+      "path": "evidence/critic/round-04.json",
+      "sha256": "9923fd90689dc5665334092c0884dbc17061fc4e72668392d208bf1d0d7b9dfd",
+      "bytes": 151948
+    },
+    {
+      "path": "evidence/critic/motion-paired-round-04.json",
+      "sha256": "49200e96c5702dc0527c7939e2d09e7413efa8a2823994951882290fd56decf0",
+      "bytes": 87789
+    },
+    {
+      "path": "typography/aven-round04-matrix.json",
+      "sha256": "2a9606cc520ff4515bb04c4444398ef66619fddcbc953d72af3c848cd4a0a7ed",
+      "bytes": 43096
+    }
+  ],
+  "historical_evidence_note": "Accepted round04 16-pair SC/TC four-scale matrix and sampled six paired motions remain historical evidence, with their original hashes and limitations. Candidate5 scores are fresh 1x judgments; current full fractional/motion rerun remains null.",
+  "audit_references": [
+    {
+      "path": "evidence/verification/iso-candidate5/preview-handoff-review.json",
+      "sha256": "f91e2f69e35222fdc64817662aeeb3bb9735872d770b11962902ace67ebaba54",
+      "bytes": 4387
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/reader-font-audit.json",
+      "sha256": "cec1ed26b12b10cb992e82c5d96df60add2523bce91b3b112614977a8f902e78",
+      "bytes": 28611
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/runtime-versions-mounts-audit.json",
+      "sha256": "c58c1888c57d4e9cf4561d9412c442b9dec0ef7bdbfd834500d60946ae667823",
+      "bytes": 14283
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/installed-audit.json",
+      "sha256": "b40bec87a5c7968b7e5132c497f5384503582948a1ab90901f69bb893da3ccd6",
+      "bytes": 14896
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/first-desktop-inspection.json",
+      "sha256": "66d0101c4f74cf13b38e0643933f1955dd6becd0e9f79af358a9a6bcf420dd9b",
+      "bytes": 1424
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/places-runtime-audit.json",
+      "sha256": "3d3f345a1e0c2af49122317e9a67e02cd1838265272086a4801c3f915d806712",
+      "bytes": 2563
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/browser-download-check.json",
+      "sha256": "0a78980d76220f72fc9e30021d4207919b96d571fbf35ee05e256f498b1fca1b",
+      "bytes": 119
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/files-copy-check.json",
+      "sha256": "33ea1fb4083f9878ef393cc733be6379851c370d557138fdc9fc17cf39d2098d",
+      "bytes": 109
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/files-rename-move-check.json",
+      "sha256": "d51d8220b3447e82c5f2ba90ea587e6139dc52ab57733b39754773df20c7c369",
+      "bytes": 106
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/files-trash-check.json",
+      "sha256": "0291b67397bd8cf3ede469845635831f9e21f8a62ec731d8833e717f65d6f898",
+      "bytes": 124
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/browser-https-navigation.json",
+      "sha256": "528e7762a88b25847473e202a2dfd39dcb3d26ec5aa1d8ae66b0404f0f031e9f",
+      "bytes": 334
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/mail-draft-check.json",
+      "sha256": "7219480f60f6da6b15d71b1e3a6e8cd35077b4afef89a22d615482a75e3464fd",
+      "bytes": 356
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/native-smoke-review.json",
+      "sha256": "d953ad5b3883508750d6566500043591a75edb42b4146ae7a06cb9792f0611f1",
+      "bytes": 18215
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/second-boot/installed-audit.json",
+      "sha256": "b2cebee937eb2479c3aae238f74c70af3901341b70dd1a054303b59954664c70",
+      "bytes": 14896
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/second-boot/runtime-versions-mounts-audit.json",
+      "sha256": "5ebf2542358be8e0c38c1af092f2a6dc2d66e5066fd5772664d439cc0120b816",
+      "bytes": 14429
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/second-boot/reader-font-audit.json",
+      "sha256": "14af874377dc30a9f36e8b86d919293eaecd8899041357f367f1d6e84e97abb7",
+      "bytes": 28611
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/second-boot/operations-persistence.json",
+      "sha256": "77c5ae1808178fa5c0013a045a38d06099ebd26dfd93200cfbcbf8483817d9c8",
+      "bytes": 1785
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/second-boot/persistence-review.json",
+      "sha256": "b6f86d871f63a3c345b1e0701d5c99d0bb4a9e8e72f689019190e07f781f2e72",
+      "bytes": 9772
+    }
+  ],
+  "score_scope": "Fresh independent 1x visual and observed-operation judgment of installed candidate5; no automatic historical score transfer. Perceived polish excludes an unrecorded candidate5 motion rerun.",
+  "blocking_visual_findings": [],
+  "verified_observed_scope": {
+    "candidate5_external_https": {
+      "passed": true,
+      "evidence": [
+        "browser-https-initial",
+        "browser-https"
+      ],
+      "record": "evidence/verification/iso-candidate5/browser-https-navigation.json",
+      "attribution": "Actual rendered page inspected by critic; HTTPS navigation and no certificate override attributed to native operator and independent smoke review. Not a TLS security audit."
+    },
+    "native_operations": {
+      "passed": true,
+      "record": "evidence/verification/iso-candidate5/native-smoke-review.json",
+      "attribution": "Critic inspected original result frames and read operator/independent verification records. Native input operated by /root; persisted data independently checked by /root/verification."
+    },
+    "three_preview_handoffs": {
+      "passed": true,
+      "record": "evidence/verification/iso-candidate5/preview-handoff-review.json",
+      "attribution": "Enter PDF, Open-button PDF and Enter JPEG original native-viewer endpoints independently inspected; sequence and window-inventory causality attributed to verification."
+    },
+    "second_boot_persistence": {
+      "passed": true,
+      "record": "evidence/verification/iso-candidate5/second-boot/persistence-review.json",
+      "attribution": "Critic inspected second desktop/Trash originals and read independent read-only boot/runtime/font/operation persistence checks. This is not final ISO release acceptance."
+    }
+  },
+  "coverage": {
+    "candidate5_original_pngs_inspected": 47,
+    "comparison_groups": 18,
+    "stock_original_pngs_inspected": 18,
+    "accepted_round04_original_pngs_inspected": 18,
+    "all_candidate5_png_dimensions": [
+      1920,
+      1200
+    ],
+    "current_scale": 1.0,
+    "inspection_method": "Original unmodified PNGs opened individually at original resolution; all used Chinese images genuinely viewed. No contact sheets, screenshot editing, source-only visual inference or guest input by critic."
+  },
+  "integrity_check": {
+    "checked_at": "2026-09-15T13:23:46.142269+00:00",
+    "method": "Rehashed every directly referenced PNG and audit/historical manifest; verified PNG dimensions, byte counts where declared, sidecars, unique inspection/reference IDs, category evidence IDs, score arithmetic, explicit null coverage and report links. This is manifest integrity, not a full current fractional/motion evidence gate.",
+    "distinct_files_rehashed": 106,
+    "candidate5_original_pngs": 47,
+    "stock_and_accepted_pngs": 36,
+    "errors": [],
+    "passed": true
+  }
+}

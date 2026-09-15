@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "host_recorded_at": "2026-09-15T12:35:18.804023+00:00",
+  "observer": "/root/verification",
+  "iso_sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0",
+  "boot_id": "2e5c67bf-f3aa-4f1e-a264-68ce1e5628e9",
+  "completion_markers_and_logs": {
+    "/var/home/reader/.local/state/aven/iso-seed-v1.json": {
+      "sha256": "7c3127b0074c5bc5a511198b670c3efc33bf6eedd538a6d3f3d8cd10f0a77d2d",
+      "bytes": 165,
+      "mtime_ns": 1789475144420974454,
+      "uid": 1000,
+      "mode": "0o644",
+      "evidence_file": "evidence/verification/iso-candidate5/reader-iso-seed-v1.json",
+      "evidence_sha256": "7c3127b0074c5bc5a511198b670c3efc33bf6eedd538a6d3f3d8cd10f0a77d2d"
+    },
+    "/var/home/reader/.local/state/aven/iso-layout-v1.json": {
+      "sha256": "47e7f9f406e1e7158d237a6054c4e7f9c400d5e89dcd7ee86b4407e05d723cbb",
+      "bytes": 167,
+      "mtime_ns": 1789475149170531566,
+      "uid": 1000,
+      "mode": "0o644",
+      "evidence_file": "evidence/verification/iso-candidate5/reader-iso-layout-v1.json",
+      "evidence_sha256": "47e7f9f406e1e7158d237a6054c4e7f9c400d5e89dcd7ee86b4407e05d723cbb"
+    },
+    "/var/home/reader/.local/state/aven/iso-seed.log": {
+      "sha256": "7d8013364ef1f4c3a99baff4e4cdfa78e092c8efae320e257eddf179761a95b9",
+      "bytes": 7955,
+      "mtime_ns": 1789475144408881370,
+      "uid": 1000,
+      "mode": "0o644",
+      "evidence_file": "evidence/verification/iso-candidate5/reader-iso-seed.log",
+      "evidence_sha256": "7d8013364ef1f4c3a99baff4e4cdfa78e092c8efae320e257eddf179761a95b9"
+    },
+    "/var/home/reader/.local/state/aven/iso-layout.log": {
+      "sha256": "a95321ab232a938f72b32de1a50ebff35a4ffcd916a2d45571996c4b5800e667",
+      "bytes": 1385,
+      "mtime_ns": 1789475149160881370,
+      "uid": 1000,
+      "mode": "0o644",
+      "evidence_file": "evidence/verification/iso-candidate5/reader-iso-layout.log",
+      "evidence_sha256": "a95321ab232a938f72b32de1a50ebff35a4ffcd916a2d45571996c4b5800e667"
+    }
+  },
+  "places_ownership_records": {
+    "/var/home/reader/.local/state/aven/places/20260915T122549.146252Z-b42429f946c9.json": {
+      "sha256": "56930cf801871e2463cc310d8cb89a4de5d99b4bb19a31b876b2b859e63cec95",
+      "bytes": 2635,
+      "mtime_ns": 1789475149146468507,
+      "uid": 1000,
+      "mode": "0o400",
+      "evidence_file": "evidence/verification/iso-candidate5/places-20260915T122549.146252Z-b42429f946c9.json",
+      "evidence_sha256": "56930cf801871e2463cc310d8cb89a4de5d99b4bb19a31b876b2b859e63cec95"
+    }
+  },
+  "runtime_files": [
+    {
+      "source": "/var/lib/aven/source/preview/aven_preview/__init__.py",
+      "runtime": "/var/home/reader/.local/libexec/aven-preview/aven_preview/__init__.py",
+      "source_sha256": "0e28b1a87bcfa3e66bf7e2e9df4ef8a818f3e8fba1054d1ec579d24d55fb123b",
+      "runtime_sha256": "0e28b1a87bcfa3e66bf7e2e9df4ef8a818f3e8fba1054d1ec579d24d55fb123b",
+      "runtime_mtime_ns": 1789461168000000000,
+      "passed": true
+    },
+    {
+      "source": "/var/lib/aven/source/preview/aven_preview/__main__.py",
+      "runtime": "/var/home/reader/.local/libexec/aven-preview/aven_preview/__main__.py",
+      "source_sha256": "a67c172046323b0efcafe92cb83abc266d5dd4bc931d9312cde1b7bed50643db",
+      "runtime_sha256": "a67c172046323b0efcafe92cb83abc266d5dd4bc931d9312cde1b7bed50643db",
+      "runtime_mtime_ns": 1789461168000000000,
+      "passed": true
+    },
+    {
+      "source": "/var/lib/aven/source/preview/aven_preview/app.py",
+      "runtime": "/var/home/reader/.local/libexec/aven-preview/aven_preview/app.py",
+      "source_sha256": "99d794d2c9f148d164b979547dd839cd41906a5b219434a9f3cc21bf7366a695",
+      "runtime_sha256": "99d794d2c9f148d164b979547dd839cd41906a5b219434a9f3cc21bf7366a695",
+      "runtime_mtime_ns": 1789472527000000000,
+      "passed": true
+    },
+    {
+      "source": "/var/lib/aven/source/preview/aven_preview/core.py",
+      "runtime": "/var/home/reader/.local/libexec/aven-preview/aven_preview/core.py",
+      "source_sha256": "b306dc366dac719584fc1f65d8458fc94191a0e06e8d3938d87d7d8859ce74ca",
+      "runtime_sha256": "b306dc366dac719584fc1f65d8458fc94191a0e06e8d3938d87d7d8859ce74ca",
+      "runtime_mtime_ns": 1789450857000000000,
+      "passed": true
+    },
+    {
+      "source": "/var/lib/aven/source/browser/chrome/userChrome.css",
+      "runtime": "/var/home/reader/.local/share/aven/firefox/chrome/userChrome.css",
+      "source_sha256": "71d7ab00fe28e5ff0d9adf07f21136a5dd2c4bf9eedf164df695198c2c7dd040",
+      "runtime_sha256": "71d7ab00fe28e5ff0d9adf07f21136a5dd2c4bf9eedf164df695198c2c7dd040",
+      "runtime_mtime_ns": 1789450815000000000,
+      "passed": true
+    },
+    {
+      "source": "/var/lib/aven/source/mail/chrome/userChrome.css",
+      "runtime": "/var/home/reader/.local/share/aven/mail/default/chrome/userChrome.css",
+      "source_sha256": "51a8700fbc055724cbedf6768cd310b5ba01236a44059d3b34bae05155d53d20",
+      "runtime_sha256": "51a8700fbc055724cbedf6768cd310b5ba01236a44059d3b34bae05155d53d20",
+      "runtime_mtime_ns": 1789451029000000000,
+      "passed": true
+    },
+    {
+      "source": "/var/lib/aven/source/mail/chrome/userContent.css",
+      "runtime": "/var/home/reader/.local/share/aven/mail/default/chrome/userContent.css",
+      "source_sha256": "53b809d08cc8f7a6c149739fea0e24d4b32d8d121f038daca2921d8ca79351a9",
+      "runtime_sha256": "53b809d08cc8f7a6c149739fea0e24d4b32d8d121f038daca2921d8ca79351a9",
+      "runtime_mtime_ns": 1789452953000000000,
+      "passed": true
+    }
+  ],
+  "font_rules": {
+    "60-aven-families.conf": {
+      "active_sha256": "049a4febfe4e49c3ba6f44052e42f8164d7c37d20c96c8e36be9a1a29b667845",
+      "source_sha256": "049a4febfe4e49c3ba6f44052e42f8164d7c37d20c96c8e36be9a1a29b667845",
+      "matches_source": true
+    },
+    "99-aven-rendering.conf": {
+      "active_sha256": "81bc7c6ba7aa6beb635acacc24e309e511dccd567b2a0c8c758953af2ff4f66a",
+      "source_sha256": "81bc7c6ba7aa6beb635acacc24e309e511dccd567b2a0c8c758953af2ff4f66a",
+      "matches_source": true
+    }
+  },
+  "default_associations": [
+    {
+      "mime": "x-scheme-handler/http",
+      "expected": "org.mozilla.firefox.desktop",
+      "actual": "org.mozilla.firefox.desktop",
+      "passed": true
+    },
+    {
+      "mime": "x-scheme-handler/https",
+      "expected": "org.mozilla.firefox.desktop",
+      "actual": "org.mozilla.firefox.desktop",
+      "passed": true
+    },
+    {
+      "mime": "text/html",
+      "expected": "org.mozilla.firefox.desktop",
+      "actual": "org.mozilla.firefox.desktop",
+      "passed": true
+    },
+    {
+      "mime": "x-scheme-handler/mailto",
+      "expected": "net.thunderbird.Thunderbird.desktop",
+      "actual": "net.thunderbird.Thunderbird.desktop",
+      "passed": true
+    },
+    {
+      "mime": "message/rfc822",
+      "expected": "net.thunderbird.Thunderbird.desktop",
+      "actual": "net.thunderbird.Thunderbird.desktop",
+      "passed": true
+    },
+    {
+      "mime": "image/jpeg",
+      "expected": "org.kde.gwenview.desktop",
+      "actual": "org.kde.gwenview.desktop",
+      "passed": true
+    },
+    {
+      "mime": "image/png",
+      "expected": "org.kde.gwenview.desktop",
+      "actual": "org.kde.gwenview.desktop",
+      "passed": true
+    },
+    {
+      "mime": "image/webp",
+      "expected": "org.kde.gwenview.desktop",
+      "actual": "org.kde.gwenview.desktop",
+      "passed": true
+    },
+    {
+      "mime": "image/avif",
+      "expected": "org.kde.gwenview.desktop",
+      "actual": "org.kde.gwenview.desktop",
+      "passed": true
+    },
+    {
+      "mime": "image/tiff",
+      "expected": "org.kde.gwenview.desktop",
+      "actual": "org.kde.gwenview.desktop",
+      "passed": true
+    },
+    {
+      "mime": "application/pdf",
+      "expected": "org.kde.okular.desktop",
+      "actual": "org.kde.okular.desktop",
+      "passed": true
+    },
+    {
+      "mime": "inode/directory",
+      "expected": "org.kde.dolphin.desktop",
+      "actual": "org.kde.dolphin.desktop",
+      "passed": true
+    }
+  ],
+  "source_inventory_report": "evidence/verification/iso-candidate5/installed-source-and-first-login.json",
+  "source_inventory_report_sha256": "c12a52f0ba3b54f7363ac3ea32e1d7081a0be6121f0784adbfad63c961e64d65",
+  "comparison_contract": [
+    "Second boot must have a different kernel boot ID.",
+    "Completion-marker bytes and modification times should be unchanged; phase logs should not grow.",
+    "Profile runtime code/styles and font rules must retain hashes unless a separately documented authorized change occurred.",
+    "Native Places metadata may legitimately be updated by application activity; compare owned flags and preserved user-data volume, not only whole-XBEL bytes.",
+    "First launch legitimately adds browser/mail preferences; whole application profile hashes are not an acceptance condition."
+  ],
+  "second_boot_verified": null
+}

@@ -1,0 +1,6 @@
+{
+  "requested": "https://www.mozilla.org/zh-CN/firefox/",
+  "native_address_bar": "https://www.firefox.com/zh-CN/",
+  "observed": "Official Firefox Chinese page rendered after native redirect; no certificate override; dismissed native translation prompt and session hint only",
+  "guest_network": "online on second disk-only boot"
+}

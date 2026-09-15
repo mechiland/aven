@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "comparison": [
+    {
+      "part": "000",
+      "candidate4_sha256": "03dd800a12cdbc527830d6a5e33ff3b84a653227ed8daf8c9c6435edc6f6674f",
+      "candidate5_sha256": "8976b165ba52c9f5af5ec0738cb1775745a3f65810c220445589d98cda8499e9",
+      "candidate4_bytes": 1992294400,
+      "candidate5_bytes": 1992294400,
+      "identical": false
+    },
+    {
+      "part": "001",
+      "candidate4_sha256": "223f14d7dbc9b5548889764f1eb356f682ea5d93b6616730e99f1499cf446fd1",
+      "candidate5_sha256": "223f14d7dbc9b5548889764f1eb356f682ea5d93b6616730e99f1499cf446fd1",
+      "candidate4_bytes": 1992294400,
+      "candidate5_bytes": 1992294400,
+      "identical": true
+    },
+    {
+      "part": "002",
+      "candidate4_sha256": "a17cf2e87d843a286532d5725ee55530330fa133d21784c2f5f2dc7272b33dac",
+      "candidate5_sha256": "a17cf2e87d843a286532d5725ee55530330fa133d21784c2f5f2dc7272b33dac",
+      "candidate4_bytes": 1992294400,
+      "candidate5_bytes": 1992294400,
+      "identical": true
+    },
+    {
+      "part": "003",
+      "candidate4_sha256": "6b41bd0110feae0d55097e8abb91768963723aae9ef7d45222f95243b7b9d799",
+      "candidate5_sha256": "2bdee07bb5713abf4c6b1a2a7dd37f29f744388fafd9633d9454c24aa33021bd",
+      "candidate4_bytes": 1913192448,
+      "candidate5_bytes": 1913192448,
+      "identical": false
+    }
+  ]
+}

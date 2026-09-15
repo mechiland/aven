@@ -790,28 +790,5 @@
       }
     ]
   },
-  "boot_install_verified": true,
-  "verification": {
-    "candidate": "candidate5",
-    "accepted_for_prototype_release": true,
-    "verified_at": "2026-09-15T13:27:07.602753+00:00",
-    "report": "docs/ISO-VERIFICATION.md",
-    "critic_report": "docs/critic-iso-candidate5.md",
-    "bios_boot": true,
-    "uefi_boot": true,
-    "public_offline_install": true,
-    "native_first_user_setup": true,
-    "automatic_first_login_profile": true,
-    "second_disk_only_boot": true,
-    "native_preview_handoffs": 3,
-    "focused_application_smoke": true,
-    "reconstructed_iso_hash_verified": true,
-    "visual_scope": "Installed candidate5 at 1x; full fractional-scale and motion reruns not performed.",
-    "visual_overall": 8.266666666666667,
-    "chinese_typography": 8.5,
-    "three_second_differentiation": true,
-    "physical_hardware": null,
-    "secure_boot": null,
-    "live_rollback": null
-  }
+  "boot_install_verified": false
 }

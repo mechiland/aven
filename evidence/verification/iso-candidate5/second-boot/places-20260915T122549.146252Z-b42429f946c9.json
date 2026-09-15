@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "component": "aven-places",
+  "created_at": "2026-09-15T12:25:49.146252+00:00",
+  "target": ".local/share/user-places.xbel",
+  "before_sha256": "fee2d6c2734fa7eb083fe6aa8ca2462410268f47f748ffb2e909c607af96234e",
+  "after_sha256": "74a7be2fa0917568a74cb185ebe987ad2d61aa3817c9548028615076247cc640",
+  "changes": [
+    {
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "file:///var/home/reader/Desktop",
+        "title": "Desktop",
+        "id": "1789475147/1"
+      },
+      "previous_is_hidden": {
+        "present": false,
+        "value": null
+      },
+      "applied_is_hidden": "true",
+      "entry_created": false
+    },
+    {
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "file:///var/home/reader/Music",
+        "title": "Music",
+        "id": "1789475147/6"
+      },
+      "previous_is_hidden": {
+        "present": false,
+        "value": null
+      },
+      "applied_is_hidden": "true",
+      "entry_created": false
+    },
+    {
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "file:///var/home/reader/Videos",
+        "title": "Videos",
+        "id": "1789475147/8"
+      },
+      "previous_is_hidden": {
+        "present": false,
+        "value": null
+      },
+      "applied_is_hidden": "true",
+      "entry_created": false
+    },
+    {
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "recentlyused:/locations",
+        "title": "Recent Locations",
+        "id": "1789475147/10"
+      },
+      "previous_is_hidden": {
+        "present": false,
+        "value": null
+      },
+      "applied_is_hidden": "true",
+      "entry_created": false
+    },
+    {
+      "kind": "system-device",
+      "identifiers": {
+        "udi": "/org/kde/fstab/overlay/",
+        "uuid": ""
+      },
+      "previous_is_hidden": {
+        "present": false,
+        "value": null
+      },
+      "applied_is_hidden": "true",
+      "entry_created": true
+    },
+    {
+      "kind": "system-device",
+      "identifiers": {
+        "udi": "/org/freedesktop/UDisks2/block_devices/vda1",
+        "uuid": "5019-1319"
+      },
+      "previous_is_hidden": {
+        "present": false,
+        "value": null
+      },
+      "applied_is_hidden": "true",
+      "entry_created": true
+    },
+    {
+      "kind": "system-device",
+      "identifiers": {
+        "udi": "/org/freedesktop/UDisks2/block_devices/vda2",
+        "uuid": "8b79eb93-26f3-4c19-8917-a826fd267180"
+      },
+      "previous_is_hidden": {
+        "present": false,
+        "value": null
+      },
+      "applied_is_hidden": "true",
+      "entry_created": true
+    }
+  ]
+}

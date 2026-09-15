@@ -1,0 +1,109 @@
+{
+  "runtime_checks": [
+    {
+      "source": "/var/lib/aven/source/preview/aven_preview/__init__.py",
+      "runtime": "/var/home/reader/.local/libexec/aven-preview/aven_preview/__init__.py",
+      "source_sha256": "0e28b1a87bcfa3e66bf7e2e9df4ef8a818f3e8fba1054d1ec579d24d55fb123b",
+      "runtime_sha256": "0e28b1a87bcfa3e66bf7e2e9df4ef8a818f3e8fba1054d1ec579d24d55fb123b",
+      "runtime_mtime_ns": 1789461168000000000,
+      "passed": true
+    },
+    {
+      "source": "/var/lib/aven/source/preview/aven_preview/__main__.py",
+      "runtime": "/var/home/reader/.local/libexec/aven-preview/aven_preview/__main__.py",
+      "source_sha256": "a67c172046323b0efcafe92cb83abc266d5dd4bc931d9312cde1b7bed50643db",
+      "runtime_sha256": "a67c172046323b0efcafe92cb83abc266d5dd4bc931d9312cde1b7bed50643db",
+      "runtime_mtime_ns": 1789461168000000000,
+      "passed": true
+    },
+    {
+      "source": "/var/lib/aven/source/preview/aven_preview/app.py",
+      "runtime": "/var/home/reader/.local/libexec/aven-preview/aven_preview/app.py",
+      "source_sha256": "99d794d2c9f148d164b979547dd839cd41906a5b219434a9f3cc21bf7366a695",
+      "runtime_sha256": "99d794d2c9f148d164b979547dd839cd41906a5b219434a9f3cc21bf7366a695",
+      "runtime_mtime_ns": 1789472527000000000,
+      "passed": true
+    },
+    {
+      "source": "/var/lib/aven/source/preview/aven_preview/core.py",
+      "runtime": "/var/home/reader/.local/libexec/aven-preview/aven_preview/core.py",
+      "source_sha256": "b306dc366dac719584fc1f65d8458fc94191a0e06e8d3938d87d7d8859ce74ca",
+      "runtime_sha256": "b306dc366dac719584fc1f65d8458fc94191a0e06e8d3938d87d7d8859ce74ca",
+      "runtime_mtime_ns": 1789450857000000000,
+      "passed": true
+    },
+    {
+      "source": "/var/lib/aven/source/browser/chrome/userChrome.css",
+      "runtime": "/var/home/reader/.local/share/aven/firefox/chrome/userChrome.css",
+      "source_sha256": "71d7ab00fe28e5ff0d9adf07f21136a5dd2c4bf9eedf164df695198c2c7dd040",
+      "runtime_sha256": "71d7ab00fe28e5ff0d9adf07f21136a5dd2c4bf9eedf164df695198c2c7dd040",
+      "runtime_mtime_ns": 1789450815000000000,
+      "passed": true
+    },
+    {
+      "source": "/var/lib/aven/source/mail/chrome/userChrome.css",
+      "runtime": "/var/home/reader/.local/share/aven/mail/default/chrome/userChrome.css",
+      "source_sha256": "51a8700fbc055724cbedf6768cd310b5ba01236a44059d3b34bae05155d53d20",
+      "runtime_sha256": "51a8700fbc055724cbedf6768cd310b5ba01236a44059d3b34bae05155d53d20",
+      "runtime_mtime_ns": 1789451029000000000,
+      "passed": true
+    },
+    {
+      "source": "/var/lib/aven/source/mail/chrome/userContent.css",
+      "runtime": "/var/home/reader/.local/share/aven/mail/default/chrome/userContent.css",
+      "source_sha256": "53b809d08cc8f7a6c149739fea0e24d4b32d8d121f038daca2921d8ca79351a9",
+      "runtime_sha256": "53b809d08cc8f7a6c149739fea0e24d4b32d8d121f038daca2921d8ca79351a9",
+      "runtime_mtime_ns": 1789452953000000000,
+      "passed": true
+    }
+  ],
+  "runtime_checks_passed": true,
+  "qt_version": "6.11.2",
+  "versions": {
+    "argv": [
+      "rpm",
+      "-q",
+      "--qf",
+      "%{NAME}\t%{VERSION}-%{RELEASE}\n",
+      "plasma-workspace",
+      "kwin",
+      "dolphin",
+      "firefox",
+      "thunderbird",
+      "gwenview",
+      "okular",
+      "qt6-qtbase",
+      "qt6-qtwayland",
+      "python3-pyside6"
+    ],
+    "exit_code": 0,
+    "stdout": "plasma-workspace\t6.7.5-1.fc44\nkwin\t6.7.5-1.fc44\ndolphin\t26.08.1-1.fc44\nfirefox\t155.0-1.fc44\nthunderbird\t153.0.2-2.fc44\ngwenview\t26.08.1-1.fc44\nokular\t26.08.1-1.fc44\nqt6-qtbase\t6.11.2-2.fc44\nqt6-qtwayland\t6.11.2-1.fc44\npython3-pyside6\t6.11.2-1.fc44\n",
+    "stderr": ""
+  },
+  "mounts": {
+    "argv": [
+      "findmnt",
+      "--json",
+      "--output",
+      "SOURCE,TARGET,FSTYPE,OPTIONS"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n   \"filesystems\": [\n      {\n         \"source\": \"composefs\",\n         \"target\": \"/\",\n         \"fstype\": \"overlay\",\n         \"options\": \"ro,relatime,seclabel,lowerdir+=/run/ostree/.private/cfsroot-lower,datadir+=/sysroot/ostree/repo/objects,redirect_dir=on,metacopy=on\",\n         \"children\": [\n            {\n               \"source\": \"devtmpfs\",\n               \"target\": \"/dev\",\n               \"fstype\": \"devtmpfs\",\n               \"options\": \"rw,nosuid,seclabel,size=2876516k,nr_inodes=719129,mode=755,inode64\",\n               \"children\": [\n                  {\n                     \"source\": \"hugetlbfs\",\n                     \"target\": \"/dev/hugepages\",\n                     \"fstype\": \"hugetlbfs\",\n                     \"options\": \"rw,nosuid,nodev,relatime,seclabel,pagesize=2M\"\n                  },{\n                     \"source\": \"mqueue\",\n                     \"target\": \"/dev/mqueue\",\n                     \"fstype\": \"mqueue\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime,seclabel\"\n                  },{\n                     \"source\": \"tmpfs\",\n                     \"target\": \"/dev/shm\",\n                     \"fstype\": \"tmpfs\",\n                     \"options\": \"rw,nosuid,nodev,seclabel,inode64,usrquota\"\n                  },{\n                     \"source\": \"devpts\",\n                     \"target\": \"/dev/pts\",\n                     \"fstype\": \"devpts\",\n                     \"options\": \"rw,nosuid,noexec,relatime,seclabel,gid=5,mode=600,ptmxmode=000\"\n                  }\n               ]\n            },{\n               \"source\": \"/dev/vda3[/root/ostree/deploy/fedora/deploy/37fc46fea2b1059cdbc35c4ff88a2b40ede7fcc105cca76693f11cc4cdffd551.0/etc]\",\n               \"target\": \"/etc\",\n               \"fstype\": \"btrfs\",\n               \"options\": \"rw,relatime,seclabel,discard=async,space_cache=v2,subvolid=258,subvol=/root\"\n            },{\n               \"source\": \"/dev/vda3[/root]\",\n               \"target\": \"/sysroot\",\n               \"fstype\": \"btrfs\",\n               \"options\": \"ro,relatime,seclabel,discard=async,space_cache=v2,subvolid=258,subvol=/root\",\n               \"children\": [\n                  {\n                     \"source\": \"/dev/vda3[/root/ostree/deploy/fedora/var]\",\n                     \"target\": \"/sysroot/ostree/deploy/fedora/var\",\n                     \"fstype\": \"btrfs\",\n                     \"options\": \"rw,relatime,seclabel,discard=async,space_cache=v2,subvolid=258,subvol=/root\"\n                  }\n               ]\n            },{\n               \"source\": \"sysfs\",\n               \"target\": \"/sys\",\n               \"fstype\": \"sysfs\",\n               \"options\": \"rw,nosuid,nodev,noexec,relatime,seclabel\",\n               \"children\": [\n                  {\n                     \"source\": \"selinuxfs\",\n                     \"target\": \"/sys/fs/selinux\",\n                     \"fstype\": \"selinuxfs\",\n                     \"options\": \"rw,nosuid,noexec,relatime\"\n                  },{\n                     \"source\": \"tracefs\",\n                     \"target\": \"/sys/kernel/tracing\",\n                     \"fstype\": \"tracefs\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime,seclabel\"\n                  },{\n                     \"source\": \"fusectl\",\n                     \"target\": \"/sys/fs/fuse/connections\",\n                     \"fstype\": \"fusectl\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime\"\n                  },{\n                     \"source\": \"debugfs\",\n                     \"target\": \"/sys/kernel/debug\",\n                     \"fstype\": \"debugfs\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime,seclabel\"\n                  },{\n                     \"source\": \"securityfs\",\n                     \"target\": \"/sys/kernel/security\",\n                     \"fstype\": \"securityfs\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime\"\n                  },{\n                     \"source\": \"cgroup2\",\n                     \"target\": \"/sys/fs/cgroup\",\n                     \"fstype\": \"cgroup2\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime,seclabel,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting\"\n                  },{\n                     \"source\": \"none\",\n                     \"target\": \"/sys/fs/pstore\",\n                     \"fstype\": \"pstore\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime,seclabel\"\n                  },{\n                     \"source\": \"efivarfs\",\n                     \"target\": \"/sys/firmware/efi/efivars\",\n                     \"fstype\": \"efivarfs\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime\"\n                  },{\n                     \"source\": \"bpf\",\n                     \"target\": \"/sys/fs/bpf\",\n                     \"fstype\": \"bpf\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime,mode=700\"\n                  },{\n                     \"source\": \"configfs\",\n                     \"target\": \"/sys/kernel/config\",\n                     \"fstype\": \"configfs\",\n                     \"options\": \"rw,nosuid,nodev,noexec,relatime\"\n                  }\n               ]\n            },{\n               \"source\": \"proc\",\n               \"target\": \"/proc\",\n               \"fstype\": \"proc\",\n               \"options\": \"rw,nosuid,nodev,noexec,relatime\",\n               \"children\": [\n                  {\n                     \"source\": \"systemd-1\",\n                     \"target\": \"/proc/sys/fs/binfmt_misc\",\n                     \"fstype\": \"autofs\",\n                     \"options\": \"rw,relatime,fd=41,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=8679\",\n                     \"children\": [\n                        {\n                           \"source\": \"binfmt_misc\",\n                           \"target\": \"/proc/sys/fs/binfmt_misc\",\n                           \"fstype\": \"binfmt_misc\",\n                           \"options\": \"rw,nosuid,nodev,noexec,relatime\"\n                        }\n                     ]\n                  }\n               ]\n            },{\n               \"source\": \"tmpfs\",\n               \"target\": \"/run\",\n               \"fstype\": \"tmpfs\",\n               \"options\": \"rw,nosuid,nodev,seclabel,size=1209384k,nr_inodes=819200,mode=755,inode64\",\n               \"children\": [\n                  {\n                     \"source\": \"none\",\n                     \"target\": \"/run/credentials/systemd-journald.service\",\n                     \"fstype\": \"tmpfs\",\n                     \"options\": \"ro,nosuid,nodev,noexec,relatime,nosymfollow,seclabel,size=1024k,nr_inodes=1024,mode=700,inode64,noswap\"\n                  },{\n                     \"source\": \"none\",\n                     \"target\": \"/run/credentials/systemd-resolved.service\",\n                     \"fstype\": \"tmpfs\",\n                     \"options\": \"ro,nosuid,nodev,noexec,relatime,nosymfollow,seclabel,size=1024k,nr_inodes=1024,mode=700,inode64,noswap\"\n                  },{\n                     \"source\": \"tmpfs\",\n                     \"target\": \"/run/user/1000\",\n                     \"fstype\": \"tmpfs\",\n                     \"options\": \"rw,nosuid,nodev,relatime,seclabel,size=604688k,nr_inodes=151172,mode=700,uid=1000,gid=1000,inode64\",\n                     \"children\": [\n                        {\n                           \"source\": \"portal\",\n                           \"target\": \"/run/user/1000/doc\",\n                           \"fstype\": \"fuse.portal\",\n                           \"options\": \"rw,nosuid,nodev,relatime,user_id=1000,group_id=1000\"\n                        }\n                     ]\n                  },{\n                     \"source\": \"tmpfs\",\n                     \"target\": \"/run/user/0\",\n                     \"fstype\": \"tmpfs\",\n                     \"options\": \"rw,nosuid,nodev,relatime,seclabel,size=604688k,nr_inodes=151172,mode=700,inode64\"\n                  }\n               ]\n            },{\n               \"source\": \"tmpfs\",\n               \"target\": \"/tmp\",\n               \"fstype\": \"tmpfs\",\n               \"options\": \"rw,nosuid,nodev,seclabel,size=3023456k,nr_inodes=1048576,inode64,usrquota\"\n            },{\n               \"source\": \"/dev/vda3[/var]\",\n               \"target\": \"/var\",\n               \"fstype\": \"btrfs\",\n               \"options\": \"rw,relatime,seclabel,discard=async,space_cache=v2,subvolid=256,subvol=/var\",\n               \"children\": [\n                  {\n                     \"source\": \"/dev/vda3[/home]\",\n                     \"target\": \"/var/home\",\n                     \"fstype\": \"btrfs\",\n                     \"options\": \"rw,relatime,seclabel,discard=async,space_cache=v2,subvolid=257,subvol=/home\"\n                  },{\n                     \"source\": \"sunrpc\",\n                     \"target\": \"/var/lib/nfs/rpc_pipefs\",\n                     \"fstype\": \"rpc_pipefs\",\n                     \"options\": \"rw,relatime\"\n                  }\n               ]\n            },{\n               \"source\": \"/dev/vda2\",\n               \"target\": \"/boot\",\n               \"fstype\": \"ext4\",\n               \"options\": \"rw,relatime,seclabel\",\n               \"children\": [\n                  {\n                     \"source\": \"/dev/vda1\",\n                     \"target\": \"/boot/efi\",\n                     \"fstype\": \"vfat\",\n                     \"options\": \"rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=winnt,errors=remount-ro\"\n                  }\n               ]\n            }\n         ]\n      }\n   ]\n}\n",
+    "stderr": ""
+  },
+  "kernel": {
+    "argv": [
+      "uname",
+      "-r"
+    ],
+    "exit_code": 0,
+    "stdout": "7.2.5-200.fc44.x86_64\n",
+    "stderr": ""
+  },
+  "boot_id": "37806618-6973-4c46-ad8c-4743e2db8318",
+  "schema_version": 1,
+  "host_collected_at": "2026-09-15T13:04:46.967851+00:00",
+  "observer": "/root/verification",
+  "probe_sha256": "4aa730f6f5d380eae0cbba9f10bdf2f99c48a6d33d690b0ed6bfe46160aec2b5",
+  "method": "Read-only reader SSH stream, same supplemental probe as first boot."
+}

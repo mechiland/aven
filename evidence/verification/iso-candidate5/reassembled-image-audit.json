@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "observer": "/root/verification",
+  "audited_at": "2026-09-15T13:11:07.096251+00:00",
+  "path": ".cache/iso-candidates/candidate5-reassembled/Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso",
+  "bytes": 7890075648,
+  "sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0",
+  "expected_sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0",
+  "reassembly_execution_attributed_to": "integrator/packaging agent",
+  "independently_rehashed": true,
+  "passed": true,
+  "release_publication_verified": null
+}

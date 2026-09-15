@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "inspected_at": "2026-09-15T13:15:28.864643+00:00",
+  "iso_sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0",
+  "observer": "/root/verification",
+  "native_operator": "/root",
+  "guest_runtime_patched": false,
+  "inspection_method": "Original-resolution native screenshots inspected individually. Native input sequences are attributed to the integrator. Independent read-only second-boot file hashes and mbox content separately corroborate persisted results.",
+  "frames": [
+    {
+      "image": "evidence/verification/iso-candidate5/files-sc-grid.png",
+      "sha256": "dcf5de6ac4275668eb54cc2b56195a3e08714c58bb3ef49e9b038e6b228d8e3d",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Dolphin SC grid renders 12 mixed files, image/WebM/PDF thumbnails and mixed Chinese/Latin names; Earthrise selection outline visible."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/files-sc-list-after-grid.png",
+      "sha256": "0283761a8b8fda71c0220e8eed40247d3d245375deee5660460d43ed5288b492",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Same mixed folder appears in SC detailed list, with thumbnails, sizes and modified times; no missing rows apparent."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/files-copy-downloads.png",
+      "sha256": "62e723a5626878a503fd904c25974ab1fb0a2a825a0477e34894432d51eaeedc",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Native Downloads selected in TC Places; copied 旅行清单.txt is selected and displayed as 160 B."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/files-renamed-moved.png",
+      "sha256": "4c94d478d889b2adcacd5dccc2a0e41c6348ab58e54b3f80cbc686bda5438c8b",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Native Documents selected; ISO-copy.txt is selected and displayed as 160 B alongside the original fixture folder."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/files-trash-item.png",
+      "sha256": "9d8ee78dc455613d9c6cf3cf798dd45ba5f95dd2e7d5802d470e53d102c8a028",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Native Trash contains ISO-copy.txt, original path /var/home/reader/Documents, status 1 file / 160 B."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/browser-sc.png",
+      "sha256": "55bfa668b9734c4a5eb85a106d512775cf9df3e0863cfcaf0f9924f27b4b2b49",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Firefox displays the local SC City Notes fixture including several real paragraphs, mixed Latin/numbers/currency and punctuation."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/browser-download.png",
+      "sha256": "a3555088394776330a581456d4c67b02629a8e28c21a53b3cd91a848ad96c225",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Firefox native download popover reports 周末路线.txt Completed — 428 bytes over the TC paragraph fixture."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/browser-native-picker.png",
+      "sha256": "4c716b661199d105cb4d6c50e85f956c5b2fea153a3e1697983b4ba92daea439",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Firefox opens the native KDE file chooser, with coherent Places and image file type filter; original frame is before selection."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/browser-picker-selected.png",
+      "sha256": "105bee500b5b9b41a569a35c9bfa40b412a3ff2d9eb0855ccdee82717537fe2f",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Chooser has returned to the TC page; the local input displays the selected waterfall JPEG basename, with no upload action."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/browser-https-initial.png",
+      "sha256": "cb0157d67a5a55e7dc548cb0397f33e5ff48d599ff992b0ced9131e4a47661e9",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Official Firefox Chinese page rendered; native first translation popover and restore-session hint still visible."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/browser-https.png",
+      "sha256": "bf10e571d21f41fc1048b5f5eef03747e9cc754620b6d94be3c58e3a5c0b25ee",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Official Firefox Chinese page is rendered at www.firefox.com/zh-CN after native redirect; translation popup and session hint have been dismissed. No certificate warning visible."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/mail-draft-reopened.png",
+      "sha256": "1b88357057472f02718557077ecd09f7884f00e5f891bd4f6678991f235c2e94",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Native Thunderbird composer contains the saved added sentence 补充：路线已经核对，周六见。 beneath the original Chinese reply and signature."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/mail-compose-wrapped.png",
+      "sha256": "8f34e2240834ebc568b19bf0dafd20bcd1caf80712a37c8e16fbf7ee0d0e3019",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "At narrow outer width the SC paragraph wraps with clear line separation; saved additional sentence and signature remain visible."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/mail-tc.png",
+      "sha256": "75db06b46051d08a1c2718d0b3912b30a1d46854764825989eb73da58afc2465",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Thunderbird local Inbox has four fixture messages; TC message 關於週六的展覽與午餐 displays complete paragraphs, punctuation and Latin/time runs."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/preview-text-sc.png",
+      "sha256": "643403c71cb96119f477cfea21eb458cb4618ca3fadd46c36e32536401a7eadf",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Aven lightweight preview displays the SC/Latin text file with paragraphs, punctuation, currency, paths and emoji; native SC Dolphin remains behind."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/preview-text-tc.png",
+      "sha256": "3ae7eba9c5a30d5b4c7b2cbf5fbc8145e9d5ef64af96e322cea891a083731f06",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Aven lightweight preview displays the TC/Latin text file with paragraphs, punctuation, currency and emoji; TC UI remains visible."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/preview-pdf.png",
+      "sha256": "b435979e35210170586000bb7d321655c773698b32fff0bad3bc01818d136805",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Lightweight preview renders the Weekend walk PDF page with heading, paragraphs and table; native Open control present."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/preview-image.png",
+      "sha256": "35a36b7336aeb2244d74b8513d731dac64f8bcb0c7ad070f54a41c9bf3fe3f96",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Lightweight preview renders the waterfall JPEG upright with labeled orientation marker and native Open control."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/preview-media-playing.png",
+      "sha256": "1aef94a80aa3010ac01b7169f29bd6b1aa8bb865bd7c8ffa07522a4d4603e719",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "WebM preview renders a flower frame and shows Pause control, seek position 0:02 of 0:05."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/preview-media-paused.png",
+      "sha256": "cb36b3a4c355eb621dfcafaa70457465f9d40a96935eac36970ed8399f34fb3a",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "WebM preview shows a different flower frame, Play control and 0:00 of 0:05; this pair establishes visible states, not frame pacing."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/photos-grid.png",
+      "sha256": "933096cea5d0dcbae3c81bf41e8afe02e53eb2342e10ed96178a5d8d6a9ea4dc",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Gwenview native Browse displays all eight album thumbnails with Chinese names and the first image selected."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/photos-next.png",
+      "sha256": "e426dcbbd82827a24283a55128de2d9316547a685257de5a66541564ba48d596",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Gwenview native View displays image 02-湖畔树林 at 73%, status image 2 of 8 and matching filmstrip selection."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/photos-fullscreen.png",
+      "sha256": "b46426a750783a8f21a01c6d4c266b7e168c0629c590f3e09d99b3c429ae3d9c",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Gwenview native fullscreen displays image 01-春日小径 without desktop chrome, with its own top filmstrip/exit controls."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/photos-river-exact.png",
+      "sha256": "02966f6f79ec2f80820c505039bbc5bddae710ade82ce6398a75c794c1867de2",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Gwenview displays exact 06-山间河流 fixture, image 6 of 8 at 73%, with matching filmstrip selection."
+    }
+  ],
+  "operator_checks": [
+    {
+      "path": "evidence/verification/iso-candidate5/files-copy-check.json",
+      "sha256": "33ea1fb4083f9878ef393cc733be6379851c370d557138fdc9fc17cf39d2098d",
+      "native_operator_and_initial_state_checker": "/root",
+      "reviewed_by": "/root/verification",
+      "contents": {
+        "copied": true,
+        "bytes": 160,
+        "sha256": "24f37943e05a3114a979ade1c4b0ed1c46e4057975fccd6f9ac09743d32c104b"
+      }
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/files-rename-move-check.json",
+      "sha256": "d51d8220b3447e82c5f2ba90ea587e6139dc52ab57733b39754773df20c7c369",
+      "native_operator_and_initial_state_checker": "/root",
+      "reviewed_by": "/root/verification",
+      "contents": {
+        "renamed_and_moved": true,
+        "sha256": "24f37943e05a3114a979ade1c4b0ed1c46e4057975fccd6f9ac09743d32c104b"
+      }
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/files-trash-check.json",
+      "sha256": "0291b67397bd8cf3ede469845635831f9e21f8a62ec731d8833e717f65d6f898",
+      "native_operator_and_initial_state_checker": "/root",
+      "reviewed_by": "/root/verification",
+      "contents": {
+        "trashed": true,
+        "original_preserved": true,
+        "sha256": "24f37943e05a3114a979ade1c4b0ed1c46e4057975fccd6f9ac09743d32c104b"
+      }
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/browser-download-check.json",
+      "sha256": "0a78980d76220f72fc9e30021d4207919b96d571fbf35ee05e256f498b1fca1b",
+      "native_operator_and_initial_state_checker": "/root",
+      "reviewed_by": "/root/verification",
+      "contents": {
+        "download_matches": true,
+        "bytes": 428,
+        "sha256": "4372c686ff8ad721173bb63d024a3c685b0d12b0f14f0942d09598a336ef6fee"
+      }
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/mail-draft-check.json",
+      "sha256": "7219480f60f6da6b15d71b1e3a6e8cd35077b4afef89a22d615482a75e3464fd",
+      "native_operator_and_initial_state_checker": "/root",
+      "reviewed_by": "/root/verification",
+      "contents": {
+        "draft_saved_and_reopened": true,
+        "mail_sent": false,
+        "items": [
+          {
+            "has_saved_text": false,
+            "subject": "Re: =?utf-8?b?5ZGo5pyr55qE54Wn54mH5LiO5LiL5LiA5qyh5pWj5q2l?="
+          },
+          {
+            "has_saved_text": true,
+            "subject": "=?UTF-8?B?UmU6IOWRqOacq+eahOeFp+eJh+S4juS4i+S4gOasoeaVo+atpQ==?="
+          }
+        ],
+        "mbox_sha256": "27be043ae29fa2319124056455850523b82c0ce36fca2935c99c5f0cc068a8ff"
+      }
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/browser-https-navigation.json",
+      "sha256": "528e7762a88b25847473e202a2dfd39dcb3d26ec5aa1d8ae66b0404f0f031e9f",
+      "native_operator_and_initial_state_checker": "/root",
+      "reviewed_by": "/root/verification",
+      "contents": {
+        "requested": "https://www.mozilla.org/zh-CN/firefox/",
+        "native_address_bar": "https://www.firefox.com/zh-CN/",
+        "observed": "Official Firefox Chinese page rendered after native redirect; no certificate override; dismissed native translation prompt and session hint only",
+        "guest_network": "online on second disk-only boot"
+      }
+    }
+  ],
+  "independent_second_boot_checks": {
+    "files_original_and_trashed_copy_same_160B": true,
+    "moved_file_absent_from_Documents": true,
+    "download_exact_428B": true,
+    "draft_same_mbox_after_second_boot": true
+  },
+  "independent_second_boot_evidence": {
+    "path": "evidence/verification/iso-candidate5/second-boot/operations-persistence.json",
+    "sha256": "77c5ae1808178fa5c0013a045a38d06099ebd26dfd93200cfbcbf8483817d9c8"
+  },
+  "scope": [
+    "Dolphin mixed-file list/grid, thumbnails and selection; copy/rename/move/trash result states.",
+    "Firefox SC/TC local reading, download, native chooser return, and real HTTPS Chinese page after redirect.",
+    "Thunderbird local SC/TC reading and native draft edit/save/reopen including narrow wrapped text.",
+    "Gwenview eight-photo browse, image view/next, fullscreen and exact river fixture.",
+    "Lightweight image/PDF/text/media visible preview states; three native handoffs independently reviewed in preview-handoff-review.json."
+  ],
+  "smoke_review_passed": true,
+  "limitations": [
+    "Fresh ISO smoke review does not rerun every historical 17-operation or six-motion sequence. Restore from Trash, live mail send/receive, and physical frame pacing are not established here.",
+    "Input actions were operated by the integrator; independent verification inspects resulting original frames and read-only persisted state.",
+    "Mail uses isolated local demonstration profile c5-demo with example.invalid addresses. No messages sent. Browser local file input has no upload handler.",
+    "Real HTTPS navigation is attributed to the native operator and visibly rendered official page; this is not a TLS security audit.",
+    "No new typography/polish score or fractional-scale result is assigned by this smoke report; the critic maintains separate judgment."
+  ],
+  "visual_scores": null,
+  "iso_boot_install_accepted": null
+}

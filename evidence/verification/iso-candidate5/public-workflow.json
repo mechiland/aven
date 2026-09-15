@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "iso_sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0",
+  "bios_optical_boot": true,
+  "uefi_optical_boot": true,
+  "installation_method": "Public ISO booted through UEFI optical firmware; native Anaconda GUI; no private Kickstart or external kernel/initrd",
+  "test_disk": ".cache/iso-test/public-candidate5.qcow2",
+  "network": "QEMU restrict=on; guestinternetblocked",
+  "selected_storage": "Only fresh48GiB Virtio disk; automaticpartitioning",
+  "locale": "en_US.UTF-8",
+  "keyboard": "us",
+  "timezone": "Asia/Shanghai",
+  "clock_selection": "Manual date/time after native timezone selection; displayed20:05 local leftunchanged, no date/time value edit",
+  "account_creation": "completed through native first-user setup",
+  "installation": "complete",
+  "host_updated_at": "2026-09-15T12:16:07.901942+00:00",
+  "first_disk_boot": {
+    "iso_attached": false,
+    "uefi": true,
+    "rtc": "base=localtime to match installed LOCAL",
+    "network": "restrict=on"
+  },
+  "first_user_setup": "Native Plasma Setup completed; reader administrator with private password entered through masked fields; no preseeded user",
+  "first_login": "Native password login, Welcome Center skipped, Aven desktop and focused Places applied automatically before SSH or fixtures",
+  "private_instrumentation": "After first-desktop.png and first-dolphin-home.png, private SSH public key added through password-authenticated sudo; no profile repair",
+  "fixtures": "After untouched first-desktop and first-dolphin-home captures, seeded original bilingual verification fixtures and8CC0album photos; separate offline mail c5-demo profile. No profile repairs."
+}

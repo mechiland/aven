@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "inspected_at": "2026-09-15T12:10:13.426321+00:00",
+  "iso_sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0",
+  "frames": [
+    {
+      "image": "evidence/verification/iso-candidate5/bios-installer-welcome.png",
+      "sha256": "dfa51811faae2d025a34f16ec5c846df941722724130af8ab55bf05a8d6cd0e8",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native Fedora44 language welcome visibly rendered. BIOS mode attributed to root firmware workflow, not inferred from pixels."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/uefi-installer-welcome.png",
+      "sha256": "dfa51811faae2d025a34f16ec5c846df941722724130af8ab55bf05a8d6cd0e8",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native Fedora44 language welcome visibly rendered. UEFI mode attributed to root firmware workflow, not inferred from pixels."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/public-disk-selection.png",
+      "sha256": "4c7d4c4518485ff9771ea936d6b9e65b1411343bbd2790cf4d41e3e35ca6f2dc",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "One fresh48GiB Virtio vda is selected, with native Automatic partitioning and custom/encryption choices visible."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/public-time-selection.png",
+      "sha256": "ffef8609377301008a4436bbb600ccfdf7d226812eb1135ded70c8c7116b5429",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native time page shows Asia/Shanghai, Manual date/time,2026-09-15 and20:06 in this captured frame. Operator reports the clock fields were left unchanged after selecting the timezone; the initial20:05 value advanced before capture."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/public-install-ready.png",
+      "sha256": "a0ced1a98f3dda4e4b1776ef945b303ec6164e0c321f6e5ba0653219e8dfbac2",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native summary shows EnglishUS keyboard/language, Asia/Shanghai and automatic partitioning; Begin Installation is available. This frame does not show installation completion."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/public-install-complete.png",
+      "sha256": "d181c95eb15d97b7425409216a7366d9711fe740f269fecb708a8b4a1332c853",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native Anaconda shows Complete, successful installation text and Reboot System. It establishes installer completion, not desktop or application success."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/installed-rtc-before-first-boot.png",
+      "sha256": "18a29d512d5ff001235dceca061c713a2aeaed3784abbed8d374eac129295c69",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Installer tty shows evidence-only copying of the post-install log to target /var/log/aven-install.log, read of target /etc/adjtime returning LOCAL, and sync. No clock-value edit is shown."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/native-first-user-welcome.png",
+      "sha256": "1397bf761a96ede958999d322c0540e1b1ecef17a0af3c579cd4f4b577d2df54",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Unchanged Fedora Plasma Desktop welcome shows Begin Setup after disk-only boot."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/native-setup-language.png",
+      "sha256": "a2c1fde899f2db71f230333743af0e37e603fee895b39ecbdf068e69a4817aa6",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native language selector has American English selected; the different row hover/focus highlight is not the selected radio option."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/native-setup-keyboard.png",
+      "sha256": "b1716658fa0693c7a0c07c9be56d72a5af19f21b44844089eadc3c58d8692127",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native keyboard selector has EnglishUS and its standard EnglishUS layout selected."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/native-setup-appearance.png",
+      "sha256": "3dc0523c1e9ee3945df6bf698705012c916c27c68167bcfebd277367eda21440",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native appearance step displays Dark Theme disabled. No Aven settings redesign is shown."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/native-setup-about-empty.png",
+      "sha256": "3e4396fe8e7dc6b337c91cd22950b7e9aa17d3dfb9c026db57046bcb131216a1",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native About You form initially has empty full-name, username, password and confirmation fields; credentials are not visible in this evidence frame."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/native-setup-hostname.png",
+      "sha256": "e2c0d8ddf7f78706a864a0f8a223207d57da157d6ac47d3314038b3ed0fa821e",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native hostname step displays fedora."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/native-setup-timezone.png",
+      "sha256": "120560b7ace3fb49037bc9906be3214d8805d5aa11f0680a36c0b36f107d4848",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native time/date step displays Asia and Shanghai."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/native-first-user-complete.png",
+      "sha256": "655b3586eacfb64136615a40d343bedbdd41988f6dba9f4b8e038cfdd4972cb2",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native Fedora setup displays Completed and Finish, with text that the account can now be used to sign in."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/native-first-login.png",
+      "sha256": "87bb19f457ee86bda8e3edc9f006aee70a848c0c590e48b118efbc6aebf97559",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "inspected_by": "/root/verification",
+      "native_operator": "/root",
+      "note": "Native login greeter displays the newly created Aven ISO Test account and empty password field. It does not show a successful session login or Aven desktop."
+    }
+  ],
+  "workflow_record": "evidence/verification/iso-candidate5/public-workflow.json",
+  "workflow_sha256_at_review": "adffe3c74d0203bd16fe34bbb2a3b0130cdd238608722304370af9ca2fe9ab4d",
+  "installation_complete": true,
+  "first_user_complete": true,
+  "visual_polish_scores": null,
+  "verification_guest_actions": [],
+  "last_inspected_at": "2026-09-15T12:28:40.800849+00:00",
+  "native_login_greeter_observed": true,
+  "first_aven_desktop_verified": null,
+  "latest_workflow_sha256_at_review": "90514f1341f347d596ed1627a34d69b1dd8fa3d8dbeb762c0bdbeb3d6a3a2f30",
+  "hostname_operator_clarification": {
+    "reported_by": "/root",
+    "note": "The hostname screenshot records the initial fedora default. The integrator edited the field to aven-iso-test before Next.",
+    "installed_hostname": "aven-iso-test",
+    "independent_installed_evidence": {
+      "path": "evidence/verification/iso-candidate5/second-boot/operations-persistence.json",
+      "sha256": "77c5ae1808178fa5c0013a045a38d06099ebd26dfd93200cfbcbf8483817d9c8"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-15T12:37:27.320326+00:00",
+  "candidate": "iso-candidate5",
+  "iso_sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0",
+  "source_commit": "9500b72a79320ce062a8b7360eac5806b142c93a",
+  "runtime_app_sha256": "99d794d2c9f148d164b979547dd839cd41906a5b219434a9f3cc21bf7366a695",
+  "prior_runtime_identity_audit": "evidence/verification/iso-candidate5/runtime-versions-mounts-audit.json",
+  "prior_runtime_identity_audit_sha256": "c58c1888c57d4e9cf4561d9412c442b9dec0ef7bdbfd834500d60946ae667823",
+  "operator_attestation": "Integrator operated each stated native action on the unmodified public-installed candidate5. No runtime patch or profile repair was applied.",
+  "observations": [
+    {
+      "action": "Ctrl+Alt+P on selected PDF, then Enter",
+      "operator": "/root",
+      "independent_observer": "/root/verification",
+      "image": "evidence/verification/iso-candidate5/preview-enter-pdf.png",
+      "image_sha256": "98632f36f4fa7dc466593110772fb5077e2729df6b39533b71dcec7a78bc277e",
+      "image_dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_at_original_resolution": true,
+      "note": "Weekend walk PDF headline, paragraphs and page thumbnail are visibly rendered in native Okular.",
+      "inventory": "evidence/verification/iso-candidate5/preview-enter-pdf-windows.json",
+      "inventory_sha256": "cf36a8c205c3307cc0019b764d9c3c4cd2efcc1be9e4abe8261b6d0a32dfbd99",
+      "inventory_method": "temporary KWin script via public Workspace/Window API",
+      "active_application": "org.kde.okular",
+      "active_window": "{9accb738-b4eb-46e4-9e96-3f81c5fa6aac}",
+      "native_target_visible": true,
+      "preview_window_remaining": false,
+      "passed": true
+    },
+    {
+      "action": "Ctrl+Alt+P on selected PDF, then native Open button",
+      "operator": "/root",
+      "independent_observer": "/root/verification",
+      "image": "evidence/verification/iso-candidate5/preview-button-pdf.png",
+      "image_sha256": "6de6e5f604003588d0e1ce732201b8d28387d26da8602483264fb4afb95c3cd2",
+      "image_dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_at_original_resolution": true,
+      "note": "The same PDF is visibly rendered in a new active Okular window after the button path.",
+      "inventory": "evidence/verification/iso-candidate5/preview-button-pdf-windows.json",
+      "inventory_sha256": "61328f9c8ad08d07f9f92fad209cf0116239284e0a94db2c750dbe7b92f0fbe6",
+      "inventory_method": "temporary KWin script via public Workspace/Window API",
+      "active_application": "org.kde.okular",
+      "active_window": "{b0e9250d-4aac-44a1-8718-ea4364da0d49}",
+      "native_target_visible": true,
+      "preview_window_remaining": false,
+      "passed": true
+    },
+    {
+      "action": "Ctrl+Alt+P on selected JPEG, then Enter",
+      "operator": "/root",
+      "independent_observer": "/root/verification",
+      "image": "evidence/verification/iso-candidate5/preview-enter-image.png",
+      "image_sha256": "d35ac91ed521a12c04b5e18753cd15ae45b3c8e8dce6c949b0b6f6af9b091141",
+      "image_dimensions": [
+        1920,
+        1200
+      ],
+      "inspected_at_original_resolution": true,
+      "note": "Selected waterfall JPEG is visibly rendered in Gwenview with matching filename and image dimensions in the title.",
+      "inventory": "evidence/verification/iso-candidate5/preview-enter-image-windows.json",
+      "inventory_sha256": "e26fac9f0afbf911b0b06b27ab78ca40fa858fd66195c93f62bf453800d64c3d",
+      "inventory_method": "temporary KWin script via public Workspace/Window API",
+      "active_application": "org.kde.gwenview",
+      "active_window": "{9eee7618-fb2f-4a0c-8393-939a5a9c2e6e}",
+      "native_target_visible": true,
+      "preview_window_remaining": false,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "handoffs_passed": 3,
+  "iso_boot_install_accepted": null,
+  "visual_polish_scores": null,
+  "limitations": [
+    "The verification agent inspected original screenshots and native KWin inventories; the triggering input sequence was operated and reported by /root.",
+    "These results cover the three required handoff paths, not all file types, remaining focused application interactions, physical frame pacing or second-boot persistence.",
+    "Candidate4 debug success remains excluded from candidate5 proof."
+  ]
+}

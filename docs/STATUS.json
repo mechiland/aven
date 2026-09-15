@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project": "Aven",
   "phase": "prototype_passed",
-  "updated_at": "2026-09-15T07:30:24.154062+00:00",
+  "updated_at": "2026-09-15T13:27:07.603444+00:00",
   "base": {
     "distribution": "Fedora Kinoite",
     "release": 44,
@@ -763,26 +763,46 @@
     "Minor native rough edges remain: bold breadcrumbs, Thunderbird sender truncation/top strip, Gwenview filmstrip bevels, extra Firefox title height and preview discoverability."
   ],
   "iso_release": {
-    "state": "candidate5_rebuild_after_preview_handoff_fix",
+    "state": "candidate5_accepted_upload_finishing",
     "requested_artifact": "bootable_installer_iso",
     "code_remote": "https://github.com/mechiland/aven",
     "initial_commit": "a509729ae8e5834d28fc62d10bb408d78f3a39d1",
-    "build_source_commit": "ca020b9bf2b8704c9214f9b88af1a689982a0aea",
-    "latest_candidate": "candidate4",
+    "build_source_commit": "9500b72a79320ce062a8b7360eac5806b142c93a",
+    "latest_candidate": "candidate5",
     "reason_for_rebuild": "Actual Wayland Preview Enter/Open closed the last window before Qt asynchronous application handoff; use a live native kde-open KIO job and wait for completion.",
     "boot_verified": true,
     "install_verified": true,
     "published": false,
-    "updated_at": "2026-09-15T11:48:45.431277+00:00",
-    "media_sha256": "f3f1a37faf9aee5665c953843ffdcb23ae21ed5f96d00c698234f791e36c9eb4",
+    "updated_at": "2026-09-15T13:27:07.603444+00:00",
+    "media_sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0",
     "bios_boot_verified": true,
     "uefi_boot_verified": true,
     "public_installer": "Native Fedora Anaconda; user creation occurs in native first-boot setup.",
-    "public_workflow": "Candidate4 public offline UEFI install and native first user passed; release rejected for Preview handoff; debug patch confirmed PDF/image launch. Candidate5 build pending.",
+    "public_workflow": "Exact ISO passed native offline UEFI installation, native first-user creation, automatic first-login profile, three native Preview handoffs, focused native application smoke and second disk-only online boot. Independent installed-ISO visual critic passed. GitHub publication pending final asset verification.",
     "parts_reassembled_verified": true,
     "release_draft_id": 388990452,
     "first_user_setup_verified": true,
     "first_login_profile_applied": true,
-    "release_accepted": false
+    "release_accepted": true,
+    "native_handoffs_verified": 3,
+    "second_boot_verified": true,
+    "online_browser_verified": true,
+    "verification_report": "docs/ISO-VERIFICATION.md",
+    "critic_report": "docs/critic-iso-candidate5.md",
+    "parts_verified_on_github": 3,
+    "total_parts": 4,
+    "visual_review": {
+      "overall": 8.266666666666667,
+      "chinese_typography": 8.5,
+      "three_second_differentiation": true,
+      "passed": true,
+      "scope": "Installed ISO at 1x",
+      "fractional_scale_rerun": null,
+      "motion_rerun": null
+    },
+    "known_nonblocking_polish": [
+      "Initial Everyday details rows are approximately 26px, changing to 36px after visiting grid.",
+      "Gwenview native resizing leaves a taller filmstrip and smaller main image than accepted round4."
+    ]
   }
 }

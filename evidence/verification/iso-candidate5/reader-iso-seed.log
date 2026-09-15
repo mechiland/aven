@@ -1,0 +1,106 @@
+{
+  "snapshot": "/var/home/reader/.local/state/aven/focused-before-20260915T122541.007075Z",
+  "entries": 36,
+  "scope": "aven-focused-profile"
+}
+active-environment: 42/42 font checks passed; visual quality unassessed.
+This plugin does not support propagateSizeHints()
+{
+  "preview": "/var/home/reader/.local/bin/aven-preview",
+  "shortcut": "Ctrl+Alt+P",
+  "shortcut_file": "/var/home/reader/.local/share/kxmlgui5/dolphin/dolphinui.rc",
+  "xmlgui_version": 49,
+  "places": {
+    "changed": false,
+    "reason": "native Places list not initialized yet"
+  },
+  "layout": {
+    "changed": true,
+    "places_width": 224,
+    "state_file": "/var/home/reader/.local/state/dolphinstaterc"
+  },
+  "packages_required": [
+    "python3-pyside6",
+    "kf6-kimageformats",
+    "kio-extras",
+    "kdegraphics-thumbnailers",
+    "ghostscript",
+    "ffmpegthumbs"
+  ]
+}
+{
+  "profile": "/var/home/reader/.local/share/aven/firefox",
+  "preferences_seeded": true,
+  "launcher": "/var/home/reader/.local/bin/aven-browser",
+  "desktop": "org.mozilla.firefox.desktop"
+}
+{
+  "profile": "/var/home/reader/.local/share/aven/mail/default",
+  "profile_seeded": true,
+  "launcher": "/var/home/reader/.local/bin/aven-mail",
+  "desktop": "net.thunderbird.Thunderbird.desktop",
+  "mode": "normal-online",
+  "demo_fixtures": false
+}
+{"seeded": true, "config": "/var/home/reader/.config/gwenviewrc", "manifest": "/var/home/reader/.local/share/aven/photos-profile.json"}
+/var/lib/aven/source/integration/apply-profile.py:68: PyGIDeprecationWarning: Gio.DesktopAppInfo is deprecated; use GioUnix.DesktopAppInfo instead
+  app = Gio.DesktopAppInfo.new(desktop)
++ plasma-apply-colorscheme AvenMist
++ plasma-apply-desktoptheme default
++ kwriteconfig6 --file /var/home/reader/.config/plasmarc --group Theme --key name default
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group General --key font Noto Sans,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group General --key menuFont Noto Sans,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group General --key toolBarFont Noto Sans,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group General --key smallestReadableFont Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group General --key fixed Noto Sans Mono,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group WM --key activeFont Noto Sans,11,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,,0,0
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group KDE --key widgetStyle Breeze
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group KDE --key AnimationDurationFactor 0.65
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group KDE --key SingleClick false
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group Icons --key Theme Aven
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group Toolbar style --key ToolButtonStyle TextBesideIcon
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group MainToolbarIcons --key Size 22
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group ToolbarIcons --key Size 22
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group General --key XftAntialias true
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group General --key XftHintStyle hintslight
++ kwriteconfig6 --file /var/home/reader/.config/kdeglobals --group General --key XftSubPixel none
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group Plugins --key wobblywindowsEnabled false
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group Plugins --key magiclampEnabled false
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group Plugins --key fallapartEnabled false
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group Plugins --key glideEnabled false
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group Plugins --key slideEnabled false
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group Plugins --key cubeslideEnabled false
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group Plugins --key windowapertureEnabled false
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group Plugins --key sheetEnabled false
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group Plugins --key squashEnabled false
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group Plugins --key translucencyEnabled false
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group Plugins --key diminactiveEnabled false
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group Plugins --key scaleEnabled false
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group Plugins --key fadeEnabled true
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group Plugins --key fadingpopupsEnabled true
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group Plugins --key overviewEnabled true
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group TabBox --key LayoutName thumbnail_grid
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group TabBox --key HighlightWindows false
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group org.kde.kdecoration2 --key ButtonsOnLeft 
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group org.kde.kdecoration2 --key ButtonsOnRight IAX
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group org.kde.kdecoration2 --key BorderSize None
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group org.kde.kdecoration2 --key library org.kde.kwin.aurorae
++ kwriteconfig6 --file /var/home/reader/.config/kwinrc --group org.kde.kdecoration2 --key theme __aurorae__svg__Aven
++ kwriteconfig6 --file /var/home/reader/.config/gtk-3.0/settings.ini --group Settings --key gtk-font-name Noto Sans 11
++ kwriteconfig6 --file /var/home/reader/.config/gtk-3.0/settings.ini --group Settings --key gtk-theme-name Breeze
++ kwriteconfig6 --file /var/home/reader/.config/gtk-3.0/settings.ini --group Settings --key gtk-icon-theme-name Aven
++ kwriteconfig6 --file /var/home/reader/.config/gtk-3.0/settings.ini --group Settings --key gtk-application-prefer-dark-theme false
++ kwriteconfig6 --file /var/home/reader/.config/gtk-3.0/settings.ini --group Settings --key gtk-xft-antialias 1
++ kwriteconfig6 --file /var/home/reader/.config/gtk-3.0/settings.ini --group Settings --key gtk-xft-hinting 1
++ kwriteconfig6 --file /var/home/reader/.config/gtk-3.0/settings.ini --group Settings --key gtk-xft-hintstyle hintslight
++ kwriteconfig6 --file /var/home/reader/.config/gtk-3.0/settings.ini --group Settings --key gtk-xft-rgba none
++ kwriteconfig6 --file /var/home/reader/.config/gtk-4.0/settings.ini --group Settings --key gtk-font-name Noto Sans 11
++ kwriteconfig6 --file /var/home/reader/.config/gtk-4.0/settings.ini --group Settings --key gtk-theme-name Breeze
++ kwriteconfig6 --file /var/home/reader/.config/gtk-4.0/settings.ini --group Settings --key gtk-icon-theme-name Aven
++ kwriteconfig6 --file /var/home/reader/.config/gtk-4.0/settings.ini --group Settings --key gtk-application-prefer-dark-theme false
++ kwriteconfig6 --file /var/home/reader/.config/gtk-4.0/settings.ini --group Settings --key gtk-xft-antialias 1
++ kwriteconfig6 --file /var/home/reader/.config/gtk-4.0/settings.ini --group Settings --key gtk-xft-hinting 1
++ kwriteconfig6 --file /var/home/reader/.config/gtk-4.0/settings.ini --group Settings --key gtk-xft-hintstyle hintslight
++ kwriteconfig6 --file /var/home/reader/.config/gtk-4.0/settings.ini --group Settings --key gtk-xft-rgba none
+Aven candidate installed. Config backup: /var/home/reader/.local/state/aven/20260915-202543-558967. Log out/in before typography comparisons.
+Profile integrated. Reboot the guest for a clean comparison round.

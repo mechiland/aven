@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "audited_at": "2026-09-15T13:13:50.289324+00:00",
+  "observer": "/root/verification",
+  "iso_sha256": "ae91559362ecfb87fa4f630882a78c41f699540d0ffda25ccea66c7be00e34e0",
+  "method": "Independent read-only root/reader SSH probes and original-resolution inspection of integrator-operated captures. No guest writes or UI input.",
+  "baseline": {
+    "path": "evidence/verification/iso-candidate5/first-boot-persistence-baseline.json",
+    "sha256": "39b6cf87c47ec8c0a2f6ce5844c41ec5ec87e38785a6556797a2d005dca061bb"
+  },
+  "reports": [
+    {
+      "path": "evidence/verification/iso-candidate5/second-boot/installed-audit.json",
+      "sha256": "b2cebee937eb2479c3aae238f74c70af3901341b70dd1a054303b59954664c70"
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/second-boot/installed-source-and-first-login.json",
+      "sha256": "0e95b524a0eb6a6f1db12ce6784ac7e2fd0f0a3f01acf6c8e89be84d68a13a3d"
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/second-boot/runtime-versions-mounts-audit.json",
+      "sha256": "5ebf2542358be8e0c38c1af092f2a6dc2d66e5066fd5772664d439cc0120b816"
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/second-boot/reader-font-audit.json",
+      "sha256": "14af874377dc30a9f36e8b86d919293eaecd8899041357f367f1d6e84e97abb7"
+    },
+    {
+      "path": "evidence/verification/iso-candidate5/second-boot/operations-persistence.json",
+      "sha256": "77c5ae1808178fa5c0013a045a38d06099ebd26dfd93200cfbcbf8483817d9c8"
+    }
+  ],
+  "checks": [
+    {
+      "check": "different_kernel_boot",
+      "passed": true,
+      "before": "2e5c67bf-f3aa-4f1e-a264-68ce1e5628e9",
+      "after": "37806618-6973-4c46-ad8c-4743e2db8318"
+    },
+    {
+      "check": "completion_markers_and_logs",
+      "passed": true,
+      "path": "/var/home/reader/.local/state/aven/iso-seed-v1.json",
+      "fields": [
+        "sha256",
+        "bytes",
+        "mtime_ns",
+        "uid",
+        "mode"
+      ],
+      "before": {
+        "sha256": "7c3127b0074c5bc5a511198b670c3efc33bf6eedd538a6d3f3d8cd10f0a77d2d",
+        "bytes": 165,
+        "mtime_ns": 1789475144420974454,
+        "uid": 1000,
+        "mode": "0o644"
+      },
+      "after": {
+        "sha256": "7c3127b0074c5bc5a511198b670c3efc33bf6eedd538a6d3f3d8cd10f0a77d2d",
+        "bytes": 165,
+        "mtime_ns": 1789475144420974454,
+        "uid": 1000,
+        "mode": "0o644"
+      }
+    },
+    {
+      "check": "completion_markers_and_logs",
+      "passed": true,
+      "path": "/var/home/reader/.local/state/aven/iso-layout-v1.json",
+      "fields": [
+        "sha256",
+        "bytes",
+        "mtime_ns",
+        "uid",
+        "mode"
+      ],
+      "before": {
+        "sha256": "47e7f9f406e1e7158d237a6054c4e7f9c400d5e89dcd7ee86b4407e05d723cbb",
+        "bytes": 167,
+        "mtime_ns": 1789475149170531566,
+        "uid": 1000,
+        "mode": "0o644"
+      },
+      "after": {
+        "sha256": "47e7f9f406e1e7158d237a6054c4e7f9c400d5e89dcd7ee86b4407e05d723cbb",
+        "bytes": 167,
+        "mtime_ns": 1789475149170531566,
+        "uid": 1000,
+        "mode": "0o644"
+      }
+    },
+    {
+      "check": "completion_markers_and_logs",
+      "passed": true,
+      "path": "/var/home/reader/.local/state/aven/iso-seed.log",
+      "fields": [
+        "sha256",
+        "bytes",
+        "mtime_ns",
+        "uid",
+        "mode"
+      ],
+      "before": {
+        "sha256": "7d8013364ef1f4c3a99baff4e4cdfa78e092c8efae320e257eddf179761a95b9",
+        "bytes": 7955,
+        "mtime_ns": 1789475144408881370,
+        "uid": 1000,
+        "mode": "0o644"
+      },
+      "after": {
+        "sha256": "7d8013364ef1f4c3a99baff4e4cdfa78e092c8efae320e257eddf179761a95b9",
+        "bytes": 7955,
+        "mtime_ns": 1789475144408881370,
+        "uid": 1000,
+        "mode": "0o644"
+      }
+    },
+    {
+      "check": "completion_markers_and_logs",
+      "passed": true,
+      "path": "/var/home/reader/.local/state/aven/iso-layout.log",
+      "fields": [
+        "sha256",
+        "bytes",
+        "mtime_ns",
+        "uid",
+        "mode"
+      ],
+      "before": {
+        "sha256": "a95321ab232a938f72b32de1a50ebff35a4ffcd916a2d45571996c4b5800e667",
+        "bytes": 1385,
+        "mtime_ns": 1789475149160881370,
+        "uid": 1000,
+        "mode": "0o644"
+      },
+      "after": {
+        "sha256": "a95321ab232a938f72b32de1a50ebff35a4ffcd916a2d45571996c4b5800e667",
+        "bytes": 1385,
+        "mtime_ns": 1789475149160881370,
+        "uid": 1000,
+        "mode": "0o644"
+      }
+    },
+    {
+      "check": "places_ownership_records",
+      "passed": true,
+      "path": "/var/home/reader/.local/state/aven/places/20260915T122549.146252Z-b42429f946c9.json",
+      "fields": [
+        "sha256",
+        "bytes",
+        "mtime_ns",
+        "uid",
+        "mode"
+      ],
+      "before": {
+        "sha256": "56930cf801871e2463cc310d8cb89a4de5d99b4bb19a31b876b2b859e63cec95",
+        "bytes": 2635,
+        "mtime_ns": 1789475149146468507,
+        "uid": 1000,
+        "mode": "0o400"
+      },
+      "after": {
+        "sha256": "56930cf801871e2463cc310d8cb89a4de5d99b4bb19a31b876b2b859e63cec95",
+        "bytes": 2635,
+        "mtime_ns": 1789475149146468507,
+        "uid": 1000,
+        "mode": "0o400"
+      }
+    },
+    {
+      "check": "no_extra_places_records",
+      "passed": true
+    },
+    {
+      "check": "runtime_seven_hashes_and_mtimes_unchanged",
+      "passed": true,
+      "count": 7
+    },
+    {
+      "check": "font_rules_unchanged",
+      "passed": true
+    },
+    {
+      "check": "default_associations_unchanged",
+      "passed": true,
+      "count": 12
+    },
+    {
+      "check": "all_150_source_files_exact",
+      "passed": true,
+      "count": 150
+    },
+    {
+      "check": "installation_manifest_exact",
+      "passed": true
+    },
+    {
+      "check": "42_active_font_checks",
+      "passed": true,
+      "count": 42
+    },
+    {
+      "check": "atomic_and_desktop",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "check": "places_owned_flag",
+      "passed": true,
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "file:///var/home/reader/Desktop",
+        "title": "Desktop",
+        "id": "1789475147/1"
+      }
+    },
+    {
+      "check": "places_owned_flag",
+      "passed": true,
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "file:///var/home/reader/Music",
+        "title": "Music",
+        "id": "1789475147/6"
+      }
+    },
+    {
+      "check": "places_owned_flag",
+      "passed": true,
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "file:///var/home/reader/Videos",
+        "title": "Videos",
+        "id": "1789475147/8"
+      }
+    },
+    {
+      "check": "places_owned_flag",
+      "passed": true,
+      "kind": "system-bookmark",
+      "identifiers": {
+        "href": "recentlyused:/locations",
+        "title": "Recent Locations",
+        "id": "1789475147/10"
+      }
+    },
+    {
+      "check": "places_owned_flag",
+      "passed": true,
+      "kind": "system-device",
+      "identifiers": {
+        "udi": "/org/kde/fstab/overlay/",
+        "uuid": ""
+      }
+    },
+    {
+      "check": "places_owned_flag",
+      "passed": true,
+      "kind": "system-device",
+      "identifiers": {
+        "udi": "/org/freedesktop/UDisks2/block_devices/vda1",
+        "uuid": "5019-1319"
+      }
+    },
+    {
+      "check": "places_owned_flag",
+      "passed": true,
+      "kind": "system-device",
+      "identifiers": {
+        "udi": "/org/freedesktop/UDisks2/block_devices/vda2",
+        "uuid": "8b79eb93-26f3-4c19-8917-a826fd267180"
+      }
+    },
+    {
+      "check": "device_groups_not_hidden",
+      "passed": true
+    },
+    {
+      "check": "original_installation_evidence_unchanged",
+      "passed": true,
+      "path": "/var/lib/aven/installation.json"
+    },
+    {
+      "check": "original_installation_evidence_unchanged",
+      "passed": true,
+      "path": "/var/log/aven-install.log"
+    }
+  ],
+  "passed": true,
+  "guest_minus_host_seconds": -1.236036,
+  "rtc": "Timezone=Asia/Shanghai\nLocalRTC=yes\nNTPSynchronized=no\nTimeUSec=Tue 2026-09-15 21:04:44 CST\nRTCTimeUSec=Tue 2026-09-15 21:04:44 UTC\n",
+  "frames": [
+    {
+      "image": "evidence/verification/iso-candidate5/second-desktop.png",
+      "sha256": "37f2134e1a965b3bffb6fbed88bb718e1e6ba09a170648ae9813497e8099d21b",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Aven estuary wallpaper and compact centered panel with Files, Firefox, Thunderbird and Gwenview pins remain visible after password login."
+    },
+    {
+      "image": "evidence/verification/iso-candidate5/second-dolphin-home.png",
+      "sha256": "ad51d0e88e0ef91c19fa5738c87872a396fce2f3a2c49d03c6f4dbb8f4c6ec2d",
+      "dimensions": [
+        1920,
+        1200
+      ],
+      "visually_inspected": true,
+      "inspection_resolution": "original",
+      "native_operator": "/root",
+      "observer": "/root/verification",
+      "note": "Dolphin Home retains Aven surfaces and focused Home/Documents/Downloads/Pictures/Trash Places. Immutable root/boot entries are absent; shared fedora_fedora data volume remains visible."
+    }
+  ],
+  "limitations": [
+    "One second UEFI disk-only boot with matching local RTC; integrator enabled online networking for browser smoke.",
+    "No live Atomic update or rollback, physical hardware or Secure Boot test.",
+    "Application usage may change browser/mail preferences and native Places metadata; completion markers, logs, ownership records and managed runtime files were explicitly compared."
+  ],
+  "iso_boot_install_accepted": null
+}

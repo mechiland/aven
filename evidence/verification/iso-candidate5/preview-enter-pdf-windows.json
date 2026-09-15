@@ -1,0 +1,131 @@
+{
+  "windows": [
+    {
+      "id": "{bd330383-7c4f-4d61-91f2-f69afb1d0043}",
+      "caption": "Wayland to X Recording bridge — Xwayland Video Bridge",
+      "app": "org.kde.xwaylandvideobridge",
+      "resource_class": "xwaylandvideobridge",
+      "resource_name": "xwaylandvideobridge",
+      "pid": 3314,
+      "active": false,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": true,
+      "skip_switcher": true,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 640,
+        "y": 420,
+        "width": 640,
+        "height": 360
+      },
+      "client": {
+        "x": 640,
+        "y": 420,
+        "width": 640,
+        "height": 360
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "id": "{e5f31aad-9655-4c95-bf25-4a27953e5ea6}",
+      "caption": "日常 · Everyday — Dolphin",
+      "app": "org.kde.dolphin",
+      "resource_class": "org.kde.dolphin",
+      "resource_name": "dolphin",
+      "pid": 4673,
+      "active": false,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 240,
+        "y": 100,
+        "width": 1440,
+        "height": 900
+      },
+      "client": {
+        "x": 244,
+        "y": 138,
+        "width": 1432,
+        "height": 858
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 173,
+        "height": 150
+      }
+    },
+    {
+      "id": "{9accb738-b4eb-46e4-9e96-3f81c5fa6aac}",
+      "caption": "周末散步计划 · Weekend walk — Okular",
+      "app": "org.kde.okular",
+      "resource_class": "org.kde.okular",
+      "resource_name": "okular",
+      "pid": 4924,
+      "active": true,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 380,
+        "y": 195,
+        "width": 1160,
+        "height": 762
+      },
+      "client": {
+        "x": 384,
+        "y": 233,
+        "width": 1152,
+        "height": 720
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 232,
+        "height": 362
+      }
+    }
+  ],
+  "screens": [
+    {
+      "name": "Virtual-1",
+      "scale": 1,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1200
+      }
+    }
+  ],
+  "active_window": "{9accb738-b4eb-46e4-9e96-3f81c5fa6aac}",
+  "ok": true,
+  "schema_version": 1,
+  "captured_at": "2026-09-15T12:34:11.314024+00:00",
+  "method": "temporary KWin script via public Workspace/Window API",
+  "command": "inventory",
+  "persistent_kwin_changes": false
+}

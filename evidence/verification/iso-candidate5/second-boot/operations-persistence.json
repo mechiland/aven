@@ -1,0 +1,56 @@
+{
+  "hostname": "aven-iso-test",
+  "files": [
+    {
+      "path": "/var/home/reader/Documents/日常 · Everyday/旅行清单.txt",
+      "exists": true,
+      "bytes": 160,
+      "sha256": "24f37943e05a3114a979ade1c4b0ed1c46e4057975fccd6f9ac09743d32c104b"
+    },
+    {
+      "path": "/var/home/reader/Documents/日常·Everyday/旅行清单.txt",
+      "exists": false
+    },
+    {
+      "path": "/var/home/reader/Downloads/周末路线.txt",
+      "exists": true,
+      "bytes": 428,
+      "sha256": "4372c686ff8ad721173bb63d024a3c685b0d12b0f14f0942d09598a336ef6fee"
+    },
+    {
+      "path": "/var/home/reader/Documents/ISO-copy.txt",
+      "exists": false
+    },
+    {
+      "path": "/var/home/reader/Downloads/ISO-copy.txt",
+      "exists": false
+    },
+    {
+      "path": "/var/home/reader/.local/share/Trash/files/ISO-copy.txt",
+      "exists": true,
+      "bytes": 160,
+      "sha256": "24f37943e05a3114a979ade1c4b0ed1c46e4057975fccd6f9ac09743d32c104b"
+    }
+  ],
+  "drafts": [
+    {
+      "path": "/var/home/reader/.local/share/aven/mail/c5-demo/Mail/Local Folders/Drafts",
+      "bytes": 3244,
+      "sha256": "27be043ae29fa2319124056455850523b82c0ce36fca2935c99c5f0cc068a8ff",
+      "items": [
+        {
+          "subject": "Re: =?utf-8?b?5ZGo5pyr55qE54Wn54mH5LiO5LiL5LiA5qyh5pWj5q2l?=",
+          "has_saved_text": false
+        },
+        {
+          "subject": "=?UTF-8?B?UmU6IOWRqOacq+eahOeFp+eJh+S4juS4i+S4gOasoeaVo+atpQ==?=",
+          "has_saved_text": true
+        }
+      ]
+    }
+  ],
+  "observer": "/root/verification",
+  "host_collected_at": "2026-09-15T13:10:27.325660+00:00",
+  "method": "Read-only known fixture paths and local mbox parsing; no app launch or changes.",
+  "probe_sha256": "3f4d00ffdacb806a4e4e760278cf986b015387b8262ac470e2b68ef21a7136f1"
+}
