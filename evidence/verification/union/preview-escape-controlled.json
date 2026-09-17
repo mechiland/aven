@@ -1,0 +1,59 @@
+{
+  "windows": [
+    {
+      "id": "{bb64a123-3074-4c46-860e-c9d5f08cbe6d}",
+      "caption": "日常 · Everyday — Dolphin",
+      "app": "org.kde.dolphin",
+      "resource_class": "org.kde.dolphin",
+      "resource_name": "dolphin",
+      "pid": 4381,
+      "active": true,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 180,
+        "y": 120,
+        "width": 1200,
+        "height": 850
+      },
+      "client": {
+        "x": 184,
+        "y": 158,
+        "width": 1192,
+        "height": 808
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 216,
+        "height": 152
+      }
+    }
+  ],
+  "screens": [
+    {
+      "name": "Virtual-1",
+      "scale": 1,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1200
+      }
+    }
+  ],
+  "active_window": "{bb64a123-3074-4c46-860e-c9d5f08cbe6d}",
+  "ok": true,
+  "schema_version": 1,
+  "captured_at": "2026-09-17T03:21:21.680171+00:00",
+  "method": "temporary KWin script via public Workspace/Window API",
+  "command": "inventory",
+  "persistent_kwin_changes": false
+}

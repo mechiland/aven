@@ -20,6 +20,7 @@ def main():
     p.add_argument('--decoration',choices=['breeze','aven'],default='aven')
     p.add_argument('--system-fonts-ready',action='store_true',help='Verify fontconfig installed by the ISO; do not invoke sudo')
     p.add_argument('--without-shell-reload',action='store_true',help='Seed before Plasma starts; apply the panel after shell startup')
+    p.add_argument('--style', choices=['breeze', 'union'], default='breeze')
     a=p.parse_args()
     if os.getuid()==0 or not Path('/run/ostree-booted').exists():
         p.error('Run as the desktop user inside the Aven Atomic guest')
@@ -75,7 +76,7 @@ def main():
             if actual is None or actual.get_id() != desktop:
                 raise RuntimeError(f'Association did not persist: {mime}')
     options = ['--without-shell-reload'] if a.without_shell_reload else []
-    run(sys.executable,ROOT/'integration/apply.py','--decoration',a.decoration,*options)
+    run(sys.executable,ROOT/'integration/apply.py','--decoration',a.decoration,'--style',a.style,*options)
     print('Profile integrated. Reboot the guest for a clean comparison round.')
 
 if __name__=='__main__':main()

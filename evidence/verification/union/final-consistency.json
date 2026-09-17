@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-09-17T03:35:28.821530+00:00",
+  "theme_archive_matches_source": true,
+  "native_new_windows_have_union_and_compatibility": true,
+  "matrix": [
+    {
+      "capture": "evidence/aven/round-05/union-files-sc-matrix-1.25x.json",
+      "declared_scale": 1.25,
+      "measured_scale": 1.25,
+      "qt_locale": "zh_CN",
+      "visually_inspected": true
+    },
+    {
+      "capture": "evidence/aven/round-05/union-files-sc-matrix-1.5x.json",
+      "declared_scale": 1.5,
+      "measured_scale": 1.5,
+      "qt_locale": "zh_CN",
+      "visually_inspected": true
+    },
+    {
+      "capture": "evidence/aven/round-05/union-files-sc-matrix-1x.json",
+      "declared_scale": 1.0,
+      "measured_scale": 1.0,
+      "qt_locale": "zh_CN",
+      "visually_inspected": true
+    },
+    {
+      "capture": "evidence/aven/round-05/union-files-sc-matrix-2x.json",
+      "declared_scale": 2.0,
+      "measured_scale": 2.0,
+      "qt_locale": "zh_CN",
+      "visually_inspected": true
+    },
+    {
+      "capture": "evidence/aven/round-05/union-files-tc-matrix-1.25x.json",
+      "declared_scale": 1.25,
+      "measured_scale": 1.25,
+      "qt_locale": "zh_TW",
+      "visually_inspected": true
+    },
+    {
+      "capture": "evidence/aven/round-05/union-files-tc-matrix-1.5x.json",
+      "declared_scale": 1.5,
+      "measured_scale": 1.5,
+      "qt_locale": "zh_TW",
+      "visually_inspected": true
+    },
+    {
+      "capture": "evidence/aven/round-05/union-files-tc-matrix-1x.json",
+      "declared_scale": 1.0,
+      "measured_scale": 1.0,
+      "qt_locale": "zh_TW",
+      "visually_inspected": true
+    },
+    {
+      "capture": "evidence/aven/round-05/union-files-tc-matrix-2x.json",
+      "declared_scale": 2.0,
+      "measured_scale": 2.0,
+      "qt_locale": "zh_TW",
+      "visually_inspected": true
+    }
+  ]
+}

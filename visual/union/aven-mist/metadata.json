@@ -1,0 +1,12 @@
+{
+  "input-type": "css",
+  "input-version": 1,
+  "name": "Aven Mist (Union)",
+  "name[zh_CN]": "Aven 薄雾（Union）",
+  "name[zh_TW]": "Aven 薄霧（Union）",
+  "description": "Aven's focused desktop style for QtQuick and QtWidgets.",
+  "version": "0.2.0-union",
+  "license": "MIT",
+  "url": "https://github.com/mechiland/aven",
+  "authors": ["Aven contributors"]
+}

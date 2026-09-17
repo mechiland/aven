@@ -1,0 +1,48 @@
+/* Preserve application layouts and system font metrics, including CJK fallback. */
+:root {
+    --corner-radius: var(--aven-control-radius);
+    --button-default-size: var(--aven-control-height);
+    --button-shadow: none;
+    --tab-default-height: var(--aven-control-height);
+    --window-border-color: var(--aven-border);
+    --view-border-color: var(--aven-border);
+    --header-border-color: var(--aven-border);
+    --button-active-border-color: var(--aven-border);
+    --button-active-header-border-color: var(--aven-border);
+    --highlight-hover-color: var(--aven-hover);
+    --focus-outline-alpha: 0.22;
+}
+
+button, roundbutton, delaybutton {
+    box-shadow: none;
+}
+
+menu, popup {
+    border-radius: var(--aven-surface-radius);
+    box-shadow: 0px 4px 20px 0px rgba(24, 49, 42, 0.14);
+}
+
+/* Keep the full row as a pointer target; round only its painted selection. */
+itemdelegate, checkdelegate, radiodelegate, switchdelegate, itemviewitem {
+    border-radius: var(--aven-control-radius);
+}
+
+/* Dolphin paints file text itself, using its ordinary text palette. A light
+ * selection also keeps its secondary size/date text legible on Union 6.7.90. */
+itemviewitem:highlighted, itemviewitem:pressed {
+    background-color: mix(var(--aven-selection-soft), #ffffff, 0.5);
+    color: var(--aven-text);
+}
+
+toolbutton:hovered, toolbutton:highlighted {
+    background-color: var(--aven-hover);
+}
+
+/* Selection and keyboard focus retain upstream color/contrast behavior. */
+toolbutton:pressed, toolbutton:checked {
+    background-color: var(--aven-selection-soft);
+}
+
+headerviewdelegate {
+    text-alignment: content start center 0;
+}
