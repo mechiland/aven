@@ -25,13 +25,14 @@
     "font_loading": "loaded",
     "temporary_viewport_reset": true
   },
-  "iso_public_download": "pending root upload and release verification; final identity recorded",
-  "website_deployment": "not performed by website agent",
+  "iso_public_download": "pass: public HEAD 200, exact content length and byte-range 206; full ISO verification is recorded separately by the release integrator",
+  "website_deployment": "published: aad122ab-075e-414d-99fb-ef7c89cd9345",
   "os_visual_score": null,
   "notes": [
     "This records website checks only; no new OS visual pass is asserted.",
     "Chrome extension warnings were observed; they came from an unrelated chrome-extension URL, not the website.",
-    "Pending release metadata intentionally disables the ISO download button."
+    "Published release metadata enables the direct single-file ISO link with exact size and SHA-256."
   ],
-  "os_three_second_differentiation": null
+  "os_three_second_differentiation": null,
+  "production_verification": "deployment.json: 23 HTTP/resource checks and real desktop/mobile Chrome checks"
 }

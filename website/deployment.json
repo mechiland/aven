@@ -1,48 +1,172 @@
 {
   "url": "https://aven-website.mechiland.workers.dev",
   "provider": "Cloudflare Workers",
-  "version_id": "f328f9d5-7fef-47a2-87ab-0b9eafc308e5",
+  "version_id": "aad122ab-075e-414d-99fb-ef7c89cd9345",
+  "release_version": "0.3.1",
+  "verified_at": "2026-09-17T09:38:35Z",
   "checks": [
     {
       "path": "/",
       "status": 200,
-      "content_verified": true
+      "bytes_identical": true,
+      "bytes": 22795
     },
     {
       "path": "/zh-cn/",
       "status": 200,
-      "content_verified": true
+      "bytes_identical": true,
+      "bytes": 22795
     },
     {
       "path": "/en/",
       "status": 200,
-      "content_verified": true
+      "bytes_identical": true,
+      "bytes": 23077
     },
     {
-      "path": "/assets/aven-files.png",
+      "path": "/release.json",
       "status": 200,
-      "bytes_identical": true
+      "bytes_identical": true,
+      "bytes": 346
     },
     {
-      "path": "/assets/fonts/aven-noto-regular.woff2",
+      "path": "/assets-manifest.json",
       "status": 200,
-      "bytes_identical": true
+      "bytes_identical": true,
+      "bytes": 2488
     },
     {
       "path": "/app.js",
       "status": 200,
-      "bytes_identical": true
+      "bytes_identical": true,
+      "bytes": 3955
     },
     {
       "path": "/styles.css",
       "status": 200,
-      "bytes_identical": true
+      "bytes_identical": true,
+      "bytes": 22824
+    },
+    {
+      "path": "/assets/aven-files.png?v=union-0.3.1",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 210612
+    },
+    {
+      "path": "/assets/aven-preview.png?v=union-0.3.1",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 1391000
+    },
+    {
+      "path": "/assets/aven-browser.png?v=union-0.3.1",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 268919
+    },
+    {
+      "path": "/assets/aven-mail.png?v=union-0.3.1",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 252321
+    },
+    {
+      "path": "/assets/aven-photos.png?v=union-0.3.1",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 568790
+    },
+    {
+      "path": "/assets/aven-typography.png?v=union-0.3.1",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 261624
+    },
+    {
+      "path": "/assets/stock-files.png?v=union-0.3.1",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 1028984
+    },
+    {
+      "path": "/assets/stock-preview.png?v=union-0.3.1",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 1053794
+    },
+    {
+      "path": "/assets/stock-browser.png?v=union-0.3.1",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 1015276
+    },
+    {
+      "path": "/assets/stock-mail.png?v=union-0.3.1",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 1001833
+    },
+    {
+      "path": "/assets/stock-photos.png?v=union-0.3.1",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 1108751
+    },
+    {
+      "path": "/assets/aven.svg?v=union-0.3.1",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 340
+    },
+    {
+      "path": "/assets/fonts/aven-noto-bold.woff2?v=union-0.3.1",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 124900
+    },
+    {
+      "path": "/assets/fonts/aven-noto-regular.woff2?v=union-0.3.1",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 122260
+    },
+    {
+      "path": "/assets/fonts/aven-noto-medium.woff2?v=union-0.3.1",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 122840
     },
     {
       "path": "/page-that-does-not-exist",
       "status": 404
     }
   ],
+  "download_check": {
+    "url": "https://aven-downloads.mechiland.workers.dev/releases/v0.3.1/Aven-Union-44-0.3.1-x86_64.iso",
+    "head_status": 200,
+    "bytes": 8051228672,
+    "accept_ranges": "bytes",
+    "content_type": "application/x-iso9660-image",
+    "range_status": 206,
+    "content_range": "bytes 32768-32831/8051228672"
+  },
+  "browser_verification": {
+    "environment": "Real Chrome via CUA",
+    "desktop_width": 1643,
+    "mobile_viewport": "390 x 844",
+    "chinese_heading_weight": 500,
+    "horizontal_overflow": false,
+    "app_tabs": "pass",
+    "comparison_switch_and_keyboard_slider": "pass",
+    "original_image_dialog": "pass",
+    "iso_link_and_checksum": "pass",
+    "mobile_checksum_wrapping": "pass",
+    "mobile_menu": "pass",
+    "language_switch_preserves_section": "pass",
+    "temporary_viewport_reset": true
+  },
   "browser_visual_score": null,
+  "os_visual_score": null,
   "os_changes": false
 }
