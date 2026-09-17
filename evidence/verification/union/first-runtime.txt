@@ -1,0 +1,51 @@
+Usage: union-styletool inspect [options] <path or id>
+Inspect details of an installed Union style.
+
+Options:
+  --help        Displays help for the current command.
+
+Arguments:
+  <path or id>  The path of a style or the ID of an installed style to inspect.
+{
+  "schema_version": 1,
+  "captured_at": "2026-09-17T03:03:46.449868+00:00",
+  "platform": "wayland",
+  "qt": "6.11.2",
+  "configured_widget_style": "Union",
+  "configured_union_style": "aven-mist",
+  "actual_style_class": "UnionStyle",
+  "actual_style_name": "union",
+  "available_styles": [
+    "Union",
+    "Breeze",
+    "Windows",
+    "Fusion"
+  ],
+  "button_size_hint": [
+    152,
+    38
+  ],
+  "button_margin": 6,
+  "theme_sha256": {
+    "contents/css/controls.css": "c09e24dc75446dfffdccf4cdfe9a8f32ee8edcd633ef7831dda2dc952b50d89c",
+    "contents/css/style.css": "5855663d744b7ae3492c9b51bea6d23a4cf3ed82f4aeb25e109772950f606441",
+    "contents/css/tokens.css": "1cf67cd2adff739819eec31070ebe425fdffa87a1f65121036839d4e747effc0",
+    "metadata.json": "c72d1ee2e8ce7dea8c93120c41e3d6c61c8f8783dc40053cc5e7e680fa689ea8"
+  },
+  "packages": "plasma-desktop-6.7.90-1.fc44.x86_64\nkwin-6.7.90-1.fc44.x86_64\nplasma-union-6.7.90-1.fc44.x86_64\ncxx-rust-cssparser-1.1.0-1.fc44.x86_64\ndolphin-26.08.1-1.fc44.x86_64\ngwenview-26.08.1-1.fc44.x86_64\nqt6-qtbase-6.11.2-2.fc44.x86_64\n",
+  "native_processes": [
+    {
+      "pid": 2610,
+      "executable": "dolphin",
+      "command": "dolphin /home/aven/Documents/日常 · Everyday",
+      "union_libraries": [
+        "/usr/lib64/libUnion.so.6.7.90",
+        "/usr/lib64/qt6/plugins/styles/UnionWidgetsStyle.so"
+      ]
+    }
+  ],
+  "limitations": [
+    "Library mappings and style metrics do not establish visual quality; inspect real screenshots."
+  ],
+  "style_active": true
+}

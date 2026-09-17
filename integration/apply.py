@@ -19,12 +19,16 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--decoration', choices=['breeze', 'aven'], default='breeze', help='Aven decoration is a candidate until boot-tested')
     p.add_argument('--without-shell-reload', action='store_true')
+    p.add_argument('--style', choices=['breeze', 'union'], default='breeze')
     a = p.parse_args()
     release = Path('/etc/os-release').read_text()
     if 'ID=fedora' not in release or not Path('/run/ostree-booted').exists():
         p.error('Apply only inside the intended Fedora Atomic guest')
     if os.getuid() == 0:
         p.error('Run as the desktop user; system font configuration is installed separately')
+    if a.style == 'union':
+        from union_theme import install
+        install(Path.home())
     config = Path.home()/'.config'
     share = Path.home()/'.local/share'
     backup = Path.home()/'.local/state/aven'/datetime.datetime.now().strftime('%Y%m%d-%H%M%S-%f')
@@ -74,8 +78,11 @@ def main():
         'fixed':font_value('Noto Sans Mono',10)}
     for key,value in fonts.items(): write('kdeglobals','General',key,value)
     write('kdeglobals','WM','activeFont',font_value('Noto Sans',11,QFont.Weight.Medium))
-    for key,value in {'widgetStyle':'Breeze','AnimationDurationFactor':'0.65','SingleClick':'false'}.items():
+    native_style = 'Union' if a.style == 'union' else 'Breeze'
+    for key,value in {'widgetStyle':native_style,'AnimationDurationFactor':'0.65','SingleClick':'false'}.items():
         write('kdeglobals','KDE',key,value)
+    if a.style == 'union':
+        write('kdeglobals','KDE','unionStyle','aven-mist')
     write('kdeglobals','Icons','Theme','Aven')
     write('kdeglobals','Toolbar style','ToolButtonStyle','TextBesideIcon')
     write('kdeglobals','MainToolbarIcons','Size',22)

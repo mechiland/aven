@@ -1,0 +1,21 @@
+{
+  "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+  "transport": {
+    "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+    "width": 1920,
+    "height": 1200,
+    "captured_at": "2026-09-17T03:33:53.830483+00:00",
+    "rfb_version": "RFB 003.008",
+    "server_name": "QEMU (Aven Union 0.2.0 \u2014 Plasma 6.8 Beta)",
+    "endpoint": "127.0.0.1:5922",
+    "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+    "input_events_sent": 0
+  },
+  "image": "evidence/verification/union/export-boot.png",
+  "sha256": "421d40cfa07d2ff822c0b4c9b5429a8718c48300a012fa5777138ee0f8dceff0",
+  "artifact": "output/Aven-Union-0.2.0-x86_64.qcow2",
+  "runtime_evidence": "evidence/verification/union/export-boot-runtime.txt",
+  "visually_inspected": true,
+  "inspected_at": "2026-09-17T03:34:42.517274+00:00",
+  "inspection_note": "Exported disk boots real Plasma 6.8 Beta; SC Dolphin has readable path bar and filenames. No synthetic pixels."
+}

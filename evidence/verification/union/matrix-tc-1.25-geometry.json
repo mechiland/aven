@@ -1,0 +1,92 @@
+{
+  "before": {
+    "id": "{fbb142e9-0454-42b6-b7ae-c28bfdff653c}",
+    "caption": "日常 · Everyday — Dolphin",
+    "app": "org.kde.dolphin",
+    "resource_class": "org.kde.dolphin",
+    "resource_name": "dolphin",
+    "pid": 8567,
+    "active": true,
+    "minimized": false,
+    "full_screen": false,
+    "hidden": false,
+    "skip_taskbar": false,
+    "skip_switcher": false,
+    "normal_window": true,
+    "dialog": false,
+    "special": false,
+    "frame": {
+      "x": 40,
+      "y": 28,
+      "width": 1200,
+      "height": 630
+    },
+    "client": {
+      "x": 44,
+      "y": 66,
+      "width": 1192,
+      "height": 588
+    },
+    "output": "Virtual-1",
+    "movable": true,
+    "resizable": true,
+    "minimum_client_size": {
+      "width": 253,
+      "height": 184
+    }
+  },
+  "requested_geometry": {
+    "x": 40,
+    "y": 28,
+    "width": 1200,
+    "height": 630
+  },
+  "requested_maximize": false,
+  "requested_activate": true,
+  "ok": true,
+  "after": [
+    {
+      "id": "{fbb142e9-0454-42b6-b7ae-c28bfdff653c}",
+      "caption": "日常 · Everyday — Dolphin",
+      "app": "org.kde.dolphin",
+      "resource_class": "org.kde.dolphin",
+      "resource_name": "dolphin",
+      "pid": 8567,
+      "active": true,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 40,
+        "y": 28,
+        "width": 1200,
+        "height": 630
+      },
+      "client": {
+        "x": 44,
+        "y": 66,
+        "width": 1192,
+        "height": 588
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 253,
+        "height": 184
+      }
+    }
+  ],
+  "geometry_acknowledged": true,
+  "activation_acknowledged": true,
+  "schema_version": 1,
+  "captured_at": "2026-09-17T03:25:06.118971+00:00",
+  "method": "temporary KWin script via public Workspace/Window API",
+  "command": "arrange",
+  "persistent_kwin_changes": false
+}

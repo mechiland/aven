@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project": "Aven",
   "phase": "prototype_passed",
-  "updated_at": "2026-09-15T13:33:40.120362+00:00",
+  "updated_at": "2026-09-17T03:34:42.517274+00:00",
   "base": {
     "distribution": "Fedora Kinoite",
     "release": 44,
@@ -814,5 +814,62 @@
     "release_commit": "bfba865f2f598ceefb275e3ce4af9dd99abb4a60",
     "public_downloads_verified": true,
     "publication_record": "evidence/verification/iso-candidate5/github-publication.json"
+  },
+  "union_candidate": {
+    "state": "bootable_local_prototype_smoke_verified",
+    "version": "0.2.0-union",
+    "branch": "feat/union-prototype",
+    "scope": [
+      "files",
+      "browser",
+      "mail",
+      "photos",
+      "typography"
+    ],
+    "platform_target": "Fedora Kinoite 44 + Plasma 6.8 Beta (6.7.90)",
+    "theme": "Aven Mist (Union)",
+    "scores": null,
+    "three_second_test": null,
+    "pass": null,
+    "verification": {
+      "runtime": true,
+      "chinese_ui_screenshots": {
+        "inspected": true,
+        "locales": [
+          "zh_CN",
+          "zh_TW"
+        ],
+        "scales": [
+          1,
+          1.25,
+          1.5,
+          2
+        ],
+        "complete_prose_matrix": null
+      },
+      "automated_tests_passed": 129,
+      "native_operations": "Files copy/move/rename/trash/restore, preview open/escape/focus, MIME/DBus/Ctrl+N launch smoke passed; full 17-operation review pending",
+      "native_app_smoke": true,
+      "export_boot": true,
+      "image_check_errors": 0
+    },
+    "note": "Historical round 4 and candidate5 scores do not assess Union. User authorized Plasma Beta and omitted rollback validation.",
+    "platform_evidence": "evidence/verification/union/platform-booted.json",
+    "completed_at": "2026-09-17T03:34:42.517274+00:00",
+    "review_record": "evidence/verification/union/review.json",
+    "artifacts_manifest": "output/Aven-Union-0.2.0.json",
+    "bootable_vm": "output/Aven-Union-0.2.0-x86_64.qcow2",
+    "native_theme_package": "output/Aven-Mist-0.2.0.unionstyle",
+    "launcher": "scripts/run-union-vm.sh",
+    "compatibility": [
+      "Narrow KUrlNavigator Qt stylesheet through all normal Files launch paths; other controls use Union",
+      "Leading list headers and light selection preserve readable native file text"
+    ],
+    "pending": [
+      "Independent matching-stock visual review and scores",
+      "Three-second differentiation judgment",
+      "Full prose scale matrix and 17-operation/motion review",
+      "Union installer ISO"
+    ]
   }
 }

@@ -5,6 +5,10 @@ mail, photos, and Noto Latin/Chinese typography**. Dolphin remains the file
 manager. Fedora's Atomic deployments, update path, SELinux and rollback remain
 part of the product.
 
+The experimental **Union variant** uses Plasma 6.8 Beta and a native Aven Mist
+Union theme. See [Union build and verification](docs/UNION.md).
+Its status is separate from the earlier Breeze prototype results below.
+
 The booted **round 4 prototype passes** the independent focused review:
 **8.33 overall, 8.5 Chinese typography**, and **yes** on three-second refinement.
 The strict evidence gate passes with zero errors. All 17 required native

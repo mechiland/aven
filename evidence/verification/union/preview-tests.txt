@@ -1,0 +1,9 @@
+----------------------------------------------------------------------
+Ran 15 tests in 0.585s
+
+OK
+Traceback (most recent call last):
+  File "/var/home/aven/aven/preview/tests/smoke_qt.py", line 49, in <module>
+    assert window.index == 1 and isinstance(window.renderer, ImageCanvas)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

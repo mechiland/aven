@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-17T03:32:46.569395+00:00",
+  "variant": "0.2.0-union",
+  "state": "runtime_smoke_complete_formal_review_pending",
+  "reviewer": "root",
+  "visual_scores": null,
+  "three_second_differentiation": null,
+  "accepted": null,
+  "automated_tests": {
+    "verification": {
+      "passed": 88,
+      "evidence": "evidence/verification/union/verification-tests.txt"
+    },
+    "files": {
+      "passed": 26,
+      "evidence": "evidence/verification/union/files-tests.txt"
+    },
+    "preview": {
+      "passed": 15,
+      "evidence": "evidence/verification/union/preview-unit-tests.txt"
+    },
+    "preview_decode_smoke": {
+      "passed": true,
+      "evidence": "evidence/verification/union/preview-decode-smoke.txt",
+      "display": "offscreen; not screenshot evidence"
+    }
+  },
+  "native_checks": {
+    "files": [
+      "copy",
+      "move",
+      "Unicode rename",
+      "trash",
+      "restore from Trash context menu",
+      "directory MIME launch",
+      "FileManager1 launch",
+      "Ctrl+N launch"
+    ],
+    "preview": [
+      "Ctrl+Alt+P from SC text selection",
+      "Escape closes and returns focus in controlled run"
+    ],
+    "browser": [
+      "Firefox opens local SC article; Chinese/Latin paragraphs inspected"
+    ],
+    "mail": [
+      "Thunderbird reads local-only SC fixture; no network account or sending"
+    ],
+    "photos": [
+      "Gwenview native image display",
+      "Next twice",
+      "EXIF orientation 6 upright"
+    ]
+  },
+  "files_byte_evidence": [
+    "evidence/verification/union/files-copied.json",
+    "evidence/verification/union/files-moved.json",
+    "evidence/verification/union/files-renamed.json",
+    "evidence/verification/union/files-trashed.json",
+    "evidence/verification/union/files-restored.json"
+  ],
+  "preview_focus_evidence": "evidence/verification/union/preview-escape-controlled.json",
+  "ui_matrix": [
+    "evidence/aven/round-05/union-files-sc-matrix-1x.png",
+    "evidence/aven/round-05/union-files-sc-matrix-1.25x.png",
+    "evidence/aven/round-05/union-files-sc-matrix-1.5x.png",
+    "evidence/aven/round-05/union-files-sc-matrix-2x.png",
+    "evidence/aven/round-05/union-files-tc-matrix-1x.png",
+    "evidence/aven/round-05/union-files-tc-matrix-1.25x.png",
+    "evidence/aven/round-05/union-files-tc-matrix-1.5x.png",
+    "evidence/aven/round-05/union-files-tc-matrix-2x.png"
+  ],
+  "inspected_findings": [
+    "SC/TC menu labels, paths and filenames readable at all four captured scales; no clipped tested rows or missing Han glyphs observed.",
+    "Location-bar QSS compatibility and light Union row selection correct the two observed contrast failures.",
+    "SC paragraph preview is readable; punctuation and mixed Latin are present in actual Qt content.",
+    "These are root smoke observations, not independent visual scores."
+  ],
+  "final_representative_images": [
+    "evidence/aven/round-05/union-files-selection-1x.png",
+    "evidence/aven/round-05/union-preview-sc-final-1x.png",
+    "evidence/aven/round-05/union-mail-reading-1x.png",
+    "evidence/aven/round-05/union-photos-exif6-1x.png",
+    "evidence/aven/round-05/union-filemanager1-fixed-1x.png",
+    "evidence/aven/round-05/union-new-window-1x.png"
+  ],
+  "browser_image": {
+    "path": "evidence/aven/round-05/union-preview-sc-1x.png",
+    "note": "Misnamed capture; actual foreground is Firefox, used only for browser observation."
+  },
+  "pending": [
+    "Matching official stock + same Beta platform comparison",
+    "Independent overall >=8 and Chinese >=8.5 review",
+    "Affirmative three-second differentiation judgment",
+    "Complete SC/TC prose scale matrix",
+    "Full 17-operation and motion review",
+    "Union installer ISO"
+  ],
+  "diagnostic_limits": [
+    "Initial host preview unittest invocation lacked PYTHONPATH/PySide; correct tests passed inside Fedora guest.",
+    "Existing smoke_qt.py was designed for offscreen. An attempted Wayland run sent its QTest shortcut before window activation and failed; native QMP shortcut/escape verified separately. See preview-tests.txt.",
+    "First preview focus trial was interrupted by launching Firefox; not used for controlled focus claim.",
+    "Direct /usr/bin/dolphin invocation bypasses the installed compatibility launcher."
+  ],
+  "export_boot": {
+    "passed": true,
+    "image": "evidence/verification/union/export-boot.png",
+    "metadata": "evidence/verification/union/export-boot.json",
+    "runtime": "evidence/verification/union/export-boot-runtime.txt",
+    "image_check": "evidence/verification/union/image-check.json"
+  }
+}

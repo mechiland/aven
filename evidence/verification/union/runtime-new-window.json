@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-09-17T03:30:03.583075+00:00",
+  "platform": "wayland",
+  "qt": "6.11.2",
+  "configured_widget_style": "Union",
+  "configured_union_style": "aven-mist",
+  "actual_style_class": "UnionStyle",
+  "actual_style_name": "union",
+  "available_styles": [
+    "Union",
+    "Breeze",
+    "Windows",
+    "Fusion"
+  ],
+  "button_size_hint": [
+    152,
+    38
+  ],
+  "button_margin": 6,
+  "theme_sha256": {
+    "contents/css/controls.css": "bb8e9b365a0a0d8780bd96caf0e274ce2f55ef466d4222b73bd4b6176e141228",
+    "contents/css/style.css": "5855663d744b7ae3492c9b51bea6d23a4cf3ed82f4aeb25e109772950f606441",
+    "contents/css/tokens.css": "14ff1b78999c054c0b7426c3d43ad37f8203b1bd1a97d804358731a2e71785d6",
+    "metadata.json": "c72d1ee2e8ce7dea8c93120c41e3d6c61c8f8783dc40053cc5e7e680fa689ea8"
+  },
+  "packages": "plasma-desktop-6.7.90-1.fc44.x86_64\nkwin-6.7.90-1.fc44.x86_64\nplasma-union-6.7.90-1.fc44.x86_64\ncxx-rust-cssparser-1.1.0-1.fc44.x86_64\ndolphin-26.08.1-1.fc44.x86_64\ngwenview-26.08.1-1.fc44.x86_64\nqt6-qtbase-6.11.2-2.fc44.x86_64\n",
+  "files_compatibility_sha256": {
+    ".local/libexec/aven-union/aven-files": "e0d29ac675d46cea6d6e3f03e159a8b57d444c70825bf60b1e195e390a50530d",
+    ".local/libexec/aven-union/dolphin-location.qss": "f630f5d5ab1e16ce181acf955169c4eb913958865f9de365e421a7d52bcce57a"
+  },
+  "native_processes": [
+    {
+      "pid": 12277,
+      "executable": "dolphin",
+      "command": "/usr/bin/dolphin -stylesheet /home/aven/.local/libexec/aven-union/dolphin-location.qss --daemon",
+      "union_libraries": [
+        "/usr/lib64/libUnion.so.6.7.90",
+        "/usr/lib64/qt6/plugins/styles/UnionWidgetsStyle.so"
+      ],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12282,
+      "executable": "dolphin",
+      "command": "/usr/bin/dolphin -stylesheet /home/aven/.local/libexec/aven-union/dolphin-location.qss --new-window /home/aven/Documents/日常 · Everyday",
+      "union_libraries": [
+        "/usr/lib64/libUnion.so.6.7.90",
+        "/usr/lib64/qt6/plugins/styles/UnionWidgetsStyle.so"
+      ],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12600,
+      "executable": "dolphin",
+      "command": "/usr/bin/dolphin -stylesheet /home/aven/.local/libexec/aven-union/dolphin-location.qss --new-window /home/aven/Documents/日常 · Everyday",
+      "union_libraries": [
+        "/usr/lib64/libUnion.so.6.7.90",
+        "/usr/lib64/qt6/plugins/styles/UnionWidgetsStyle.so"
+      ],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    }
+  ],
+  "limitations": [
+    "Library mappings and style metrics do not establish visual quality; inspect real screenshots."
+  ],
+  "style_active": true
+}

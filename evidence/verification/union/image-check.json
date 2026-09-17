@@ -1,0 +1,10 @@
+{
+    "image-end-offset": 13485539328,
+    "compressed-clusters": 241472,
+    "total-clusters": 786432,
+    "check-errors": 0,
+    "allocated-clusters": 334406,
+    "filename": "output/Aven-Union-0.2.0-x86_64.qcow2",
+    "format": "qcow2",
+    "fragmented-clusters": 251484
+}
