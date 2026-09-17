@@ -19,8 +19,10 @@ import xml.etree.ElementTree as ET
 from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parent
+ROLES = json.loads((ROOT / "roles.json").read_text())
+UI_FAMILY = ROLES["ui"]["family"]
 FIELDS = ["family", "style", "file", "index", "weight", "antialias", "hinting",
-          "hintstyle", "rgba", "autohint", "embeddedbitmap", "embolden", "color"]
+          "hintstyle", "rgba", "autohint", "embeddedbitmap", "embolden", "color", "variable"]
 REGIONS = {"en": "SC", "zh-cn": "SC", "zh-sg": "SC", "zh-tw": "TC",
            "zh-hk": "HK", "zh-mo": "HK", "ja": "JP", "ko": "KR"}
 
@@ -52,11 +54,19 @@ def checks(env):
                         "passed": not errors, "errors": errors})
 
     rendering = {"antialias": "True", "hinting": "True", "hintstyle": "1", "rgba": "5"}
-    for family, expected in [("sans-serif", "Noto Sans"), ("system-ui", "Noto Sans"),
+    for family, expected in [("sans-serif", UI_FAMILY), ("system-ui", UI_FAMILY),
+                             (UI_FAMILY, UI_FAMILY),
                              ("Noto Sans", "Noto Sans"), ("monospace", "Noto Sans Mono")]:
         check(f"Latin / {family}", f"{family}:lang=en:charset=0041", expected, rendering)
+    for weight, expected_weight in [("regular", "80"), ("medium", "100"),
+                                    ("demibold", "180"), ("bold", "200")]:
+        check(f"Real UI weight / {weight}", f"{UI_FAMILY}:lang=en:weight={weight}:charset=0041",
+              UI_FAMILY, {"weight": expected_weight, "embolden": "False"})
+    # A generic UI default must not replace an explicitly requested document face.
+    check("Explicit document family", "Liberation Sans:lang=en:charset=0041", "Liberation Sans")
     for locale, region in REGIONS.items():
         for family, expected in [("sans-serif", f"Noto Sans CJK {region}"),
+                                 (UI_FAMILY, f"Noto Sans CJK {region}"),
                                  ("Noto Sans", f"Noto Sans CJK {region}"),
                                  ("monospace", f"Noto Sans Mono CJK {region}")]:
             check(f"Han region / {locale} / {family}",
@@ -64,13 +74,27 @@ def checks(env):
     for locale, region in [("zh-cn", "SC"), ("zh-tw", "TC"), ("zh-hk", "HK")]:
         for weight, expected_weight in [("regular", "80"), ("medium", "100"), ("bold", "200")]:
             check(f"Real weight / {locale} / {weight}",
-                  f"Noto Sans:lang={locale}:weight={weight}:charset=4e2d",
+                  f"{UI_FAMILY}:lang={locale}:weight={weight}:charset=4e2d",
                   f"Noto Sans CJK {region}", {"weight": expected_weight, "embolden": "False"})
         check(f"CJK punctuation / {locale}", f"sans-serif:lang={locale}:charset=3001 3002 ff0c ff1a",
               f"Noto Sans CJK {region}", rendering)
+    # Validate the roles that are actually configured. Chinese emphasis uses
+    # the named Medium instance; a 600-axis capability check cannot prove that.
+    weights = {400: ("regular", "80", "Regular"), 500: ("medium", "100", "Medium"),
+               600: ("demibold", "180", "SemiBold"), 700: ("bold", "200", "Bold")}
+    for role_name in ("section_label", "emphasis", "window_title"):
+        role = ROLES[role_name]
+        weight, expected_weight, style = weights[role["weight"]]
+        for locale, expected, charset in [("en", role["family"], "0041"),
+                ("zh-cn", "Noto Sans CJK SC", "4e2d"),
+                ("zh-tw", "Noto Sans CJK TC", "4e2d"),
+                ("zh-hk", "Noto Sans CJK HK", "4e2d")]:
+            check(f"Configured role / {role_name} / {locale}",
+                  f"{role['family']}:lang={locale}:weight={weight}:charset={charset}",
+                  expected, {"weight": expected_weight, "style": style, "embolden": "False"})
     check("Emoji", "emoji:charset=1f600", "Noto Color Emoji",
           {"color": "True", "embeddedbitmap": "True"})
-    check("Emoji via UI fallback", "Noto Sans:charset=1f600", "Noto Color Emoji",
+    check("Emoji via UI fallback", f"{UI_FAMILY}:charset=1f600", "Noto Color Emoji",
           {"color": "True", "embeddedbitmap": "True"})
     return results
 
