@@ -7,6 +7,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 await rm(root + 'dist', { recursive: true, force: true });
 await mkdir(root + 'dist', { recursive: true });
 await cp(root + 'public', root + 'dist', { recursive: true });
+await cp(root + 'assets-manifest.json', root + 'dist/assets-manifest.json');
 for (const [lang, content] of Object.entries(locales)) {
   await mkdir(root + `dist/${lang}`, { recursive: true });
   await writeFile(root + `dist/${lang}/index.html`, render(lang, content));

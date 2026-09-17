@@ -37,7 +37,7 @@ const range = document.getElementById('compare-range');
 const stage = document.querySelector('.compare-stage');
 function updateRange() {
   stage.style.setProperty('--split', `${range.value}%`);
-  range.setAttribute('aria-valuetext', `${data.before} ${range.value}%, Aven ${100 - Number(range.value)}%`);
+  range.setAttribute('aria-valuetext', `${data.before} ${range.value}%, ${data.after} ${100 - Number(range.value)}%`);
 }
 range.addEventListener('input', updateRange);
 document.querySelectorAll('[data-compare]').forEach(button => button.addEventListener('click', () => {
@@ -46,8 +46,8 @@ document.querySelectorAll('[data-compare]').forEach(button => button.addEventLis
   document.querySelectorAll('[data-compare]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
   for (const [imageId, source] of [['before-image', 'stock'], ['after-image', 'aven']]) {
     const img = document.getElementById(imageId);
-    img.src = `/assets/${source}-${id}.png`;
-    img.alt = `${source === 'stock' ? data.before : 'Aven'} · ${data.labels[index]}`;
+    img.src = `/assets/${source}-${id}.png?v=${data.assetVersion}`;
+    img.alt = `${source === 'stock' ? data.before : data.after} · ${data.labels[index]}`;
     document.getElementById(`${source}-original`).href = img.src;
   }
   document.getElementById('compare-detail').textContent = data.details[index];
