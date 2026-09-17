@@ -1,0 +1,74 @@
+[
+  {
+    "asset": "aven-files.png",
+    "source": "evidence/verification/iso-candidate5/files-sc-grid.png",
+    "sha256": "dcf5de6ac4275668eb54cc2b56195a3e08714c58bb3ef49e9b038e6b228d8e3d",
+    "modified": false
+  },
+  {
+    "asset": "aven-preview.png",
+    "source": "evidence/verification/iso-candidate5/preview-earthrise.png",
+    "sha256": "3ce3d91bb703ecc2fa78daf2c6d0d97d2bb19628c6d4a1c935e45052cd58d2f2",
+    "modified": false
+  },
+  {
+    "asset": "aven-browser.png",
+    "source": "evidence/verification/iso-candidate5/browser-sc.png",
+    "sha256": "55bfa668b9734c4a5eb85a106d512775cf9df3e0863cfcaf0f9924f27b4b2b49",
+    "modified": false
+  },
+  {
+    "asset": "aven-mail.png",
+    "source": "evidence/verification/iso-candidate5/mail-sc.png",
+    "sha256": "368383bc70109feddcf188857ad5c634f391ae595ee34ff9ea4755b672ff9702",
+    "modified": false
+  },
+  {
+    "asset": "aven-photos.png",
+    "source": "evidence/verification/iso-candidate5/photos-grid.png",
+    "sha256": "933096cea5d0dcbae3c81bf41e8afe02e53eb2342e10ed96178a5d8d6a9ea4dc",
+    "modified": false
+  },
+  {
+    "asset": "aven-typography.png",
+    "source": "evidence/verification/iso-candidate5/preview-text-sc.png",
+    "sha256": "643403c71cb96119f477cfea21eb458cb4618ca3fadd46c36e32536401a7eadf",
+    "modified": false
+  },
+  {
+    "asset": "stock-files.png",
+    "source": "evidence/stock/round-00/files-mixed-clean-1x.png",
+    "sha256": "253bcad1397d6a51ef3013ea454b8ec1430f146c883f2d58d3c7c487e5b4e435",
+    "modified": false
+  },
+  {
+    "asset": "stock-preview.png",
+    "source": "evidence/stock/round-00/preview-image-1x.png",
+    "sha256": "36cfc6903120007442331dc745ee623b7dbc691913c8d9377b22cfb2f745f38b",
+    "modified": false
+  },
+  {
+    "asset": "stock-browser.png",
+    "source": "evidence/stock/round-00/browser-sc-1x.png",
+    "sha256": "e1d7de2cfcabf86a805d19770fab7e1c686728aa3ea253ada673bd57a695c93b",
+    "modified": false
+  },
+  {
+    "asset": "stock-mail.png",
+    "source": "evidence/stock/round-00/mail-sc-1x.png",
+    "sha256": "935fd7f46174ab3a64fa947a26cc9a0e4c8bc4aa9d2cf7002310abeadfdca9cf",
+    "modified": false
+  },
+  {
+    "asset": "stock-photos.png",
+    "source": "evidence/stock/round-00/photos-grid-1x.png",
+    "sha256": "d4ce5c702b163332f00d22d041401f864aa2e3a9370e1bd084b75de68ecaf1f6",
+    "modified": false
+  },
+  {
+    "asset": "aven.svg",
+    "source": "visual/icons/Aven/scalable/apps/aven.svg",
+    "sha256": "f948b2e485e9595ac72ac88f8f28f2bc9af4ae6454d9ade5200ba303ecc5bd0c",
+    "modified": false
+  }
+]

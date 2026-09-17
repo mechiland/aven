@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>Aven</title>
+  <rect x="5" y="5" width="54" height="54" rx="15" fill="#326B60"/>
+  <path d="M18 45 30.2 19.9Q32 16.2 33.8 19.9L46 45M23 35h18" fill="none" stroke="#F4F5EA" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

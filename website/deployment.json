@@ -1,0 +1,48 @@
+{
+  "url": "https://aven-website.mechiland.workers.dev",
+  "provider": "Cloudflare Workers",
+  "version_id": "f328f9d5-7fef-47a2-87ab-0b9eafc308e5",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "content_verified": true
+    },
+    {
+      "path": "/zh-cn/",
+      "status": 200,
+      "content_verified": true
+    },
+    {
+      "path": "/en/",
+      "status": 200,
+      "content_verified": true
+    },
+    {
+      "path": "/assets/aven-files.png",
+      "status": 200,
+      "bytes_identical": true
+    },
+    {
+      "path": "/assets/fonts/aven-noto-regular.woff2",
+      "status": 200,
+      "bytes_identical": true
+    },
+    {
+      "path": "/app.js",
+      "status": 200,
+      "bytes_identical": true
+    },
+    {
+      "path": "/styles.css",
+      "status": 200,
+      "bytes_identical": true
+    },
+    {
+      "path": "/page-that-does-not-exist",
+      "status": 404
+    }
+  ],
+  "browser_visual_score": null,
+  "os_changes": false
+}
