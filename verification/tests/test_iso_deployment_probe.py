@@ -77,6 +77,42 @@ class IsoDesktopStartupTests(unittest.TestCase):
         self.assertTrue(any("graphical.target" in e for e in probe.assess_desktop(self.probes)))
 
 
+class FedoraTrackingRefTests(unittest.TestCase):
+    def setUp(self):
+        self.probes = {
+            "fedora_ref": {"exit_code": 0, "stdout": probe.BASE + "\n"},
+            "fedora_ref_signature": {"exit_code": 0, "stdout": "Good signature from Fedora\n"},
+        }
+
+    def test_initial_offline_ref_equal_to_installed_base_passes(self):
+        self.assertEqual(probe.assess_tracking_ref(self.probes), [])
+
+    def test_online_metadata_refresh_can_advance_a_signed_tracking_ref(self):
+        self.probes["fedora_ref"]["stdout"] = "a" * 64 + "\n"
+        self.assertEqual(probe.assess_tracking_ref(self.probes), [])
+
+    def test_advanced_ref_requires_its_own_signature(self):
+        self.probes["fedora_ref"]["stdout"] = "a" * 64 + "\n"
+        self.probes["fedora_ref_signature"] = {"exit_code": 1, "stdout": "", "stderr": "No signatures found"}
+        self.assertTrue(any("signature" in error for error in probe.assess_tracking_ref(self.probes)))
+
+    def test_missing_or_malformed_ref_is_rejected(self):
+        for value in ["", "a" * 63, "unexpected-ref-name"]:
+            self.probes["fedora_ref"]["stdout"] = value
+            self.assertTrue(probe.assess_tracking_ref(self.probes))
+
+    def test_failed_signature_command_cannot_pass_from_partial_output(self):
+        self.probes["fedora_ref_signature"]["exit_code"] = 1
+        self.assertTrue(probe.assess_tracking_ref(self.probes))
+
+    def test_new_tracking_ref_does_not_allow_a_changed_booted_base(self):
+        status = {"deployments": [{"booted": True, "checksum": probe.LAYER,
+            "base-checksum": "a" * 64, "origin": probe.ORIGIN, "gpg-enabled": True, "unlocked": "none",
+            "layered-commit-meta": {"rpmostree.clientlayer": True}, "requested-packages": sorted(probe.PACKAGES)}]}
+        origin = "[origin]\nbaserefspec=" + probe.ORIGIN + "\n[packages]\nrequested=" + ";".join(sorted(probe.PACKAGES)) + ";\n"
+        self.assertTrue(any("base" in error for error in probe.assess(status, origin)))
+
+
 class UnionReleaseContractTests(unittest.TestCase):
     def setUp(self):
         self.document = json.loads((Path(__file__).parents[2] / "iso/platform.json").read_text())

@@ -193,6 +193,20 @@ def assess_desktop(probes):
     return errors
 
 
+def assess_tracking_ref(probes):
+    """A signed update check may advance the remote ref without changing boot."""
+    resolved = probes.get("fedora_ref", {})
+    checksum = resolved.get("stdout", "").strip()
+    errors = []
+    if resolved.get("exit_code") != 0 or not SHA256.fullmatch(checksum):
+        errors.append("Fedora tracking ref does not resolve to a complete commit checksum")
+    signature = probes.get("fedora_ref_signature", {})
+    if (signature.get("exit_code") != 0
+            or "Good signature" not in signature.get("stdout", "") + signature.get("stderr", "")):
+        errors.append("No verified Fedora tracking-ref signature")
+    return errors
+
+
 def assess_first_login(record, profile):
     """Require completion records plus current settings and a live Union dock."""
     errors = list(record.get("errors", []))
@@ -299,6 +313,10 @@ def main():
         "display_manager": command(["systemctl", "show", "display-manager.service", "--property=Id,LoadState,ActiveState,UnitFileState"]),
         "default_target": command(["systemctl", "get-default"]),
     }
+    tracking_commit = probes["fedora_ref"].get("stdout", "").strip()
+    probes["fedora_ref_signature"] = (command(["ostree", "--repo=" + repo, "show",
+        "--gpg-verify-remote=fedora", tracking_commit]) if SHA256.fullmatch(tracking_commit) else
+        {"exit_code": None, "error": "Tracking ref did not resolve to a valid commit"})
     status = probes["atomic"].get("json", {})
     booted = [d for d in status.get("deployments", []) if d.get("booted") is True]
     origin_text = ""
@@ -317,9 +335,10 @@ def main():
     signature = probes["base_signature"]
     if "Good signature" not in signature.get("stdout", "") + signature.get("stderr", ""):
         errors.append("No verified Fedora base signature")
-    for name in ["layer_parent", "fedora_ref"]:
-        if probes[name].get("stdout", "").strip() != base:
-            errors.append(name + " does not resolve to expected Fedora base")
+    if probes["layer_parent"].get("stdout", "").strip() != base:
+        errors.append("layer_parent does not resolve to expected Fedora base")
+    tracking_errors = assess_tracking_ref(probes)
+    errors.extend(tracking_errors)
     if probes["selinux"].get("stdout", "").strip() != "Enforcing":
         errors.append("SELinux is not enforcing")
     if probes["ostreed"].get("stdout", "").strip() != "active":
@@ -341,6 +360,8 @@ def main():
         errors.extend(profile_errors)
     print(json.dumps({"schema_version": 1, "captured_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "expected_layer": layer, "expected_base": base, "expected": expected,
+        "fedora_tracking_ref": {"commit": tracking_commit, "matches_installed_base": tracking_commit == base,
+                                "signature_verified": not tracking_errors},
         "origin_file": str(origin_file) if origin_file else None, "origin_text": origin_text,
         "origin_sha256": hashlib.sha256(origin_text.encode()).hexdigest() if origin_text else None,
         "probes": probes, "atomic_identity_passed": not atomic_errors,
@@ -349,7 +370,7 @@ def main():
         "first_login": profile, "first_login_passed": not profile_errors if profile is not None else None,
         "errors": errors,
         "iso_boot_install_accepted": None,
-        "limitations": ["Read-only deployment checks do not prove optical firmware boot, network-free installation, visual quality, or live rollback.", "First-login checks require an explicit desktop user and inspect completion records, selected Union/Dock settings, installed assets, and running Plasma panel properties; they do not prove every application's loaded style or visual appearance.", "Cache checks validate required refs and their commit-object hashes; full cached file-object integrity requires repository fsck.", "Failed units are recorded for comparison with the known baseline; they are not silently discarded.", "Duplicate Flatpak check covers system applications imported by Anaconda, not applications later installed in individual user accounts."]}, indent=2))
+        "limitations": ["Read-only deployment checks do not prove optical firmware boot, network-free installation, visual quality, or live rollback.", "The booted layer, its base and parent must match the release exactly. The Fedora update tracking ref may differ after an online metadata check, but must resolve and carry a valid Fedora signature.", "First-login checks require an explicit desktop user and inspect completion records, selected Union/Dock settings, installed assets, and running Plasma panel properties; they do not prove every application's loaded style or visual appearance.", "Cache checks validate required refs and their commit-object hashes; full cached file-object integrity requires repository fsck.", "Failed units are recorded for comparison with the known baseline; they are not silently discarded.", "Duplicate Flatpak check covers system applications imported by Anaconda, not applications later installed in individual user accounts."]}, indent=2))
     return 1 if errors else 0
 
 
