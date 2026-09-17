@@ -1,0 +1,222 @@
+{
+  "version": "0.3.1",
+  "recorded_at": "2026-09-17T09:35:30.458474+00:00",
+  "runtime_source_commit": "3cea3e117b4503f3e74239b406c2ded992ab1df5",
+  "public_installer": true,
+  "private_kickstart_overlay": false,
+  "installation_network": "offline",
+  "first_disk_boot_network": "offline",
+  "second_disk_boot_network": "online",
+  "firmware_install": "UEFI",
+  "fresh_virtual_disk_gib": 48,
+  "native_first_user_setup_completed": true,
+  "automatic_profile_application": true,
+  "second_boot_persistence_verified": true,
+  "first_boot_review": "independent-review.json",
+  "second_boot_review": "second-boot-review.json",
+  "native_app_smoke_passed": true,
+  "screenshots": [
+    {
+      "path": "evidence/verification/union-iso-031/screens/bios-optical-first.png",
+      "action": "BIOS optical boot reached the original Fedora Anaconda welcome",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "dfa51811faae2d025a34f16ec5c846df941722724130af8ab55bf05a8d6cd0e8"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/uefi-welcome-ready.png",
+      "action": "UEFI optical boot reached the original Fedora Anaconda welcome",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "dfa51811faae2d025a34f16ec5c846df941722724130af8ab55bf05a8d6cd0e8"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/installer-language.png",
+      "action": "Selected Simplified Chinese in the public graphical installer",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "a9d5fa42ba9ef0367e55e81e560285f70defdd1f1ed30ad0df964f9dee96d2e4"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/installer-disk-ready.png",
+      "action": "Selected the new empty 48 GiB virtual disk with automatic partitioning",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "0a719a78e6a71bcbc67be50229c00c25e55d3f763be461ee2debbb2bf7bbffa0"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/installer-keyboard.png",
+      "action": "Chinese keyboard selected",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "ce475c4a94721b7563f58998e064ce720c87f8b4a8e0c816bfde18d8c913de01"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/installer-ready.png",
+      "action": "Offline public installer ready",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "302c2e5e5246a80db0159c5f97189601413282e8286e0492e52a21c3899471ab"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/installer-progress-03.png",
+      "action": "Anaconda reported successful installation",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "8fa0fb39550a685fb8f4a45815d96eec4ca2e8bcb3a4042184d3f3524c68f80a"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/first-boot.png",
+      "action": "Disk-only boot reached native Plasma first-user setup",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "6848e6b6f74d7e0160c118e169c61bff25a2fae7df516753732400e104bc1762"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/setup-language.png",
+      "action": "Native first-user Simplified Chinese selection",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "e6120cf3938d84ef22f5266bc518d582d5a83460b9662530f93240a2da712455"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/setup-keyboard.png",
+      "action": "Native first-user Chinese keyboard",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "ce3f61992a2542bad86a2338e1e5d85083dcc852a8991c7243735941d0f1d3a8"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/setup-appearance.png",
+      "action": "Native light appearance selection",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "8faed49b681c1fdb97c05b61f97a486a5007fa8f4f3f6cafd7b927d4720ef19a"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/setup-account-filled.png",
+      "action": "Created the disposable local aven account using native setup",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "ad62f7967aa1244539a5ca2933e4e1ae882f15d56d174096377693ab72ff8998"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/setup-hostname-ready.png",
+      "action": "Set the disposable VM hostname in native setup",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "75e5343d90c2fe00bac4d27cb630369552454ca251cff3389eb82e72a73f065b"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/setup-next.png",
+      "action": "Native timezone setup with Asia/Shanghai",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "bacc020138744843a45510a74219662a0fe180d552cfe8a65220c6b40fc16911"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/setup-complete.png",
+      "action": "Native first-user setup completed",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "0ead44d68bfd26e4d542f59a84a7df2fca55a0cd9ba2fb1adef8863b64503377"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/native-login.png",
+      "action": "Native Plasma login screen",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "f9fcda7110789df0d260d4e107c095d048b121cdc42cdd7322f17653bef84423"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/first-desktop.png",
+      "action": "First login automatically applied the Union wallpaper, window frame and translucent Dock",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "ceda45613d645df59414f263af2f5fc9412b228a617d6adda672f0793bf3c5a7"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/first-files-ready.png",
+      "action": "Dolphin opened the fresh Chinese home directory",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "aee1c58deb6d0132856e2490a8f42e2a9c477946c042b2effeaa4c862a71c240"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/second-desktop.png",
+      "action": "Second disk-only UEFI boot retained the automatic Union profile",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "60901f2c04af346565e02902a4ddc3b5e965747663b99fad0d56212f11aeb914"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/smoke-files-pdf.png",
+      "action": "Dolphin selected the embedded Chinese PDF fixture",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "0bb8d0dc645d039bccf586c4ab7eb02bb6a9fdfe0fa26042ede623b2a5c2dc32"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/smoke-preview-pdf.png",
+      "action": "Ctrl+Alt+P opened the PDF in Aven Preview",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "d6f2a3067600d92ccb92b4301f74ed4c3028f6f4346a2387b08de99cc22a4ef4"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/smoke-pdf-open.png",
+      "action": "Enter from Preview opened the original Chinese PDF in Okular",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "aae99b2fe071eacb52c63e6726e7fd33c004c04c68a59531d844cb746e4423d1"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/smoke-browser-chinese.png",
+      "action": "Installed Firefox wrapper rendered the embedded Chinese/Latin page",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "f088b6749048f79c585f51aa53ab97fd3e39ab95b55bff3ad584cde6bf092931"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/smoke-browser-https.png",
+      "action": "Installed Firefox loaded https://example.org successfully",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "93656e90b6b10f7cc874f2ffc33a52901e6243b75608e74fec2a7587d3fd5644"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/smoke-mail-ready.png",
+      "action": "Installed Thunderbird reached its native Chinese account setup with the managed frame",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "9961204ddd121582761ed75ee615f2ee1fb1a2daa5e2b36cba0daf636869ef5e"
+    },
+    {
+      "path": "evidence/verification/union-iso-031/screens/smoke-photos.png",
+      "action": "Installed Gwenview rendered the Chinese-named photo and album strip",
+      "inspected_by": "root",
+      "inspected": true,
+      "sha256": "99a8f822c9b23c15acfbad6a4800def0becae33f05105dcbefd5d348b8eeec96"
+    }
+  ],
+  "laboratory_changes": [
+    "Only after observing the native first desktop and Files, a disposable loopback SSH key and sudo fixture were added for independent read-only audits. They are not in the ISO.",
+    "Guest screen locking and power management were temporarily adjusted to capture native UI. The lock override was removed before reboot; PowerDevil was restarted and confirmed active after second-boot captures.",
+    "Application content uses embedded public fixtures under /var/lib/aven/source/fixtures. No demonstration mail or personal accounts were imported."
+  ],
+  "observations": [
+    "The profile creates English Documents/Downloads/Pictures directories alongside native Chinese standard directories on this fresh Chinese account.",
+    "Native KIO current-location breadcrumb still requests Bold; the managed typography roles use 500.",
+    "Gwenview keeps its native sidebar, with clipped labels at its initial small window size.",
+    "The first Fedora Welcome window remains native; the focus is the requested applications and managed desktop framework."
+  ],
+  "limits": [
+    "This is a native launch/render/Preview handoff smoke, not a repeat of every app operation or fractional-scale matrix.",
+    "Mail was tested through native account setup only; no sending, receiving or configured mailbox in this fresh installation.",
+    "No system upgrade or rollback transaction was executed. Current Fedora origin, base signature, layered commit and local package cache are audited separately.",
+    "Additional screenshots in screens/ include intermediate, locked, dimmed or blank diagnostic captures. Only this explicit index is acceptance evidence."
+  ],
+  "visual_scores": null,
+  "three_second_differentiation": null,
+  "visual_pass": null
+}

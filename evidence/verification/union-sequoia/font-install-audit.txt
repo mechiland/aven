@@ -1,0 +1,8 @@
+Saved /etc/fonts/conf.d/60-aven-families.conf.pre-aven-1789619331637552582
+Installed /etc/fonts/conf.d/60-aven-families.conf
+Saved /etc/fonts/conf.d/99-aven-rendering.conf.pre-aven-1789619331638745120
+Installed /etc/fonts/conf.d/99-aven-rendering.conf
+Install typography/fedora-packages.txt through the guest image's package workflow.
+In the guest: fc-cache -f; restart applications; python3 typography/audit.py --active
+active-environment: 59/59 font checks passed; visual quality unassessed.
+

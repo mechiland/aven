@@ -1,0 +1,18 @@
+{
+  "version": "0.3.0-union",
+  "created_at": "2026-09-17T05:11:19.179328+00:00",
+  "scope": "Focused appearance profile for the existing prepared Fedora Kinoite44 Plasma6.8Beta Union guest; not a bootable disk or ISO",
+  "guide": "docs/UNION-SEQUOIA.md",
+  "artifacts": [
+    {
+      "path": "output/Aven-Union-0.3.0-profile.tar.gz",
+      "bytes": 4908794,
+      "sha256": "d39cfaed8fbb486a7024135d2e4481e18fecf22941d3c7fcd40135f77243302c"
+    },
+    {
+      "path": "output/Aven-Mist-0.3.0.unionstyle",
+      "bytes": 1824,
+      "sha256": "7b92a8ada1edb995e2ab85fedd80e68772df0939a02de50c34570fefba75ba4b"
+    }
+  ]
+}

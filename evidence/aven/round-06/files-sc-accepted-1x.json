@@ -1,0 +1,12 @@
+{
+  "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+  "width": 1920,
+  "height": 1200,
+  "captured_at": "2026-09-17T04:56:00.043652+00:00",
+  "rfb_version": "RFB 003.008",
+  "server_name": "QEMU (Aven Union 0.2.0 \u2014 Plasma 6.8 Beta)",
+  "endpoint": "127.0.0.1:5922",
+  "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+  "input_events_sent": 0,
+  "sha256": "69a016275f1b462a9129c68b6701ee52d18689a38e8d0baf6183984982be5afe"
+}

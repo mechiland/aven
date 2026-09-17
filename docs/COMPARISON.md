@@ -1,6 +1,11 @@
 # Native before / after comparison
 
-This index points to the current **round 4** booted prototype. The independent
+This report describes the historical Breeze prototype. Current Union 0.3.1
+evidence is in [UNION-SEQUOIA.md](UNION-SEQUOIA.md),
+[UNION-DOCK-MEDIUM.md](UNION-DOCK-MEDIUM.md) and
+[UNION-ISO-0.3.1.md](UNION-ISO-0.3.1.md). Its visual scores remain pending.
+
+This index points to the **round 4** booted prototype. The independent
 final review passes: **8.33 overall / 8.5 Chinese**, with three-second refinement
 judged **yes**. Each link opens an original, unmodified guest
 framebuffer. Open images at their native size to inspect text.

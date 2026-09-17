@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-09-17T05:07:25.803099+00:00",
+  "platform": "wayland",
+  "qt": "6.11.2",
+  "configured_widget_style": "Union",
+  "configured_union_style": "aven-mist",
+  "actual_style_class": "UnionStyle",
+  "actual_style_name": "union",
+  "available_styles": [
+    "Union",
+    "Breeze",
+    "Windows",
+    "Fusion"
+  ],
+  "button_size_hint": [
+    135,
+    35
+  ],
+  "button_margin": 6,
+  "theme_sha256": {
+    "contents/css/controls.css": "bcc480fca1240d181f307638125cbe7e7c8de266ef804e1e94ac032816e95ee8",
+    "contents/css/style.css": "5855663d744b7ae3492c9b51bea6d23a4cf3ed82f4aeb25e109772950f606441",
+    "contents/css/tokens.css": "77dfe7099562c026e2763930f00e15bb338cd36086f800f1e1cfcbaa1649748f",
+    "metadata.json": "2b2144e406da68ba69214329e818e71193d66b6ea102419d63c3202a4b8d6b17"
+  },
+  "packages": "plasma-desktop-6.7.90-1.fc44.x86_64\nkwin-6.7.90-1.fc44.x86_64\nplasma-union-6.7.90-1.fc44.x86_64\ncxx-rust-cssparser-1.1.0-1.fc44.x86_64\ndolphin-26.08.1-1.fc44.x86_64\ngwenview-26.08.1-1.fc44.x86_64\nqt6-qtbase-6.11.2-2.fc44.x86_64\n",
+  "files_compatibility_sha256": {
+    ".local/libexec/aven-union/aven-files": "e0d29ac675d46cea6d6e3f03e159a8b57d444c70825bf60b1e195e390a50530d",
+    ".local/libexec/aven-union/aven-photos": "b51e5723009771994e547bab12ef5fb354f2668b4eda27292fea096347443fd8",
+    ".local/libexec/aven-union/dolphin-location.qss": "b80b0de1a37cfdf5948864c73401ca1a919d4689ab8b31882fc8586c85558232",
+    ".local/libexec/aven-union/gwenview-surfaces.qss": "202a2b3fe917a1b895cb33766d4f0b1ba93d67af1a0371ec6fc65ef2099bfda8"
+  },
+  "native_processes": [
+    {
+      "pid": 2330,
+      "executable": "dolphin",
+      "command": "/usr/bin/dolphin -stylesheet /home/aven/.local/libexec/aven-union/dolphin-location.qss /home/aven/Documents/日常 · Everyday",
+      "union_libraries": [
+        "/usr/lib64/libUnion.so.6.7.90",
+        "/usr/lib64/qt6/plugins/styles/UnionWidgetsStyle.so"
+      ],
+      "locale": {
+        "LANG": "zh_CN.UTF-8",
+        "LANGUAGE": "zh_CN",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 2331,
+      "executable": "gwenview",
+      "command": "/usr/bin/gwenview -stylesheet /home/aven/.local/libexec/aven-union/gwenview-surfaces.qss /home/aven/Pictures/京都春日",
+      "union_libraries": [
+        "/usr/lib64/libUnion.so.6.7.90",
+        "/usr/lib64/qt6/plugins/styles/UnionWidgetsStyle.so"
+      ],
+      "locale": {
+        "LANG": "zh_CN.UTF-8",
+        "LANGUAGE": "zh_CN",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 2332,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox --profile /var/home/aven/.local/share/aven/firefox file:///home/aven/aven/fixtures/browser/index.html",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 2333,
+      "executable": "thunderbird",
+      "command": "/usr/lib64/thunderbird/thunderbird -profile /home/aven/.local/share/aven/mail/aven-demo",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 2414,
+      "executable": "dolphin",
+      "command": "/usr/bin/dolphin -stylesheet /home/aven/.local/libexec/aven-union/dolphin-location.qss --daemon",
+      "union_libraries": [
+        "/usr/lib64/libUnion.so.6.7.90",
+        "/usr/lib64/qt6/plugins/styles/UnionWidgetsStyle.so"
+      ],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 2504,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -ipcHandle 0 -signalPipe 1 -initialChannelId {c4640f90-6560-42f7-b37f-dc8a9c4c2412} -parentPid 2332 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 1 forkserver",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 2534,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -parentBuildID 20260831190421 -prefsHandle 0:35428 -prefMapHandle 1:294676 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {2ac02855-c203-41c7-afc1-3b2cc49bb6a1} -parentPid 2332 -crashHelperPid 2374 -crashHelper 5 -crashReporter 6 -appDir /usr/lib64/firefox/browser 2 socket",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 2599,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:35553 -prefMapHandle 1:294676 -jsInitHandle 2:160936 -parentBuildID 20260831190421 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {02082eb1-69ed-47b7-9833-71abcdf1e0c0} -parentPid 2332 -crashHelperPid 2374 -crashHelper 6 -crashReporter 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 3 tab",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 2608,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -parentBuildID 20260831190421 -prefsHandle 0:35553 -prefMapHandle 1:294676 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {82d67955-50fc-4f1a-bc19-03a4586ab675} -parentPid 2332 -crashHelperPid 2374 -crashHelper 5 -crashReporter 6 -appDir /usr/lib64/firefox/browser 4 rdd",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 2757,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:35673 -prefMapHandle 1:294676 -jsInitHandle 2:160936 -parentBuildID 20260831190421 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {06e7c4ac-a88e-43f4-80f9-45a06c7a7d43} -parentPid 2332 -crashHelperPid 2374 -crashHelper 6 -crashReporter 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 5 tab",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 2838,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -parentBuildID 20260831190421 -sandboxingKind 0 -prefsHandle 0:53350 -prefMapHandle 1:294676 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {2926b9f1-157d-40f7-98ef-20c5abb6c058} -parentPid 2332 -crashHelperPid 2374 -crashHelper 5 -crashReporter 6 -appDir /usr/lib64/firefox/browser 6 utility",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 2851,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:53350 -prefMapHandle 1:294676 -jsInitHandle 2:160936 -parentBuildID 20260831190421 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {c191c47f-6105-42a6-84f3-7c5114a385ed} -parentPid 2332 -crashHelperPid 2374 -crashHelper 6 -crashReporter 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 7 tab",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 2898,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:50077 -prefMapHandle 1:294676 -jsInitHandle 2:160936 -parentBuildID 20260831190421 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {cdf022b9-2a15-495f-bf8b-428fe32d8f48} -parentPid 2332 -crashHelperPid 2374 -crashHelper 6 -crashReporter 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 8 tab",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 2928,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:50077 -prefMapHandle 1:294676 -jsInitHandle 2:160936 -parentBuildID 20260831190421 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {28989faa-45bb-4edb-af78-d3d5e0b1dfc0} -parentPid 2332 -crashHelperPid 2374 -crashHelper 6 -crashReporter 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 9 tab",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 2934,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:50077 -prefMapHandle 1:294676 -jsInitHandle 2:160936 -parentBuildID 20260831190421 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {7e010563-874f-4a5c-ad46-9b80036208be} -parentPid 2332 -crashHelperPid 2374 -crashHelper 6 -crashReporter 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 10 tab",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 3049,
+      "executable": "thunderbird",
+      "command": "/usr/lib64/thunderbird/thunderbird -contentproc -isForBrowser -prefsHandle 0:5376 -prefMapHandle 1:291594 -jsInitHandle 2:156236 -parentBuildID 20260806125820 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {0f38839e-3270-4402-bc89-5d41ca3b85e6} -parentPid 2333 -greomni /usr/lib64/thunderbird/omni.ja -appDir /usr/lib64/thunderbird 1 tab",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 3054,
+      "executable": "thunderbird",
+      "command": "/usr/lib64/thunderbird/thunderbird -contentproc -parentBuildID 20260806125820 -prefsHandle 0:5376 -prefMapHandle 1:291594 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {03ae6f01-83bc-4283-a91f-d437622c34cc} -parentPid 2333 -appDir /usr/lib64/thunderbird 2 rdd",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    }
+  ],
+  "limitations": [
+    "Library mappings and style metrics do not establish visual quality; inspect real screenshots."
+  ],
+  "style_active": true
+}
+

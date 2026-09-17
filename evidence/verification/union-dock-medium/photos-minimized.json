@@ -1,0 +1,59 @@
+{
+  "windows": [
+    {
+      "id": "{bec079aa-5158-4076-8e37-b34a68326f0f}",
+      "caption": "/home/aven/Pictures/京都春日 — Gwenview",
+      "app": "org.kde.gwenview",
+      "resource_class": "org.kde.gwenview",
+      "resource_name": "gwenview",
+      "pid": 7506,
+      "active": false,
+      "minimized": true,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 360,
+        "y": 80,
+        "width": 1200,
+        "height": 850
+      },
+      "client": {
+        "x": 364,
+        "y": 108,
+        "width": 1192,
+        "height": 816
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 772,
+        "height": 409
+      }
+    }
+  ],
+  "screens": [
+    {
+      "name": "Virtual-1",
+      "scale": 1,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1200
+      }
+    }
+  ],
+  "active_window": "{dc25c991-8750-469f-b1b3-d1bb73ac9db0}",
+  "ok": true,
+  "schema_version": 1,
+  "captured_at": "2026-09-17T06:23:30.159182+00:00",
+  "method": "temporary KWin script via public Workspace/Window API",
+  "command": "inventory",
+  "persistent_kwin_changes": false
+}

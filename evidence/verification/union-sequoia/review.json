@@ -1,0 +1,467 @@
+{
+  "schema_version": 1,
+  "version": "0.3.0-union",
+  "updated_at": "2026-09-17T05:10:56.804861+00:00",
+  "reference_directory": "/home/michael/Downloads/macOS15Screens",
+  "references": [
+    {
+      "name": "15-Sequoia-Accents-Light-Multicolor.png",
+      "sha256": "bfa9be7bd8b7d35acabab5ccc16ddf21867e0878153cb062327f8e60d0b0e722",
+      "inspected": true
+    },
+    {
+      "name": "15-Sequoia-Applications.png",
+      "sha256": "08d912f10dfd79b528be238ceaee2dfb002e082f110f44d891dec34bd4ea45a3",
+      "inspected": true
+    },
+    {
+      "name": "15-Sequoia-Desktop.png",
+      "sha256": "27d8f6aeaf69ddcf06863ac68c9e4f88cb276f7df473137fef47c5c88fe072f9",
+      "inspected": true
+    },
+    {
+      "name": "15-Sequoia-Mail.png",
+      "sha256": "337db5b1a7a3e74e1f8c17f5de9973e929da90523ad83356c011e412c38035f5",
+      "inspected": true
+    },
+    {
+      "name": "15-Sequoia-Photos.png",
+      "sha256": "0a7d927fcf3ca2f8833b506b3415eacee823009e1a6d2c60a1dc3e950742238c",
+      "inspected": true
+    },
+    {
+      "name": "15-Sequoia-Safari-v18.png",
+      "sha256": "83361b4d6f25b30b06ed5ce84d25cfecc0eeb97ff061471f4cc7455ea9559d8f",
+      "inspected": true
+    },
+    {
+      "name": "15-Sequoia-Settings-Apple-ID.png",
+      "sha256": "72d606d108bae09849d95f59c826b8c44db2f924c0db7b57c500f84697718f3b",
+      "inspected": true
+    },
+    {
+      "name": "15-Sequoia-Spotlight.png",
+      "sha256": "ba5986378902e50e39c94fca2e90b2a62333c60cf48f7cb9c0bdd3b3d74a14b4",
+      "inspected": true
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "evidence/aven/round-06/before-awake.png",
+      "sha256": "8eaa821a312ed5e40f6a834173dc22968f70ce6c693bbe26369cf92305d57f8c",
+      "state": "before",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    },
+    {
+      "path": "evidence/aven/round-06/before-desktop.png",
+      "sha256": "708fa9461ea06466938f54c4a61f54d0b3b5199b3143b721c14dc2e473525e98",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/browser-address-popup-1x.png",
+      "sha256": "780530a1d9a033c62a0ae7e28757fd34137a1861652f0d5b4e20f49b013dc6ff",
+      "state": "final",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    },
+    {
+      "path": "evidence/aven/round-06/browser-close-dialog.png",
+      "sha256": "794eb455f367d2980803b020182eac8f50be8331f80d4e5770b73ef4f424b6a7",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/browser-close-final-dialog.png",
+      "sha256": "4de81d246bef7ec7f5eb9bbf3c81b190607bbb62dbc22860a7ab1c3a58db07da",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/browser-first-1x.png",
+      "sha256": "1e8f2285ff513863163039ebbf3e77d45e3848d8ca961507f2fbe7407a3f930c",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/browser-new-tab-1x.png",
+      "sha256": "b12809d213e87442bae12436269d9d1a0eba5c06aaf9e12d3786bb242320c572",
+      "state": "final",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    },
+    {
+      "path": "evidence/aven/round-06/browser-pre-refresh.png",
+      "sha256": "b127067dbd7e1e0883d437db9baff985000fa654c8fb79e6511bf0ec8d102455",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/browser-reboot-2x.png",
+      "sha256": "abe8973a5d6d564dd6680b263e884e318379d505b0caede9b634deabf2260eea",
+      "state": "final",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    },
+    {
+      "path": "evidence/aven/round-06/browser-sc-accepted-1x.png",
+      "sha256": "ed6bc03cb513e88814ed988f9c04c87a056f8fa82cdf814be208b2cb3a282699",
+      "state": "final",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    },
+    {
+      "path": "evidence/aven/round-06/browser-sc-accepted-2x.png",
+      "sha256": "2e0921972ca66be25e4669711f017e83687b7afe5fe1b1dd6b1403e5bed44f85",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/browser-sc-final-2x.png",
+      "sha256": "b0310599c122a67335ba314af73fec6e9508f6d8500c98a31ba2e0c825e32617",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/browser-second-1x.png",
+      "sha256": "2c66cbfa2de3c5295224d402b7b520b9e37ec17d251e76fc0b8e74c5cf378178",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/files-final-1x.png",
+      "sha256": "58a827335cd165d89e1308f710de5749d0c25771950fda6c7138cd2eebc1746b",
+      "state": "final",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    },
+    {
+      "path": "evidence/aven/round-06/files-first-1x.png",
+      "sha256": "45e905cf84424d81920002c866f2bcde3bde7e2bc887e7782ac45d35e02a4941",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/files-grid-1x.png",
+      "sha256": "90806f38a25dcb9d98f7c1f1972ebce80834d956e64d3e3cda08748235c1802f",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/files-palette-corrected-1x.png",
+      "sha256": "2dcd1022f95da8ea436d2fefdf78999546f8ea7cbedafb8022b0d1b495f93761",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/files-sc-accepted-1x.png",
+      "sha256": "69a016275f1b462a9129c68b6701ee52d18689a38e8d0baf6183984982be5afe",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/files-sc-accepted-2x.png",
+      "sha256": "91aa1e1b819de2ba55415f679704614eb10ff932e270971d16793678fdf11ccc",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/files-sc-awake-current-2x.png",
+      "sha256": "9442c99e17ebfe46ddea2fde284176c7ef93e428010da3c74a26f5e775617ade",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/files-sc-current-2x.png",
+      "sha256": "771e483f9c0b584005b4b2a79bf01cf7cf600109acc61b42a28ba462f5df33f9",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/files-sc-final-2x.png",
+      "sha256": "ab95df3c0bb0717b36528a41251d98c22fc8abd71da3a4f04d022dd99404c767",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/files-sc-fontcache-1x.png",
+      "sha256": "f817f2e5199f4344404524a6bbe8f87ad253a3fa7bd14dfbb2fda72cb124790c",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/files-sc-fontcache-2x.png",
+      "sha256": "66bd56317e34e3a8445c2f87ff071b58701fc64e013da1f421dd5ced75d316b7",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/files-sc-reboot-2x.png",
+      "sha256": "fba723b2844db8502eb3ef216cfefe450802022991f788728d36c1733a38c4d3",
+      "state": "final",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    },
+    {
+      "path": "evidence/aven/round-06/files-sc-refreshed-title-1x.png",
+      "sha256": "143840c4bfac073d310764238879431d849509b4caa62129ec800fc5589d3cbf",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/files-sc-refreshed-title-2x.png",
+      "sha256": "e96aa82c3942735329128fc42205501c0b5649d6768ce51f4075a7bddef7c3cc",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/files-sc-title500-2x.png",
+      "sha256": "a5dfefed0401ac5ebcc97a8a356c62c888cc1b6d8e0e4ec20a90747ae8f50ad4",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/files-tc-final-2x.png",
+      "sha256": "3f5fdc0634ca0b2d504be477f2e06a2f1563747c7ca13352d2ee6a895f0befde",
+      "state": "supporting-earlier-title",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    },
+    {
+      "path": "evidence/aven/round-06/mail-compose-accepted-1x.png",
+      "sha256": "47a000860d07a5b6f10f56b5f47cbb77f1ff9f1f41c5494060a7ad33d0748071",
+      "state": "final",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    },
+    {
+      "path": "evidence/aven/round-06/mail-current-1x.png",
+      "sha256": "ccf5f45f57d4f44f3d86fada8cb0df81ede32f9e6c1b3d0c608362d4c9b6f2dc",
+      "state": "final",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    },
+    {
+      "path": "evidence/aven/round-06/mail-final-reading-1x.png",
+      "sha256": "7f20dbeeafa0300fc0c29117fab0b76afcaa771b74e943ecd2c91902025e05fc",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/mail-first-1x.png",
+      "sha256": "83a6360a18b36cf559dc3ef6cd64452c283475d76ff85f12340fb5bff995ed7a",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/mail-message-1x.png",
+      "sha256": "0098f0213b88eebcff0dee942881ee01c5a40e8790530b47cfaeac95cee06145",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/mail-reading-1x.png",
+      "sha256": "b5a175fded29a425852bef27055cb7206e3e08fe2ffb18237204c21d789261da",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/mail-reading-accepted-1x.png",
+      "sha256": "976a6c6eba05b1f70cc1b1e0fa603fae2c43ad68d3df681532305f6a7aea8279",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/mail-reboot-2x.png",
+      "sha256": "22aaaa07b919d44620bc5e9118c5dd887acf5c8ea964e56feb24b02fac34905a",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/mail-sc-accepted-1x.png",
+      "sha256": "1c14dd142dfe6d84f8380082521f20235aea1740b0db434eb270fc6bc1c51e8a",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/mail-sc-final-2x.png",
+      "sha256": "7d8e57df9d0f92c8b102b4e091a69f5f52635fe2c8888f6dc5e70e0a76ea53f3",
+      "state": "supporting-earlier-title",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    },
+    {
+      "path": "evidence/aven/round-06/mail-second-1x.png",
+      "sha256": "d7d73b3e9a37d27a6827961cc979ba38a624a56e211dea455aa33d1538ca9f0c",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/photos-accepted-1x.png",
+      "sha256": "fde4f1a090e4ca4bd35ce1be373894c8332aa716398e8322dc0278e6bd898842",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/photos-final-2x.png",
+      "sha256": "10a3d39d3d0b25a2e332acbe6931504192669ef77e3d44182809a637ebff745f",
+      "state": "supporting-earlier-title",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    },
+    {
+      "path": "evidence/aven/round-06/photos-first-1x.png",
+      "sha256": "019c6e7282a787a1b0d2c0b4335eea71148cee86f76f2c30bb6c64f79ff6e790",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/photos-handoff-accepted-1x.png",
+      "sha256": "6673f6d9f6638ced2530b54929244a10290da068b28c9a016b17f3c402b9c8c4",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/photos-handoff-settled-2x.png",
+      "sha256": "2b13797cf27a94776f436b3269470d5fdce2ee4bc78bf74a88d71b067d442a20",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/photos-reboot-2x.png",
+      "sha256": "55140d2ae2ba05670b50c2ab4ec0e31da0cd2a9f5ae4c7384ab021134fe84713",
+      "state": "final",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    },
+    {
+      "path": "evidence/aven/round-06/photos-second-1x.png",
+      "sha256": "887460a9f5c12fef3f20010f2ee8e64618f04376b68ddbc792b3858712471362",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/photos-view-accepted-1x.png",
+      "sha256": "cf16e0b4a2a85b49e48f235ff628296e6a64406febd88a3e2ee048cb4b1f8d90",
+      "state": "final",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    },
+    {
+      "path": "evidence/aven/round-06/preview-image-accepted-1x.png",
+      "sha256": "5356f2c681a50d58d1122c749052827d5c54811da1dde8e34c8eadd3f1277d50",
+      "state": "final",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    },
+    {
+      "path": "evidence/aven/round-06/preview-sc-final-2x.png",
+      "sha256": "3505d1aeac30d8775052bc6930fc28b070a095e83244be11e9ff4bc92687880d",
+      "state": "diagnostic",
+      "native_framebuffer": true,
+      "visual_inspection": null
+    },
+    {
+      "path": "evidence/aven/round-06/preview-text-accepted-1x.png",
+      "sha256": "8b5927c3748e84e7966a79ac55cfa36ba00c6d606c5063dd779d9523ac5dec81",
+      "state": "final",
+      "native_framebuffer": true,
+      "visual_inspection": true
+    }
+  ],
+  "note": "Final denotes the implemented revision, not formal acceptance. Diagnostic images are excluded from final appearance conclusions. No capture is edited or composited.",
+  "scores": null,
+  "three_second_differentiation": null,
+  "pass": null,
+  "tests": {
+    "font_resolution": {
+      "passed": 59,
+      "evidence": "accepted-install.txt"
+    },
+    "verification": {
+      "passed": 88,
+      "evidence": "verification-tests.txt"
+    },
+    "files": {
+      "passed": 26,
+      "evidence": "files-tests.txt"
+    },
+    "preview": {
+      "passed": 15,
+      "evidence": "preview-tests-guest.txt",
+      "host_attempt": "preview-tests.txt records unavailable host PySide6; guest run passed"
+    },
+    "decoration_slices": {
+      "passed": 27,
+      "evidence": "decoration-geometry.txt"
+    }
+  },
+  "runtime": "runtime-reboot.json",
+  "atomic": "atomic-reboot.json",
+  "native_operations": [
+    "Firefox visible New Tab command creates real second tab; tab row returns",
+    "URL suggestion popup remains unclipped",
+    "Native Firefox green maximize/restore and yellow minimize buttons work",
+    "Thunderbird local Chinese message reading and empty compose; no mail sent",
+    "Preview positional Chinese text file opens; Escape closes",
+    "Preview EXIF6 image Enter opens native Gwenview via the managed MIME wrapper"
+  ],
+  "reboot_verified": true,
+  "display_restored": "1920x1200@75 scale1",
+  "limitations": [
+    "Native bold breadcrumb remains too heavy",
+    "1x CJK remains denser than Latin; no matching Chinese macOS source",
+    "Gwenview retains native folder/device sidebar, clipped device names and thumbnail bevels",
+    "Native folders may select filled icon assets at2x",
+    "Title was stale until font-cache refresh; live scale transitions showed transient decoration rasterization; freshboot2x supersedes them",
+    "Full fractional-scale/prose, motion, stock-scoring and rollback execution not repeated"
+  ],
+  "explicit_exclusions": {
+    "preview-sc-final-2x": "Bad --file invocation, error window",
+    "photos-handoff-accepted-1x": "Captured before target window appeared; use photos-view-accepted-1x",
+    "mail-final-reading-1x": "Body still loading; use mail-current-1x",
+    "files-sc-title500-2x": "Actually browser after failed qdbus6 invocation",
+    "files-sc-fontcache-1x": "Idle dimmed frame",
+    "files-sc-fontcache-2x": "Idle/scale transition",
+    "files-sc-current-2x": "Idle dimmed frame",
+    "files-sc-awake-current-2x": "Live scale/cache transition, superseded by fresh reboot",
+    "before-desktop": "Display off",
+    "mail-reading-1x": "Wrong foreground app",
+    "files-grid-1x": "Thumbnails still loading"
+  }
+}

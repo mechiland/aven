@@ -1,0 +1,44 @@
+{
+  "preview": "/var/home/aven/.local/bin/aven-preview",
+  "shortcut": "Ctrl+Alt+P",
+  "shortcut_file": "/var/home/aven/.local/share/kxmlgui5/dolphin/dolphinui.rc",
+  "xmlgui_version": 49,
+  "places": {
+    "changed": false,
+    "hidden_system_items": [],
+    "hidden_system_devices": [],
+    "device_discovery_error": null,
+    "ownership_record": null
+  },
+  "layout": {
+    "changed": true,
+    "places_width": 184,
+    "state_file": "/var/home/aven/.local/state/dolphinstaterc"
+  },
+  "packages_required": [
+    "python3-pyside6",
+    "kf6-kimageformats",
+    "kio-extras",
+    "kdegraphics-thumbnailers",
+    "ghostscript",
+    "ffmpegthumbs"
+  ]
+}
+{"seeded": true, "config": "/var/home/aven/.config/gwenviewrc", "manifest": "/var/home/aven/.local/share/aven/photos-profile.json"}
+{
+  "profile": "/var/home/aven/.local/share/aven/firefox",
+  "preferences_seeded": true,
+  "launcher": "/var/home/aven/.local/bin/aven-browser",
+  "desktop": "org.mozilla.firefox.desktop"
+}
+{
+  "profile": "/var/home/aven/.local/share/aven/mail/default",
+  "profile_seeded": false,
+  "appearance_refreshed": true,
+  "launcher": "/var/home/aven/.local/bin/aven-mail",
+  "desktop": "net.thunderbird.Thunderbird.desktop",
+  "mode": "normal-online",
+  "demo_fixtures": false
+}
+PASS: all 27 QtSvg slices have exact shared bounds; stretch hint present.
+

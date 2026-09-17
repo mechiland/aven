@@ -1,15 +1,24 @@
 # Aven Union prototype
 
+The current running VM has the [Medium emphasis and dock revision (0.3.1)](UNION-DOCK-MEDIUM.md),
+building on the [macOS 15 framework revision](UNION-SEQUOIA.md). Its screenshots,
+profile bundle and limits are recorded there. The 0.2.0 disk export described
+below is the earlier build and has not been rebuilt for these appearance changes.
+
 This variant keeps Aven's focused Files, browser, mail, photos and Latin/Chinese
 typography scope. It uses Fedora Kinoite 44 with the KDE SIG's Plasma 6.8 Beta
 (RPM version 6.7.90) and an Aven Mist Union theme. Dolphin, Firefox, Thunderbird,
 Gwenview and the existing Qt previewer remain the applications.
 
 The current integration and evidence status is recorded separately as
-`union_candidate` in [STATUS.json](STATUS.json). The earlier round-4 and ISO
+`union_dock_medium_candidate` and `union_iso_031` in [STATUS.json](STATUS.json). The earlier round-4 and ISO
 candidate-5 scores assess the Breeze prototype, not this Union variant.
 
 ## Try the built version
+
+For a fresh installation, use the [Union 0.3.1 ISO](ISO.md). It includes the
+current theme, Medium emphasis and translucent dock. The
+[installation report](UNION-ISO-0.3.1.md) records its exact artifact and checks.
 
 The local test image is
 [`output/Aven-Union-0.2.0-x86_64.qcow2`](../output/Aven-Union-0.2.0-x86_64.qcow2).
@@ -22,8 +31,8 @@ On this Linux/KVM host, start it from the repository:
 Connect a VNC client to `127.0.0.1:5922`. The `aven` desktop logs in automatically.
 This launcher uses its own writable working disk and SSH port `2224`; it does
 not use the running r4 VM. Shut down through the desktop when finished.
-The exported artifact is a bootable VM disk; the earlier published installer
-ISO remains version 0.1.0. No Union ISO or public release is claimed here.
+This older exported artifact is a bootable VM disk; its lab launcher is separate
+from the public Union 0.3.1 installer.
 
 [`Aven-Mist-0.2.0.unionstyle`](../output/Aven-Mist-0.2.0.unionstyle) is also
 packaged with KDE's `union-styletool`. It contains the native Union CSS theme;
@@ -70,9 +79,9 @@ existing fixture locations and native Preview shortcut.
 - The profile selects `widgetStyle=Union` and `unionStyle=aven-mist` through
   KDE's configuration interface. It checks that the real QtWidgets plugin and
   packaged Union base style exist before enabling the theme.
-- Fontconfig, font sizes, Chinese locale shaping and application layouts retain
-  the existing Aven configuration. Union does not set letter spacing or replace
-  the font stack.
+- Fontconfig, fractional font sizes, Chinese locale shaping and application
+  layouts are supplied by the focused profile. See the current revision's guide
+  for the Adwaita/Noto roles. Union does not add letter spacing to Chinese.
 - Firefox and Thunderbird retain their focused Mozilla stylesheets. Union does
   not style their main interfaces. No new Settings, installer or login design is
   introduced.
@@ -93,7 +102,7 @@ bypasses this compatibility layer. Recheck and remove the shim when the upstream
 adapter handles this control correctly.
 
 Union's list-header alignment is set to the leading edge. Selected file rows
-use a light green background and a green border so Dolphin's independently
+use a light blue background and a blue border so Dolphin's independently
 painted ordinary and secondary text remains readable.
 
 ## Verification

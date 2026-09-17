@@ -1,0 +1,117 @@
+{
+  "snapshot": "/var/home/aven/.local/state/aven/focused-before-20260917T044541.616756Z",
+  "entries": 85,
+  "scope": "aven-focused-profile"
+}
+Installed /etc/fonts/conf.d/60-aven-families.conf
+Installed /etc/fonts/conf.d/99-aven-rendering.conf
+Install typography/fedora-packages.txt through the guest image's package workflow.
+In the guest: fc-cache -f; restart applications; python3 typography/audit.py --active
+active-environment: 59/59 font checks passed; visual quality unassessed.
+{
+  "preview": "/var/home/aven/.local/bin/aven-preview",
+  "shortcut": "Ctrl+Alt+P",
+  "shortcut_file": "/var/home/aven/.local/share/kxmlgui5/dolphin/dolphinui.rc",
+  "xmlgui_version": 49,
+  "places": {
+    "changed": false,
+    "hidden_system_items": [],
+    "hidden_system_devices": [],
+    "device_discovery_error": null,
+    "ownership_record": null
+  },
+  "layout": {
+    "changed": true,
+    "places_width": 184,
+    "state_file": "/var/home/aven/.local/state/dolphinstaterc"
+  },
+  "packages_required": [
+    "python3-pyside6",
+    "kf6-kimageformats",
+    "kio-extras",
+    "kdegraphics-thumbnailers",
+    "ghostscript",
+    "ffmpegthumbs"
+  ]
+}
+{
+  "profile": "/var/home/aven/.local/share/aven/firefox",
+  "preferences_seeded": true,
+  "launcher": "/var/home/aven/.local/bin/aven-browser",
+  "desktop": "org.mozilla.firefox.desktop"
+}
+{
+  "profile": "/var/home/aven/.local/share/aven/mail/default",
+  "profile_seeded": false,
+  "appearance_refreshed": true,
+  "launcher": "/var/home/aven/.local/bin/aven-mail",
+  "desktop": "net.thunderbird.Thunderbird.desktop",
+  "mode": "normal-online",
+  "demo_fixtures": false
+}
+{"seeded": true, "config": "/var/home/aven/.config/gwenviewrc", "manifest": "/var/home/aven/.local/share/aven/photos-profile.json"}
++ plasma-apply-colorscheme BreezeLight
++ plasma-apply-colorscheme AvenMist
++ plasma-apply-desktoptheme default
++ kwriteconfig6 --file /home/aven/.config/plasmarc --group Theme --key name default
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group General --key font Adwaita Sans,9.75,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group General --key menuFont Adwaita Sans,9.75,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group General --key toolBarFont Adwaita Sans,9.75,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group General --key smallestReadableFont Adwaita Sans,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group General --key fixed Noto Sans Mono,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group WM --key activeFont Adwaita Sans,10.5,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,,0,0
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group KDE --key widgetStyle Union
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group KDE --key AnimationDurationFactor 0.65
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group KDE --key SingleClick false
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group KDE --key unionStyle aven-mist
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group Icons --key Theme Aven
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group Toolbar style --key ToolButtonStyle IconOnly
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group MainToolbarIcons --key Size 18
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group ToolbarIcons --key Size 18
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group General --key XftAntialias true
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group General --key XftHintStyle hintslight
++ kwriteconfig6 --file /home/aven/.config/kdeglobals --group General --key XftSubPixel none
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group Plugins --key wobblywindowsEnabled false
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group Plugins --key magiclampEnabled false
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group Plugins --key fallapartEnabled false
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group Plugins --key glideEnabled false
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group Plugins --key slideEnabled false
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group Plugins --key cubeslideEnabled false
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group Plugins --key windowapertureEnabled false
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group Plugins --key sheetEnabled false
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group Plugins --key squashEnabled false
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group Plugins --key translucencyEnabled false
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group Plugins --key diminactiveEnabled false
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group Plugins --key scaleEnabled false
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group Plugins --key fadeEnabled true
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group Plugins --key fadingpopupsEnabled true
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group Plugins --key overviewEnabled true
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group TabBox --key LayoutName thumbnail_grid
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group TabBox --key HighlightWindows false
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group org.kde.kdecoration2 --key ButtonsOnLeft XIA
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group org.kde.kdecoration2 --key ButtonsOnRight 
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group org.kde.kdecoration2 --key BorderSize Normal
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group org.kde.kdecoration2 --key BorderSizeAuto false
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group org.kde.kdecoration2 --key library org.kde.kwin.aurorae
++ kwriteconfig6 --file /home/aven/.config/kwinrc --group org.kde.kdecoration2 --key theme __aurorae__svg__Aven
++ kwriteconfig6 --file /home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-font-name Adwaita Sans 9.75
++ kwriteconfig6 --file /home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-theme-name Breeze
++ kwriteconfig6 --file /home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-icon-theme-name Aven
++ kwriteconfig6 --file /home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-application-prefer-dark-theme false
++ kwriteconfig6 --file /home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-xft-antialias 1
++ kwriteconfig6 --file /home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-xft-hinting 1
++ kwriteconfig6 --file /home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-xft-hintstyle hintslight
++ kwriteconfig6 --file /home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-xft-rgba none
++ kwriteconfig6 --file /home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-font-name Adwaita Sans 9.75
++ kwriteconfig6 --file /home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-theme-name Breeze
++ kwriteconfig6 --file /home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-icon-theme-name Aven
++ kwriteconfig6 --file /home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-application-prefer-dark-theme false
++ kwriteconfig6 --file /home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-xft-antialias 1
++ kwriteconfig6 --file /home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-xft-hinting 1
++ kwriteconfig6 --file /home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-xft-hintstyle hintslight
++ kwriteconfig6 --file /home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-xft-rgba none
+Aven candidate installed. Config backup: /home/aven/.local/state/aven/20260917-124544-545531. Log out/in before typography comparisons.
+Profile integrated. Reboot the guest for a clean comparison round.
+{"refreshed": "/var/home/aven/.local/share/aven/mail/aven-demo", "account_data_modified": false, "theme_revision": "union-sequoia-frame-v1"}
+PASS: all 27 QtSvg slices have exact shared bounds; stretch hint present.
+

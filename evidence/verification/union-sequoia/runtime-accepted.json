@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-09-17T04:57:55.376381+00:00",
+  "platform": "wayland",
+  "qt": "6.11.2",
+  "configured_widget_style": "Union",
+  "configured_union_style": "aven-mist",
+  "actual_style_class": "UnionStyle",
+  "actual_style_name": "union",
+  "available_styles": [
+    "Union",
+    "Breeze",
+    "Windows",
+    "Fusion"
+  ],
+  "button_size_hint": [
+    135,
+    35
+  ],
+  "button_margin": 6,
+  "theme_sha256": {
+    "contents/css/controls.css": "bcc480fca1240d181f307638125cbe7e7c8de266ef804e1e94ac032816e95ee8",
+    "contents/css/style.css": "5855663d744b7ae3492c9b51bea6d23a4cf3ed82f4aeb25e109772950f606441",
+    "contents/css/tokens.css": "77dfe7099562c026e2763930f00e15bb338cd36086f800f1e1cfcbaa1649748f",
+    "metadata.json": "2b2144e406da68ba69214329e818e71193d66b6ea102419d63c3202a4b8d6b17"
+  },
+  "packages": "plasma-desktop-6.7.90-1.fc44.x86_64\nkwin-6.7.90-1.fc44.x86_64\nplasma-union-6.7.90-1.fc44.x86_64\ncxx-rust-cssparser-1.1.0-1.fc44.x86_64\ndolphin-26.08.1-1.fc44.x86_64\ngwenview-26.08.1-1.fc44.x86_64\nqt6-qtbase-6.11.2-2.fc44.x86_64\n",
+  "files_compatibility_sha256": {
+    ".local/libexec/aven-union/aven-files": "e0d29ac675d46cea6d6e3f03e159a8b57d444c70825bf60b1e195e390a50530d",
+    ".local/libexec/aven-union/aven-photos": "b51e5723009771994e547bab12ef5fb354f2668b4eda27292fea096347443fd8",
+    ".local/libexec/aven-union/dolphin-location.qss": "b80b0de1a37cfdf5948864c73401ca1a919d4689ab8b31882fc8586c85558232",
+    ".local/libexec/aven-union/gwenview-surfaces.qss": "202a2b3fe917a1b895cb33766d4f0b1ba93d67af1a0371ec6fc65ef2099bfda8"
+  },
+  "native_processes": [
+    {
+      "pid": 12014,
+      "executable": "dolphin",
+      "command": "/usr/bin/dolphin -stylesheet /home/aven/.local/libexec/aven-union/dolphin-location.qss /home/aven/Documents/日常 · Everyday",
+      "union_libraries": [
+        "/usr/lib64/libUnion.so.6.7.90",
+        "/usr/lib64/qt6/plugins/styles/UnionWidgetsStyle.so"
+      ],
+      "locale": {
+        "LANG": "zh_CN.UTF-8",
+        "LANGUAGE": "zh_CN",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12015,
+      "executable": "gwenview",
+      "command": "/usr/bin/gwenview -stylesheet /home/aven/.local/libexec/aven-union/gwenview-surfaces.qss /home/aven/Pictures/京都春日",
+      "union_libraries": [
+        "/usr/lib64/libUnion.so.6.7.90",
+        "/usr/lib64/qt6/plugins/styles/UnionWidgetsStyle.so"
+      ],
+      "locale": {
+        "LANG": "zh_CN.UTF-8",
+        "LANGUAGE": "zh_CN",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12016,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox --profile /var/home/aven/.local/share/aven/firefox file:///home/aven/aven/fixtures/browser/index.html",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12017,
+      "executable": "thunderbird",
+      "command": "/usr/lib64/thunderbird/thunderbird -profile /home/aven/.local/share/aven/mail/aven-demo",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12142,
+      "executable": "dolphin",
+      "command": "/usr/bin/dolphin -stylesheet /home/aven/.local/libexec/aven-union/dolphin-location.qss --daemon",
+      "union_libraries": [
+        "/usr/lib64/libUnion.so.6.7.90",
+        "/usr/lib64/qt6/plugins/styles/UnionWidgetsStyle.so"
+      ],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12203,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -ipcHandle 0 -signalPipe 1 -initialChannelId {ebdf778a-03fe-40ba-9072-a390c54d73d3} -parentPid 12016 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 1 forkserver",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12233,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -parentBuildID 20260831190421 -prefsHandle 0:35314 -prefMapHandle 1:294676 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {76ae755b-13f7-4f7b-99a8-c29eeb7e63ef} -parentPid 12016 -crashHelperPid 12053 -crashHelper 5 -crashReporter 6 -appDir /usr/lib64/firefox/browser 2 socket",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12363,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:35504 -prefMapHandle 1:294676 -jsInitHandle 2:160936 -parentBuildID 20260831190421 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {7ffe05c1-c79a-43db-be7f-f47c257445b4} -parentPid 12016 -crashHelperPid 12053 -crashHelper 6 -crashReporter 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 3 tab",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12382,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -parentBuildID 20260831190421 -prefsHandle 0:35504 -prefMapHandle 1:294676 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {e0f126bb-61a5-4f65-8992-bb20f44892cc} -parentPid 12016 -crashHelperPid 12053 -crashHelper 5 -crashReporter 6 -appDir /usr/lib64/firefox/browser 4 rdd",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12545,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:35616 -prefMapHandle 1:294676 -jsInitHandle 2:160936 -parentBuildID 20260831190421 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {67f1c8f9-82f1-47df-987a-cab7391841f5} -parentPid 12016 -crashHelperPid 12053 -crashHelper 6 -crashReporter 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 5 tab",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12593,
+      "executable": "thunderbird",
+      "command": "/usr/lib64/thunderbird/thunderbird -contentproc -isForBrowser -prefsHandle 0:5376 -prefMapHandle 1:291618 -jsInitHandle 2:156236 -parentBuildID 20260806125820 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {4f49b50e-0c93-45c3-ac60-efe8ca2d4cc3} -parentPid 12017 -greomni /usr/lib64/thunderbird/omni.ja -appDir /usr/lib64/thunderbird 1 tab",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12598,
+      "executable": "thunderbird",
+      "command": "/usr/lib64/thunderbird/thunderbird -contentproc -parentBuildID 20260806125820 -prefsHandle 0:5376 -prefMapHandle 1:291618 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {08717b2c-6d9f-4400-af95-447af9707c14} -parentPid 12017 -appDir /usr/lib64/thunderbird 2 rdd",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12600,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -parentBuildID 20260831190421 -sandboxingKind 0 -prefsHandle 0:53293 -prefMapHandle 1:294676 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {98f90731-9ce7-4500-aada-6d944fef5b10} -parentPid 12016 -crashHelperPid 12053 -crashHelper 5 -crashReporter 6 -appDir /usr/lib64/firefox/browser 6 utility",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12645,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:50021 -prefMapHandle 1:294676 -jsInitHandle 2:160936 -parentBuildID 20260831190421 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {1010c655-738c-40b2-901d-1d82ee8becdf} -parentPid 12016 -crashHelperPid 12053 -crashHelper 6 -crashReporter 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 7 tab",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12647,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:50021 -prefMapHandle 1:294676 -jsInitHandle 2:160936 -parentBuildID 20260831190421 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {0ec22b6e-9c7f-4af5-85d4-6dccc0d8ba20} -parentPid 12016 -crashHelperPid 12053 -crashHelper 6 -crashReporter 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 8 tab",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12657,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:53293 -prefMapHandle 1:294676 -jsInitHandle 2:160936 -parentBuildID 20260831190421 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {90ffb5aa-d7ad-4b20-bde2-aba3e4b65067} -parentPid 12016 -crashHelperPid 12053 -crashHelper 6 -crashReporter 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 9 tab",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 12783,
+      "executable": "firefox",
+      "command": "/usr/lib64/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:50021 -prefMapHandle 1:294676 -jsInitHandle 2:160936 -parentBuildID 20260831190421 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {2a8b53d4-5ee8-46dc-884e-2262a1608647} -parentPid 12016 -crashHelperPid 12053 -crashHelper 6 -crashReporter 7 -greomni /usr/lib64/firefox/omni.ja -appomni /usr/lib64/firefox/browser/omni.ja -appDir /usr/lib64/firefox/browser 10 tab",
+      "union_libraries": [],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    },
+    {
+      "pid": 13727,
+      "executable": "gwenview",
+      "command": "/usr/bin/gwenview -stylesheet /home/aven/.local/libexec/aven-union/gwenview-surfaces.qss /home/aven/Documents/日常 · Everyday/03-旋转方向-EXIF-6.jpg",
+      "union_libraries": [
+        "/usr/lib64/libUnion.so.6.7.90",
+        "/usr/lib64/qt6/plugins/styles/UnionWidgetsStyle.so"
+      ],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    }
+  ],
+  "limitations": [
+    "Library mappings and style metrics do not establish visual quality; inspect real screenshots."
+  ],
+  "style_active": true
+}
+

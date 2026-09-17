@@ -1,0 +1,93 @@
+{
+  "before": {
+    "id": "{9c5f9d6f-e58f-4f18-81b0-21d8ed7c11dc}",
+    "caption": "Inbox - Local Folders - Mozilla Thunderbird",
+    "app": "net.thunderbird.Thunderbird",
+    "resource_class": "net.thunderbird.Thunderbird",
+    "resource_name": "thunderbird",
+    "pid": 2333,
+    "active": false,
+    "minimized": false,
+    "full_screen": false,
+    "hidden": false,
+    "skip_taskbar": false,
+    "skip_switcher": false,
+    "normal_window": true,
+    "dialog": false,
+    "special": false,
+    "frame": {
+      "x": 290,
+      "y": 80,
+      "width": 1340,
+      "height": 850
+    },
+    "client": {
+      "x": 290,
+      "y": 80,
+      "width": 1340,
+      "height": 850
+    },
+    "output": "Virtual-1",
+    "movable": true,
+    "resizable": true,
+    "minimum_client_size": {
+      "width": 95,
+      "height": 95
+    }
+  },
+  "requested_geometry": {
+    "x": 290,
+    "y": 80,
+    "width": 1340,
+    "height": 850
+  },
+  "requested_maximize": false,
+  "requested_activate": true,
+  "ok": true,
+  "after": [
+    {
+      "id": "{9c5f9d6f-e58f-4f18-81b0-21d8ed7c11dc}",
+      "caption": "Inbox - Local Folders - Mozilla Thunderbird",
+      "app": "net.thunderbird.Thunderbird",
+      "resource_class": "net.thunderbird.Thunderbird",
+      "resource_name": "thunderbird",
+      "pid": 2333,
+      "active": true,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 290,
+        "y": 80,
+        "width": 1340,
+        "height": 850
+      },
+      "client": {
+        "x": 290,
+        "y": 80,
+        "width": 1340,
+        "height": 850
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 95,
+        "height": 95
+      }
+    }
+  ],
+  "geometry_acknowledged": true,
+  "activation_acknowledged": true,
+  "schema_version": 1,
+  "captured_at": "2026-09-17T05:10:56.466103+00:00",
+  "method": "temporary KWin script via public Workspace/Window API",
+  "command": "arrange",
+  "persistent_kwin_changes": false
+}
+

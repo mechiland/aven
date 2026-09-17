@@ -1,0 +1,16 @@
+{
+  "$schema": "../website/node_modules/wrangler/config-schema.json",
+  "name": "aven-downloads",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-17",
+  "workers_dev": true,
+  "vars": {
+    "PUBLISHED_PREFIX": "releases/v0.3.1/"
+  },
+  "r2_buckets": [
+    {
+      "binding": "RELEASES",
+      "bucket_name": "aven-releases"
+    }
+  ]
+}

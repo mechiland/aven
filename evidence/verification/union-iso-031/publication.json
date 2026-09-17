@@ -1,0 +1,23 @@
+{
+  "release": "v0.3.1",
+  "download_worker": "aven-downloads",
+  "download_worker_version": "87c790f5-c4c3-46c0-88f1-ad6faa07caf8",
+  "r2_bucket": "aven-releases",
+  "temporary_upload_worker": "aven-release-upload",
+  "temporary_upload_worker_deleted": true,
+  "upload_cleanup_output": "Successfully deleted aven-release-upload",
+  "verification_tests": {
+    "command": "python3 -m unittest discover -s verification/tests -v",
+    "passed": 116
+  },
+  "download_worker_tests": {
+    "command": "node --test release/worker.test.mjs",
+    "passed": 15
+  },
+  "test_vm_powered_off_cleanly": true,
+  "updated_at": "2026-09-17T09:36:48.603948+00:00",
+  "website_url": "https://aven-website.mechiland.workers.dev",
+  "website_deployment": "aad122ab-075e-414d-99fb-ef7c89cd9345",
+  "website_verification": "website/deployment.json",
+  "original_union_lab_vm_restored": true
+}
