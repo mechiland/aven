@@ -46,3 +46,65 @@ toolbutton:pressed, toolbutton:checked {
 headerviewdelegate {
     text-alignment: content start center 0;
 }
+
+/* Sequoia reference rhythm: quiet 28px controls and a continuous gray header.
+ * The native widget adapter still owns sizing, accessibility and hit testing. */
+:root {
+    --large-element-size: 28px;
+    --button-padding: 6px;
+    --tab-highlight-size: 0px;
+    --tab-background-color: #E8E8E8;
+    --tab-open-background-color: #FFFFFF;
+    --header-background-color: var(--aven-chrome);
+    --header-active-background-color: var(--aven-chrome);
+    --scrollbar-size: 12px;
+    --non-interactive-scrollbar-size: 8px;
+}
+
+toolbar {
+    height: 34px;
+    padding: 3px 6px;
+    background-color: var(--aven-chrome);
+    border: none;
+}
+
+toolbar.header, toolbar[colorset="header"] {
+    border-bottom: none;
+}
+
+itemviewitem:hovered {
+    border: 1px solid transparent;
+    background-color: var(--aven-hover);
+}
+
+itemviewitem:highlighted, itemviewitem:pressed {
+    border: 1px solid transparent;
+    background-color: var(--aven-selection-soft);
+    color: var(--aven-text);
+}
+
+/* A keyboard focus ring remains distinct from a pointer selection. */
+itemviewitem:visual-focus {
+    outline: 2px solid var(--focus-color);
+}
+
+headerviewdelegate {
+    height: 24px;
+    background-color: #FAFAFA;
+    border: none;
+    border-bottom: 1px solid var(--aven-border);
+}
+
+/* Union 6.7.90 maps custom QWidget panels (including KUrlNavigator) to
+ * generic frame primitives. These are ordinary light application surfaces. */
+frame[shape="panel"] {
+    background-color: var(--aven-chrome);
+}
+widget > frame {
+    background-color: var(--aven-chrome);
+    border: none;
+    border-radius: 0px;
+}
+frame, dockwidget {
+    border-radius: 0px;
+}

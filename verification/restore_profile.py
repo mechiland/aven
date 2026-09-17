@@ -25,6 +25,30 @@ DEFAULTS = [".config/mimeapps.list", ".config/kde-mimeapps.list", ".local/share/
 FILES = [".config/dolphinrc", ".local/share/kxmlgui5/dolphin/dolphinui.rc", ".local/share/dolphin/view_properties/global/.directory", "Documents/.directory", "Downloads/.directory", "Pictures/.directory", ".local/share/user-places.xbel", ".local/state/dolphinstaterc"]
 HOOKS = [".local/bin/aven-browser", ".local/bin/aven-mail", ".local/bin/aven-preview", ".local/share/applications/aven-browser.desktop", ".local/share/applications/aven-mail.desktop", ".local/share/applications/org.mozilla.firefox.desktop", ".local/share/applications/net.thunderbird.Thunderbird.desktop", ".local/share/applications/org.aven.Preview.desktop", ".local/share/kio/servicemenus/aven-preview.desktop", ".config/aven/files-layout.json", ".local/share/aven/photos-profile.json"]
 USER_PATHS = set([".config/" + name for name in SHARED] + DEFAULTS + FILES + HOOKS + [".config/gwenviewrc"])
+# Theme updates reuse their native package IDs. Preserve the package bytes and
+# compatibility launchers as well as the selected name, so appearance rollback
+# restores the previous Union revision rather than loading the new assets.
+UNION_PATHS = {
+    '.local/bin/dolphin', '.local/bin/gwenview',
+    '.local/libexec/aven-union/aven-files', '.local/libexec/aven-union/aven-photos',
+    '.local/libexec/aven-union/dolphin-location.qss', '.local/libexec/aven-union/gwenview-surfaces.qss',
+    '.local/share/applications/org.kde.dolphin.desktop', '.local/share/applications/org.kde.gwenview.desktop',
+    '.local/share/applications/org.kde.gwenview_importer.desktop',
+    '.local/share/dbus-1/services/org.kde.dolphin.FileManager1.service',
+    '.config/systemd/user/plasma-dolphin.service.d/aven-union.conf',
+}
+_source_root = Path(__file__).resolve().parents[1]
+for _source, _target in (
+    ('visual/union/aven-mist', '.local/share/union/styles/aven-mist'),
+    ('visual/aurorae/Aven', '.local/share/aurorae/themes/Aven'),
+    ('visual/plasma/aven-dock', '.local/share/plasma/desktoptheme/aven-dock'),
+    ('visual/icons/Aven', '.local/share/icons/Aven'),
+    ('visual/color-schemes', '.local/share/color-schemes'),
+):
+    UNION_PATHS.update(str(Path(_target) / path.relative_to(_source_root/_source))
+                       for path in (_source_root/_source).rglob('*') if path.is_file())
+UNION_PATHS.add('.local/share/union/styles/aven-mist/contents/css/tokens.css')
+USER_PATHS.update(UNION_PATHS)
 FONT_PATHS = {"etc/fonts/conf.d/60-aven-families.conf", "etc/fonts/conf.d/99-aven-rendering.conf"}
 MIMES = {"x-scheme-handler/http", "x-scheme-handler/https", "text/html", "x-scheme-handler/mailto", "message/rfc822", "image/jpeg", "image/png", "image/webp", "image/avif", "image/tiff", "application/pdf", "inode/directory"}
 PLACES = ".local/share/user-places.xbel"

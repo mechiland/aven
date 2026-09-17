@@ -7,16 +7,24 @@ for (const desktop of desktops()) {
 for (const panel of panels()) {
     panel.location = 'bottom';
     panel.alignment = 'center';
-    panel.height = 48;
-    panel.lengthMode = 'custom';
-    panel.length = 1040;
-    panel.minimumLength = 1040;
-    panel.maximumLength = 1040;
+    if (@UNION_DOCK@) {
+        panel.height = 58;
+        panel.lengthMode = 'fit';
+        panel.opacity = 'translucent';
+    } else {
+        panel.height = 48;
+        panel.lengthMode = 'custom';
+        panel.length = 1040;
+        panel.minimumLength = 1040;
+        panel.maximumLength = 1040;
+        panel.opacity = 'adaptive';
+    }
     panel.hiding = 'none';
     panel.floating = true;
     for (const widget of panel.widgets()) {
         if (widget.type === 'org.kde.plasma.icontasks') {
             widget.currentConfigGroup = ['General'];
+            if (@UNION_DOCK@) widget.writeConfig('iconSpacing', 0);
             widget.writeConfig('launchers', ['applications:org.kde.dolphin.desktop', 'applications:org.mozilla.firefox.desktop', 'applications:net.thunderbird.Thunderbird.desktop', 'applications:org.kde.gwenview.desktop']);
         }
         if (widget.type === 'org.kde.plasma.kickoff') {
@@ -29,6 +37,14 @@ for (const panel of panels()) {
             widget.writeConfig('showDate', true);
             widget.writeConfig('dateFormat', 'shortDate');
             widget.writeConfig('use24hFormat', 2);
+            if (@UNION_DOCK@) {
+                widget.writeConfig('autoFontAndSize', false);
+                widget.writeConfig('fontFamily', 'Adwaita Sans');
+                widget.writeConfig('fontSize', 10);
+                widget.writeConfig('fontWeight', 400);
+                widget.writeConfig('boldText', false);
+                widget.writeConfig('dateDisplayFormat', 2);
+            }
         }
     }
 }

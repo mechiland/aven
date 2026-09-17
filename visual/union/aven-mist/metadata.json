@@ -4,9 +4,11 @@
   "name": "Aven Mist (Union)",
   "name[zh_CN]": "Aven 薄雾（Union）",
   "name[zh_TW]": "Aven 薄霧（Union）",
-  "description": "Aven's focused desktop style for QtQuick and QtWidgets.",
-  "version": "0.2.0-union",
+  "description": "Compact neutral application chrome, typography and controls matched to the supplied macOS 15 references.",
+  "version": "0.3.0-union",
   "license": "MIT",
   "url": "https://github.com/mechiland/aven",
-  "authors": ["Aven contributors"]
+  "authors": [
+    "Aven contributors"
+  ]
 }
