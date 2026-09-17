@@ -2,6 +2,7 @@
 """Create an isolated Thunderbird profile; existing profiles are never changed."""
 from __future__ import annotations
 import argparse
+import fcntl
 from email import policy
 from email.message import EmailMessage
 from email.utils import formataddr
@@ -11,8 +12,10 @@ import json
 import mailbox
 import os
 from pathlib import Path
+import re
 import shutil
 import subprocess
+import tempfile
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURES = ROOT / 'fixtures/mail/messages.json'
@@ -29,36 +32,122 @@ def prefs_text(prefs):
 
 
 def candidate_preferences():
+    roles = json.loads((ROOT / 'typography/roles.json').read_text(encoding='utf-8'))
+    reading = roles['reading']
+    ui_size = roles['ui'].get('pixel_size', roles['ui']['point_size'] * 96 / 72)
     prefs = {
         'toolkit.legacyUserProfileCustomizations.stylesheets': True,
-        'mail.tabs.drawInTitlebar': False,
+        'mail.tabs.drawInTitlebar': True,
         'mail.uidensity': 1,
-        # 0 follows the OS; Thunderbird's custom font-size preference is in px.
-        # The 11pt root CSS keeps its density calculator aligned with native UI.
-        'mail.uifontsize': 0,
+        # Keep native virtual-row measurements aligned with the actual UI size.
+        # The user's later font-size/density changes still work normally.
+        'mail.uifontsize': round(ui_size),
         'mail.pane_config.dynamic': 2,
         'mail.threadpane.listview': 0,
+        'toolbar.unifiedtoolbar.buttonstyle': 2,
         'mail.biff.play_sound': False,
         'mail.biff.use_system_alert': True,
         'mailnews.start_page.enabled': False,
         'mailnews.display.prefer_plaintext': False,
         'mail.fixed_width_messages': False,
-        'msgcompose.font_face': 'Noto Sans',
+        'msgcompose.font_face': reading['family'],
         'msgcompose.font_size': 'medium',
     }
-    for group, family in [('x-western', 'Noto Sans'), ('x-unicode', 'Noto Sans'),
-                          ('zh-CN', 'Noto Sans CJK SC'), ('zh-TW', 'Noto Sans CJK TC'),
-                          ('zh-HK', 'Noto Sans CJK HK')]:
+    for group, family in [('x-western', reading['family']), ('x-unicode', reading['family']),
+                          *((language, roles['cjk'][language]) for language in ('zh-CN', 'zh-TW', 'zh-HK'))]:
         prefs.update({
             f'font.default.{group}': 'sans-serif',
             f'font.name.sans-serif.{group}': family,
             f'font.name.monospace.{group}': 'Noto Sans Mono',
             f'font.name-list.sans-serif.{group}': f'Noto Sans, {family}, sans-serif',
             f'font.name-list.monospace.{group}': f'Noto Sans Mono, {family}, monospace',
-            f'font.size.variable.{group}': 17 if group.startswith('zh') else 16,
+            f'font.size.variable.{group}': reading['cjk_pixel_size'] if group.startswith('zh') else reading['pixel_size'],
             f'font.size.monospace.{group}': 14,
         })
     return prefs
+
+
+def install_chrome(profile):
+    roles = json.loads((ROOT / 'typography/roles.json').read_text(encoding='utf-8'))
+    family = json.dumps(roles['ui']['family'], ensure_ascii=False)
+    size = roles['ui'].get('pixel_size', roles['ui']['point_size'] * 96 / 72)
+    shutil.copytree(ROOT / 'mail/chrome', profile / 'chrome', dirs_exist_ok=True)
+    (profile / 'chrome/union-typography.css').write_text(
+        '/* Generated from typography/roles.json by mail/profile.py. */\n'
+        f':root {{ --union-ui-family: {family}; --union-ui-size: {size:g}px; }}\n', encoding='utf-8')
+
+
+def install_layout(profile):
+    """Use Thunderbird's persisted customization, retaining every other view."""
+    path = profile / 'xulstore.json'
+    if path.is_symlink():
+        raise SystemExit('Refusing to replace a symlinked toolbar state.')
+    state = json.loads(path.read_text(encoding='utf-8')) if path.exists() else {}
+    main = state.setdefault('chrome://messenger/content/messenger.xhtml', {})
+    toolbar = main.setdefault('unifiedToolbar', {})
+    spaces = json.loads(toolbar.get('state', '{}'))
+    spaces['mail'] = [
+        'get-messages', 'write-message', 'spacer', 'archive', 'delete',
+        'junk', 'reply', 'reply-all', 'forward-inline', 'spacer', 'search-bar',
+    ]
+    toolbar['state'] = json.dumps(spaces, separators=(',', ':'))
+    # Native collapse keeps the Spaces popover/reveal control available.
+    main.setdefault('spacesToolbar', {})['hidden'] = 'true'
+    header = main.setdefault('messageHeader', {})
+    header_layout = json.loads(header.get('layout', '{}'))
+    if not header_layout:
+        header_layout = {
+            'showAvatar': True, 'showBigAvatar': False, 'showFullAddress': True,
+            'hideLabels': True, 'subjectLarge': True,
+        }
+    # Use Thunderbird's own header customization so labels/tooltips and the
+    # user's ability to restore text remain intact; commands are never hidden.
+    header_layout['buttonStyle'] = 'only-icons'
+    header['layout'] = json.dumps(header_layout, separators=(',', ':'))
+    save_json(path, state)
+
+
+def refresh(profile):
+    """Refresh only appearance in a closed, explicitly marked Aven profile."""
+    marker_path = profile / MARKER
+    if profile.is_symlink() or marker_path.is_symlink() or not marker_path.is_file():
+        raise SystemExit('Refresh requires an existing, non-symlink Aven profile.')
+    marker = json.loads(marker_path.read_text(encoding='utf-8'))
+    if marker.get('schema_version') != 1 or marker.get('variant') != 'aven':
+        raise SystemExit('Refresh only accepts an Aven variant profile.')
+    prefs_path = profile / 'prefs.js'
+    if prefs_path.is_symlink() or (profile / 'chrome').is_symlink() or (profile / 'xulstore.json').is_symlink():
+        raise SystemExit('Refusing to refresh symlinked profile files.')
+    with (profile / '.parentlock').open('a+') as lock:
+        try:
+            fcntl.lockf(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            raise SystemExit('Close this Thunderbird profile before refreshing its theme.')
+        # Accounts, identities, servers, passwords, messages and all unrelated
+        # preferences remain untouched. Do not reseed content or fixture state.
+        allowed = {
+            'toolkit.legacyUserProfileCustomizations.stylesheets',
+            'mail.tabs.drawInTitlebar', 'mail.uidensity', 'mail.uifontsize',
+            'mail.pane_config.dynamic', 'mail.threadpane.listview',
+            'toolbar.unifiedtoolbar.buttonstyle',
+        }
+        prefs = {key: value for key, value in candidate_preferences().items() if key in allowed}
+        original = prefs_path.read_text(encoding='utf-8') if prefs_path.exists() else ''
+        keys = '|'.join(re.escape(json.dumps(key)) for key in prefs)
+        managed_line = re.compile(r'^user_pref\((?:' + keys + r'),')
+        retained = [line for line in original.splitlines() if not managed_line.match(line)]
+        generated = [f'user_pref({json.dumps(key)}, {json.dumps(value)});' for key, value in prefs.items()]
+        with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=profile, delete=False) as stream:
+            temporary = Path(stream.name)
+            stream.write('\n'.join(retained + generated) + '\n')
+        temporary.chmod(0o600)
+        temporary.replace(prefs_path)
+        install_chrome(profile)
+        install_layout(profile)
+        marker['visual_validation'] = 'pending-native-guest-screenshots'
+        marker['theme_revision'] = 'union-sequoia-frame-v1'
+        save_json(marker_path, marker)
+    print(json.dumps({'refreshed': str(profile), 'account_data_modified': False, 'theme_revision': marker['theme_revision']}))
 
 
 def letter_html(item):
@@ -156,7 +245,8 @@ def create(profile, variant, demo):
         prefs.update(fixture_preferences())
         populate_fixtures(profile)
     if variant == 'aven':
-        shutil.copytree(ROOT / 'mail/chrome', profile / 'chrome')
+        install_chrome(profile)
+        install_layout(profile)
     # Seed prefs.js once rather than user.js, so application UI changes persist.
     (profile / 'prefs.js').write_text(prefs_text(prefs), encoding='utf-8')
     save_json(profile / MARKER, {
@@ -196,6 +286,8 @@ def main():
     c.add_argument('--variant', required=True, choices=['stock', 'aven'])
     c.add_argument('--profile', type=Path, required=True)
     c.add_argument('--demo', action='store_true', help='add local mailbox and writing fixture; no mail server')
+    r = commands.add_parser('refresh', help='Refresh appearance only; profile must be closed')
+    r.add_argument('--profile', type=Path, required=True)
     l = commands.add_parser('launch')
     l.add_argument('--profile', type=Path, required=True)
     l.add_argument('--executable', default='thunderbird')
@@ -204,6 +296,9 @@ def main():
     profile = args.profile.expanduser().resolve()
     if args.command == 'create':
         create(profile, args.variant, args.demo)
+        return 0
+    if args.command == 'refresh':
+        refresh(profile)
         return 0
     return launch(profile, args.executable, args.scene)
 

@@ -8,15 +8,15 @@
   "profile_tool": "mail/profile.py",
   "fixture_source": "fixtures/mail/messages.json",
   "shared_dependencies": [
-    "Noto font packages and fontconfig",
-    "integrator GTK font/theme bridge",
-    "KWin native titlebar"
+    "Adwaita Sans UI and regional Noto CJK fontconfig roles",
+    "integrator neutral GTK theme bridge",
+    "KWin native rounded window decoration and shadow"
   ],
   "owned_assets": [
     "mail/chrome/userChrome.css",
     "mail/chrome/userContent.css"
   ],
-  "preferences_strategy": "seed new explicit profile prefs.js once; refuse existing path",
+  "preferences_strategy": "seed isolated prefs.js; explicit --refresh updates only appearance and native toolbar arrangement after acquiring closed-profile lock",
   "demo": {
     "mailbox": "local mbox",
     "message_count": 4,
@@ -32,5 +32,7 @@
   "installer": "mail/install.py",
   "default_profile": "~/.local/share/aven/mail/default",
   "default_profile_mode": "normal online account setup without demo fixtures",
-  "launcher": "~/.local/bin/aven-mail"
+  "launcher": "~/.local/bin/aven-mail",
+  "theme_revision": "union-sequoia-frame-v1",
+  "reference_screenshot": "/home/michael/Downloads/macOS15Screens/15-Sequoia-Mail.png"
 }

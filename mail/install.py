@@ -10,7 +10,7 @@ from pathlib import Path
 import shlex
 import tempfile
 
-from profile import MARKER, create
+from profile import MARKER, create, refresh
 
 LAUNCHER_MARKER = '# Aven managed mail launcher v1'
 DESKTOP_MARKER = 'X-Aven-Managed=mail-v1'
@@ -39,6 +39,7 @@ def require_owned_or_new(path: Path, marker: str):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--home', type=Path, required=True, help='Explicit guest user home, owned by current user')
+    parser.add_argument('--refresh', action='store_true', help='Refresh appearance in the closed managed profile, preserving accounts and mail')
     args = parser.parse_args()
     home = args.home.expanduser().resolve()
     if not home.is_dir() or home.stat().st_uid != os.getuid():
@@ -61,8 +62,10 @@ def main():
             parser.error(f'Invalid Aven mail profile marker: {error}')
         if marker.get('schema_version') != 1 or marker.get('variant') != 'aven' or marker.get('local_fixtures') is not False:
             parser.error('Only a normal Aven profile without demo fixtures can become the mail launcher profile')
-        # Do not reopen, lock, reseed or rewrite an existing profile. This also
-        # preserves account setup, changed preferences and edited chrome files.
+        if args.refresh:
+            with contextlib.redirect_stdout(io.StringIO()):
+                refresh(profile)
+        # Without --refresh retain the existing profile and user customizations.
     else:
         with contextlib.redirect_stdout(io.StringIO()):
             create(profile, 'aven', False)
@@ -79,13 +82,19 @@ def main():
         'Exec=' + desktop_quote(str(launcher)) + ' %u',
         'Icon=thunderbird', 'Terminal=false', 'Categories=Network;Email;',
         'MimeType=message/rfc822;x-scheme-handler/mailto;application/x-extension-eml;',
-        'StartupNotify=true', 'StartupWMClass=thunderbird', '',
+        # Match the native Wayland app ID / KWin resource_class rather than
+        # resource_name, so the canonical pinned desktop ID owns its windows.
+        'StartupNotify=true', 'StartupWMClass=net.thunderbird.Thunderbird', '',
     ])
     atomic_write(launcher, script, 0o755)
     atomic_write(desktop, entry, 0o644)
-    atomic_write(home / '.local/share/applications/aven-mail.desktop', entry + 'NoDisplay=true\n', 0o644)
+    # Keep old URI associations usable without advertising a second matching
+    # window identity through this hidden compatibility desktop entry.
+    compatibility = entry.replace('StartupWMClass=net.thunderbird.Thunderbird\n', '')
+    atomic_write(home / '.local/share/applications/aven-mail.desktop', compatibility + 'NoDisplay=true\n', 0o644)
     print(json.dumps({
         'profile': str(profile), 'profile_seeded': seeded,
+        'appearance_refreshed': args.refresh and not seeded,
         'launcher': str(launcher), 'desktop': desktop.name,
         'mode': 'normal-online', 'demo_fixtures': False,
     }, indent=2))

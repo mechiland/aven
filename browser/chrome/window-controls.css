@@ -1,0 +1,62 @@
+/* Appearance only: each dot is Firefox/Thunderbird's real native window
+   command button, with native labels, keyboard semantics and restore state. */
+@-moz-document url("chrome://browser/content/browser.xhtml"), url("chrome://messenger/content/messenger.xhtml") {
+  /* GTK still paints the outer shadow. Clip actual client pixels, including
+     toolbar descendants, rather than covering square corners with artwork.
+     Full-window clipping keeps URL suggestions and in-window panels usable. */
+  :root[customtitlebar][sizemode="normal"]:not([tiled], [gtktiledwindow]) {
+    background-color: transparent !important;
+    border-radius: 10px !important;
+  }
+  :root[customtitlebar][sizemode="normal"]:not([tiled], [gtktiledwindow]) > body {
+    border-radius: 10px !important;
+    overflow: clip !important;
+  }
+  :root[customtitlebar][sizemode="normal"]:not([tiled], [gtktiledwindow]) :is(#navigator-toolbox, #navigation-toolbox) {
+    border-start-start-radius: 10px !important;
+    border-start-end-radius: 10px !important;
+  }
+  :root[customtitlebar] .titlebar-buttonbox {
+    appearance: none !important;
+    align-items: center !important;
+    gap: 0 !important;
+  }
+  :root[customtitlebar] .titlebar-button {
+    appearance: none !important;
+    box-sizing: border-box !important;
+    min-width: 20px !important;
+    min-height: 28px !important;
+    margin: 0 !important;
+    padding: 4px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    -moz-window-dragging: no-drag !important;
+  }
+  :root[customtitlebar] .titlebar-close { order: 0 !important; --union-control-color: #FF5F57; }
+  :root[customtitlebar] .titlebar-min { order: 1 !important; --union-control-color: #FEBC2E; }
+  :root[customtitlebar] :is(.titlebar-max, .titlebar-restore) { order: 2 !important; --union-control-color: #28C840; }
+  :root[customtitlebar] .titlebar-button > .toolbarbutton-icon {
+    appearance: none !important;
+    box-sizing: border-box !important;
+    width: 12px !important;
+    height: 12px !important;
+    inline-size: 12px !important;
+    block-size: 12px !important;
+    margin: 0 !important;
+    border: 1px solid rgb(0 0 0 / 12%) !important;
+    border-radius: 50% !important;
+    background-color: var(--union-control-color) !important;
+    background-size: 0 !important;
+    color: rgb(0 0 0 / 65%) !important;
+    stroke: currentColor !important;
+  }
+  :root[customtitlebar] .titlebar-buttonbox:hover .titlebar-button > .toolbarbutton-icon,
+  :root[customtitlebar] .titlebar-button:focus-visible > .toolbarbutton-icon {
+    background-size: 8px 8px !important;
+  }
+  :root[customtitlebar]:-moz-window-inactive .titlebar-button {
+    --union-control-color: #C8C8C8 !important;
+  }
+  :root[customtitlebar] .titlebar-button:active > .toolbarbutton-icon { filter: brightness(0.88); }
+}

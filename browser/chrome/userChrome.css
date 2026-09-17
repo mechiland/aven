@@ -1,21 +1,106 @@
-/* Aven palette only, verified against installed Firefox155 toolbar tokens.
-   This opt-in profile layer may need review after Mozilla chrome changes.
-   Keep all controls, layout, private-window styling and website content native. */
+/* Union browser frame, compared with 15-Sequoia-Safari-v18.png.
+   Native Firefox 155 controls, tab drag/drop, URL security indicators and
+   overflow handling remain in place. Website content is not restyled. */
+@import url("union-typography.css");
+@import url("window-controls.css");
+
 @-moz-document url("chrome://browser/content/browser.xhtml") {
+  :root {
+    font-family: var(--union-ui-family, "Adwaita Sans"), sans-serif !important;
+    font-size: var(--union-ui-size, 13px) !important;
+    font-weight: 400 !important;
+    font-synthesis: none;
+    --tab-min-height: 30px !important;
+    --tab-border-radius: 6px !important;
+    --toolbarbutton-border-radius: 5px !important;
+    --toolbarbutton-padding-inner: 6px !important;
+    --urlbar-min-height: 28px !important;
+  }
+
+  /* Safari's address row precedes its tab row. The real New Tab and All Tabs
+     widgets are moved into navigation by the installer. If either is moved
+     back by the user, the sole-tab toolbar stays visible as a safe fallback. */
+  :root:not([customizing]) #toolbar-menubar { order: 0 !important; }
+  :root:not([customizing]) #nav-bar { order: 1 !important; }
+  :root:not([customizing]) #TabsToolbar { order: 2 !important; }
+  :root:not([customizing]) #PersonalToolbar { order: 3 !important; }
+
+  :root[customtitlebar]:not([customizing]) #nav-bar {
+    box-sizing: border-box !important;
+    min-height: 52px !important;
+    padding: 10px 10px 10px 12px !important;
+    -moz-window-dragging: drag !important;
+  }
+  #nav-bar-customization-target > :is(toolbarbutton, toolbaritem),
+  #PanelUI-button, #urlbar-container { -moz-window-dragging: no-drag !important; }
+  #nav-bar .toolbarbutton-1 > :is(.toolbarbutton-icon, .toolbarbutton-badge-stack) {
+    width: calc(18px + 2 * var(--toolbarbutton-padding-inner)) !important;
+    height: calc(18px + 2 * var(--toolbarbutton-padding-inner)) !important;
+  }
+  #nav-bar .toolbarbutton-badge-stack > .toolbarbutton-icon {
+    width: 18px !important;
+    height: 18px !important;
+  }
+  /* Fixed-stroke assets avoid file:// SVG context-paint restrictions in
+     userChrome images; native commands, labels and hit targets are unchanged. */
+  #nav-bar #new-tab-button { list-style-image: url("icons/new-tab.svg") !important; }
+  #nav-bar #alltabs-button { list-style-image: url("icons/all-tabs.svg") !important; }
+  @media (prefers-color-scheme: dark) {
+    #nav-bar :is(#new-tab-button, #alltabs-button) .toolbarbutton-icon {
+      filter: brightness(1.9) !important;
+    }
+  }
+  :root[customtitlebar]:not([customizing]) #nav-bar > .titlebar-buttonbox-container {
+    display: flex !important;
+    visibility: visible !important;
+    order: -1 !important;
+    align-self: stretch !important;
+    margin-inline: 0 14px !important;
+  }
+  :root[customtitlebar]:not([customizing]) :is(#TabsToolbar, #toolbar-menubar) > .titlebar-buttonbox-container,
+  :root[customtitlebar]:not([customizing]) .titlebar-spacer { display: none !important; }
+  :root:not([customizing], [privatebrowsingmode])
+    #navigator-toolbox:has(#nav-bar #new-tab-button):has(#nav-bar #alltabs-button)
+    > #TabsToolbar:not(:has(.tabbrowser-tab[pinned], tab-group)):has(.tabbrowser-tab:only-of-type) {
+    visibility: collapse !important;
+  }
+  #urlbar-container {
+    font-size: var(--union-ui-size, 13px) !important;
+    margin-inline: auto !important;
+    max-width: 660px !important;
+  }
+  #urlbar-background { border-radius: 6px !important; }
+  #urlbar:not([focused], [open]) #urlbar-input { text-align: center !important; }
+  .tab-text { font-size: var(--union-ui-size, 13px) !important; font-weight: 400 !important; }
+  .tab-background { margin-block: 2px !important; box-shadow: none !important; }
+  #TabsToolbar { padding-inline: 7px !important; }
+
   @media (prefers-color-scheme: light) and (prefers-contrast: no-preference) {
     :root:not([privatebrowsingmode]) {
-      --toolbox-background-color: #F1F3EF !important;
-      --toolbox-background-color-inactive: #F5F5F1 !important;
-      --toolbox-text-color: #26342F !important;
-      --toolbox-text-color-inactive: #65706A !important;
-      --toolbar-background-color: #F7F7F3 !important;
-      --toolbar-text-color: #26342F !important;
-      --toolbar-field-background-color: #FDFCF9 !important;
-      --toolbar-field-color: #26342F !important;
-      --toolbar-field-focus-border-color: #326B60 !important;
-      --tab-selected-bgcolor: #FDFCF9 !important;
-      --chrome-content-separator-color: #D7DDD5 !important;
-      --focus-outline-color: #326B60 !important;
+      --toolbox-background-color: #F2F2F2 !important;
+      --toolbox-background-color-inactive: #F5F5F5 !important;
+      --toolbox-text-color: #272727 !important;
+      --toolbox-text-color-inactive: #757575 !important;
+      --toolbar-background-color: #F2F2F2 !important;
+      --toolbar-text-color: #555555 !important;
+      --toolbar-field-background-color: #F9F9F9 !important;
+      --toolbar-field-color: #272727 !important;
+      --toolbar-field-border-color: #D4D4D4 !important;
+      --toolbar-field-focus-border-color: #6CA9EC !important;
+      --tab-selected-bgcolor: #FFFFFF !important;
+      --tab-selected-textcolor: #272727 !important;
+      --chrome-content-separator-color: #D8D8D8 !important;
+      --focus-outline-color: #007AFF !important;
+      --toolbarbutton-hover-background: #E4E4E4 !important;
+      --toolbarbutton-active-background: #D9D9D9 !important;
+    }
+    :root:not([privatebrowsingmode]) #nav-bar { box-shadow: none !important; }
+    :root:not([privatebrowsingmode]) #urlbar:not([focused], [open]) > #urlbar-background {
+      border: 1px solid #D4D4D4 !important;
+      box-shadow: inset 0 1px 1px rgb(0 0 0 / 3%) !important;
+    }
+    :root:not([privatebrowsingmode]) .tab-background[selected] {
+      border: 1px solid #DCDCDC !important;
     }
   }
 }
