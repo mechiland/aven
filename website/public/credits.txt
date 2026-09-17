@@ -1,0 +1,63 @@
+Aven website — screenshot and image credits / 截图与图像来源
+
+All screenshots are unmodified PNGs from the public Aven repository.
+Source: https://github.com/mechiland/aven/tree/v0.1.0-prototype/evidence
+Aven: evidence/verification/iso-candidate5/
+Fedora: evidence/stock/round-00/
+Fonts: Noto Sans CJK SC, subset for this site; SIL Open Font License 1.1.
+Font copyright and license: /assets/fonts/LICENSE.txt
+Aven artwork: https://github.com/mechiland/aven/blob/v0.1.0-prototype/visual/LICENSE
+
+# Photo and media fixtures
+
+These are informational test files, not Aven artwork. Downloaded image/video
+bytes are unchanged. Only the filenames were changed to exercise mixed Chinese
+and Latin UI text. `manifest.json` records source URLs, sizes and SHA-256 hashes.
+
+| File | Source and credit | Terms |
+| --- | --- | --- |
+| `00-地出-Earthrise.jpg` | [Earthrise](https://science.nasa.gov/resource/image-earthrise/), William Anders, Apollo 8 / NASA | [NASA media guidelines](https://www.nasa.gov/nasa-brand-center/images-and-media/) permit factual informational image use. This fixture does not imply NASA endorsement. |
+| `01-瀑布横幅-EXIF-1.jpg` | [Pierre Bouillot](https://unsplash.com/photos/v15iOM6pWgI), annotations by Dave Perrett | [EXIF examples repository](https://github.com/recurser/exif-orientation-examples) distributes its test images under MIT; see `LICENSE-exif.txt`. |
+| `02-瀑布竖幅-EXIF-1.jpg` | [John Salvino](https://unsplash.com/photos/1PPpwrTNkJI), annotations by Dave Perrett | Same MIT test-image terms. |
+| `03-旋转方向-EXIF-6.jpg` | Pierre Bouillot, annotations by Dave Perrett | Same MIT test-image terms. Orientation 6, 1200 × 1800 stored pixels, should display as a correctly oriented landscape. |
+| `04-透明色阶-Transparency.png` | Willem van Schaik, [PngSuite via Go](https://github.com/golang/go/tree/master/src/image/png/testdata/pngsuite) | Permission to use, copy and distribute for any purpose without fee; `LICENSE-pngsuite.txt`. Original 32 × 32 RGBA decoder fixture. |
+| `05-花开-Flower.webm` | [MDN interactive-examples](https://github.com/mdn/interactive-examples/tree/main/live-examples/media/cc0-videos) contributors | CC0 1.0, `LICENSE-mdn.txt`. The current MDN shared-assets copy is byte-identical to this source. |
+
+The EXIF images carry large English position labels intentionally: correctness
+means “top” is actually at the top after decoding. Those labels are pixels in the
+test photograph and are **not** evidence of Aven Latin typography. Use the real
+Chinese filenames, native menus, and typography paragraphs for text evaluation.
+
+The 32 × 32 transparency fixture should stay small under the no-upscale default;
+zoom it manually when checking alpha edges. Do not call that expected behavior a
+failure. Use `00-地出-Earthrise.jpg` for the ordinary photo-view screenshot.
+
+
+# 京都春日 — photo attribution
+
+All eight photographers’ file-description pages explicitly dedicate their own
+photographs to **CC0 1.0 Universal**. This is the license of each photograph,
+not merely the license of Wikimedia structured metadata. CC0 terms are in
+`LICENSE-CC0.txt` and at [Creative Commons](https://creativecommons.org/publicdomain/zero/1.0/).
+
+Each downloaded JPEG is unchanged. Seven images use Wikimedia’s hosted scaled
+copy; the eighth uses the original 720 × 960 JPEG. Chinese filenames are the
+only local change. No image was generated, retouched, cropped or annotated by Aven.
+
+| Album file | Photographer | Primary source and license statement |
+| --- | --- | --- |
+| `01-春日小径.jpg` | DimiTalen | [Promenade to Heian-kyo garden, Kyoto, 2016.jpg](https://commons.wikimedia.org/wiki/File:Promenade_to_Heian-kyo_garden,_Kyoto,_2016.jpg) |
+| `02-湖畔树林.jpg` | DimiTalen | [Heian-kyo garden, with forested hill in the background, Kyoto, 2016.jpg](https://commons.wikimedia.org/wiki/File:Heian-kyo_garden,_with_forested_hill_in_the_background,_Kyoto,_2016.jpg) |
+| `03-庭院倒影.jpg` | DimiTalen | [Pond in Shinden's north garden, with tea house and five-storied pagoda in the background, Ninna-ji, Kyoto, 2016.jpg](https://commons.wikimedia.org/wiki/File:Pond_in_Shinden%27s_north_garden,_with_tea_house_and_five-storied_pagoda_in_the_background,_Ninna-ji,_Kyoto,_2016.jpg) |
+| `04-枯山水.jpg` | DimiTalen | [Ryōan-ji rock garden with silhouettes of tourists, Kyoto, 2016.jpg](https://commons.wikimedia.org/wiki/File:Ry%C5%8Dan-ji_rock_garden_with_silhouettes_of_tourists,_Kyoto,_2016.jpg) |
+| `05-桥边樱花.jpg` | DimiTalen | [Katsura River canal seen from Nakanoshima Bridge, Kyoto, 2016.jpg](https://commons.wikimedia.org/wiki/File:Katsura_River_canal_seen_from_Nakanoshima_Bridge,_Kyoto,_2016.jpg) |
+| `06-山间河流.jpg` | DimiTalen | [View of the Katsura River and the Arashiyama mountains from Togetsukyo Bridge, Kyoto, 2016.jpg](https://commons.wikimedia.org/wiki/File:View_of_the_Katsura_River_and_the_Arashiyama_mountains_from_Togetsukyo_Bridge,_Kyoto,_2016.jpg) |
+| `07-岚山街角.jpg` | DimiTalen | [Busy commercial street near Arashiyama Station (Keifuku), Kyoto, 2016.jpg](https://commons.wikimedia.org/wiki/File:Busy_commercial_street_near_Arashiyama_Station_(Keifuku),_Kyoto,_2016.jpg) |
+| `08-京都小巷.jpg` | Floodmfx | [Japanese street Kyoto.jpg](https://commons.wikimedia.org/wiki/File:Japanese_street_Kyoto.jpg) |
+
+The source page and downloaded-file URL, byte count, pixel dimensions and SHA-256
+hash for each image are recorded in `manifest.json`. Files were retrieved and
+individually inspected on 2026-09-15. Source HTML snapshots remain in the local
+ignored `.cache/photo-album-source/` research directory.
+
+Photos 1–7: DimiTalen, Kyoto, April 2016. Photo 8: Floodmfx, Kyoto, May 2016.
