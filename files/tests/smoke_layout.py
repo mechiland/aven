@@ -18,7 +18,7 @@ from places import configure_places
 
 
 app = QApplication([])
-encoded = make_state(224)
+encoded = make_state(184)
 for window_width in (760, 1100, 1440):
     real = QMainWindow()
     real.resize(window_width, 700)
@@ -37,7 +37,7 @@ for window_width in (760, 1100, 1440):
     assert real.restoreState(QByteArray.fromBase64(encoded.encode()))
     real.show()
     app.processEvents()
-    assert abs(docks["placesDock"].width() - 224) <= 2, (window_width, docks["placesDock"].width())
+    assert abs(docks["placesDock"].width() - 184) <= 2, (window_width, docks["placesDock"].width())
     assert docks["placesDock"].isVisible()
     assert all(dock.isHidden() for name, dock in docks.items() if name != "placesDock")
     assert real.toolBarArea(bar) == Qt.TopToolBarArea
@@ -65,4 +65,4 @@ with tempfile.TemporaryDirectory() as temporary:
     assert root.findtext("separator/info/metadata/UDI") == "device-id"
     assert not configure_places(home)["changed"]
 
-print("PASS: 224px Places restored at 760/1100/1440 window widths; toolbar retained; one-time layout seed preserves later choices; custom bookmarks/devices preserved")
+print("PASS: 184px Places restored at 760/1100/1440 window widths; toolbar retained; one-time layout seed preserves later choices; custom bookmarks/devices preserved")

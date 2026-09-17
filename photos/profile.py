@@ -11,12 +11,13 @@ def preferences(reduced_motion=False):
         "General": {
             # Auto follows the native Aven color scheme. Never tint image pixels.
             "BackgroundColorMode": "DocumentView::Auto",
-            "ThumbnailActions": "ThumbnailActions::ShowSelectionButtonOnly",
+            "ThumbnailActions": "ThumbnailActions::None",
             "ThumbnailBarIsVisible": "true",
             "ThumbnailBarOrientation": "Horizontal",
             "ThumbnailBarRowCount": "1",
             "UrlNavigatorIsEditable": "false",
             "UrlNavigatorShowFullPath": "false",
+            "SideBarPage": "folders",
             "FullScreenBackground": "FullScreenBackground::Black",
         },
         "ImageView": {
@@ -34,14 +35,25 @@ def preferences(reduced_motion=False):
         },
         "ThumbnailView": {
             "ThumbnailSize": str(tokens["icon"]["photoGrid"]),
-            "ThumbnailDetails": "1",
-            "ThumbnailAspectRatio": "1.5",
+            # A photo library grid uses image-only square slots. The native
+            # delegate preserves each image's ratio; this does not crop photos.
+            "ThumbnailDetails": "0",
+            "ThumbnailAspectRatio": "1.0",
             "ListVideos": "true",
             "AutoplayVideos": "false",
             "Sorting": "Sorting::Name",
             "SortDescending": "false",
         },
-        "SideBar": {"IsVisible ViewMode": "false"},
+        "SideBar": {
+            # Gwenview deliberately shares this preference between browse and
+            # windowed image modes. The F4 action remains available to hide it.
+            "IsVisible ViewMode": "true",
+            "SideBarSplitterSizes": "208,1024",
+        },
+        "MainWindow][Toolbar mainToolBar": {
+            "IconSize": "18",
+            "ToolButtonStyle": "IconOnly",
+        },
         "FullScreen": {
             "ShowFullScreenThumbnails": "true",
             "FullScreenModeActive": "false",

@@ -75,6 +75,7 @@ def main():
     parser.add_argument("--home", type=Path, default=Path.home())
     parser.add_argument("--xmlgui-version", type=int, help="48 for Dolphin 26.04, 49 for 26.08; detected from installed dolphin by default")
     parser.add_argument("--skip-layout", action="store_true", help="For staging without Qt; seed native layout later with files/layout.py")
+    parser.add_argument("--refresh-layout", action="store_true", help="Reapply the managed 184px Places layout; close Dolphin first")
     parser.add_argument("--shortcut-only", action="store_true", help="Repair or update only the native Preview shortcut configuration")
     args = parser.parse_args()
     home = args.home.resolve()
@@ -125,7 +126,10 @@ def main():
     places = configure_places(home)
     layout = {"changed": False, "reason": "staging without Qt"}
     if not args.skip_layout:
-        layout = json.loads(subprocess.check_output([sys.executable, str(SOURCE / "layout.py"), "--home", str(home)], text=True, env=os.environ | {"QT_QPA_PLATFORM": "offscreen"}))
+        layout_command = [sys.executable, str(SOURCE / "layout.py"), "--home", str(home)]
+        if args.refresh_layout:
+            layout_command.append("--reset")
+        layout = json.loads(subprocess.check_output(layout_command, text=True, env=os.environ | {"QT_QPA_PLATFORM": "offscreen"}))
     print(json.dumps({"preview": str(binary), "shortcut": "Ctrl+Alt+P", "shortcut_file": str(shortcut), "xmlgui_version": version, "places": places, "layout": layout, "packages_required": ["python3-pyside6", "kf6-kimageformats", "kio-extras", "kdegraphics-thumbnailers", "ghostscript", "ffmpegthumbs"]}, indent=2))
 
 

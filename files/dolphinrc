@@ -7,7 +7,7 @@ AlwaysShowTabBar=false
 RememberOpenedTabs=true
 GlobalViewProps=false
 RenameInline=true
-ShowSelectionToggle=true
+ShowSelectionToggle=false
 ShowToolTips=false
 AutoExpandFolders=false
 ShowStatusBar=0
@@ -17,28 +17,36 @@ EnlargeSmallPreviews=false
 
 [IconsMode]
 UseSystemFont=true
-IconSize=48
-PreviewSize=96
+IconSize=64
+PreviewSize=144
 TextWidthIndex=2
 MaximumTextLines=2
 
 [DetailsMode]
 UseSystemFont=true
-IconSize=22
-PreviewSize=32
+IconSize=16
+PreviewSize=24
 HighlightEntireRow=true
 ExpandableFolders=false
 
 [CompactMode]
 UseSystemFont=true
-IconSize=22
+IconSize=16
 PreviewSize=48
 
 [PreviewSettings]
 Plugins=audiothumbnail,directorythumbnail,ebookthumbnail,ffmpegthumbs,imagethumbnail,jpegthumbnail,opendocumentthumbnail,svgthumbnail,windowsimagethumbnail,exrthumbnail,rawthumbnail,comicbookthumbnail,gsthumbnail
 
 [PlacesPanel]
-IconSize=22
+IconSize=18
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=18
+
+[MainWindow][Toolbar mainToolBar]
+IconSize=18
+ToolButtonStyle=IconOnly
 
 [InformationPanel]
 previewsShown=true

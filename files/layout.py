@@ -11,7 +11,7 @@ from pathlib import Path
 import shutil
 
 
-def make_state(places_width=224):
+def make_state(places_width=184):
     from PySide6.QtCore import Qt
     from PySide6.QtWidgets import QApplication, QDockWidget, QMainWindow, QToolBar, QWidget
 
@@ -46,7 +46,7 @@ def make_state(places_width=224):
     return state
 
 
-def initialize(home, places_width=224, reset=False):
+def initialize(home, places_width=184, reset=False):
     marker = home / ".config/aven/files-layout.json"
     if marker.exists() and not reset:
         return {"changed": False, "reason": "initial layout already seeded"}
@@ -77,7 +77,7 @@ def initialize(home, places_width=224, reset=False):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--home", type=Path, default=Path.home())
-    parser.add_argument("--width", type=int, default=224)
+    parser.add_argument("--width", type=int, default=184)
     parser.add_argument("--reset", action="store_true")
     args = parser.parse_args()
     if not 160 <= args.width <= 320:

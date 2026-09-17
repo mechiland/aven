@@ -22,7 +22,7 @@ def normalize(value, schema):
     if schema["type"] == "Double":
         return float(value)
     if schema["type"] == "IntList":
-        return [int(item) for item in value.split(",")]
+        return [int(item.strip()) for item in value.split(",") if item.strip()]
     return value
 
 

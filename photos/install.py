@@ -68,7 +68,7 @@ def main():
         "application": "org.kde.gwenview.desktop",
         "preferences": values,
         "reduced_motion": args.reduced_motion,
-        "upstream_schema_versions_checked": ["25.12.3", "26.04.0"],
+        "upstream_schema_versions_checked": ["25.12.3", "26.04.0", "26.08.1"],
         "motion": "Upstream 250 ms software fade" if not args.reduced_motion else "No image animation",
         "visual_verified": False,
     }

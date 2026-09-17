@@ -124,8 +124,8 @@ class PreviewWindow(QMainWindow):
         footer.setObjectName("previewFooter")
         footer.setStyleSheet("#previewFooter { border-top: 1px solid palette(midlight); }")
         footer_layout = QHBoxLayout(footer)
-        footer_layout.setContentsMargins(18, 10, 18, 10)
-        footer_layout.setSpacing(10)
+        footer_layout.setContentsMargins(14, 8, 14, 8)
+        footer_layout.setSpacing(8)
         self.previous = self.button("go-previous", label("Previous selected file", "上一个所选文件", "上一個所選檔案"), lambda: self.navigate(-1))
         self.next = self.button("go-next", label("Next selected file", "下一个所选文件", "下一個所選檔案"), lambda: self.navigate(1))
         footer_layout.addWidget(self.previous)
@@ -139,7 +139,7 @@ class PreviewWindow(QMainWindow):
         footer_layout.addWidget(self.meta, 1)
         self.open_button = QPushButton(label("Open", "打开", "開啟"), footer)
         self.open_button.setIcon(QIcon.fromTheme("document-open"))
-        self.open_button.setMinimumHeight(32)
+        self.open_button.setMinimumHeight(28)
         self.open_button.setToolTip(label("Open in the default application (Enter)", "在默认应用中打开（Enter）", "在預設應用程式中開啟（Enter）"))
         self.open_button.clicked.connect(self.open_file)
         footer_layout.addWidget(self.open_button)
@@ -161,7 +161,7 @@ class PreviewWindow(QMainWindow):
         button = QPushButton(QIcon.fromTheme(icon), "", self)
         button.setAccessibleName(title)
         button.setToolTip(title)
-        button.setFixedSize(32, 32)
+        button.setFixedSize(28, 28)
         button.clicked.connect(callback)
         return button
 
@@ -229,6 +229,9 @@ class PreviewWindow(QMainWindow):
         view.document().setDocumentMargin(28)
         pixel_size, line_height = reading_metrics(text)
         font = QFont(QApplication.font())
+        # Reading content keeps its dedicated prose face when the shell's
+        # compact UI face changes; regional CJK fallback remains fontconfig's.
+        font.setFamily("Noto Sans")
         font.setPixelSize(pixel_size)
         font.setWeight(QFont.Normal)
         view.setFont(font)
