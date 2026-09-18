@@ -1,0 +1,15 @@
+{
+  "KPlugin": {
+    "Id": "aven-dock",
+    "Name": "Aven Dock",
+    "Description": "Translucent panel and quiet native running indicators; other shell assets inherit Breeze.",
+    "Version": "0.3.1",
+    "License": "MIT",
+    "Authors": [
+      {
+        "Name": "Aven contributors"
+      }
+    ]
+  },
+  "X-Plasma-API": "5.0"
+}

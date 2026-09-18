@@ -1,0 +1,93 @@
+{
+  "before": {
+    "id": "{4e0a63a4-cb2f-45bb-bdec-4c924e562051}",
+    "caption": "/home/aven/Pictures/京都春日 — Gwenview",
+    "app": "org.kde.gwenview",
+    "resource_class": "org.kde.gwenview",
+    "resource_name": "gwenview",
+    "pid": 9190,
+    "active": false,
+    "minimized": false,
+    "full_screen": false,
+    "hidden": false,
+    "skip_taskbar": false,
+    "skip_switcher": false,
+    "normal_window": true,
+    "dialog": false,
+    "special": false,
+    "frame": {
+      "x": 636,
+      "y": 259,
+      "width": 648,
+      "height": 514
+    },
+    "client": {
+      "x": 640,
+      "y": 287,
+      "width": 640,
+      "height": 480
+    },
+    "output": "Virtual-1",
+    "movable": true,
+    "resizable": true,
+    "minimum_client_size": {
+      "width": 572,
+      "height": 419
+    }
+  },
+  "requested_geometry": {
+    "x": 360,
+    "y": 80,
+    "width": 1200,
+    "height": 850
+  },
+  "requested_maximize": false,
+  "requested_activate": true,
+  "ok": true,
+  "after": [
+    {
+      "id": "{4e0a63a4-cb2f-45bb-bdec-4c924e562051}",
+      "caption": "/home/aven/Pictures/京都春日 — Gwenview",
+      "app": "org.kde.gwenview",
+      "resource_class": "org.kde.gwenview",
+      "resource_name": "gwenview",
+      "pid": 9190,
+      "active": true,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 360,
+        "y": 80,
+        "width": 1200,
+        "height": 850
+      },
+      "client": {
+        "x": 364,
+        "y": 108,
+        "width": 1192,
+        "height": 816
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 572,
+        "height": 419
+      }
+    }
+  ],
+  "geometry_acknowledged": true,
+  "activation_acknowledged": true,
+  "schema_version": 1,
+  "captured_at": "2026-09-17T04:47:20.938691+00:00",
+  "method": "temporary KWin script via public Workspace/Window API",
+  "command": "arrange",
+  "persistent_kwin_changes": false
+}
+

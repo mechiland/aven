@@ -33,10 +33,11 @@ def atomic_write(path: Path, text: str, mode: int = 0o600) -> None:
 
 def preferences(roles: dict) -> dict:
     prefs = {
-        # Keep upstream System theme. GTK provides the OS font/palette.
+        # Keep upstream System theme, co-locating the native window controls
+        # with Firefox's navigation toolbar using its supported CSD mode.
         "browser.theme.native-theme": True,
-        "browser.tabs.inTitlebar": 0,
-        "browser.uidensity": 0,
+        "browser.tabs.inTitlebar": 1,
+        "browser.uidensity": 1,
         "toolkit.legacyUserProfileCustomizations.stylesheets": True,
         # KDE's portal owns the Open / Save dialogs; no GTK file chooser fork.
         "widget.use-xdg-desktop-portal.file-picker": 1,
@@ -52,6 +53,50 @@ def preferences(roles: dict) -> dict:
     # Deliberately retain document fonts, serif/monospace CJK fallbacks, browser
     # zoom, minimum font size, site line-height, UI locale and every protection.
     return prefs
+
+
+def typography_css(roles: dict) -> str:
+    family = json.dumps(roles["ui"]["family"], ensure_ascii=False)
+    size = roles["ui"].get("pixel_size", roles["ui"]["point_size"] * 96 / 72)
+    return ("/* Generated from typography/roles.json by browser/install.py. */\n"
+            f":root {{ --union-ui-family: {family}; --union-ui-size: {size:g}px; }}\n")
+
+
+def toolbar_preferences(original: str) -> dict:
+    """Move real tab commands to navigation before a single tab row can hide."""
+    key = "browser.uiCustomization.state"
+    prefix = f"user_pref({json.dumps(key)}, "
+    state = None
+    for line in original.splitlines():
+        if line.startswith(prefix):
+            try:
+                state = json.loads(json.loads(line[len(prefix):-2]))
+            except (ValueError, TypeError):
+                raise SystemExit("Cannot safely merge Firefox toolbar customization state")
+    if state is None:
+        # Firefox 155's native serialized toolbar schema, inspected in guest.
+        state = {
+            "placements": {
+                "widget-overflow-fixed-list": [], "unified-extensions-area": [],
+                "nav-bar": ["sidebar-button", "back-button", "forward-button", "stop-reload-button",
+                            "customizableui-special-spring1", "urlbar-container", "customizableui-special-spring2",
+                            "downloads-button", "fxa-toolbar-menu-button", "unified-extensions-button"],
+                "toolbar-menubar": ["menubar-items"],
+                "TabsToolbar": ["tabbrowser-tabs", "customizableui-special-spring3"],
+                "vertical-tabs": [], "PersonalToolbar": ["personal-bookmarks"],
+            },
+            "seen": [], "dirtyAreaCache": [], "currentVersion": 26, "newElementCount": 3,
+        }
+    if not isinstance(state, dict) or not isinstance(state.get("placements"), dict):
+        raise SystemExit("Unexpected Firefox toolbar customization schema")
+    placements = state["placements"]
+    for area, items in placements.items():
+        if not isinstance(items, list):
+            raise SystemExit("Unexpected Firefox toolbar placement schema")
+        placements[area] = [item for item in items if item not in ("new-tab-button", "alltabs-button")]
+    placements.setdefault("nav-bar", []).extend(["new-tab-button", "alltabs-button"])
+    state["dirtyAreaCache"] = list(dict.fromkeys(state.get("dirtyAreaCache", []) + ["nav-bar", "TabsToolbar"]))
+    return {key: json.dumps(state, separators=(",", ":"), ensure_ascii=False)}
 
 
 def desktop_quote(value: str) -> str:
@@ -90,9 +135,11 @@ def main() -> None:
         except BlockingIOError:
             parser.error("Close the Aven Firefox profile before installing preferences")
         if seed:
-            # A small chrome-only palette layer; no website CSS or geometry.
+            # Chrome layout and typography only; website CSS is untouched.
             shutil.copytree(ROOT / "browser/chrome", profile / "chrome", dirs_exist_ok=True)
+            atomic_write(profile / "chrome/union-typography.css", typography_css(roles))
             original = pref_path.read_text() if pref_path.exists() else ""
+            prefs.update(toolbar_preferences(original))
             keys = "|".join(re.escape(json.dumps(key)) for key in prefs)
             managed_line = re.compile(r"^user_pref\((?:" + keys + r"),")
             retained = [line for line in original.splitlines() if not managed_line.match(line)]
@@ -104,7 +151,7 @@ def main() -> None:
                 "schema_version": 1,
                 "profile": str(profile),
                 "target": "Fedora Kinoite 44 native Firefox",
-                "theme": "upstream System, native GTK colors and Noto UI font",
+                "theme": "Union neutral Safari-reference chrome; native Firefox CSD controls in 52px navigation row",
                 "palette_dependency": tokens["name"],
                 "roles_sha256": hashlib.sha256(roles_path.read_bytes()).hexdigest(),
                 "tokens_sha256": hashlib.sha256(tokens_path.read_bytes()).hexdigest(),
@@ -123,14 +170,18 @@ def main() -> None:
         "Comment=Browse the Web", "Exec=" + desktop_quote(str(launcher)) + " %u",
         "Icon=firefox", "Terminal=false", "Categories=Network;WebBrowser;",
         "MimeType=text/html;x-scheme-handler/http;x-scheme-handler/https;",
-        "StartupNotify=true", "StartupWMClass=firefox", "",
+        # Match the native Wayland app ID / KWin resource_class, not the
+        # lowercase resource_name. Plasma pins this same desktop-file ID.
+        "StartupNotify=true", "StartupWMClass=org.mozilla.firefox", "",
     ])
     native = home / ".local/share/applications/org.mozilla.firefox.desktop"
     if native.exists() and "X-Aven-Managed=browser-v1" not in native.read_text():
         parser.error(f"Refusing to replace an existing custom desktop entry: {native}")
     atomic_write(native, desktop.replace("Type=Application", "Type=Application\nX-Aven-Managed=browser-v1"), 0o644)
-    # Compatibility for existing saved associations; one visible native app ID.
-    atomic_write(home / ".local/share/applications/aven-browser.desktop", desktop + "NoDisplay=true\n", 0o644)
+    # Compatibility for saved associations, without a competing WMClass claim
+    # that can make Plasma attach a running window to the hidden legacy ID.
+    compatibility = desktop.replace("StartupWMClass=org.mozilla.firefox\n", "")
+    atomic_write(home / ".local/share/applications/aven-browser.desktop", compatibility + "NoDisplay=true\n", 0o644)
     print(json.dumps({"profile": str(profile), "preferences_seeded": seed, "launcher": str(launcher), "desktop": native.name}, indent=2))
 
 

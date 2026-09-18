@@ -1,0 +1,3342 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-17T09:20:13.145186+00:00",
+  "reviewer": "Independent typography/verification agent",
+  "method": "Read-only SSH commands and Python stdin streams; no guest configuration writes, GUI actions, cache rebuilds, reboots, or installed source changes.",
+  "guest": {
+    "captured_at": "2026-09-17T09:18:17.281089+00:00",
+    "desktop_user": "aven",
+    "desktop_uid": 1000,
+    "home": "/var/home/aven",
+    "boot_id": "1e888fa9-b970-4815-bc61-8c5290401079"
+  },
+  "access_fixture_provenance": {
+    "reported_by": "root integrator",
+    "note": "SSH key and sudo fixture were added through the native account TTY after the first desktop screenshot; these are test access provisions, not factory ISO account defaults.",
+    "independently_observed_creation": false
+  },
+  "release": {
+    "manifest_path": "output/Aven-Union-44-0.3.1-x86_64.json",
+    "manifest_sha256": "f303f5d1973418f57294a080741e1e396be28ae59b0d674171c8d0cd064319ae",
+    "iso": {
+      "file": "Aven-Union-44-0.3.1-x86_64.iso",
+      "sha256": "59d81e2afb1c7241c274f961ae83cb13dd54d77a15459b266c87c1f458ef23eb",
+      "bytes": 8051228672
+    },
+    "embedded_source_commit": "3cea3e117b4503f3e74239b406c2ded992ab1df5",
+    "embedded_source_worktree_dirty": false,
+    "external_audit_tools_commit": "932b3b9b09dcb11907e056db6482c24590b71c55",
+    "source_version_note": "ISO source is intentionally frozen at 3cea3e1; newer external verification tools are not expected to equal embedded verifier files."
+  },
+  "installed_audit": {
+    "path": "evidence/verification/union-iso-031/installed-audit.json",
+    "sha256": "6ba9579dc40e0fc4dbaceb944209680413a56e2cbc130302bc110dcf97e4c888",
+    "atomic_identity_passed": true,
+    "desktop_startup_passed": true,
+    "first_login_passed": true,
+    "errors": [],
+    "requested_local_packages_checked": 2,
+    "local_replacements_checked": 84,
+    "package_cache_refs_checked": 103
+  },
+  "source_integrity": {
+    "passed": true,
+    "installation_manifest_matches_release_manifest": true,
+    "installed_ostree_contract_matches_release": true,
+    "installed_profile_contract_matches_release": true,
+    "expected_file_count": 186,
+    "actual_file_count": 186,
+    "missing_files": [],
+    "unexpected_files": [],
+    "files": [
+      {
+        "path": "browser/chrome/icons/all-tabs.svg",
+        "expected_sha256": "62e84ac43cf4b4e49c672398078808b011b23b0ed1e5b0ff868e7fbd1ccc9bdd",
+        "actual_sha256": "62e84ac43cf4b4e49c672398078808b011b23b0ed1e5b0ff868e7fbd1ccc9bdd",
+        "expected_bytes": 289,
+        "actual_bytes": 289,
+        "passed": true
+      },
+      {
+        "path": "browser/chrome/icons/new-tab.svg",
+        "expected_sha256": "ae1190c86b72b033d85c03d344cc06a68235f783f4500308b4408cc49656cb4a",
+        "actual_sha256": "ae1190c86b72b033d85c03d344cc06a68235f783f4500308b4408cc49656cb4a",
+        "expected_bytes": 164,
+        "actual_bytes": 164,
+        "passed": true
+      },
+      {
+        "path": "browser/chrome/userChrome.css",
+        "expected_sha256": "529da41fc007d090a881ba11f417af6b812d598902268e462665930e21545f3d",
+        "actual_sha256": "529da41fc007d090a881ba11f417af6b812d598902268e462665930e21545f3d",
+        "expected_bytes": 5165,
+        "actual_bytes": 5165,
+        "passed": true
+      },
+      {
+        "path": "browser/chrome/window-controls.css",
+        "expected_sha256": "b807c2054991ab5de0c27e2a8ed766d8c8a2d7677cfcb687dc23851a056d4d7f",
+        "actual_sha256": "b807c2054991ab5de0c27e2a8ed766d8c8a2d7677cfcb687dc23851a056d4d7f",
+        "expected_bytes": 2853,
+        "actual_bytes": 2853,
+        "passed": true
+      },
+      {
+        "path": "browser/install.py",
+        "expected_sha256": "b3646e9397b80c4b91cba832163e8f167e020a26b1bbb3390c802751af44de10",
+        "actual_sha256": "b3646e9397b80c4b91cba832163e8f167e020a26b1bbb3390c802751af44de10",
+        "expected_bytes": 9963,
+        "actual_bytes": 9963,
+        "passed": true
+      },
+      {
+        "path": "files/aven-preview.desktop",
+        "expected_sha256": "e3fe9c890c2dec066b12483de5f48a25c8cea88d6891ffdd20f77d3eeb06f401",
+        "actual_sha256": "e3fe9c890c2dec066b12483de5f48a25c8cea88d6891ffdd20f77d3eeb06f401",
+        "expected_bytes": 327,
+        "actual_bytes": 327,
+        "passed": true
+      },
+      {
+        "path": "files/dolphinrc",
+        "expected_sha256": "8a2cfa750a07ba0d61496a5f80ec3c14a65ccd033a3d259df79163908a8ebfdc",
+        "actual_sha256": "8a2cfa750a07ba0d61496a5f80ec3c14a65ccd033a3d259df79163908a8ebfdc",
+        "expected_bytes": 1112,
+        "actual_bytes": 1112,
+        "passed": true
+      },
+      {
+        "path": "files/finalize-places.py",
+        "expected_sha256": "d3e92a336a203c8b2d0841de0bf7087bc7fb5676f8d0eb9ac5ba8e5752b39bcb",
+        "actual_sha256": "d3e92a336a203c8b2d0841de0bf7087bc7fb5676f8d0eb9ac5ba8e5752b39bcb",
+        "expected_bytes": 193,
+        "actual_bytes": 193,
+        "passed": true
+      },
+      {
+        "path": "files/finalize_places.py",
+        "expected_sha256": "a88ccd99e54178c78776c37e2d0cdde559168ee698f3b45a366201454d6a3472",
+        "actual_sha256": "a88ccd99e54178c78776c37e2d0cdde559168ee698f3b45a366201454d6a3472",
+        "expected_bytes": 4144,
+        "actual_bytes": 4144,
+        "passed": true
+      },
+      {
+        "path": "files/first-login.md",
+        "expected_sha256": "b423f7a45a73a3980534493d239427237bb781861fea375d5da8b3a314872ad1",
+        "actual_sha256": "b423f7a45a73a3980534493d239427237bb781861fea375d5da8b3a314872ad1",
+        "expected_bytes": 2406,
+        "actual_bytes": 2406,
+        "passed": true
+      },
+      {
+        "path": "files/install.py",
+        "expected_sha256": "e3bb4dedf3ec334b173734df25d414a4f1b4c67482c29d2c9bf20fa24f13fb8c",
+        "actual_sha256": "e3bb4dedf3ec334b173734df25d414a4f1b4c67482c29d2c9bf20fa24f13fb8c",
+        "expected_bytes": 7350,
+        "actual_bytes": 7350,
+        "passed": true
+      },
+      {
+        "path": "files/integration.json",
+        "expected_sha256": "4b495c0476e47a1f81e785594d8cf49ae638a23613087deba3ba8a6b6a4f1258",
+        "actual_sha256": "4b495c0476e47a1f81e785594d8cf49ae638a23613087deba3ba8a6b6a4f1258",
+        "expected_bytes": 3148,
+        "actual_bytes": 3148,
+        "passed": true
+      },
+      {
+        "path": "files/layout.py",
+        "expected_sha256": "f6da1b2d0ea3c8437834f50748cc5e259c594a23109ef2bc9239339e1f2c5164",
+        "actual_sha256": "f6da1b2d0ea3c8437834f50748cc5e259c594a23109ef2bc9239339e1f2c5164",
+        "expected_bytes": 3699,
+        "actual_bytes": 3699,
+        "passed": true
+      },
+      {
+        "path": "files/org.aven.Preview.desktop",
+        "expected_sha256": "45f9f539d08646672644fbb8aa4c442c948c65784558b0d4285edafe14cb96ba",
+        "actual_sha256": "45f9f539d08646672644fbb8aa4c442c948c65784558b0d4285edafe14cb96ba",
+        "expected_bytes": 187,
+        "actual_bytes": 187,
+        "passed": true
+      },
+      {
+        "path": "files/places-records.md",
+        "expected_sha256": "52a9694f778e03722b6df898519b3c51737b8d1d159e332dd78e8e118798ae6e",
+        "actual_sha256": "52a9694f778e03722b6df898519b3c51737b8d1d159e332dd78e8e118798ae6e",
+        "expected_bytes": 2911,
+        "actual_bytes": 2911,
+        "passed": true
+      },
+      {
+        "path": "files/places.py",
+        "expected_sha256": "1afa16455179a3560cfd73d8c872affae92be4a6e2e255f5724698ddb5ea0efb",
+        "actual_sha256": "1afa16455179a3560cfd73d8c872affae92be4a6e2e255f5724698ddb5ea0efb",
+        "expected_bytes": 8109,
+        "actual_bytes": 8109,
+        "passed": true
+      },
+      {
+        "path": "files/round-03.md",
+        "expected_sha256": "767abdf0596b53e10da33129167c8683aa49b7742e73f6aff43bd185f90a61e9",
+        "actual_sha256": "767abdf0596b53e10da33129167c8683aa49b7742e73f6aff43bd185f90a61e9",
+        "expected_bytes": 4567,
+        "actual_bytes": 4567,
+        "passed": true
+      },
+      {
+        "path": "files/round-06.md",
+        "expected_sha256": "c45e80176a42799f0fd76faca4d03c10cf87c18827259bc2e6c5a759889a184b",
+        "actual_sha256": "c45e80176a42799f0fd76faca4d03c10cf87c18827259bc2e6c5a759889a184b",
+        "expected_bytes": 4216,
+        "actual_bytes": 4216,
+        "passed": true
+      },
+      {
+        "path": "files/system_places.py",
+        "expected_sha256": "6331a48ac881c92186c430e99dc844559f6627e152eb7cc996d1b3e324f98cf8",
+        "actual_sha256": "6331a48ac881c92186c430e99dc844559f6627e152eb7cc996d1b3e324f98cf8",
+        "expected_bytes": 6419,
+        "actual_bytes": 6419,
+        "passed": true
+      },
+      {
+        "path": "files/tests/smoke_layout.py",
+        "expected_sha256": "5a63a58b8cd69a1edd5a83d5410077bb363df385cfea8f62d20c43493e5a822e",
+        "actual_sha256": "5a63a58b8cd69a1edd5a83d5410077bb363df385cfea8f62d20c43493e5a822e",
+        "expected_bytes": 3299,
+        "actual_bytes": 3299,
+        "passed": true
+      },
+      {
+        "path": "files/tests/test_finalize_places.py",
+        "expected_sha256": "6b6bb3e8d6267b3ece86f70792227860d0366628586e95de396caa8536a29b33",
+        "actual_sha256": "6b6bb3e8d6267b3ece86f70792227860d0366628586e95de396caa8536a29b33",
+        "expected_bytes": 8562,
+        "actual_bytes": 8562,
+        "passed": true
+      },
+      {
+        "path": "files/tests/test_places.py",
+        "expected_sha256": "27a9ff9df131790e7cc67bde4db1c16587f0693d2171cba8cc5afab681be3e06",
+        "actual_sha256": "27a9ff9df131790e7cc67bde4db1c16587f0693d2171cba8cc5afab681be3e06",
+        "expected_bytes": 10452,
+        "actual_bytes": 10452,
+        "passed": true
+      },
+      {
+        "path": "files/tests/test_shortcut.py",
+        "expected_sha256": "97b8dc218ae00597129270436e90f3026e9b9872d19e1eeee86c10d90764d48b",
+        "actual_sha256": "97b8dc218ae00597129270436e90f3026e9b9872d19e1eeee86c10d90764d48b",
+        "expected_bytes": 3225,
+        "actual_bytes": 3225,
+        "passed": true
+      },
+      {
+        "path": "fixtures/browser/index.html",
+        "expected_sha256": "dc098fee7faa69c9ea44d60e428a17d35ae18df61d53bb119526546f61c2e6cc",
+        "actual_sha256": "dc098fee7faa69c9ea44d60e428a17d35ae18df61d53bb119526546f61c2e6cc",
+        "expected_bytes": 2913,
+        "actual_bytes": 2913,
+        "passed": true
+      },
+      {
+        "path": "fixtures/browser/reading.css",
+        "expected_sha256": "627944189c4b5786d3fa1d2963602f1d8832d35572ae4264bf4006d5819c2594",
+        "actual_sha256": "627944189c4b5786d3fa1d2963602f1d8832d35572ae4264bf4006d5819c2594",
+        "expected_bytes": 3222,
+        "actual_bytes": 3222,
+        "passed": true
+      },
+      {
+        "path": "fixtures/browser/traditional.html",
+        "expected_sha256": "d9a0d6e37689bb8677ad8d057f7e7df46bebaa63387a041342a249a8b052fb79",
+        "actual_sha256": "d9a0d6e37689bb8677ad8d057f7e7df46bebaa63387a041342a249a8b052fb79",
+        "expected_bytes": 2841,
+        "actual_bytes": 2841,
+        "passed": true
+      },
+      {
+        "path": "fixtures/browser/周末路线.txt",
+        "expected_sha256": "4372c686ff8ad721173bb63d024a3c685b0d12b0f14f0942d09598a336ef6fee",
+        "actual_sha256": "4372c686ff8ad721173bb63d024a3c685b0d12b0f14f0942d09598a336ef6fee",
+        "expected_bytes": 428,
+        "actual_bytes": 428,
+        "passed": true
+      },
+      {
+        "path": "fixtures/documents/weekend.html",
+        "expected_sha256": "85c051b8cc96ef8fe831710036d4c15faad909e2984673c57e583761f01692d3",
+        "actual_sha256": "85c051b8cc96ef8fe831710036d4c15faad909e2984673c57e583761f01692d3",
+        "expected_bytes": 1901,
+        "actual_bytes": 1901,
+        "passed": true
+      },
+      {
+        "path": "fixtures/documents/周末散步计划.pdf",
+        "expected_sha256": "8f0cd198962d6803233ec2883fa7b1473520e0e750de4a20f5e5a14f438f4a8a",
+        "actual_sha256": "8f0cd198962d6803233ec2883fa7b1473520e0e750de4a20f5e5a14f438f4a8a",
+        "expected_bytes": 266857,
+        "actual_bytes": 266857,
+        "passed": true
+      },
+      {
+        "path": "fixtures/mail/messages.json",
+        "expected_sha256": "650710fdfa35c6c56dc1684df0f96e5edb9df506eb44c9809af9ab96c977db35",
+        "actual_sha256": "650710fdfa35c6c56dc1684df0f96e5edb9df506eb44c9809af9ab96c977db35",
+        "expected_bytes": 3917,
+        "actual_bytes": 3917,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos-album/01-春日小径.jpg",
+        "expected_sha256": "08720ef697439905eddb2f4d475c120dec182f8fbc152d6fd7b9ab7ed7f5929b",
+        "actual_sha256": "08720ef697439905eddb2f4d475c120dec182f8fbc152d6fd7b9ab7ed7f5929b",
+        "expected_bytes": 503711,
+        "actual_bytes": 503711,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos-album/02-湖畔树林.jpg",
+        "expected_sha256": "397debf7b3449182b8cb6db38a9e65a082547fd5fd95d7eb176fc451cf9a960e",
+        "actual_sha256": "397debf7b3449182b8cb6db38a9e65a082547fd5fd95d7eb176fc451cf9a960e",
+        "expected_bytes": 424474,
+        "actual_bytes": 424474,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos-album/03-庭院倒影.jpg",
+        "expected_sha256": "17d6d16f26aa72ea62e7eced1eb72fdfa4b32ba9058a39afd2700e052f5e1b5f",
+        "actual_sha256": "17d6d16f26aa72ea62e7eced1eb72fdfa4b32ba9058a39afd2700e052f5e1b5f",
+        "expected_bytes": 476139,
+        "actual_bytes": 476139,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos-album/04-枯山水.jpg",
+        "expected_sha256": "aec11aa2593fe477c2f9a5ccc51283761795de47fc2a26215973191a6170f93f",
+        "actual_sha256": "aec11aa2593fe477c2f9a5ccc51283761795de47fc2a26215973191a6170f93f",
+        "expected_bytes": 409197,
+        "actual_bytes": 409197,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos-album/05-桥边樱花.jpg",
+        "expected_sha256": "b0d14c4bf9b468d98bca79884f1623875d0b14ded84d271b016d34c1d8a62e56",
+        "actual_sha256": "b0d14c4bf9b468d98bca79884f1623875d0b14ded84d271b016d34c1d8a62e56",
+        "expected_bytes": 382392,
+        "actual_bytes": 382392,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos-album/06-山间河流.jpg",
+        "expected_sha256": "e7f63711ac3703ef4f11f3764093dc94cef41adc244843e4d6e4a47a935e2dc5",
+        "actual_sha256": "e7f63711ac3703ef4f11f3764093dc94cef41adc244843e4d6e4a47a935e2dc5",
+        "expected_bytes": 316773,
+        "actual_bytes": 316773,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos-album/07-岚山街角.jpg",
+        "expected_sha256": "c7d340abb607219099f6eb17946e9ec0a4a013752b6fccba4a9f09d1bd2dba48",
+        "actual_sha256": "c7d340abb607219099f6eb17946e9ec0a4a013752b6fccba4a9f09d1bd2dba48",
+        "expected_bytes": 302107,
+        "actual_bytes": 302107,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos-album/08-京都小巷.jpg",
+        "expected_sha256": "25c5b12e1d63ee11a8f3d4853bf888a0db6dc67ed281be69b1f4eaaf15dfd159",
+        "actual_sha256": "25c5b12e1d63ee11a8f3d4853bf888a0db6dc67ed281be69b1f4eaaf15dfd159",
+        "expected_bytes": 94849,
+        "actual_bytes": 94849,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos-album/ATTRIBUTION.md",
+        "expected_sha256": "94c952fba61f3ddc8dccd2fed98f5a3ffce0d6cac2113b34247464ee0e17818e",
+        "actual_sha256": "94c952fba61f3ddc8dccd2fed98f5a3ffce0d6cac2113b34247464ee0e17818e",
+        "expected_bytes": 2873,
+        "actual_bytes": 2873,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos-album/LICENSE-CC0.txt",
+        "expected_sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+        "actual_sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+        "expected_bytes": 6555,
+        "actual_bytes": 6555,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos-album/manifest.json",
+        "expected_sha256": "4d8a4c35f8a904f7c101f2dac42ee5de1118b08bd87a26f920178cb9b6b1bed7",
+        "actual_sha256": "4d8a4c35f8a904f7c101f2dac42ee5de1118b08bd87a26f920178cb9b6b1bed7",
+        "expected_bytes": 9101,
+        "actual_bytes": 9101,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos/00-地出-Earthrise.jpg",
+        "expected_sha256": "b0cd972974f71b36164dbc5c1dc8808ed5bcddbf09de3adebb40c559b99a1e4d",
+        "actual_sha256": "b0cd972974f71b36164dbc5c1dc8808ed5bcddbf09de3adebb40c559b99a1e4d",
+        "expected_bytes": 86108,
+        "actual_bytes": 86108,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos/01-瀑布横幅-EXIF-1.jpg",
+        "expected_sha256": "a23b1b0eac8c5ee5ae0373d07984b8d57df152e6be363d2ab77b304285bcad81",
+        "actual_sha256": "a23b1b0eac8c5ee5ae0373d07984b8d57df152e6be363d2ab77b304285bcad81",
+        "expected_bytes": 347327,
+        "actual_bytes": 347327,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos/02-瀑布竖幅-EXIF-1.jpg",
+        "expected_sha256": "2d8247813c4cedbfcbec5205963655cce449a0286399c5a0128fae4dc9ec50ce",
+        "actual_sha256": "2d8247813c4cedbfcbec5205963655cce449a0286399c5a0128fae4dc9ec50ce",
+        "expected_bytes": 245684,
+        "actual_bytes": 245684,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos/03-旋转方向-EXIF-6.jpg",
+        "expected_sha256": "9b344e9f0c869d8637ea22e672df9451d8d3cc1d2d0b291af3b284e538e5f124",
+        "actual_sha256": "9b344e9f0c869d8637ea22e672df9451d8d3cc1d2d0b291af3b284e538e5f124",
+        "expected_bytes": 352727,
+        "actual_bytes": 352727,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos/04-透明色阶-Transparency.png",
+        "expected_sha256": "756a03364c02e3c9f85d6f4029eb3cef2488c081dc537d46e102bebcb9e02732",
+        "actual_sha256": "756a03364c02e3c9f85d6f4029eb3cef2488c081dc537d46e102bebcb9e02732",
+        "expected_bytes": 184,
+        "actual_bytes": 184,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos/05-花开-Flower.webm",
+        "expected_sha256": "c6f8a348953395598a9a73b9bab1676436410797bce9f398f4be1531d6e76dda",
+        "actual_sha256": "c6f8a348953395598a9a73b9bab1676436410797bce9f398f4be1531d6e76dda",
+        "expected_bytes": 554058,
+        "actual_bytes": 554058,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos/ATTRIBUTION.md",
+        "expected_sha256": "3376c10a289ec6b6dd97ca0552f91a29c6feb16bcf7be6f419c32fdb6ce9f292",
+        "actual_sha256": "3376c10a289ec6b6dd97ca0552f91a29c6feb16bcf7be6f419c32fdb6ce9f292",
+        "expected_bytes": 2354,
+        "actual_bytes": 2354,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos/LICENSE-exif.txt",
+        "expected_sha256": "eda2673fc728b46a07d2f56f9165a6cd5190bf0bd008475992227f97cad463c8",
+        "actual_sha256": "eda2673fc728b46a07d2f56f9165a6cd5190bf0bd008475992227f97cad463c8",
+        "expected_bytes": 1085,
+        "actual_bytes": 1085,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos/LICENSE-mdn.txt",
+        "expected_sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+        "actual_sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+        "expected_bytes": 6555,
+        "actual_bytes": 6555,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos/LICENSE-pngsuite.txt",
+        "expected_sha256": "5cb922e144816a1a3a33183ecdda7d989374cacc70d1084fa542680dcfe5fd16",
+        "actual_sha256": "5cb922e144816a1a3a33183ecdda7d989374cacc70d1084fa542680dcfe5fd16",
+        "expected_bytes": 2784,
+        "actual_bytes": 2784,
+        "passed": true
+      },
+      {
+        "path": "fixtures/photos/manifest.json",
+        "expected_sha256": "a5b4733d6f17856abf4ed13073935bb9db82b050132f8f2a7bd40826de67be45",
+        "actual_sha256": "a5b4733d6f17856abf4ed13073935bb9db82b050132f8f2a7bd40826de67be45",
+        "expected_bytes": 4187,
+        "actual_bytes": 4187,
+        "passed": true
+      },
+      {
+        "path": "fixtures/typography/specimen.html",
+        "expected_sha256": "ff6f9644427439f80bd3b9f0825ec9542ed2d41dfcddb28b9fe54a6f68c9a6b5",
+        "actual_sha256": "ff6f9644427439f80bd3b9f0825ec9542ed2d41dfcddb28b9fe54a6f68c9a6b5",
+        "expected_bytes": 9640,
+        "actual_bytes": 9640,
+        "passed": true
+      },
+      {
+        "path": "fixtures/typography/简体中文与Latin.txt",
+        "expected_sha256": "5b64d420a1df1de7b09e3df587d523dc8aabcbd1ca1c817e70cf9d8cabd47e68",
+        "actual_sha256": "5b64d420a1df1de7b09e3df587d523dc8aabcbd1ca1c817e70cf9d8cabd47e68",
+        "expected_bytes": 1154,
+        "actual_bytes": 1154,
+        "passed": true
+      },
+      {
+        "path": "fixtures/typography/繁體中文與Latin.txt",
+        "expected_sha256": "1eb8d751d0c0e29d9cb15c11bd634b265b3ed566776e7c59afe11e931698b0e6",
+        "actual_sha256": "1eb8d751d0c0e29d9cb15c11bd634b265b3ed566776e7c59afe11e931698b0e6",
+        "expected_bytes": 1131,
+        "actual_bytes": 1131,
+        "passed": true
+      },
+      {
+        "path": "integration/apply-profile.py",
+        "expected_sha256": "86824cc4c75d74b7aed59763b45759b50964aa6266313dbc10ed89920df428a6",
+        "actual_sha256": "86824cc4c75d74b7aed59763b45759b50964aa6266313dbc10ed89920df428a6",
+        "expected_bytes": 4739,
+        "actual_bytes": 4739,
+        "passed": true
+      },
+      {
+        "path": "integration/apply.py",
+        "expected_sha256": "99b78937d7b63b0a99d258da2f613803f5d03a65f77ba8c1d37816f3e7c19dbf",
+        "actual_sha256": "99b78937d7b63b0a99d258da2f613803f5d03a65f77ba8c1d37816f3e7c19dbf",
+        "expected_bytes": 8656,
+        "actual_bytes": 8656,
+        "passed": true
+      },
+      {
+        "path": "integration/native-apps.py",
+        "expected_sha256": "b0aba828a9aa58b5e3765cb989aa4ddd2df3b152f29f2d2ac7140dcdd1b3bf51",
+        "actual_sha256": "b0aba828a9aa58b5e3765cb989aa4ddd2df3b152f29f2d2ac7140dcdd1b3bf51",
+        "expected_bytes": 1690,
+        "actual_bytes": 1690,
+        "passed": true
+      },
+      {
+        "path": "integration/plasma-layout.js.in",
+        "expected_sha256": "a864280cbba2c14cadb194463b307961fc54f79a493dd6e42e11aa036df06620",
+        "actual_sha256": "a864280cbba2c14cadb194463b307961fc54f79a493dd6e42e11aa036df06620",
+        "expected_bytes": 2153,
+        "actual_bytes": 2153,
+        "passed": true
+      },
+      {
+        "path": "integration/prepare-packages.py",
+        "expected_sha256": "627ecf8f72434716ae84d3e0115e73cf75a61206a72f90f13f47bd15601f1407",
+        "actual_sha256": "627ecf8f72434716ae84d3e0115e73cf75a61206a72f90f13f47bd15601f1407",
+        "expected_bytes": 1893,
+        "actual_bytes": 1893,
+        "passed": true
+      },
+      {
+        "path": "integration/prepare-union.py",
+        "expected_sha256": "2932c691b1bfea51b0034bb4560cda42c993b3f416538db3510cdff4820c7a24",
+        "actual_sha256": "2932c691b1bfea51b0034bb4560cda42c993b3f416538db3510cdff4820c7a24",
+        "expected_bytes": 5519,
+        "actual_bytes": 5519,
+        "passed": true
+      },
+      {
+        "path": "integration/union_theme.py",
+        "expected_sha256": "4ddef8596ff9efca6265e6664b058f5264689bd112fc9a90f2dca094b68368d7",
+        "actual_sha256": "4ddef8596ff9efca6265e6664b058f5264689bd112fc9a90f2dca094b68368d7",
+        "expected_bytes": 8968,
+        "actual_bytes": 8968,
+        "passed": true
+      },
+      {
+        "path": "iso/aven-layout.desktop",
+        "expected_sha256": "57305c3225301eea88ae289cb013cb5271ad0c6f5261c06c04faf653cd4f602e",
+        "actual_sha256": "57305c3225301eea88ae289cb013cb5271ad0c6f5261c06c04faf653cd4f602e",
+        "expected_bytes": 184,
+        "actual_bytes": 184,
+        "passed": true
+      },
+      {
+        "path": "iso/aven-profile.sh",
+        "expected_sha256": "8b46f10d6660011d950207890c15c3b2f9f8692dc4870a2f72128d74cc9ff26e",
+        "actual_sha256": "8b46f10d6660011d950207890c15c3b2f9f8692dc4870a2f72128d74cc9ff26e",
+        "expected_bytes": 272,
+        "actual_bytes": 272,
+        "passed": true
+      },
+      {
+        "path": "iso/aven.ks",
+        "expected_sha256": "3191c91e8ffe82016b093ef59b06ec811f90a45c9d67296afc3929029e8be454",
+        "actual_sha256": "3191c91e8ffe82016b093ef59b06ec811f90a45c9d67296afc3929029e8be454",
+        "expected_bytes": 416,
+        "actual_bytes": 416,
+        "passed": true
+      },
+      {
+        "path": "iso/first-login.py",
+        "expected_sha256": "965d665caca0be2e9b9f0e6e2fa9e3807eaa61997cafb714deb6f12aa12f7da1",
+        "actual_sha256": "965d665caca0be2e9b9f0e6e2fa9e3807eaa61997cafb714deb6f12aa12f7da1",
+        "expected_bytes": 4004,
+        "actual_bytes": 4004,
+        "passed": true
+      },
+      {
+        "path": "iso/install-target.py",
+        "expected_sha256": "be968e54d3f8409d0386067456e5262174a89b5881aed66bbc3a982d874f9f8f",
+        "actual_sha256": "be968e54d3f8409d0386067456e5262174a89b5881aed66bbc3a982d874f9f8f",
+        "expected_bytes": 6661,
+        "actual_bytes": 6661,
+        "passed": true
+      },
+      {
+        "path": "iso/platform.json",
+        "expected_sha256": "768d6321287dfd119b5a2f0e14ea6248d1862e94f5d9d94cb681e1d987236873",
+        "actual_sha256": "768d6321287dfd119b5a2f0e14ea6248d1862e94f5d9d94cb681e1d987236873",
+        "expected_bytes": 16760,
+        "actual_bytes": 16760,
+        "passed": true
+      },
+      {
+        "path": "mail/chrome/userChrome.css",
+        "expected_sha256": "473185f73ea45f6d50ecae2b2068173f8cdfa61cefb017be8013a940e766fc56",
+        "actual_sha256": "473185f73ea45f6d50ecae2b2068173f8cdfa61cefb017be8013a940e766fc56",
+        "expected_bytes": 8456,
+        "actual_bytes": 8456,
+        "passed": true
+      },
+      {
+        "path": "mail/chrome/userContent.css",
+        "expected_sha256": "3bb959c738c0c30328b1dc7e79bdb5ba1daf9c0baa96d64b546cc14546eb8f70",
+        "actual_sha256": "3bb959c738c0c30328b1dc7e79bdb5ba1daf9c0baa96d64b546cc14546eb8f70",
+        "expected_bytes": 2094,
+        "actual_bytes": 2094,
+        "passed": true
+      },
+      {
+        "path": "mail/chrome/window-controls.css",
+        "expected_sha256": "b807c2054991ab5de0c27e2a8ed766d8c8a2d7677cfcb687dc23851a056d4d7f",
+        "actual_sha256": "b807c2054991ab5de0c27e2a8ed766d8c8a2d7677cfcb687dc23851a056d4d7f",
+        "expected_bytes": 2853,
+        "actual_bytes": 2853,
+        "passed": true
+      },
+      {
+        "path": "mail/install.py",
+        "expected_sha256": "eada9457f99c271bc83ab376b95bd4ba7db6a54e64cda7e8f2c91574e412a99a",
+        "actual_sha256": "eada9457f99c271bc83ab376b95bd4ba7db6a54e64cda7e8f2c91574e412a99a",
+        "expected_bytes": 4933,
+        "actual_bytes": 4933,
+        "passed": true
+      },
+      {
+        "path": "mail/integration.json",
+        "expected_sha256": "3ff054c2ed51d42c972eda50bef9941ac5198e63b097f15615af16e8fc69f8d4",
+        "actual_sha256": "3ff054c2ed51d42c972eda50bef9941ac5198e63b097f15615af16e8fc69f8d4",
+        "expected_bytes": 1457,
+        "actual_bytes": 1457,
+        "passed": true
+      },
+      {
+        "path": "mail/profile.py",
+        "expected_sha256": "3391446c99ea980de87467428dc87bf9d4e75314ffd7e811b1578066ee9aac83",
+        "actual_sha256": "3391446c99ea980de87467428dc87bf9d4e75314ffd7e811b1578066ee9aac83",
+        "expected_bytes": 15119,
+        "actual_bytes": 15119,
+        "passed": true
+      },
+      {
+        "path": "photos/audit.py",
+        "expected_sha256": "8ed784e9747c9ec39e8bd7ea6e850f632beff45ba6858874c604fd934b3ef9a6",
+        "actual_sha256": "8ed784e9747c9ec39e8bd7ea6e850f632beff45ba6858874c604fd934b3ef9a6",
+        "expected_bytes": 3686,
+        "actual_bytes": 3686,
+        "passed": true
+      },
+      {
+        "path": "photos/consumer-album.md",
+        "expected_sha256": "048c88b151870b457af2cafb8def1c9c9ecf0866ab45978aee6231af023a3d7a",
+        "actual_sha256": "048c88b151870b457af2cafb8def1c9c9ecf0866ab45978aee6231af023a3d7a",
+        "expected_bytes": 1619,
+        "actual_bytes": 1619,
+        "passed": true
+      },
+      {
+        "path": "photos/copy-album.py",
+        "expected_sha256": "7ae7826d684d44cf31597f138bad32db8fc00a77ee97ed0d30d7ad518c83aa05",
+        "actual_sha256": "7ae7826d684d44cf31597f138bad32db8fc00a77ee97ed0d30d7ad518c83aa05",
+        "expected_bytes": 2272,
+        "actual_bytes": 2272,
+        "passed": true
+      },
+      {
+        "path": "photos/copy-fixtures.py",
+        "expected_sha256": "b9003e7aa804f3a5d6a223923d24886f3bb06a31c9b2e5fc8a9192ce673a17f0",
+        "actual_sha256": "b9003e7aa804f3a5d6a223923d24886f3bb06a31c9b2e5fc8a9192ce673a17f0",
+        "expected_bytes": 582,
+        "actual_bytes": 582,
+        "passed": true
+      },
+      {
+        "path": "photos/fedora-packages.txt",
+        "expected_sha256": "17d61e7156bf33b02a61f31a206587458d02d0ca15659b7c38f06057c0770cfd",
+        "actual_sha256": "17d61e7156bf33b02a61f31a206587458d02d0ca15659b7c38f06057c0770cfd",
+        "expected_bytes": 106,
+        "actual_bytes": 106,
+        "passed": true
+      },
+      {
+        "path": "photos/install.py",
+        "expected_sha256": "5efca94d3a0cec6183631e1862c32906e128e0b11307564356a8453a642c09c0",
+        "actual_sha256": "5efca94d3a0cec6183631e1862c32906e128e0b11307564356a8453a642c09c0",
+        "expected_bytes": 3363,
+        "actual_bytes": 3363,
+        "passed": true
+      },
+      {
+        "path": "photos/native-sidebar.md",
+        "expected_sha256": "c26c45b10c2314a565a8fcd21bfda8136f845c31ce5c5cbe59f27ab0c0c4b82c",
+        "actual_sha256": "c26c45b10c2314a565a8fcd21bfda8136f845c31ce5c5cbe59f27ab0c0c4b82c",
+        "expected_bytes": 3398,
+        "actual_bytes": 3398,
+        "passed": true
+      },
+      {
+        "path": "photos/profile.py",
+        "expected_sha256": "7ceda2f704dd107afd93cd824d796386b69c2de2a10fabfb7bb458941052c57e",
+        "actual_sha256": "7ceda2f704dd107afd93cd824d796386b69c2de2a10fabfb7bb458941052c57e",
+        "expected_bytes": 2709,
+        "actual_bytes": 2709,
+        "passed": true
+      },
+      {
+        "path": "photos/schema.json",
+        "expected_sha256": "ea888caf0d86f7e3f6fa6c1150015140746327ecef86cef53c39ec23dac6f99e",
+        "actual_sha256": "ea888caf0d86f7e3f6fa6c1150015140746327ecef86cef53c39ec23dac6f99e",
+        "expected_bytes": 6292,
+        "actual_bytes": 6292,
+        "passed": true
+      },
+      {
+        "path": "preview/aven-preview",
+        "expected_sha256": "f69dcb949fb2fc2c9884d72cf80be5ea9d53865161f3d5a9329dd38dc2c01fdd",
+        "actual_sha256": "f69dcb949fb2fc2c9884d72cf80be5ea9d53865161f3d5a9329dd38dc2c01fdd",
+        "expected_bytes": 152,
+        "actual_bytes": 152,
+        "passed": true
+      },
+      {
+        "path": "preview/aven_preview/__init__.py",
+        "expected_sha256": "0e28b1a87bcfa3e66bf7e2e9df4ef8a818f3e8fba1054d1ec579d24d55fb123b",
+        "actual_sha256": "0e28b1a87bcfa3e66bf7e2e9df4ef8a818f3e8fba1054d1ec579d24d55fb123b",
+        "expected_bytes": 60,
+        "actual_bytes": 60,
+        "passed": true
+      },
+      {
+        "path": "preview/aven_preview/__main__.py",
+        "expected_sha256": "a67c172046323b0efcafe92cb83abc266d5dd4bc931d9312cde1b7bed50643db",
+        "actual_sha256": "a67c172046323b0efcafe92cb83abc266d5dd4bc931d9312cde1b7bed50643db",
+        "expected_bytes": 48,
+        "actual_bytes": 48,
+        "passed": true
+      },
+      {
+        "path": "preview/aven_preview/app.py",
+        "expected_sha256": "7fc50ba554a47894ef6b65a32a67be50ccf95cceaea638b1e6517b69eb41fc77",
+        "actual_sha256": "7fc50ba554a47894ef6b65a32a67be50ccf95cceaea638b1e6517b69eb41fc77",
+        "expected_bytes": 19647,
+        "actual_bytes": 19647,
+        "passed": true
+      },
+      {
+        "path": "preview/aven_preview/core.py",
+        "expected_sha256": "b306dc366dac719584fc1f65d8458fc94191a0e06e8d3938d87d7d8859ce74ca",
+        "actual_sha256": "b306dc366dac719584fc1f65d8458fc94191a0e06e8d3938d87d7d8859ce74ca",
+        "expected_bytes": 3792,
+        "actual_bytes": 3792,
+        "passed": true
+      },
+      {
+        "path": "preview/handoff.md",
+        "expected_sha256": "783c2b64a07904c740f491ad94979bb3e04a832012ea7acb7a4188699eec8720",
+        "actual_sha256": "783c2b64a07904c740f491ad94979bb3e04a832012ea7acb7a4188699eec8720",
+        "expected_bytes": 2206,
+        "actual_bytes": 2206,
+        "passed": true
+      },
+      {
+        "path": "preview/tests/smoke_qt.py",
+        "expected_sha256": "ee0666ec4a633bb63f226cee577070140617d392a500579b59ab2427398c1739",
+        "actual_sha256": "ee0666ec4a633bb63f226cee577070140617d392a500579b59ab2427398c1739",
+        "expected_bytes": 4184,
+        "actual_bytes": 4184,
+        "passed": true
+      },
+      {
+        "path": "preview/tests/test_core.py",
+        "expected_sha256": "73b0ad42f9fa9f89218757f549ffd0aa06c26a2c8cac1913370f525379c44c27",
+        "actual_sha256": "73b0ad42f9fa9f89218757f549ffd0aa06c26a2c8cac1913370f525379c44c27",
+        "expected_bytes": 3811,
+        "actual_bytes": 3811,
+        "passed": true
+      },
+      {
+        "path": "preview/tests/test_open_handoff.py",
+        "expected_sha256": "524377d624f097873eecb651d5c677603b9b603a1c650c414f9fcba8aae2f05e",
+        "actual_sha256": "524377d624f097873eecb651d5c677603b9b603a1c650c414f9fcba8aae2f05e",
+        "expected_bytes": 4980,
+        "actual_bytes": 4980,
+        "passed": true
+      },
+      {
+        "path": "typography/audit.py",
+        "expected_sha256": "152129666e308cb09b2244724582e7aa8dfbe74e3dd7d04c331d837560fc5e01",
+        "actual_sha256": "152129666e308cb09b2244724582e7aa8dfbe74e3dd7d04c331d837560fc5e01",
+        "expected_bytes": 7764,
+        "actual_bytes": 7764,
+        "passed": true
+      },
+      {
+        "path": "typography/aven-matrix-geometry.json",
+        "expected_sha256": "139e7ef8764b2043a19d05f05625820b8b14985447454944f22223866519b4ba",
+        "actual_sha256": "139e7ef8764b2043a19d05f05625820b8b14985447454944f22223866519b4ba",
+        "expected_bytes": 41646,
+        "actual_bytes": 41646,
+        "passed": true
+      },
+      {
+        "path": "typography/aven-matrix.json",
+        "expected_sha256": "e784321c5de039d26c5696f5777e70c1c30f849988085eeb595f8ef4118097a7",
+        "actual_sha256": "e784321c5de039d26c5696f5777e70c1c30f849988085eeb595f8ef4118097a7",
+        "expected_bytes": 33731,
+        "actual_bytes": 33731,
+        "passed": true
+      },
+      {
+        "path": "typography/aven-round04-matrix-geometry.json",
+        "expected_sha256": "e3e6d3e73c108cbeeb18005edc82d386b2f8484c425e5c22db6857c120830f2e",
+        "actual_sha256": "e3e6d3e73c108cbeeb18005edc82d386b2f8484c425e5c22db6857c120830f2e",
+        "expected_bytes": 41615,
+        "actual_bytes": 41615,
+        "passed": true
+      },
+      {
+        "path": "typography/aven-round04-matrix.json",
+        "expected_sha256": "2a9606cc520ff4515bb04c4444398ef66619fddcbc953d72af3c848cd4a0a7ed",
+        "actual_sha256": "2a9606cc520ff4515bb04c4444398ef66619fddcbc953d72af3c848cd4a0a7ed",
+        "expected_bytes": 43096,
+        "actual_bytes": 43096,
+        "passed": true
+      },
+      {
+        "path": "typography/aven-round04-process-locales.json",
+        "expected_sha256": "293269e277d131eb51444de15a3897b8edaf641774ef478dd2dc15237085c62f",
+        "actual_sha256": "293269e277d131eb51444de15a3897b8edaf641774ef478dd2dc15237085c62f",
+        "expected_bytes": 1200,
+        "actual_bytes": 1200,
+        "passed": true
+      },
+      {
+        "path": "typography/aven-round04-restoration.json",
+        "expected_sha256": "3cf4361bf379488a2268b3bda6f96c7ee4172060bbbfa1e13f1ab789f90baa0f",
+        "actual_sha256": "3cf4361bf379488a2268b3bda6f96c7ee4172060bbbfa1e13f1ab789f90baa0f",
+        "expected_bytes": 6725,
+        "actual_bytes": 6725,
+        "passed": true
+      },
+      {
+        "path": "typography/fedora-packages.txt",
+        "expected_sha256": "b0c0ba8eff026c34366d7d086543c9e8c5561783a71a96dacea6542c766e65d3",
+        "actual_sha256": "b0c0ba8eff026c34366d7d086543c9e8c5561783a71a96dacea6542c766e65d3",
+        "expected_bytes": 247,
+        "actual_bytes": 247,
+        "passed": true
+      },
+      {
+        "path": "typography/fontconfig/60-aven-families.conf",
+        "expected_sha256": "089a6888a547627bf2af409d2710b9d85a761d8e4ebf1938fecb853719da7b0d",
+        "actual_sha256": "089a6888a547627bf2af409d2710b9d85a761d8e4ebf1938fecb853719da7b0d",
+        "expected_bytes": 6843,
+        "actual_bytes": 6843,
+        "passed": true
+      },
+      {
+        "path": "typography/fontconfig/99-aven-rendering.conf",
+        "expected_sha256": "3f49ebf56b474f68ab3f82d8b0f178949ae8a2e5c6640aacac20ea3893731ee1",
+        "actual_sha256": "3f49ebf56b474f68ab3f82d8b0f178949ae8a2e5c6640aacac20ea3893731ee1",
+        "expected_bytes": 1385,
+        "actual_bytes": 1385,
+        "passed": true
+      },
+      {
+        "path": "typography/install.py",
+        "expected_sha256": "eea7c3cc229600c201368b2e5e459cd4b735533c83333c19b2986531fdcf23cf",
+        "actual_sha256": "eea7c3cc229600c201368b2e5e459cd4b735533c83333c19b2986531fdcf23cf",
+        "expected_bytes": 1071,
+        "actual_bytes": 1071,
+        "passed": true
+      },
+      {
+        "path": "typography/roles.json",
+        "expected_sha256": "0e067a72ab22f72bc4644ba248f0060d630b72efdaec04e0119967f4cbaaf914",
+        "actual_sha256": "0e067a72ab22f72bc4644ba248f0060d630b72efdaec04e0119967f4cbaaf914",
+        "expected_bytes": 1423,
+        "actual_bytes": 1423,
+        "passed": true
+      },
+      {
+        "path": "typography/round04-capture-plan.json",
+        "expected_sha256": "9939307ac765a05b473840825b96172e072d5453d8eb4ead73236610c336d8d6",
+        "actual_sha256": "9939307ac765a05b473840825b96172e072d5453d8eb4ead73236610c336d8d6",
+        "expected_bytes": 13314,
+        "actual_bytes": 13314,
+        "passed": true
+      },
+      {
+        "path": "typography/round06-font-resolution.json",
+        "expected_sha256": "b019b43189789562c341cb372a1e4ad003003d4d7788cae2a181ba181a45359a",
+        "actual_sha256": "b019b43189789562c341cb372a1e4ad003003d4d7788cae2a181ba181a45359a",
+        "expected_bytes": 36899,
+        "actual_bytes": 36899,
+        "passed": true
+      },
+      {
+        "path": "typography/round06-medium-emphasis.md",
+        "expected_sha256": "fdc93efd386f134f1e94877a33bcd69041b652b48419b70445416808401af04b",
+        "actual_sha256": "fdc93efd386f134f1e94877a33bcd69041b652b48419b70445416808401af04b",
+        "expected_bytes": 3607,
+        "actual_bytes": 3607,
+        "passed": true
+      },
+      {
+        "path": "typography/round06-medium-role-resolution.json",
+        "expected_sha256": "ecdbf77be1e68fbb75068136512830d379e305e0c168d1c0786c023de53a17ff",
+        "actual_sha256": "ecdbf77be1e68fbb75068136512830d379e305e0c168d1c0786c023de53a17ff",
+        "expected_bytes": 42552,
+        "actual_bytes": 42552,
+        "passed": true
+      },
+      {
+        "path": "typography/round06-native-review.md",
+        "expected_sha256": "e5b8d084f727a21124a740282833fdf7c2778e732b92674dd0030b8c60b5b91e",
+        "actual_sha256": "e5b8d084f727a21124a740282833fdf7c2778e732b92674dd0030b8c60b5b91e",
+        "expected_bytes": 9579,
+        "actual_bytes": 9579,
+        "passed": true
+      },
+      {
+        "path": "typography/round06-reference-review.md",
+        "expected_sha256": "840755aa4ddc468d19696491623a5a753ab3bee25f3c65f3b814297a55315ee0",
+        "actual_sha256": "840755aa4ddc468d19696491623a5a753ab3bee25f3c65f3b814297a55315ee0",
+        "expected_bytes": 4007,
+        "actual_bytes": 4007,
+        "passed": true
+      },
+      {
+        "path": "typography/stock-matrix.json",
+        "expected_sha256": "c887c7e7225a8e8ec569a5d939f923c0cea6dca6dcabb73e49f93e6eafd527cd",
+        "actual_sha256": "c887c7e7225a8e8ec569a5d939f923c0cea6dca6dcabb73e49f93e6eafd527cd",
+        "expected_bytes": 22336,
+        "actual_bytes": 22336,
+        "passed": true
+      },
+      {
+        "path": "verification/aven-round03-takeover.md",
+        "expected_sha256": "8fa0a9d815dc04cac9f6f15ea6ae54e7353ae0e0b5ed4e0723916ccf0a94eeb9",
+        "actual_sha256": "8fa0a9d815dc04cac9f6f15ea6ae54e7353ae0e0b5ed4e0723916ccf0a94eeb9",
+        "expected_bytes": 4667,
+        "actual_bytes": 4667,
+        "passed": true
+      },
+      {
+        "path": "verification/aven-round04-takeover.md",
+        "expected_sha256": "547e57b723f484d4e79c151f76d139bce64733b89edfea21d1dd45113c82f9a3",
+        "actual_sha256": "547e57b723f484d4e79c151f76d139bce64733b89edfea21d1dd45113c82f9a3",
+        "expected_bytes": 5775,
+        "actual_bytes": 5775,
+        "passed": true
+      },
+      {
+        "path": "verification/evidence_gate.py",
+        "expected_sha256": "e1e8896e24978eef6f5e988cc86cf9737f12c75a21d995c7cef1f547b3ddb49d",
+        "actual_sha256": "e1e8896e24978eef6f5e988cc86cf9737f12c75a21d995c7cef1f547b3ddb49d",
+        "expected_bytes": 20366,
+        "actual_bytes": 20366,
+        "passed": true
+      },
+      {
+        "path": "verification/file_operations.py",
+        "expected_sha256": "5dc68b76686bd53f5000a43aa8dad6b65c3454057019932ae823fe88ca760db2",
+        "actual_sha256": "5dc68b76686bd53f5000a43aa8dad6b65c3454057019932ae823fe88ca760db2",
+        "expected_bytes": 4087,
+        "actual_bytes": 4087,
+        "passed": true
+      },
+      {
+        "path": "verification/guest_probe.py",
+        "expected_sha256": "56cfdbb0eeb95d6adea2201a47420a4381959db29f5a95e8b7e18f6b75c65752",
+        "actual_sha256": "56cfdbb0eeb95d6adea2201a47420a4381959db29f5a95e8b7e18f6b75c65752",
+        "expected_bytes": 12165,
+        "actual_bytes": 12165,
+        "passed": true
+      },
+      {
+        "path": "verification/iso-contract.md",
+        "expected_sha256": "822df25190d952c0f14741b2ca0ca7108db22495cf8ed35e831cc0915255687e",
+        "actual_sha256": "822df25190d952c0f14741b2ca0ca7108db22495cf8ed35e831cc0915255687e",
+        "expected_bytes": 9338,
+        "actual_bytes": 9338,
+        "passed": true
+      },
+      {
+        "path": "verification/iso_audit.py",
+        "expected_sha256": "7869b4ccc38f56c691927876fb1806996deb38a1e7e78bf261402fd46a9a509b",
+        "actual_sha256": "7869b4ccc38f56c691927876fb1806996deb38a1e7e78bf261402fd46a9a509b",
+        "expected_bytes": 12923,
+        "actual_bytes": 12923,
+        "passed": true
+      },
+      {
+        "path": "verification/iso_deployment_probe.py",
+        "expected_sha256": "e66f554cc55088172a89ea38b19be139e719aa5bc658515823bbdaa13a1875f4",
+        "actual_sha256": "e66f554cc55088172a89ea38b19be139e719aa5bc658515823bbdaa13a1875f4",
+        "expected_bytes": 8744,
+        "actual_bytes": 8744,
+        "passed": true
+      },
+      {
+        "path": "verification/iso_user_probe.py",
+        "expected_sha256": "aa83e819f96a60a2ed24b9d7d6138234d576f0262122d91952559b45fd092856",
+        "actual_sha256": "aa83e819f96a60a2ed24b9d7d6138234d576f0262122d91952559b45fd092856",
+        "expected_bytes": 5885,
+        "actual_bytes": 5885,
+        "passed": true
+      },
+      {
+        "path": "verification/kwin_windows.js",
+        "expected_sha256": "1b71fbc9e92501d54b2b5230728dd495f127b79af297be49909c342f56914279",
+        "actual_sha256": "1b71fbc9e92501d54b2b5230728dd495f127b79af297be49909c342f56914279",
+        "expected_bytes": 4783,
+        "actual_bytes": 4783,
+        "passed": true
+      },
+      {
+        "path": "verification/record_frames.py",
+        "expected_sha256": "c998af9dd97bc8f95c3b2bf1ac4cc8fb16565c1c15e614f82c488a886435496e",
+        "actual_sha256": "c998af9dd97bc8f95c3b2bf1ac4cc8fb16565c1c15e614f82c488a886435496e",
+        "expected_bytes": 3854,
+        "actual_bytes": 3854,
+        "passed": true
+      },
+      {
+        "path": "verification/restore_profile.py",
+        "expected_sha256": "fd7567e9cc8ec65bd48a0eed951cae58e055fd8f721ec5047780724864a2c779",
+        "actual_sha256": "fd7567e9cc8ec65bd48a0eed951cae58e055fd8f721ec5047780724864a2c779",
+        "expected_bytes": 29785,
+        "actual_bytes": 29785,
+        "passed": true
+      },
+      {
+        "path": "verification/rfb_capture.py",
+        "expected_sha256": "f5ad1a62385656f3de1e9011921b0e2b0411acd2833a3e69ba098a1e6a4386f6",
+        "actual_sha256": "f5ad1a62385656f3de1e9011921b0e2b0411acd2833a3e69ba098a1e6a4386f6",
+        "expected_bytes": 7579,
+        "actual_bytes": 7579,
+        "passed": true
+      },
+      {
+        "path": "verification/tests/test_evidence_gate.py",
+        "expected_sha256": "ef8c4cca548bee8321a3a5cf2f5ec234aee7c017f2eab30f0d3c94e9e92c1186",
+        "actual_sha256": "ef8c4cca548bee8321a3a5cf2f5ec234aee7c017f2eab30f0d3c94e9e92c1186",
+        "expected_bytes": 12895,
+        "actual_bytes": 12895,
+        "passed": true
+      },
+      {
+        "path": "verification/tests/test_guest_probe.py",
+        "expected_sha256": "f88e11ae3ec4be0c14e748cde49efcd4dc3e5ea5ce60645fb39a2b5976144f6b",
+        "actual_sha256": "f88e11ae3ec4be0c14e748cde49efcd4dc3e5ea5ce60645fb39a2b5976144f6b",
+        "expected_bytes": 4617,
+        "actual_bytes": 4617,
+        "passed": true
+      },
+      {
+        "path": "verification/tests/test_iso_audit.py",
+        "expected_sha256": "6df9756c5347cfa4e72c36469133f5330bee7bd1beb3c31f2823e2b7025b5533",
+        "actual_sha256": "6df9756c5347cfa4e72c36469133f5330bee7bd1beb3c31f2823e2b7025b5533",
+        "expected_bytes": 2773,
+        "actual_bytes": 2773,
+        "passed": true
+      },
+      {
+        "path": "verification/tests/test_iso_deployment_probe.py",
+        "expected_sha256": "a5c8876d76f36e22b0d254c800eb50f0ce396ead87840a0aa61ad76311ef968f",
+        "actual_sha256": "a5c8876d76f36e22b0d254c800eb50f0ce396ead87840a0aa61ad76311ef968f",
+        "expected_bytes": 4081,
+        "actual_bytes": 4081,
+        "passed": true
+      },
+      {
+        "path": "verification/tests/test_iso_first_login.py",
+        "expected_sha256": "884ba71021872d0e4b959d2f8c346f36ed99c05ddc238b7bc90e4bf19c3c4a5f",
+        "actual_sha256": "884ba71021872d0e4b959d2f8c346f36ed99c05ddc238b7bc90e4bf19c3c4a5f",
+        "expected_bytes": 3633,
+        "actual_bytes": 3633,
+        "passed": true
+      },
+      {
+        "path": "verification/tests/test_iso_packaging.py",
+        "expected_sha256": "a732220e5b616dd93543bbf96c092fef0ac0ae297509409f2cd2f9f617cfb188",
+        "actual_sha256": "a732220e5b616dd93543bbf96c092fef0ac0ae297509409f2cd2f9f617cfb188",
+        "expected_bytes": 7242,
+        "actual_bytes": 7242,
+        "passed": true
+      },
+      {
+        "path": "verification/tests/test_restore_places.py",
+        "expected_sha256": "112ce25ed07541464ebe20ccec8d7f7988202c66968f040813430caa33d716a3",
+        "actual_sha256": "112ce25ed07541464ebe20ccec8d7f7988202c66968f040813430caa33d716a3",
+        "expected_bytes": 8289,
+        "actual_bytes": 8289,
+        "passed": true
+      },
+      {
+        "path": "verification/tests/test_rfb_capture.py",
+        "expected_sha256": "dfcf36565207ed41e753ccae6af28d1b6bcf649551d682f913bb1feab7f9b4cd",
+        "actual_sha256": "dfcf36565207ed41e753ccae6af28d1b6bcf649551d682f913bb1feab7f9b4cd",
+        "expected_bytes": 3288,
+        "actual_bytes": 3288,
+        "passed": true
+      },
+      {
+        "path": "verification/union_probe.py",
+        "expected_sha256": "bcd2e983515650cd468484a79c9bd9014244f412172c1ae5c8db87cf3572a1a7",
+        "actual_sha256": "bcd2e983515650cd468484a79c9bd9014244f412172c1ae5c8db87cf3572a1a7",
+        "expected_bytes": 4030,
+        "actual_bytes": 4030,
+        "passed": true
+      },
+      {
+        "path": "verification/window_tool.py",
+        "expected_sha256": "3e566bd89740c44996cc33b1771fcf5082e008e68e9f598e8860275ee003d36d",
+        "actual_sha256": "3e566bd89740c44996cc33b1771fcf5082e008e68e9f598e8860275ee003d36d",
+        "expected_bytes": 8509,
+        "actual_bytes": 8509,
+        "passed": true
+      },
+      {
+        "path": "visual/LICENSE",
+        "expected_sha256": "b672d2b6a6c935c5ee7cd8375bcdf1d65a0a8eac54d6f5ca1f4cb16b38e13aa1",
+        "actual_sha256": "b672d2b6a6c935c5ee7cd8375bcdf1d65a0a8eac54d6f5ca1f4cb16b38e13aa1",
+        "expected_bytes": 1256,
+        "actual_bytes": 1256,
+        "passed": true
+      },
+      {
+        "path": "visual/aurorae/Aven/Avenrc",
+        "expected_sha256": "4bbcf623bc57eac2657fec576bb2136f1e8d40509bcbb3b1f51c5dbdeefe9e43",
+        "actual_sha256": "4bbcf623bc57eac2657fec576bb2136f1e8d40509bcbb3b1f51c5dbdeefe9e43",
+        "expected_bytes": 685,
+        "actual_bytes": 685,
+        "passed": true
+      },
+      {
+        "path": "visual/aurorae/Aven/alldesktops.svg",
+        "expected_sha256": "cbdf3bb358674c95a87726d0870f493a3c64dc42815bc653e64cb9c587a402bf",
+        "actual_sha256": "cbdf3bb358674c95a87726d0870f493a3c64dc42815bc653e64cb9c587a402bf",
+        "expected_bytes": 2884,
+        "actual_bytes": 2884,
+        "passed": true
+      },
+      {
+        "path": "visual/aurorae/Aven/appmenu.svg",
+        "expected_sha256": "2f5af13c1ffe8aa59461dbcbe7a19c259da812f887e5e7d429235867be0cd1ae",
+        "actual_sha256": "2f5af13c1ffe8aa59461dbcbe7a19c259da812f887e5e7d429235867be0cd1ae",
+        "expected_bytes": 2700,
+        "actual_bytes": 2700,
+        "passed": true
+      },
+      {
+        "path": "visual/aurorae/Aven/close.svg",
+        "expected_sha256": "0b868fc718888c77ee2aa592eb3520509358f922610c1e9816a299653387d0c5",
+        "actual_sha256": "0b868fc718888c77ee2aa592eb3520509358f922610c1e9816a299653387d0c5",
+        "expected_bytes": 2045,
+        "actual_bytes": 2045,
+        "passed": true
+      },
+      {
+        "path": "visual/aurorae/Aven/decoration.svg",
+        "expected_sha256": "25fb08879299eff966ab10eb06e614d4f5717862373a5cd62295c75d0d662e9f",
+        "actual_sha256": "25fb08879299eff966ab10eb06e614d4f5717862373a5cd62295c75d0d662e9f",
+        "expected_bytes": 38664,
+        "actual_bytes": 38664,
+        "passed": true
+      },
+      {
+        "path": "visual/aurorae/Aven/help.svg",
+        "expected_sha256": "296ea8b8fe78530bab12eaab84a06c27568038811da79312e50c20db750b4bac",
+        "actual_sha256": "296ea8b8fe78530bab12eaab84a06c27568038811da79312e50c20db750b4bac",
+        "expected_bytes": 2844,
+        "actual_bytes": 2844,
+        "passed": true
+      },
+      {
+        "path": "visual/aurorae/Aven/keepabove.svg",
+        "expected_sha256": "aa08ec666a6e755eaaa2ac5455d691644adb1c090d6c9a8da089a7249796d10e",
+        "actual_sha256": "aa08ec666a6e755eaaa2ac5455d691644adb1c090d6c9a8da089a7249796d10e",
+        "expected_bytes": 2668,
+        "actual_bytes": 2668,
+        "passed": true
+      },
+      {
+        "path": "visual/aurorae/Aven/keepbelow.svg",
+        "expected_sha256": "11b78624d279abac693a02e4a8d3592899300610a03237a088045ff23273471b",
+        "actual_sha256": "11b78624d279abac693a02e4a8d3592899300610a03237a088045ff23273471b",
+        "expected_bytes": 2676,
+        "actual_bytes": 2676,
+        "passed": true
+      },
+      {
+        "path": "visual/aurorae/Aven/maximize.svg",
+        "expected_sha256": "546263325bac83d597fb379e7d8b94cc0c490dc17ee48c91360433a108d316e0",
+        "actual_sha256": "546263325bac83d597fb379e7d8b94cc0c490dc17ee48c91360433a108d316e0",
+        "expected_bytes": 1973,
+        "actual_bytes": 1973,
+        "passed": true
+      },
+      {
+        "path": "visual/aurorae/Aven/metadata.desktop",
+        "expected_sha256": "7d9699c6fc9c7a3c0823dfade2d2a3b037a95469daa627f84e60f4baed0cc504",
+        "actual_sha256": "7d9699c6fc9c7a3c0823dfade2d2a3b037a95469daa627f84e60f4baed0cc504",
+        "expected_bytes": 188,
+        "actual_bytes": 188,
+        "passed": true
+      },
+      {
+        "path": "visual/aurorae/Aven/minimize.svg",
+        "expected_sha256": "c183ba28aabc9507257e88617fe965bd1f4ea5c7a8461f8a5e1c9882758f1e5a",
+        "actual_sha256": "c183ba28aabc9507257e88617fe965bd1f4ea5c7a8461f8a5e1c9882758f1e5a",
+        "expected_bytes": 1937,
+        "actual_bytes": 1937,
+        "passed": true
+      },
+      {
+        "path": "visual/aurorae/Aven/restore.svg",
+        "expected_sha256": "546263325bac83d597fb379e7d8b94cc0c490dc17ee48c91360433a108d316e0",
+        "actual_sha256": "546263325bac83d597fb379e7d8b94cc0c490dc17ee48c91360433a108d316e0",
+        "expected_bytes": 1973,
+        "actual_bytes": 1973,
+        "passed": true
+      },
+      {
+        "path": "visual/aurorae/Aven/shade.svg",
+        "expected_sha256": "46af9a59ad90d17326e7edc9bd7baccbf2202a39cf4f4bc3c876b2d3e0cfeb49",
+        "actual_sha256": "46af9a59ad90d17326e7edc9bd7baccbf2202a39cf4f4bc3c876b2d3e0cfeb49",
+        "expected_bytes": 2668,
+        "actual_bytes": 2668,
+        "passed": true
+      },
+      {
+        "path": "visual/check_geometry.py",
+        "expected_sha256": "33522559bbe8357ec86532afd7ac6305f99aaff696bb29bd8b9a55b5ef6882d9",
+        "actual_sha256": "33522559bbe8357ec86532afd7ac6305f99aaff696bb29bd8b9a55b5ef6882d9",
+        "expected_bytes": 1835,
+        "actual_bytes": 1835,
+        "passed": true
+      },
+      {
+        "path": "visual/color-schemes/AvenMist.colors",
+        "expected_sha256": "df782462a732318072c2eb431fcc8d8ea7c574f1ade972f6f7883dcfea39ce9a",
+        "actual_sha256": "df782462a732318072c2eb431fcc8d8ea7c574f1ade972f6f7883dcfea39ce9a",
+        "expected_bytes": 3570,
+        "actual_bytes": 3570,
+        "passed": true
+      },
+      {
+        "path": "visual/generate_assets.py",
+        "expected_sha256": "1ab2ff47af806d29d5327baec949c71ac2ffbe13b9d742466f0bd3fcf3fda711",
+        "actual_sha256": "1ab2ff47af806d29d5327baec949c71ac2ffbe13b9d742466f0bd3fcf3fda711",
+        "expected_bytes": 15852,
+        "actual_bytes": 15852,
+        "passed": true
+      },
+      {
+        "path": "visual/generate_dock.py",
+        "expected_sha256": "62d2380417609ba6dfbe4ad3102c8b14b15cbd508127a640f95069ac7ff03e14",
+        "actual_sha256": "62d2380417609ba6dfbe4ad3102c8b14b15cbd508127a640f95069ac7ff03e14",
+        "expected_bytes": 5534,
+        "actual_bytes": 5534,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/index.theme",
+        "expected_sha256": "39966e1da2a9bc25afa5bf650e2dbde61f3445a3e9af7fff3f92a47b0367a18f",
+        "actual_sha256": "39966e1da2a9bc25afa5bf650e2dbde61f3445a3e9af7fff3f92a47b0367a18f",
+        "expected_bytes": 611,
+        "actual_bytes": 611,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/scalable/apps/aven.svg",
+        "expected_sha256": "f948b2e485e9595ac72ac88f8f28f2bc9af4ae6454d9ade5200ba303ecc5bd0c",
+        "actual_sha256": "f948b2e485e9595ac72ac88f8f28f2bc9af4ae6454d9ade5200ba303ecc5bd0c",
+        "expected_bytes": 340,
+        "actual_bytes": 340,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/scalable/mimetypes/inode-directory.svg",
+        "expected_sha256": "c85b14d056a6c86b0a227b4f3ed88351ec3b05384bc48ffda050f190f50c3e97",
+        "actual_sha256": "c85b14d056a6c86b0a227b4f3ed88351ec3b05384bc48ffda050f190f50c3e97",
+        "expected_bytes": 604,
+        "actual_bytes": 604,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/scalable/places/folder-documents.svg",
+        "expected_sha256": "eb8402d689e8e1dac2662ae2e7054cd2a0c03a8771a6204878fa9990f2eaaaf9",
+        "actual_sha256": "eb8402d689e8e1dac2662ae2e7054cd2a0c03a8771a6204878fa9990f2eaaaf9",
+        "expected_bytes": 672,
+        "actual_bytes": 672,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/scalable/places/folder-download.svg",
+        "expected_sha256": "bc0d13f67d84387b192616cb63dd57ad035d5d3bf77558bfca21e8f9a9ef11ab",
+        "actual_sha256": "bc0d13f67d84387b192616cb63dd57ad035d5d3bf77558bfca21e8f9a9ef11ab",
+        "expected_bytes": 661,
+        "actual_bytes": 661,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/scalable/places/folder-downloads.svg",
+        "expected_sha256": "bc0d13f67d84387b192616cb63dd57ad035d5d3bf77558bfca21e8f9a9ef11ab",
+        "actual_sha256": "bc0d13f67d84387b192616cb63dd57ad035d5d3bf77558bfca21e8f9a9ef11ab",
+        "expected_bytes": 661,
+        "actual_bytes": 661,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/scalable/places/folder-open.svg",
+        "expected_sha256": "c85b14d056a6c86b0a227b4f3ed88351ec3b05384bc48ffda050f190f50c3e97",
+        "actual_sha256": "c85b14d056a6c86b0a227b4f3ed88351ec3b05384bc48ffda050f190f50c3e97",
+        "expected_bytes": 604,
+        "actual_bytes": 604,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/scalable/places/folder-pictures.svg",
+        "expected_sha256": "b5a597010b757e885ae36834fb9415437153d7be549d62728b4a4bc87fbabeff",
+        "actual_sha256": "b5a597010b757e885ae36834fb9415437153d7be549d62728b4a4bc87fbabeff",
+        "expected_bytes": 735,
+        "actual_bytes": 735,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/scalable/places/folder.svg",
+        "expected_sha256": "c85b14d056a6c86b0a227b4f3ed88351ec3b05384bc48ffda050f190f50c3e97",
+        "actual_sha256": "c85b14d056a6c86b0a227b4f3ed88351ec3b05384bc48ffda050f190f50c3e97",
+        "expected_bytes": 604,
+        "actual_bytes": 604,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/scalable/places/user-home.svg",
+        "expected_sha256": "32d984ab2ff273145e5934301b6f80ecbbfee93d8d4313bc2b05e815fc28ce2a",
+        "actual_sha256": "32d984ab2ff273145e5934301b6f80ecbbfee93d8d4313bc2b05e815fc28ce2a",
+        "expected_bytes": 663,
+        "actual_bytes": 663,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/small/mimetypes/inode-directory.svg",
+        "expected_sha256": "0c39b009b4ad8a164d4d712dbbae9d79d75d3180371dd3c0955299113b82f233",
+        "actual_sha256": "0c39b009b4ad8a164d4d712dbbae9d79d75d3180371dd3c0955299113b82f233",
+        "expected_bytes": 223,
+        "actual_bytes": 223,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/small/places/document-open-recent.svg",
+        "expected_sha256": "3d8986be7388ad736692492934dc9777a7de54b6a8e4487fda170aad827c930e",
+        "actual_sha256": "3d8986be7388ad736692492934dc9777a7de54b6a8e4487fda170aad827c930e",
+        "expected_bytes": 247,
+        "actual_bytes": 247,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/small/places/folder-documents.svg",
+        "expected_sha256": "b8a67e45533e01e1c66d37423e36f72fb5f057e29d4985b692a9b29cfc21847f",
+        "actual_sha256": "b8a67e45533e01e1c66d37423e36f72fb5f057e29d4985b692a9b29cfc21847f",
+        "expected_bytes": 230,
+        "actual_bytes": 230,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/small/places/folder-download.svg",
+        "expected_sha256": "f1345241f208adab53a645ec312fd9a91d8fc9b1395191735713e4acf980e753",
+        "actual_sha256": "f1345241f208adab53a645ec312fd9a91d8fc9b1395191735713e4acf980e753",
+        "expected_bytes": 257,
+        "actual_bytes": 257,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/small/places/folder-downloads.svg",
+        "expected_sha256": "f1345241f208adab53a645ec312fd9a91d8fc9b1395191735713e4acf980e753",
+        "actual_sha256": "f1345241f208adab53a645ec312fd9a91d8fc9b1395191735713e4acf980e753",
+        "expected_bytes": 257,
+        "actual_bytes": 257,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/small/places/folder-open.svg",
+        "expected_sha256": "0c39b009b4ad8a164d4d712dbbae9d79d75d3180371dd3c0955299113b82f233",
+        "actual_sha256": "0c39b009b4ad8a164d4d712dbbae9d79d75d3180371dd3c0955299113b82f233",
+        "expected_bytes": 223,
+        "actual_bytes": 223,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/small/places/folder-pictures.svg",
+        "expected_sha256": "1c53bcf6b0a886999ec9134f4d3055599a708aaeb7abda03a192fd7728021cb3",
+        "actual_sha256": "1c53bcf6b0a886999ec9134f4d3055599a708aaeb7abda03a192fd7728021cb3",
+        "expected_bytes": 305,
+        "actual_bytes": 305,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/small/places/folder.svg",
+        "expected_sha256": "0c39b009b4ad8a164d4d712dbbae9d79d75d3180371dd3c0955299113b82f233",
+        "actual_sha256": "0c39b009b4ad8a164d4d712dbbae9d79d75d3180371dd3c0955299113b82f233",
+        "expected_bytes": 223,
+        "actual_bytes": 223,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/small/places/network-workgroup.svg",
+        "expected_sha256": "d2da47ed9dcd1317ff985fd16381ff883bddceae401bb52dbb70cc8f292fd53f",
+        "actual_sha256": "d2da47ed9dcd1317ff985fd16381ff883bddceae401bb52dbb70cc8f292fd53f",
+        "expected_bytes": 299,
+        "actual_bytes": 299,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/small/places/user-home.svg",
+        "expected_sha256": "a97779fc2d585432422c6ccaeaaec3c9315fab06a2054654b3d4c0d9950e92b4",
+        "actual_sha256": "a97779fc2d585432422c6ccaeaaec3c9315fab06a2054654b3d4c0d9950e92b4",
+        "expected_bytes": 243,
+        "actual_bytes": 243,
+        "passed": true
+      },
+      {
+        "path": "visual/icons/Aven/small/places/user-trash.svg",
+        "expected_sha256": "8c7e87c85129fb018cd46a2345f12cd34f2c5fa066c11a1f3cd24a26e2068984",
+        "actual_sha256": "8c7e87c85129fb018cd46a2345f12cd34f2c5fa066c11a1f3cd24a26e2068984",
+        "expected_bytes": 255,
+        "actual_bytes": 255,
+        "passed": true
+      },
+      {
+        "path": "visual/plasma/aven-dock/metadata.json",
+        "expected_sha256": "d42bd4c57150e38fc0272221a5dd3410da827d072a3a306a5423cfabf3a718b3",
+        "actual_sha256": "d42bd4c57150e38fc0272221a5dd3410da827d072a3a306a5423cfabf3a718b3",
+        "expected_bytes": 329,
+        "actual_bytes": 329,
+        "passed": true
+      },
+      {
+        "path": "visual/plasma/aven-dock/opaque/widgets/panel-background.svg",
+        "expected_sha256": "47b07e280d7c1a0a04b4c2e08553b47c43afc624f4668d820b6b9a767495f3ff",
+        "actual_sha256": "47b07e280d7c1a0a04b4c2e08553b47c43afc624f4668d820b6b9a767495f3ff",
+        "expected_bytes": 4114,
+        "actual_bytes": 4114,
+        "passed": true
+      },
+      {
+        "path": "visual/plasma/aven-dock/plasmarc",
+        "expected_sha256": "162bd8aba392f946c95f9bc1d9c48d0f496367760eba0af876ca7349a09c33d6",
+        "actual_sha256": "162bd8aba392f946c95f9bc1d9c48d0f496367760eba0af876ca7349a09c33d6",
+        "expected_bytes": 135,
+        "actual_bytes": 135,
+        "passed": true
+      },
+      {
+        "path": "visual/plasma/aven-dock/solid/widgets/panel-background.svg",
+        "expected_sha256": "8e9fc10f75728c74afac2f66dad914fd6c8081246107142a0729ae825fa3d96a",
+        "actual_sha256": "8e9fc10f75728c74afac2f66dad914fd6c8081246107142a0729ae825fa3d96a",
+        "expected_bytes": 4141,
+        "actual_bytes": 4141,
+        "passed": true
+      },
+      {
+        "path": "visual/plasma/aven-dock/translucent/widgets/panel-background.svg",
+        "expected_sha256": "2904efb5d3ea37f34143704ec45e414b73632961102e18a37492f26e85f998a1",
+        "actual_sha256": "2904efb5d3ea37f34143704ec45e414b73632961102e18a37492f26e85f998a1",
+        "expected_bytes": 4141,
+        "actual_bytes": 4141,
+        "passed": true
+      },
+      {
+        "path": "visual/plasma/aven-dock/widgets/panel-background.svg",
+        "expected_sha256": "2904efb5d3ea37f34143704ec45e414b73632961102e18a37492f26e85f998a1",
+        "actual_sha256": "2904efb5d3ea37f34143704ec45e414b73632961102e18a37492f26e85f998a1",
+        "expected_bytes": 4141,
+        "actual_bytes": 4141,
+        "passed": true
+      },
+      {
+        "path": "visual/plasma/aven-dock/widgets/tasks.svg",
+        "expected_sha256": "afe2a8f3dcfb90cfc281af1fec55a6cc1a31baa773e2a16f55898a641d3dfa63",
+        "actual_sha256": "afe2a8f3dcfb90cfc281af1fec55a6cc1a31baa773e2a16f55898a641d3dfa63",
+        "expected_bytes": 22903,
+        "actual_bytes": 22903,
+        "passed": true
+      },
+      {
+        "path": "visual/tokens.json",
+        "expected_sha256": "59d22fa92dcd2d6889b85d0e8c6ecadf4e63a7e60c4b30b390096f11ffd5f35f",
+        "actual_sha256": "59d22fa92dcd2d6889b85d0e8c6ecadf4e63a7e60c4b30b390096f11ffd5f35f",
+        "expected_bytes": 3008,
+        "actual_bytes": 3008,
+        "passed": true
+      },
+      {
+        "path": "visual/union/aven-mist/contents/css/controls.css",
+        "expected_sha256": "bcc480fca1240d181f307638125cbe7e7c8de266ef804e1e94ac032816e95ee8",
+        "actual_sha256": "bcc480fca1240d181f307638125cbe7e7c8de266ef804e1e94ac032816e95ee8",
+        "expected_bytes": 3262,
+        "actual_bytes": 3262,
+        "passed": true
+      },
+      {
+        "path": "visual/union/aven-mist/contents/css/style.css",
+        "expected_sha256": "5855663d744b7ae3492c9b51bea6d23a4cf3ed82f4aeb25e109772950f606441",
+        "actual_sha256": "5855663d744b7ae3492c9b51bea6d23a4cf3ed82f4aeb25e109772950f606441",
+        "expected_bytes": 193,
+        "actual_bytes": 193,
+        "passed": true
+      },
+      {
+        "path": "visual/union/aven-mist/metadata.json",
+        "expected_sha256": "2b2144e406da68ba69214329e818e71193d66b6ea102419d63c3202a4b8d6b17",
+        "actual_sha256": "2b2144e406da68ba69214329e818e71193d66b6ea102419d63c3202a4b8d6b17",
+        "expected_bytes": 428,
+        "actual_bytes": 428,
+        "passed": true
+      },
+      {
+        "path": "visual/wallpapers/AvenEstuary/contents/images/3840x2160.svg",
+        "expected_sha256": "965a75b91fe20f67b181f08d0554cd6b5ec18d4ecfd14b4da24b398a5aa27d4e",
+        "actual_sha256": "965a75b91fe20f67b181f08d0554cd6b5ec18d4ecfd14b4da24b398a5aa27d4e",
+        "expected_bytes": 2541,
+        "actual_bytes": 2541,
+        "passed": true
+      },
+      {
+        "path": "visual/wallpapers/AvenEstuary/metadata.json",
+        "expected_sha256": "d90ca0ccd38965caccc422eed62db354ba0e775274179eadecd48dd74ddfd19b",
+        "actual_sha256": "d90ca0ccd38965caccc422eed62db354ba0e775274179eadecd48dd74ddfd19b",
+        "expected_bytes": 287,
+        "actual_bytes": 287,
+        "passed": true
+      }
+    ],
+    "installation_record": {
+      "path": "/var/lib/aven/installation.json",
+      "exists": true,
+      "is_symlink": false,
+      "sha256": "e718abf33a23cd066836fbf79827b03edca4f4db71db018e1d4c442627c447da",
+      "bytes": 50993,
+      "uid": 0,
+      "mode": "0o644",
+      "mtime_ns": 1789629887094746898
+    }
+  },
+  "first_login": {
+    "records": [
+      {
+        "path": "/var/home/aven/.local/state/aven/iso-seed-v1.json",
+        "exists": true,
+        "is_symlink": false,
+        "sha256": "12f9ed3815c4b8db752e474053a0799a88ebdcefd9d13b81910fac35d58f9cc1",
+        "bytes": 163,
+        "uid": 1000,
+        "mode": "0o644",
+        "mtime_ns": 1789634664822449143,
+        "json": {
+          "schema_version": 1,
+          "phase": "seed",
+          "completed_at": "2026-09-17T08:44:24.822153+00:00",
+          "source": "/var/lib/aven/source",
+          "home": "/var/home/aven"
+        }
+      },
+      {
+        "path": "/var/home/aven/.local/state/aven/iso-layout-v1.json",
+        "exists": true,
+        "is_symlink": false,
+        "sha256": "467dfd33c617c9a8f05426426db5dea312222dbec456c190a01e748741ce755c",
+        "bytes": 165,
+        "uid": 1000,
+        "mode": "0o644",
+        "mtime_ns": 1789634669896515613,
+        "json": {
+          "schema_version": 1,
+          "phase": "layout",
+          "completed_at": "2026-09-17T08:44:29.896290+00:00",
+          "source": "/var/lib/aven/source",
+          "home": "/var/home/aven"
+        }
+      },
+      {
+        "path": "/var/home/aven/.local/state/aven/iso-seed.log",
+        "exists": true,
+        "is_symlink": false,
+        "sha256": "89be66c3f68309d12550ded0eb3042f8b6cca3d5e918788c62193dc937746e5b",
+        "bytes": 8163,
+        "uid": 1000,
+        "mode": "0o644",
+        "mtime_ns": 1789634664806590816,
+        "text": "{\n  \"snapshot\": \"/var/home/aven/.local/state/aven/focused-before-20260917T084420.855321Z\",\n  \"entries\": 93,\n  \"scope\": \"aven-focused-profile\"\n}\nactive-environment: 68/68 font checks passed; visual quality unassessed.\nThis plugin does not support propagateSizeHints()\n{\n  \"preview\": \"/var/home/aven/.local/bin/aven-preview\",\n  \"shortcut\": \"Ctrl+Alt+P\",\n  \"shortcut_file\": \"/var/home/aven/.local/share/kxmlgui5/dolphin/dolphinui.rc\",\n  \"xmlgui_version\": 49,\n  \"places\": {\n    \"changed\": false,\n    \"reason\": \"native Places list not initialized yet\"\n  },\n  \"layout\": {\n    \"changed\": true,\n    \"places_width\": 184,\n    \"state_file\": \"/var/home/aven/.local/state/dolphinstaterc\"\n  },\n  \"packages_required\": [\n    \"python3-pyside6\",\n    \"kf6-kimageformats\",\n    \"kio-extras\",\n    \"kdegraphics-thumbnailers\",\n    \"ghostscript\",\n    \"ffmpegthumbs\"\n  ]\n}\n{\n  \"profile\": \"/var/home/aven/.local/share/aven/firefox\",\n  \"preferences_seeded\": true,\n  \"launcher\": \"/var/home/aven/.local/bin/aven-browser\",\n  \"desktop\": \"org.mozilla.firefox.desktop\"\n}\n{\n  \"profile\": \"/var/home/aven/.local/share/aven/mail/default\",\n  \"profile_seeded\": true,\n  \"appearance_refreshed\": false,\n  \"launcher\": \"/var/home/aven/.local/bin/aven-mail\",\n  \"desktop\": \"net.thunderbird.Thunderbird.desktop\",\n  \"mode\": \"normal-online\",\n  \"demo_fixtures\": false\n}\n{\"seeded\": true, \"config\": \"/var/home/aven/.config/gwenviewrc\", \"manifest\": \"/var/home/aven/.local/share/aven/photos-profile.json\"}\n/var/lib/aven/source/integration/apply-profile.py:71: PyGIDeprecationWarning: Gio.DesktopAppInfo is deprecated; use GioUnix.DesktopAppInfo instead\n  app = Gio.DesktopAppInfo.new(desktop)\n+ kbuildsycoca6 --noincremental\n+ plasma-apply-colorscheme BreezeLight\n+ plasma-apply-colorscheme AvenMist\n+ plasma-apply-desktoptheme aven-dock\n+ kwriteconfig6 --file /var/home/aven/.config/plasmarc --group Theme --key name aven-dock\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group General --key font Adwaita Sans,9.75,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group General --key menuFont Adwaita Sans,9.75,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group General --key toolBarFont Adwaita Sans,9.75,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group General --key smallestReadableFont Adwaita Sans,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group General --key fixed Noto Sans Mono,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group WM --key activeFont Adwaita Sans,10.5,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,,0,0\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group KDE --key widgetStyle Union\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group KDE --key AnimationDurationFactor 0.65\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group KDE --key SingleClick false\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group KDE --key unionStyle aven-mist\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group Icons --key Theme Aven\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group Toolbar style --key ToolButtonStyle IconOnly\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group MainToolbarIcons --key Size 18\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group ToolbarIcons --key Size 18\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group General --key XftAntialias true\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group General --key XftHintStyle hintslight\n+ kwriteconfig6 --file /var/home/aven/.config/kdeglobals --group General --key XftSubPixel none\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group Plugins --key wobblywindowsEnabled false\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group Plugins --key magiclampEnabled false\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group Plugins --key fallapartEnabled false\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group Plugins --key glideEnabled false\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group Plugins --key slideEnabled false\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group Plugins --key cubeslideEnabled false\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group Plugins --key windowapertureEnabled false\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group Plugins --key sheetEnabled false\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group Plugins --key squashEnabled false\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group Plugins --key translucencyEnabled false\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group Plugins --key diminactiveEnabled false\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group Plugins --key scaleEnabled false\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group Plugins --key fadeEnabled true\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group Plugins --key fadingpopupsEnabled true\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group Plugins --key overviewEnabled true\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group TabBox --key LayoutName thumbnail_grid\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group TabBox --key HighlightWindows false\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group org.kde.kdecoration2 --key ButtonsOnLeft XIA\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group org.kde.kdecoration2 --key ButtonsOnRight \n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group org.kde.kdecoration2 --key BorderSize Normal\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group org.kde.kdecoration2 --key BorderSizeAuto false\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group org.kde.kdecoration2 --key library org.kde.kwin.aurorae\n+ kwriteconfig6 --file /var/home/aven/.config/kwinrc --group org.kde.kdecoration2 --key theme __aurorae__svg__Aven\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-font-name Adwaita Sans 9.75\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-theme-name Breeze\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-icon-theme-name Aven\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-application-prefer-dark-theme false\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-xft-antialias 1\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-xft-hinting 1\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-xft-hintstyle hintslight\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-3.0/settings.ini --group Settings --key gtk-xft-rgba none\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-font-name Adwaita Sans 9.75\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-theme-name Breeze\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-icon-theme-name Aven\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-application-prefer-dark-theme false\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-xft-antialias 1\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-xft-hinting 1\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-xft-hintstyle hintslight\n+ kwriteconfig6 --file /var/home/aven/.config/gtk-4.0/settings.ini --group Settings --key gtk-xft-rgba none\nAven candidate installed. Config backup: /var/home/aven/.local/state/aven/20260917-164423-986931. Log out/in before typography comparisons.\nProfile integrated. Reboot the guest for a clean comparison round.\n"
+      },
+      {
+        "path": "/var/home/aven/.local/state/aven/iso-layout.log",
+        "exists": true,
+        "is_symlink": false,
+        "sha256": "0fbafcfdf2dfb95c59bf32931b185f1aedd33e9d6fdc17c653aee8173327ad27",
+        "bytes": 1383,
+        "uid": 1000,
+        "mode": "0o644",
+        "mtime_ns": 1789634669888590816,
+        "text": "\n{\n  \"complete\": true,\n  \"device_inventory_ready\": true,\n  \"attempts\": 2,\n  \"system_devices\": [\n    {\n      \"udi\": \"/org/kde/fstab/overlay/\",\n      \"uuid\": \"\",\n      \"mount\": \"/\",\n      \"reason\": \"read-only Atomic root\"\n    },\n    {\n      \"udi\": \"/org/freedesktop/UDisks2/block_devices/vda1\",\n      \"uuid\": \"4752-88fb\",\n      \"mount\": \"/boot/efi\",\n      \"reason\": \"fixed system boot volume\"\n    },\n    {\n      \"udi\": \"/org/freedesktop/UDisks2/block_devices/vda2\",\n      \"uuid\": \"3c180789-7b28-4248-9778-6a4c05a6ba09\",\n      \"mount\": \"/boot\",\n      \"reason\": \"fixed system boot volume\"\n    }\n  ],\n  \"changed\": true,\n  \"hidden_system_items\": [\n    \"Desktop\",\n    \"Music\",\n    \"Videos\",\n    \"Recent Locations\"\n  ],\n  \"hidden_system_devices\": [\n    {\n      \"udi\": \"/org/kde/fstab/overlay/\",\n      \"uuid\": \"\",\n      \"mount\": \"/\",\n      \"reason\": \"read-only Atomic root\"\n    },\n    {\n      \"udi\": \"/org/freedesktop/UDisks2/block_devices/vda1\",\n      \"uuid\": \"4752-88fb\",\n      \"mount\": \"/boot/efi\",\n      \"reason\": \"fixed system boot volume\"\n    },\n    {\n      \"udi\": \"/org/freedesktop/UDisks2/block_devices/vda2\",\n      \"uuid\": \"3c180789-7b28-4248-9778-6a4c05a6ba09\",\n      \"mount\": \"/boot\",\n      \"reason\": \"fixed system boot volume\"\n    }\n  ],\n  \"device_discovery_error\": null,\n  \"ownership_record\": \"/var/home/aven/.local/state/aven/places/20260917T084429.878988Z-87375f11c1d9.json\"\n}\n"
+      },
+      {
+        "path": "/var/log/aven-install.log",
+        "exists": false,
+        "is_symlink": false
+      },
+      {
+        "path": "/tmp/aven-post.log",
+        "exists": false,
+        "is_symlink": false
+      }
+    ],
+    "native_first_user_complete_marker": {
+      "path": "/etc/plasma-setup-done",
+      "exists": true,
+      "is_symlink": false,
+      "sha256": "07c19c491b5aac5925e02092e36b4e25bf972a232327eb3a6502f11f859a0853",
+      "bytes": 48,
+      "uid": 0,
+      "mode": "0o644",
+      "mtime_ns": 1789634296659178949
+    },
+    "settings": {
+      "widgetStyle": "Union",
+      "unionStyle": "aven-mist",
+      "shellTheme": "aven-dock"
+    },
+    "live_panels": {
+      "argv": [
+        "runuser",
+        "-u",
+        "aven",
+        "--",
+        "env",
+        "XDG_RUNTIME_DIR=/run/user/1000",
+        "DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus",
+        "/usr/sbin/qdbus-qt6",
+        "org.kde.plasmashell",
+        "/PlasmaShell",
+        "org.kde.PlasmaShell.evaluateScript",
+        "const result = []; for (const p of panels()) result.push({id:p.id,\nlocation:p.location, alignment:p.alignment, height:p.height, lengthMode:p.lengthMode,\nopacity:p.opacity, floating:p.floating}); print(JSON.stringify(result));"
+      ],
+      "exit_code": 0,
+      "stdout": "[{\"id\":2,\"location\":\"bottom\",\"alignment\":\"center\",\"height\":58,\"lengthMode\":\"fit\",\"opacity\":\"translucent\",\"floating\":true}]\n",
+      "stderr": "",
+      "json": [
+        {
+          "id": 2,
+          "location": "bottom",
+          "alignment": "center",
+          "height": 58,
+          "lengthMode": "fit",
+          "opacity": "translucent",
+          "floating": true
+        }
+      ]
+    },
+    "nonfatal_log_observations": [
+      "Seed log includes a Gio.DesktopAppInfo deprecation warning. Both phases completed.",
+      "The legacy /var/log/aven-install.log and installer-live /tmp/aven-post.log are absent from the installed root; first-login seed/layout logs and installation.json are present."
+    ]
+  },
+  "fonts": {
+    "checked_as_actual_desktop_user": true,
+    "checks_total": 68,
+    "checks_passed": 68,
+    "audit": {
+      "schema_version": 1,
+      "guest_collected_at": "2026-09-17T09:17:12.858807+00:00",
+      "mode": "fonts",
+      "user": "aven",
+      "uid": 1000,
+      "home": "/var/home/aven",
+      "method": "Read-only Python stdin stream; no GUI, cache rebuilds or guest files written.",
+      "checks": [
+        {
+          "label": "Latin / sans-serif",
+          "pattern": "sans-serif:lang=en:charset=0041",
+          "font": {
+            "family": "Adwaita Sans",
+            "style": "Regular",
+            "file": "/usr/share/fonts/adwaita-sans-fonts/AdwaitaSans-Regular.ttf",
+            "index": "0",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Latin / system-ui",
+          "pattern": "system-ui:lang=en:charset=0041",
+          "font": {
+            "family": "Adwaita Sans",
+            "style": "Regular",
+            "file": "/usr/share/fonts/adwaita-sans-fonts/AdwaitaSans-Regular.ttf",
+            "index": "0",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Latin / Adwaita Sans",
+          "pattern": "Adwaita Sans:lang=en:charset=0041",
+          "font": {
+            "family": "Adwaita Sans",
+            "style": "Regular",
+            "file": "/usr/share/fonts/adwaita-sans-fonts/AdwaitaSans-Regular.ttf",
+            "index": "0",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Latin / Noto Sans",
+          "pattern": "Noto Sans:lang=en:charset=0041",
+          "font": {
+            "family": "Noto Sans",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto/NotoSans-Regular.ttf",
+            "index": "0",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Latin / monospace",
+          "pattern": "monospace:lang=en:charset=0041",
+          "font": {
+            "family": "Noto Sans Mono",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto/NotoSansMono-Regular.ttf",
+            "index": "0",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Real UI weight / regular",
+          "pattern": "Adwaita Sans:lang=en:weight=regular:charset=0041",
+          "font": {
+            "family": "Adwaita Sans",
+            "style": "Regular",
+            "file": "/usr/share/fonts/adwaita-sans-fonts/AdwaitaSans-Regular.ttf",
+            "index": "0",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Real UI weight / medium",
+          "pattern": "Adwaita Sans:lang=en:weight=medium:charset=0041",
+          "font": {
+            "family": "Adwaita Sans",
+            "style": "Medium",
+            "file": "/usr/share/fonts/adwaita-sans-fonts/AdwaitaSans-Regular.ttf",
+            "index": "327680",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Real UI weight / demibold",
+          "pattern": "Adwaita Sans:lang=en:weight=demibold:charset=0041",
+          "font": {
+            "family": "Adwaita Sans",
+            "style": "SemiBold",
+            "file": "/usr/share/fonts/adwaita-sans-fonts/AdwaitaSans-Regular.ttf",
+            "index": "393216",
+            "weight": "180",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Real UI weight / bold",
+          "pattern": "Adwaita Sans:lang=en:weight=bold:charset=0041",
+          "font": {
+            "family": "Adwaita Sans",
+            "style": "Bold",
+            "file": "/usr/share/fonts/adwaita-sans-fonts/AdwaitaSans-Regular.ttf",
+            "index": "458752",
+            "weight": "200",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Explicit document family",
+          "pattern": "Liberation Sans:lang=en:charset=0041",
+          "font": {
+            "family": "Liberation Sans",
+            "style": "Regular",
+            "file": "/usr/share/fonts/liberation-sans-fonts/LiberationSans-Regular.ttf",
+            "index": "0",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / en / sans-serif",
+          "pattern": "sans-serif:lang=en:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262146",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / en / Adwaita Sans",
+          "pattern": "Adwaita Sans:lang=en:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262146",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / en / Noto Sans",
+          "pattern": "Noto Sans:lang=en:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262146",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / en / monospace",
+          "pattern": "monospace:lang=en:charset=4e2d",
+          "font": {
+            "family": "Noto Sans Mono CJK SC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-mono-cjk-vf-fonts/NotoSansMonoCJK-VF.ttc",
+            "index": "2",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-cn / sans-serif",
+          "pattern": "sans-serif:lang=zh-cn:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262146",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-cn / Adwaita Sans",
+          "pattern": "Adwaita Sans:lang=zh-cn:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262146",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-cn / Noto Sans",
+          "pattern": "Noto Sans:lang=zh-cn:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262146",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-cn / monospace",
+          "pattern": "monospace:lang=zh-cn:charset=4e2d",
+          "font": {
+            "family": "Noto Sans Mono CJK SC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-mono-cjk-vf-fonts/NotoSansMonoCJK-VF.ttc",
+            "index": "2",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-sg / sans-serif",
+          "pattern": "sans-serif:lang=zh-sg:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262146",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-sg / Adwaita Sans",
+          "pattern": "Adwaita Sans:lang=zh-sg:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262146",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-sg / Noto Sans",
+          "pattern": "Noto Sans:lang=zh-sg:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262146",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-sg / monospace",
+          "pattern": "monospace:lang=zh-sg:charset=4e2d",
+          "font": {
+            "family": "Noto Sans Mono CJK SC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-mono-cjk-vf-fonts/NotoSansMonoCJK-VF.ttc",
+            "index": "2",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-tw / sans-serif",
+          "pattern": "sans-serif:lang=zh-tw:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK TC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262147",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-tw / Adwaita Sans",
+          "pattern": "Adwaita Sans:lang=zh-tw:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK TC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262147",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-tw / Noto Sans",
+          "pattern": "Noto Sans:lang=zh-tw:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK TC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262147",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-tw / monospace",
+          "pattern": "monospace:lang=zh-tw:charset=4e2d",
+          "font": {
+            "family": "Noto Sans Mono CJK TC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-mono-cjk-vf-fonts/NotoSansMonoCJK-VF.ttc",
+            "index": "3",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-hk / sans-serif",
+          "pattern": "sans-serif:lang=zh-hk:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK HK",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262148",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-hk / Adwaita Sans",
+          "pattern": "Adwaita Sans:lang=zh-hk:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK HK",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262148",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-hk / Noto Sans",
+          "pattern": "Noto Sans:lang=zh-hk:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK HK",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262148",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-hk / monospace",
+          "pattern": "monospace:lang=zh-hk:charset=4e2d",
+          "font": {
+            "family": "Noto Sans Mono CJK HK",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-mono-cjk-vf-fonts/NotoSansMonoCJK-VF.ttc",
+            "index": "4",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-mo / sans-serif",
+          "pattern": "sans-serif:lang=zh-mo:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK HK",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262148",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-mo / Adwaita Sans",
+          "pattern": "Adwaita Sans:lang=zh-mo:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK HK",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262148",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-mo / Noto Sans",
+          "pattern": "Noto Sans:lang=zh-mo:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK HK",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262148",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / zh-mo / monospace",
+          "pattern": "monospace:lang=zh-mo:charset=4e2d",
+          "font": {
+            "family": "Noto Sans Mono CJK HK",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-mono-cjk-vf-fonts/NotoSansMonoCJK-VF.ttc",
+            "index": "4",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / ja / sans-serif",
+          "pattern": "sans-serif:lang=ja:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK JP",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262144",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / ja / Adwaita Sans",
+          "pattern": "Adwaita Sans:lang=ja:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK JP",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262144",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / ja / Noto Sans",
+          "pattern": "Noto Sans:lang=ja:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK JP",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262144",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / ja / monospace",
+          "pattern": "monospace:lang=ja:charset=4e2d",
+          "font": {
+            "family": "Noto Sans Mono CJK JP",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-mono-cjk-vf-fonts/NotoSansMonoCJK-VF.ttc",
+            "index": "0",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / ko / sans-serif",
+          "pattern": "sans-serif:lang=ko:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK KR",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262145",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / ko / Adwaita Sans",
+          "pattern": "Adwaita Sans:lang=ko:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK KR",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262145",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / ko / Noto Sans",
+          "pattern": "Noto Sans:lang=ko:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK KR",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262145",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Han region / ko / monospace",
+          "pattern": "monospace:lang=ko:charset=4e2d",
+          "font": {
+            "family": "Noto Sans Mono CJK KR",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-mono-cjk-vf-fonts/NotoSansMonoCJK-VF.ttc",
+            "index": "1",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Real weight / zh-cn / regular",
+          "pattern": "Adwaita Sans:lang=zh-cn:weight=regular:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262146",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Real weight / zh-cn / medium",
+          "pattern": "Adwaita Sans:lang=zh-cn:weight=medium:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Medium",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "327682",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Real weight / zh-cn / bold",
+          "pattern": "Adwaita Sans:lang=zh-cn:weight=bold:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Bold",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "393218",
+            "weight": "200",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "CJK punctuation / zh-cn",
+          "pattern": "sans-serif:lang=zh-cn:charset=3001 3002 ff0c ff1a",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262146",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Real weight / zh-tw / regular",
+          "pattern": "Adwaita Sans:lang=zh-tw:weight=regular:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK TC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262147",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Real weight / zh-tw / medium",
+          "pattern": "Adwaita Sans:lang=zh-tw:weight=medium:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK TC",
+            "style": "Medium",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "327683",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Real weight / zh-tw / bold",
+          "pattern": "Adwaita Sans:lang=zh-tw:weight=bold:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK TC",
+            "style": "Bold",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "393219",
+            "weight": "200",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "CJK punctuation / zh-tw",
+          "pattern": "sans-serif:lang=zh-tw:charset=3001 3002 ff0c ff1a",
+          "font": {
+            "family": "Noto Sans CJK TC",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262147",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Real weight / zh-hk / regular",
+          "pattern": "Adwaita Sans:lang=zh-hk:weight=regular:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK HK",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262148",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Real weight / zh-hk / medium",
+          "pattern": "Adwaita Sans:lang=zh-hk:weight=medium:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK HK",
+            "style": "Medium",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "327684",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Real weight / zh-hk / bold",
+          "pattern": "Adwaita Sans:lang=zh-hk:weight=bold:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK HK",
+            "style": "Bold",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "393220",
+            "weight": "200",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "CJK punctuation / zh-hk",
+          "pattern": "sans-serif:lang=zh-hk:charset=3001 3002 ff0c ff1a",
+          "font": {
+            "family": "Noto Sans CJK HK",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "262148",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Configured role / section_label / en",
+          "pattern": "Adwaita Sans:lang=en:weight=medium:charset=0041",
+          "font": {
+            "family": "Adwaita Sans",
+            "style": "Medium",
+            "file": "/usr/share/fonts/adwaita-sans-fonts/AdwaitaSans-Regular.ttf",
+            "index": "327680",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Configured role / section_label / zh-cn",
+          "pattern": "Adwaita Sans:lang=zh-cn:weight=medium:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Medium",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "327682",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Configured role / section_label / zh-tw",
+          "pattern": "Adwaita Sans:lang=zh-tw:weight=medium:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK TC",
+            "style": "Medium",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "327683",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Configured role / section_label / zh-hk",
+          "pattern": "Adwaita Sans:lang=zh-hk:weight=medium:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK HK",
+            "style": "Medium",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "327684",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Configured role / emphasis / en",
+          "pattern": "Adwaita Sans:lang=en:weight=medium:charset=0041",
+          "font": {
+            "family": "Adwaita Sans",
+            "style": "Medium",
+            "file": "/usr/share/fonts/adwaita-sans-fonts/AdwaitaSans-Regular.ttf",
+            "index": "327680",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Configured role / emphasis / zh-cn",
+          "pattern": "Adwaita Sans:lang=zh-cn:weight=medium:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Medium",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "327682",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Configured role / emphasis / zh-tw",
+          "pattern": "Adwaita Sans:lang=zh-tw:weight=medium:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK TC",
+            "style": "Medium",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "327683",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Configured role / emphasis / zh-hk",
+          "pattern": "Adwaita Sans:lang=zh-hk:weight=medium:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK HK",
+            "style": "Medium",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "327684",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Configured role / window_title / en",
+          "pattern": "Adwaita Sans:lang=en:weight=medium:charset=0041",
+          "font": {
+            "family": "Adwaita Sans",
+            "style": "Medium",
+            "file": "/usr/share/fonts/adwaita-sans-fonts/AdwaitaSans-Regular.ttf",
+            "index": "327680",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Configured role / window_title / zh-cn",
+          "pattern": "Adwaita Sans:lang=zh-cn:weight=medium:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK SC",
+            "style": "Medium",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "327682",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Configured role / window_title / zh-tw",
+          "pattern": "Adwaita Sans:lang=zh-tw:weight=medium:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK TC",
+            "style": "Medium",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "327683",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Configured role / window_title / zh-hk",
+          "pattern": "Adwaita Sans:lang=zh-hk:weight=medium:charset=4e2d",
+          "font": {
+            "family": "Noto Sans CJK HK",
+            "style": "Medium",
+            "file": "/usr/share/fonts/google-noto-sans-cjk-vf-fonts/NotoSansCJK-VF.ttc",
+            "index": "327684",
+            "weight": "100",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "False",
+            "embolden": "False",
+            "color": "False",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Emoji",
+          "pattern": "emoji:charset=1f600",
+          "font": {
+            "family": "Noto Color Emoji",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-color-emoji-fonts/Noto-COLRv1.ttf",
+            "index": "0",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "True",
+            "embolden": "",
+            "color": "True",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        },
+        {
+          "label": "Emoji via UI fallback",
+          "pattern": "Adwaita Sans:charset=1f600",
+          "font": {
+            "family": "Noto Color Emoji",
+            "style": "Regular",
+            "file": "/usr/share/fonts/google-noto-color-emoji-fonts/Noto-COLRv1.ttf",
+            "index": "0",
+            "weight": "80",
+            "antialias": "True",
+            "hinting": "True",
+            "hintstyle": "1",
+            "rgba": "5",
+            "autohint": "False",
+            "embeddedbitmap": "True",
+            "embolden": "",
+            "color": "True",
+            "variable": "False"
+          },
+          "passed": true,
+          "errors": []
+        }
+      ],
+      "passed": true,
+      "audit_source_sha256": "152129666e308cb09b2244724582e7aa8dfbe74e3dd7d04c331d837560fc5e01",
+      "fontconfig_overrides": {},
+      "visual_quality": null,
+      "plasma_font_values": {
+        "General": {
+          "XftAntialias": "true",
+          "XftHintStyle": "hintslight",
+          "XftSubPixel": "none",
+          "font": "Adwaita Sans,9.75,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0",
+          "menuFont": "Adwaita Sans,9.75,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0",
+          "smallestReadableFont": "Adwaita Sans,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0",
+          "toolBarFont": "Adwaita Sans,9.75,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0"
+        },
+        "WM": {
+          "activeFont": "Adwaita Sans,10.5,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,,0,0"
+        }
+      },
+      "default_associations": [
+        {
+          "mime": "x-scheme-handler/http",
+          "expected": "org.mozilla.firefox.desktop",
+          "actual": "org.mozilla.firefox.desktop",
+          "passed": true
+        },
+        {
+          "mime": "x-scheme-handler/https",
+          "expected": "org.mozilla.firefox.desktop",
+          "actual": "org.mozilla.firefox.desktop",
+          "passed": true
+        },
+        {
+          "mime": "text/html",
+          "expected": "org.mozilla.firefox.desktop",
+          "actual": "org.mozilla.firefox.desktop",
+          "passed": true
+        },
+        {
+          "mime": "x-scheme-handler/mailto",
+          "expected": "net.thunderbird.Thunderbird.desktop",
+          "actual": "net.thunderbird.Thunderbird.desktop",
+          "passed": true
+        },
+        {
+          "mime": "message/rfc822",
+          "expected": "net.thunderbird.Thunderbird.desktop",
+          "actual": "net.thunderbird.Thunderbird.desktop",
+          "passed": true
+        },
+        {
+          "mime": "image/jpeg",
+          "expected": "org.kde.gwenview.desktop",
+          "actual": "org.kde.gwenview.desktop",
+          "passed": true
+        },
+        {
+          "mime": "image/png",
+          "expected": "org.kde.gwenview.desktop",
+          "actual": "org.kde.gwenview.desktop",
+          "passed": true
+        },
+        {
+          "mime": "image/webp",
+          "expected": "org.kde.gwenview.desktop",
+          "actual": "org.kde.gwenview.desktop",
+          "passed": true
+        },
+        {
+          "mime": "image/avif",
+          "expected": "org.kde.gwenview.desktop",
+          "actual": "org.kde.gwenview.desktop",
+          "passed": true
+        },
+        {
+          "mime": "image/tiff",
+          "expected": "org.kde.gwenview.desktop",
+          "actual": "org.kde.gwenview.desktop",
+          "passed": true
+        },
+        {
+          "mime": "application/pdf",
+          "expected": "org.kde.okular.desktop",
+          "actual": "org.kde.okular.desktop",
+          "passed": true
+        },
+        {
+          "mime": "inode/directory",
+          "expected": "org.kde.dolphin.desktop",
+          "actual": "org.kde.dolphin.desktop",
+          "passed": true
+        }
+      ],
+      "default_associations_passed": true
+    },
+    "installed_font_rules": {
+      "60-aven-families.conf": {
+        "active": {
+          "path": "/etc/fonts/conf.d/60-aven-families.conf",
+          "exists": true,
+          "is_symlink": false,
+          "sha256": "089a6888a547627bf2af409d2710b9d85a761d8e4ebf1938fecb853719da7b0d",
+          "bytes": 6843,
+          "uid": 0,
+          "mode": "0o664",
+          "mtime_ns": 1789628423000000000
+        },
+        "shipped": {
+          "path": "/var/lib/aven/source/typography/fontconfig/60-aven-families.conf",
+          "exists": true,
+          "is_symlink": false,
+          "sha256": "089a6888a547627bf2af409d2710b9d85a761d8e4ebf1938fecb853719da7b0d",
+          "bytes": 6843,
+          "uid": 0,
+          "mode": "0o664",
+          "mtime_ns": 1789628423000000000
+        },
+        "matches_source": true
+      },
+      "99-aven-rendering.conf": {
+        "active": {
+          "path": "/etc/fonts/conf.d/99-aven-rendering.conf",
+          "exists": true,
+          "is_symlink": false,
+          "sha256": "3f49ebf56b474f68ab3f82d8b0f178949ae8a2e5c6640aacac20ea3893731ee1",
+          "bytes": 1385,
+          "uid": 0,
+          "mode": "0o664",
+          "mtime_ns": 1789628423000000000
+        },
+        "shipped": {
+          "path": "/var/lib/aven/source/typography/fontconfig/99-aven-rendering.conf",
+          "exists": true,
+          "is_symlink": false,
+          "sha256": "3f49ebf56b474f68ab3f82d8b0f178949ae8a2e5c6640aacac20ea3893731ee1",
+          "bytes": 1385,
+          "uid": 0,
+          "mode": "0o664",
+          "mtime_ns": 1789628423000000000
+        },
+        "matches_source": true
+      }
+    },
+    "plasma_fontconfig_environment": {},
+    "fontconfig_environment_matches_desktop": true
+  },
+  "system_health_observations": {
+    "failed_units": [
+      "mcelog.service             loaded failed failed Machine Check Exception Logging Daemon",
+      "systemd-remount-fs.service loaded failed failed Remount Root and Kernel File Systems"
+    ],
+    "baseline_comparison": "Not re-established by this read-only review; retain these units for the integrator's stock-baseline comparison."
+  },
+  "read_only_checks_passed": true,
+  "visual_quality": null,
+  "iso_boot_install_accepted": null,
+  "limitations": [
+    "No visual score or GUI smoke-test judgment is inferred from configuration, file hashes, or font matching.",
+    "This capture records the initial installed boot. A later reboot must use a new boot ID and separate evidence.",
+    "Source integrity checks every shipped file against the release manifest, not against the later audit-tools commit.",
+    "Font matching confirms real family/weight resolution and configured roles; it does not prove every native widget uses those roles."
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "before": {
+    "id": "{12f191cc-6b6d-44b1-bc36-6c0a839a1c52}",
+    "caption": "周末慢行 · 城市手记 — Mozilla Firefox",
+    "app": "org.mozilla.firefox",
+    "resource_class": "org.mozilla.firefox",
+    "resource_name": "firefox",
+    "pid": 9191,
+    "active": false,
+    "minimized": false,
+    "full_screen": false,
+    "hidden": false,
+    "skip_taskbar": false,
+    "skip_switcher": false,
+    "normal_window": true,
+    "dialog": false,
+    "special": false,
+    "frame": {
+      "x": 364,
+      "y": 107,
+      "width": 1192,
+      "height": 818
+    },
+    "client": {
+      "x": 364,
+      "y": 107,
+      "width": 1192,
+      "height": 818
+    },
+    "output": "Virtual-1",
+    "movable": true,
+    "resizable": true,
+    "minimum_client_size": {
+      "width": 500,
+      "height": 120
+    }
+  },
+  "requested_geometry": {
+    "x": 360,
+    "y": 80,
+    "width": 1200,
+    "height": 850
+  },
+  "requested_maximize": false,
+  "requested_activate": true,
+  "ok": true,
+  "after": [
+    {
+      "id": "{12f191cc-6b6d-44b1-bc36-6c0a839a1c52}",
+      "caption": "周末慢行 · 城市手记 — Mozilla Firefox",
+      "app": "org.mozilla.firefox",
+      "resource_class": "org.mozilla.firefox",
+      "resource_name": "firefox",
+      "pid": 9191,
+      "active": true,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 360,
+        "y": 80,
+        "width": 1200,
+        "height": 850
+      },
+      "client": {
+        "x": 360,
+        "y": 80,
+        "width": 1200,
+        "height": 850
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 500,
+        "height": 120
+      }
+    }
+  ],
+  "geometry_acknowledged": true,
+  "activation_acknowledged": true,
+  "schema_version": 1,
+  "captured_at": "2026-09-17T04:46:54.273693+00:00",
+  "method": "temporary KWin script via public Workspace/Window API",
+  "command": "arrange",
+  "persistent_kwin_changes": false
+}
+

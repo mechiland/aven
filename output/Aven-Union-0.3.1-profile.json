@@ -1,0 +1,12 @@
+{
+  "version": "0.3.1-union",
+  "created_at": "2026-09-17T06:27:28.281864+00:00",
+  "scope": "Focused appearance profile for the existing prepared Union Fedora Atomic guest; not a bootable disk or ISO",
+  "guide": "docs/UNION-DOCK-MEDIUM.md",
+  "artifact": {
+    "path": "output/Aven-Union-0.3.1-profile.tar.gz",
+    "bytes": 4926293,
+    "sha256": "d439550fdb6fc84d5929bdb311cdec556064fb3190bbd0575f85004543f82ea2"
+  },
+  "native_union_css_package_unchanged": "output/Aven-Mist-0.3.0.unionstyle"
+}

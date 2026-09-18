@@ -29,6 +29,7 @@ def main():
     if a.style == 'union':
         from union_theme import install
         install(Path.home())
+        command('kbuildsycoca6','--noincremental')
     config = Path.home()/'.config'
     share = Path.home()/'.local/share'
     backup = Path.home()/'.local/state/aven'/datetime.datetime.now().strftime('%Y%m%d-%H%M%S-%f')
@@ -50,43 +51,53 @@ def main():
     for source, dest in [(ROOT/'visual/color-schemes',share/'color-schemes'),
                          (ROOT/'visual/wallpapers',share/'wallpapers'),
                          (ROOT/'visual/icons',share/'icons'),
-                         (ROOT/'visual/aurorae',share/'aurorae/themes')]:
+                         (ROOT/'visual/aurorae',share/'aurorae/themes'),
+                         (ROOT/'visual/plasma',share/'plasma/desktoptheme')]:
         if source.exists(): shutil.copytree(source,dest,dirs_exist_ok=True)
     def write(file,group,key,value):
         args = ['kwriteconfig6','--file',config/file]
         for part in group.split('/'):
             args += ['--group',part]
         command(*args,'--key',key,str(value))
+    # The native tool skips a scheme whose name is already selected, even when
+    # its file changed. Switch through the packaged light scheme to invalidate
+    # the palette before applying an updated Aven package.
+    command('plasma-apply-colorscheme','BreezeLight')
     command('plasma-apply-colorscheme','AvenMist')
-    # Fedora's Twilight shell defaults to breeze-dark independently of the
-    # application color scheme. The adaptive default shell follows Aven Mist.
-    command('plasma-apply-desktoptheme','default')
+    # Union overrides only panel/task frames; the remaining shell assets
+    # inherit the default Plasma style and follow the application palette.
+    shell_theme = 'aven-dock' if a.style == 'union' else 'default'
+    command('plasma-apply-desktoptheme',shell_theme)
     # An explicit user value prevents Fedora's kdedefaults/breeze-dark from
     # returning when the default-theme command removes its redundant key.
-    write('plasmarc','Theme','name','default')
+    write('plasmarc','Theme','name',shell_theme)
     from PySide6.QtGui import QFont
-    def font_value(family, size, weight=QFont.Weight.Normal):
-        font = QFont(family, size, weight)
+    roles = json.loads((ROOT/'typography/roles.json').read_text())
+    tokens = json.loads((ROOT/'visual/tokens.json').read_text())
+    def font_value(role):
+        font = QFont(role['family'])
+        font.setPointSizeF(role['point_size'])
+        font.setWeight(QFont.Weight(role['weight']))
         # Short legacy font strings interpret weights on the Qt5 0..99 scale.
         # Let this installed Qt serialize its full current format.
         return font.toString()
     fonts = {
-        'font':font_value('Noto Sans',11),
-        'menuFont':font_value('Noto Sans',11),
-        'toolBarFont':font_value('Noto Sans',11),
-        'smallestReadableFont':font_value('Noto Sans',10),
-        'fixed':font_value('Noto Sans Mono',10)}
+        'font':font_value(roles['ui']),
+        'menuFont':font_value(roles['ui']),
+        'toolBarFont':font_value(roles['ui']),
+        'smallestReadableFont':font_value(roles['secondary']),
+        'fixed':font_value(roles['monospace'])}
     for key,value in fonts.items(): write('kdeglobals','General',key,value)
-    write('kdeglobals','WM','activeFont',font_value('Noto Sans',11,QFont.Weight.Medium))
+    write('kdeglobals','WM','activeFont',font_value(roles['window_title']))
     native_style = 'Union' if a.style == 'union' else 'Breeze'
     for key,value in {'widgetStyle':native_style,'AnimationDurationFactor':'0.65','SingleClick':'false'}.items():
         write('kdeglobals','KDE',key,value)
     if a.style == 'union':
         write('kdeglobals','KDE','unionStyle','aven-mist')
     write('kdeglobals','Icons','Theme','Aven')
-    write('kdeglobals','Toolbar style','ToolButtonStyle','TextBesideIcon')
-    write('kdeglobals','MainToolbarIcons','Size',22)
-    write('kdeglobals','ToolbarIcons','Size',22)
+    write('kdeglobals','Toolbar style','ToolButtonStyle','IconOnly')
+    write('kdeglobals','MainToolbarIcons','Size',tokens['icon']['toolbar'])
+    write('kdeglobals','ToolbarIcons','Size',tokens['icon']['toolbar'])
     for key,value in {'XftAntialias':'true','XftHintStyle':'hintslight','XftSubPixel':'none'}.items():
         write('kdeglobals','General',key,value)
     for effect in ['wobblywindows','magiclamp','fallapart','glide','slide','cubeslide','windowaperture','sheet','squash','translucency','diminactive','scale']:
@@ -95,9 +106,10 @@ def main():
         write('kwinrc','Plugins',effect+'Enabled','true')
     write('kwinrc','TabBox','LayoutName','thumbnail_grid')
     write('kwinrc','TabBox','HighlightWindows','false')
-    write('kwinrc','org.kde.kdecoration2','ButtonsOnLeft','')
-    write('kwinrc','org.kde.kdecoration2','ButtonsOnRight','IAX')
-    write('kwinrc','org.kde.kdecoration2','BorderSize','None')
+    write('kwinrc','org.kde.kdecoration2','ButtonsOnLeft','XIA' if a.decoration == 'aven' else '')
+    write('kwinrc','org.kde.kdecoration2','ButtonsOnRight','' if a.decoration == 'aven' else 'IAX')
+    write('kwinrc','org.kde.kdecoration2','BorderSize','Normal' if a.decoration == 'aven' else 'None')
+    write('kwinrc','org.kde.kdecoration2','BorderSizeAuto','false')
     if a.decoration == 'aven':
         write('kwinrc','org.kde.kdecoration2','library','org.kde.kwin.aurorae')
         write('kwinrc','org.kde.kdecoration2','theme','__aurorae__svg__Aven')
@@ -110,7 +122,7 @@ def main():
         write('breezerc','Windeco','OutlineIntensity',0)
         write('breezerc','Windeco','ShadowStrength',110)
     for file in ['gtk-3.0/settings.ini','gtk-4.0/settings.ini']:
-        write(file,'Settings','gtk-font-name','Noto Sans 11')
+        write(file,'Settings','gtk-font-name',f"{roles['ui']['family']} {roles['ui']['point_size']}")
         write(file,'Settings','gtk-theme-name','Breeze')
         write(file,'Settings','gtk-icon-theme-name','Aven')
         write(file,'Settings','gtk-application-prefer-dark-theme','false')
@@ -123,10 +135,14 @@ def main():
         env['XDG_RUNTIME_DIR'] = f'/run/user/{os.getuid()}'
         env['DBUS_SESSION_BUS_ADDRESS'] = f'unix:path={env["XDG_RUNTIME_DIR"]}/bus'
         wallpaper = share/'wallpapers/AvenEstuary/contents/images/3840x2160.svg'
-        script=(ROOT/'integration/plasma-layout.js.in').read_text().replace('@WALLPAPER@',wallpaper.as_uri())
+        script=(ROOT/'integration/plasma-layout.js.in').read_text().replace('@WALLPAPER@',wallpaper.as_uri()).replace('@UNION_DOCK@','true' if a.style == 'union' else 'false')
         dbus=shutil.which('qdbus6') or shutil.which('qdbus-qt6') or shutil.which('qdbus')
         if not dbus: raise RuntimeError('qdbus6 is required for the running Plasma session')
         command(dbus,'org.kde.plasmashell','/PlasmaShell','org.kde.PlasmaShell.evaluateScript',script)
+        # KWin reads QFontDatabase::TitleFont through the platform-theme cache.
+        # Reconfigure alone does not refresh an already cached WM activeFont.
+        command('dbus-send','--session','--type=signal','/KDEPlatformTheme',
+                'org.kde.KDEPlatformTheme.refreshFonts')
         command(dbus,'org.kde.KWin','/KWin','reconfigure')
     print(f'Aven candidate installed. Config backup: {backup}. Log out/in before typography comparisons.')
 

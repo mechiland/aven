@@ -2,7 +2,21 @@
 Name=Aven
 Comment=Focused Aven folder icons; all remaining icons inherit Breeze.
 Inherits=breeze,hicolor
-Directories=scalable/places,scalable/apps,scalable/mimetypes
+Directories=small/places,small/mimetypes,scalable/places,scalable/apps,scalable/mimetypes
+
+[small/places]
+Size=18
+MinSize=12
+MaxSize=24
+Context=Places
+Type=Scalable
+
+[small/mimetypes]
+Size=18
+MinSize=12
+MaxSize=24
+Context=MimeTypes
+Type=Scalable
 
 [scalable/places]
 Size=64

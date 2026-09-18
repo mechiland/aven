@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-09-17T09:34:16.621980+00:00",
+  "url": "https://aven-downloads.mechiland.workers.dev/releases/v0.3.1/Aven-Union-44-0.3.1-x86_64.iso",
+  "checks": [
+    {
+      "name": "HEAD identity",
+      "passed": true,
+      "headers": {
+        "Date": "Thu, 17 Sep 2026 09:34:17 GMT",
+        "Content-Type": "application/x-iso9660-image",
+        "Content-Length": "8051228672",
+        "Connection": "close",
+        "Accept-Ranges": "bytes",
+        "Cache-Control": "public, max-age=31536000, immutable",
+        "Content-Disposition": "attachment; filename=\"Aven-Union-44-0.3.1-x86_64.iso\"",
+        "ETag": "\"f1f456dd5ec130ad28ef07ba4f875831-240\"",
+        "Last-Modified": "Thu, 17 Sep 2026 09:20:03 GMT",
+        "X-Checksum-SHA256": "59d81e2afb1c7241c274f961ae83cb13dd54d77a15459b266c87c1f458ef23eb",
+        "X-Content-Type-Options": "nosniff",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=QvmbJGZ5fbX6BmD8lmbs%2FaKzfpXcd%2BBu2gvWgldx0ZhuaYyrs5uZSZh5gz%2FZjerNHQQHPwx7S32TArmCRBRjAi8BWUN12eec7m%2BRpVzGyf%2B2ZQG32LrV7LZBT8vZL1%2FQVGqh1U9xeBLKHnguBS4b3z2YkeK9%2FO0%3D\"}]}",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Server": "cloudflare",
+        "CF-RAY": "a3c71d3c1ce0825e-TPE",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    {
+      "name": "range 0",
+      "passed": true
+    },
+    {
+      "name": "range 4025614336",
+      "passed": true
+    },
+    {
+      "name": "range 8051163136",
+      "passed": true
+    },
+    {
+      "name": "GET If-None-Match",
+      "passed": true
+    },
+    {
+      "name": "GET If-Modified-Since",
+      "passed": true
+    },
+    {
+      "name": "HEAD If-None-Match",
+      "passed": true
+    },
+    {
+      "name": "HEAD If-Modified-Since",
+      "passed": true
+    },
+    {
+      "name": "unsatisfiable range",
+      "passed": true
+    },
+    {
+      "name": "stale If-Range sends full response",
+      "passed": true
+    },
+    {
+      "name": "Aven-Union-0.3.1-SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "Aven-Union-44-0.3.1-x86_64.json",
+      "passed": true
+    },
+    {
+      "name": "complete public download SHA-256",
+      "method": "240 ordered byte ranges, downloaded over public HTTPS, concatenated for SHA-256",
+      "passed": true,
+      "bytes": 8051228672,
+      "sha256": "59d81e2afb1c7241c274f961ae83cb13dd54d77a15459b266c87c1f458ef23eb",
+      "elapsed_seconds": 1363.55
+    }
+  ],
+  "http_and_sample_checks_passed": true,
+  "full_download_verified": true,
+  "completed_at": "2026-09-17T10:00:27.725886+00:00"
+}

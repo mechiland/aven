@@ -1,12 +1,15 @@
 Aven website — screenshot and image credits / 截图与图像来源
 
 All screenshots are unmodified PNGs from the public Aven repository.
-Source: https://github.com/mechiland/aven/tree/v0.1.0-prototype/evidence
-Aven: evidence/verification/iso-candidate5/
+Source: https://github.com/mechiland/aven/tree/main/evidence
+Union: evidence/aven/round-06/ and evidence/aven/round-07/
+These are themed test-VM captures, not fresh-install evidence for ISO 0.3.1.
+Mail and Photos show the updated translucent Dock. Other captures retain the earlier Dock.
+Exact source paths and SHA-256 hashes: /assets-manifest.json
 Fedora: evidence/stock/round-00/
 Fonts: Noto Sans CJK SC, subset for this site; SIL Open Font License 1.1.
 Font copyright and license: /assets/fonts/LICENSE.txt
-Aven artwork: https://github.com/mechiland/aven/blob/v0.1.0-prototype/visual/LICENSE
+Aven artwork: https://github.com/mechiland/aven/blob/main/visual/LICENSE
 
 # Photo and media fixtures
 

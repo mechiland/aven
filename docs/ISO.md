@@ -1,4 +1,27 @@
-# Aven installer ISO
+# Aven Union 0.3.1 installer ISO
+
+Download the complete [Aven Union 0.3.1 ISO](https://aven-downloads.mechiland.workers.dev/releases/v0.3.1/Aven-Union-44-0.3.1-x86_64.iso)
+and [SHA-256 file](https://aven-downloads.mechiland.workers.dev/releases/v0.3.1/Aven-Union-0.3.1-SHA256SUMS)
+from Cloudflare R2 through Aven's read-only download Worker. The image is
+8,051,228,672 bytes (8.05 GB). No part reassembly is needed.
+
+```sh
+sha256sum --check Aven-Union-0.3.1-SHA256SUMS
+```
+
+On macOS use `shasum -a 256 Aven-Union-44-0.3.1-x86_64.iso`; on Windows use
+`Get-FileHash Aven-Union-44-0.3.1-x86_64.iso -Algorithm SHA256` in PowerShell.
+The expected hash is:
+
+```text
+59d81e2afb1c7241c274f961ae83cb13dd54d77a15459b266c87c1f458ef23eb
+```
+
+Write the ISO as a disk image to a USB drive of at least 16 GB, or attach it to
+a virtual optical drive. Writing an image replaces the selected USB drive's
+contents. Keep the full ISO on a filesystem that supports files larger than 4 GB.
+Release notes and the build manifest are on the
+[v0.3.1 release](https://github.com/mechiland/aven/releases/tag/v0.3.1).
 
 The ISO installs Aven Atomic KDE 44 through Fedora's original Anaconda installer.
 It is an installer, not a live desktop. Disk selection, partitions and user
@@ -9,9 +32,18 @@ preconfigured user, automatic disk erasure, automatic login or passwordless sudo
 ## System and profile
 
 The offline payload preserves the tested `44.20260913.0` Fedora base, its Fedora
-signature, and the five persistent package requests. The local layered commit is
-not signed by Fedora. After installation the update origin remains
+signature, five persistent package requests, two local additions and 84 local
+Beta replacements. All 103 package-cache refs are included so rpm-ostree retains
+the local package objects needed for later transactions. The exact identities
+are recorded in [iso/platform.json](../iso/platform.json). The local layered
+commit is not signed by Fedora. After installation the update origin remains
 `fedora:fedora/44/x86_64/kinoite`, with Fedora signature verification enabled.
+
+This experimental version uses Plasma 6.8 Beta (RPM 6.7.90), the Aven Mist Union
+theme, 500 emphasis for managed typography roles, and a translucent dock with
+small dark running indicators. Local Beta overrides remain pinned until explicitly
+replaced or reset; this is not an automatic Beta update channel. The remaining
+appearance and verification limits are in [the Union ISO report](UNION-ISO-0.3.1.md).
 
 A fresh installation starts with one deployment. Later Fedora Atomic updates
 create a new deployment and retain the previous one for rollback.
@@ -33,7 +65,8 @@ versions needs a new verification round.
 Install QEMU/KVM, xorriso, mtools and isomd5sum on the build host. No host root
 mounts are required. First build and verify the prototype as described in
 [BUILD.md](BUILD.md). Export the exact layered commit and its signed base to a
-new archive-mode OSTree repository; see the commands and verification contract
+new archive-mode OSTree repository, including every `package_cache_refs` entry
+from `iso/platform.json`; see the commands and verification contract
 in [iso-contract.md](../verification/iso-contract.md).
 
 ```sh
@@ -85,29 +118,9 @@ boot that retains the completion markers. Packaging acceptance is separate from
 the historical round-4 visual score; see `docs/STATUS.json` and the ISO release
 verification report.
 
-## Download and reconstruct
+## Earlier release
 
-Download all four numbered `.iso.part-*` files, `ISO-PARTS.json`, and
-`reassemble-iso.py` from the same GitHub Release into one directory. The parts
-are not individually bootable. GitHub limits individual release assets to less
-than 2 GiB; the helper reconstructs and verifies the complete installer ISO.
-
-With Python 3 on Linux/macOS (use `py -3` instead of `python3` on Windows):
-
-```sh
-python3 reassemble-iso.py
-```
-
-The helper verifies every part and the whole ISO and refuses to overwrite an
-existing output. Reassemble on the computer's normal filesystem; the helper
-uses a hard link, unavailable on FAT/exFAT.
-
-Alternatively, on Linux with `ISO-SHA256SUMS` also downloaded:
-
-```sh
-cat Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso.part-* > Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso
-sha256sum --check ISO-SHA256SUMS
-```
-
-macOS can verify a hash with `shasum -a 256 <filename>`. Write the reconstructed ISO to
-a USB drive of at least 16 GB using a standard image-writing tool, then boot it.
+The [0.1.0 Breeze prototype](https://github.com/mechiland/aven/releases/tag/v0.1.0-prototype)
+remains available with its original split-image reconstruction helper and
+[candidate-5 verification](ISO-VERIFICATION.md). Its visual scores apply only to
+that older artifact. Union 0.3.1 uses the single R2 download above.

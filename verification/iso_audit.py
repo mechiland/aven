@@ -15,7 +15,7 @@ import shlex
 import subprocess
 import tempfile
 
-from iso_deployment_probe import BASE, LAYER, ORIGIN, PACKAGES
+from iso_deployment_probe import assess_cache_refs, expectation, load_expectation
 
 
 def sha(path):
@@ -93,14 +93,13 @@ def run(argv, **kwargs):
 def media(args):
     manifest = json.loads(args.manifest.read_text())
     image = args.iso or args.manifest.parent / manifest["iso"]["file"]
-    expected = manifest["ostree"]
+    contract = load_expectation(args.manifest, getattr(args, "platform", None))
+    expected = contract["ostree"]
     paths = manifest.get("paths", {})
     ks_path = iso_path(args.kickstart_path or paths["kickstart"])
     repo_path = iso_path(args.repo_path or paths["repo"])
     errors, facts = [], {}
-    if (expected.get("layered_commit") != LAYER or expected.get("base_commit") != BASE
-            or expected.get("origin") != ORIGIN or set(expected.get("requested_packages", [])) != PACKAGES):
-        errors.append("Manifest OSTree identity differs from the tested prototype")
+    facts["expected"] = contract
     facts["iso"] = {"file": str(image), "bytes": image.stat().st_size, "sha256": sha(image)}
     if facts["iso"]["sha256"] != manifest["iso"]["sha256"]:
         errors.append("ISO SHA-256 differs from manifest")
@@ -125,6 +124,18 @@ def media(args):
             target = Path(temp) / str(serial)
             run(["xorriso", "-osirrox", "on", "-indev", str(image), "-extract", iso_path(path), str(target)])
             return target.read_bytes()
+        def extract_many(paths):
+            nonlocal serial
+            argv = ["xorriso", "-osirrox", "on", "-indev", str(image)]
+            targets = {}
+            for path in paths:
+                serial += 1
+                target = Path(temp) / str(serial)
+                argv += ["-extract", iso_path(path), str(target)]
+                targets[path] = target
+            if targets:
+                run(argv)
+            return {path: target.read_bytes() for path, target in targets.items()}
         ks = extract(ks_path)
         ks_errors, setup = check_kickstart(ks.decode("utf-8"))
         errors.extend(ks_errors)
@@ -134,6 +145,8 @@ def media(args):
         if option(setup, "--osname") != "fedora":
             errors.append("ostreesetup stateroot must remain fedora")
         ref = option(setup, "--ref")
+        if expected.get("installer_ref") and ref != expected["installer_ref"]:
+            errors.append("Kickstart installer ref differs from the release contract")
         if not ref or ref.startswith("/") or ".." in PurePosixPath(ref).parts:
             errors.append("Invalid installer OSTree ref")
         else:
@@ -159,6 +172,28 @@ def media(args):
             if kind == "base":
                 metadata = extract(prefix + ".commitmeta")
                 facts["base_detached_metadata_sha256"] = hashlib.sha256(metadata).hexdigest()
+        cache_refs = expected["package_cache_refs"]
+        if cache_refs:
+            cache_dir = Path(temp) / "package-cache-refs"
+            run(["xorriso", "-osirrox", "on", "-indev", str(image), "-extract",
+                 repo_path + "/refs/heads/rpmostree/pkg", str(cache_dir)])
+            cache = {}
+            object_paths = set()
+            for cache_ref in cache_refs:
+                path = cache_dir / cache_ref.removeprefix("rpmostree/pkg/")
+                checksum = path.read_text().strip() if path.is_file() and not path.is_symlink() else ""
+                cache[cache_ref] = {"checksum": checksum}
+                if re.fullmatch(r"[0-9a-f]{64}", checksum):
+                    object_paths.add(repo_path + "/objects/" + checksum[:2] + "/" + checksum[2:] + ".commit")
+            objects = extract_many(sorted(object_paths))
+            for record in cache.values():
+                checksum = record["checksum"]
+                path = repo_path + "/objects/" + checksum[:2] + "/" + checksum[2:] + ".commit"
+                if path in objects:
+                    record["object_sha256"] = hashlib.sha256(objects[path]).hexdigest()
+            errors.extend(assess_cache_refs(cache_refs, cache))
+            facts["package_cache"] = cache
+        facts["package_cache_refs_checked"] = len(cache_refs)
         for path in ["/boot/grub2/grub.cfg", "/EFI/BOOT/grub.cfg"]:
             config_text = extract(path).decode()
             if "inst.ks=" not in config_text or ks_path not in config_text:
@@ -180,6 +215,9 @@ def media(args):
             if actual_files != expected_files:
                 errors.append("Embedded source file inventory differs from the manifest")
             facts["source_files_checked"] = len(expected_files)
+            embedded_platform = source_dir / "iso/platform.json"
+            if embedded_platform.is_file() and expectation(json.loads(embedded_platform.read_text())) != contract:
+                errors.append("Embedded platform differs from the release OSTree/profile contract")
     return {"manifest": str(args.manifest), "manifest_sha256": sha(args.manifest), "facts": facts,
             "static_media_checks_passed": not errors, "errors": errors, "iso_boot_install_accepted": None,
             "limitations": ["El Torito entries and ISO9660 structure do not prove firmware boot or a completed installation.", "Kickstart scanning detects explicit unsafe defaults; arbitrary invoked post-install scripts require source review.", "Commit-object hashes and detached-metadata presence do not validate all repository objects or the base signature. Run repository fsck and the installed probe.", "First-login Aven profile, network-free installation, screenshots and reboot remain separate required observations."]}
@@ -189,7 +227,10 @@ def installed(args):
     destination = args.ssh_host
     if destination.startswith("-") or any(c.isspace() for c in destination):
         raise ValueError("Invalid SSH destination")
-    remote = shlex.split(args.root_command) + [args.python, "-", "--expected-layer", args.layer, "--expected-base", args.base]
+    expected = load_expectation(args.manifest, args.platform, args.layer, args.base)
+    remote = shlex.split(args.root_command) + [args.python, "-", "--expected-json", json.dumps(expected, separators=(",", ":"))]
+    if args.profile_user:
+        remote += ["--profile-user", args.profile_user]
     ssh = ["ssh", "-o", "BatchMode=yes", "-o", "ConnectTimeout=10", "-o", "StrictHostKeyChecking=accept-new",
            "-p", str(args.ssh_port)]
     if args.identity:
@@ -207,7 +248,11 @@ def installed(args):
         result["stdout"] = r.stdout
     result["installed_atomic_checks_passed"] = result.get("installed_system", {}).get("atomic_identity_passed") is True
     result["installed_desktop_checks_passed"] = result.get("installed_system", {}).get("desktop_startup_passed") is True
-    result["installed_checks_passed"] = r.returncode == 0 and result["installed_atomic_checks_passed"] and result["installed_desktop_checks_passed"]
+    profile_required = bool(expected["profile"] or args.profile_user)
+    result["installed_first_login_checks_passed"] = result.get("installed_system", {}).get("first_login_passed")
+    result["installed_checks_passed"] = (r.returncode == 0 and result["installed_atomic_checks_passed"]
+        and result["installed_desktop_checks_passed"]
+        and (not profile_required or result["installed_first_login_checks_passed"] is True))
     return result
 
 
@@ -216,6 +261,7 @@ def main():
     sub = parser.add_subparsers(dest="command", required=True)
     m = sub.add_parser("media")
     m.add_argument("--manifest", type=Path, required=True)
+    m.add_argument("--platform", type=Path, help="Optional authoritative release platform to compare with the manifest")
     m.add_argument("--iso", type=Path)
     m.add_argument("--kickstart-path")
     m.add_argument("--repo-path")
@@ -226,14 +272,17 @@ def main():
     i.add_argument("--known-hosts", type=Path)
     i.add_argument("--root-command", default="sudo -n", help="Remote root execution prefix, or empty for root SSH")
     i.add_argument("--python", default="python3")
-    i.add_argument("--layer", default=LAYER)
-    i.add_argument("--base", default=BASE)
+    i.add_argument("--manifest", type=Path)
+    i.add_argument("--platform", type=Path)
+    i.add_argument("--layer", help="Expected layer override; must agree with any manifest/platform")
+    i.add_argument("--base", help="Expected base override; must agree with any manifest/platform")
+    i.add_argument("--profile-user", help="Actual desktop user after the first Plasma login")
     for command in [m, i]:
         command.add_argument("--output", type=Path)
     args = parser.parse_args()
     try:
         result = media(args) if args.command == "media" else installed(args)
-    except (OSError, ValueError, KeyError, configparser.Error, subprocess.SubprocessError) as error:
+    except (OSError, ValueError, KeyError, TypeError, configparser.Error, subprocess.SubprocessError) as error:
         result = {"errors": [str(error)], "iso_boot_install_accepted": None}
     result["schema_version"] = 1
     result["audited_at"] = datetime.datetime.now(datetime.timezone.utc).isoformat()

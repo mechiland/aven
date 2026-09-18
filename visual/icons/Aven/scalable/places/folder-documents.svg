@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
   <title>folder-documents — Aven</title>
-  <path d="M8 14a5 5 0 0 1 5-5h12l6 6h20a5 5 0 0 1 5 5v29a5 5 0 0 1-5 5H13a5 5 0 0 1-5-5Z" fill="#72988A"/>
-  <path d="M8 21h48v28a5 5 0 0 1-5 5H13a5 5 0 0 1-5-5Z" fill="#BAD0BD"/>
-  <path d="M8.5 21.5h47v27.5a4.5 4.5 0 0 1-4.5 4.5H13a4.5 4.5 0 0 1-4.5-4.5Z" fill="none" stroke="#537B6A" stroke-opacity=".24"/>
-  <path d="M9 21.5h46" stroke="#E6EEE3" stroke-opacity=".75"/>
-  <g fill="none" stroke="#416451" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M25 24h10l5 5v15H25zM35 24v6h5M29 35h7M29 39h7"/></g>
+  <path d="M8 14a5 5 0 0 1 5-5h12l6 6h20a5 5 0 0 1 5 5v29a5 5 0 0 1-5 5H13a5 5 0 0 1-5-5Z" fill="#4BAEE5"/>
+  <path d="M8 21h48v28a5 5 0 0 1-5 5H13a5 5 0 0 1-5-5Z" fill="#80D0F4"/>
+  <path d="M8.5 21.5h47v27.5a4.5 4.5 0 0 1-4.5 4.5H13a4.5 4.5 0 0 1-4.5-4.5Z" fill="none" stroke="#1689CC" stroke-opacity=".24"/>
+  <path d="M9 21.5h46" stroke="#E8F8FF" stroke-opacity=".75"/>
+  <g fill="none" stroke="#147CAF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M25 24h10l5 5v15H25zM35 24v6h5M29 35h7M29 39h7"/></g>
 </svg>

@@ -26,7 +26,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--official', type=Path, default=ROOT / '.cache/downloads/Fedora-Kinoite-ostree-x86_64-44-1.7.iso')
     parser.add_argument('--repo', required=True, type=Path, help='Exported archive-mode OSTree repository with layer and signed base')
-    parser.add_argument('--output', type=Path, default=ROOT / 'output/Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso')
+    parser.add_argument('--output', type=Path, default=ROOT / 'output/Aven-Union-44-0.3.1-x86_64.iso')
     parser.add_argument('--tools', type=Path, help='Optional directory containing mcopy, implantisomd5 and checkisomd5')
     args = parser.parse_args()
     if args.tools:
@@ -46,6 +46,12 @@ def main():
     for commit in [platform['ostree']['layered_commit'], platform['ostree']['base_commit']]:
         if not (repo / 'objects' / commit[:2] / (commit[2:] + '.commit')).is_file():
             parser.error(f'Missing commit: {commit}')
+    for cache_ref in platform['ostree'].get('package_cache_refs', []):
+        if not cache_ref.startswith('rpmostree/pkg/') or '..' in cache_ref:
+            parser.error('Invalid package cache reference')
+        cache_commit = (repo / 'refs/heads' / cache_ref).read_text().strip()
+        if not re.fullmatch(r'[a-f0-9]{64}', cache_commit) or not (repo / 'objects' / cache_commit[:2] / (cache_commit[2:] + '.commit')).is_file():
+            parser.error(f'Missing package cache commit: {cache_ref}')
     output = args.output.resolve()
     if output.exists():
         parser.error(f'Refusing to overwrite {output}; choose a new candidate output')
@@ -69,7 +75,7 @@ def main():
     shutil.copy2(ROOT / 'iso/aven.ks', media / 'aven.ks')
     for iso_path, name in [('/EFI/BOOT/grub.cfg', 'efi.cfg'), ('/boot/grub2/grub.cfg', 'bios.cfg')]:
         run('xorriso', '-osirrox', 'on', '-overwrite', 'on', '-indev', args.official, '-extract', iso_path, work / name)
-        text = (work / name).read_text().replace('Install Fedora 44', 'Install Aven Atomic KDE 44').replace('install Fedora 44', 'install Aven Atomic KDE 44')
+        text = (work / name).read_text().replace('Install Fedora 44', 'Install Aven Union 44').replace('install Fedora 44', 'install Aven Union 44')
         text = text.replace('set timeout=60', 'set timeout=15')
         label = platform['official_iso']['volume_id']
         text = '\n'.join(line + f' inst.ks=hd:LABEL={label}:/aven/aven.ks'

@@ -1,0 +1,668 @@
+{
+  "manifest": "output/Aven-Union-44-0.3.1-x86_64.json",
+  "manifest_sha256": "f303f5d1973418f57294a080741e1e396be28ae59b0d674171c8d0cd064319ae",
+  "facts": {
+    "expected": {
+      "ostree": {
+        "layered_commit": "fbd330e4728599c337170d1b79608a64c1a6d989982554a4fd82a5ccdfa51026",
+        "base_commit": "be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df",
+        "origin": "fedora:fedora/44/x86_64/kinoite",
+        "installer_ref": "aven/44/x86_64/union",
+        "requested_packages": [
+          "glibc-langpack-zh",
+          "gwenview",
+          "okular",
+          "python3-pyside6",
+          "thunderbird"
+        ],
+        "requested_local_packages": [
+          "6fbeeb37ccaca202e7654b52d1d778ecb08a2b95078806d57aa756f441ca0576:cxx-rust-cssparser-1.1.0-1.fc44.x86_64",
+          "3a7de4dd0a92aaf9dc4cabae6fdc170ed11842c7dedfc797878fae29c7077fe6:plasma-union-6.7.90-1.fc44.x86_64"
+        ],
+        "local_replacements": [
+          "fa11b01953468ebbcc2465d6174866f657acef06dcc9c609ac03adcfcc4e5427:aurorae-6.7.90-1.fc44.x86_64",
+          "24dccf44e4d5c3dbf24ae70cc261abf5f8089131e5e4fdcc39df7af1a9f4a03b:bluedevil-6.7.90-1.fc44.x86_64",
+          "e4e497083b13ab5d666920845bd99491fabe97279a956c94798e1d74ed8d84fe:breeze-cursor-theme-6.7.90-1.fc44.noarch",
+          "ff69c358b1bebc0d9814eaa79d3abe329aac6502d34f93150604d0ce8ced5599:breeze-gtk-common-6.7.90-1.fc44.noarch",
+          "2d9b34779b43080fad9f4bdc4d89a4ea9a3cc16562e8b7281f5b4df74275b5d4:breeze-gtk-gtk3-6.7.90-1.fc44.noarch",
+          "d40b0918c12a55cf1e365cf6f2687899c083e471c3246af37bd80b078b0e709f:breeze-gtk-gtk4-6.7.90-1.fc44.noarch",
+          "1bb096ba2fd67bfa5b48bbe544feb6e8beb8de175108745b840c7a091f76b06f:flatpak-kcm-6.7.90-1.fc44.x86_64",
+          "0443272fbd7145fdcc2fe201cdb8f3904dd99e93ecb73dc1a43c8a9b8c39d38d:kactivitymanagerd-6.7.90-1.fc44.x86_64",
+          "96d03e367112238052bc04954e6f012dc4268109c5e2ce6dac9a9748051aa5f4:kcm-plasma-keyboard-1:6.7.90-1.fc44.x86_64",
+          "753526e511cff9bf0a9cefbc47917097892ee29251219b8c8280c0fa6518d594:kcm-plasmalogin-6.7.90-1.fc44.x86_64",
+          "3bce95b9a6668b4c6f3517677c236e92587024cc60c8a65c301023b5b22b8124:kde-cli-tools-6.7.90-1.fc44.x86_64",
+          "d6ce82e3b99e1f6653c7fa747fb93f73660d37277b4ea4390ab61ac9a41592b5:kde-gtk-config-6.7.90-1.fc44.x86_64",
+          "4883395718126431a7aa24e7c2e0b5e1790ac29346736e9387f8971a926324b5:kdecoration-6.7.90-1.fc44.x86_64",
+          "836452d4a86c88bbf69d300ffaf329fa2a8a8cc0cabc0581f32106cae3373eb0:kdeplasma-addons-6.7.90-1.fc44.x86_64",
+          "9c3db9d18ca7a81885a85aa2aa98f3935d1dde88cb036c2e184cdf5226ba109b:kdesu-1:6.7.90-1.fc44.x86_64",
+          "adf4c861fcdbe551a7367dfe9510582b6e5082e13cc538b150660a9063483067:kglobalacceld-6.7.90-1.fc44.x86_64",
+          "8bc9e54a29d0d2acadf6fe547e553919e97bf1da949f431960a3d970a59ba63c:kinfocenter-6.7.90-1.fc44.x86_64",
+          "aefcbfc1bd1c2b5e58b3b9a2ef19233d898dc506deab4df6404343d1af558557:kmenuedit-6.7.90-1.fc44.x86_64",
+          "4fbcc851a1fecf7ecd1155a997d2731bdee9a4c982f4eb299bd6b64754ebfe74:knighttime-6.7.90-1.fc44.x86_64",
+          "86ffe2366031c1bd6bec100cd294255e1f2bd15eebdac5583143ba9bd4f16a0d:kpipewire-6.7.90-1.fc44.x86_64",
+          "2e82ce7005e5d93ab624b6b04368cc02cf7fe0a33c9eb68cc63c573ecf3da0d6:kquickimageeditor-qt6-0.7.0-2.fc44.x86_64",
+          "401f925bd95a766c46bbbdf23fc4e9213a801f56143ab92553e2b12ca92fc1e2:krdp-6.7.90-1.fc44.x86_64",
+          "bf3b82063a610fb13fab7d80164091b1e77cc3e022e5b2c59e9a3617598f5d47:krdp-libs-6.7.90-1.fc44.x86_64",
+          "fc03bd368bd3469d33cfeae8468c05ea0ed701c6f406d49b75eff19c5b848da0:kscreen-1:6.7.90-1.fc44.x86_64",
+          "66b58e0da3c88babf996849872a67247bb9126636629bcc697a941e66649ab38:kscreenlocker-6.7.90-1.fc44.x86_64",
+          "3cedabb5e562effb10d0ede992ee5b9ae09ca04df50f1c6f1133acdfc82a5921:ksshaskpass-6.7.90-1.fc44.x86_64",
+          "e7931229cca5dc731763018f814449fa2a00e16d21690a6c76e6820487cca6fe:ksystemstats-6.7.90-1.fc44.x86_64",
+          "de447fb78ef9456123d2e5f8c2424a1a9e6a92835279a067d911afd14e7a7b43:kwayland-6.7.90-1.fc44.x86_64",
+          "b8fdf0745f662fcb1453d24360baf128a1efc38514ac07ed680ccee6e788acd9:kwin-6.7.90-1.fc44.x86_64",
+          "f367fe0b6fdb5023a770a523e032337e934ff5eb333c4026f6269c0569b61e40:kwin-common-6.7.90-1.fc44.x86_64",
+          "54bb5283fd710716270efa4abcb4359eacef72dc44fdacebb3b2b63a54229395:kwin-libs-6.7.90-1.fc44.x86_64",
+          "b836fb590e2936e43fdd83d47dcf95a0386d16a5164c6b8bccde3b5bee5eb949:kwrited-6.7.90-1.fc44.x86_64",
+          "60b15a44021827e7261ec16100f17e8f84a057fb8ce6916c3139dac42b9b04ca:layer-shell-qt-6.7.90-1.fc44.x86_64",
+          "1606ecafd77d5c92372ae751ed24bbb6cd465f7158f421f2f471855b34e962f7:libkscreen-6.7.90-1.fc44.x86_64",
+          "48d1e23f640462f85037d47db5c0570f7f5c3c4709ed28094e8b7048a88a4910:libksysguard-6.7.90-1.fc44.x86_64",
+          "6b09b2d01d7d5927338aa1bde86d01eff9680db7e033a652f960311e16d00d34:libksysguard-common-6.7.90-1.fc44.x86_64",
+          "51d5f7aec93162712c2fbbb9404fab2e2b5d37c8ecd4e34a36a1841b0b7fff6e:libkworkspace6-6.7.90-1.fc44.x86_64",
+          "96e2a41682f4c756e4e8d5ca2957d9161d0e257c7c748d0598ad86358584b24f:libplasma-6.7.90-1.fc44.x86_64",
+          "d1d5fd0a19e42dd7cfdaac4705b2a99b372421f554c34e30effdc998360480ec:ocean-sound-theme-6.7.90-1.fc44.noarch",
+          "9d876a6904fa51b6f606ea600ab45a8f4ff32d8150f1f117691f9f5b47816d4a:pam-kwallet-6.7.90-1.fc44.x86_64",
+          "c97a302ed67fecc665413d90fd473016e9327aaba93dee334ccfc3d7617a02c6:plasma-activities-6.7.90-1.fc44.x86_64",
+          "14f055ca0c098965a85d041f9101b0d41e68269461e6e69d9043cac91a5bb0f3:plasma-activities-stats-6.7.90-1.fc44.x86_64",
+          "a0acc369f28c7b6c59ecd3427954c32662253f714f4a84dbb2330b3061fc489a:plasma-breeze-6.7.90-1.fc44.x86_64",
+          "474f15b2bbe16df78b702486c6f57b4782108c11068e93f6187d8362e2008be5:plasma-breeze-common-6.7.90-1.fc44.noarch",
+          "e6955971b91f140d43ba06403a043a185275793c8362cc903e3421a72547b410:plasma-breeze-qt6-6.7.90-1.fc44.x86_64",
+          "dbadbcc41fafb05d2186b065fcebb5d4ab308544400152c702b5115963724fe8:plasma-browser-integration-6.7.90-1.fc44.x86_64",
+          "0c7c1f675ac504a3d60a8c4dc4df27d6bdbb2d0af28c3734bc3a5d3ceda65cb3:plasma-desktop-6.7.90-1.fc44.x86_64",
+          "6a8cc1ddf1d3a928f870b2a8ff1ad91870c6f8b5343f65353943a8347b3a04a6:plasma-desktop-doc-6.7.90-1.fc44.noarch",
+          "ade2131ca3b6fec8a240d9f5f9927cfa8a200cf7a33d6f63ce777465da6aebb5:plasma-discover-6.7.90-1.fc44.x86_64",
+          "852a5fdfd0a3ee2fcfd1794c1c5481314bfd4d18d085bd9b974ea3a777cdcdda:plasma-discover-flatpak-6.7.90-1.fc44.x86_64",
+          "4dd22aced744c18b3ff3cb19989d6a35485c95b46fb85db4661689d153e0d527:plasma-discover-kns-6.7.90-1.fc44.x86_64",
+          "6936aee3ad8da5c5b43c4048678c9c75b7c0239a4b6aa910eee30d81a717176e:plasma-discover-libs-6.7.90-1.fc44.x86_64",
+          "9103a9c3638e6ed686f2f624a42925688350fa540072a426cce926779f9165c9:plasma-discover-notifier-6.7.90-1.fc44.x86_64",
+          "b0f30db953d85db12581afa411aeb2a506ffdc7e3b4775e8e7186335fceb2cfb:plasma-discover-rpm-ostree-6.7.90-1.fc44.x86_64",
+          "35824b454c761181ac11bf1855e0e9df09a52fba06676ab85ae3199cd9a70eb7:plasma-disks-6.7.90-1.fc44.x86_64",
+          "0b202363d3ef45019dfaa71c97c8e7464661b30ca9cc1e0e48a0486fe2eaa092:plasma-drkonqi-6.7.90-1.fc44.x86_64",
+          "a0d441de66982b2c05ba4a328a67de4b8ddacc0df9620daeb4d49776eacde754:plasma-integration-6.7.90-1.fc44.x86_64",
+          "fbac1d822eb1e605842e92030bdea60774042a4e00168877217b4c264a467168:plasma-keyboard-1:6.7.90-1.fc44.x86_64",
+          "dd6e03663485c44bea8c625313b2b7019cf1d269cd41fbc92227b98a1df817d4:plasma-login-manager-6.7.90-1.fc44.x86_64",
+          "755d029a984fb4549f7e431f131b3e7cd5cf25a128996a260b4e212a4c980a1f:plasma-lookandfeel-fedora-6.7.90-1.fc44.noarch",
+          "288f6ad53f5f6df4b9f1ee31bdac6b03b04b547ed0623d469138389360fa9c7c:plasma-milou-6.7.90-1.fc44.x86_64",
+          "baaebabbaa86b7052a528355d06950f1248be323b90cc92084ea6512c8918ad7:plasma-nm-6.7.90-1.fc44.x86_64",
+          "2746f0d9aa40995edb065410bfbe7fda0a74fd8f6f80c30d5398cba4bcd6d788:plasma-nm-openconnect-6.7.90-1.fc44.x86_64",
+          "e550141b4132c294354e29770e343bbc59d045c5547df3f37d9b2a5ed0a4c6b4:plasma-nm-openvpn-6.7.90-1.fc44.x86_64",
+          "31460389a7c77ae35594a3a22c485f39ed4b191f0ae1ce7fe5af32258ff1fc48:plasma-nm-vpnc-6.7.90-1.fc44.x86_64",
+          "47f81a33b7c7fcbdd46289ad804afb47fbe8beb82945faa5fbac8a39f1d5130a:plasma-pa-6.7.90-1.fc44.x86_64",
+          "06bf8ef019d8756f4f8026058bf873831505f91e9644603aed22a2161750e2ea:plasma-print-manager-6.7.90-1.fc44.x86_64",
+          "dc580c4eb016ed4713d1c533cfc61a440d636c086abf71d2db6316f281a8472e:plasma-print-manager-libs-6.7.90-1.fc44.x86_64",
+          "20ff46624ec2370a44493fe8482be9c0c7f23d26aafd35ac4008d4c56b243ebb:plasma-setup-6.7.90-1.fc44.x86_64",
+          "11b9ba0767f7b30e63257cc5bca3b63d7cfae624de10f42c9452df1a18d324fd:plasma-systemmonitor-6.7.90-1.fc44.x86_64",
+          "12b492b110648c873dd64707b333b50681b3cff80cfbca73683a1956b5cd74f6:plasma-systemsettings-6.7.90-1.fc44.x86_64",
+          "e8304d1a33ff0f2312f43935682e420c0e9a62721a86cc251b0ffbb5f855d0d3:plasma-thunderbolt-6.7.90-1.fc44.x86_64",
+          "484a27086a903daff069eba551de55ecd3454c777d495e762103750d8799b31a:plasma-vault-6.7.90-1.fc44.x86_64",
+          "b921bc295414105d82a00d484bd884ad857ecfa8ef121a68bf5cc7f501ca04d3:plasma-welcome-6.7.90-1.fc44.x86_64",
+          "3d2f92d5328014e31ab2a42ba179248d54a3ddff6ea104121e0f87e788dd0cfe:plasma-workspace-6.7.90-1.fc44.x86_64",
+          "35674164da9b1c30bd3365469724c1fd05788e5a26f4e641a2d1ed9e1aec4f36:plasma-workspace-common-6.7.90-1.fc44.x86_64",
+          "3458c25e0dea2e2aecbd60e2c644da4b93b0c1724b7e16fd24f60f1f4ee2cdd5:plasma-workspace-libs-6.7.90-1.fc44.x86_64",
+          "a3d28cd476a43aa0c7d3a23c0d4b8b44565ac19ad9b9ed9d3d64a55764c68227:plasma-workspace-wallpapers-6.7.90-1.fc44.noarch",
+          "a18fae03837f337e53fca6d86d429a8ff31bc23bdf379b45f5ad7573c9d9659e:plasma5support-6.7.90-1.fc44.x86_64",
+          "360ec2322ff561375e28ad1a93a21efe3304ae1d1964a8fdc864b691c6e81781:polkit-kde-6.7.90-1.fc44.x86_64",
+          "3610b0c27e8f6de74f948b166264bc8fb9a8daa1b8f32c616d97a2c356be8559:powerdevil-6.7.90-1.fc44.x86_64",
+          "aa46ed13b2e78832656a45f0a551d0f6a05a43a28d3e5418ac21895c295e0b35:qqc2-breeze-style-6.7.90-1.fc44.x86_64",
+          "fc7b63d252ab25574b0e0946b4a45022dff82d3dfea473492f83f41e13e00c46:spectacle-1:6.7.90-1.fc44.x86_64",
+          "7169381b4eb5a0e6a9ea4a999b8f2e2974b0b213e823be4dafd008f297e0801f:xdg-desktop-portal-kde-6.7.90-1.fc44.x86_64"
+        ],
+        "package_cache_refs": [
+          "rpmostree/pkg/aurorae/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/bluedevil/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/breeze-cursor-theme/6.7.90-1.fc44.noarch",
+          "rpmostree/pkg/breeze-gtk-common/6.7.90-1.fc44.noarch",
+          "rpmostree/pkg/breeze-gtk-gtk3/6.7.90-1.fc44.noarch",
+          "rpmostree/pkg/breeze-gtk-gtk4/6.7.90-1.fc44.noarch",
+          "rpmostree/pkg/cfitsio/4.6.3-2.fc44.x86__64",
+          "rpmostree/pkg/cxx-rust-cssparser/1.1.0-1.fc44.x86__64",
+          "rpmostree/pkg/djvulibre-libs/3.5.30-1.fc44.x86__64",
+          "rpmostree/pkg/ebook-tools-libs/0.2.2-31.fc44.x86__64",
+          "rpmostree/pkg/flatpak-kcm/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/glibc-langpack-zh/2.43-8.fc44.x86__64",
+          "rpmostree/pkg/gwenview-libs/1_3A26.08.1-1.fc44.x86__64",
+          "rpmostree/pkg/gwenview/1_3A26.08.1-1.fc44.x86__64",
+          "rpmostree/pkg/kactivitymanagerd/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kcm-plasma-keyboard/1_3A6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kcm-plasmalogin/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kcolorpicker-qt6/0.3.0-7.fc44.x86__64",
+          "rpmostree/pkg/kde-cli-tools/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kde-gtk-config/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kdecoration/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kdeplasma-addons/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kdesu/1_3A6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kf6-threadweaver/6.30.0-1.fc44.x86__64",
+          "rpmostree/pkg/kglobalacceld/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kimageannotator-common/0.7.0-8.fc44.x86__64",
+          "rpmostree/pkg/kimageannotator-qt6/0.7.0-8.fc44.x86__64",
+          "rpmostree/pkg/kinfocenter/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kmenuedit/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/knighttime/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kpipewire/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kquickimageeditor-qt6/0.7.0-2.fc44.x86__64",
+          "rpmostree/pkg/krdp-libs/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/krdp/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kscreen/1_3A6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kscreenlocker/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/ksshaskpass/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/ksystemstats/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kwayland/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kwin-common/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kwin-libs/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kwin/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/kwrited/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/layer-shell-qt/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/libkscreen/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/libksysguard-common/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/libksysguard/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/libkworkspace6/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/libmarkdown/2.2.7-14.fc44.x86__64",
+          "rpmostree/pkg/libplasma/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/libspectre/0.2.12-11.fc44.x86__64",
+          "rpmostree/pkg/ocean-sound-theme/6.7.90-1.fc44.noarch",
+          "rpmostree/pkg/okular-libs/26.08.1-1.fc44.x86__64",
+          "rpmostree/pkg/okular-part/26.08.1-1.fc44.x86__64",
+          "rpmostree/pkg/okular/26.08.1-1.fc44.x86__64",
+          "rpmostree/pkg/pam-kwallet/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-activities-stats/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-activities/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-breeze-common/6.7.90-1.fc44.noarch",
+          "rpmostree/pkg/plasma-breeze-qt6/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-breeze/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-browser-integration/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-desktop-doc/6.7.90-1.fc44.noarch",
+          "rpmostree/pkg/plasma-desktop/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-discover-flatpak/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-discover-kns/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-discover-libs/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-discover-notifier/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-discover-rpm-ostree/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-discover/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-disks/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-drkonqi/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-integration/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-keyboard/1_3A6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-login-manager/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-lookandfeel-fedora/6.7.90-1.fc44.noarch",
+          "rpmostree/pkg/plasma-milou/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-nm-openconnect/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-nm-openvpn/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-nm-vpnc/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-nm/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-pa/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-print-manager-libs/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-print-manager/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-setup/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-systemmonitor/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-systemsettings/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-thunderbolt/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-union/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-vault/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-welcome/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-workspace-common/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-workspace-libs/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma-workspace-wallpapers/6.7.90-1.fc44.noarch",
+          "rpmostree/pkg/plasma-workspace/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/plasma5support/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/polkit-kde/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/powerdevil/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/qqc2-breeze-style/6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/spectacle/1_3A6.7.90-1.fc44.x86__64",
+          "rpmostree/pkg/thunderbird-librnp-rnp/153.0.2-2.fc44.x86__64",
+          "rpmostree/pkg/thunderbird/153.0.2-2.fc44.x86__64",
+          "rpmostree/pkg/xdg-desktop-portal-kde/6.7.90-1.fc44.x86__64"
+        ]
+      },
+      "profile": {
+        "style": "union",
+        "decoration": "aven"
+      }
+    },
+    "iso": {
+      "file": "output/Aven-Union-44-0.3.1-x86_64.iso",
+      "bytes": 8051228672,
+      "sha256": "59d81e2afb1c7241c274f961ae83cb13dd54d77a15459b266c87c1f458ef23eb"
+    },
+    "boot_catalog": "El Torito catalog  : 33607  1\nEl Torito images   :   N  Pltf  B   Emul  Ld_seg  Hdpt  Ldsiz         LBA\nEl Torito boot img :   1  BIOS  y   none  0x0000  0x00      4       33608\nEl Torito boot img :   2  UEFI  y   none  0x0000  0x00  26480     3924450\nEl Torito img path :   1  /images/eltorito.img\nEl Torito img opts :   1  boot-info-table grub2-boot-info\nEl Torito img blks :   2  6620\nSystem area options: 0x00004201\nSystem area summary: MBR protective-msdos-label grub2-mbr cyl-align-off GPT\nISO image size/512 : 15724344\nPartition offset   : 16\nMBR heads per cyl  : 0\nMBR secs per head  : 0\nMBR partition table:   N Status  Type        Start       Blocks\nMBR partition      :   1   0x00  0xee            1     15724343\nGPT                :   N  Info\nGPT disk GUID      :      97a87c28af675e4fa25ac51ece449db3\nGPT entry array    :      2  248  separated\nGPT lba range      :      64  15724280  15724343\nGPT partition name :   1  490053004f003900360036003000\nGPT partname local :   1  ISO9660\nGPT partition GUID :   1  97a87c28af675e4fa25bc51ece449db3\nGPT type GUID      :   1  a2a0d0ebe5b9334487c068b6b72699c7\nGPT partition flags:   1  0x1000000000000001\nGPT start and size :   1  64  15697736\nGPT partition name :   2  41007000700065006e006400650064003200\nGPT partname local :   2  Appended2\nGPT partition GUID :   2  97a87c28af675e4fa258c51ece449db3\nGPT type GUID      :   2  28732ac11ff8d211ba4b00a0c93ec93b\nGPT partition flags:   2  0x0000000000000000\nGPT start and size :   2  15697800  26480\nxorriso 1.5.6 : RockRidge filesystem manipulator, libburnia project.\n\nxorriso : NOTE : Loading ISO image tree from LBA 0\nxorriso : UPDATE :  164896 nodes read in 1 seconds\nlibisofs: NOTE : Found hidden El-Torito image for EFI.\nlibisofs: NOTE : EFI image start and size: 3924450 * 2048 , 26480 * 512\nxorriso : NOTE : Detected El-Torito boot information which currently is set to be discarded\nDrive current: -indev 'output/Aven-Union-44-0.3.1-x86_64.iso'\nMedia current: stdio file, overwriteable\nMedia status : is written , is appendable\nBoot record  : El Torito , MBR protective-msdos-label grub2-mbr cyl-align-off GPT\nMedia summary: 1 session, 3931086 data blocks, 7678m data,  606g free\nVolume id    : 'Fedora-Knt-ostree-x86_64-44'\n",
+    "public_kickstart": {
+      "path": "/aven/aven.ks",
+      "sha256": "3191c91e8ffe82016b093ef59b06ec811f90a45c9d67296afc3929029e8be454",
+      "safety_errors": []
+    },
+    "installer_ref": {
+      "ref": "aven/44/x86_64/union",
+      "commit": "fbd330e4728599c337170d1b79608a64c1a6d989982554a4fd82a5ccdfa51026"
+    },
+    "repository_mode": "archive-z2",
+    "commit_objects": {
+      "layered": "fbd330e4728599c337170d1b79608a64c1a6d989982554a4fd82a5ccdfa51026",
+      "base": "be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df"
+    },
+    "base_detached_metadata_sha256": "7c4fd9fbaa49282319b212d318c44bf975c34f13584de922ac58172220f19b42",
+    "package_cache": {
+      "rpmostree/pkg/aurorae/6.7.90-1.fc44.x86__64": {
+        "checksum": "906900bf68d0c3e640361c85c495ec0ddd57d25f31db0b7744af820dc625ee0b",
+        "object_sha256": "906900bf68d0c3e640361c85c495ec0ddd57d25f31db0b7744af820dc625ee0b"
+      },
+      "rpmostree/pkg/bluedevil/6.7.90-1.fc44.x86__64": {
+        "checksum": "39a5d64fdd321602ab23675e9ec0bc6d4a086ed4c3f186db962f5c9c977bb8f1",
+        "object_sha256": "39a5d64fdd321602ab23675e9ec0bc6d4a086ed4c3f186db962f5c9c977bb8f1"
+      },
+      "rpmostree/pkg/breeze-cursor-theme/6.7.90-1.fc44.noarch": {
+        "checksum": "1e0258d00675f3d30bff9a74fe5ca95461bcdc824376bdfbe485dd33a40be2b2",
+        "object_sha256": "1e0258d00675f3d30bff9a74fe5ca95461bcdc824376bdfbe485dd33a40be2b2"
+      },
+      "rpmostree/pkg/breeze-gtk-common/6.7.90-1.fc44.noarch": {
+        "checksum": "95b3f17861cef2d47b50b36b3932a2c4c1ef2b16c3e6f967589b7513b7b605ec",
+        "object_sha256": "95b3f17861cef2d47b50b36b3932a2c4c1ef2b16c3e6f967589b7513b7b605ec"
+      },
+      "rpmostree/pkg/breeze-gtk-gtk3/6.7.90-1.fc44.noarch": {
+        "checksum": "09dbd93ff90b871f977e2b5b9cf56ce728574eba783dee6339bb683e2185ebd9",
+        "object_sha256": "09dbd93ff90b871f977e2b5b9cf56ce728574eba783dee6339bb683e2185ebd9"
+      },
+      "rpmostree/pkg/breeze-gtk-gtk4/6.7.90-1.fc44.noarch": {
+        "checksum": "2312c6e6e442c3d52ac4d1ded6b2c93cac85a573a4b971c1387e286010b31a33",
+        "object_sha256": "2312c6e6e442c3d52ac4d1ded6b2c93cac85a573a4b971c1387e286010b31a33"
+      },
+      "rpmostree/pkg/cfitsio/4.6.3-2.fc44.x86__64": {
+        "checksum": "47904056e0fbfe9a44d09e4f3e9668f47f7216379e1b0514b044de863d90e357",
+        "object_sha256": "47904056e0fbfe9a44d09e4f3e9668f47f7216379e1b0514b044de863d90e357"
+      },
+      "rpmostree/pkg/cxx-rust-cssparser/1.1.0-1.fc44.x86__64": {
+        "checksum": "6b5549a6e7ae1b8cec669078d519c52df98d3b8268e2da9d5e0244458560fe9e",
+        "object_sha256": "6b5549a6e7ae1b8cec669078d519c52df98d3b8268e2da9d5e0244458560fe9e"
+      },
+      "rpmostree/pkg/djvulibre-libs/3.5.30-1.fc44.x86__64": {
+        "checksum": "74fc86981600a05c78fed2e3ff21aeacae101660eaf8e2e15a2ef3f2adedc340",
+        "object_sha256": "74fc86981600a05c78fed2e3ff21aeacae101660eaf8e2e15a2ef3f2adedc340"
+      },
+      "rpmostree/pkg/ebook-tools-libs/0.2.2-31.fc44.x86__64": {
+        "checksum": "ffdf245f0eec5dec68599393207c7aa334d5c8ced846f74f24f261800b1ab387",
+        "object_sha256": "ffdf245f0eec5dec68599393207c7aa334d5c8ced846f74f24f261800b1ab387"
+      },
+      "rpmostree/pkg/flatpak-kcm/6.7.90-1.fc44.x86__64": {
+        "checksum": "9f01a51f595e7afa8812d350d3df9a32d9f95ae9d92835f96c31abb4daee7697",
+        "object_sha256": "9f01a51f595e7afa8812d350d3df9a32d9f95ae9d92835f96c31abb4daee7697"
+      },
+      "rpmostree/pkg/glibc-langpack-zh/2.43-8.fc44.x86__64": {
+        "checksum": "336caf82ce23fdc9b9c553bcc120fd4ce80701b4679370fe4ae42876865ba058",
+        "object_sha256": "336caf82ce23fdc9b9c553bcc120fd4ce80701b4679370fe4ae42876865ba058"
+      },
+      "rpmostree/pkg/gwenview-libs/1_3A26.08.1-1.fc44.x86__64": {
+        "checksum": "f8ff6fee74d929fc8e9c879686c2a43b6468c066bbce4f5afb0ca6ff9bfceedb",
+        "object_sha256": "f8ff6fee74d929fc8e9c879686c2a43b6468c066bbce4f5afb0ca6ff9bfceedb"
+      },
+      "rpmostree/pkg/gwenview/1_3A26.08.1-1.fc44.x86__64": {
+        "checksum": "b5ce578a1d7977fb2431be1252093fc587d8da0d00daa6d97ee2e1623b798c4c",
+        "object_sha256": "b5ce578a1d7977fb2431be1252093fc587d8da0d00daa6d97ee2e1623b798c4c"
+      },
+      "rpmostree/pkg/kactivitymanagerd/6.7.90-1.fc44.x86__64": {
+        "checksum": "4784d409e7a4355dc2214522c8b992c97e03a108c0f00444cd7fba606273b05a",
+        "object_sha256": "4784d409e7a4355dc2214522c8b992c97e03a108c0f00444cd7fba606273b05a"
+      },
+      "rpmostree/pkg/kcm-plasma-keyboard/1_3A6.7.90-1.fc44.x86__64": {
+        "checksum": "8cfe97f9867951820c7f13e1c7f80311bffc8f34698507944b645ab237b9349e",
+        "object_sha256": "8cfe97f9867951820c7f13e1c7f80311bffc8f34698507944b645ab237b9349e"
+      },
+      "rpmostree/pkg/kcm-plasmalogin/6.7.90-1.fc44.x86__64": {
+        "checksum": "d5d00679e7957f7c9a864b82566726e8b1c01b8b699dc8eab834f7191c54a531",
+        "object_sha256": "d5d00679e7957f7c9a864b82566726e8b1c01b8b699dc8eab834f7191c54a531"
+      },
+      "rpmostree/pkg/kcolorpicker-qt6/0.3.0-7.fc44.x86__64": {
+        "checksum": "f431e5cdd69a611790d87a8f7cec1bb90fd15007e0ffc9779fecbec781004ac6",
+        "object_sha256": "f431e5cdd69a611790d87a8f7cec1bb90fd15007e0ffc9779fecbec781004ac6"
+      },
+      "rpmostree/pkg/kde-cli-tools/6.7.90-1.fc44.x86__64": {
+        "checksum": "c9d1c1c71e8a084e35da14eda59df5929200043bf98acfab399722d7a0357776",
+        "object_sha256": "c9d1c1c71e8a084e35da14eda59df5929200043bf98acfab399722d7a0357776"
+      },
+      "rpmostree/pkg/kde-gtk-config/6.7.90-1.fc44.x86__64": {
+        "checksum": "bab231d436b8dfc27035d0fa6dfd64c381a97872098cf2e9947a33d97dc32920",
+        "object_sha256": "bab231d436b8dfc27035d0fa6dfd64c381a97872098cf2e9947a33d97dc32920"
+      },
+      "rpmostree/pkg/kdecoration/6.7.90-1.fc44.x86__64": {
+        "checksum": "54d06d1afbfb24509425ed7c38ae817cbdd87761c64b5288f32dbb5f2ca155c9",
+        "object_sha256": "54d06d1afbfb24509425ed7c38ae817cbdd87761c64b5288f32dbb5f2ca155c9"
+      },
+      "rpmostree/pkg/kdeplasma-addons/6.7.90-1.fc44.x86__64": {
+        "checksum": "c6a3a7068d533156a7c60cda9a1f7362a119f6795af3826c1bfd6b20e72f1167",
+        "object_sha256": "c6a3a7068d533156a7c60cda9a1f7362a119f6795af3826c1bfd6b20e72f1167"
+      },
+      "rpmostree/pkg/kdesu/1_3A6.7.90-1.fc44.x86__64": {
+        "checksum": "b67070119c2b71163f2ec79fcf9f44cb624b69435668ea20703e167fe60a6715",
+        "object_sha256": "b67070119c2b71163f2ec79fcf9f44cb624b69435668ea20703e167fe60a6715"
+      },
+      "rpmostree/pkg/kf6-threadweaver/6.30.0-1.fc44.x86__64": {
+        "checksum": "9923836170e91e8a3ccdb5cba117a79b0e5ea5fcdb9f9e95aaf30a07988e874a",
+        "object_sha256": "9923836170e91e8a3ccdb5cba117a79b0e5ea5fcdb9f9e95aaf30a07988e874a"
+      },
+      "rpmostree/pkg/kglobalacceld/6.7.90-1.fc44.x86__64": {
+        "checksum": "629ff84f7f7e841538fc637166094d85e7f047c1210bb15589a0578514190724",
+        "object_sha256": "629ff84f7f7e841538fc637166094d85e7f047c1210bb15589a0578514190724"
+      },
+      "rpmostree/pkg/kimageannotator-common/0.7.0-8.fc44.x86__64": {
+        "checksum": "7bbe8e98e6a67a36dde90fb639d2887062d4426a9f2687d17900251d1b44c327",
+        "object_sha256": "7bbe8e98e6a67a36dde90fb639d2887062d4426a9f2687d17900251d1b44c327"
+      },
+      "rpmostree/pkg/kimageannotator-qt6/0.7.0-8.fc44.x86__64": {
+        "checksum": "09e90577e9ffc6c6e2a308226eb69c877c4e61a8360f3c6011c4256530f0bae8",
+        "object_sha256": "09e90577e9ffc6c6e2a308226eb69c877c4e61a8360f3c6011c4256530f0bae8"
+      },
+      "rpmostree/pkg/kinfocenter/6.7.90-1.fc44.x86__64": {
+        "checksum": "8c12fd7ab933bf505d01b1ae467818216c227b387fe862531b9ccb36df22d98e",
+        "object_sha256": "8c12fd7ab933bf505d01b1ae467818216c227b387fe862531b9ccb36df22d98e"
+      },
+      "rpmostree/pkg/kmenuedit/6.7.90-1.fc44.x86__64": {
+        "checksum": "2a015a16132d1a12e1d89b7cc9535bcbe984607887118ef2299ac0e50bd932ec",
+        "object_sha256": "2a015a16132d1a12e1d89b7cc9535bcbe984607887118ef2299ac0e50bd932ec"
+      },
+      "rpmostree/pkg/knighttime/6.7.90-1.fc44.x86__64": {
+        "checksum": "c85e11e25efd12a5bb4adeba4ca0fce1f9b5b3c6b2469e4fb7dc3040224685e7",
+        "object_sha256": "c85e11e25efd12a5bb4adeba4ca0fce1f9b5b3c6b2469e4fb7dc3040224685e7"
+      },
+      "rpmostree/pkg/kpipewire/6.7.90-1.fc44.x86__64": {
+        "checksum": "a58575317d7c1e06bb32451490d56b02ee1c20dd3712e1685b4a222c2a77061d",
+        "object_sha256": "a58575317d7c1e06bb32451490d56b02ee1c20dd3712e1685b4a222c2a77061d"
+      },
+      "rpmostree/pkg/kquickimageeditor-qt6/0.7.0-2.fc44.x86__64": {
+        "checksum": "c9ddcdc6f6b615bf8340e7965ddc26a88c5ef4c9358c1b396115c92b72ea0307",
+        "object_sha256": "c9ddcdc6f6b615bf8340e7965ddc26a88c5ef4c9358c1b396115c92b72ea0307"
+      },
+      "rpmostree/pkg/krdp-libs/6.7.90-1.fc44.x86__64": {
+        "checksum": "6ac10c4d0812e00eed264dbb71f68e2ca5f453fbe153a1700dc04a2634755a7b",
+        "object_sha256": "6ac10c4d0812e00eed264dbb71f68e2ca5f453fbe153a1700dc04a2634755a7b"
+      },
+      "rpmostree/pkg/krdp/6.7.90-1.fc44.x86__64": {
+        "checksum": "3b704266214c1b8d9a5df5111a02f951a76e979fba8923de6c03837c6883539c",
+        "object_sha256": "3b704266214c1b8d9a5df5111a02f951a76e979fba8923de6c03837c6883539c"
+      },
+      "rpmostree/pkg/kscreen/1_3A6.7.90-1.fc44.x86__64": {
+        "checksum": "852280c280eec9f9ea424b50a2b8e276f3f290b039077288666c7afec690406c",
+        "object_sha256": "852280c280eec9f9ea424b50a2b8e276f3f290b039077288666c7afec690406c"
+      },
+      "rpmostree/pkg/kscreenlocker/6.7.90-1.fc44.x86__64": {
+        "checksum": "ebd23aeb5b91ef7fd4f8d60220dd916bc5ee65e90c0095cc0f83d365c63cf761",
+        "object_sha256": "ebd23aeb5b91ef7fd4f8d60220dd916bc5ee65e90c0095cc0f83d365c63cf761"
+      },
+      "rpmostree/pkg/ksshaskpass/6.7.90-1.fc44.x86__64": {
+        "checksum": "aa635713f166838a2180ad3dde305fd2097fa6a1dce1817951745fadc5414602",
+        "object_sha256": "aa635713f166838a2180ad3dde305fd2097fa6a1dce1817951745fadc5414602"
+      },
+      "rpmostree/pkg/ksystemstats/6.7.90-1.fc44.x86__64": {
+        "checksum": "c44611e79e1ed699706140057271141200d01de14cfb1dedd3d82d03d59f677a",
+        "object_sha256": "c44611e79e1ed699706140057271141200d01de14cfb1dedd3d82d03d59f677a"
+      },
+      "rpmostree/pkg/kwayland/6.7.90-1.fc44.x86__64": {
+        "checksum": "393e42f593f47dda8b26cfaee668590ce09828d3d37d561255e8a8ccf9429c8e",
+        "object_sha256": "393e42f593f47dda8b26cfaee668590ce09828d3d37d561255e8a8ccf9429c8e"
+      },
+      "rpmostree/pkg/kwin-common/6.7.90-1.fc44.x86__64": {
+        "checksum": "46ca58d164a8b1553524a675c969ace2ac9974bfff692456ef692ab0c9dafc72",
+        "object_sha256": "46ca58d164a8b1553524a675c969ace2ac9974bfff692456ef692ab0c9dafc72"
+      },
+      "rpmostree/pkg/kwin-libs/6.7.90-1.fc44.x86__64": {
+        "checksum": "e107a6de7ad699f3f122b99f30ec23551eeca9f3aa0a62748f79ae5044c6e7e8",
+        "object_sha256": "e107a6de7ad699f3f122b99f30ec23551eeca9f3aa0a62748f79ae5044c6e7e8"
+      },
+      "rpmostree/pkg/kwin/6.7.90-1.fc44.x86__64": {
+        "checksum": "f4faa4ca986c6270a112cfcba1ab3d66f3a5bd8159bd016665ec8a38961c1343",
+        "object_sha256": "f4faa4ca986c6270a112cfcba1ab3d66f3a5bd8159bd016665ec8a38961c1343"
+      },
+      "rpmostree/pkg/kwrited/6.7.90-1.fc44.x86__64": {
+        "checksum": "3299f938db0c07443e0f593d15e8a2891018d4eddf2cb1cb4a85843e79685a13",
+        "object_sha256": "3299f938db0c07443e0f593d15e8a2891018d4eddf2cb1cb4a85843e79685a13"
+      },
+      "rpmostree/pkg/layer-shell-qt/6.7.90-1.fc44.x86__64": {
+        "checksum": "53fcd85f27623065d5b354da0826118bdc362599c5a9f619ab56f8f9dc3af039",
+        "object_sha256": "53fcd85f27623065d5b354da0826118bdc362599c5a9f619ab56f8f9dc3af039"
+      },
+      "rpmostree/pkg/libkscreen/6.7.90-1.fc44.x86__64": {
+        "checksum": "d21535f5381e541656aeb314913425ccdc42fa53dcb9924b5082b6692d1b59ec",
+        "object_sha256": "d21535f5381e541656aeb314913425ccdc42fa53dcb9924b5082b6692d1b59ec"
+      },
+      "rpmostree/pkg/libksysguard-common/6.7.90-1.fc44.x86__64": {
+        "checksum": "5442ea0899544e7e6ec4adc380ee4aedf734551545c13c9b13acc0f775e3e7d0",
+        "object_sha256": "5442ea0899544e7e6ec4adc380ee4aedf734551545c13c9b13acc0f775e3e7d0"
+      },
+      "rpmostree/pkg/libksysguard/6.7.90-1.fc44.x86__64": {
+        "checksum": "8a6a70ff800b7466ad244a982e9960bb671dc9adef8b8da96309bd4ea9a0b1e8",
+        "object_sha256": "8a6a70ff800b7466ad244a982e9960bb671dc9adef8b8da96309bd4ea9a0b1e8"
+      },
+      "rpmostree/pkg/libkworkspace6/6.7.90-1.fc44.x86__64": {
+        "checksum": "2da38b8ad0a7bd2de2fbde2ea18ef526e189faaf48b70c37d6a29e1691911148",
+        "object_sha256": "2da38b8ad0a7bd2de2fbde2ea18ef526e189faaf48b70c37d6a29e1691911148"
+      },
+      "rpmostree/pkg/libmarkdown/2.2.7-14.fc44.x86__64": {
+        "checksum": "ba6f460ead34d90bba4539187dce7120d6a61848035b8b7f095c59f126a877ef",
+        "object_sha256": "ba6f460ead34d90bba4539187dce7120d6a61848035b8b7f095c59f126a877ef"
+      },
+      "rpmostree/pkg/libplasma/6.7.90-1.fc44.x86__64": {
+        "checksum": "0a30b49bd3dd2187636c64a608c781596365767ba1ede824b39fbd090dc0acd2",
+        "object_sha256": "0a30b49bd3dd2187636c64a608c781596365767ba1ede824b39fbd090dc0acd2"
+      },
+      "rpmostree/pkg/libspectre/0.2.12-11.fc44.x86__64": {
+        "checksum": "8513e4852cec738df3125dbb9a190ee06e173ee27a85f8b8b4485df72c899222",
+        "object_sha256": "8513e4852cec738df3125dbb9a190ee06e173ee27a85f8b8b4485df72c899222"
+      },
+      "rpmostree/pkg/ocean-sound-theme/6.7.90-1.fc44.noarch": {
+        "checksum": "fb2fc2c6266a2e7ddf640d241f8f5b28572b0943999dea2ab0d9d53272149fcc",
+        "object_sha256": "fb2fc2c6266a2e7ddf640d241f8f5b28572b0943999dea2ab0d9d53272149fcc"
+      },
+      "rpmostree/pkg/okular-libs/26.08.1-1.fc44.x86__64": {
+        "checksum": "82d326fc1e645b7269b69fe694b529a5c4051cf62ca27932504fffeab7189a1f",
+        "object_sha256": "82d326fc1e645b7269b69fe694b529a5c4051cf62ca27932504fffeab7189a1f"
+      },
+      "rpmostree/pkg/okular-part/26.08.1-1.fc44.x86__64": {
+        "checksum": "bdc84efc1f7d0c121de75314e7796d18aefcd013fa9f06e04ee14eab2d3e05ea",
+        "object_sha256": "bdc84efc1f7d0c121de75314e7796d18aefcd013fa9f06e04ee14eab2d3e05ea"
+      },
+      "rpmostree/pkg/okular/26.08.1-1.fc44.x86__64": {
+        "checksum": "8c1abda8e0db98d6019e993cfdfeef18c2824631e723e6734b7565ea98d4c81b",
+        "object_sha256": "8c1abda8e0db98d6019e993cfdfeef18c2824631e723e6734b7565ea98d4c81b"
+      },
+      "rpmostree/pkg/pam-kwallet/6.7.90-1.fc44.x86__64": {
+        "checksum": "bb0a0019a09213189be55588932674358d306fdba7a4eb9728c6bab100f17a51",
+        "object_sha256": "bb0a0019a09213189be55588932674358d306fdba7a4eb9728c6bab100f17a51"
+      },
+      "rpmostree/pkg/plasma-activities-stats/6.7.90-1.fc44.x86__64": {
+        "checksum": "6c2c1ebfeea65dc21cead2b8a1d7750dec0ff914e5c5065a95f42b1c16491a8d",
+        "object_sha256": "6c2c1ebfeea65dc21cead2b8a1d7750dec0ff914e5c5065a95f42b1c16491a8d"
+      },
+      "rpmostree/pkg/plasma-activities/6.7.90-1.fc44.x86__64": {
+        "checksum": "32a8601647bccd5795cefcd62fdabd02700e9df21d1b2edddfb381d8e13b7fd4",
+        "object_sha256": "32a8601647bccd5795cefcd62fdabd02700e9df21d1b2edddfb381d8e13b7fd4"
+      },
+      "rpmostree/pkg/plasma-breeze-common/6.7.90-1.fc44.noarch": {
+        "checksum": "e53c1de467886a8b428de6e04d6a05aa65987c613c9baa05aadd263072999825",
+        "object_sha256": "e53c1de467886a8b428de6e04d6a05aa65987c613c9baa05aadd263072999825"
+      },
+      "rpmostree/pkg/plasma-breeze-qt6/6.7.90-1.fc44.x86__64": {
+        "checksum": "d29836d6c17adb5319b2718124e481e5d0fba36c1270988964207714444e235f",
+        "object_sha256": "d29836d6c17adb5319b2718124e481e5d0fba36c1270988964207714444e235f"
+      },
+      "rpmostree/pkg/plasma-breeze/6.7.90-1.fc44.x86__64": {
+        "checksum": "6da1594b28b256e5236e7871eb957a8dfc9818e31c6a073495f53d31c6e45454",
+        "object_sha256": "6da1594b28b256e5236e7871eb957a8dfc9818e31c6a073495f53d31c6e45454"
+      },
+      "rpmostree/pkg/plasma-browser-integration/6.7.90-1.fc44.x86__64": {
+        "checksum": "34197be49cada346a75bb5ed17b051c546a2d424e6cc95db741da90152c88953",
+        "object_sha256": "34197be49cada346a75bb5ed17b051c546a2d424e6cc95db741da90152c88953"
+      },
+      "rpmostree/pkg/plasma-desktop-doc/6.7.90-1.fc44.noarch": {
+        "checksum": "7578fe1c2a9606f64a7a8e39d51d5761e4d90f9e29ce90a328e2f3940f09677a",
+        "object_sha256": "7578fe1c2a9606f64a7a8e39d51d5761e4d90f9e29ce90a328e2f3940f09677a"
+      },
+      "rpmostree/pkg/plasma-desktop/6.7.90-1.fc44.x86__64": {
+        "checksum": "4f0674f0a03d8995f2cb533a67f621f1897a7090a00b3585d38a8ef1f3175324",
+        "object_sha256": "4f0674f0a03d8995f2cb533a67f621f1897a7090a00b3585d38a8ef1f3175324"
+      },
+      "rpmostree/pkg/plasma-discover-flatpak/6.7.90-1.fc44.x86__64": {
+        "checksum": "b2499e0690bfcd0f03087228d4d7a79c792a49ec576344a7d33db827f5697a68",
+        "object_sha256": "b2499e0690bfcd0f03087228d4d7a79c792a49ec576344a7d33db827f5697a68"
+      },
+      "rpmostree/pkg/plasma-discover-kns/6.7.90-1.fc44.x86__64": {
+        "checksum": "a8af9cccd485716f6faa718799a4d416ad9fe9e88420bc92c43ca42cf6c0c7bd",
+        "object_sha256": "a8af9cccd485716f6faa718799a4d416ad9fe9e88420bc92c43ca42cf6c0c7bd"
+      },
+      "rpmostree/pkg/plasma-discover-libs/6.7.90-1.fc44.x86__64": {
+        "checksum": "67157e02f7908b83147bbe27962053b9736beb5f602ac1ad77d096afee24a52a",
+        "object_sha256": "67157e02f7908b83147bbe27962053b9736beb5f602ac1ad77d096afee24a52a"
+      },
+      "rpmostree/pkg/plasma-discover-notifier/6.7.90-1.fc44.x86__64": {
+        "checksum": "ec4e7086cd20977e8d0fbda78fc3bb79c1f27fb5a6a1bc3c18438afaff4be80c",
+        "object_sha256": "ec4e7086cd20977e8d0fbda78fc3bb79c1f27fb5a6a1bc3c18438afaff4be80c"
+      },
+      "rpmostree/pkg/plasma-discover-rpm-ostree/6.7.90-1.fc44.x86__64": {
+        "checksum": "918872f4ccac33f8da6e67940929b8987015929c7f5041798eec0f79e0c3d47b",
+        "object_sha256": "918872f4ccac33f8da6e67940929b8987015929c7f5041798eec0f79e0c3d47b"
+      },
+      "rpmostree/pkg/plasma-discover/6.7.90-1.fc44.x86__64": {
+        "checksum": "8bb8769ebd43240bae53b0e200ae72724befc2a90dc6488f45c9084fbc3865e1",
+        "object_sha256": "8bb8769ebd43240bae53b0e200ae72724befc2a90dc6488f45c9084fbc3865e1"
+      },
+      "rpmostree/pkg/plasma-disks/6.7.90-1.fc44.x86__64": {
+        "checksum": "6c0dc01dc5fb3597713b19fc660c825fa8989b0ba82d6aa1e63dfa4997cde90b",
+        "object_sha256": "6c0dc01dc5fb3597713b19fc660c825fa8989b0ba82d6aa1e63dfa4997cde90b"
+      },
+      "rpmostree/pkg/plasma-drkonqi/6.7.90-1.fc44.x86__64": {
+        "checksum": "0ff1397acae160b9152cd9d6e98b6367ad8f10e99055ff4c4f139fe5e52381e0",
+        "object_sha256": "0ff1397acae160b9152cd9d6e98b6367ad8f10e99055ff4c4f139fe5e52381e0"
+      },
+      "rpmostree/pkg/plasma-integration/6.7.90-1.fc44.x86__64": {
+        "checksum": "77d70bd77d705d00e3932a19b1d658f3eb2b877d9dacda3e66207569c00dcedb",
+        "object_sha256": "77d70bd77d705d00e3932a19b1d658f3eb2b877d9dacda3e66207569c00dcedb"
+      },
+      "rpmostree/pkg/plasma-keyboard/1_3A6.7.90-1.fc44.x86__64": {
+        "checksum": "290b79f005b789c08e7ddfbb3cf931458b7026536d83159ccfc0065fae1684ae",
+        "object_sha256": "290b79f005b789c08e7ddfbb3cf931458b7026536d83159ccfc0065fae1684ae"
+      },
+      "rpmostree/pkg/plasma-login-manager/6.7.90-1.fc44.x86__64": {
+        "checksum": "6f17f29f6ccab291571ec81fa186fe75f4201a689f486f931ef99de9e16227af",
+        "object_sha256": "6f17f29f6ccab291571ec81fa186fe75f4201a689f486f931ef99de9e16227af"
+      },
+      "rpmostree/pkg/plasma-lookandfeel-fedora/6.7.90-1.fc44.noarch": {
+        "checksum": "f8f19e5fe95a502599d18f22cdb18dd487a2fe5d7d361aa29b19b9fbbc0ea0c7",
+        "object_sha256": "f8f19e5fe95a502599d18f22cdb18dd487a2fe5d7d361aa29b19b9fbbc0ea0c7"
+      },
+      "rpmostree/pkg/plasma-milou/6.7.90-1.fc44.x86__64": {
+        "checksum": "fbc469700f16bab1a56280fd2f68243a6bb57789b27329cf3a9f3bc08de8bade",
+        "object_sha256": "fbc469700f16bab1a56280fd2f68243a6bb57789b27329cf3a9f3bc08de8bade"
+      },
+      "rpmostree/pkg/plasma-nm-openconnect/6.7.90-1.fc44.x86__64": {
+        "checksum": "26f246b344a509eea492cdfdeef33acdc53caf4cc69e677402d3c02c122af60e",
+        "object_sha256": "26f246b344a509eea492cdfdeef33acdc53caf4cc69e677402d3c02c122af60e"
+      },
+      "rpmostree/pkg/plasma-nm-openvpn/6.7.90-1.fc44.x86__64": {
+        "checksum": "9bb5efff423dcb93d4fc7b2790847435b5523bc1317bb864776858e7b5bbd81a",
+        "object_sha256": "9bb5efff423dcb93d4fc7b2790847435b5523bc1317bb864776858e7b5bbd81a"
+      },
+      "rpmostree/pkg/plasma-nm-vpnc/6.7.90-1.fc44.x86__64": {
+        "checksum": "66e5ff6a62ca3f4f49c95d7d450c45c36beb0b601da76a9787cd7e673219eab4",
+        "object_sha256": "66e5ff6a62ca3f4f49c95d7d450c45c36beb0b601da76a9787cd7e673219eab4"
+      },
+      "rpmostree/pkg/plasma-nm/6.7.90-1.fc44.x86__64": {
+        "checksum": "72797782a9366774cd9135397397d2b1586be521bc536040793cb63226ea74b0",
+        "object_sha256": "72797782a9366774cd9135397397d2b1586be521bc536040793cb63226ea74b0"
+      },
+      "rpmostree/pkg/plasma-pa/6.7.90-1.fc44.x86__64": {
+        "checksum": "701fcae84702d637d391ef1cefe2f2f2f6949abad97256c2d50328f42c8d498a",
+        "object_sha256": "701fcae84702d637d391ef1cefe2f2f2f6949abad97256c2d50328f42c8d498a"
+      },
+      "rpmostree/pkg/plasma-print-manager-libs/6.7.90-1.fc44.x86__64": {
+        "checksum": "c79f07bfea0e89e059fad74c9345ed1ec4f824e60f05ba267fb187259a4f5593",
+        "object_sha256": "c79f07bfea0e89e059fad74c9345ed1ec4f824e60f05ba267fb187259a4f5593"
+      },
+      "rpmostree/pkg/plasma-print-manager/6.7.90-1.fc44.x86__64": {
+        "checksum": "9058e49ae3e1fb596bddd10a89c17935f072a714eb2e98b693ee1a78619fc519",
+        "object_sha256": "9058e49ae3e1fb596bddd10a89c17935f072a714eb2e98b693ee1a78619fc519"
+      },
+      "rpmostree/pkg/plasma-setup/6.7.90-1.fc44.x86__64": {
+        "checksum": "9a5aae79f46d5c804fb7b4641ae4497997dc4c19c2506b6cef1999f0a9361fa2",
+        "object_sha256": "9a5aae79f46d5c804fb7b4641ae4497997dc4c19c2506b6cef1999f0a9361fa2"
+      },
+      "rpmostree/pkg/plasma-systemmonitor/6.7.90-1.fc44.x86__64": {
+        "checksum": "ec8cf6c29c41bb97ea9b6488c15d536f5c92b975136be8b1af2bfdab0946ce41",
+        "object_sha256": "ec8cf6c29c41bb97ea9b6488c15d536f5c92b975136be8b1af2bfdab0946ce41"
+      },
+      "rpmostree/pkg/plasma-systemsettings/6.7.90-1.fc44.x86__64": {
+        "checksum": "73800bf5fc5f87ce36474791b6c20be2c3787ad011be1121003ee75cfa493540",
+        "object_sha256": "73800bf5fc5f87ce36474791b6c20be2c3787ad011be1121003ee75cfa493540"
+      },
+      "rpmostree/pkg/plasma-thunderbolt/6.7.90-1.fc44.x86__64": {
+        "checksum": "4fd3b6ace709a8417e0bab98be01546611ae4ebbf14fa9ac825625711db65753",
+        "object_sha256": "4fd3b6ace709a8417e0bab98be01546611ae4ebbf14fa9ac825625711db65753"
+      },
+      "rpmostree/pkg/plasma-union/6.7.90-1.fc44.x86__64": {
+        "checksum": "80a672244c798a8dede6331cec449d2c0e0a83b0c6b00d3f4ad9cfd6cf738525",
+        "object_sha256": "80a672244c798a8dede6331cec449d2c0e0a83b0c6b00d3f4ad9cfd6cf738525"
+      },
+      "rpmostree/pkg/plasma-vault/6.7.90-1.fc44.x86__64": {
+        "checksum": "86879a839efb3cea8bbc96da5f5a466429928b728c66d623dcdb096dcbe0f531",
+        "object_sha256": "86879a839efb3cea8bbc96da5f5a466429928b728c66d623dcdb096dcbe0f531"
+      },
+      "rpmostree/pkg/plasma-welcome/6.7.90-1.fc44.x86__64": {
+        "checksum": "016af795ada19e7e1c33f8d93c6a8dd5cf6c825d56c407cb75cc5261b36e2d60",
+        "object_sha256": "016af795ada19e7e1c33f8d93c6a8dd5cf6c825d56c407cb75cc5261b36e2d60"
+      },
+      "rpmostree/pkg/plasma-workspace-common/6.7.90-1.fc44.x86__64": {
+        "checksum": "2296a19f9ad79f9ea924dde745fdf3b6a9fe6a1f117e6c62a128149dd320576b",
+        "object_sha256": "2296a19f9ad79f9ea924dde745fdf3b6a9fe6a1f117e6c62a128149dd320576b"
+      },
+      "rpmostree/pkg/plasma-workspace-libs/6.7.90-1.fc44.x86__64": {
+        "checksum": "fca8e5e0a5517c53d8b0324895d09c9f12ac0d2a22d19d501dce2cbbada9c721",
+        "object_sha256": "fca8e5e0a5517c53d8b0324895d09c9f12ac0d2a22d19d501dce2cbbada9c721"
+      },
+      "rpmostree/pkg/plasma-workspace-wallpapers/6.7.90-1.fc44.noarch": {
+        "checksum": "29cacee8e73cd77292daa77d4e4a0f5e386c0e2bfc7ae627bc79f5ae9c00e102",
+        "object_sha256": "29cacee8e73cd77292daa77d4e4a0f5e386c0e2bfc7ae627bc79f5ae9c00e102"
+      },
+      "rpmostree/pkg/plasma-workspace/6.7.90-1.fc44.x86__64": {
+        "checksum": "371e538f345120bace410fd2d6f69adc8ce744bc379f7b2a503986dabcca897a",
+        "object_sha256": "371e538f345120bace410fd2d6f69adc8ce744bc379f7b2a503986dabcca897a"
+      },
+      "rpmostree/pkg/plasma5support/6.7.90-1.fc44.x86__64": {
+        "checksum": "960fc5d9a463039e97d917574b4ec43fa745cdecd1bee92b7db8b000b3b2e5ec",
+        "object_sha256": "960fc5d9a463039e97d917574b4ec43fa745cdecd1bee92b7db8b000b3b2e5ec"
+      },
+      "rpmostree/pkg/polkit-kde/6.7.90-1.fc44.x86__64": {
+        "checksum": "0ee6bd402fcefa4d28ec2aadcd07d6932a916419756313ddb40e046e10ca2c61",
+        "object_sha256": "0ee6bd402fcefa4d28ec2aadcd07d6932a916419756313ddb40e046e10ca2c61"
+      },
+      "rpmostree/pkg/powerdevil/6.7.90-1.fc44.x86__64": {
+        "checksum": "e249063dd847ea5be39537083f31efc3ae0853457d58813d563514d3ce1ade1c",
+        "object_sha256": "e249063dd847ea5be39537083f31efc3ae0853457d58813d563514d3ce1ade1c"
+      },
+      "rpmostree/pkg/qqc2-breeze-style/6.7.90-1.fc44.x86__64": {
+        "checksum": "9eaec5450d550cf34bceed115ba72a11486fcfa0e70402ade60157c1cdf328d7",
+        "object_sha256": "9eaec5450d550cf34bceed115ba72a11486fcfa0e70402ade60157c1cdf328d7"
+      },
+      "rpmostree/pkg/spectacle/1_3A6.7.90-1.fc44.x86__64": {
+        "checksum": "4aa61c65401a90299a66fbcf375a0c998505064540642d6036b3f890cb7b0e6d",
+        "object_sha256": "4aa61c65401a90299a66fbcf375a0c998505064540642d6036b3f890cb7b0e6d"
+      },
+      "rpmostree/pkg/thunderbird-librnp-rnp/153.0.2-2.fc44.x86__64": {
+        "checksum": "228b124e743f48c69f01abeb578af7a623a7e2a62d242b65962807dfc30483ca",
+        "object_sha256": "228b124e743f48c69f01abeb578af7a623a7e2a62d242b65962807dfc30483ca"
+      },
+      "rpmostree/pkg/thunderbird/153.0.2-2.fc44.x86__64": {
+        "checksum": "a7f7b026e69daddf8b5072cee9261a719a78c087e7cbd2e2b4c3ac3c8837d5ea",
+        "object_sha256": "a7f7b026e69daddf8b5072cee9261a719a78c087e7cbd2e2b4c3ac3c8837d5ea"
+      },
+      "rpmostree/pkg/xdg-desktop-portal-kde/6.7.90-1.fc44.x86__64": {
+        "checksum": "d3be18989b32595fdc9e13025e57b764f3cd1cfc3a00662337d86ed7e57f5665",
+        "object_sha256": "d3be18989b32595fdc9e13025e57b764f3cd1cfc3a00662337d86ed7e57f5665"
+      }
+    },
+    "package_cache_refs_checked": 103,
+    "source_files_checked": 186
+  },
+  "static_media_checks_passed": true,
+  "errors": [],
+  "iso_boot_install_accepted": null,
+  "limitations": [
+    "El Torito entries and ISO9660 structure do not prove firmware boot or a completed installation.",
+    "Kickstart scanning detects explicit unsafe defaults; arbitrary invoked post-install scripts require source review.",
+    "Commit-object hashes and detached-metadata presence do not validate all repository objects or the base signature. Run repository fsck and the installed probe.",
+    "First-login Aven profile, network-free installation, screenshots and reboot remain separate required observations."
+  ],
+  "schema_version": 1,
+  "audited_at": "2026-09-17T07:08:46.263341+00:00"
+}

@@ -11,7 +11,9 @@ import time
 
 ROOT = Path(__file__).resolve().parents[1]
 LAB = ROOT / '.cache/iso-test'
-ISO = ROOT / 'output/Aven-Atomic-KDE-44-0.1.0-prototype-x86_64.iso'
+ISO = ROOT / 'output/Aven-Union-44-0.3.1-x86_64.iso'
+SSH_PORT = 2224
+VNC_PORT = 5922
 
 
 def run(*args, **kwargs):
@@ -71,11 +73,11 @@ def start(mode, iso, uefi=False, disk=None, online=False, local_rtc=False):
     args = ['qemu-system-x86_64', '-name', 'Aven ISO verification', '-machine', 'q35,accel=kvm',
             '-cpu', 'host', '-smp', '4', '-m', '6144',
             '-device', 'virtio-vga-gl,xres=1920,yres=1200',
-            '-display', 'egl-headless,rendernode=/dev/dri/renderD128', '-vnc', '127.0.0.1:22',
+            '-display', 'egl-headless,rendernode=/dev/dri/renderD128', '-vnc', f'127.0.0.1:{VNC_PORT - 5900}',
             '-device', 'qemu-xhci', '-device', 'usb-tablet',
             '-audiodev', 'none,id=audio', '-device', 'ich9-intel-hda', '-device', 'hda-duplex,audiodev=audio',
             # Offline installation is the default; later browsing can explicitly enable internet.
-            '-netdev', f'user,id=net0,restrict={"off" if online else "on"},hostfwd=tcp:127.0.0.1:2224-:22', '-device', 'virtio-net-pci,netdev=net0',
+            '-netdev', f'user,id=net0,restrict={"off" if online else "on"},hostfwd=tcp:127.0.0.1:{SSH_PORT}-:22', '-device', 'virtio-net-pci,netdev=net0',
             '-device', 'virtio-rng-pci', '-qmp', f'unix:{LAB / "vm.qmp"},server=on,wait=off',
             '-chardev', f'socket,id=serial,path={LAB / "serial.sock"},server=on,wait=off,logfile={LAB / (mode + ("-uefi" if uefi else "-bios") + ".serial.log")}',
             '-serial', 'chardev:serial', '-pidfile', LAB / 'vm.pid', '-daemonize']
@@ -105,13 +107,17 @@ def start(mode, iso, uefi=False, disk=None, online=False, local_rtc=False):
             raise RuntimeError('Install the disposable disk first')
         args += ['-drive', f'file={disk},format=qcow2,if=virtio', '-boot', 'order=c']
     run(*args)
-    print(f'{mode}: SSH 2224, VNC 5922; internet={online}; UEFI={uefi}; local RTC={local_rtc}')
+    print(f'{mode}: SSH {SSH_PORT}, VNC {VNC_PORT}; internet={online}; UEFI={uefi}; local RTC={local_rtc}')
 
 
 def main():
+    global LAB, SSH_PORT, VNC_PORT
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('action', choices=['prepare', 'optical', 'install', 'public-install', 'boot', 'status', 'stop', 'quit', 'key', 'click', 'text', 'screenshot', 'ssh'])
     parser.add_argument('--iso', type=Path, default=ISO)
+    parser.add_argument('--lab-dir', type=Path, default=LAB, help='Isolated lab state directory')
+    parser.add_argument('--ssh-port', type=int, default=SSH_PORT)
+    parser.add_argument('--vnc-port', type=int, default=VNC_PORT)
     parser.add_argument('--uefi', action='store_true')
     parser.add_argument('--online', action='store_true', help='Allow guest internet for post-install browsing checks')
     parser.add_argument('--local-rtc', action='store_true', help='Match a guest configured to interpret its hardware clock as local time')
@@ -119,6 +125,10 @@ def main():
     parser.add_argument('--ssh-user', default='aven', help='User created through the public first-boot workflow')
     parser.add_argument('args', nargs='*')
     args = parser.parse_args()
+    LAB = args.lab_dir.resolve()
+    SSH_PORT, VNC_PORT = args.ssh_port, args.vnc_port
+    if not (1024 <= SSH_PORT <= 65535 and 5900 <= VNC_PORT <= 65535):
+        parser.error('Invalid SSH or VNC port')
     if args.action == 'prepare':
         prepare(args.iso)
     elif args.action in ['optical', 'install', 'public-install', 'boot']:
@@ -163,11 +173,11 @@ def main():
         path.parent.mkdir(parents=True, exist_ok=True)
         sys.path.insert(0, str(ROOT / 'verification'))
         from rfb_capture import capture, png_bytes
-        rgb, meta = capture(5922)
+        rgb, meta = capture(VNC_PORT)
         path.write_bytes(png_bytes(meta['width'], meta['height'], rgb))
         print(path)
     elif args.action == 'ssh':
-        sys.exit(subprocess.call(['ssh', '-i', str(LAB / 'id_ed25519'), '-p', '2224', '-o', 'BatchMode=yes',
+        sys.exit(subprocess.call(['ssh', '-i', str(LAB / 'id_ed25519'), '-p', str(SSH_PORT), '-o', 'BatchMode=yes',
                                   '-o', 'StrictHostKeyChecking=accept-new', '-o', f'UserKnownHostsFile={LAB / "known_hosts"}',
                                   '-o', 'ConnectTimeout=5', args.ssh_user + '@127.0.0.1', *args.args]))
 

@@ -1,0 +1,93 @@
+{
+  "before": {
+    "id": "{5365fc44-0a4c-47a9-81e3-82ea3cd48afe}",
+    "caption": "预览",
+    "app": "org.aven.Preview",
+    "resource_class": "org.aven.Preview",
+    "resource_name": "python3.14",
+    "pid": 10619,
+    "active": false,
+    "minimized": false,
+    "full_screen": false,
+    "hidden": false,
+    "skip_taskbar": false,
+    "skip_switcher": false,
+    "normal_window": true,
+    "dialog": false,
+    "special": false,
+    "frame": {
+      "x": 516,
+      "y": 159,
+      "width": 888,
+      "height": 714
+    },
+    "client": {
+      "x": 520,
+      "y": 187,
+      "width": 880,
+      "height": 680
+    },
+    "output": "Virtual-1",
+    "movable": true,
+    "resizable": true,
+    "minimum_client_size": {
+      "width": 460,
+      "height": 360
+    }
+  },
+  "requested_geometry": {
+    "x": 510,
+    "y": 120,
+    "width": 900,
+    "height": 700
+  },
+  "requested_maximize": false,
+  "requested_activate": true,
+  "ok": true,
+  "after": [
+    {
+      "id": "{5365fc44-0a4c-47a9-81e3-82ea3cd48afe}",
+      "caption": "预览",
+      "app": "org.aven.Preview",
+      "resource_class": "org.aven.Preview",
+      "resource_name": "python3.14",
+      "pid": 10619,
+      "active": true,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 510,
+        "y": 120,
+        "width": 900,
+        "height": 700
+      },
+      "client": {
+        "x": 514,
+        "y": 148,
+        "width": 892,
+        "height": 666
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 460,
+        "height": 360
+      }
+    }
+  ],
+  "geometry_acknowledged": true,
+  "activation_acknowledged": true,
+  "schema_version": 1,
+  "captured_at": "2026-09-17T04:50:06.746460+00:00",
+  "method": "temporary KWin script via public Workspace/Window API",
+  "command": "arrange",
+  "persistent_kwin_changes": false
+}
+

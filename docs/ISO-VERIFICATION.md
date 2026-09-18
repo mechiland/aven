@@ -1,5 +1,9 @@
 # Aven ISO verification — candidate 5
 
+This is the historical **0.1.0 Breeze** artifact. The current Union release has
+its own [0.3.1 verification report](UNION-ISO-0.3.1.md); the scores below do not
+apply to Union.
+
 **Accepted for prototype ISO release.** Candidate 5 passes media integrity,
 BIOS/UEFI optical boot, offline public installation, native first-user setup,
 automatic Aven defaults, installed Atomic/source/font checks, three native preview

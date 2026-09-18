@@ -1,0 +1,188 @@
+{
+  "version": "0.3.1-union",
+  "completed_at": "2026-09-17T06:27:28.281864+00:00",
+  "reference": "/home/michael/Downloads/macOS15Screens/15-Sequoia-Desktop.png",
+  "reference_inspected": true,
+  "capture_method": "Original QEMU RFB framebuffer via verification/rfb_capture.py; no compositing or screenshot alterations",
+  "resolution": [
+    1920,
+    1200
+  ],
+  "scale": 1,
+  "screenshots": [
+    {
+      "path": "evidence/aven/round-07/before.png",
+      "sha256": "e66062f2274d0a348e240711563729f7d76a555652e817c2eb390ddde136935e",
+      "inspected": true,
+      "classification": "reviewed_evidence",
+      "note": "Before this follow-up: 600 managed emphasis, wide panel, strong active tile and duplicate icons."
+    },
+    {
+      "path": "evidence/aven/round-07/corners-v2.png",
+      "sha256": "7442829773644f17515e1b98d96cc393333b16c08b3af7fa6e09b9a140dead4d",
+      "inspected": true,
+      "classification": "diagnostic_not_final",
+      "note": "Intermediate capture; may contain old assets, duplicate icons, loading/transition state or unreviewed pixels. Do not use as final appearance evidence."
+    },
+    {
+      "path": "evidence/aven/round-07/desktop-final.png",
+      "sha256": "fef6293a021ff29c84cad0cc3b4d7800832352a36b87e0aa7b3c5deefdaa0622",
+      "inspected": true,
+      "classification": "reviewed_evidence",
+      "note": "Show-desktop function retained; translucent panel follows wallpaper colors. Faint tooltip fading, not final text evidence."
+    },
+    {
+      "path": "evidence/aven/round-07/dock-grouped.png",
+      "sha256": "5f7063fb8e127694bd1b87892ae37c3db14287967ee398ee4ac052fc5dc9bf4e",
+      "inspected": true,
+      "classification": "diagnostic_not_final",
+      "note": "Intermediate capture; may contain old assets, duplicate icons, loading/transition state or unreviewed pixels. Do not use as final appearance evidence."
+    },
+    {
+      "path": "evidence/aven/round-07/dock-settled.png",
+      "sha256": "eecada29d8296d9d5ba98e32e3a13f5a5e234037d2914f03761d80fc0dfc5cf0",
+      "inspected": true,
+      "classification": "diagnostic_not_final",
+      "note": "Intermediate capture; may contain old assets, duplicate icons, loading/transition state or unreviewed pixels. Do not use as final appearance evidence."
+    },
+    {
+      "path": "evidence/aven/round-07/dock-v3.png",
+      "sha256": "8943ad99c2ecf2ae91af344282d237f41f64c4a0d4701db9545456216ed9c6aa",
+      "inspected": true,
+      "classification": "diagnostic_not_final",
+      "note": "Intermediate capture; may contain old assets, duplicate icons, loading/transition state or unreviewed pixels. Do not use as final appearance evidence."
+    },
+    {
+      "path": "evidence/aven/round-07/firefox-quit-dialog.png",
+      "sha256": "8763079217ccb15e74109eec654b8bcf9d9a7c10d10a31ac7643528b50849f30",
+      "inspected": true,
+      "classification": "diagnostic_not_final",
+      "note": "Intermediate capture; may contain old assets, duplicate icons, loading/transition state or unreviewed pixels. Do not use as final appearance evidence."
+    },
+    {
+      "path": "evidence/aven/round-07/first-dock.png",
+      "sha256": "0b32cb731d75638a8b0463986ed32149ac8fa8f423dce43668e17a613846e0f5",
+      "inspected": true,
+      "classification": "diagnostic_not_final",
+      "note": "Intermediate capture; may contain old assets, duplicate icons, loading/transition state or unreviewed pixels. Do not use as final appearance evidence."
+    },
+    {
+      "path": "evidence/aven/round-07/mail-final.png",
+      "sha256": "a75f69fcdffd15fdee8d84780f43f39fc8dcd633c6d00304338c14b9fb26edc3",
+      "inspected": true,
+      "classification": "reviewed_evidence",
+      "note": "Final 500 managed emphasis with real Chinese message and all four running dots; no duplicate app icons."
+    },
+    {
+      "path": "evidence/aven/round-07/mail-medium-dock.png",
+      "sha256": "e4b671258422e87fcac93fce259ca3de029bcf630871b960913eee606df71824",
+      "inspected": false,
+      "classification": "diagnostic_not_final",
+      "note": "Intermediate capture; may contain old assets, duplicate icons, loading/transition state or unreviewed pixels. Do not use as final appearance evidence."
+    },
+    {
+      "path": "evidence/aven/round-07/native-task-menu.png",
+      "sha256": "07dc115e938c2ec53690c58e60a5f906c5e3e1aa4b7b9454ced759b22e1495b4",
+      "inspected": true,
+      "classification": "reviewed_evidence",
+      "note": "Original native task menu opens; no menu action was invoked."
+    },
+    {
+      "path": "evidence/aven/round-07/photos-closed-stable.png",
+      "sha256": "002e4bc756b7351c0e754b15c38c28479ad77ec5a1a8184e41d0aaa61475e6fb",
+      "inspected": false,
+      "classification": "diagnostic_not_final",
+      "note": "Intermediate capture; may contain old assets, duplicate icons, loading/transition state or unreviewed pixels. Do not use as final appearance evidence."
+    },
+    {
+      "path": "evidence/aven/round-07/photos-closed.png",
+      "sha256": "7ef95088bf514c1a841682dc4ea3e480b665b36c5ab9ef6ab7be57675493bfd0",
+      "inspected": true,
+      "classification": "diagnostic_not_final",
+      "note": "Intermediate capture; may contain old assets, duplicate icons, loading/transition state or unreviewed pixels. Do not use as final appearance evidence."
+    },
+    {
+      "path": "evidence/aven/round-07/photos-launched.png",
+      "sha256": "e2272c893989404247334e85992f723bb462009f77212c8c744e8d411c102475",
+      "inspected": true,
+      "classification": "diagnostic_not_final",
+      "note": "Intermediate capture; may contain old assets, duplicate icons, loading/transition state or unreviewed pixels. Do not use as final appearance evidence."
+    },
+    {
+      "path": "evidence/aven/round-07/photos-minimized-dot.png",
+      "sha256": "2703555d9a4d73bee0ab8249ce2ecc93746fed408ec1fce2854d11adbd190bba",
+      "inspected": true,
+      "classification": "reviewed_evidence",
+      "note": "Final Photos icon retains running dot while KWin inventory reports minimized=true."
+    },
+    {
+      "path": "evidence/aven/round-07/photos-quit-no-dot.png",
+      "sha256": "f98acba3f05a6f7d44472aeffbc051702e5014e197c98bd68bce34e56ec9d5e6",
+      "inspected": true,
+      "classification": "reviewed_evidence",
+      "note": "Photos exited: fixed icon remains and its running dot disappears."
+    },
+    {
+      "path": "evidence/aven/round-07/photos-restored-dot.png",
+      "sha256": "669b2676eccfff1603ae983583860730e85156502a998723ed9665f24d61cb79",
+      "inspected": true,
+      "classification": "reviewed_evidence",
+      "note": "Photos restored by clicking the same native dock icon; running dot retained."
+    },
+    {
+      "path": "evidence/aven/round-07/shell-reloaded.png",
+      "sha256": "081ddf96dc5a558d42630fd03d44dee6217f04413675d18c8b664e2b573e3525",
+      "inspected": false,
+      "classification": "diagnostic_not_final",
+      "note": "Intermediate capture; may contain old assets, duplicate icons, loading/transition state or unreviewed pixels. Do not use as final appearance evidence."
+    },
+    {
+      "path": "evidence/aven/round-07/stable-mail.png",
+      "sha256": "8e3ff2bb08d7a0478f7290e5461e6897dd1ab79daac63c5fce31e72fc6ffc8ce",
+      "inspected": true,
+      "classification": "diagnostic_not_final",
+      "note": "Intermediate capture; may contain old assets, duplicate icons, loading/transition state or unreviewed pixels. Do not use as final appearance evidence."
+    }
+  ],
+  "verification": {
+    "font_checks": {
+      "passed": 68,
+      "record": "font-audit.json"
+    },
+    "existing_automated_tests": {
+      "passed": 88,
+      "record": "verification-tests.txt"
+    },
+    "panel": {
+      "record": "panel-final.json",
+      "size_logical": [
+        558,
+        58
+      ],
+      "original_widgets_preserved": 7,
+      "length_mode": "fit",
+      "opacity": "translucent"
+    },
+    "native_operations": [
+      "Launch Photos using fixed icon",
+      "Photos minimize/restore using running icon",
+      "Photos close removes dot",
+      "Photos relaunch restores dot without duplicate",
+      "Files context menu opens",
+      "Show Desktop and app restoration"
+    ],
+    "shell_restart_persistence": true,
+    "guest_reboot_this_followup": false,
+    "atomic_deployment_changed": false,
+    "rollback_executed": false
+  },
+  "known_limits": [
+    "Native KIO current-location hardcoded Bold is unchanged",
+    "Arbitrary document/web heading weights are unchanged",
+    "Fractional-scale and motion matrices not repeated",
+    "Application icons and retained system tray differ from macOS"
+  ],
+  "scores": null,
+  "three_second_test": null,
+  "pass": null
+}

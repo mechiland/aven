@@ -19,6 +19,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('phase', choices=['seed', 'layout'])
     args = parser.parse_args()
+    profile = json.loads((ROOT / 'iso/platform.json').read_text()).get('profile', {})
+    style = profile.get('style', 'breeze')
+    if style not in {'breeze', 'union'}:
+        raise RuntimeError('Unsupported ISO profile style')
     # Fedora's native first-user setup runs under a system account. Seed only
     # real desktop users, after that unchanged setup has created their account.
     if os.getuid() < 1000:
@@ -35,7 +39,7 @@ def main():
             if args.phase == 'seed':
                 env = os.environ | {'QT_QPA_PLATFORM': 'offscreen'}
                 subprocess.run([sys.executable, str(ROOT / 'integration/apply-profile.py'),
-                                '--system-fonts-ready', '--without-shell-reload', '--decoration', 'aven'],
+                                '--system-fonts-ready', '--without-shell-reload', '--decoration', 'aven', '--style', style],
                                env=env, stdout=log, stderr=subprocess.STDOUT, check=True)
             else:
                 if not (STATE / 'iso-seed-v1.json').exists():
@@ -52,7 +56,7 @@ def main():
                 else:
                     raise RuntimeError('Plasma did not become ready')
                 wallpaper = Path.home() / '.local/share/wallpapers/AvenEstuary/contents/images/3840x2160.svg'
-                script = (ROOT / 'integration/plasma-layout.js.in').read_text().replace('@WALLPAPER@', wallpaper.as_uri())
+                script = (ROOT / 'integration/plasma-layout.js.in').read_text().replace('@WALLPAPER@', wallpaper.as_uri()).replace('@UNION_DOCK@', 'true' if style == 'union' else 'false')
                 subprocess.run([dbus, 'org.kde.plasmashell', '/PlasmaShell',
                                 'org.kde.PlasmaShell.evaluateScript', script], stdout=log, stderr=subprocess.STDOUT, check=True)
                 subprocess.run([dbus, 'org.kde.KWin', '/KWin', 'reconfigure'],

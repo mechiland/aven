@@ -1,0 +1,30 @@
+{
+  "release": "v0.3.1",
+  "download_worker": "aven-downloads",
+  "download_worker_version": "87c790f5-c4c3-46c0-88f1-ad6faa07caf8",
+  "r2_bucket": "aven-releases",
+  "temporary_upload_worker": "aven-release-upload",
+  "temporary_upload_worker_deleted": true,
+  "upload_cleanup_output": "Successfully deleted aven-release-upload",
+  "verification_tests": {
+    "command": "python3 -m unittest discover -s verification/tests -v",
+    "passed": 116
+  },
+  "download_worker_tests": {
+    "command": "node --test release/worker.test.mjs",
+    "passed": 15
+  },
+  "test_vm_powered_off_cleanly": true,
+  "updated_at": "2026-09-18T01:36:05.571047+00:00",
+  "website_url": "https://aven-website.mechiland.workers.dev",
+  "website_deployment": "aad122ab-075e-414d-99fb-ef7c89cd9345",
+  "website_verification": "website/deployment.json",
+  "original_union_lab_vm_restored": true,
+  "deleted_upload_service_public_http_status": 404,
+  "pull_request": "https://github.com/mechiland/aven/pull/3",
+  "release_url": "https://github.com/mechiland/aven/releases/tag/v0.3.1",
+  "source_commit_preserved": "3cea3e117b4503f3e74239b406c2ded992ab1df5",
+  "public_full_download_verified": true,
+  "public_download_report": "evidence/verification/union-iso-031/public-download.json",
+  "publication_rechecked_at": "2026-09-18T01:36:05.571047+00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-09-17T04:30:06.441187+00:00",
+  "platform": "wayland",
+  "qt": "6.11.2",
+  "configured_widget_style": "Union",
+  "configured_union_style": "aven-mist",
+  "actual_style_class": "UnionStyle",
+  "actual_style_name": "union",
+  "available_styles": [
+    "Union",
+    "Breeze",
+    "Windows",
+    "Fusion"
+  ],
+  "button_size_hint": [
+    135,
+    35
+  ],
+  "button_margin": 6,
+  "theme_sha256": {
+    "contents/css/controls.css": "6a4b0241abccd36e46b0f3c764b970304fb47046c96c701d8c1a0176b456b35f",
+    "contents/css/style.css": "5855663d744b7ae3492c9b51bea6d23a4cf3ed82f4aeb25e109772950f606441",
+    "contents/css/tokens.css": "77dfe7099562c026e2763930f00e15bb338cd36086f800f1e1cfcbaa1649748f",
+    "metadata.json": "c72d1ee2e8ce7dea8c93120c41e3d6c61c8f8783dc40053cc5e7e680fa689ea8"
+  },
+  "packages": "plasma-desktop-6.7.90-1.fc44.x86_64\nkwin-6.7.90-1.fc44.x86_64\nplasma-union-6.7.90-1.fc44.x86_64\ncxx-rust-cssparser-1.1.0-1.fc44.x86_64\ndolphin-26.08.1-1.fc44.x86_64\ngwenview-26.08.1-1.fc44.x86_64\nqt6-qtbase-6.11.2-2.fc44.x86_64\n",
+  "files_compatibility_sha256": {
+    ".local/libexec/aven-union/aven-files": "e0d29ac675d46cea6d6e3f03e159a8b57d444c70825bf60b1e195e390a50530d",
+    ".local/libexec/aven-union/dolphin-location.qss": "b80b0de1a37cfdf5948864c73401ca1a919d4689ab8b31882fc8586c85558232"
+  },
+  "native_processes": [
+    {
+      "pid": 4100,
+      "executable": "dolphin",
+      "command": "/usr/bin/dolphin -stylesheet /home/aven/.local/libexec/aven-union/dolphin-location.qss /home/aven/Documents/日常 · Everyday",
+      "union_libraries": [
+        "/usr/lib64/libUnion.so.6.7.90",
+        "/usr/lib64/qt6/plugins/styles/UnionWidgetsStyle.so"
+      ],
+      "locale": {
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "",
+        "LC_ALL": ""
+      }
+    }
+  ],
+  "limitations": [
+    "Library mappings and style metrics do not establish visual quality; inspect real screenshots."
+  ],
+  "style_active": true
+}
+

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+<g id="topleft"><rect x="0" y="0" width="16" height="16" fill="#000000" opacity="0" /><path d="M16 0A16 16 0 0 0 0 16H16Z" fill="#F8F8F8" opacity="0.92"/><path d="M16 0A16 16 0 0 0 0 16H16ZM16 1A15 15 0 0 0 1 16H16Z" fill="#FFFFFF" opacity=".42" fill-rule="evenodd"/></g>
+<g id="top"><rect x="16" y="0" width="16" height="16" fill="#000000" opacity="0" /><rect x="16" y="0" width="16" height="16" fill="#F8F8F8" opacity="0.92" /><rect x="16" y="0" width="16" height="1" fill="#FFFFFF" opacity="0.42" /></g>
+<g id="topright"><rect x="32" y="0" width="16" height="16" fill="#000000" opacity="0" /><path d="M32 0A16 16 0 0 1 48 16H32Z" fill="#F8F8F8" opacity="0.92"/><path d="M32 0A16 16 0 0 1 48 16H32ZM32 1A15 15 0 0 1 47 16H32Z" fill="#FFFFFF" opacity=".42" fill-rule="evenodd"/></g>
+<g id="left"><rect x="0" y="16" width="16" height="16" fill="#000000" opacity="0" /><rect x="0" y="16" width="16" height="16" fill="#F8F8F8" opacity="0.92" /><rect x="0" y="16" width="1" height="16" fill="#FFFFFF" opacity="0.42" /></g>
+<g id="center"><rect x="16" y="16" width="16" height="16" fill="#000000" opacity="0" /><rect x="16" y="16" width="16" height="16" fill="#F8F8F8" opacity="0.92" /></g>
+<g id="right"><rect x="32" y="16" width="16" height="16" fill="#000000" opacity="0" /><rect x="32" y="16" width="16" height="16" fill="#F8F8F8" opacity="0.92" /><rect x="47" y="16" width="1" height="16" fill="#FFFFFF" opacity="0.42" /></g>
+<g id="bottomleft"><rect x="0" y="32" width="16" height="16" fill="#000000" opacity="0" /><path d="M0 32A16 16 0 0 0 16 48V32Z" fill="#F8F8F8" opacity="0.92"/><path d="M0 32A16 16 0 0 0 16 48V32ZM1 32A15 15 0 0 0 16 47V32Z" fill="#FFFFFF" opacity=".42" fill-rule="evenodd"/></g>
+<g id="bottom"><rect x="16" y="32" width="16" height="16" fill="#000000" opacity="0" /><rect x="16" y="32" width="16" height="16" fill="#F8F8F8" opacity="0.92" /><rect x="16" y="47" width="16" height="1" fill="#FFFFFF" opacity="0.42" /></g>
+<g id="bottomright"><rect x="32" y="32" width="16" height="16" fill="#000000" opacity="0" /><path d="M48 32A16 16 0 0 1 32 48V32Z" fill="#F8F8F8" opacity="0.92"/><path d="M48 32A16 16 0 0 1 32 48V32ZM47 32A15 15 0 0 1 32 47V32Z" fill="#FFFFFF" opacity=".42" fill-rule="evenodd"/></g>
+<g id="mask-topleft"><rect x="0" y="0" width="16" height="16" fill="#000000" opacity="0" /><path d="M16 0A16 16 0 0 0 0 16H16Z" fill="#000000" opacity="1"/></g>
+<g id="mask-top"><rect x="16" y="0" width="16" height="16" fill="#000000" opacity="0" /><rect x="16" y="0" width="16" height="16" fill="#000000" opacity="1" /></g>
+<g id="mask-topright"><rect x="32" y="0" width="16" height="16" fill="#000000" opacity="0" /><path d="M32 0A16 16 0 0 1 48 16H32Z" fill="#000000" opacity="1"/></g>
+<g id="mask-left"><rect x="0" y="16" width="16" height="16" fill="#000000" opacity="0" /><rect x="0" y="16" width="16" height="16" fill="#000000" opacity="1" /></g>
+<g id="mask-center"><rect x="16" y="16" width="16" height="16" fill="#000000" opacity="0" /><rect x="16" y="16" width="16" height="16" fill="#000000" opacity="1" /></g>
+<g id="mask-right"><rect x="32" y="16" width="16" height="16" fill="#000000" opacity="0" /><rect x="32" y="16" width="16" height="16" fill="#000000" opacity="1" /></g>
+<g id="mask-bottomleft"><rect x="0" y="32" width="16" height="16" fill="#000000" opacity="0" /><path d="M0 32A16 16 0 0 0 16 48V32Z" fill="#000000" opacity="1"/></g>
+<g id="mask-bottom"><rect x="16" y="32" width="16" height="16" fill="#000000" opacity="0" /><rect x="16" y="32" width="16" height="16" fill="#000000" opacity="1" /></g>
+<g id="mask-bottomright"><rect x="32" y="32" width="16" height="16" fill="#000000" opacity="0" /><path d="M48 32A16 16 0 0 1 32 48V32Z" fill="#000000" opacity="1"/></g>
+<rect id="hint-top-margin" width="4" height="4" fill="none"/>
+<rect id="hint-bottom-margin" width="4" height="4" fill="none"/>
+<rect id="hint-left-margin" width="10" height="10" fill="none"/>
+<rect id="hint-right-margin" width="10" height="10" fill="none"/>
+<rect id="hint-stretch-borders" width="1" height="1" fill="none"/></svg>

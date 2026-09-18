@@ -22,7 +22,7 @@
   }
   @media (prefers-color-scheme: light) and (prefers-contrast: no-preference) {
     body:has(> .aven-letter), body:has(> .moz-text-plain), body:has(> .moz-text-flowed) {
-      background: #FDFCF9 !important; color: #26342F !important;
+      background: #FFFFFF !important; color: #262626 !important;
     }
   }
 }

@@ -8,6 +8,14 @@
     {
       "url": "https://raw.githubusercontent.com/KDE/gwenview/v26.04.0/lib/gwenviewconfig.kcfg",
       "sha256": "973a83dea3f734fc8b906496b2e82e149d8eb01abb1c821cc759ba42462f1a24"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/KDE/gwenview/v26.08.1/lib/gwenviewconfig.kcfg",
+      "sha256": "b48790dbb8226a40af792130ca4ef07953fd587e2201d5be787664b50f29714a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/KDE/kxmlgui/v6.18.0/src/ktoolbar.cpp",
+      "sha256": "e474b996d20a68e0006752aa9477d30b0d100a7c928bb26a2432fa848c4a93e7"
     }
   ],
   "groups": {
@@ -63,6 +71,10 @@
           "FullScreenBackground::Image",
           "FullScreenBackground::Black"
         ]
+      },
+      "SideBarPage": {
+        "type": "String",
+        "default": "information"
       }
     },
     "ImageView": {
@@ -178,6 +190,12 @@
       "IsVisible ViewMode": {
         "type": "Bool",
         "default": "false"
+      },
+      "SideBarSplitterSizes": {
+        "type": "IntList",
+        "default": "",
+        "mutable_layout": true,
+        "source": "https://raw.githubusercontent.com/KDE/gwenview/v26.08.1/lib/gwenviewconfig.kcfg"
       }
     },
     "FullScreen": {
@@ -202,6 +220,16 @@
       "loop": {
         "type": "Bool",
         "default": "false"
+      }
+    },
+    "MainWindow][Toolbar mainToolBar": {
+      "IconSize": {
+        "type": "Int",
+        "default": "22"
+      },
+      "ToolButtonStyle": {
+        "type": "String",
+        "default": "TextBesideIcon"
       }
     }
   }

@@ -1,0 +1,203 @@
+{
+  "windows": [
+    {
+      "id": "{bf31f663-326e-4071-9a57-f1becb035d15}",
+      "caption": "Wayland to X Recording bridge \u2014 Xwayland Video Bridge",
+      "app": "org.kde.xwaylandvideobridge",
+      "resource_class": "xwaylandvideobridge",
+      "resource_name": "xwaylandvideobridge",
+      "pid": 1586,
+      "active": false,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": true,
+      "skip_switcher": true,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 1280,
+        "y": 792,
+        "width": 640,
+        "height": 360
+      },
+      "client": {
+        "x": 1280,
+        "y": 792,
+        "width": 640,
+        "height": 360
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "id": "{509b2f3e-84f9-45ae-8d8b-122e4a9e7ade}",
+      "caption": "\u65e5\u5e38 \u00b7 Everyday \u2014 Dolphin",
+      "app": "org.kde.dolphin",
+      "resource_class": "org.kde.dolphin",
+      "resource_name": "dolphin",
+      "pid": 12014,
+      "active": false,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 360,
+        "y": 80,
+        "width": 1200,
+        "height": 850
+      },
+      "client": {
+        "x": 364,
+        "y": 108,
+        "width": 1192,
+        "height": 816
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 253,
+        "height": 178
+      }
+    },
+    {
+      "id": "{829573ae-28f3-4506-a9cb-3c09c6f9989f}",
+      "caption": "/home/aven/Pictures/\u4eac\u90fd\u6625\u65e5 \u2014 Gwenview",
+      "app": "org.kde.gwenview",
+      "resource_class": "org.kde.gwenview",
+      "resource_name": "gwenview",
+      "pid": 12015,
+      "active": false,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 360,
+        "y": 80,
+        "width": 1200,
+        "height": 850
+      },
+      "client": {
+        "x": 364,
+        "y": 108,
+        "width": 1192,
+        "height": 816
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 572,
+        "height": 419
+      }
+    },
+    {
+      "id": "{5694e2a9-82b1-40d1-ac75-044a81b1c67f}",
+      "caption": "Inbox - Local Folders - Mozilla Thunderbird",
+      "app": "net.thunderbird.Thunderbird",
+      "resource_class": "net.thunderbird.Thunderbird",
+      "resource_name": "thunderbird",
+      "pid": 12017,
+      "active": false,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 360,
+        "y": 80,
+        "width": 1200,
+        "height": 850
+      },
+      "client": {
+        "x": 360,
+        "y": 80,
+        "width": 1200,
+        "height": 850
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 95,
+        "height": 95
+      }
+    },
+    {
+      "id": "{d2a05fec-fca0-475a-a689-03c086f95106}",
+      "caption": "\u5468\u672b\u6162\u884c \u00b7 \u57ce\u5e02\u624b\u8bb0 \u2014 Mozilla Firefox",
+      "app": "org.mozilla.firefox",
+      "resource_class": "org.mozilla.firefox",
+      "resource_name": "firefox",
+      "pid": 12016,
+      "active": true,
+      "minimized": false,
+      "full_screen": false,
+      "hidden": false,
+      "skip_taskbar": false,
+      "skip_switcher": false,
+      "normal_window": true,
+      "dialog": false,
+      "special": false,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1152
+      },
+      "client": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1152
+      },
+      "output": "Virtual-1",
+      "movable": true,
+      "resizable": true,
+      "minimum_client_size": {
+        "width": 500,
+        "height": 120
+      }
+    }
+  ],
+  "screens": [
+    {
+      "name": "Virtual-1",
+      "scale": 1,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1200
+      }
+    }
+  ],
+  "active_window": "{d2a05fec-fca0-475a-a689-03c086f95106}",
+  "ok": true,
+  "schema_version": 1,
+  "captured_at": "2026-09-17T04:56:53.713774+00:00",
+  "method": "temporary KWin script via public Workspace/Window API",
+  "command": "inventory",
+  "persistent_kwin_changes": false
+}

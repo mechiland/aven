@@ -21,6 +21,7 @@ def main():
     p.add_argument('--system-fonts-ready',action='store_true',help='Verify fontconfig installed by the ISO; do not invoke sudo')
     p.add_argument('--without-shell-reload',action='store_true',help='Seed before Plasma starts; apply the panel after shell startup')
     p.add_argument('--style', choices=['breeze', 'union'], default='breeze')
+    p.add_argument('--refresh', action='store_true', help='Refresh managed app appearance and layout; retain accounts and user data')
     a=p.parse_args()
     if os.getuid()==0 or not Path('/run/ostree-booted').exists():
         p.error('Run as the desktop user inside the Aven Atomic guest')
@@ -52,10 +53,11 @@ def main():
         run('sudo',sys.executable,ROOT/'typography/install.py','--root','/')
     run('fc-cache','-f')
     run(sys.executable,ROOT/'typography/audit.py','--active')
-    run(sys.executable,ROOT/'files/install.py')
-    run(sys.executable,ROOT/'browser/install.py','--home',Path.home())
-    run(sys.executable,ROOT/'mail/install.py','--home',Path.home())
-    run(sys.executable,ROOT/'photos/install.py','--home',Path.home())
+    refresh = ['--refresh'] if a.refresh else []
+    run(sys.executable,ROOT/'files/install.py',*(['--refresh-layout'] if a.refresh else []))
+    run(sys.executable,ROOT/'browser/install.py','--home',Path.home(),*refresh)
+    run(sys.executable,ROOT/'mail/install.py','--home',Path.home(),*refresh)
+    run(sys.executable,ROOT/'photos/install.py','--home',Path.home(),*refresh)
     run('update-desktop-database',Path.home()/'.local/share/applications')
     # Fedora's xdg-settings KDE path still invokes unversioned qtpaths.
     # GIO writes the standard user MIME associations without that legacy shim.

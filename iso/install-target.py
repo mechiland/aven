@@ -52,10 +52,21 @@ def main():
     repo = physical / 'ostree/repo'
     # A pull of the layer alone does not import its base. rpm-ostree needs both.
     run('ostree', f'--repo={repo}', 'pull-local', '--untrusted', '--depth=0', MEDIA / 'ostree/repo', base)
+    # Local package requests refer to cached RPM payload commits as well as the
+    # deployment tree. Retain those refs for future rpm-ostree transactions.
+    cache_refs = ostree.get('package_cache_refs', [])
+    if any(not ref.startswith('rpmostree/pkg/') or '..' in ref for ref in cache_refs):
+        raise RuntimeError('Invalid rpm-ostree package-cache reference')
+    if cache_refs:
+        run('ostree', f'--repo={repo}', 'pull-local', '--untrusted', '--depth=0', MEDIA / 'ostree/repo', *cache_refs)
     run('ostree', f'--repo={repo}', 'refs', '--force', '--create=' + ostree['origin'], base)
     origin = GLib.KeyFile()
     origin.set_string('origin', 'baserefspec', ostree['origin'])
     origin.set_string_list('packages', 'requested', ostree['requested_packages'])
+    if ostree.get('requested_local_packages'):
+        origin.set_string_list('packages', 'requested-local', ostree['requested_local_packages'])
+    if ostree.get('local_replacements'):
+        origin.set_string_list('overrides', 'replace-local', ostree['local_replacements'])
     if not sysroot.write_origin_file(deployment, origin, None):
         raise RuntimeError('Could not preserve the rpm-ostree layering origin')
     # Use the signed Fedora update origin from the deployed tree.

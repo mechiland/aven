@@ -6,10 +6,12 @@ manager. Fedora's Atomic deployments, update path, SELinux and rollback remain
 part of the product.
 
 The experimental **Union variant** uses Plasma 6.8 Beta and a native Aven Mist
-Union theme. See [Union build and verification](docs/UNION.md).
+Union theme. See the current [500 emphasis and translucent dock revision](docs/UNION-DOCK-MEDIUM.md),
+the [macOS 15 framework revision](docs/UNION-SEQUOIA.md)
+and [Union build and verification](docs/UNION.md).
 Its status is separate from the earlier Breeze prototype results below.
 
-The booted **round 4 prototype passes** the independent focused review:
+The earlier Breeze **round 4 prototype passed** the independent focused review:
 **8.33 overall, 8.5 Chinese typography**, and **yes** on three-second refinement.
 The strict evidence gate passes with zero errors. All 17 required native
 operations and 75 automated tests pass; current SC/TC UI/prose pairs cover
@@ -27,24 +29,22 @@ Plasma 6.7.5, Dolphin/Gwenview/Okular 26.08.1, Firefox 155 and Thunderbird
 The release artifact is a **bootable x86_64 installer ISO** with an offline Aven
 payload and Fedora's native Anaconda installer and first-user setup.
 
-The exact release ISO passes offline installation, native first-user setup,
-automatic Aven defaults, preview handoffs and second-boot persistence. Its fresh
-[installed-ISO visual review](docs/critic-iso-candidate5.md) passes at **8.27 overall
-and 8.5 Chinese** at 1×. Fractional-scale and motion evidence above belongs to the
-round-4 prototype.
-
-Download all four `.iso.part-*` files, `ISO-PARTS.json`, and `reassemble-iso.py`
-from the [prototype release](https://github.com/mechiland/aven/releases/tag/v0.1.0-prototype).
-Keep them in one directory, then run:
+The current experimental **Union 0.3.1** image contains the refined app frames,
+500 emphasis and translucent dock. Download the complete 8.05 GB
+[ISO from Cloudflare R2](https://aven-downloads.mechiland.workers.dev/releases/v0.3.1/Aven-Union-44-0.3.1-x86_64.iso)
+and its [checksum file](https://aven-downloads.mechiland.workers.dev/releases/v0.3.1/Aven-Union-0.3.1-SHA256SUMS),
+then verify:
 
 ```sh
-python3 reassemble-iso.py
+sha256sum --check Aven-Union-0.3.1-SHA256SUMS
 ```
 
-On Windows use `py -3 reassemble-iso.py`. The helper checks each part and the
-complete ISO. Write that ISO to a USB drive of at least 16 GB, or attach it as a
-virtual optical drive. The individual parts cannot boot. See the
-[ISO guide](docs/ISO.md) for details and verification limits.
+Write the image to a USB drive of at least 16 GB, or attach it as a virtual
+optical drive. No reassembly is needed. See the [ISO guide](docs/ISO.md),
+[Union installation evidence](docs/UNION-ISO-0.3.1.md) and
+[release notes](https://github.com/mechiland/aven/releases/tag/v0.3.1).
+Current Union visual scores remain pending; the earlier Breeze scores above
+do not assess this ISO.
 
 ## Inspect the existing laboratory prototype
 

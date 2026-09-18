@@ -1,38 +1,38 @@
 [
   {
     "asset": "aven-files.png",
-    "source": "evidence/verification/iso-candidate5/files-sc-grid.png",
-    "sha256": "dcf5de6ac4275668eb54cc2b56195a3e08714c58bb3ef49e9b038e6b228d8e3d",
+    "source": "evidence/aven/round-06/files-final-1x.png",
+    "sha256": "58a827335cd165d89e1308f710de5749d0c25771950fda6c7138cd2eebc1746b",
     "modified": false
   },
   {
     "asset": "aven-preview.png",
-    "source": "evidence/verification/iso-candidate5/preview-earthrise.png",
-    "sha256": "3ce3d91bb703ecc2fa78daf2c6d0d97d2bb19628c6d4a1c935e45052cd58d2f2",
+    "source": "evidence/aven/round-06/preview-image-accepted-1x.png",
+    "sha256": "5356f2c681a50d58d1122c749052827d5c54811da1dde8e34c8eadd3f1277d50",
     "modified": false
   },
   {
     "asset": "aven-browser.png",
-    "source": "evidence/verification/iso-candidate5/browser-sc.png",
-    "sha256": "55bfa668b9734c4a5eb85a106d512775cf9df3e0863cfcaf0f9924f27b4b2b49",
+    "source": "evidence/aven/round-06/browser-sc-accepted-1x.png",
+    "sha256": "ed6bc03cb513e88814ed988f9c04c87a056f8fa82cdf814be208b2cb3a282699",
     "modified": false
   },
   {
     "asset": "aven-mail.png",
-    "source": "evidence/verification/iso-candidate5/mail-sc.png",
-    "sha256": "368383bc70109feddcf188857ad5c634f391ae595ee34ff9ea4755b672ff9702",
+    "source": "evidence/aven/round-07/mail-final.png",
+    "sha256": "a75f69fcdffd15fdee8d84780f43f39fc8dcd633c6d00304338c14b9fb26edc3",
     "modified": false
   },
   {
     "asset": "aven-photos.png",
-    "source": "evidence/verification/iso-candidate5/photos-grid.png",
-    "sha256": "933096cea5d0dcbae3c81bf41e8afe02e53eb2342e10ed96178a5d8d6a9ea4dc",
+    "source": "evidence/aven/round-07/photos-restored-dot.png",
+    "sha256": "669b2676eccfff1603ae983583860730e85156502a998723ed9665f24d61cb79",
     "modified": false
   },
   {
     "asset": "aven-typography.png",
-    "source": "evidence/verification/iso-candidate5/preview-text-sc.png",
-    "sha256": "643403c71cb96119f477cfea21eb458cb4618ca3fadd46c36e32536401a7eadf",
+    "source": "evidence/aven/round-06/preview-text-accepted-1x.png",
+    "sha256": "8b5927c3748e84e7966a79ac55cfa36ba00c6d606c5063dd779d9523ac5dec81",
     "modified": false
   },
   {

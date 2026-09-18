@@ -1,0 +1,13 @@
+{
+  "parts": 240,
+  "all_part_md5_match_local": true,
+  "completed_multipart_etag": "f1f456dd5ec130ad28ef07ba4f875831-240",
+  "head": {
+    "key": "releases/v0.3.1/Aven-Union-44-0.3.1-x86_64.iso",
+    "size": 8051228672,
+    "etag": "f1f456dd5ec130ad28ef07ba4f875831-240",
+    "customMetadata": {
+      "sha256": "59d81e2afb1c7241c274f961ae83cb13dd54d77a15459b266c87c1f458ef23eb"
+    }
+  }
+}
