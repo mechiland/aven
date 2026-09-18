@@ -43,6 +43,8 @@ class FirstLoginCompletionTests(unittest.TestCase):
             self.calls.append(argv)
             if fail_places and any(str(item).endswith("files/finalize-places.py") for item in argv):
                 raise subprocess.CalledProcessError(75, argv)
+            if argv[-1] == "org.kde.KWin.VirtualDesktopManager.count":
+                return subprocess.CompletedProcess(argv, 0, stdout="1\n")
             return subprocess.CompletedProcess(argv, 0)
         with patch.object(self.module.subprocess, "run", side_effect=run):
             self.module.main()

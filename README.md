@@ -6,7 +6,9 @@ manager. Fedora's Atomic deployments, update path, SELinux and rollback remain
 part of the product.
 
 The experimental **Union variant** uses Plasma 6.8 Beta and a native Aven Mist
-Union theme. See the current [500 emphasis and translucent dock revision](docs/UNION-DOCK-MEDIUM.md),
+Union theme. The latest unreleased change is the
+[full-width translucent panel](docs/UNION-FULL-WIDTH-PANEL.md). See also the
+[500 emphasis and translucent dock revision](docs/UNION-DOCK-MEDIUM.md),
 the [macOS 15 framework revision](docs/UNION-SEQUOIA.md)
 and [Union build and verification](docs/UNION.md).
 Its status is separate from the earlier Breeze prototype results below.

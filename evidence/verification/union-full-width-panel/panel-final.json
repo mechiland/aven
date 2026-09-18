@@ -1,0 +1,110 @@
+[
+  {
+    "height": 58,
+    "length": 1920,
+    "lengthMode": "fill",
+    "opacity": "translucent",
+    "floating": false,
+    "widgets": [
+      {
+        "id": 3,
+        "type": "org.kde.plasma.kickoff",
+        "index": 2,
+        "geometry": {
+          "x": 818,
+          "y": 4,
+          "width": 50,
+          "height": 50
+        }
+      },
+      {
+        "id": 4,
+        "type": "org.kde.plasma.pager",
+        "index": 0,
+        "geometry": {
+          "x": 14,
+          "y": 4,
+          "width": 160,
+          "height": 50
+        }
+      },
+      {
+        "id": 5,
+        "type": "org.kde.plasma.icontasks",
+        "index": 3,
+        "geometry": {
+          "x": 872,
+          "y": 0,
+          "width": 229,
+          "height": 58
+        }
+      },
+      {
+        "id": 6,
+        "type": "org.kde.plasma.marginsseparator",
+        "index": 5,
+        "geometry": {
+          "x": 1620,
+          "y": 0,
+          "width": 1,
+          "height": 58
+        }
+      },
+      {
+        "id": 7,
+        "type": "org.kde.plasma.systemtray",
+        "index": 6,
+        "geometry": {
+          "x": 1625,
+          "y": 4,
+          "width": 146,
+          "height": 50
+        }
+      },
+      {
+        "id": 22,
+        "type": "org.kde.plasma.digitalclock",
+        "index": 7,
+        "geometry": {
+          "x": 1775,
+          "y": 4,
+          "width": 94.09375,
+          "height": 50
+        }
+      },
+      {
+        "id": 23,
+        "type": "org.kde.plasma.showdesktop",
+        "index": 8,
+        "geometry": {
+          "x": 1874,
+          "y": 4,
+          "width": 32,
+          "height": 50
+        }
+      },
+      {
+        "id": 27,
+        "type": "org.kde.plasma.panelspacer",
+        "index": 1,
+        "geometry": {
+          "x": 178,
+          "y": 4,
+          "width": 636,
+          "height": 50
+        }
+      },
+      {
+        "id": 28,
+        "type": "org.kde.plasma.panelspacer",
+        "index": 4,
+        "geometry": {
+          "x": 1105,
+          "y": 4,
+          "width": 511,
+          "height": 50
+        }
+      }
+    ]
+  }
+]

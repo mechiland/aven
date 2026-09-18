@@ -135,10 +135,10 @@ def main():
         env['XDG_RUNTIME_DIR'] = f'/run/user/{os.getuid()}'
         env['DBUS_SESSION_BUS_ADDRESS'] = f'unix:path={env["XDG_RUNTIME_DIR"]}/bus'
         wallpaper = share/'wallpapers/AvenEstuary/contents/images/3840x2160.svg'
-        script=(ROOT/'integration/plasma-layout.js.in').read_text().replace('@WALLPAPER@',wallpaper.as_uri()).replace('@UNION_DOCK@','true' if a.style == 'union' else 'false')
         dbus=shutil.which('qdbus6') or shutil.which('qdbus-qt6') or shutil.which('qdbus')
         if not dbus: raise RuntimeError('qdbus6 is required for the running Plasma session')
-        command(dbus,'org.kde.plasmashell','/PlasmaShell','org.kde.PlasmaShell.evaluateScript',script)
+        from panel_layout import apply_layout
+        apply_layout(dbus, a.style, wallpaper)
         # KWin reads QFontDatabase::TitleFont through the platform-theme cache.
         # Reconfigure alone does not refresh an already cached WM activeFont.
         command('dbus-send','--session','--type=signal','/KDEPlatformTheme',

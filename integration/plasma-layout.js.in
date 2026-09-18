@@ -1,4 +1,4 @@
-// Public Plasma scripting API. Modify the existing panel without replacing widgets.
+// Public Plasma scripting API. Reuse native widgets and their saved state.
 for (const desktop of desktops()) {
     desktop.wallpaperPlugin = 'org.kde.image';
     desktop.currentConfigGroup = ['Wallpaper', 'org.kde.image', 'General'];
@@ -9,7 +9,7 @@ for (const panel of panels()) {
     panel.alignment = 'center';
     if (@UNION_DOCK@) {
         panel.height = 58;
-        panel.lengthMode = 'fit';
+        panel.lengthMode = 'fill';
         panel.opacity = 'translucent';
     } else {
         panel.height = 48;
@@ -20,7 +20,35 @@ for (const panel of panels()) {
         panel.opacity = 'adaptive';
     }
     panel.hiding = 'none';
-    panel.floating = true;
+    panel.floating = !@UNION_DOCK@;
+    if (@UNION_DOCK@) {
+        const widgets = panel.widgets().sort((a, b) => a.index - b.index);
+        const pager = widgets.find(w => w.type === 'org.kde.plasma.pager')
+            || panel.addWidget('org.kde.plasma.pager');
+        const spacers = widgets.filter(w => w.type === 'org.kde.plasma.panelspacer');
+        while (spacers.length < 2) spacers.push(panel.addWidget('org.kde.plasma.panelspacer'));
+        for (const spacer of spacers.slice(0, 2)) {
+            spacer.currentConfigGroup = ['General'];
+            spacer.writeConfig('expanding', true);
+        }
+        const apps = widgets.filter(w => w.type === 'org.kde.plasma.kickoff'
+            || w.type === 'org.kde.plasma.icontasks');
+        const edgeOrder = {'org.kde.plasma.systemtray': 1,
+            'org.kde.plasma.digitalclock': 2, 'org.kde.plasma.showdesktop': 3};
+        const right = widgets.filter(w => w.id !== pager.id
+            && !apps.some(app => app.id === w.id)
+            && !spacers.slice(0, 2).some(spacer => spacer.id === w.id))
+            .sort((a, b) => (edgeOrder[a.type] || 0) - (edgeOrder[b.type] || 0));
+        // Plasma's two expanding spacers balance unequal edge groups, keeping
+        // the launcher/task group at the screen center as tray contents change.
+        const order = [pager, spacers[0], ...apps, spacers[1], ...right];
+        // In Plasma 6.7.90 index=n-1 is clamped to n-2 after removing the
+        // moving widget. Prepending in reverse also works on the first apply.
+        order.reverse().forEach(widget => { widget.index = 0; });
+        pager.currentConfigGroup = ['General'];
+        pager.writeConfig('pagerLayout', 1); // One horizontal row of spaces.
+        pager.writeConfig('displayedText', 0); // Desktop numbers.
+    }
     for (const widget of panel.widgets()) {
         if (widget.type === 'org.kde.plasma.icontasks') {
             widget.currentConfigGroup = ['General'];
@@ -43,7 +71,7 @@ for (const panel of panels()) {
                 widget.writeConfig('fontSize', 10);
                 widget.writeConfig('fontWeight', 400);
                 widget.writeConfig('boldText', false);
-                widget.writeConfig('dateDisplayFormat', 2);
+                widget.writeConfig('dateDisplayFormat', 1); // Always beside time.
             }
         }
     }
