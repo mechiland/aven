@@ -1,0 +1,12 @@
+{
+  "version": "0.4.0",
+  "status": "published",
+  "platform": "Fedora Kinoite 44 x86_64",
+  "url": "https://github.com/mechiland/aven/releases/download/aven-kinoite-44/Aven-Installer.tar.gz",
+  "filename": "Aven-Installer.tar.gz",
+  "bytes": 7195,
+  "sha256": "93a57286263d5ceb00a6057909815f891b3d530912d414226fb494f66ebcd425",
+  "release_url": "https://github.com/mechiland/aven/releases/tag/aven-kinoite-44",
+  "channel_url": "https://github.com/mechiland/aven/releases/download/aven-kinoite-44/channel.json",
+  "verification": "evidence/verification/online-updates/report.json"
+}

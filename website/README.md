@@ -36,6 +36,13 @@ and a positive integer byte count. The build fails on incomplete published
 metadata. The page exposes the exact size and checksum next to the single-file
 ISO link. No multipart reconstruction is required.
 
+`public/updates.json` records the separately verified 0.4.0 online installer,
+its direct GitHub download, SHA-256, byte count and update channel. `src/updates.mjs`
+validates that metadata and contains the bilingual installation, update and
+recovery copy. The 0.3.1 ISO remains a separate release; it has not been rebuilt
+with the latest panel. Routine updates retain the user's layout; adopting new
+layout defaults requires the explicit `--reset-defaults` option.
+
 The ISO is stored in Cloudflare R2. Its public read-only download Worker and
 release verification are managed separately from this static website. Update
 the release-notes link in `src/content.mjs` if the release tag changes.
@@ -49,16 +56,20 @@ the release-notes link in `src/content.mjs` if the release tag changes.
 - `assets-manifest.json`: original screenshot paths and SHA-256 hashes; also published.
 - `public/credits.txt`: image sources, attribution and font licensing.
 
-All 11 screenshots are exact copies of native 1920 × 1200 PNG captures.
-Union Mail and Photos use round-07 captures of the latest translucent Dock.
-Files, Browser, Preview and the linked typography view use round-06 captures
-with the earlier Dock. Stock captures remain from round-00. The page clearly
-discloses capture rounds and differences in content, layout and interaction
-state. These themed test-VM captures are separate from fresh-install evidence
-for the downloadable ISO. They are not retouched or used to assign a new visual
-review score. Union remains an experimental Plasma 6.8 Beta prototype, with its
-visual score and three-second differentiation judgment pending. Historical Breeze
-scores are not reused. The type specimen is live website text, not a desktop screenshot.
+All 13 screenshots are exact copies of native PNG captures. The hero and Files
+use round-08 Chinese/Latin filenames with the full-width bottom panel; the panel
+section uses round-08's desktop capture. Mail and Photos remain round 07, while
+Browser, Preview and typography remain round 06. The older captures show floating
+Docks and are labeled accordingly. Stock comparisons remain round 00. All five
+comparison pairs are 1920 × 1200; the separate online installation proof is an
+unmodified 1440 × 900 capture from `evidence/verification/online-updates/`.
+
+Each asset has its original path, hash and native dimensions in the manifest.
+Capture rounds, online update verification and ISO fresh-install validation are
+kept distinct. Union remains experimental with Plasma 6.8 Beta. Its overall and
+Chinese visual scores and three-second differentiation judgment remain pending.
+Historical Breeze scores are not reused. The live type specimen is website text,
+not a desktop screenshot.
 
 The bundled Noto Sans CJK SC subsets retain original outlines and metrics,
 with renamed subset families and the full SIL Open Font License. Regenerate
@@ -71,7 +82,7 @@ for Chinese; regular copy remains 400.
 
 `npm run check` validates routes, local references, ARIA targets, bilingual
 navigation, five comparison pairs, exact screenshot hashes and pixel dimensions,
-release metadata consistency, stale multipart instructions and JavaScript syntax.
+ISO and online installer metadata, update instructions, screenshot provenance, stale multipart instructions and JavaScript syntax.
 These checks are separate from real browser inspection and OS visual review.
 `deployment.json` describes the last recorded deployment; rebuilding locally
 does not update or republish that record.

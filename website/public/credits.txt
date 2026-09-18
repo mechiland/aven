@@ -2,9 +2,12 @@ Aven website — screenshot and image credits / 截图与图像来源
 
 All screenshots are unmodified PNGs from the public Aven repository.
 Source: https://github.com/mechiland/aven/tree/main/evidence
-Union: evidence/aven/round-06/ and evidence/aven/round-07/
+Union: evidence/aven/round-06/, round-07/ and round-08/
+Online installation: evidence/verification/online-updates/aven-files-chinese.png
 These are themed test-VM captures, not fresh-install evidence for ISO 0.3.1.
-Mail and Photos show the updated translucent Dock. Other captures retain the earlier Dock.
+The hero, Files and desktop show the round-08 full-width panel.
+Mail and Photos retain the round-07 floating Dock; Browser and Preview retain round 06.
+The separate online installation capture is 1440 x 900; comparison pairs are 1920 x 1200.
 Exact source paths and SHA-256 hashes: /assets-manifest.json
 Fedora: evidence/stock/round-00/
 Fonts: Noto Sans CJK SC, subset for this site; SIL Open Font License 1.1.
