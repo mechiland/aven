@@ -108,6 +108,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--home", required=True, type=Path, help="Explicit isolated guest user home")
     parser.add_argument("--refresh", action="store_true", help="Reapply Aven defaults; Firefox must be closed")
+    parser.add_argument("--update", action="store_true", help="Update chrome assets while retaining all existing preferences")
     args = parser.parse_args()
     home = args.home.expanduser().resolve()
     if not home.is_dir():
@@ -134,10 +135,11 @@ def main() -> None:
             fcntl.lockf(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError:
             parser.error("Close the Aven Firefox profile before installing preferences")
-        if seed:
+        if seed or args.update:
             # Chrome layout and typography only; website CSS is untouched.
             shutil.copytree(ROOT / "browser/chrome", profile / "chrome", dirs_exist_ok=True)
             atomic_write(profile / "chrome/union-typography.css", typography_css(roles))
+        if seed:
             original = pref_path.read_text() if pref_path.exists() else ""
             prefs.update(toolbar_preferences(original))
             keys = "|".join(re.escape(json.dumps(key)) for key in prefs)

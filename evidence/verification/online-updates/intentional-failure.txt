@@ -1,0 +1,48 @@
+{
+  "installed": "0.4.0-test.3",
+  "available": "0.4.0-test.4",
+  "changed_components": [
+    "updates"
+  ],
+  "download_bytes": 0
+}
+Fedora Kinoite dependencies are ready; no system deployment change needed.
+Traceback (most recent call last):
+  File "/home/aven/.local/share/aven/updater/versions/b40ae87db2c070a0b195c517ea026aee4671f1a1ec21478c37d9fd391ec89e13/updates/profile.py", line 196, in <module>
+    main()
+    ~~~~^^
+  File "/home/aven/.local/share/aven/updater/versions/b40ae87db2c070a0b195c517ea026aee4671f1a1ec21478c37d9fd391ec89e13/updates/profile.py", line 192, in main
+    apply(Path.home(), args.style, args.mode)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aven/.local/share/aven/updater/versions/b40ae87db2c070a0b195c517ea026aee4671f1a1ec21478c37d9fd391ec89e13/updates/profile.py", line 148, in apply
+    raise RuntimeError("Intentional recovery integration test")
+RuntimeError: Intentional recovery integration test
+Update did not finish. The previous receipt is retained. Run aven recover.
+Aven: Command '['/usr/bin/python3', '/home/aven/.local/share/aven/updater/versions/b40ae87db2c070a0b195c517ea026aee4671f1a1ec21478c37d9fd391ec89e13/updates/profile.py', 'apply', '--style', 'union', '--mode', 'update']' returned non-zero exit status 1.
+{
+  "version": "0.4.0-test.3",
+  "style": "union",
+  "installed_at": "20260918T022943.593363Z",
+  "channel": "file:///home/aven/aven-update-feed/channel.json",
+  "recovery_required": true,
+  "rollback_available": true
+}
+Traceback (most recent call last):
+  File "/home/aven/.local/share/aven/updater/versions/b40ae87db2c070a0b195c517ea026aee4671f1a1ec21478c37d9fd391ec89e13/updates/profile.py", line 196, in <module>
+    main()
+    ~~~~^^
+  File "/home/aven/.local/share/aven/updater/versions/b40ae87db2c070a0b195c517ea026aee4671f1a1ec21478c37d9fd391ec89e13/updates/profile.py", line 190, in main
+    restore_snapshot(Path.home(), args.destination, args.expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aven/.local/share/aven/updater/versions/b40ae87db2c070a0b195c517ea026aee4671f1a1ec21478c37d9fd391ec89e13/updates/profile.py", line 117, in restore_snapshot
+    raise ValueError('Log out of Plasma first; run aven recover/rollback from a text console to avoid settings races')
+ValueError: Log out of Plasma first; run aven recover/rollback from a text console to avoid settings races
+Aven: Command '['/usr/bin/python3', '/home/aven/.local/share/aven/updater/versions/b40ae87db2c070a0b195c517ea026aee4671f1a1ec21478c37d9fd391ec89e13/updates/profile.py', 'restore', '--destination', '/home/aven/.local/state/aven/updates/transactions/20260918T023208.175226Z/before']' returned non-zero exit status 1.
+{
+  "version": "0.4.0-test.3",
+  "style": "union",
+  "installed_at": "20260918T022943.593363Z",
+  "channel": "file:///home/aven/aven-update-feed/channel.json",
+  "recovery_required": true,
+  "rollback_available": true
+}

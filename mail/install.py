@@ -10,7 +10,7 @@ from pathlib import Path
 import shlex
 import tempfile
 
-from profile import MARKER, create, refresh
+from profile import MARKER, create, refresh, install_chrome
 
 LAUNCHER_MARKER = '# Aven managed mail launcher v1'
 DESKTOP_MARKER = 'X-Aven-Managed=mail-v1'
@@ -40,6 +40,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--home', type=Path, required=True, help='Explicit guest user home, owned by current user')
     parser.add_argument('--refresh', action='store_true', help='Refresh appearance in the closed managed profile, preserving accounts and mail')
+    parser.add_argument('--update', action='store_true', help='Update chrome only; preserve accounts, layout and preferences')
     args = parser.parse_args()
     home = args.home.expanduser().resolve()
     if not home.is_dir() or home.stat().st_uid != os.getuid():
@@ -65,6 +66,8 @@ def main():
         if args.refresh:
             with contextlib.redirect_stdout(io.StringIO()):
                 refresh(profile)
+        elif args.update:
+            install_chrome(profile)
         # Without --refresh retain the existing profile and user customizations.
     else:
         with contextlib.redirect_stdout(io.StringIO()):

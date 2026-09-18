@@ -12,4 +12,5 @@ __pycache__/
 /output/*.tar.gz
 /output/*.partial
 /output/release-assets/
+/output/updates-*/
 /evidence/interaction/*/frame-*.png

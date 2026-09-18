@@ -1,0 +1,129 @@
+plasma-desktop-6.7.5-1.fc44.x86_64
+[(True, False, '44.20260913.0'), (False, False, '44.1.7')]
+{
+  "installed": null,
+  "available": "0.4.0-test.1",
+  "changed_components": [
+    "browser",
+    "files",
+    "integration",
+    "mail",
+    "photos",
+    "preview",
+    "typography",
+    "updates",
+    "verification",
+    "visual"
+  ],
+  "download_bytes": 0
+}
+Preparing 85 pinned Union dependencies; this first installation may download about 440 MB.
+Inactive requests:
+  python3-pyside6 (already provided by python3-pyside6-6.11.2-1.fc44.x86_64)
+Checking out tree be803f3...done
+Enabled rpm-md repositories: fedora-cisco-openh264 updates fedora updates-archive
+Importing rpm-md...done
+rpm-md repo 'fedora-cisco-openh264' (cached); generated: 2026-03-24T10:37:04Z solvables: 3
+rpm-md repo 'updates' (cached); generated: 2026-09-17T00:48:04Z solvables: 29111
+rpm-md repo 'fedora' (cached); generated: 2026-04-22T13:34:32Z solvables: 76354
+rpm-md repo 'updates-archive' (cached); generated: 2026-09-17T02:15:59Z solvables: 42673
+Resolving dependencies...done
+Applying 83 overrides and 19 overlays
+Processing packages...done
+Running systemd-sysusers...done
+Running pre scripts...done
+Running post scripts...done
+Running posttrans scripts...done
+Writing rpmdb...done
+Writing OSTree commit...done
+Staging deployment...done
+Upgraded:
+  aurorae 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  bluedevil 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  breeze-cursor-theme 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  breeze-gtk-common 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  breeze-gtk-gtk3 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  breeze-gtk-gtk4 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  flatpak-kcm 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kactivitymanagerd 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kcm-plasma-keyboard 1:6.7.5-1.fc44 -> 1:6.7.90-1.fc44
+  kcm-plasmalogin 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kde-cli-tools 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kde-gtk-config 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kdecoration 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kdeplasma-addons 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kdesu 1:6.7.5-1.fc44 -> 1:6.7.90-1.fc44
+  kglobalacceld 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kinfocenter 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kmenuedit 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  knighttime 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kpipewire 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  krdp 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  krdp-libs 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kscreen 1:6.7.5-1.fc44 -> 1:6.7.90-1.fc44
+  kscreenlocker 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  ksshaskpass 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  ksystemstats 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kwayland 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kwin 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kwin-common 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kwin-libs 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  kwrited 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  layer-shell-qt 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  libkscreen 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  libksysguard 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  libksysguard-common 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  libkworkspace6 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  libplasma 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  ocean-sound-theme 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  pam-kwallet 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-activities 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-activities-stats 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-breeze 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-breeze-common 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-breeze-qt6 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-browser-integration 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-desktop 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-desktop-doc 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-discover 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-discover-flatpak 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-discover-kns 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-discover-libs 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-discover-notifier 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-discover-rpm-ostree 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-disks 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-drkonqi 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-integration 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-keyboard 1:6.7.5-1.fc44 -> 1:6.7.90-1.fc44
+  plasma-login-manager 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-lookandfeel-fedora 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-milou 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-nm 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-nm-openconnect 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-nm-openvpn 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-nm-vpnc 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-pa 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-print-manager 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-print-manager-libs 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-setup 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-systemmonitor 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-systemsettings 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-thunderbolt 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-vault 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-welcome 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-workspace 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-workspace-common 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-workspace-libs 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma-workspace-wallpapers 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  plasma5support 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  polkit-kde 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  powerdevil 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  qqc2-breeze-style 6.7.5-1.fc44 -> 6.7.90-1.fc44
+  spectacle 1:6.7.5-1.fc44 -> 1:6.7.90-1.fc44
+  xdg-desktop-portal-kde 6.7.5-1.fc44 -> 6.7.90-1.fc44
+Added:
+  cxx-rust-cssparser-1.1.0-1.fc44.x86_64
+  plasma-union-6.7.90-1.fc44.x86_64
+Use "rpm-ostree override reset" to undo overrides
+Run "systemctl reboot" to start a reboot
+System dependencies staged with rpm-ostree. Reboot, then run ~/.local/bin/aven update to finish.

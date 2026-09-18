@@ -1,0 +1,20 @@
+{
+  "version": "0.4.0",
+  "channel": "https://github.com/mechiland/aven/releases/download/aven-kinoite-44/channel.json",
+  "signature_verified": true,
+  "all_components_downloaded_and_hashed": true,
+  "download_bytes": 125466,
+  "repeat_download_bytes": 0,
+  "platform_server_digests_verified": 86,
+  "installer_bytes": 7195,
+  "installer_sha256": "93a57286263d5ceb00a6057909815f891b3d530912d414226fb494f66ebcd425",
+  "installer_matches_signed_client_and_trusted_key": true,
+  "release_draft": false,
+  "release_prerelease": true,
+  "server_metadata_source": "saved GitHub API response",
+  "largest_platform_full_download": {
+    "name": "plasma-workspace-wallpapers",
+    "bytes": 308222506,
+    "sha256_verified": true
+  }
+}

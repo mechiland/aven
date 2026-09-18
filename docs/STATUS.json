@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project": "Aven",
   "phase": "prototype_passed",
-  "updated_at": "2026-09-18T01:36:05.571047+00:00",
+  "updated_at": "2026-09-18T02:52:07.190478+00:00",
   "base": {
     "distribution": "Fedora Kinoite",
     "release": 44,
@@ -1010,5 +1010,32 @@
     "rollback_executed": false,
     "new_iso": null,
     "completed_at": "2026-09-18T01:51:24.157012+00:00"
+  },
+  "online_updates": {
+    "version": "0.4.0",
+    "state": "published_experimental_component_channel",
+    "guide": "docs/ONLINE-UPDATES.md",
+    "evidence": "evidence/verification/online-updates/report.json",
+    "platform": "Fedora Kinoite 44 x86_64",
+    "initial_install_verified": true,
+    "dependency_stage_and_reboot_verified": true,
+    "component_upgrade_verified": true,
+    "profile_rollback_verified": true,
+    "interrupted_apply_recovery_verified": true,
+    "theme_only_download_bytes": 20749,
+    "automated_tests_passed": 161,
+    "public_feed_verified": true,
+    "channel_url": "https://github.com/mechiland/aven/releases/download/aven-kinoite-44/channel.json",
+    "scores": null,
+    "chinese_score": null,
+    "three_second_test": null,
+    "visual_pass": null,
+    "note": "Installation/update delivery verification only. Existing Union visual scores remain pending; Fedora deployment rollback is separate from profile rollback.",
+    "public_native_bootstrap_verified": true,
+    "publication_complete": true,
+    "profile_bytes": 125466,
+    "installer_bytes": 7195,
+    "installer_sha256": "93a57286263d5ceb00a6057909815f891b3d530912d414226fb494f66ebcd425",
+    "release_url": "https://github.com/mechiland/aven/releases/tag/aven-kinoite-44"
   }
 }
