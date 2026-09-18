@@ -1,5 +1,6 @@
-import { repository, release, docs, scenes } from './content.mjs';
+import { repository, docs, scenes, updateRelease, assetVersion } from './content.mjs';
 import { iso, downloadReady } from './release.mjs';
+import { update, updateCopy } from './updates.mjs';
 
 const chevron = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const expand = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6m0 6 7-7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>';
@@ -8,8 +9,8 @@ const globe = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle c
 const esc = (s) => s.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 
 export function render(lang, c) {
-  const ids = ['everyday', 'compare', 'typography'];
-  const assetVersion = `union-${iso.version}`;
+  const ids = ['everyday', 'compare', 'typography', 'download'];
+  const u = updateCopy[lang];
   return `<!doctype html>
 <html lang="${c.lang}">
 <head>
@@ -18,8 +19,8 @@ export function render(lang, c) {
   <meta name="description" content="${esc(c.description)}">
   <meta property="og:type" content="website"><meta property="og:title" content="${esc(c.title)}"><meta property="og:description" content="${esc(c.description)}">
   <link rel="canonical" href="/${lang}/"><link rel="alternate" hreflang="en" href="/en/"><link rel="alternate" hreflang="zh-CN" href="/zh-cn/"><link rel="alternate" hreflang="x-default" href="/">
-  <link rel="icon" href="/assets/aven.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css">
-  <link rel="preload" href="/assets/aven-mail.png" as="image"><script src="/app.js" defer></script>
+  <link rel="icon" href="/assets/aven.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css?v=${assetVersion}">
+  <link rel="preload" href="/assets/aven-files.png" as="image"><script src="/app.js?v=${assetVersion}" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">${c.skip}</a>
@@ -40,7 +41,7 @@ export function render(lang, c) {
       <a class="release-line" href="#download">${c.version}${chevron}</a>
     </div>
     <figure class="hero-figure">
-      <a href="/assets/aven-mail.png" class="hero-screen" data-lightbox aria-label="${c.screenshot}"><img src="/assets/aven-mail.png" alt="${c.heroAlt}" width="1920" height="1200" fetchpriority="high"><span class="expand-image">${expand}</span></a>
+      <a href="/assets/aven-files.png" class="hero-screen" data-lightbox aria-label="${c.screenshot}"><img src="/assets/aven-files.png" alt="${c.heroAlt}" width="1920" height="1200" fetchpriority="high"><span class="expand-image">${expand}</span></a>
       <figcaption>${c.heroCaption}</figcaption>
     </figure>
   </section>
@@ -81,8 +82,8 @@ export function render(lang, c) {
   </section>
 
   <section class="dock section" aria-labelledby="dock-title"><div class="wrap dock-layout">
-    <div><p class="eyebrow">${c.dockEyebrow}</p><h2 id="dock-title">${c.dockTitle}</h2><p class="section-intro">${c.dockText}</p><a class="text-link" data-lightbox href="/assets/aven-mail.png">${c.dockLink}${chevron}</a></div>
-    <a class="screenshot-link" data-lightbox href="/assets/aven-mail.png" aria-label="${c.dockLink}"><img src="/assets/aven-mail.png" alt="${c.heroAlt}" width="1920" height="1200" loading="lazy"><span class="expand-image">${expand}</span></a>
+    <div><p class="eyebrow">${c.dockEyebrow}</p><h2 id="dock-title">${c.dockTitle}</h2><p class="section-intro">${c.dockText}</p><p class="panel-note">${u.panelNote}</p><a class="text-link" data-lightbox href="/assets/aven-desktop.png">${c.dockLink}${chevron}</a></div>
+    <a class="screenshot-link" data-lightbox href="/assets/aven-desktop.png" aria-label="${c.dockLink}"><img src="/assets/aven-desktop.png" alt="${c.dockLink}" width="1920" height="1200" loading="lazy"><span class="expand-image">${expand}</span></a>
   </div></section>
 
   <section class="foundation section" aria-labelledby="foundation-title"><div class="wrap">
@@ -92,16 +93,34 @@ export function render(lang, c) {
 
   <section class="download section" id="download" aria-labelledby="download-title"><div class="wrap">
     <img class="download-logo" src="/assets/aven.svg" width="84" height="84" alt="Aven"><p class="eyebrow">${c.downloadEyebrow}</p><h2 id="download-title">${c.downloadTitle}</h2><p class="section-intro">${c.downloadIntro}</p>
+    <div class="update-features">${u.features.map(([title, text]) => `<article><h3>${title}</h3><p>${text}</p></article>`).join('')}</div>
+    <article class="online-install" aria-labelledby="online-title">
+      <div class="online-heading"><p class="eyebrow">${u.label}</p><h3 id="online-title">${u.title}</h3><p>${u.intro}</p></div>
+      <div class="download-actions"><a class="button" href="${esc(update.url)}" download="${esc(update.filename)}">${u.download}${arrow}</a><a class="text-link" href="${docs}/ONLINE-UPDATES.md">${u.guide}${chevron}</a></div>
+      <p class="platform">${u.scope}</p>
+      <details class="installer-metadata"><summary>${u.metadata}</summary><dl class="release-metadata"><div><dt>${c.sizeLabel}</dt><dd>${esc(update.filename)} · ${new Intl.NumberFormat(lang).format(update.bytes)} bytes</dd></div><div><dt>${c.checksumLabel}</dt><dd><code>${update.sha256}</code></dd></div></dl><a class="metadata-link" href="/updates.json">JSON</a></details>
+      <div class="update-instructions">
+        <h4>${u.install}</h4><p>${u.before}</p>
+        <pre><code>tar -xzf Aven-Installer.tar.gz
+python3 aven-installer/aven.py install</code></pre>
+        <p>${u.reboot}</p><pre><code>~/.local/bin/aven update</code></pre>
+        <h4>${u.routine}</h4><dl class="update-commands">${['aven check', 'aven update --download-only', 'aven update', 'aven status'].map((cmd, i) => `<div><dt><code>${cmd}</code></dt><dd>${u.commands[i]}</dd></div>`).join('')}</dl>
+        <p class="defaults-note">${u.defaults}</p>
+        <details class="install-details"><summary>${u.recovery}<span aria-hidden="true">+</span></summary><p>${u.recoveryIntro}</p><dl class="update-commands"><div><dt><code>aven recover</code></dt><dd>${u.recover}</dd></div><div><dt><code>aven rollback</code></dt><dd>${u.rollback}</dd></div></dl><p>${u.recoveryNote}</p></details>
+      </div>
+    </article>
+    <div class="delivery-proof"><div><p>${u.proof}</p><a class="text-link" href="${repository}/blob/main/${update.verification}">${u.proofLink}${chevron}</a></div><figure><a class="screenshot-link" data-lightbox href="/assets/aven-online-install.png" aria-label="${u.proofImage}"><img src="/assets/aven-online-install.png" alt="${u.proofAlt}" width="1440" height="900" loading="lazy"><span class="expand-image">${expand}</span></a><figcaption>${u.proofCaption}</figcaption></figure></div>
+    <article class="iso-install" aria-labelledby="iso-title"><h3 id="iso-title">${u.isoTitle}</h3><p class="iso-intro">${u.isoIntro}</p>
     <div class="download-actions">${downloadReady ? `<a class="button" href="${esc(iso.url)}" download="${esc(iso.filename)}">${c.download}${arrow}</a>` : `<span class="button button-pending" aria-disabled="true">${c.pendingDownload}</span>`}<a class="text-link" href="${docs}/ISO.md">${c.guide}${chevron}</a></div><p class="platform">${c.platform}</p><p class="prerelease">${c.prerelease}</p>
     ${downloadReady ? `<dl class="release-metadata"><div><dt>ISO</dt><dd>${esc(iso.filename)}</dd></div><div><dt>${c.sizeLabel}</dt><dd>${(iso.bytes / 1024 ** 3).toFixed(2)} GiB · ${new Intl.NumberFormat(lang).format(iso.bytes)} bytes</dd></div><div class="checksum"><dt>${c.checksumLabel}</dt><dd><code>${iso.sha256}</code></dd></div></dl>` : `<p class="release-pending">${c.pendingNote}</p>`}<a class="metadata-link" href="/release.json">${c.manifestLabel}</a>
-    <details class="install-details"><summary>${c.installTitle}<span aria-hidden="true">+</span></summary><ol>${c.installSteps.map(s => `<li>${s}</li>`).join('')}</ol><p>${c.installNote}</p></details>
+    <details class="install-details"><summary>${c.installTitle}<span aria-hidden="true">+</span></summary><ol>${c.installSteps.map(s => `<li>${s}</li>`).join('')}</ol><p>${c.installNote}</p></details></article>
   </div></section>
 </main>
 
 <footer><div class="wrap">
   <div class="footer-top"><a class="wordmark" href="/${lang}/">aven</a><p>${c.footerLine}</p></div>
-  <div class="evidence-note"><p><strong>${c.evidenceTitle}${lang === 'en' ? '.' : '。'}</strong> ${c.evidenceText}</p><p>${c.limits}</p><div class="evidence-links"><a href="${docs}/UNION-ISO-0.3.1.md">${c.evidence}</a><a href="${docs}/UNION-SEQUOIA.md">${c.critic}</a><a href="/credits.txt">${c.credits}</a></div></div>
-  <div class="footer-bottom"><span>© 2026 ${c.copyright}</span><div><a href="${repository}">${c.footerSource}</a><a href="${downloadReady ? release : `${repository}/releases`}">${c.releaseNotes}</a></div><div class="footer-languages" aria-label="${c.languageLabel}">${globe}<a href="/zh-cn/" lang="zh-CN" ${lang === 'zh-cn' ? 'aria-current="page"' : ''}>简体中文</a><span>/</span><a href="/en/" lang="en" ${lang === 'en' ? 'aria-current="page"' : ''}>English</a></div></div>
+  <div class="evidence-note"><p><strong>${c.evidenceTitle}${lang === 'en' ? '.' : '。'}</strong> ${c.evidenceText}</p><p>${c.limits}</p><div class="evidence-links"><a href="${docs}/UNION-ISO-0.3.1.md">${c.evidence}</a><a href="${docs}/UNION-FULL-WIDTH-PANEL.md">${c.critic}</a><a href="/credits.txt">${c.credits}</a></div></div>
+  <div class="footer-bottom"><span>© 2026 ${c.copyright}</span><div><a href="${repository}">${c.footerSource}</a><a href="${updateRelease}">${c.releaseNotes}</a></div><div class="footer-languages" aria-label="${c.languageLabel}">${globe}<a href="/zh-cn/" lang="zh-CN" ${lang === 'zh-cn' ? 'aria-current="page"' : ''}>简体中文</a><span>/</span><a href="/en/" lang="en" ${lang === 'en' ? 'aria-current="page"' : ''}>English</a></div></div>
 </div></footer>
 <dialog id="lightbox" aria-label="${c.screenshot}"><div class="lightbox-toolbar"><span>${c.screenshot}</span><div><a id="lightbox-original" href="/assets/aven-files.png" target="_blank" rel="noopener">${c.original}${expand}</a><button id="lightbox-close" aria-label="${c.dialogClose}">×</button></div></div><div class="lightbox-image"><img id="lightbox-image" alt="" width="1920" height="1200"></div><p>${c.zoomHint}</p></dialog>
 <script type="application/json" id="scene-data">${JSON.stringify({ids: scenes.map(s => s.id), labels: c.labels, details: c.compareDetails, before: c.before, after: c.after, assetVersion, screenshot: c.screenshot}).replaceAll('<', '\\u003c')}</script>

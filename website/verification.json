@@ -1,38 +1,31 @@
 {
-  "checked_at": "2026-09-17",
-  "environment": "Local Wrangler preview, real Chrome browser through CUA",
+  "checked_at": "2026-09-18T03:11:49.884194+00:00",
+  "scope": "Website refresh for round-08 screenshots and Aven 0.4.0 online installation/updates",
   "build": "pass",
-  "static_checks": "pass: four pages, 118 local references, ARIA targets, bilingual navigation, five comparisons, eleven source-identical screenshots, JavaScript syntax",
-  "desktop_browser": {
-    "viewport_width": 1643,
-    "chinese_heading_weight": 500,
-    "heading_font": "Aven Web Noto",
-    "horizontal_overflow": false,
-    "mail_tab": "pass",
-    "mail_comparison_switch": "pass",
-    "comparison_keyboard_slider": "pass: 51% stock / 49% Union",
-    "original_screenshot_dialog": "pass: correct Mail image, opens and closes",
-    "download_anchor": "pass",
-    "installation_disclosure": "pass: single-file ISO instructions"
+  "static_checks": "pass: four pages, 127 local references, ARIA targets, bilingual navigation, five comparison pairs, thirteen source-identical screenshots, ISO and installer metadata, update commands and JavaScript syntax",
+  "chinese_font_coverage": {
+    "unique_characters": 431,
+    "regular": true,
+    "medium": true,
+    "bold": true
   },
-  "mobile_browser": {
-    "viewport": "390 x 844",
-    "english_home": "inspected",
-    "chinese_typography": "inspected",
-    "horizontal_overflow": false,
-    "mobile_menu_open_close": "pass",
-    "language_switch_preserves_section": "pass: /zh-cn/#typography",
-    "font_loading": "loaded",
-    "temporary_viewport_reset": true
-  },
-  "iso_public_download": "pass: public HEAD 200, exact content length and byte-range 206; full ISO verification is recorded separately by the release integrator",
-  "website_deployment": "published: aad122ab-075e-414d-99fb-ef7c89cd9345",
-  "os_visual_score": null,
-  "notes": [
-    "This records website checks only; no new OS visual pass is asserted.",
-    "Chrome extension warnings were observed; they came from an unrelated chrome-extension URL, not the website.",
-    "Published release metadata enables the direct single-file ISO link with exact size and SHA-256."
+  "source_screenshots_inspected": [
+    "evidence/aven/round-08/chinese-files-final.png",
+    "evidence/aven/round-08/desktop-final.png",
+    "evidence/verification/online-updates/aven-files-chinese.png"
   ],
+  "desktop_browser": null,
+  "mobile_browser": null,
+  "browser_note": "Browser testing was not requested and was not repeated; previous results remain historical in Git.",
+  "os_visual_score": null,
+  "os_chinese_visual_score": null,
   "os_three_second_differentiation": null,
-  "production_verification": "deployment.json: 23 HTTP/resource checks and real desktop/mobile Chrome checks"
+  "notes": [
+    "This records website and source-asset checks, not a new OS visual score.",
+    "Screenshots are unmodified; the 1440x900 installation capture is separate from 1920x1200 stock/Union comparison pairs.",
+    "The online installer was downloaded and fully hashed against the published installer audit.",
+    "ISO remains 0.3.1; online component release is 0.4.0.",
+    "Production HTTP checks are recorded in deployment.json."
+  ],
+  "website_deployment": "ffd5916a-bb66-480a-9782-6d4120b0542d"
 }

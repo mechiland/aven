@@ -1,27 +1,29 @@
 {
   "url": "https://aven-website.mechiland.workers.dev",
   "provider": "Cloudflare Workers",
-  "version_id": "aad122ab-075e-414d-99fb-ef7c89cd9345",
+  "version_id": "ffd5916a-bb66-480a-9782-6d4120b0542d",
   "release_version": "0.3.1",
-  "verified_at": "2026-09-17T09:38:35Z",
+  "online_release_version": "0.4.0",
+  "screenshot_round": "08 (latest); 06/07 retained and labeled",
+  "verified_at": "2026-09-18T03:11:44.287256+00:00",
   "checks": [
     {
       "path": "/",
       "status": 200,
       "bytes_identical": true,
-      "bytes": 22795
+      "bytes": 29131
     },
     {
       "path": "/zh-cn/",
       "status": 200,
       "bytes_identical": true,
-      "bytes": 22795
+      "bytes": 29131
     },
     {
       "path": "/en/",
       "status": 200,
       "bytes_identical": true,
-      "bytes": 23077
+      "bytes": 29844
     },
     {
       "path": "/release.json",
@@ -30,10 +32,16 @@
       "bytes": 346
     },
     {
+      "path": "/updates.json",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 584
+    },
+    {
       "path": "/assets-manifest.json",
       "status": 200,
       "bytes_identical": true,
-      "bytes": 2488
+      "bytes": 3433
     },
     {
       "path": "/app.js",
@@ -45,127 +53,159 @@
       "path": "/styles.css",
       "status": 200,
       "bytes_identical": true,
-      "bytes": 22824
+      "bytes": 26648
     },
     {
-      "path": "/assets/aven-files.png?v=union-0.3.1",
+      "path": "/credits.txt",
       "status": 200,
       "bytes_identical": true,
-      "bytes": 210612
+      "bytes": 6182
     },
     {
-      "path": "/assets/aven-preview.png?v=union-0.3.1",
+      "path": "/assets/aven-desktop.png?v=union-0.4.0-round08",
       "status": 200,
       "bytes_identical": true,
-      "bytes": 1391000
+      "bytes": 203853
     },
     {
-      "path": "/assets/aven-browser.png?v=union-0.3.1",
-      "status": 200,
-      "bytes_identical": true,
-      "bytes": 268919
-    },
-    {
-      "path": "/assets/aven-mail.png?v=union-0.3.1",
-      "status": 200,
-      "bytes_identical": true,
-      "bytes": 252321
-    },
-    {
-      "path": "/assets/aven-photos.png?v=union-0.3.1",
-      "status": 200,
-      "bytes_identical": true,
-      "bytes": 568790
-    },
-    {
-      "path": "/assets/aven-typography.png?v=union-0.3.1",
-      "status": 200,
-      "bytes_identical": true,
-      "bytes": 261624
-    },
-    {
-      "path": "/assets/stock-files.png?v=union-0.3.1",
+      "path": "/assets/stock-files.png?v=union-0.4.0-round08",
       "status": 200,
       "bytes_identical": true,
       "bytes": 1028984
     },
     {
-      "path": "/assets/stock-preview.png?v=union-0.3.1",
+      "path": "/assets/aven-online-install.png?v=union-0.4.0-round08",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 123425
+    },
+    {
+      "path": "/assets/stock-preview.png?v=union-0.4.0-round08",
       "status": 200,
       "bytes_identical": true,
       "bytes": 1053794
     },
     {
-      "path": "/assets/stock-browser.png?v=union-0.3.1",
-      "status": 200,
-      "bytes_identical": true,
-      "bytes": 1015276
-    },
-    {
-      "path": "/assets/stock-mail.png?v=union-0.3.1",
+      "path": "/assets/stock-mail.png?v=union-0.4.0-round08",
       "status": 200,
       "bytes_identical": true,
       "bytes": 1001833
     },
     {
-      "path": "/assets/stock-photos.png?v=union-0.3.1",
+      "path": "/assets/stock-photos.png?v=union-0.4.0-round08",
       "status": 200,
       "bytes_identical": true,
       "bytes": 1108751
     },
     {
-      "path": "/assets/aven.svg?v=union-0.3.1",
+      "path": "/assets/aven-preview.png?v=union-0.4.0-round08",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 1391000
+    },
+    {
+      "path": "/assets/aven-files.png?v=union-0.4.0-round08",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 252873
+    },
+    {
+      "path": "/assets/stock-browser.png?v=union-0.4.0-round08",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 1015276
+    },
+    {
+      "path": "/assets/aven-mail.png?v=union-0.4.0-round08",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 252321
+    },
+    {
+      "path": "/assets/aven-photos.png?v=union-0.4.0-round08",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 568790
+    },
+    {
+      "path": "/assets/aven-browser.png?v=union-0.4.0-round08",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 268919
+    },
+    {
+      "path": "/assets/aven.svg?v=union-0.4.0-round08",
       "status": 200,
       "bytes_identical": true,
       "bytes": 340
     },
     {
-      "path": "/assets/fonts/aven-noto-bold.woff2?v=union-0.3.1",
+      "path": "/assets/aven-typography.png?v=union-0.4.0-round08",
       "status": 200,
       "bytes_identical": true,
-      "bytes": 124900
+      "bytes": 261624
     },
     {
-      "path": "/assets/fonts/aven-noto-regular.woff2?v=union-0.3.1",
+      "path": "/assets/fonts/LICENSE.txt?v=union-0.4.0-round08",
       "status": 200,
       "bytes_identical": true,
-      "bytes": 122260
+      "bytes": 14712
     },
     {
-      "path": "/assets/fonts/aven-noto-medium.woff2?v=union-0.3.1",
+      "path": "/assets/fonts/aven-noto-bold.woff2?v=union-0.4.0-round08",
       "status": 200,
       "bytes_identical": true,
-      "bytes": 122840
+      "bytes": 145356
+    },
+    {
+      "path": "/assets/fonts/aven-noto-regular.woff2?v=union-0.4.0-round08",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 142908
+    },
+    {
+      "path": "/assets/fonts/aven-noto-medium.woff2?v=union-0.4.0-round08",
+      "status": 200,
+      "bytes_identical": true,
+      "bytes": 143704
     },
     {
       "path": "/page-that-does-not-exist",
       "status": 404
     }
   ],
+  "external_links": [
+    {
+      "url": "https://github.com/mechiland/aven/releases/tag/aven-kinoite-44",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/mechiland/aven/blob/main/docs/ONLINE-UPDATES.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/mechiland/aven/blob/main/evidence/verification/online-updates/report.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/mechiland/aven/blob/main/evidence/aven/round-08/chinese-files-final.png",
+      "status": 200
+    }
+  ],
   "download_check": {
     "url": "https://aven-downloads.mechiland.workers.dev/releases/v0.3.1/Aven-Union-44-0.3.1-x86_64.iso",
     "head_status": 200,
     "bytes": 8051228672,
-    "accept_ranges": "bytes",
-    "content_type": "application/x-iso9660-image",
-    "range_status": 206,
-    "content_range": "bytes 32768-32831/8051228672"
+    "range_bytes_verified": 64
   },
-  "browser_verification": {
-    "environment": "Real Chrome via CUA",
-    "desktop_width": 1643,
-    "mobile_viewport": "390 x 844",
-    "chinese_heading_weight": 500,
-    "horizontal_overflow": false,
-    "app_tabs": "pass",
-    "comparison_switch_and_keyboard_slider": "pass",
-    "original_image_dialog": "pass",
-    "iso_link_and_checksum": "pass",
-    "mobile_checksum_wrapping": "pass",
-    "mobile_menu": "pass",
-    "language_switch_preserves_section": "pass",
-    "temporary_viewport_reset": true
+  "installer_check": {
+    "url": "https://github.com/mechiland/aven/releases/download/aven-kinoite-44/Aven-Installer.tar.gz",
+    "full_download_verified": true,
+    "bytes": 7195,
+    "sha256": "93a57286263d5ceb00a6057909815f891b3d530912d414226fb494f66ebcd425"
   },
+  "browser_verification": null,
+  "browser_verification_note": "Not repeated for this content update; previous browser checks remain historical in Git.",
   "browser_visual_score": null,
   "os_visual_score": null,
   "os_changes": false
