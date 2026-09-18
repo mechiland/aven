@@ -872,8 +872,8 @@
       "Union installer ISO"
     ]
   },
-  "current_candidate": "union_dock_medium_candidate",
-  "status_scope_note": "Top-level round4 scores and iso_release are historical Breeze records. Current Union0.3.1 appearance remains unscored; union_iso_031 records its separate packaging and publication status.",
+  "current_candidate": "union_full_width_panel_candidate",
+  "status_scope_note": "Top-level round4 scores and iso_release are historical Breeze records. Current Union full-width panel is unreleased and unscored; union_iso_031 records the previously published ISO.",
   "union_sequoia_candidate": {
     "state": "applied_rebooted_native_smoke_verified",
     "version": "0.3.0-union",
@@ -985,5 +985,30 @@
     "github_release": "https://github.com/mechiland/aven/releases/tag/v0.3.1",
     "public_full_download_verified": true,
     "public_download_report": "evidence/verification/union-iso-031/public-download.json"
+  },
+  "union_full_width_panel_candidate": {
+    "state": "applied_native_layout_verified",
+    "version": "unreleased",
+    "extends": "union_dock_medium_candidate",
+    "scope": [
+      "panel_layout",
+      "virtual_desktop_pager"
+    ],
+    "guide": "docs/UNION-FULL-WIDTH-PANEL.md",
+    "review_record": "evidence/verification/union-full-width-panel/review.json",
+    "scores": null,
+    "three_second_test": null,
+    "pass": null,
+    "automated_tests_passed": 116,
+    "panel_widgets_preserved": 7,
+    "panel_widgets_added": 2,
+    "virtual_desktops": 2,
+    "shell_restart_persistence": true,
+    "graceful_shell_restart": false,
+    "reboot_verified": null,
+    "atomic_deployment_changed": false,
+    "rollback_executed": false,
+    "new_iso": null,
+    "completed_at": "2026-09-18T01:51:24.157012+00:00"
   }
 }

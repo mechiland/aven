@@ -1,0 +1,60 @@
+{
+  "widget_ids_types_indices_unchanged": true,
+  "widgets": [
+    [
+      3,
+      "org.kde.plasma.kickoff",
+      2
+    ],
+    [
+      4,
+      "org.kde.plasma.pager",
+      0
+    ],
+    [
+      5,
+      "org.kde.plasma.icontasks",
+      3
+    ],
+    [
+      6,
+      "org.kde.plasma.marginsseparator",
+      5
+    ],
+    [
+      7,
+      "org.kde.plasma.systemtray",
+      6
+    ],
+    [
+      22,
+      "org.kde.plasma.digitalclock",
+      7
+    ],
+    [
+      23,
+      "org.kde.plasma.showdesktop",
+      8
+    ],
+    [
+      27,
+      "org.kde.plasma.panelspacer",
+      1
+    ],
+    [
+      28,
+      "org.kde.plasma.panelspacer",
+      4
+    ]
+  ],
+  "desktop_count": 2,
+  "original_widget_ids_preserved": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    22,
+    23
+  ]
+}

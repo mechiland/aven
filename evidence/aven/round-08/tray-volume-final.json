@@ -1,0 +1,14 @@
+{
+  "method": "QEMU VNC RFB raw framebuffer; unmodified guest pixels, lossless PNG",
+  "width": 1920,
+  "height": 1200,
+  "captured_at": "2026-09-18T01:49:10.178441+00:00",
+  "rfb_version": "RFB 003.008",
+  "server_name": "QEMU (Aven Union 0.2.0 — Plasma 6.8 Beta)",
+  "endpoint": "127.0.0.1:5922",
+  "encoding": "raw 32-bit true-color converted losslessly to PNG RGB24",
+  "input_events_sent": 0,
+  "sha256": "b166607f539a0922649969397ddad8b7c6b76518a1a0fe040be2df33bf662823",
+  "visually_inspected": true,
+  "note": "Native Audio Volume popup opens from the tray."
+}

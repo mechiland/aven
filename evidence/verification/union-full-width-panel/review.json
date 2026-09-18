@@ -1,0 +1,93 @@
+{
+  "completed_at": "2026-09-18T01:51:24.157012+00:00",
+  "scope": "Union full-width panel layout only",
+  "reference": "User-provided Windows 11 screenshot; layout reference only, Aven material retained",
+  "capture_method": "Unmodified QEMU VNC RFB framebuffer via verification/rfb_capture.py, lossless PNG",
+  "screenshots": [
+    {
+      "path": "evidence/aven/round-08/before-awake.png",
+      "sha256": "9aac0211154aa34e5781d560298bd0fb2f7e3f2c133a07d0fcca5f9693e2616d",
+      "inspected": true,
+      "note": "Previous fitted floating dock; real native baseline for this layout-only follow-up."
+    },
+    {
+      "path": "evidence/aven/round-08/desktop-final.png",
+      "sha256": "0f58307c3296a49f6c4a0d4f67ba593b1a34a8e20177d950b6be7851273db796",
+      "inspected": true,
+      "note": "Full-width translucent panel; pager left, centered launcher/apps, right tray and one-line date/time."
+    },
+    {
+      "path": "evidence/aven/round-08/chinese-files-final.png",
+      "sha256": "d1d5eca0cde0d49eb16d2aa1db1d1bf048d988cf99fef4b3aa78aca8cf7dd1a8",
+      "inspected": true,
+      "note": "Real Simplified/Traditional Chinese filenames with the new panel, after shell restart."
+    },
+    {
+      "path": "evidence/aven/round-08/space-two-final.png",
+      "sha256": "216b2166a1441517c23ece77ffe6af63d9ee7b07f2de2fbeee9de507b0d34da4",
+      "inspected": true,
+      "note": "Second desktop selected through the native pager."
+    },
+    {
+      "path": "evidence/aven/round-08/calendar-open.png",
+      "sha256": "e96df75963f10dac64349dfb1ce5b01ce51b5b37c7dbca70430d6845f2ad76c5",
+      "inspected": true,
+      "note": "Native calendar opens from the one-line clock."
+    },
+    {
+      "path": "evidence/aven/round-08/tray-volume-final.png",
+      "sha256": "b166607f539a0922649969397ddad8b7c6b76518a1a0fe040be2df33bf662823",
+      "inspected": true,
+      "note": "Native Audio Volume popup opens from the tray."
+    },
+    {
+      "path": "evidence/aven/round-08/narrow-1280.png",
+      "sha256": "09587a8d40a85d07638d05e15df199e689c5eddbdc1dd565ecf35e9a75920eeb",
+      "inspected": true,
+      "note": "1280x720 panel layout check only; existing app extends beyond viewport and native point-sized clock follows changed physical DPI."
+    }
+  ],
+  "panel_metrics": [
+    {
+      "width": 1920,
+      "height": 58,
+      "application_group_center": 959.5,
+      "center_error_px": 0.5
+    },
+    {
+      "width": 1280,
+      "height": 58,
+      "application_group_center": 639.5,
+      "center_error_px": 0.5
+    }
+  ],
+  "verification": {
+    "automated_tests_passed": 116,
+    "original_widgets_preserved": 7,
+    "new_native_spacers": 2,
+    "desktop_count": 2,
+    "reapply_idempotent": true,
+    "native_operations": [
+      "Select desktop 2 and return to desktop 1",
+      "Launch Files from centered icon",
+      "Show desktop",
+      "Open clock calendar",
+      "Open volume tray popup"
+    ],
+    "shell_restart_persistence": true,
+    "graceful_shell_restart": false,
+    "shell_restart_note": "Beta plasmashell stalled during stop; killed the stopping shell process, service restarted active with saved layout.",
+    "guest_reboot": null,
+    "atomic_deployment_changed": false,
+    "rollback_executed": false
+  },
+  "scores": null,
+  "three_second_test": null,
+  "pass": null,
+  "pending": [
+    "Guest reboot and graceful shell restart",
+    "Fractional-scale and motion checks",
+    "Independent matching-stock visual scores and three-second differentiation",
+    "Installer ISO rebuild"
+  ]
+}

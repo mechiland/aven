@@ -56,9 +56,9 @@ def main():
                 else:
                     raise RuntimeError('Plasma did not become ready')
                 wallpaper = Path.home() / '.local/share/wallpapers/AvenEstuary/contents/images/3840x2160.svg'
-                script = (ROOT / 'integration/plasma-layout.js.in').read_text().replace('@WALLPAPER@', wallpaper.as_uri()).replace('@UNION_DOCK@', 'true' if style == 'union' else 'false')
-                subprocess.run([dbus, 'org.kde.plasmashell', '/PlasmaShell',
-                                'org.kde.PlasmaShell.evaluateScript', script], stdout=log, stderr=subprocess.STDOUT, check=True)
+                sys.path.insert(0, str(ROOT / 'integration'))
+                from panel_layout import apply_layout
+                apply_layout(dbus, style, wallpaper, stdout=log, stderr=subprocess.STDOUT)
                 subprocess.run([dbus, 'org.kde.KWin', '/KWin', 'reconfigure'],
                                stdout=log, stderr=subprocess.STDOUT, check=True)
                 # KFilePlacesModel creates the user's native XBEL after Plasma
