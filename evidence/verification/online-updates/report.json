@@ -13,7 +13,7 @@
   "interrupted_apply_recovered": true,
   "live_restore_refused": true,
   "fedora_deployment_rollback_executed": false,
-  "public_feed_verified": false,
+  "public_feed_verified": true,
   "automated_tests": {
     "updater": 19,
     "files": 26,
@@ -32,5 +32,9 @@
   "release_build": "release-build.json",
   "all_nine_settings_and_data_hashes_preserved": true,
   "selinux": "Enforcing",
-  "signed_fedora_origin_retained": true
+  "signed_fedora_origin_retained": true,
+  "public_native_bootstrap_verified": true,
+  "public_feed_evidence": "public-download.json",
+  "public_native_evidence": "public-native-check.txt",
+  "functional_pass": true
 }

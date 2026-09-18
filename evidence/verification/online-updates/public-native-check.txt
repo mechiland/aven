@@ -1,0 +1,35 @@
+{
+  "installed": null,
+  "available": "0.4.0",
+  "changed_components": [
+    "browser",
+    "files",
+    "integration",
+    "mail",
+    "photos",
+    "preview",
+    "typography",
+    "updates",
+    "verification",
+    "visual"
+  ],
+  "download_bytes": 125466
+}
+Verified update downloaded. Run aven update to apply it.
+{
+  "installed": null,
+  "available": "0.4.0",
+  "changed_components": [
+    "browser",
+    "files",
+    "integration",
+    "mail",
+    "photos",
+    "preview",
+    "typography",
+    "updates",
+    "verification",
+    "visual"
+  ],
+  "download_bytes": 0
+}
