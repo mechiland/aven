@@ -72,6 +72,8 @@ All 240 uploaded parts were compared against local MD5 values, and the completed
 multipart ETag and object size match. Public download headers, beginning/middle/end
 ranges, conditional requests, checksum file and build manifest are verified in
 [the public download report](../evidence/verification/union-iso-031/public-download.json).
+The complete public ISO was then downloaded as 240 ordered byte ranges;
+SHA-256 over all 8,051,228,672 downloaded bytes matches the local release exactly.
 
 The download Worker exposes only the configured published release prefix.
 Uploads use separate temporary authenticated infrastructure; no upload token

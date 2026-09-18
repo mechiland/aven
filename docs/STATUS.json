@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project": "Aven",
   "phase": "prototype_passed",
-  "updated_at": "2026-09-17T09:40:04.512376+00:00",
+  "updated_at": "2026-09-18T01:36:05.571047+00:00",
   "base": {
     "distribution": "Fedora Kinoite",
     "release": 44,
@@ -983,6 +983,7 @@
     "website_url": "https://aven-website.mechiland.workers.dev",
     "website_deployment": "aad122ab-075e-414d-99fb-ef7c89cd9345",
     "github_release": "https://github.com/mechiland/aven/releases/tag/v0.3.1",
-    "public_full_download_verified": null
+    "public_full_download_verified": true,
+    "public_download_report": "evidence/verification/union-iso-031/public-download.json"
   }
 }

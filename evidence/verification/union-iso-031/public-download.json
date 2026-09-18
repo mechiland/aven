@@ -67,7 +67,17 @@
     {
       "name": "Aven-Union-44-0.3.1-x86_64.json",
       "passed": true
+    },
+    {
+      "name": "complete public download SHA-256",
+      "method": "240 ordered byte ranges, downloaded over public HTTPS, concatenated for SHA-256",
+      "passed": true,
+      "bytes": 8051228672,
+      "sha256": "59d81e2afb1c7241c274f961ae83cb13dd54d77a15459b266c87c1f458ef23eb",
+      "elapsed_seconds": 1363.55
     }
   ],
-  "http_and_sample_checks_passed": true
+  "http_and_sample_checks_passed": true,
+  "full_download_verified": true,
+  "completed_at": "2026-09-17T10:00:27.725886+00:00"
 }
