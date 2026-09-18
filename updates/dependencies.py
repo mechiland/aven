@@ -9,6 +9,7 @@ import sys
 from aven import atomic, digest, fetch, require_kinoite, run
 
 ROOT = Path(__file__).resolve().parents[1]
+MAX_PACKAGE = 512 * 1024 * 1024
 
 
 def installed():
@@ -58,7 +59,12 @@ def main():
             for package in needed:
                 path = cache/Path(package['url']).name
                 if not path.is_file() or digest(path) != package['checksum']:
-                    data = fetch(package['url'], 256 * 1024 * 1024)
+                    size = package['bytes']
+                    if type(size) is not int or not 0 < size <= MAX_PACKAGE:
+                        raise ValueError('Invalid platform package size')
+                    data = fetch(package['url'], size)
+                    if len(data) != size:
+                        raise ValueError(f'Truncated platform package: {path.name}')
                     atomic(path, data, 0o644)
                 if digest(path) != package['checksum']:
                     raise ValueError(f'Platform package checksum mismatch: {path.name}')

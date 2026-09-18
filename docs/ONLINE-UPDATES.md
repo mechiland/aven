@@ -86,10 +86,11 @@ aven rollback
 
 Rollback restores the preceding Aven assets and the settings actually changed
 by that update. It checks for subsequent edits before writing and reports
-conflicts instead of silently overwriting them. Mail, bookmarks, documents,
-photos and accounts are never included in the recovery payload. Preference
-files are included; mail stores, browser databases and password databases are
-not. This is **Aven profile recovery**, separate from `rpm-ostree rollback` for
+conflicts instead of silently overwriting them. Mail messages, bookmarks,
+documents and photos are never included in the recovery payload. Preference
+files, including account settings, are backed up privately; mail stores,
+browser databases and password databases are not. Ordinary updates leave those
+account preferences unchanged. This is **Aven profile recovery**, separate from `rpm-ostree rollback` for
 the Fedora deployment and platform packages.
 
 Installation state lives in `~/.local/state/aven/updates/`; downloads and verified

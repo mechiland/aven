@@ -1,0 +1,62 @@
+{
+  "version": "0.4.0",
+  "sequence": 1,
+  "profile_bytes": 125466,
+  "installer_bytes": 7195,
+  "installer_sha256": "93a57286263d5ceb00a6057909815f891b3d530912d414226fb494f66ebcd425",
+  "manifest_sha256": "8b6548cf420d52ca6b462d3567e17adda6480377dc7eab38161907ed8310e7a3",
+  "signing_public_key_sha256": "1b684af2806b945b2d46cc95a175a386860297934cc1059544f58412ea415f04",
+  "platform_rpm_bytes": 439450336,
+  "components": {
+    "browser": {
+      "file": "browser-542b3ed1369b6f950c9571e9e4cdb933e3691910b912aa0f0e2961607f9c7ad6.tar.gz",
+      "sha256": "542b3ed1369b6f950c9571e9e4cdb933e3691910b912aa0f0e2961607f9c7ad6",
+      "bytes": 6488
+    },
+    "files": {
+      "file": "files-193ea5a9d648b05df517370243efe6a0faa16878a86343784cababdd20ded026.tar.gz",
+      "sha256": "193ea5a9d648b05df517370243efe6a0faa16878a86343784cababdd20ded026",
+      "bytes": 11519
+    },
+    "integration": {
+      "file": "integration-1a606546e3bec17154035eeeb52df0a1ccb546e055a7da55beeea82e18dd2224.tar.gz",
+      "sha256": "1a606546e3bec17154035eeeb52df0a1ccb546e055a7da55beeea82e18dd2224",
+      "bytes": 11277
+    },
+    "mail": {
+      "file": "mail-2fb847477961039bc7d0b2555dbb78ecf55698cfa78d8752f0a461ff4751c0bb.tar.gz",
+      "sha256": "2fb847477961039bc7d0b2555dbb78ecf55698cfa78d8752f0a461ff4751c0bb",
+      "bytes": 10509
+    },
+    "photos": {
+      "file": "photos-114538fad815f9dcd5f74e56159d361ffcd17606e85d7855c148e4d8070a230a.tar.gz",
+      "sha256": "114538fad815f9dcd5f74e56159d361ffcd17606e85d7855c148e4d8070a230a",
+      "bytes": 5460
+    },
+    "preview": {
+      "file": "preview-f1b789a05c9148ab8079cc4cd0e95290331e2241bec25123313493f48f19acbe.tar.gz",
+      "sha256": "f1b789a05c9148ab8079cc4cd0e95290331e2241bec25123313493f48f19acbe",
+      "bytes": 8065
+    },
+    "typography": {
+      "file": "typography-b8f0827a556d3acb46d43e6fc343e90424f7f28c9e655207e7db296085c505b9.tar.gz",
+      "sha256": "b8f0827a556d3acb46d43e6fc343e90424f7f28c9e655207e7db296085c505b9",
+      "bytes": 26116
+    },
+    "updates": {
+      "file": "updates-b5628595341fef9abbdafe675b4d668cbc8155c656687bec6230d49cd804bb1e.tar.gz",
+      "sha256": "b5628595341fef9abbdafe675b4d668cbc8155c656687bec6230d49cd804bb1e",
+      "bytes": 16928
+    },
+    "verification": {
+      "file": "verification-47defa3125a0f732b98c1638fb1b8328d8db8d727133d2b95449b2d06f7246db.tar.gz",
+      "sha256": "47defa3125a0f732b98c1638fb1b8328d8db8d727133d2b95449b2d06f7246db",
+      "bytes": 8386
+    },
+    "visual": {
+      "file": "visual-f66559dcd81c7bb4a5c6d93489bab57163b1becadedbf8c077c1e6fea15218a8.tar.gz",
+      "sha256": "f66559dcd81c7bb4a5c6d93489bab57163b1becadedbf8c077c1e6fea15218a8",
+      "bytes": 20718
+    }
+  }
+}

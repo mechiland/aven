@@ -15,7 +15,7 @@
   "fedora_deployment_rollback_executed": false,
   "public_feed_verified": false,
   "automated_tests": {
-    "updater": 18,
+    "updater": 19,
     "files": 26,
     "verification": 116
   },
@@ -27,5 +27,10 @@
   "scores": null,
   "chinese_score": null,
   "three_second_judgment": null,
-  "visual_pass": null
+  "visual_pass": null,
+  "preservation_audit": "preservation-and-atomic.json",
+  "release_build": "release-build.json",
+  "all_nine_settings_and_data_hashes_preserved": true,
+  "selinux": "Enforcing",
+  "signed_fedora_origin_retained": true
 }

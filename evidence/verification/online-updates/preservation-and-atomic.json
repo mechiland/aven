@@ -1,0 +1,46 @@
+{
+  "installed_version": "0.4.0-test.7",
+  "downloaded_bytes": 16726,
+  "before": {
+    ".local/share/aven/firefox/prefs.js": "2c7d42a4d10ef647499c51b320e56d1829e29276a2c6824d25cf9493c2921484",
+    ".local/share/aven/mail/default/prefs.js": "3f5d820b0c27b8b9236d2d2d3f4da079e447a81eb3eaf63cfeb9b3c6124a3997",
+    ".local/share/aven/mail/default/xulstore.json": "ce09a7e08e6c830b62425f923053033375b8a915651b67d3c4adf5860ee35e0c",
+    ".config/dolphinrc": "a711ef99a7710f22b7341aaddb320498be2839a9485f186b988875b68d8514dc",
+    ".config/gwenviewrc": "a34ff27545c56041b179749f6d19436285b26a9a2d7aa7e2f91ab8ef1910305e",
+    ".config/plasma-org.kde.plasma.desktop-appletsrc": "756a59ef449101ee375a48d15d65e1e63464fe6a24ef33361fab23a1718d5582",
+    "Documents/更新保留文档.txt": "c7123ac0840c5294d0219a5799dd8f49948e0142a29b9dbdd16eb768b31361a8",
+    ".local/share/aven/firefox/user-data-preservation.txt": "c7123ac0840c5294d0219a5799dd8f49948e0142a29b9dbdd16eb768b31361a8",
+    ".local/share/aven/mail/default/Mail/Local Folders/保留邮件": "c7123ac0840c5294d0219a5799dd8f49948e0142a29b9dbdd16eb768b31361a8"
+  },
+  "after": {
+    ".local/share/aven/firefox/prefs.js": "2c7d42a4d10ef647499c51b320e56d1829e29276a2c6824d25cf9493c2921484",
+    ".local/share/aven/mail/default/prefs.js": "3f5d820b0c27b8b9236d2d2d3f4da079e447a81eb3eaf63cfeb9b3c6124a3997",
+    ".local/share/aven/mail/default/xulstore.json": "ce09a7e08e6c830b62425f923053033375b8a915651b67d3c4adf5860ee35e0c",
+    ".config/dolphinrc": "a711ef99a7710f22b7341aaddb320498be2839a9485f186b988875b68d8514dc",
+    ".config/gwenviewrc": "a34ff27545c56041b179749f6d19436285b26a9a2d7aa7e2f91ab8ef1910305e",
+    ".config/plasma-org.kde.plasma.desktop-appletsrc": "756a59ef449101ee375a48d15d65e1e63464fe6a24ef33361fab23a1718d5582",
+    "Documents/更新保留文档.txt": "c7123ac0840c5294d0219a5799dd8f49948e0142a29b9dbdd16eb768b31361a8",
+    ".local/share/aven/firefox/user-data-preservation.txt": "c7123ac0840c5294d0219a5799dd8f49948e0142a29b9dbdd16eb768b31361a8",
+    ".local/share/aven/mail/default/Mail/Local Folders/保留邮件": "c7123ac0840c5294d0219a5799dd8f49948e0142a29b9dbdd16eb768b31361a8"
+  },
+  "preserved": {
+    ".local/share/aven/firefox/prefs.js": true,
+    ".local/share/aven/mail/default/prefs.js": true,
+    ".local/share/aven/mail/default/xulstore.json": true,
+    ".config/dolphinrc": true,
+    ".config/gwenviewrc": true,
+    ".config/plasma-org.kde.plasma.desktop-appletsrc": true,
+    "Documents/更新保留文档.txt": true,
+    ".local/share/aven/firefox/user-data-preservation.txt": true,
+    ".local/share/aven/mail/default/Mail/Local Folders/保留邮件": true
+  },
+  "atomic": {
+    "origin": "fedora:fedora/44/x86_64/kinoite",
+    "base_checksum": "be803f3e3bcdcc54885264702655e6e071864504154bc46044a08cc2aa2ce5df",
+    "checksum": "10d4268e62a36a1f0d0c8e738eb073f32246aa4cc2d481ef260acc81d6ffee5f",
+    "gpg_enabled": true,
+    "deployment_count": 2
+  },
+  "selinux": "Enforcing",
+  "pending_recovery": false
+}

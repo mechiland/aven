@@ -61,6 +61,8 @@ def build(root, output, key, version, sequence, style, lifetime=90, platform_cac
             path = platform_cache/Path(package['url']).name
             if digest(path) != package['checksum']:
                 raise ValueError(f'Platform cache hash mismatch: {path}')
+            if path.stat().st_size != package['bytes']:
+                raise ValueError(f'Platform cache size mismatch: {path}')
             name = 'platform-'+package['checksum']+'.rpm'
             target = output/name
             if not target.exists():

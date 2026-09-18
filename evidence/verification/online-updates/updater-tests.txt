@@ -6,6 +6,7 @@ test_obsolete_assets_are_removed_only_if_unchanged_by_user (test_preservation.Pr
 test_rollback_can_restore_a_file_deleted_by_the_new_release (test_preservation.Preservation.test_rollback_can_restore_a_file_deleted_by_the_new_release) ... ok
 test_rollback_conflicts_are_detected_before_any_asset_is_changed (test_preservation.Preservation.test_rollback_conflicts_are_detected_before_any_asset_is_changed) ... ok
 test_rollback_restores_changed_assets_but_keeps_later_preference_edits (test_preservation.Preservation.test_rollback_restores_changed_assets_but_keeps_later_preference_edits) ... ok
+test_all_pinned_platform_packages_fit_the_download_limit (test_updates.Updates.test_all_pinned_platform_packages_fit_the_download_limit) ... ok
 test_bootstrap_never_replaces_existing_command (test_updates.Updates.test_bootstrap_never_replaces_existing_command) ... ok
 test_expired_and_incomplete_release (test_updates.Updates.test_expired_and_incomplete_release) ... ok
 test_failure_keeps_previous_receipt_and_recovery_journal (test_updates.Updates.test_failure_keeps_previous_receipt_and_recovery_journal) ... Update did not finish. The previous receipt is retained. Run aven recover.
@@ -19,7 +20,7 @@ test_stage_reuses_verified_archives_and_repairs_corrupt_cache (test_updates.Upda
 test_wrong_key_rejected (test_updates.Updates.test_wrong_key_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 18 tests in 0.599s
+Ran 19 tests in 0.601s
 
 OK
 Restored the configuration and assets from before the interrupted update. Log out and back in.

@@ -13,6 +13,7 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import aven
 import build
+import dependencies
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -118,6 +119,15 @@ class Updates(unittest.TestCase):
         for url in ('http://example.com/channel.json', 'file://evil/path', 'https://user:password@example.com/a'):
             with self.assertRaises(ValueError):
                 aven.secure_url(url)
+
+    def test_all_pinned_platform_packages_fit_the_download_limit(self):
+        lock = json.loads((ROOT/'updates/union-platform.json').read_text())
+        for package in lock['packages']:
+            self.assertGreater(package['bytes'], 0)
+            self.assertLessEqual(package['bytes'], dependencies.MAX_PACKAGE, package['name'])
+        # The wallpaper RPM is larger than 256 MiB. A prepopulated VM cache
+        # must not mask an installer that cannot download it on a new machine.
+        self.assertGreater(max(p['bytes'] for p in lock['packages']), 256*1024*1024)
 
     def test_failure_keeps_previous_receipt_and_recovery_journal(self):
         previous = {'release': self.payload}
