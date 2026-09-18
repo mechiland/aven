@@ -77,6 +77,7 @@ def main():
     parser.add_argument("--skip-layout", action="store_true", help="For staging without Qt; seed native layout later with files/layout.py")
     parser.add_argument("--refresh-layout", action="store_true", help="Reapply the managed 184px Places layout; close Dolphin first")
     parser.add_argument("--shortcut-only", action="store_true", help="Repair or update only the native Preview shortcut configuration")
+    parser.add_argument("--assets-only", action="store_true", help="Update Preview code and entries without changing user preferences or layout")
     args = parser.parse_args()
     home = args.home.resolve()
     version = args.xmlgui_version
@@ -113,6 +114,9 @@ def main():
         executable = str(binary).replace("\\", "\\\\\\\\").replace('"', '\\\\"').replace("`", "\\\\`").replace("$", "\\\\$").replace("%", "%%")
         target.write_text(target.read_text().replace("Exec=aven-preview -- %U", f'Exec="{executable}" -- %U'), encoding="utf-8")
         target.chmod(0o755)
+    if args.assets_only:
+        print(json.dumps({"preview_updated": True, "preferences_preserved": True}))
+        return
     config = configparser.ConfigParser(interpolation=None)
     config.optionxform = str
     config.read(SOURCE / "dolphinrc", encoding="utf-8")

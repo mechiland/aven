@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "base": "Official Fedora Kinoite 44.20260913.0, cloned from the independently booted stock baseline",
+  "test_environment": "Disposable qcow2 overlay; original stock and Aven disks were not modified",
+  "dependency_staging_and_reboot": true,
+  "initial_profile_install": true,
+  "component_update": true,
+  "theme_only_changed_components": [
+    "visual"
+  ],
+  "theme_only_download_bytes": 20749,
+  "profile_rollback_executed": true,
+  "interrupted_apply_recovered": true,
+  "live_restore_refused": true,
+  "fedora_deployment_rollback_executed": false,
+  "public_feed_verified": false,
+  "automated_tests": {
+    "updater": 18,
+    "files": 26,
+    "verification": 116
+  },
+  "screenshots_inspected": [
+    "stock-before.png",
+    "aven-files-chinese.png"
+  ],
+  "screenshot_notes": "Real VNC framebuffers. Chinese Dolphin UI and a preserved Chinese document filename inspected. These are installation smoke evidence, not matched visual scoring.",
+  "scores": null,
+  "chinese_score": null,
+  "three_second_judgment": null,
+  "visual_pass": null
+}

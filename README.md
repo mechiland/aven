@@ -26,6 +26,30 @@ Both independent VM disks use signed, pinned **Fedora Kinoite 44.20260913.0**,
 Plasma 6.7.5, Dolphin/Gwenview/Okular 26.08.1, Firefox 155 and Thunderbird
 153.0.2. The original ISO deployment remains available for Atomic rollback.
 
+## Install on Fedora Kinoite and update online
+
+Aven can now be installed on **Fedora Kinoite 44 x86_64** and updated separately
+from the operating system. Download the small installer from the
+[Kinoite update channel](https://github.com/mechiland/aven/releases/tag/aven-kinoite-44),
+then run it as your desktop user in Konsole:
+
+```sh
+tar -xzf Aven-Installer.tar.gz
+python3 aven-installer/aven.py install
+# If system dependencies were staged: reboot, then finish with:
+~/.local/bin/aven update
+```
+
+After installation, use `aven check` and `aven update`. Only changed Aven
+components are downloaded; ordinary updates preserve personal app preferences
+and desktop layout. Existing Aven ISO installations can use the same installer
+to join this update channel. Fedora keeps its Atomic update and rollback path.
+The initial Union setup still needs its tested Plasma Beta dependencies.
+
+See [installation, updates, recovery and publishing](docs/ONLINE-UPDATES.md).
+The ISO below remains useful for a new offline installation; it is not required
+for routine Aven changes.
+
 ## Install from ISO
 
 The release artifact is a **bootable x86_64 installer ISO** with an offline Aven

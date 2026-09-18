@@ -1,0 +1,37 @@
+{
+  "installed": "0.4.0-test.2",
+  "available": "0.4.0-test.3",
+  "changed_components": [
+    "visual"
+  ],
+  "download_bytes": 20749
+}
+{
+  "installed": "0.4.0-test.2",
+  "available": "0.4.0-test.3",
+  "changed_components": [
+    "visual"
+  ],
+  "download_bytes": 20749
+}
+Fedora Kinoite dependencies are ready; no system deployment change needed.
+{"preview_updated": true, "preferences_preserved": true}
+{
+  "profile": "/var/home/aven/.local/share/aven/firefox",
+  "preferences_seeded": false,
+  "launcher": "/var/home/aven/.local/bin/aven-browser",
+  "desktop": "org.mozilla.firefox.desktop"
+}
+{
+  "profile": "/var/home/aven/.local/share/aven/mail/default",
+  "profile_seeded": false,
+  "appearance_refreshed": false,
+  "launcher": "/var/home/aven/.local/bin/aven-mail",
+  "desktop": "net.thunderbird.Thunderbird.desktop",
+  "mode": "normal-online",
+  "demo_fixtures": false
+}
++ kbuildsycoca6 --noincremental
+Updated Aven desktop assets; existing layout and preferences retained.
+kbuildsycoca6 running...
+Aven 0.4.0-test.3 installed. Downloaded 20,749 bytes. Log out and back in to reload the desktop.

@@ -19,6 +19,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--decoration', choices=['breeze', 'aven'], default='breeze', help='Aven decoration is a candidate until boot-tested')
     p.add_argument('--without-shell-reload', action='store_true')
+    p.add_argument('--assets-only', action='store_true', help='Update Aven assets without resetting desktop settings or panels')
     p.add_argument('--style', choices=['breeze', 'union'], default='breeze')
     a = p.parse_args()
     release = Path('/etc/os-release').read_text()
@@ -54,6 +55,9 @@ def main():
                          (ROOT/'visual/aurorae',share/'aurorae/themes'),
                          (ROOT/'visual/plasma',share/'plasma/desktoptheme')]:
         if source.exists(): shutil.copytree(source,dest,dirs_exist_ok=True)
+    if a.assets_only:
+        print('Updated Aven desktop assets; existing layout and preferences retained.')
+        return
     def write(file,group,key,value):
         args = ['kwriteconfig6','--file',config/file]
         for part in group.split('/'):

@@ -1,0 +1,25 @@
+test_asset_symlink_is_rejected_before_installation (test_preservation.Preservation.test_asset_symlink_is_rejected_before_installation) ... ok
+test_browser_update_preserves_prefs_and_user_files (test_preservation.Preservation.test_browser_update_preserves_prefs_and_user_files) ... ok
+test_files_assets_update_does_not_touch_layout_or_shortcuts (test_preservation.Preservation.test_files_assets_update_does_not_touch_layout_or_shortcuts) ... ok
+test_mail_update_preserves_accounts_preferences_and_toolbar (test_preservation.Preservation.test_mail_update_preserves_accounts_preferences_and_toolbar) ... ok
+test_obsolete_assets_are_removed_only_if_unchanged_by_user (test_preservation.Preservation.test_obsolete_assets_are_removed_only_if_unchanged_by_user) ... ok
+test_rollback_can_restore_a_file_deleted_by_the_new_release (test_preservation.Preservation.test_rollback_can_restore_a_file_deleted_by_the_new_release) ... ok
+test_rollback_conflicts_are_detected_before_any_asset_is_changed (test_preservation.Preservation.test_rollback_conflicts_are_detected_before_any_asset_is_changed) ... ok
+test_rollback_restores_changed_assets_but_keeps_later_preference_edits (test_preservation.Preservation.test_rollback_restores_changed_assets_but_keeps_later_preference_edits) ... ok
+test_bootstrap_never_replaces_existing_command (test_updates.Updates.test_bootstrap_never_replaces_existing_command) ... ok
+test_expired_and_incomplete_release (test_updates.Updates.test_expired_and_incomplete_release) ... ok
+test_failure_keeps_previous_receipt_and_recovery_journal (test_updates.Updates.test_failure_keeps_previous_receipt_and_recovery_journal) ... Update did not finish. The previous receipt is retained. Run aven recover.
+ok
+test_non_https_remote_refused (test_updates.Updates.test_non_https_remote_refused) ... ok
+test_only_changed_component_is_downloaded (test_updates.Updates.test_only_changed_component_is_downloaded) ... ok
+test_safe_archive_rejects_traversal_links_and_wrong_component (test_updates.Updates.test_safe_archive_rejects_traversal_links_and_wrong_component) ... ok
+test_sequence_replay_and_equivocation_rejected (test_updates.Updates.test_sequence_replay_and_equivocation_rejected) ... ok
+test_signature_and_tamper (test_updates.Updates.test_signature_and_tamper) ... ok
+test_stage_reuses_verified_archives_and_repairs_corrupt_cache (test_updates.Updates.test_stage_reuses_verified_archives_and_repairs_corrupt_cache) ... ok
+test_wrong_key_rejected (test_updates.Updates.test_wrong_key_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.599s
+
+OK
+Restored the configuration and assets from before the interrupted update. Log out and back in.
